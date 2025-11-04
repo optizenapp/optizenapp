@@ -235,3 +235,161 @@ export async function getAllPostSlugs(): Promise<Array<{ category: string; slug:
   });
 }
 
+// ============================================
+// PAGE FUNCTIONS (WordPress Pages, not Posts)
+// ============================================
+
+export interface WordPressPage {
+  id: number;
+  date: string;
+  modified: string;
+  slug: string;
+  status: string;
+  link: string;
+  parent: number;
+  title: {
+    rendered: string;
+  };
+  content: {
+    rendered: string;
+  };
+  excerpt: {
+    rendered: string;
+  };
+  featured_media: number;
+  menu_order: number;
+  _embedded?: {
+    'wp:featuredmedia'?: Array<{
+      source_url: string;
+      alt_text: string;
+      media_details: {
+        width: number;
+        height: number;
+      };
+    }>;
+    up?: Array<{
+      id: number;
+      slug: string;
+      title: {
+        rendered: string;
+      };
+    }>;
+  };
+}
+
+export interface PageHierarchy {
+  page: WordPressPage;
+  children: PageHierarchy[];
+}
+
+// Fetch all pages
+export async function getPages(params?: {
+  per_page?: number;
+  page?: number;
+  parent?: number;
+}): Promise<{ pages: WordPressPage[]; totalPages: number; totalItems: number }> {
+  const searchParams = new URLSearchParams({
+    _embed: 'true',
+    per_page: params?.per_page?.toString() || '100',
+    page: params?.page?.toString() || '1',
+    ...(params?.parent !== undefined && { parent: params.parent.toString() }),
+  });
+
+  const response = await fetch(`${WP_API_URL}/pages?${searchParams}`, {
+    next: { revalidate: 3600 },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch pages: ${response.statusText}`);
+  }
+
+  const pages = await response.json();
+  const totalPages = parseInt(response.headers.get('X-WP-TotalPages') || '1');
+  const totalItems = parseInt(response.headers.get('X-WP-Total') || '0');
+
+  return { pages, totalPages, totalItems };
+}
+
+// Helper function to build full URL path for a page
+function buildPagePath(page: WordPressPage, allPages: WordPressPage[]): string {
+  const segments: string[] = [page.slug];
+  let currentPage = page;
+
+  // Walk up the parent chain
+  while (currentPage.parent !== 0) {
+    const parent = allPages.find(p => p.id === currentPage.parent);
+    if (!parent) break;
+    segments.unshift(parent.slug);
+    currentPage = parent;
+  }
+
+  return segments.join('/');
+}
+
+// Fetch a single page by its full URL path (e.g., "shopify/apps/wholesale-gorilla")
+export async function getPageByPath(path: string): Promise<WordPressPage | null> {
+  // Fetch all pages to build the hierarchy
+  const { pages: allPages } = await getPages({ per_page: 100 });
+  
+  // Build paths for all pages
+  const pageWithPaths = allPages.map(page => ({
+    page,
+    path: buildPagePath(page, allPages),
+  }));
+
+  // Find the page matching the requested path
+  const matchedPage = pageWithPaths.find(p => p.path === path);
+  
+  if (!matchedPage) {
+    return null;
+  }
+
+  const page = matchedPage.page;
+  
+  // Get SEO meta from Rank Math
+  const pageUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/${path}/`;
+  const seoMeta = await getSEOMetaFromRankMath(pageUrl);
+  
+  // Attach SEO meta and full path to page object
+  (page as any).seoMeta = seoMeta;
+  (page as any).fullPath = path;
+
+  return page;
+}
+
+// Build page hierarchy for a specific parent or root level
+export function buildPageHierarchy(pages: WordPressPage[], parentId: number = 0): PageHierarchy[] {
+  const children = pages
+    .filter(page => page.parent === parentId)
+    .sort((a, b) => a.menu_order - b.menu_order);
+
+  return children.map(page => ({
+    page,
+    children: buildPageHierarchy(pages, page.id),
+  }));
+}
+
+// Get all page paths for static generation
+export async function getAllPagePaths(): Promise<string[]> {
+  const { pages: allPages } = await getPages({ per_page: 100 });
+  
+  return allPages.map(page => buildPagePath(page, allPages));
+}
+
+// Get sidebar navigation for a specific page (same parent/sibling pages)
+export async function getPageSiblings(page: WordPressPage): Promise<WordPressPage[]> {
+  const { pages: allPages } = await getPages({ per_page: 100 });
+  
+  // If page has a parent, get all siblings
+  if (page.parent !== 0) {
+    return allPages
+      .filter(p => p.parent === page.parent)
+      .sort((a, b) => a.menu_order - b.menu_order);
+  }
+  
+  // If no parent, get all root-level pages
+  return allPages
+    .filter(p => p.parent === 0)
+    .sort((a, b) => a.menu_order - b.menu_order);
+}
+

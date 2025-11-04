@@ -76,41 +76,51 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/support" className="text-gray-600 hover:text-gray-900 text-sm">
-                  Support
+                <Link href="/shopify" className="text-gray-600 hover:text-gray-900 text-sm">
+                  Learn Shopify
                 </Link>
               </li>
               <li>
-                <Link href="/docs" className="text-gray-600 hover:text-gray-900 text-sm">
-                  Documentation
+                <Link href="/pod-stores" className="text-gray-600 hover:text-gray-900 text-sm">
+                  POD Stores
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-600 hover:text-gray-900 text-sm">
-                  Contact
+                <Link href="/videos-case-studies" className="text-gray-600 hover:text-gray-900 text-sm">
+                  Case Studies
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Legal & More */}
           <div>
-            <h4 className="font-semibold text-gray-900 mb-4">Legal</h4>
+            <h4 className="font-semibold text-gray-900 mb-4">Legal & More</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/privacy" className="text-gray-600 hover:text-gray-900 text-sm">
+                <Link href="/privacy-policy" className="text-gray-600 hover:text-gray-900 text-sm">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-gray-600 hover:text-gray-900 text-sm">
-                  Terms of Service
+                <Link href="/affiliates-program" className="text-gray-600 hover:text-gray-900 text-sm">
+                  Affiliates Program
                 </Link>
               </li>
               <li>
-                <Link href="/cookies" className="text-gray-600 hover:text-gray-900 text-sm">
-                  Cookie Policy
+                <Link href="/changelog" className="text-gray-600 hover:text-gray-900 text-sm">
+                  Changelog
                 </Link>
+              </li>
+              <li>
+                <a 
+                  href="https://copiq.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-900 text-sm"
+                >
+                  Partner – Copiq
+                </a>
               </li>
             </ul>
           </div>
