@@ -149,7 +149,7 @@ async function getSEOMetaFromRankMath(postUrl: string): Promise<{ seoTitle?: str
 // Fetch a single post by slug
 export async function getPostBySlug(slug: string): Promise<WordPressPost | null> {
   const response = await fetch(`${WP_API_URL}/posts?slug=${slug}&_embed=true`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: false }, // Cache permanently
   });
 
   if (!response.ok) {
@@ -177,7 +177,7 @@ export async function getPostBySlug(slug: string): Promise<WordPressPost | null>
 // Fetch all categories
 export async function getCategories(): Promise<WordPressCategory[]> {
   const response = await fetch(`${WP_API_URL}/categories?per_page=100`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: false }, // Cache permanently
   });
 
   if (!response.ok) {
@@ -190,7 +190,7 @@ export async function getCategories(): Promise<WordPressCategory[]> {
 // Fetch a single category by slug
 export async function getCategoryBySlug(slug: string): Promise<WordPressCategory | null> {
   const response = await fetch(`${WP_API_URL}/categories?slug=${slug}`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: false }, // Cache permanently
   });
 
   if (!response.ok) {
@@ -204,7 +204,7 @@ export async function getCategoryBySlug(slug: string): Promise<WordPressCategory
 // Fetch media by ID
 export async function getMediaById(id: number): Promise<WordPressMedia | null> {
   const response = await fetch(`${WP_API_URL}/media/${id}`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: false }, // Cache permanently
   });
 
   if (!response.ok) {
@@ -217,7 +217,7 @@ export async function getMediaById(id: number): Promise<WordPressMedia | null> {
 // Get all post slugs for static generation
 export async function getAllPostSlugs(): Promise<Array<{ category: string; slug: string }>> {
   const response = await fetch(`${WP_API_URL}/posts?per_page=100&_embed=true`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: false }, // Cache permanently
   });
 
   if (!response.ok) {
@@ -296,7 +296,7 @@ export async function getPages(params?: {
   });
 
   const response = await fetch(`${WP_API_URL}/pages?${searchParams}`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: false }, // Cache permanently
   });
 
   if (!response.ok) {
@@ -396,7 +396,7 @@ export async function getPageSiblings(page: WordPressPage): Promise<WordPressPag
 // Fetch a single page by WordPress slug (for docs mapping)
 export async function getPageByWpSlug(wpSlug: string): Promise<WordPressPage | null> {
   const response = await fetch(`${WP_API_URL}/pages?slug=${wpSlug}&_embed=true`, {
-    next: { revalidate: 3600 },
+    next: { revalidate: false }, // Cache permanently
   });
 
   if (!response.ok) {
