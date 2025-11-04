@@ -1,15 +1,23 @@
 # Content Update Workflow with LLM Schema Generation
 
-## 🎯 How It Works
+## 🎯 How It Works (INCREMENTAL!)
 
-### At Build Time (Vercel Deploy):
-1. **Fetch all posts/pages** from WordPress
+### First Build (One-Time Setup):
+1. **Fetch all posts/pages** from WordPress (130 pages)
 2. **For each page**: Generate LLM-powered schema.org using Claude
-3. **Bake schema into static HTML** (~15-20 min build for 130 pages)
-4. **Deploy** → Pages load instantly with pre-generated schema
+3. **Cache schema** with content hash + modified date
+4. **Bake into static HTML** (~15-20 min for initial build)
+5. **Deploy** → Pages load instantly
+
+### Subsequent Builds (Fast!):
+1. **Fetch all posts/pages** from WordPress
+2. **Check cache** for each page
+3. **Skip regeneration** if content unchanged ✅
+4. **Only generate schema** for new/updated posts 🆕
+5. **Deploy** → Build takes 2-5 min instead of 20 min!
 
 ### After Content Updates:
-When you add/edit content in WordPress, you need to **rebuild the site** to regenerate schema.
+When you add/edit content in WordPress, rebuild triggers automatically (webhook) or manually. **Only changed content regenerates schema!**
 
 ---
 
@@ -111,28 +119,88 @@ jobs:
 
 ---
 
-## ⚡ Build Time Optimization
+## 💾 How the Cache System Works
 
-### Current: ~15-20 minutes (130 pages × ~8s each)
+### Smart Detection:
+The system detects if content changed using **two checks**:
 
-### Ways to Speed Up:
+1. **Modified Date:** Compares WordPress `modified` timestamp
+2. **Content Hash:** MD5 hash of content to detect edits even if date unchanged
 
-#### 1. **Reduce max_tokens** (Faster Claude responses)
-In `lib/claude-api.ts`:
-```typescript
-max_tokens: options?.maxTokens || 2048, // Was 4096
+### Cache Storage:
+- **Location:** `.next/cache/schema/` (local builds) or Vercel build cache
+- **Format:** JSON files with schema + metadata
+- **Persistent:** Survives across deployments (Vercel caches build artifacts)
+
+### Example Flow:
+
+**First Build:**
 ```
-**Saves:** ~2-3 seconds per page = 4-6 minutes total
+Post: "How to optimize Shopify SEO"
+Modified: 2025-11-01
+Content Hash: abc123
 
-#### 2. **Cache schema in WordPress** (Skip regeneration if unchanged)
-Store generated schema in post meta:
-- Only regenerate if post `modified` date > stored schema date
-- **Saves:** 80%+ of API calls for unchanged content
+1. No cache found
+2. Generate schema via Claude API (~8s)
+3. Save to cache: abc123.json
+4. ✅ Schema generated
+```
 
-#### 3. **Priority builds** (Generate schema for popular pages first)
-- Build homepage + top 20 pages with schema
-- Build rest with basic schema
-- Regenerate all on weekly schedule
+**Second Build (No Changes):**
+```
+Post: "How to optimize Shopify SEO"
+Modified: 2025-11-01 (same)
+Content Hash: abc123 (same)
+
+1. Cache found!
+2. Dates match, hash matches
+3. ✅ Use cached schema (instant!)
+4. Skip Claude API = $0.00
+```
+
+**Third Build (Post Updated):**
+```
+Post: "How to optimize Shopify SEO"
+Modified: 2025-11-04 (changed!)
+Content Hash: xyz789 (changed!)
+
+1. Cache found but outdated
+2. Regenerate schema via Claude API (~8s)
+3. Update cache: xyz789.json
+4. ✅ Fresh schema generated
+```
+
+### Force Full Regeneration:
+
+If you need to regenerate ALL schema (e.g., after changing schema template):
+
+**Option 1:** Clear cache via environment variable
+```bash
+# In Vercel, add env var:
+FORCE_SCHEMA_REGENERATION=true
+
+# Or locally:
+npm run build
+```
+
+**Option 2:** Delete cache manually (not recommended for Vercel)
+
+---
+
+## ⚡ Build Time Comparison
+
+### Before Caching:
+- **Every build:** 130 pages × 8s = ~17 minutes
+- **Cost:** $2-4 per build
+- **API calls:** 130 per build
+
+### After Caching (Typical):
+- **New post only:** 1 page × 8s = ~8 seconds
+- **10 posts updated:** 10 pages × 8s = ~80 seconds
+- **Unchanged:** 120 pages = instant (cached)
+- **Total:** ~2-3 minutes
+- **Cost:** $0.02-0.20 (95% savings!)
+- **API calls:** 1-10 per build (99% reduction!)
 
 ---
 

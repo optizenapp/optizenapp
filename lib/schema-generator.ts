@@ -6,6 +6,7 @@
  */
 
 import { getClaudeAPI } from './claude-api';
+import { getCachedSchema, setCachedSchema } from './schema-cache';
 
 export interface ContentAnalysis {
   contentType: 'article' | 'howto' | 'faq' | 'definition' | 'comparison' | 'guide' | 'documentation';
@@ -149,6 +150,19 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
     return generateBasicArticleSchema(input);
   }
   
+  // 🔥 NEW: Check cache first - only regenerate if content changed
+  const cachedSchema = await getCachedSchema(
+    input.url,
+    input.dateModified,
+    input.content
+  );
+  
+  if (cachedSchema) {
+    return cachedSchema; // ✅ Using cached schema - no API call needed!
+  }
+  
+  console.log('🆕 Generating new schema (not in cache or content changed)');
+  
   const analysis = await analyzeContent(input);
   
   if (!analysis) {
@@ -184,10 +198,20 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
   // 5. Organization schema
   schemaGraph.push(buildOrganizationSchema(input.siteInfo));
 
-  return {
+  const schema = {
     '@context': 'https://schema.org',
     '@graph': schemaGraph,
   };
+  
+  // 🔥 NEW: Cache the generated schema for future builds
+  await setCachedSchema(
+    input.url,
+    schema,
+    input.dateModified,
+    input.content
+  );
+  
+  return schema;
 }
 
 function buildArticleSchema(input: SchemaGenerationInput, analysis: ContentAnalysis): object {
