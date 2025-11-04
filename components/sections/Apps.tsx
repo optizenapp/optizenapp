@@ -114,7 +114,7 @@ export default function Apps() {
                   
                   <a
                     href={app.color === "blue" ? "/optizenai-video-upsells-and-bundles" : "/optizenai-seo"}
-                    className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold border-2 border-gray-200 hover:border-gray-300 transition-colors"
+                    className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold border-2 border-gray-400 hover:border-gray-600 transition-colors text-gray-900"
                   >
                     Learn More
                   </a>

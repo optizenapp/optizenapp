@@ -1,0 +1,237 @@
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { getPostBySlug, getCategoryBySlug, getAllPostSlugs } from '@/lib/wordpress';
+import { formatDate, calculateReadingTime } from '@/lib/blog-utils';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import { Clock, Calendar, ArrowLeft } from 'lucide-react';
+
+interface PageProps {
+  params: Promise<{
+    category: string;
+    slug: string;
+  }>;
+}
+
+export async function generateStaticParams() {
+  const slugs = await getAllPostSlugs();
+  return slugs.map(({ category, slug }) => ({
+    category,
+    slug,
+  }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { category, slug } = await params;
+  const post = await getPostBySlug(slug);
+
+  if (!post) {
+    return {
+      title: 'Post Not Found',
+    };
+  }
+
+  const categoryData = await getCategoryBySlug(category);
+  const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+
+  return {
+    title: `${post.title.rendered} | OptizenApp Blog`,
+    description: post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160),
+    keywords: [categoryData?.name || '', 'Shopify', 'SEO', 'Video Upsell', 'E-commerce'],
+    authors: [{ name: post._embedded?.author?.[0]?.name || 'OptizenApp' }],
+    openGraph: {
+      title: post.title.rendered,
+      description: post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160),
+      type: 'article',
+      publishedTime: post.date,
+      modifiedTime: post.modified,
+      images: featuredImage ? [{ url: featuredImage }] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title.rendered,
+      description: post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160),
+      images: featuredImage ? [featuredImage] : [],
+    },
+  };
+}
+
+export default async function BlogPost({ params }: PageProps) {
+  const { category, slug } = await params;
+  const post = await getPostBySlug(slug);
+
+  if (!post) {
+    notFound();
+  }
+
+  const categoryData = await getCategoryBySlug(category);
+  const featuredImage = post._embedded?.['wp:featuredmedia']?.[0];
+  const authorName = post._embedded?.author?.[0]?.name || 'OptizenApp';
+  const readingTime = calculateReadingTime(post.content.rendered);
+
+  // JSON-LD structured data
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title.rendered,
+    image: featuredImage ? [featuredImage.source_url] : [],
+    datePublished: post.date,
+    dateModified: post.modified,
+    author: {
+      '@type': 'Person',
+      name: authorName,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'OptizenApp',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://optizenapp.com/optizen-logo.png',
+      },
+    },
+    description: post.excerpt.rendered.replace(/<[^>]*>/g, ''),
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
+      <div className="min-h-screen flex flex-col bg-white">
+        <Header />
+        
+        <main className="flex-1">
+          {/* Breadcrumbs */}
+          <div className="bg-gray-50 border-b border-gray-200">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+              <nav className="flex items-center space-x-2 text-sm">
+                <Link href="/" className="text-gray-500 hover:text-optizen-blue-500 transition-colors">
+                  Home
+                </Link>
+                <span className="text-gray-400">/</span>
+                <Link 
+                  href={`/${category}`} 
+                  className="text-gray-500 hover:text-optizen-blue-500 transition-colors capitalize"
+                >
+                  {categoryData?.name || category}
+                </Link>
+                <span className="text-gray-400">/</span>
+                <span className="text-gray-900 font-medium">
+                  {post.title.rendered}
+                </span>
+              </nav>
+            </div>
+          </div>
+
+          {/* Article Header */}
+          <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            {/* Back Link */}
+            <Link 
+              href={`/${category}`}
+              className="inline-flex items-center text-optizen-blue-500 hover:text-optizen-blue-600 transition-colors mb-8"
+            >
+              <ArrowLeft className="mr-2" size={20} />
+              Back to {categoryData?.name || 'Blog'}
+            </Link>
+
+            {/* Category Badge */}
+            {categoryData && (
+              <Link
+                href={`/${category}`}
+                className="inline-block px-4 py-2 bg-optizen-blue-100 text-optizen-blue-600 rounded-full text-sm font-semibold mb-6 hover:bg-optizen-blue-200 transition-colors"
+              >
+                {categoryData.name}
+              </Link>
+            )}
+
+            {/* Title */}
+            <h1 
+              className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+              dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+            />
+
+            {/* Meta Info */}
+            <div className="flex flex-wrap items-center gap-6 text-gray-600 mb-8 pb-8 border-b border-gray-200">
+              <div className="flex items-center">
+                <Calendar size={18} className="mr-2" />
+                <time dateTime={post.date}>{formatDate(post.date)}</time>
+              </div>
+              <div className="flex items-center">
+                <Clock size={18} className="mr-2" />
+                <span>{readingTime} min read</span>
+              </div>
+              <div className="flex items-center">
+                <span className="text-sm">By {authorName}</span>
+              </div>
+            </div>
+
+            {/* Featured Image */}
+            {featuredImage && (
+              <div className="relative w-full aspect-video mb-12 rounded-2xl overflow-hidden">
+                <Image
+                  src={featuredImage.source_url}
+                  alt={featuredImage.alt_text || post.title.rendered}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            )}
+
+            {/* Article Content */}
+            <div 
+              className="prose prose-lg max-w-none
+                prose-headings:font-bold prose-headings:text-gray-900
+                prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
+                prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
+                prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-6
+                prose-a:text-optizen-blue-500 prose-a:no-underline hover:prose-a:text-optizen-blue-600 hover:prose-a:underline
+                prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6
+                prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6
+                prose-li:text-gray-700 prose-li:mb-2
+                prose-strong:text-gray-900 prose-strong:font-semibold
+                prose-img:rounded-xl prose-img:shadow-lg
+                prose-blockquote:border-l-4 prose-blockquote:border-optizen-blue-400 prose-blockquote:pl-6 prose-blockquote:italic
+                prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
+                prose-table:w-full prose-table:border-collapse
+                prose-th:bg-gray-100 prose-th:p-3 prose-th:text-left prose-th:font-semibold
+                prose-td:p-3 prose-td:border-t prose-td:border-gray-200"
+              dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+            />
+
+            {/* CTA Section */}
+            <div className="mt-16 p-8 bg-gradient-to-br from-optizen-blue-50 to-optizen-green-50 rounded-2xl border-2 border-optizen-blue-100">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Ready to Boost Your Shopify Store?
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Increase revenue with video upsells and dominate search rankings with AI-powered SEO.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/optizenai-video-upsells-and-bundles"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold bg-optizen-blue-500 text-white hover:bg-optizen-blue-600 transition-colors"
+                >
+                  Try Video Upsell
+                </Link>
+                <Link
+                  href="/optizenai-seo"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold bg-optizen-green-500 text-white hover:bg-optizen-green-600 transition-colors"
+                >
+                  Try SEO Tools
+                </Link>
+              </div>
+            </div>
+          </article>
+        </main>
+
+        <Footer />
+      </div>
+    </>
+  );
+}
+
