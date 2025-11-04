@@ -89,7 +89,8 @@ export async function getPosts(params?: {
 // Helper function to get SEO meta from Rank Math API or scrape from HTML
 async function getSEOMetaFromRankMath(postUrl: string): Promise<{ seoTitle?: string; seoDescription?: string }> {
   // Try Rank Math REST API first (if Headless CMS Support is enabled)
-  const rankMathApiUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-json/rankmath/v1/getMeta?url=${encodeURIComponent(postUrl)}`;
+  // Using correct endpoint: /wp-json/rankmath/v1/getHead
+  const rankMathApiUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-json/rankmath/v1/getHead?url=${encodeURIComponent(postUrl)}`;
   
   try {
     const apiResponse = await fetch(rankMathApiUrl, {
@@ -99,13 +100,17 @@ async function getSEOMetaFromRankMath(postUrl: string): Promise<{ seoTitle?: str
     if (apiResponse.ok) {
       const data = await apiResponse.json();
       
-      // Rank Math API returns the full HTML head content
-      if (data.head) {
-        const titleMatch = data.head.match(/<title>([^<]+)<\/title>/i);
+      // Rank Math API returns success: true and head: "HTML meta tags"
+      if (data.success && data.head) {
+        // Rank Math doesn't include <title> tag, so we use og:title or twitter:title
+        const ogTitleMatch = data.head.match(/<meta\s+property="og:title"\s+content="([^"]+)"/i);
+        const twitterTitleMatch = data.head.match(/<meta\s+name="twitter:title"\s+content="([^"]+)"/i);
         const descMatch = data.head.match(/<meta\s+name="description"\s+content="([^"]+)"/i);
         
+        const seoTitle = ogTitleMatch?.[1] || twitterTitleMatch?.[1];
+        
         return {
-          seoTitle: titleMatch ? titleMatch[1] : undefined,
+          seoTitle: seoTitle,
           seoDescription: descMatch ? descMatch[1] : undefined,
         };
       }
