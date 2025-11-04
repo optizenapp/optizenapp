@@ -86,6 +86,34 @@ export async function getPosts(params?: {
   return { posts, totalPages, totalPosts };
 }
 
+// Helper function to scrape SEO meta from page HTML
+async function scrapeSEOMetaFromHTML(url: string): Promise<{ seoTitle?: string; seoDescription?: string }> {
+  try {
+    const response = await fetch(url, {
+      next: { revalidate: 3600 },
+    });
+
+    if (!response.ok) {
+      return {};
+    }
+
+    const html = await response.text();
+    
+    // Extract SEO title from meta tags (Rank Math, Yoast, or default)
+    const titleMatch = html.match(/<meta\s+(?:property="og:title"|name="twitter:title")\s+content="([^"]+)"/i);
+    const seoTitle = titleMatch ? titleMatch[1] : undefined;
+    
+    // Extract SEO description from meta tags
+    const descMatch = html.match(/<meta\s+name="description"\s+content="([^"]+)"/i);
+    const seoDescription = descMatch ? descMatch[1] : undefined;
+
+    return { seoTitle, seoDescription };
+  } catch (error) {
+    console.error('Error scraping SEO meta:', error);
+    return {};
+  }
+}
+
 // Fetch a single post by slug
 export async function getPostBySlug(slug: string): Promise<WordPressPost | null> {
   const response = await fetch(`${WP_API_URL}/posts?slug=${slug}&_embed=true`, {
@@ -97,7 +125,21 @@ export async function getPostBySlug(slug: string): Promise<WordPressPost | null>
   }
 
   const posts = await response.json();
-  return posts[0] || null;
+  const post = posts[0] || null;
+
+  if (post) {
+    // Get category for URL construction
+    const category = post._embedded?.['wp:term']?.[0]?.[0]?.slug || 'uncategorized';
+    const postUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/${category}/${slug}/`;
+    
+    // Scrape SEO meta from actual page HTML
+    const seoMeta = await scrapeSEOMetaFromHTML(postUrl);
+    
+    // Attach SEO meta to post object
+    (post as any).seoMeta = seoMeta;
+  }
+
+  return post;
 }
 
 // Fetch all categories

@@ -36,14 +36,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const categoryData = await getCategoryBySlug(category);
   const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
 
+  // Use Rank Math SEO title if available, otherwise fall back to post title
+  const seoTitle = (post as any).seoMeta?.seoTitle || post.title.rendered;
+  const seoDescription = (post as any).seoMeta?.seoDescription || post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160);
+
   return {
-    title: `${post.title.rendered} | OptizenApp Blog`,
-    description: post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160),
+    title: seoTitle.includes('|') ? seoTitle : `${seoTitle} | OptizenApp Blog`,
+    description: seoDescription,
     keywords: [categoryData?.name || '', 'Shopify', 'SEO', 'Video Upsell', 'E-commerce'],
     authors: [{ name: post._embedded?.author?.[0]?.name || 'OptizenApp' }],
     openGraph: {
-      title: post.title.rendered,
-      description: post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160),
+      title: seoTitle,
+      description: seoDescription,
       type: 'article',
       publishedTime: post.date,
       modifiedTime: post.modified,
@@ -51,8 +55,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: 'summary_large_image',
-      title: post.title.rendered,
-      description: post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160),
+      title: seoTitle,
+      description: seoDescription,
       images: featuredImage ? [featuredImage] : [],
     },
   };
