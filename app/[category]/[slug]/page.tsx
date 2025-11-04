@@ -6,6 +6,7 @@ import { getPostBySlug, getCategoryBySlug, getAllPostSlugs } from '@/lib/wordpre
 import { formatDate, calculateReadingTime } from '@/lib/blog-utils';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import FloatingCTA from '@/components/ui/FloatingCTA';
 import { Clock, Calendar, ArrowLeft } from 'lucide-react';
 
 interface PageProps {
@@ -107,6 +108,7 @@ export default async function BlogPost({ params }: PageProps) {
       
       <div className="min-h-screen flex flex-col bg-white">
         <Header />
+        <FloatingCTA />
         
         <main className="flex-1 pt-16">
           {/* Breadcrumbs */}
