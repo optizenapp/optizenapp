@@ -35,13 +35,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  // Custom descriptions for SEO
+  const categoryDescriptions: Record<string, string> = {
+    'aov': 'Discover proven strategies to increase your Average Order Value (AOV) and boost revenue without spending more on customer acquisition. Learn about product bundling, upselling techniques, and optimization tactics.',
+    'shopify-questions': 'Get answers to common Shopify questions and learn best practices for managing your store. From setup to optimization, find expert guidance for all your Shopify needs.',
+    'ai-prompts': 'Master the art of AI prompting for e-commerce. Learn how to create effective prompts for product descriptions, SEO content, and customer engagement using advanced AI techniques.',
+    'shopify-seo': 'Optimize your Shopify store for search engines with expert SEO tips, best practices, and strategies. Learn how to rank higher and drive more organic traffic to your store.',
+    'optizen-ai': 'Explore how OptizenAI can help you automate and optimize your Shopify store. Learn about AI-powered SEO tools, content generation, and advanced features to grow your business.',
+    'content': 'Content marketing strategies and tips for e-commerce stores. Learn how to create compelling content that drives traffic, engages customers, and increases conversions.',
+    'optizen': 'Updates, tutorials, and insights about Optizen apps. Stay informed about new features, best practices, and success stories from other Shopify merchants.',
+    'silos': 'Learn about SEO siloing strategies to organize your content and improve search rankings. Discover how to create structured category hierarchies for better SEO performance.',
+    'stats': 'E-commerce statistics, data insights, and analytics to help you make informed decisions. Understand industry benchmarks and key performance metrics for your store.',
+  };
+
+  const customDescription = categoryDescriptions[category] || categoryData.description || `Read all articles about ${categoryData.name} on the OptizenApp blog. Learn about Shopify SEO, video upsells, and e-commerce growth strategies.`;
+
   return {
     title: `${categoryData.name} | OptizenApp Blog`,
-    description: categoryData.description || `Read all articles about ${categoryData.name} on the OptizenApp blog. Learn about Shopify SEO, video upsells, and e-commerce growth strategies.`,
+    description: customDescription,
     keywords: [categoryData.name, 'Shopify', 'SEO', 'Video Upsell', 'E-commerce'],
     openGraph: {
       title: `${categoryData.name} | OptizenApp Blog`,
-      description: categoryData.description || `Articles about ${categoryData.name}`,
+      description: customDescription,
       type: 'website',
     },
   };
@@ -58,6 +73,21 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
     notFound();
   }
 
+  // Custom descriptions for each category
+  const categoryDescriptions: Record<string, string> = {
+    'aov': 'Discover proven strategies to increase your Average Order Value (AOV) and boost revenue without spending more on customer acquisition. Learn about product bundling, upselling techniques, and optimization tactics.',
+    'shopify-questions': 'Get answers to common Shopify questions and learn best practices for managing your store. From setup to optimization, find expert guidance for all your Shopify needs.',
+    'ai-prompts': 'Master the art of AI prompting for e-commerce. Learn how to create effective prompts for product descriptions, SEO content, and customer engagement using advanced AI techniques.',
+    'shopify-seo': 'Optimize your Shopify store for search engines with expert SEO tips, best practices, and strategies. Learn how to rank higher and drive more organic traffic to your store.',
+    'optizen-ai': 'Explore how OptizenAI can help you automate and optimize your Shopify store. Learn about AI-powered SEO tools, content generation, and advanced features to grow your business.',
+    'content': 'Content marketing strategies and tips for e-commerce stores. Learn how to create compelling content that drives traffic, engages customers, and increases conversions.',
+    'optizen': 'Updates, tutorials, and insights about Optizen apps. Stay informed about new features, best practices, and success stories from other Shopify merchants.',
+    'silos': 'Learn about SEO siloing strategies to organize your content and improve search rankings. Discover how to create structured category hierarchies for better SEO performance.',
+    'stats': 'E-commerce statistics, data insights, and analytics to help you make informed decisions. Understand industry benchmarks and key performance metrics for your store.',
+  };
+
+  const customDescription = categoryDescriptions[category] || categoryData.description;
+
   const { posts, totalPages, totalPosts } = await getPosts({
     categories: categoryData.id,
     per_page: 12,
@@ -68,7 +98,7 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
       
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
         {/* Breadcrumbs */}
         <div className="bg-gray-50 border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -94,12 +124,12 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
             <h1 className="text-5xl font-bold text-gray-900 mb-4">
               {categoryData.name}
             </h1>
-            {categoryData.description && (
-              <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                {categoryData.description}
+            {customDescription && (
+              <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-4 leading-relaxed">
+                {customDescription}
               </p>
             )}
-            <p className="text-gray-600 mt-4">
+            <p className="text-gray-600">
               {totalPosts} {totalPosts === 1 ? 'article' : 'articles'}
             </p>
           </div>
@@ -157,7 +187,7 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
                         />
 
                         {/* Excerpt */}
-                        <p className="text-gray-700 mb-4 line-clamp-3">
+                        <p className="text-gray-900 mb-4 line-clamp-3">
                           {excerpt}
                         </p>
 

@@ -37,7 +37,22 @@ export default async function BlogPage({ searchParams }: PageProps) {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
       
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
+        {/* Breadcrumbs */}
+        <div className="bg-gray-50 border-b border-gray-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <nav className="flex items-center space-x-2 text-sm">
+              <Link href="/" className="text-gray-500 hover:text-optizen-blue-500 transition-colors">
+                Home
+              </Link>
+              <span className="text-gray-400">/</span>
+              <span className="text-gray-900 font-medium">
+                Blog
+              </span>
+            </nav>
+          </div>
+        </div>
+
         {/* Hero Section */}
         <div className="bg-gradient-to-br from-optizen-blue-50 to-optizen-green-50 py-20 border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -64,7 +79,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
                 <Link
                   key={category.id}
                   href={`/${category.slug}`}
-                  className="px-6 py-2 rounded-full font-semibold border-2 border-gray-200 hover:border-optizen-blue-500 hover:text-optizen-blue-500 transition-colors"
+                  className="px-6 py-2 rounded-full font-semibold border-2 border-gray-400 text-gray-900 hover:border-optizen-blue-500 hover:text-optizen-blue-500 transition-colors"
                 >
                   {category.name} ({category.count})
                 </Link>
@@ -139,7 +154,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
                         />
 
                         {/* Excerpt */}
-                        <p className="text-gray-700 mb-4 line-clamp-3">
+                        <p className="text-gray-900 mb-4 line-clamp-3">
                           {excerpt}
                         </p>
 

@@ -104,7 +104,7 @@ export default async function BlogPost({ params }: PageProps) {
       <div className="min-h-screen flex flex-col bg-white">
         <Header />
         
-        <main className="flex-1">
+        <main className="flex-1 pt-16">
           {/* Breadcrumbs */}
           <div className="bg-gray-50 border-b border-gray-200">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -129,24 +129,26 @@ export default async function BlogPost({ params }: PageProps) {
 
           {/* Article Header */}
           <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            {/* Back Link */}
-            <Link 
-              href={`/${category}`}
-              className="inline-flex items-center text-optizen-blue-500 hover:text-optizen-blue-600 transition-colors mb-8"
-            >
-              <ArrowLeft className="mr-2" size={20} />
-              Back to {categoryData?.name || 'Blog'}
-            </Link>
-
-            {/* Category Badge */}
-            {categoryData && (
-              <Link
+            {/* Back Link & Category Badge */}
+            <div className="flex items-center gap-4 mb-8">
+              <Link 
                 href={`/${category}`}
-                className="inline-block px-4 py-2 bg-optizen-blue-100 text-optizen-blue-600 rounded-full text-sm font-semibold mb-6 hover:bg-optizen-blue-200 transition-colors"
+                className="inline-flex items-center text-optizen-blue-500 hover:text-optizen-blue-600 transition-colors"
               >
-                {categoryData.name}
+                <ArrowLeft className="mr-2" size={20} />
+                Back to {categoryData?.name || 'Blog'}
               </Link>
-            )}
+
+              {/* Category Badge */}
+              {categoryData && (
+                <Link
+                  href={`/${category}`}
+                  className="inline-block px-4 py-2 bg-optizen-blue-100 text-optizen-blue-600 rounded-full text-sm font-semibold hover:bg-optizen-blue-200 transition-colors"
+                >
+                  {categoryData.name}
+                </Link>
+              )}
+            </div>
 
             {/* Title */}
             <h1 
@@ -188,18 +190,15 @@ export default async function BlogPost({ params }: PageProps) {
                 prose-headings:font-bold prose-headings:text-gray-900
                 prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
                 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
-                prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-6
-                prose-a:text-optizen-blue-500 prose-a:no-underline hover:prose-a:text-optizen-blue-600 hover:prose-a:underline
-                prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6
-                prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6
-                prose-li:text-gray-700 prose-li:mb-2
+                prose-p:text-gray-900 prose-p:leading-relaxed
+                prose-a:text-optizen-blue-500 prose-a:font-medium hover:prose-a:text-optizen-blue-600 hover:prose-a:underline
+                prose-li:text-gray-900
                 prose-strong:text-gray-900 prose-strong:font-semibold
                 prose-img:rounded-xl prose-img:shadow-lg
-                prose-blockquote:border-l-4 prose-blockquote:border-optizen-blue-400 prose-blockquote:pl-6 prose-blockquote:italic
-                prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
-                prose-table:w-full prose-table:border-collapse
-                prose-th:bg-gray-100 prose-th:p-3 prose-th:text-left prose-th:font-semibold
-                prose-td:p-3 prose-td:border-t prose-td:border-gray-200"
+                prose-blockquote:border-l-4 prose-blockquote:border-optizen-blue-400 prose-blockquote:text-gray-900
+                prose-table:border-collapse prose-table:w-full
+                prose-th:bg-gray-100 prose-th:font-semibold prose-th:text-gray-900
+                prose-td:text-gray-900"
               dangerouslySetInnerHTML={{ __html: post.content.rendered }}
             />
 
