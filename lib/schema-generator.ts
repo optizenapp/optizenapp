@@ -63,9 +63,11 @@ export async function analyzeContent(input: SchemaGenerationInput): Promise<Cont
   const claude = getClaudeAPI();
   
   if (!claude.isConfigured()) {
-    console.log('⚠️  Claude not configured, skipping content analysis');
+    console.log('⚠️  Claude not configured, skipping content analysis for:', input.url);
     return null;
   }
+  
+  console.log('🔍 Analyzing content for schema generation:', input.url);
 
   // Strip HTML tags for analysis (keep structure)
   const plainText = input.content
@@ -131,6 +133,7 @@ Return ONLY the JSON, nothing else.`;
     // Parse the JSON response
     const cleaned = response.trim().replace(/```json\n?/g, '').replace(/```\n?/g, '');
     const analysis: ContentAnalysis = JSON.parse(cleaned);
+    console.log('✅ Content analysis complete:', input.url, '- Type:', analysis.contentType);
     
     return analysis;
   } catch (error) {

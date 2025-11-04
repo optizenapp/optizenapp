@@ -31,6 +31,8 @@ export class ClaudeAPI {
     
     if (!this.apiKey) {
       console.warn('⚠️  ANTHROPIC_API_KEY not set. Schema generation will be skipped.');
+    } else {
+      console.log('✅ ANTHROPIC_API_KEY configured, schema generation enabled');
     }
   }
 
