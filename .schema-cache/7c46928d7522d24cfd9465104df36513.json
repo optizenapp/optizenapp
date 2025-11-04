@@ -1,0 +1,126 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking#howto",
+        "name": "Update Shopify Products At Scale Including Internal Linking In Descriptions &#8211; AI Prompt",
+        "description": "<p>The following is the process to use the &#8220;Reword HTML Product Description With Features &amp; Internal Links&#8221; prompt that is available in the Optizen AI public prompt repository. The Prompt Where To Use This AI Prompt This prompt is specific to the product description of Shopify products. You can can use the prompt in it&#8217;s [&hellip;]</p>\n",
+        "image": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2023/10/Updating-Shopify-products-at-scale-with-internal-linking-option.png",
+        "totalTime": "PT8M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Prepare Internal Links",
+            "text": "Export the products you want to use as internal links from the Shopify product dashboard. Create html links with anchor text with some G sheet magic. Copy and paste the html links into the prompt."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Navigate to Product Tab",
+            "text": "Navigate to the product tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Select Prompt",
+            "text": "Select the Reword HTML Product Description With Features & Internal Links from the drop down under the Product Description prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for Update this section. Then click Proceed."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Execute and Review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where to use this AI prompt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This prompt is specific to the product description of Shopify products. You can use the prompt in its raw form from the repository, and then replace the sections in square brackets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When to use this prompt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This prompt can be used for any product in your Shopify store using the Optizen AI app if you want a more advanced AI prompt to update product descriptions. This is particularly handy if you are wanting a programmatic way to add internal links in the body content of the product description."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking#term-0",
+        "name": "Internal Links",
+        "description": "HTML links that connect to other pages within the same website, used for SEO and user navigation"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking#term-1",
+        "name": "Anchor Text",
+        "description": "The clickable text in a hyperlink that describes the linked page"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking#term-2",
+        "name": "HTML Tags",
+        "description": "Markup elements used to structure and format web content"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking",
+        "url": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking",
+        "name": "Update Shopify Products At Scale Including Internal Linking In Descriptions &#8211; AI Prompt",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "optizen-ai",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Update Shopify Products At Scale Including Internal Linking In Descriptions &#8211; AI Prompt",
+              "item": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:46:18.054Z",
+  "contentModified": "2023-11-23T03:51:31",
+  "contentHash": "79212f64ac85de4249eb87e79f5186b6"
+}

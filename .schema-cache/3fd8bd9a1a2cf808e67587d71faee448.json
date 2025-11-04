@@ -1,0 +1,80 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai-feature-requests#article",
+        "headline": "Optizen AI Feature Requests",
+        "description": "<p>  Optizen AI Feature Requests If you have a feature you&#8217;d like added to Optizen AI, please fill in the form below:</p>\n",
+        "datePublished": "2023-10-18T05:56:19",
+        "dateModified": "2023-10-18T05:59:12",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/optizen-ai-feature-requests"
+        },
+        "keywords": "Optizen AI, feature requests, AI software, user feedback, product enhancement, form submission",
+        "about": [
+          {
+            "@type": "Product",
+            "name": "Optizen AI",
+            "description": "AI software product that accepts feature requests from users"
+          },
+          {
+            "@type": "Concept",
+            "name": "Feature Requests",
+            "description": "User suggestions for new functionality to be added to the software"
+          }
+        ],
+        "timeRequired": "PT1M"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai-feature-requests",
+        "url": "https://optizenapp.com/optizen-ai-feature-requests",
+        "name": "Optizen AI Feature Requests",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI Feature Requests",
+              "item": "https://optizenapp.com/optizen-ai-feature-requests"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:49:39.907Z",
+  "contentModified": "2023-10-18T05:59:12",
+  "contentHash": "a8db0741a0f1847d7e3ccc81a49fd52a"
+}

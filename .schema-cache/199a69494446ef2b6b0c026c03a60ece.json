@@ -1,0 +1,128 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/ai-prompts/shopify-product-descriptions-with-ai#howto",
+        "name": "Using ChatGPT &#038; AI To Re-Write Shopify Product Descriptions &#038; SEO Meta Information In Bulk &#038; At Scale",
+        "description": "<p>One of the most time consuming tasks for any Shopify or e-commerce store owner is writing product descriptions. This has all changed since ChatGPT made it super simple for anyone to create product descriptions fast. But what if you have an exiting Shopify store and you want to re-write all your existing product descriptions and [&hellip;]</p>\n",
+        "image": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2023/06/Shopify-product-descriptions.png",
+        "totalTime": "PT12M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Set up required tools",
+            "text": "Get a paid OpenAI account, install GPT For Sheets addon, and set up API access"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Export Shopify products",
+            "text": "Download products from Shopify as CSV file, focusing on Title and Body (HTML) columns"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Set up Google Sheet template",
+            "text": "Create a copy of the template with FILE and PROMPTS tabs, ensure GPT For Sheets is active"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Copy product data",
+            "text": "Transfer existing Shopify product titles and descriptions from CSV to Google Sheet"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Generate new content",
+            "text": "Use formulas from PROMPTS tab to generate new titles, descriptions, SEO titles and SEO descriptions"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Replace content in CSV",
+            "text": "Copy the AI-generated content back to the original CSV file, maintaining proper column headers"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Import to Shopify",
+            "text": "Upload the updated CSV file back to Shopify to update all product information"
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/ai-prompts/shopify-product-descriptions-with-ai#term-0",
+        "name": "GPT For Sheets",
+        "description": "A Google Sheets addon that enables ChatGPT functionality within spreadsheets for bulk data processing"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/ai-prompts/shopify-product-descriptions-with-ai#term-1",
+        "name": "SEO Meta Information",
+        "description": "Search engine optimization metadata including SEO title and description for product pages"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/ai-prompts/shopify-product-descriptions-with-ai#term-2",
+        "name": "Body (HTML)",
+        "description": "The main product description content stored in HTML format in Shopify"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/ai-prompts/shopify-product-descriptions-with-ai#term-3",
+        "name": "API Key",
+        "description": "Authentication credential required to access OpenAI's services programmatically"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/ai-prompts/shopify-product-descriptions-with-ai",
+        "url": "https://optizenapp.com/ai-prompts/shopify-product-descriptions-with-ai",
+        "name": "Using ChatGPT &#038; AI To Re-Write Shopify Product Descriptions &#038; SEO Meta Information In Bulk &#038; At Scale",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "ai-prompts",
+              "item": "https://optizenapp.com/ai-prompts"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Using ChatGPT &#038; AI To Re-Write Shopify Product Descriptions &#038; SEO Meta Information In Bulk &#038; At Scale",
+              "item": "https://optizenapp.com/ai-prompts/shopify-product-descriptions-with-ai"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:47:22.972Z",
+  "contentModified": "2023-11-23T03:52:35",
+  "contentHash": "fdee77a4f307fa71deb4d47ce90ccaed"
+}

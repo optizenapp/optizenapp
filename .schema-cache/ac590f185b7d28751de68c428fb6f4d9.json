@@ -1,0 +1,80 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/updating-products-with-optizen-ai#article",
+        "headline": "Updating Product With Optizen AI",
+        "description": "<p>  Updating Products With Optizen AI   Back To Main Document Page</p>\n",
+        "datePublished": "2023-10-20T04:32:46",
+        "dateModified": "2024-05-21T04:33:09",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/updating-products-with-optizen-ai"
+        },
+        "keywords": "Optizen AI, product updates, AI, product management, documentation",
+        "about": [
+          {
+            "@type": "Product",
+            "name": "Optizen AI",
+            "description": "AI-powered product management tool"
+          },
+          {
+            "@type": "Concept",
+            "name": "Product Updates",
+            "description": "Process of modifying product information"
+          }
+        ],
+        "timeRequired": "PT2M"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/updating-products-with-optizen-ai",
+        "url": "https://optizenapp.com/updating-products-with-optizen-ai",
+        "name": "Updating Product With Optizen AI",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Updating Product With Optizen AI",
+              "item": "https://optizenapp.com/updating-products-with-optizen-ai"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:49:22.262Z",
+  "contentModified": "2024-05-21T04:33:09",
+  "contentHash": "e201e8a0240610d588d54beadcbfec1f"
+}

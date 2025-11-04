@@ -1,0 +1,107 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/content/how-an-optizen-user-doubled-traffic-increased-revenue#article",
+        "headline": "Shopify Store Doubles Traffic &amp; Increases Revenue Using Optizen",
+        "description": "<p>Below is a recent update on a site using Optizen, and the impact a simple change and a simple Optizen feature made to this Shopify store &#8211; doubling traffic and increasing revenue. The process is so simple, and still so powerful today.</p>\n",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2024/09/incresaing-traffic-and-revenue-with-Optizen.jpeg",
+          "width": 1280,
+          "height": 720
+        },
+        "datePublished": "2024-09-18T03:26:06",
+        "dateModified": "2024-09-18T03:34:41",
+        "author": {
+          "@type": "Person",
+          "name": "OptizenAI Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/content/how-an-optizen-user-doubled-traffic-increased-revenue"
+        },
+        "articleSection": "content",
+        "keywords": "Optizen, Shopify, traffic, revenue, e-commerce, optimization, website, store, doubling, increase",
+        "about": [
+          {
+            "@type": "Product",
+            "name": "Optizen",
+            "description": "A tool or service that helps optimize websites and increase traffic"
+          },
+          {
+            "@type": "Thing",
+            "name": "Shopify Store",
+            "description": "An e-commerce store built on the Shopify platform"
+          },
+          {
+            "@type": "Concept",
+            "name": "Traffic Doubling",
+            "description": "The achievement of doubling website visitor numbers"
+          },
+          {
+            "@type": "Concept",
+            "name": "Revenue Increase",
+            "description": "The improvement in financial earnings from the store"
+          }
+        ],
+        "timeRequired": "PT2M"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/content/how-an-optizen-user-doubled-traffic-increased-revenue",
+        "url": "https://optizenapp.com/content/how-an-optizen-user-doubled-traffic-increased-revenue",
+        "name": "Shopify Store Doubles Traffic &amp; Increases Revenue Using Optizen",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "content",
+              "item": "https://optizenapp.com/content"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Shopify Store Doubles Traffic &amp; Increases Revenue Using Optizen",
+              "item": "https://optizenapp.com/content/how-an-optizen-user-doubled-traffic-increased-revenue"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:42:15.505Z",
+  "contentModified": "2024-09-18T03:34:41",
+  "contentHash": "6a2b179e7715fc2f2da8163d251d9f0f"
+}

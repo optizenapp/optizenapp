@@ -1,0 +1,103 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/affiliate-program#article",
+        "headline": "Affiliate Program",
+        "description": "<p>  Joint The OptizenAI Affiliate Program Back To Main Document Page Anyone is welcome to join the OptizenAI affiliate program. Program Details: 25% recurring commissions for the life of installed app 25% on AI usage plans $50 payout threshold   Terms 1. Overview This Agreement contains the complete terms and conditions that apply to you [&hellip;]</p>\n",
+        "datePublished": "2024-07-17T05:25:11",
+        "dateModified": "2024-07-17T05:27:47",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/affiliate-program"
+        },
+        "keywords": "affiliate program, commission, ShareASale, OptizenAI, recurring commissions, affiliate marketing, HTML linking, trademark, PPC campaigns, affiliate network",
+        "about": [
+          {
+            "@type": "Product",
+            "name": "OptizenAI Affiliate Program",
+            "description": "An affiliate marketing program offering 25% recurring commissions for life of installed app and AI usage plans"
+          },
+          {
+            "@type": "Thing",
+            "name": "ShareASale.com",
+            "description": "Third-party affiliate network that handles tracking and payment for the program"
+          },
+          {
+            "@type": "Product",
+            "name": "Optizenapp.com",
+            "description": "The main website and service offering AI-related applications"
+          }
+        ],
+        "timeRequired": "PT12M"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/affiliate-program#term-0",
+        "name": "Parasiteware",
+        "description": "An application that causes overwriting of affiliate commission tracking cookies through means other than customer-initiated clicks"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/affiliate-program#term-1",
+        "name": "Licensed Materials",
+        "description": "Logos, trade names, trademarks, and similar identifying material provided by Optizenapp.com for affiliate use"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/affiliate-program#term-2",
+        "name": "Affiliate Obligations",
+        "description": "Terms and conditions that affiliates must follow including site content restrictions and proper link usage"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/affiliate-program",
+        "url": "https://optizenapp.com/affiliate-program",
+        "name": "Affiliate Program",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Affiliate Program",
+              "item": "https://optizenapp.com/affiliate-program"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:48:29.400Z",
+  "contentModified": "2024-07-17T05:27:47",
+  "contentHash": "2ff43f799c776d8cde32000262b80eda"
+}

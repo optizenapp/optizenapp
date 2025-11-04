@@ -1,0 +1,90 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/updating-collections-tag-page-with-ai#article",
+        "headline": "Updating Collections &#038; Tag Page With AI",
+        "description": "<p>Updating Collections &amp; Tag Pages With AI Back To Main Document Page</p>\n",
+        "datePublished": "2024-08-21T05:19:27",
+        "dateModified": "2024-08-21T05:19:27",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/updating-collections-tag-page-with-ai"
+        },
+        "keywords": "collections, tag pages, AI, updating, optimization, content management, automation, web development",
+        "about": [
+          {
+            "@type": "Concept",
+            "name": "Collections",
+            "description": "Organized groupings of content or items"
+          },
+          {
+            "@type": "Concept",
+            "name": "Tag Pages",
+            "description": "Pages that organize content by specific tags or labels"
+          },
+          {
+            "@type": "Concept",
+            "name": "AI",
+            "description": "Artificial Intelligence technology for automation"
+          },
+          {
+            "@type": "Product",
+            "name": "OptizenApp",
+            "description": "Application or platform for optimization"
+          }
+        ],
+        "timeRequired": "PT2M"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/updating-collections-tag-page-with-ai",
+        "url": "https://optizenapp.com/updating-collections-tag-page-with-ai",
+        "name": "Updating Collections &#038; Tag Page With AI",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Updating Collections &#038; Tag Page With AI",
+              "item": "https://optizenapp.com/updating-collections-tag-page-with-ai"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:47:52.810Z",
+  "contentModified": "2024-08-21T05:19:27",
+  "contentHash": "f3b0a0a25a2583939b4dfff37f16e837"
+}

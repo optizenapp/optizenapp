@@ -1,0 +1,151 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/support-docs#article",
+        "headline": "Support Docs",
+        "description": "<p>Documentation &amp; Tutorials Please note, for Optizen AI FREE &amp; Optizen AI, once installed via the Shopify app store, you can begin using the features of these plans immediately. For Optizen AI Pro and Optizen AI Enterprise, please see the installation procedures below. If you have any feature requests, go here: Feature Requests (ADD YOUR REQUEST) [&hellip;]</p>\n",
+        "datePublished": "2022-11-20T09:01:59",
+        "dateModified": "2024-08-21T05:20:45",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/support-docs"
+        },
+        "keywords": "Optizen, Shopify, AI, optimization, collections, tags, variants, documentation, enterprise, pro",
+        "about": [
+          {
+            "@type": "Product",
+            "name": "Optizen AI",
+            "description": "AI-powered Shopify app for optimizing product content and collections"
+          },
+          {
+            "@type": "Product",
+            "name": "Optizen AI FREE",
+            "description": "Free version of Optizen AI available through Shopify app store"
+          },
+          {
+            "@type": "Product",
+            "name": "Optizen AI Pro",
+            "description": "Professional version of Optizen AI with advanced features"
+          },
+          {
+            "@type": "Product",
+            "name": "Optizen AI Enterprise",
+            "description": "Enterprise version with variant tagger and image thumbnail matcher"
+          },
+          {
+            "@type": "Product",
+            "name": "Shopify",
+            "description": "E-commerce platform integrated with Optizen"
+          },
+          {
+            "@type": "Concept",
+            "name": "Collection Pages",
+            "description": "Shopify product collection pages optimized by Optizen"
+          },
+          {
+            "@type": "Concept",
+            "name": "Tag Pages",
+            "description": "Product tag pages that can be optimized and managed"
+          },
+          {
+            "@type": "Product",
+            "name": "Variant Tagger",
+            "description": "Enterprise feature for tagging product variants"
+          },
+          {
+            "@type": "Product",
+            "name": "Smart Tag Filters",
+            "description": "Feature for filtering products using intelligent tags"
+          }
+        ],
+        "timeRequired": "PT10M"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/support-docs#term-0",
+        "name": "Variant Tagger",
+        "description": "Enterprise feature that automatically tags product variants"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/support-docs#term-1",
+        "name": "Variant Image Thumbnail Matcher",
+        "description": "Enterprise feature that matches thumbnails to product variants"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/support-docs#term-2",
+        "name": "Smart Tag Filters",
+        "description": "Intelligent filtering system for product tags"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/support-docs#term-3",
+        "name": "Collection Pages",
+        "description": "Shopify pages that group related products together"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/support-docs#term-4",
+        "name": "Tag Pages",
+        "description": "Pages that display products with specific tags"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/support-docs#term-5",
+        "name": "Prompt Templates",
+        "description": "Saved AI prompts for consistent content generation"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/support-docs",
+        "url": "https://optizenapp.com/support-docs",
+        "name": "Support Docs",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Support Docs",
+              "item": "https://optizenapp.com/support-docs"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:51:29.235Z",
+  "contentModified": "2024-08-21T05:20:45",
+  "contentHash": "f20607a2f581a46bf85f2e6309f39180"
+}

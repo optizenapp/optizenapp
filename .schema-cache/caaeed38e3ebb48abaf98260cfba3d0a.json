@@ -1,0 +1,128 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles#howto",
+        "name": "ON SALE AI Prompt For SEO Titles",
+        "description": "<p>The following is the process to use the &#8220;Add ON SALE Prefix To SEO Title&#8221; prompt that is available in the Optizen AI public prompt repository. The Prompt Where To Use This AI Prompt This prompt is specific to the SEO title of Shopify products. You can can use the prompt in it&#8217;s raw form [&hellip;]</p>\n",
+        "image": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2023/10/ON-SALE-SEO-Title-AI-Prompt-For-Shopify.png",
+        "totalTime": "PT3M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate and Select Products",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select Prompt and Configure",
+            "text": "Select the 'Add ON SALE Prefix To SEO Title' from the drop down under the SEO title prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Execute and Review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where can this AI prompt be used?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This prompt is specific to the SEO title of Shopify products and can be used in its raw form from the repository or edited for specific use cases"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should this prompt be used?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This prompt can be used for any product in your Shopify store when you want to add an ON SALE prefix to SEO titles, especially when running sales on your entire store or specific collections"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should you create this prompt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It would be beneficial to create this prompt a few days before the sale to ensure Google has time to crawl the site and serve the new titles in the SERPs"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles#term-0",
+        "name": "SEO Title",
+        "description": "The title tag that appears in search engine results and browser tabs, optimized for search engines"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles#term-1",
+        "name": "SERPs",
+        "description": "Search Engine Results Pages - the pages displayed by search engines in response to a query"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles#term-2",
+        "name": "Prompt Repository",
+        "description": "A collection of pre-made AI prompts available in Optizen AI for various SEO tasks"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles",
+        "url": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles",
+        "name": "ON SALE AI Prompt For SEO Titles",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "optizen-ai",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "ON SALE AI Prompt For SEO Titles",
+              "item": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:46:30.030Z",
+  "contentModified": "2023-11-23T03:51:44",
+  "contentHash": "b6f40c8efce717608e820c672980b827"
+}

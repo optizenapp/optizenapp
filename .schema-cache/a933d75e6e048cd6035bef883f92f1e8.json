@@ -1,0 +1,85 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/updating-image-alt-text-in-shopify-optizen-ai#article",
+        "headline": "Updating Image Alt Text With Opitzen AI On Shopify",
+        "description": "<p>  Updating Image Alt Text In Shopify With OptizenAI   Back To Main Document Page</p>\n",
+        "datePublished": "2023-11-28T00:04:32",
+        "dateModified": "2024-05-21T04:33:47",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/updating-image-alt-text-in-shopify-optizen-ai"
+        },
+        "keywords": "Optizen AI, Shopify, image alt text, SEO, accessibility, e-commerce, AI, optimization",
+        "about": [
+          {
+            "@type": "Product",
+            "name": "Optizen AI",
+            "description": "AI tool for updating image alt text in Shopify"
+          },
+          {
+            "@type": "Product",
+            "name": "Shopify",
+            "description": "E-commerce platform"
+          },
+          {
+            "@type": "Concept",
+            "name": "Image Alt Text",
+            "description": "Alternative text for images used for accessibility and SEO"
+          }
+        ],
+        "timeRequired": "PT2M"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/updating-image-alt-text-in-shopify-optizen-ai",
+        "url": "https://optizenapp.com/updating-image-alt-text-in-shopify-optizen-ai",
+        "name": "Updating Image Alt Text With Opitzen AI On Shopify",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Updating Image Alt Text With Opitzen AI On Shopify",
+              "item": "https://optizenapp.com/updating-image-alt-text-in-shopify-optizen-ai"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:49:04.936Z",
+  "contentModified": "2024-05-21T04:33:47",
+  "contentHash": "f3caec49dc84efa975920c64d2bbc90b"
+}

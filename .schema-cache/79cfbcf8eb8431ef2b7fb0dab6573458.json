@@ -1,0 +1,130 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/what-is-optizen#article",
+        "headline": "What Is Optizen?",
+        "description": "<p>  What Is Optizen? Optizen is a Shopify app that we created to improve the SEO features of the standard Shopify store. While there are many SEO apps that you can install in the Shopify app store, many only provide standard features. Currently Optizen provide 2 distinct features that provide a robust and improved SEO [&hellip;]</p>\n",
+        "datePublished": "2022-11-20T23:13:13",
+        "dateModified": "2023-02-27T06:11:49",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/what-is-optizen"
+        },
+        "keywords": "Optizen, Shopify app, SEO optimization, collection pages, tag pages, product variants, thumbnail matching, WYSIWYG editor, enterprise features, search engine optimization",
+        "about": [
+          {
+            "@type": "Product",
+            "name": "Optizen",
+            "description": "A Shopify app designed to improve SEO features of standard Shopify stores"
+          },
+          {
+            "@type": "Product",
+            "name": "Shopify",
+            "description": "E-commerce platform for online stores"
+          },
+          {
+            "@type": "Concept",
+            "name": "Collection Pages",
+            "description": "Pages that display groups of products in Shopify stores"
+          },
+          {
+            "@type": "Concept",
+            "name": "Tag Pages",
+            "description": "Pages that display products filtered by specific tags"
+          },
+          {
+            "@type": "Product",
+            "name": "Variant Tagger",
+            "description": "Enterprise feature that adds product variants as tags automatically"
+          },
+          {
+            "@type": "Product",
+            "name": "Variant Image Thumbnail Matcher",
+            "description": "Enterprise feature that matches variant images as thumbnails on tag pages"
+          }
+        ],
+        "timeRequired": "PT3M"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/what-is-optizen#term-0",
+        "name": "Optizen",
+        "description": "A Shopify app created to improve the SEO features of standard Shopify stores with distinct features for robust SEO performance"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/what-is-optizen#term-1",
+        "name": "Content Below Product Grid",
+        "description": "Feature allowing addition of content below the product grid on collection pages using HTML WYSIWYG editor"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/what-is-optizen#term-2",
+        "name": "Tag Page Optimization",
+        "description": "Feature allowing manual editing and optimization of tag pages for improved SEO performance"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/what-is-optizen#term-3",
+        "name": "Variant Tagger",
+        "description": "Enterprise feature that syncs product variants and adds them as tags to products with one click"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/what-is-optizen#term-4",
+        "name": "Variant Image Thumbnail Matcher",
+        "description": "Enterprise feature that matches variant images as thumbnails on tag pages to show specific variants"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/what-is-optizen",
+        "url": "https://optizenapp.com/what-is-optizen",
+        "name": "What Is Optizen?",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "What Is Optizen?",
+              "item": "https://optizenapp.com/what-is-optizen"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:51:08.968Z",
+  "contentModified": "2023-02-27T06:11:49",
+  "contentHash": "7aae84c575a0c591a24c9b5660fd1b33"
+}

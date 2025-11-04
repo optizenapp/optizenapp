@@ -17,7 +17,7 @@ async function fetchWithRetry(
         console.log(`🔄 Retry attempt ${attempt}/${maxRetries} for: ${url.split('?')[0]}`);
       }
       
-      const response = await fetchWithRetry(url, options);
+      const response = await fetch(url, options);
       
       // If successful, return immediately
       if (response.ok) {

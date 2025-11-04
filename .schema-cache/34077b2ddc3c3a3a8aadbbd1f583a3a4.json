@@ -1,0 +1,186 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells#article",
+        "headline": "The Real Technical Split: Pre- vs. Post-Purchase Upsells",
+        "description": "<p>A pre-purchase upsell is an offer shown before a customer pays, modifying the current shopping cart. A post-purchase upsell is an offer shown after a customer completes payment, creating a new, separate transaction. The main difference is the timing of the offer relative to the initial payment and its effect on the order. On the [&hellip;]</p>\n",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2025/09/Shopify-pre-vs-post-purchase-upsell.png",
+          "width": 1775,
+          "height": 819
+        },
+        "datePublished": "2025-09-15T05:37:20",
+        "dateModified": "2025-09-15T05:37:21",
+        "author": {
+          "@type": "Person",
+          "name": "OptizenAI Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells"
+        },
+        "articleSection": "aov",
+        "keywords": "pre-purchase upsell, post-purchase upsell, average order value, AOV, conversion rate, payment tokenization, Shopify, e-commerce, customer lifetime value, cart abandonment",
+        "about": [
+          {
+            "@type": "Concept",
+            "name": "Pre-Purchase Upsell",
+            "description": "An offer shown before a customer pays, modifying the current shopping cart"
+          },
+          {
+            "@type": "Concept",
+            "name": "Post-Purchase Upsell",
+            "description": "An offer shown after a customer completes payment, creating a new, separate transaction"
+          },
+          {
+            "@type": "Concept",
+            "name": "Average Order Value",
+            "description": "The average amount spent per order by customers"
+          },
+          {
+            "@type": "Concept",
+            "name": "Customer Lifetime Value",
+            "description": "The total value a customer brings to a business over their entire relationship"
+          },
+          {
+            "@type": "Concept",
+            "name": "Payment Tokenization",
+            "description": "A secure method that creates tokens representing payment details without exposing raw card numbers"
+          },
+          {
+            "@type": "Product",
+            "name": "Shopify",
+            "description": "E-commerce platform mentioned for implementing upsell strategies"
+          },
+          {
+            "@type": "Product",
+            "name": "Cart API",
+            "description": "API used to manipulate shopping cart objects on platforms like Shopify"
+          }
+        ],
+        "timeRequired": "PT12M"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Seriously, how much does a pre-purchase offer really hurt the user experience?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can be brutal. A badly timed, irrelevant pre-purchase pop-up feels like a pushy salesperson blocking the aisle. A post-purchase offer is more like the cashier helpfully asking if you need batteries for the thing you just bought. The psychological state of the customer is completely different."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If I'm paranoid about my conversion rate, which one do I use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Post-purchase. It's not even a debate. Since the original order is 100% complete before the offer is ever shown, there is literally zero risk to your core conversion rate."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells#term-0",
+        "name": "Upsell",
+        "description": "A strategy to get a customer to spend more, either by upgrading their item or adding more stuff to the order"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells#term-1",
+        "name": "Pre-Purchase Upsell",
+        "description": "Any offer you show a customer before they've clicked that final 'Confirm Order' button"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells#term-2",
+        "name": "Post-Purchase Upsell",
+        "description": "An offer presented after the initial transaction is 100% complete and the money is in the bank"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells#term-3",
+        "name": "Payment Tokenization",
+        "description": "A secure, single-use or multi-use token that represents the customer's payment details without exposing the raw card number"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells#term-4",
+        "name": "Downsell",
+        "description": "A lower-priced, easier alternative offer presented if a customer rejects the main upsell"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells#term-5",
+        "name": "AOV",
+        "description": "Average Order Value - the average amount spent per order by customers"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells#term-6",
+        "name": "CLV",
+        "description": "Customer Lifetime Value - the total value a customer brings to a business over their entire relationship"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells",
+        "url": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells",
+        "name": "The Real Technical Split: Pre- vs. Post-Purchase Upsells",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "aov",
+              "item": "https://optizenapp.com/aov"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "The Real Technical Split: Pre- vs. Post-Purchase Upsells",
+              "item": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:38:43.755Z",
+  "contentModified": "2025-09-15T05:37:21",
+  "contentHash": "b6374bf9f55f43ad29d27cc6f382fdae"
+}

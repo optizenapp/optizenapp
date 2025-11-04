@@ -1,0 +1,146 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/shopify-seo/shopify-silos#article",
+        "headline": "Shopify Silos &#8211; The Best Way To Create Them &#038; Why They Work For Improved Rankings &#038; Traffic",
+        "description": "<p>Website silo architecture is nothing new. In fact it&#8217;s been a core principle of building websites since Tim Berners-Lee revolutionized the world as we know it today. In the bubbled world of SEO, it was however Bruce Clay who really brought website silo architecture to the forefront of web design and SEO. Not only does [&hellip;]</p>\n",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2023/05/bathroom-mirrors-ahrefs.png",
+          "width": 776,
+          "height": 401
+        },
+        "datePublished": "2023-05-08T01:50:06",
+        "dateModified": "2023-11-23T03:52:43",
+        "author": {
+          "@type": "Person",
+          "name": "OptizenAI Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/shopify-seo/shopify-silos"
+        },
+        "articleSection": "shopify-seo",
+        "keywords": "Shopify SEO, website silo architecture, topical relevance, link equity, Shopify tags, sub-collections, keyword research, internal linking, SEO optimization, ecommerce structure",
+        "about": [
+          {
+            "@type": "Concept",
+            "name": "Shopify Silos",
+            "description": "Website architecture method for organizing Shopify stores into topical categories and subcategories"
+          },
+          {
+            "@type": "Concept",
+            "name": "Website Silo Architecture",
+            "description": "Method of grouping related information into distinct sections within a website"
+          },
+          {
+            "@type": "Person",
+            "name": "Bruce Clay",
+            "description": "SEO expert who brought website silo architecture to the forefront of web design"
+          },
+          {
+            "@type": "Product",
+            "name": "Optizen",
+            "description": "Shopify app that allows complete control over tag pages for SEO optimization"
+          },
+          {
+            "@type": "Concept",
+            "name": "Topical Relevance",
+            "description": "The relevance and authority a site has over a specific topic or subject"
+          },
+          {
+            "@type": "Concept",
+            "name": "Link Equity",
+            "description": "The value passed through links that can help improve page rankings in search engines"
+          },
+          {
+            "@type": "Concept",
+            "name": "Shopify Tags",
+            "description": "Feature in Shopify used to create sub-collections and organize products"
+          }
+        ],
+        "timeRequired": "PT8M"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/shopify-seo/shopify-silos#term-0",
+        "name": "Website Silo Architecture",
+        "description": "A way to identify the concept of grouping related information into distinct sections within a website"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/shopify-seo/shopify-silos#term-1",
+        "name": "Topical Relevance",
+        "description": "The relevance that a site has to a particular keyword, and hence the authority a site has over a specific topic or subject"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/shopify-seo/shopify-silos#term-2",
+        "name": "Link Equity Flow",
+        "description": "The distribution of link power through internal linking that helps improve page rankings"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/shopify-seo/shopify-silos#term-3",
+        "name": "Flat URL Structure",
+        "description": "URL structure using default /collections/ that creates a pseudo silo without proper hierarchical organization"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify-seo/shopify-silos",
+        "url": "https://optizenapp.com/shopify-seo/shopify-silos",
+        "name": "Shopify Silos &#8211; The Best Way To Create Them &#038; Why They Work For Improved Rankings &#038; Traffic",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "shopify-seo",
+              "item": "https://optizenapp.com/shopify-seo"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Shopify Silos &#8211; The Best Way To Create Them &#038; Why They Work For Improved Rankings &#038; Traffic",
+              "item": "https://optizenapp.com/shopify-seo/shopify-silos"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:47:34.672Z",
+  "contentModified": "2023-11-23T03:52:43",
+  "contentHash": "3d4849de777b52a6929e3fc0c9344263"
+}

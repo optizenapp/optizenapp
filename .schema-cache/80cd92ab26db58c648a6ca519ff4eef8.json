@@ -1,0 +1,80 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/thankyou#article",
+        "headline": "Thankyou",
+        "description": "<p>Thanks for joining. Be sure to check your spam folder if you don&#8217;t receive an email shortly.</p>\n",
+        "datePublished": "2024-08-01T01:27:48",
+        "dateModified": "2024-08-01T01:27:48",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/thankyou"
+        },
+        "keywords": "thankyou, email, spam folder, confirmation, subscription, registration",
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Email confirmation",
+            "description": "Process of confirming email subscription or registration"
+          },
+          {
+            "@type": "Thing",
+            "name": "Spam folder",
+            "description": "Email folder where unwanted or filtered messages are stored"
+          }
+        ],
+        "timeRequired": "PT1M"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/thankyou",
+        "url": "https://optizenapp.com/thankyou",
+        "name": "Thankyou",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Thankyou",
+              "item": "https://optizenapp.com/thankyou"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:48:09.354Z",
+  "contentModified": "2024-08-01T01:27:48",
+  "contentHash": "38ba285950fa6d7e4b7363aa399270b4"
+}

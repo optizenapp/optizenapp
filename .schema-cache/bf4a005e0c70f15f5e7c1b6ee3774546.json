@@ -1,0 +1,113 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/image-alt-text-optimization-results-in-shopify#article",
+        "headline": "Results of Using The OptizenAI Image Alt Features &#8211; 2 Weeks Post Release",
+        "description": "<p>Our image alt text AI feature of OptizenAI has only been released a few weeks and we&#8217;re stating to see some promising results for our test sites. It&#8217;s a very simple but powerful concept to get more organic traffic from image search of Google and the other search engines. View The Video</p>\n",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2023/12/a_person_sitting_in_frontf_a_computer_screen_loo.jpg",
+          "width": 1024,
+          "height": 640
+        },
+        "datePublished": "2023-12-13T00:59:42",
+        "dateModified": "2023-12-13T00:59:44",
+        "author": {
+          "@type": "Person",
+          "name": "OptizenAI Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/optizen-ai/image-alt-text-optimization-results-in-shopify"
+        },
+        "articleSection": "optizen-ai",
+        "keywords": "OptizenAI, image alt text, AI optimization, organic traffic, image search, Google, search engines, SEO, Shopify",
+        "about": [
+          {
+            "@type": "Product",
+            "name": "OptizenAI",
+            "description": "AI-powered optimization tool with image alt text features"
+          },
+          {
+            "@type": "Product",
+            "name": "Image Alt Text AI Feature",
+            "description": "AI feature for optimizing image alt text to improve search engine visibility"
+          },
+          {
+            "@type": "Thing",
+            "name": "Google Image Search",
+            "description": "Google's search engine for finding images"
+          },
+          {
+            "@type": "Product",
+            "name": "Shopify",
+            "description": "E-commerce platform mentioned in the URL context"
+          }
+        ],
+        "timeRequired": "PT2M"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/image-alt-text-optimization-results-in-shopify#term-0",
+        "name": "Image Alt Text",
+        "description": "Alternative text for images that helps search engines understand image content and improves organic traffic from image search"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/image-alt-text-optimization-results-in-shopify",
+        "url": "https://optizenapp.com/optizen-ai/image-alt-text-optimization-results-in-shopify",
+        "name": "Results of Using The OptizenAI Image Alt Features &#8211; 2 Weeks Post Release",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "optizen-ai",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Results of Using The OptizenAI Image Alt Features &#8211; 2 Weeks Post Release",
+              "item": "https://optizenapp.com/optizen-ai/image-alt-text-optimization-results-in-shopify"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:44:12.093Z",
+  "contentModified": "2023-12-13T00:59:44",
+  "contentHash": "a41a2001b45be9f00bd6b600fe0f78cf"
+}

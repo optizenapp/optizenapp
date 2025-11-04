@@ -1,0 +1,98 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema#howto",
+        "name": "Shopify Product Descriptions Advanced AI Prompt With FAQs &#038; Schema",
+        "description": "<p>This AI prompt is an extensions of the &#8220;FAQs For Existing Product Description With Schema.&#8221; In the the prompt above, we are appending FAQ and schema only to an existing description. The following prompt is an extension where the product description itself is updated at the same time. The following is the process to use [&hellip;]</p>\n",
+        "image": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2023/10/Updating-Shopify-Product-Descriptions-Advanced.png",
+        "totalTime": "PT5M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate to product tab",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select AI prompt",
+            "text": "Select the 'Product Description Full + Links + FAQs + Schema' from the drop down under the Product Description prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Execute prompt",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update."
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema#term-0",
+        "name": "AI Prompt",
+        "description": "A set of instructions given to artificial intelligence to generate specific content or perform specific tasks"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema#term-1",
+        "name": "Schema Markup",
+        "description": "Structured data code that helps search engines understand and display content in search results"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema#term-2",
+        "name": "Internal Links",
+        "description": "Links that connect different pages within the same website to improve navigation and SEO"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema",
+        "url": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema",
+        "name": "Shopify Product Descriptions Advanced AI Prompt With FAQs &#038; Schema",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "optizen-ai",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Shopify Product Descriptions Advanced AI Prompt With FAQs &#038; Schema",
+              "item": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:45:56.452Z",
+  "contentModified": "2023-11-23T03:51:16",
+  "contentHash": "aed693e11069b170a624fa51188279ef"
+}

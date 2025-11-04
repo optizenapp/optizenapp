@@ -1,0 +1,170 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify#howto",
+        "name": "Guide on How to Change the Order of Products on Shopify",
+        "description": "<p>You can change product order within any Shopify collection. Navigate to a collection and find the &#8220;Products&#8221; section. From the sort dropdown menu, select the &#8220;Manually&#8221; option. You can then click and drag products into your desired sequence. Shopify also offers automatic sorting by price, date, or best-selling status. So you want to change the [&hellip;]</p>\n",
+        "image": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2025/07/shopify-product-order.webp",
+        "totalTime": "PT8M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Access Shopify Admin",
+            "text": "Log into your Shopify admin dashboard"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Navigate to Collections",
+            "text": "On the left, find and click 'Products,' then click 'Collections'"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Select Collection",
+            "text": "Find the collection you want to modify and click its name"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Find Products Section",
+            "text": "Scroll down to the 'Products' section"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Choose Manual Sorting",
+            "text": "Click the dropdown menu for sorting and choose 'Manually'"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Drag and Drop Products",
+            "text": "Grab the six-dot icon next to any product and drag it to your desired position"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "Set Automated Sort",
+            "text": "For automated sorting, select options like 'Best selling' or 'Price: Low to High' from the dropdown"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 8,
+            "name": "Save Changes",
+            "text": "For automated sorting, scroll up and hit the 'Save' button to make changes live"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What's the best way to change my Shopify product order to make more money?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The easiest and often most effective way is to set the collection order to 'Best selling.' It uses social proof to sell for you, showing all customers what's popular. This improves the experience and usually leads to more sales without you having to do anything else."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I move all my discounted stuff to the front?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yep. Just change the product order in that collection to 'Manually.' It's the perfect way to highlight items with a special price or discount at the very top. It definitely has a positive impact on sales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the order really matter if I have tons of products?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Maybe even more so. With a huge number of products, nobody is going to scroll through everything. Manually sorting is a nightmare, so using automated sorting by price or best-selling is the best way to make your store easy to navigate and help customers find what they want without getting overwhelmed."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify#term-0",
+        "name": "Above the fold",
+        "description": "The content visible on a webpage without scrolling"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify#term-1",
+        "name": "Hero products",
+        "description": "Featured products with high margins or strategic importance"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify#term-2",
+        "name": "Social proof",
+        "description": "Using popularity or best-selling status to influence customer decisions"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify#term-3",
+        "name": "Average Order Value (AOV)",
+        "description": "The average amount spent per transaction"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify#term-4",
+        "name": "Conversion rate",
+        "description": "The percentage of visitors who complete a desired action like making a purchase"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify",
+        "url": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify",
+        "name": "Guide on How to Change the Order of Products on Shopify",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "shopify-questions",
+              "item": "https://optizenapp.com/shopify-questions"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Guide on How to Change the Order of Products on Shopify",
+              "item": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:41:00.627Z",
+  "contentModified": "2025-07-15T02:46:58",
+  "contentHash": "54b5755c1e00ccc05c30bac2be4c66e0"
+}

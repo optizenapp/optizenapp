@@ -1,0 +1,125 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai#article",
+        "headline": "Collections &amp; Tag Page AI Updates Now Available In OptizenAI",
+        "description": "<p>We&#8217;ve just release some new updates in OptizenAI. Specifically: You can see how the updates work and how to use them in the video below:</p>\n",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2024/08/Update-Collection-and-Tag-AI-Prompts-For-Shopify.jpeg",
+          "width": 1280,
+          "height": 720
+        },
+        "datePublished": "2024-08-20T05:22:56",
+        "dateModified": "2024-08-20T05:22:58",
+        "author": {
+          "@type": "Person",
+          "name": "OptizenAI Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai"
+        },
+        "articleSection": "optizen-ai",
+        "keywords": "OptizenAI, Shopify, AI features, collection pages, tag pages, meta content, AI updates, product detail log, retry functionality, UI improvements",
+        "about": [
+          {
+            "@type": "Product",
+            "name": "OptizenAI",
+            "description": "AI-powered application with collection and tag page features"
+          },
+          {
+            "@type": "Concept",
+            "name": "Collection pages",
+            "description": "Shopify collection pages enhanced with AI features"
+          },
+          {
+            "@type": "Concept",
+            "name": "Tag pages",
+            "description": "Shopify tag pages enhanced with AI features"
+          },
+          {
+            "@type": "Concept",
+            "name": "AI Log pages",
+            "description": "Pages showing AI update logs with improved UI features"
+          }
+        ],
+        "timeRequired": "PT2M"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai#term-0",
+        "name": "Collection pages",
+        "description": "Shopify pages that display groups of products organized by collections, now enhanced with AI features"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai#term-1",
+        "name": "Tag pages",
+        "description": "Shopify pages that display products organized by tags, now enhanced with AI features"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai#term-2",
+        "name": "AI Log pages",
+        "description": "Interface pages that show detailed logs of AI updates and processes"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai",
+        "url": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai",
+        "name": "Collections &amp; Tag Page AI Updates Now Available In OptizenAI",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "optizen-ai",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Collections &amp; Tag Page AI Updates Now Available In OptizenAI",
+              "item": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:42:22.992Z",
+  "contentModified": "2024-08-20T05:22:58",
+  "contentHash": "35a917cd3af939a98062bdc5a1e8c265"
+}

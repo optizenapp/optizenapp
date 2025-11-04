@@ -1,0 +1,91 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/creating-a-tag-page-sitemap#article",
+        "headline": "Creating A Tag Page Sitemap",
+        "description": "<p>  Creating A Tag Page Sitemap.xml Back To Main Document Page</p>\n",
+        "datePublished": "2022-11-20T23:33:27",
+        "dateModified": "2024-05-21T05:10:03",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/creating-a-tag-page-sitemap"
+        },
+        "keywords": "sitemap, tag page, XML, SEO, website optimization, search engines, indexing, OptizenApp",
+        "about": [
+          {
+            "@type": "Concept",
+            "name": "Tag Page Sitemap",
+            "description": "A sitemap specifically for tag pages on a website"
+          },
+          {
+            "@type": "Concept",
+            "name": "XML Sitemap",
+            "description": "A file that lists URLs of a website to help search engines crawl and index content"
+          },
+          {
+            "@type": "Product",
+            "name": "OptizenApp",
+            "description": "A web application or service for website optimization"
+          }
+        ],
+        "timeRequired": "PT2M"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/creating-a-tag-page-sitemap#term-0",
+        "name": "Tag Page Sitemap",
+        "description": "A specialized sitemap that contains URLs of tag pages to help search engines discover and index tag-based content"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/creating-a-tag-page-sitemap",
+        "url": "https://optizenapp.com/creating-a-tag-page-sitemap",
+        "name": "Creating A Tag Page Sitemap",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Creating A Tag Page Sitemap",
+              "item": "https://optizenapp.com/creating-a-tag-page-sitemap"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:50:36.939Z",
+  "contentModified": "2024-05-21T05:10:03",
+  "contentHash": "89867e0310e6ad00c3ed1d7835aaf83e"
+}

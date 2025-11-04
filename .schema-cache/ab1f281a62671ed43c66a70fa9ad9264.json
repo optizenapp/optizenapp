@@ -1,0 +1,128 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions#howto",
+        "name": "Bulk Update Shopify Product Descriptions With FAQs (including HTML j-son schema)",
+        "description": "<p>The following is the process to use the &#8220;FAQs For Existing Product Description With Schema&#8221; ai prompt that is available in the Optizen AI public prompt repository. The Prompt Where To Use This AI Prompt This prompt is specific to the product description of Shopify products. You can can use the prompt in it&#8217;s raw [&hellip;]</p>\n",
+        "image": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2023/10/Adding-Faqs-with-AI.png",
+        "totalTime": "PT8M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate to product tab",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select FAQ prompt",
+            "text": "Select the 'FAQs For Existing Product Description With Schema' from the drop down under the Product Description prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Execute and review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is hemp oil safe for dogs, and will it make my pet 'high'?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hemp oil is safe for dogs and will not make them 'high.' Our hemp oil products are specially formulated to contain minimal levels of THC, the psychoactive compound found in marijuana. These trace amounts are not enough to produce any intoxicating effects. Instead, hemp oil offers various potential health benefits for dogs, including pain relief, anxiety reduction, and improved overall well-being."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I administer hemp oil to my dog?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Administering hemp oil to your dog is easy and can vary based on the product type. Hemp oil tinctures can be added to your dog's food or given orally. Capsules are typically given with a treat or hidden in a soft treat pocket. Hemp oil treats are a tasty way to provide the benefits, and topical solutions can be applied directly to the skin as needed. It's essential to follow the recommended dosage instructions provided on the product label, which may differ based on your dog's size and specific needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take for hemp oil to show results in my dog?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The time it takes for hemp oil to show results in your dog can vary depending on several factors, including your dog's size, age, and the specific condition you're addressing. In some cases, you may notice improvements within a few days, while for others, it may take a couple of weeks of consistent use to see the full effects. Be patient and monitor your dog's response to the hemp oil. It's essential to follow the recommended dosage and consult with your veterinarian for guidance on the best approach for your pet's needs."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions#term-0",
+        "name": "JSON-LD Schema",
+        "description": "Structured data format using JSON to provide search engines with information about page content"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions#term-1",
+        "name": "FAQ Schema",
+        "description": "Specific schema.org markup for frequently asked questions that helps search engines understand and display Q&A content"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions#term-2",
+        "name": "Bulk Update",
+        "description": "Process of updating multiple product descriptions simultaneously using automated tools"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions",
+        "url": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions",
+        "name": "Bulk Update Shopify Product Descriptions With FAQs (including HTML j-son schema)",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "optizen-ai",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Bulk Update Shopify Product Descriptions With FAQs (including HTML j-son schema)",
+              "item": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:46:07.881Z",
+  "contentModified": "2023-11-23T03:51:24",
+  "contentHash": "9f7f408a67cb47ea33e813448fb97c26"
+}

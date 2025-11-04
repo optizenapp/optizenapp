@@ -1,0 +1,86 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/using-smart-tag-filters#article",
+        "headline": "Using Smart Tag Filters",
+        "description": "<p>  Using The Smart Tag Filter Feature Note: to activate this feature, please contact us here.   Back To Main Document Page</p>\n",
+        "datePublished": "2023-09-01T06:45:33",
+        "dateModified": "2024-05-21T05:11:28",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/using-smart-tag-filters"
+        },
+        "keywords": "smart tag filter, feature activation, contact, documentation, optizen",
+        "about": [
+          {
+            "@type": "Product",
+            "name": "Smart Tag Filter Feature",
+            "description": "A feature that requires activation through contact"
+          },
+          {
+            "@type": "Product",
+            "name": "OptizenApp",
+            "description": "Application platform offering smart tag filtering capabilities"
+          }
+        ],
+        "timeRequired": "PT1M"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/using-smart-tag-filters#term-0",
+        "name": "Smart Tag Filter",
+        "description": "A feature within OptizenApp that requires activation through customer contact"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/using-smart-tag-filters",
+        "url": "https://optizenapp.com/using-smart-tag-filters",
+        "name": "Using Smart Tag Filters",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Using Smart Tag Filters",
+              "item": "https://optizenapp.com/using-smart-tag-filters"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:49:44.760Z",
+  "contentModified": "2024-05-21T05:11:28",
+  "contentHash": "de0ce57f2f98cd6a5ece9ea2c24be9bc"
+}

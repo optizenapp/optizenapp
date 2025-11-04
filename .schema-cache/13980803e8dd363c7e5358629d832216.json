@@ -1,0 +1,138 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions#howto",
+        "name": "Using Google Natural Language Demo To Extract Entities &#038; OptizenAI To Update Shopify Product Descriptions At Scale",
+        "description": "<p>The following is the process of using Google Natural Language Demo and OptizenAI to extract entities to use in Shopify product descriptions, and build enriched description content for individual, small, or large groups of products. A shout out needs to go to Steve Toth of SEOnotebook.com for his note on using the Google NLP Demo [&hellip;]</p>\n",
+        "image": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2023/11/using-nlp-to-extract-entities-for-shopify-products.jpg",
+        "totalTime": "PT8M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Extract entities from Wikipedia",
+            "text": "Use Google NLP Demo to extract entities from Wikipedia. Navigate to the Wikipedia page and copy the body content. Then go to https://cloud.google.com/natural-language and scroll to the Demo section. Paste the content into the field and click Analyze"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Process entities in Google Sheets",
+            "text": "Copy the block of output and head over to the provided Google Sheets template. Paste the output into cell [A2]. The sheet will show all entities as a list in cell [B2]. Remove duplicates and choose the entities you want to add in the prompt"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Navigate to OptizenAI products",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Configure the prompt",
+            "text": "Select the 'PAS Framework - Entities - Internal Links' from the drop down under the Product Description prompt field. Ensure you are using the prompt repository tab. Check the box for 'Update this section'. Replace the sections with square brackets for your specific use case"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Execute and review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where can I use this AI prompt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This prompt is specific to the product description of Shopify products. You can use the prompt in its raw form from the repository, and then replace sections for your specific use case where [Square Brackets] are present"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I use this prompt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This prompt can be used for any product in your Shopify store using the Optizen AI app if you want a more advanced AI prompt to update product descriptions leveraging NLP entities for content, and adding internal links"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions#term-0",
+        "name": "PAS Framework",
+        "description": "Problem-Agitate-Solution copywriting framework used for creating engaging product descriptions"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions#term-1",
+        "name": "Entity extraction",
+        "description": "The process of identifying and extracting named entities from text content using natural language processing"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions#term-2",
+        "name": "NLP",
+        "description": "Natural Language Processing - technology that helps computers understand and process human language"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions#term-3",
+        "name": "Internal linking",
+        "description": "The practice of linking to other pages within the same website to improve SEO and user navigation"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions",
+        "url": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions",
+        "name": "Using Google Natural Language Demo To Extract Entities &#038; OptizenAI To Update Shopify Product Descriptions At Scale",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "optizen-ai",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Using Google Natural Language Demo To Extract Entities &#038; OptizenAI To Update Shopify Product Descriptions At Scale",
+              "item": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:45:05.616Z",
+  "contentModified": "2023-11-23T03:49:57",
+  "contentHash": "e2c3b7ef3ca1279ad86b2d8b72114124"
+}

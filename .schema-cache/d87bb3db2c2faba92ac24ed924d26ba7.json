@@ -1,0 +1,146 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/content/shopify-collection-page-google-ranking-improvements#article",
+        "headline": "Leveraging AI, Internal Linking &#038; FAQs To Improve Shopify Collection Page Content &#038; Google Rankings",
+        "description": "<p>We have been rather successful ranking Shopify collection pages in a variety of markets and niches over the last few years. We have a solid concept and strategy that has proven to improve collection pages in organic search. We&#8217;ve continued to refine the process and we&#8217;re tweaking and testing, looking for that extra edge constantly. [&hellip;]</p>\n",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2024/01/case-study-shopify-collection-pa.jpg",
+          "width": 480,
+          "height": 360
+        },
+        "datePublished": "2024-01-02T12:35:57",
+        "dateModified": "2024-01-02T12:51:37",
+        "author": {
+          "@type": "Person",
+          "name": "OptizenAI Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/content/shopify-collection-page-google-ranking-improvements"
+        },
+        "articleSection": "content",
+        "keywords": "Shopify SEO, collection pages, AI content generation, internal linking, FAQ schema, horse toys, Google rankings, OptizenAI, ChatGPT, entity optimization",
+        "about": [
+          {
+            "@type": "Concept",
+            "name": "Shopify Collection Pages",
+            "description": "E-commerce category pages that group related products together"
+          },
+          {
+            "@type": "Product",
+            "name": "OptizenAI",
+            "description": "AI-powered tool for Shopify SEO optimization and internal linking"
+          },
+          {
+            "@type": "Product",
+            "name": "ChatGPT",
+            "description": "AI language model used for content generation"
+          },
+          {
+            "@type": "Product",
+            "name": "Horse Toys Collection",
+            "description": "Specific product collection used as case study example"
+          },
+          {
+            "@type": "Concept",
+            "name": "FAQ Schema",
+            "description": "Structured data markup for frequently asked questions"
+          },
+          {
+            "@type": "Concept",
+            "name": "Internal Linking",
+            "description": "SEO strategy of linking between pages within the same website"
+          },
+          {
+            "@type": "Product",
+            "name": "Custom GPT",
+            "description": "Specialized AI model for generating Shopify collection content"
+          }
+        ],
+        "timeRequired": "PT8M"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/content/shopify-collection-page-google-ranking-improvements#term-0",
+        "name": "Collection Page",
+        "description": "A page that displays a group of related products in an e-commerce store"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/content/shopify-collection-page-google-ranking-improvements#term-1",
+        "name": "Entity Rich Content",
+        "description": "Content that includes relevant semantic entities to help search engines understand context"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/content/shopify-collection-page-google-ranking-improvements#term-2",
+        "name": "Schema Markup",
+        "description": "Structured data code that helps search engines understand webpage content"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/content/shopify-collection-page-google-ranking-improvements#term-3",
+        "name": "Breadcrumbs",
+        "description": "Navigation links that show the user's location within a website hierarchy"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/content/shopify-collection-page-google-ranking-improvements",
+        "url": "https://optizenapp.com/content/shopify-collection-page-google-ranking-improvements",
+        "name": "Leveraging AI, Internal Linking &#038; FAQs To Improve Shopify Collection Page Content &#038; Google Rankings",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "content",
+              "item": "https://optizenapp.com/content"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Leveraging AI, Internal Linking &#038; FAQs To Improve Shopify Collection Page Content &#038; Google Rankings",
+              "item": "https://optizenapp.com/content/shopify-collection-page-google-ranking-improvements"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:44:04.267Z",
+  "contentModified": "2024-01-02T12:51:37",
+  "contentHash": "5bd44c5cef7378b3d6368109c5bf4b97"
+}

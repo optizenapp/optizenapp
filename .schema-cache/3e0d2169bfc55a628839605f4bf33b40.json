@@ -1,0 +1,149 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/duplicate-collection-pages#article",
+        "headline": "Content Being Duplicate",
+        "description": "<p>  Help – The Collection Content Is Being Duplicated   If you have installed Optizen and your collection content is showing twice (being duplicated on collection pages), it’s likely you had Version 1 installed previously. To solve this problem, please follow these steps in the video below: Tutorials Support Docs &#8211; Optizen Please click on [&hellip;]</p>\n",
+        "datePublished": "2022-11-20T23:31:09",
+        "dateModified": "2023-10-22T00:46:03",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenAI",
+          "logo": {
+            "@type": "ImageObject"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/duplicate-collection-pages"
+        },
+        "keywords": "Optizen, collection pages, duplicate content, tag pages, optimization, enterprise, AI, tutorials, support, documentation",
+        "about": [
+          {
+            "@type": "Product",
+            "name": "Optizen",
+            "description": "A software application for optimizing collection pages and content management"
+          },
+          {
+            "@type": "Concept",
+            "name": "Collection Pages",
+            "description": "Web pages that display collections of products or content"
+          },
+          {
+            "@type": "Concept",
+            "name": "Tag Pages",
+            "description": "Pages organized by tags for content categorization"
+          },
+          {
+            "@type": "Product",
+            "name": "Optizen AI",
+            "description": "AI-powered features within the Optizen application"
+          },
+          {
+            "@type": "Product",
+            "name": "OpenAI",
+            "description": "AI platform that can be connected to Optizen for enhanced functionality"
+          }
+        ],
+        "timeRequired": "PT3M"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/duplicate-collection-pages#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "The Collection Content Is Being Duplicated - what should I do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you have installed Optizen and your collection content is showing twice, it's likely you had Version 1 installed previously. Follow the steps in the provided video tutorial to solve this problem."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Optimize Tag Pages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tag pages should be optimized to improve content organization and user experience"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Upgrade To Optizen Enterprise?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Enterprise plan offers additional features including Variant Tagger and Variant Image Thumbnail Matcher"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/duplicate-collection-pages#term-0",
+        "name": "Collection Content Duplication",
+        "description": "When collection content appears twice on collection pages, typically caused by having Version 1 previously installed"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/duplicate-collection-pages#term-1",
+        "name": "Smart Tag Filter",
+        "description": "A feature that allows intelligent filtering of content based on tags"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/duplicate-collection-pages#term-2",
+        "name": "Variant Tagger",
+        "description": "Enterprise feature for tagging product variants"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/duplicate-collection-pages#term-3",
+        "name": "Sitemap.xml",
+        "description": "XML file that helps search engines understand website structure"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/duplicate-collection-pages",
+        "url": "https://optizenapp.com/duplicate-collection-pages",
+        "name": "Content Being Duplicate",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Content Being Duplicate",
+              "item": "https://optizenapp.com/duplicate-collection-pages"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:50:46.743Z",
+  "contentModified": "2023-10-22T00:46:03",
+  "contentHash": "fd73909f380592b0ab755516797f67ba"
+}

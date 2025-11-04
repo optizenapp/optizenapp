@@ -1,0 +1,98 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data#howto",
+        "name": "Using ChatGPT 4 To Crawl Web Pages &#038; Links To Extract Data",
+        "description": "<p>Recently ChatGPT4 allowed the crawling of links and website to extract information. This is a feature that many users had been waiting for. It now make the possibilities to extract data and aggregate data and content at an almost impossible scale, possible. What is possible now is endless, and those with an ounce of creativity [&hellip;]</p>\n",
+        "image": "https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-content/uploads/2023/11/a_person_using_chatgpt_in_front_of_a_computer_a.jpg",
+        "totalTime": "PT3M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Sign Up To ChatGPT 4",
+            "text": "If you haven't already upgraded, you'll need a Chat GPT 4 account. At the time of writing you can upgrade for $20 per month."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Add The Prompt With Website Link",
+            "text": "Add a simple prompt to ask the LLM (large language model) to crawl or view the website link you wish to extract data from."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Review AI Output",
+            "text": "You can see the output from your prompt and then ask it further questions or give it further prompts."
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data#term-0",
+        "name": "LLM",
+        "description": "Large language model used for natural language processing tasks"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data#term-1",
+        "name": "Web crawling",
+        "description": "Feature that allows ChatGPT4 to access and extract information from website links"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data#term-2",
+        "name": "Entity extraction",
+        "description": "Process of identifying and extracting specific entities from web content using Google NLP"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data",
+        "url": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data",
+        "name": "Using ChatGPT 4 To Crawl Web Pages &#038; Links To Extract Data",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "ai-prompts",
+              "item": "https://optizenapp.com/ai-prompts"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Using ChatGPT 4 To Crawl Web Pages &#038; Links To Extract Data",
+              "item": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-04T23:44:51.850Z",
+  "contentModified": "2023-11-23T05:42:27",
+  "contentHash": "2894830e4247fd10931a96a0f0f6ab99"
+}
