@@ -59,7 +59,13 @@ export class ClaudeAPI {
       },
     ];
 
+    // Add 15-second timeout to prevent hanging
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 15000);
+
     try {
+      const startTime = Date.now();
+      
       const response = await fetch(this.baseURL, {
         method: 'POST',
         headers: {
@@ -74,9 +80,14 @@ export class ClaudeAPI {
           system: systemPrompt,
           messages,
         }),
+        signal: controller.signal,
         // Don't cache - we want fresh responses for each page
         cache: 'no-store',
       });
+
+      clearTimeout(timeoutId);
+      
+      const elapsed = ((Date.now() - startTime) / 1000).toFixed(2);
 
       if (!response.ok) {
         const error = await response.text();
@@ -85,13 +96,21 @@ export class ClaudeAPI {
 
       const data: ClaudeResponse = await response.json();
       
+      console.log(`⏱️  Claude API call completed in ${elapsed}s`);
+      
       if (data.content && data.content.length > 0) {
         return data.content[0].text;
       }
 
       return '';
-    } catch (error) {
-      console.error('❌ Claude API Error:', error);
+    } catch (error: any) {
+      clearTimeout(timeoutId);
+      
+      if (error.name === 'AbortError') {
+        console.error('❌ Claude API timeout after 15 seconds');
+      } else {
+        console.error('❌ Claude API Error:', error);
+      }
       return '';
     }
   }

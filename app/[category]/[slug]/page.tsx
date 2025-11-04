@@ -25,7 +25,15 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
+  console.log('📝 generateStaticParams: Fetching all post slugs for static generation...');
   const slugs = await getAllPostSlugs();
+  console.log(`📝 generateStaticParams: Found ${slugs.length} posts to pre-render`);
+  
+  // Log first few for verification
+  if (slugs.length > 0) {
+    console.log('📝 First 3 posts:', slugs.slice(0, 3).map(s => `/${s.category}/${s.slug}`));
+  }
+  
   return slugs.map(({ category, slug }) => ({
     category,
     slug,
@@ -34,6 +42,10 @@ export async function generateStaticParams() {
 
 // Prevent on-demand generation - only serve pre-rendered pages
 export const dynamicParams = false;
+
+// Force static generation at build time
+export const dynamic = 'force-static';
+export const revalidate = false;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { category, slug } = await params;
