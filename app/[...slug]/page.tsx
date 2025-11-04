@@ -9,6 +9,26 @@ import Footer from '@/components/layout/Footer';
 import PageSidebar from '@/components/ui/PageSidebar';
 import FloatingCTA from '@/components/ui/FloatingCTA';
 
+// Helper function to decode HTML entities
+function decodeHtmlEntities(text: string): string {
+  const entities: { [key: string]: string } = {
+    '&#038;': '&',
+    '&amp;': '&',
+    '&#8211;': '–',
+    '&#8212;': '—',
+    '&#8216;': ''',
+    '&#8217;': ''',
+    '&#8220;': '"',
+    '&#8221;': '"',
+    '&lt;': '<',
+    '&gt;': '>',
+    '&quot;': '"',
+    '&#039;': "'",
+  };
+  
+  return text.replace(/&#?\w+;/g, match => entities[match] || match);
+}
+
 interface PageProps {
   params: Promise<{
     slug: string[];
@@ -37,8 +57,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const seoMeta = (page as any).seoMeta || {};
-  const title = seoMeta.seoTitle || page.title.rendered;
-  const description = seoMeta.seoDescription || page.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160);
+  const title = decodeHtmlEntities(seoMeta.seoTitle || page.title.rendered);
+  const description = decodeHtmlEntities(seoMeta.seoDescription || page.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160));
 
   return {
     title: `${title} | OptizenApp`,
@@ -92,7 +112,7 @@ function buildSidebarPages(hierarchy: PageHierarchy[], allPages: WordPressPage[]
     return {
       id: item.page.id,
       slug: item.page.slug,
-      title: item.page.title.rendered,
+      title: decodeHtmlEntities(item.page.title.rendered),
       path: fullPath,
       parent: item.page.parent,
       children: item.children.length > 0 ? buildSidebarPages(item.children, allPages) : [],
@@ -168,7 +188,7 @@ export default async function Page({ params }: PageProps) {
                 <PageSidebar 
                   pages={sidebarPages} 
                   currentPath={path}
-                  rootTitle={rootParent.title.rendered}
+                  rootTitle={decodeHtmlEntities(rootParent.title.rendered)}
                 />
               </div>
             )}
@@ -191,7 +211,7 @@ export default async function Page({ params }: PageProps) {
 
               {/* Page Title */}
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                {page.title.rendered}
+                {decodeHtmlEntities(page.title.rendered)}
               </h1>
 
               {/* Page Meta */}
