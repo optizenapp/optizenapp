@@ -54,6 +54,9 @@ export async function generateStaticParams() {
   }));
 }
 
+// Prevent on-demand generation - only serve pre-rendered pages
+export const dynamicParams = false;
+
 // Generate metadata for each page
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;

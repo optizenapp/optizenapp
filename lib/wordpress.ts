@@ -214,19 +214,40 @@ export async function getMediaById(id: number): Promise<WordPressMedia | null> {
   return response.json();
 }
 
-// Get all post slugs for static generation
+// Get all post slugs for static generation (with pagination)
 export async function getAllPostSlugs(): Promise<Array<{ category: string; slug: string }>> {
-  const response = await fetch(`${WP_API_URL}/posts?per_page=100&_embed=true`, {
-    next: { revalidate: false }, // Cache permanently
-  });
+  let allPosts: WordPressPost[] = [];
+  let page = 1;
+  let hasMore = true;
 
-  if (!response.ok) {
-    return [];
+  while (hasMore) {
+    const response = await fetch(`${WP_API_URL}/posts?per_page=100&page=${page}&_embed=true`, {
+      next: { revalidate: false }, // Cache permanently
+    });
+
+    if (!response.ok) {
+      break;
+    }
+
+    const posts: WordPressPost[] = await response.json();
+    
+    if (posts.length === 0) {
+      hasMore = false;
+    } else {
+      allPosts = allPosts.concat(posts);
+      page++;
+      
+      // Check if there are more pages
+      const totalPages = response.headers.get('X-WP-TotalPages');
+      if (totalPages && page > parseInt(totalPages)) {
+        hasMore = false;
+      }
+    }
   }
 
-  const posts: WordPressPost[] = await response.json();
+  console.log(`📚 Fetched ${allPosts.length} posts for static generation`);
   
-  return posts.map(post => {
+  return allPosts.map(post => {
     const category = post._embedded?.['wp:term']?.[0]?.[0]?.slug || 'uncategorized';
     return {
       category,
@@ -371,9 +392,25 @@ export function buildPageHierarchy(pages: WordPressPage[], parentId: number = 0)
 
 // Get all page paths for static generation
 export async function getAllPagePaths(): Promise<string[]> {
-  const { pages: allPages } = await getPages({ per_page: 100 });
+  // Fetch ALL pages with pagination
+  let allPages: WordPressPage[] = [];
+  let page = 1;
+  let hasMore = true;
+
+  while (hasMore) {
+    const result = await getPages({ per_page: 100, page });
+    allPages = allPages.concat(result.pages);
+    
+    if (page >= result.totalPages) {
+      hasMore = false;
+    } else {
+      page++;
+    }
+  }
+
+  console.log(`📄 Fetched ${allPages.length} pages for static generation`);
   
-  return allPages.map(page => buildPagePath(page, allPages));
+  return allPages.map(p => buildPagePath(p, allPages));
 }
 
 // Get sidebar navigation for a specific page (same parent/sibling pages)

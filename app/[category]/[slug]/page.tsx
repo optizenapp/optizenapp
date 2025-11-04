@@ -32,6 +32,9 @@ export async function generateStaticParams() {
   }));
 }
 
+// Prevent on-demand generation - only serve pre-rendered pages
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { category, slug } = await params;
   const post = await getPostBySlug(slug);
