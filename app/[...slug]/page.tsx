@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getPageByPath, getAllPagePaths, getPages, buildPageHierarchy, type WordPressPage, type PageHierarchy } from '@/lib/wordpress';
-import { formatDate } from '@/lib/blog-utils';
+import { formatDate, stripHtml } from '@/lib/blog-utils';
+import { generateSchemaOrg } from '@/lib/schema-generator';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import PageSidebar from '@/components/ui/PageSidebar';
@@ -163,10 +164,41 @@ export default async function Page({ params }: PageProps) {
   // Get featured image
   const featuredImage = page._embedded?.['wp:featuredmedia']?.[0];
 
+  // LLM-Powered Schema.org Generation
+  const schema = await generateSchemaOrg({
+    url: `https://optizenapp.com/${path}`,
+    title: decodeHtmlEntities(stripHtml(page.title.rendered)),
+    content: page.content.rendered,
+    excerpt: stripHtml(page.excerpt.rendered),
+    datePublished: page.date,
+    dateModified: page.modified,
+    category: rootParent.title.rendered,
+    featuredImage: featuredImage && featuredImage.media_details ? {
+      url: featuredImage.source_url,
+      width: featuredImage.media_details.width,
+      height: featuredImage.media_details.height,
+      alt: featuredImage.alt_text,
+    } : undefined,
+    breadcrumbs: breadcrumbs.map(b => ({ name: b.label, url: b.href })),
+    siteInfo: {
+      name: 'OptizenApp',
+      url: 'https://optizenapp.com',
+      logoUrl: 'https://optizenapp.com/optizen-logo.png',
+    },
+  });
+
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
-      <FloatingCTA />
+    <>
+      {schema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      )}
+      
+      <div className="min-h-screen flex flex-col bg-white">
+        <Header />
+        <FloatingCTA />
       
       <main className="flex-1 pt-16">
         {/* Breadcrumbs */}
@@ -250,6 +282,7 @@ export default async function Page({ params }: PageProps) {
 
       <Footer />
     </div>
+    </>
   );
 }
 

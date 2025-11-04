@@ -10,7 +10,8 @@ import {
   docsMapping,
   type AppType 
 } from '@/lib/docs-mapping';
-import { formatDate } from '@/lib/blog-utils';
+import { formatDate, stripHtml } from '@/lib/blog-utils';
+import { generateSchemaOrg } from '@/lib/schema-generator';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import DocsSidebar from '@/components/docs/DocsSidebar';
@@ -137,9 +138,42 @@ export default async function DocPage({ params }: PageProps) {
   const docs = getDocsForApp(app);
   const currentAppInfo = appInfo[app];
 
+  // Build breadcrumbs
+  const breadcrumbs = [
+    { name: 'Home', url: 'https://optizenapp.com' },
+    { name: 'Support Docs', url: 'https://optizenapp.com/support-docs' },
+    { name: currentAppInfo.name, url: `https://optizenapp.com/support-docs/${app}` },
+    { name: decodeHtmlEntities(stripHtml(page.title.rendered)), url: `https://optizenapp.com/support-docs/${app}/${slug.join('/')}` },
+  ];
+
+  // LLM-Powered Schema.org Generation for Documentation
+  const schema = await generateSchemaOrg({
+    url: `https://optizenapp.com/support-docs/${app}/${slug.join('/')}`,
+    title: decodeHtmlEntities(stripHtml(page.title.rendered)),
+    content: page.content.rendered,
+    excerpt: stripHtml(page.excerpt.rendered),
+    datePublished: page.date,
+    dateModified: page.modified,
+    category: `${currentAppInfo.name} Documentation`,
+    breadcrumbs,
+    siteInfo: {
+      name: 'OptizenApp',
+      url: 'https://optizenapp.com',
+      logoUrl: 'https://optizenapp.com/optizen-logo.png',
+    },
+  });
+
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header />
+    <>
+      {schema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      )}
+      
+      <div className="min-h-screen flex flex-col bg-gray-50">
+        <Header />
       
       <main className="flex-1 pt-16">
         {/* Breadcrumbs */}
@@ -240,6 +274,7 @@ export default async function DocPage({ params }: PageProps) {
 
       <Footer />
     </div>
+    </>
   );
 }
 

@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getPostBySlug, getCategoryBySlug, getAllPostSlugs } from '@/lib/wordpress';
-import { formatDate, calculateReadingTime } from '@/lib/blog-utils';
+import { formatDate, calculateReadingTime, stripHtml } from '@/lib/blog-utils';
+import { generateSchemaOrg } from '@/lib/schema-generator';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingCTA from '@/components/ui/FloatingCTA';
@@ -83,35 +84,45 @@ export default async function BlogPost({ params }: PageProps) {
   const authorName = post._embedded?.author?.[0]?.name || 'OptizenApp';
   const readingTime = calculateReadingTime(post.content.rendered);
 
-  // JSON-LD structured data
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: post.title.rendered,
-    image: featuredImage ? [featuredImage.source_url] : [],
+  // Build breadcrumbs
+  const breadcrumbs = [
+    { name: 'Home', url: 'https://optizenapp.com' },
+    { name: categoryData?.name || 'Blog', url: `https://optizenapp.com/${category}` },
+    { name: stripHtml(post.title.rendered), url: `https://optizenapp.com/${category}/${slug}` },
+  ];
+
+  // LLM-Powered Schema.org Generation
+  const schema = await generateSchemaOrg({
+    url: `https://optizenapp.com/${category}/${slug}`,
+    title: stripHtml(post.title.rendered),
+    content: post.content.rendered,
+    excerpt: stripHtml(post.excerpt.rendered),
+    author: authorName,
     datePublished: post.date,
     dateModified: post.modified,
-    author: {
-      '@type': 'Person',
-      name: authorName,
-    },
-    publisher: {
-      '@type': 'Organization',
+    category: categoryData?.name || 'Blog',
+    featuredImage: featuredImage ? {
+      url: featuredImage.source_url,
+      width: featuredImage.media_details?.width || 1200,
+      height: featuredImage.media_details?.height || 630,
+      alt: featuredImage.alt_text,
+    } : undefined,
+    breadcrumbs,
+    siteInfo: {
       name: 'OptizenApp',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://optizenapp.com/optizen-logo.png',
-      },
+      url: 'https://optizenapp.com',
+      logoUrl: 'https://optizenapp.com/optizen-logo.png',
     },
-    description: post.excerpt.rendered.replace(/<[^>]*>/g, ''),
-  };
+  });
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {schema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      )}
       
       <div className="min-h-screen flex flex-col bg-white">
         <Header />
