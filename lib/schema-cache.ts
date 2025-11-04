@@ -7,7 +7,8 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 
-const CACHE_DIR = path.join(process.cwd(), '.next', 'cache', 'schema');
+// Store cache in committed directory (not in .next which is gitignored)
+const CACHE_DIR = path.join(process.cwd(), '.schema-cache');
 
 export interface CachedSchema {
   schema: object;
