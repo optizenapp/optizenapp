@@ -6,7 +6,6 @@ import { getCategoryBySlug, getPosts, getCategories } from '@/lib/wordpress';
 import { formatDate, calculateReadingTime, stripHtml, truncateText } from '@/lib/blog-utils';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import FloatingCTA from '@/components/ui/FloatingCTA';
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
 
 interface PageProps {
@@ -98,7 +97,6 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
-      <FloatingCTA />
       
       <main className="flex-1 pt-16">
         {/* Breadcrumbs */}
