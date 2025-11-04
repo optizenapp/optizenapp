@@ -143,6 +143,12 @@ Return ONLY the JSON, nothing else.`;
 }
 
 export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<object | null> {
+  // Skip LLM schema generation if disabled (useful for faster builds)
+  if (process.env.DISABLE_SCHEMA_GENERATION === 'true') {
+    console.log('⏭️  Schema generation disabled via env var, using basic schema');
+    return generateBasicArticleSchema(input);
+  }
+  
   const analysis = await analyzeContent(input);
   
   if (!analysis) {
