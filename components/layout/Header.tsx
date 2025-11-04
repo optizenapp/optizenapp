@@ -40,9 +40,6 @@ export default function Header() {
             <Link href="/blog" className="text-gray-600 hover:text-gray-900 transition-colors">
               Blog
             </Link>
-            <Link href="/#support" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Support
-            </Link>
           </div>
 
           {/* CTA Buttons */}
@@ -112,13 +109,6 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
-            </Link>
-            <Link
-              href="/#support"
-              className="block text-gray-600 hover:text-gray-900"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Support
             </Link>
             <Link
               href="/contact"
