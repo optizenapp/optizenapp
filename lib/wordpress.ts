@@ -86,10 +86,37 @@ export async function getPosts(params?: {
   return { posts, totalPages, totalPosts };
 }
 
-// Helper function to scrape SEO meta from page HTML
-async function scrapeSEOMetaFromHTML(url: string): Promise<{ seoTitle?: string; seoDescription?: string }> {
+// Helper function to get SEO meta from Rank Math API or scrape from HTML
+async function getSEOMetaFromRankMath(postUrl: string): Promise<{ seoTitle?: string; seoDescription?: string }> {
+  // Try Rank Math REST API first (if Headless CMS Support is enabled)
+  const rankMathApiUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-json/rankmath/v1/getMeta?url=${encodeURIComponent(postUrl)}`;
+  
   try {
-    const response = await fetch(url, {
+    const apiResponse = await fetch(rankMathApiUrl, {
+      next: { revalidate: 3600 },
+    });
+
+    if (apiResponse.ok) {
+      const data = await apiResponse.json();
+      
+      // Rank Math API returns the full HTML head content
+      if (data.head) {
+        const titleMatch = data.head.match(/<title>([^<]+)<\/title>/i);
+        const descMatch = data.head.match(/<meta\s+name="description"\s+content="([^"]+)"/i);
+        
+        return {
+          seoTitle: titleMatch ? titleMatch[1] : undefined,
+          seoDescription: descMatch ? descMatch[1] : undefined,
+        };
+      }
+    }
+  } catch (error) {
+    console.log('Rank Math API not available, falling back to HTML scraping');
+  }
+
+  // Fallback: Scrape from HTML
+  try {
+    const response = await fetch(postUrl, {
       next: { revalidate: 3600 },
     });
 
@@ -99,7 +126,7 @@ async function scrapeSEOMetaFromHTML(url: string): Promise<{ seoTitle?: string; 
 
     const html = await response.text();
     
-    // Extract SEO title from meta tags (Rank Math, Yoast, or default)
+    // Extract SEO title from meta tags
     const titleMatch = html.match(/<meta\s+(?:property="og:title"|name="twitter:title")\s+content="([^"]+)"/i);
     const seoTitle = titleMatch ? titleMatch[1] : undefined;
     
@@ -109,7 +136,7 @@ async function scrapeSEOMetaFromHTML(url: string): Promise<{ seoTitle?: string; 
 
     return { seoTitle, seoDescription };
   } catch (error) {
-    console.error('Error scraping SEO meta:', error);
+    console.error('Error getting SEO meta:', error);
     return {};
   }
 }
@@ -132,8 +159,8 @@ export async function getPostBySlug(slug: string): Promise<WordPressPost | null>
     const category = post._embedded?.['wp:term']?.[0]?.[0]?.slug || 'uncategorized';
     const postUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/${category}/${slug}/`;
     
-    // Scrape SEO meta from actual page HTML
-    const seoMeta = await scrapeSEOMetaFromHTML(postUrl);
+    // Get SEO meta from Rank Math API or scrape from HTML as fallback
+    const seoMeta = await getSEOMetaFromRankMath(postUrl);
     
     // Attach SEO meta to post object
     (post as any).seoMeta = seoMeta;
