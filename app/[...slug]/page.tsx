@@ -176,7 +176,7 @@ export default async function Page({ params }: PageProps) {
             {/* Main Content */}
             <article className={sidebarPages.length > 0 ? 'lg:col-span-3' : 'lg:col-span-4'}>
               {/* Featured Image */}
-              {featuredImage && (
+              {featuredImage && featuredImage.media_details && (
                 <div className="mb-8 rounded-2xl overflow-hidden">
                   <Image
                     src={featuredImage.source_url}
