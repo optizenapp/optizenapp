@@ -72,7 +72,7 @@ export async function getPosts(params?: {
   });
 
   const response = await fetch(`${WP_API_URL}/posts?${searchParams}`, {
-    next: { revalidate: 3600 }, // Revalidate every hour
+    next: { revalidate: false }, // Cache permanently, only regenerate on deploy or manual revalidation
   });
 
   if (!response.ok) {
@@ -94,7 +94,7 @@ async function getSEOMetaFromRankMath(postUrl: string): Promise<{ seoTitle?: str
   
   try {
     const apiResponse = await fetch(rankMathApiUrl, {
-      next: { revalidate: 3600 },
+      next: { revalidate: false }, // Cache permanently
     });
 
     if (apiResponse.ok) {
@@ -122,7 +122,7 @@ async function getSEOMetaFromRankMath(postUrl: string): Promise<{ seoTitle?: str
   // Fallback: Scrape from HTML
   try {
     const response = await fetch(postUrl, {
-      next: { revalidate: 3600 },
+      next: { revalidate: false }, // Cache permanently
     });
 
     if (!response.ok) {

@@ -56,9 +56,18 @@ Content → Claude Analysis → Schema Generation → Page Render
 ## 💰 Cost Considerations
 
 - **Per page**: ~$0.02-0.08 (depending on content length)
-- **Caching**: Runs only during build (ISR revalidation)
-- **Typical blog** (100 pages): ~$2-8 per build
+- **Caching**: Permanent cache - only regenerates on deploy
+- **Typical blog** (100 pages): ~$2-8 per deploy
+- **Monthly cost**: $2-15/month (assuming 3-5 deploys/month)
 - **Value**: Massive SEO improvement, rich search results
+
+### Cost Savings Strategy
+Schema is generated once at build time and cached permanently. It only regenerates when:
+1. You deploy new code
+2. You manually trigger revalidation
+3. WordPress content is updated (if using webhooks)
+
+See `REVALIDATION_GUIDE.md` for more details.
 
 ## 🎨 Schema Types Generated
 
