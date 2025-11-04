@@ -210,7 +210,7 @@ export default async function DocPage({ params }: PageProps) {
                     prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:scroll-mt-24
                     prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-h3:scroll-mt-24
                     prose-p:!text-gray-900 prose-p:leading-relaxed
-                    prose-a:!text-optizen-blue-500 prose-a:!no-underline hover:prose-a:!underline prose-a:font-medium
+                    prose-a:!text-optizen-blue-600 prose-a:!no-underline hover:prose-a:!underline prose-a:font-bold
                     prose-strong:!text-gray-900 prose-strong:font-semibold
                     prose-ul:!text-gray-900 prose-ol:!text-gray-900
                     prose-li:!text-gray-900 prose-li:my-1

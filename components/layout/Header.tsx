@@ -28,17 +28,20 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="#apps" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <Link href="/#apps" className="text-gray-600 hover:text-gray-900 transition-colors">
               Apps
             </Link>
-            <Link href="#pricing" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <Link href="/#pricing" className="text-gray-600 hover:text-gray-900 transition-colors">
               Pricing
             </Link>
-            <Link href="#support" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Support
+            <Link href="/support-docs" className="text-gray-600 hover:text-gray-900 transition-colors">
+              Docs
             </Link>
             <Link href="/blog" className="text-gray-600 hover:text-gray-900 transition-colors">
               Blog
+            </Link>
+            <Link href="/#support" className="text-gray-600 hover:text-gray-900 transition-colors">
+              Support
             </Link>
           </div>
 
@@ -83,25 +86,25 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-4">
             <Link
-              href="#apps"
+              href="/#apps"
               className="block text-gray-600 hover:text-gray-900"
               onClick={() => setMobileMenuOpen(false)}
             >
               Apps
             </Link>
             <Link
-              href="#pricing"
+              href="/#pricing"
               className="block text-gray-600 hover:text-gray-900"
               onClick={() => setMobileMenuOpen(false)}
             >
               Pricing
             </Link>
             <Link
-              href="#support"
+              href="/support-docs"
               className="block text-gray-600 hover:text-gray-900"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Support
+              Docs
             </Link>
             <Link
               href="/blog"
@@ -109,6 +112,13 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
+            </Link>
+            <Link
+              href="/#support"
+              className="block text-gray-600 hover:text-gray-900"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Support
             </Link>
             <Link
               href="/contact"
