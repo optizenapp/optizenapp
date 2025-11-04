@@ -393,3 +393,28 @@ export async function getPageSiblings(page: WordPressPage): Promise<WordPressPag
     .sort((a, b) => a.menu_order - b.menu_order);
 }
 
+// Fetch a single page by WordPress slug (for docs mapping)
+export async function getPageByWpSlug(wpSlug: string): Promise<WordPressPage | null> {
+  const response = await fetch(`${WP_API_URL}/pages?slug=${wpSlug}&_embed=true`, {
+    next: { revalidate: 3600 },
+  });
+
+  if (!response.ok) {
+    return null;
+  }
+
+  const pages = await response.json();
+  const page = pages[0] || null;
+
+  if (page) {
+    // Get SEO meta from Rank Math
+    const pageUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/${wpSlug}/`;
+    const seoMeta = await getSEOMetaFromRankMath(pageUrl);
+    
+    // Attach SEO meta to page object
+    (page as any).seoMeta = seoMeta;
+  }
+
+  return page;
+}
+
