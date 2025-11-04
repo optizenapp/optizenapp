@@ -1,5 +1,57 @@
 const WP_API_URL = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-json/wp/v2';
 
+/**
+ * Fetch with retry logic for WordPress API
+ * Handles temporary 503/504 errors and rate limiting
+ */
+async function fetchWithRetry(
+  url: string,
+  options: RequestInit = {},
+  maxRetries = 3
+): Promise<Response> {
+  let lastError: Error | null = null;
+  
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      if (attempt > 1) {
+        console.log(`🔄 Retry attempt ${attempt}/${maxRetries} for: ${url.split('?')[0]}`);
+      }
+      
+      const response = await fetchWithRetry(url, options);
+      
+      // If successful, return immediately
+      if (response.ok) {
+        return response;
+      }
+      
+      // Client error (4xx) - don't retry
+      if (response.status >= 400 && response.status < 500) {
+        return response;
+      }
+      
+      // Server error (5xx) - retry with backoff
+      if (response.status >= 500) {
+        throw new Error(`Server error ${response.status}: ${response.statusText}`);
+      }
+      
+      return response;
+      
+    } catch (error: any) {
+      lastError = error;
+      
+      if (attempt < maxRetries) {
+        const delay = 2000 * attempt; // 2s, 4s, 6s exponential backoff
+        console.warn(`⚠️  Fetch failed (${error.message}). Retrying in ${delay/1000}s...`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+      } else {
+        console.error(`❌ All ${maxRetries} attempts failed for: ${url.split('?')[0]}`);
+      }
+    }
+  }
+  
+  throw lastError || new Error('Fetch failed after retries');
+}
+
 export interface WordPressPost {
   id: number;
   date: string;
@@ -71,7 +123,7 @@ export async function getPosts(params?: {
     ...(params?.search && { search: params.search }),
   });
 
-  const response = await fetch(`${WP_API_URL}/posts?${searchParams}`, {
+  const response = await fetchWithRetry(`${WP_API_URL}/posts?${searchParams}`, {
     next: { revalidate: false }, // Cache permanently, only regenerate on deploy or manual revalidation
   });
 
@@ -121,7 +173,7 @@ async function getSEOMetaFromRankMath(postUrl: string): Promise<{ seoTitle?: str
 
   // Fallback: Scrape from HTML
   try {
-    const response = await fetch(postUrl, {
+    const response = await fetchWithRetry(postUrl, {
       next: { revalidate: false }, // Cache permanently
     });
 
@@ -148,7 +200,7 @@ async function getSEOMetaFromRankMath(postUrl: string): Promise<{ seoTitle?: str
 
 // Fetch a single post by slug
 export async function getPostBySlug(slug: string): Promise<WordPressPost | null> {
-  const response = await fetch(`${WP_API_URL}/posts?slug=${slug}&_embed=true`, {
+  const response = await fetchWithRetry(`${WP_API_URL}/posts?slug=${slug}&_embed=true`, {
     next: { revalidate: false }, // Cache permanently
   });
 
@@ -176,7 +228,7 @@ export async function getPostBySlug(slug: string): Promise<WordPressPost | null>
 
 // Fetch all categories
 export async function getCategories(): Promise<WordPressCategory[]> {
-  const response = await fetch(`${WP_API_URL}/categories?per_page=100`, {
+  const response = await fetchWithRetry(`${WP_API_URL}/categories?per_page=100`, {
     next: { revalidate: false }, // Cache permanently
   });
 
@@ -189,7 +241,7 @@ export async function getCategories(): Promise<WordPressCategory[]> {
 
 // Fetch a single category by slug
 export async function getCategoryBySlug(slug: string): Promise<WordPressCategory | null> {
-  const response = await fetch(`${WP_API_URL}/categories?slug=${slug}`, {
+  const response = await fetchWithRetry(`${WP_API_URL}/categories?slug=${slug}`, {
     next: { revalidate: false }, // Cache permanently
   });
 
@@ -203,7 +255,7 @@ export async function getCategoryBySlug(slug: string): Promise<WordPressCategory
 
 // Fetch media by ID
 export async function getMediaById(id: number): Promise<WordPressMedia | null> {
-  const response = await fetch(`${WP_API_URL}/media/${id}`, {
+  const response = await fetchWithRetry(`${WP_API_URL}/media/${id}`, {
     next: { revalidate: false }, // Cache permanently
   });
 
@@ -221,7 +273,7 @@ export async function getAllPostSlugs(): Promise<Array<{ category: string; slug:
   let hasMore = true;
 
   while (hasMore) {
-    const response = await fetch(`${WP_API_URL}/posts?per_page=100&page=${page}&_embed=true`, {
+    const response = await fetchWithRetry(`${WP_API_URL}/posts?per_page=100&page=${page}&_embed=true`, {
       next: { revalidate: false }, // Cache permanently
     });
 
@@ -316,7 +368,7 @@ export async function getPages(params?: {
     ...(params?.parent !== undefined && { parent: params.parent.toString() }),
   });
 
-  const response = await fetch(`${WP_API_URL}/pages?${searchParams}`, {
+  const response = await fetchWithRetry(`${WP_API_URL}/pages?${searchParams}`, {
     next: { revalidate: false }, // Cache permanently
   });
 
@@ -432,7 +484,7 @@ export async function getPageSiblings(page: WordPressPage): Promise<WordPressPag
 
 // Fetch a single page by WordPress slug (for docs mapping)
 export async function getPageByWpSlug(wpSlug: string): Promise<WordPressPage | null> {
-  const response = await fetch(`${WP_API_URL}/pages?slug=${wpSlug}&_embed=true`, {
+  const response = await fetchWithRetry(`${WP_API_URL}/pages?slug=${wpSlug}&_embed=true`, {
     next: { revalidate: false }, // Cache permanently
   });
 
