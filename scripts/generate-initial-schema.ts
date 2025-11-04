@@ -52,6 +52,7 @@ async function generateInitialSchema() {
           siteInfo: {
             name: 'OptizenAI',
             url: 'https://optizenapp.com',
+            logoUrl: 'https://optizenapp.com/optizen-logo.png',
           },
         });
         
@@ -112,6 +113,7 @@ async function generateInitialSchema() {
           siteInfo: {
             name: 'OptizenAI',
             url: 'https://optizenapp.com',
+            logoUrl: 'https://optizenapp.com/optizen-logo.png',
           },
         });
         
