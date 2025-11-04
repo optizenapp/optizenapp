@@ -230,7 +230,7 @@ export default async function Page({ params }: PageProps) {
                 className="prose prose-lg max-w-none
                   prose-headings:!text-gray-900 prose-headings:font-bold
                   prose-p:!text-gray-900 prose-p:leading-relaxed
-                  prose-a:!text-optizen-blue-500 prose-a:!no-underline hover:prose-a:!underline
+                  prose-a:!text-optizen-blue-600 prose-a:!no-underline hover:prose-a:!underline prose-a:font-bold
                   prose-strong:!text-gray-900 prose-strong:font-semibold
                   prose-ul:!text-gray-900 prose-ol:!text-gray-900
                   prose-li:!text-gray-900

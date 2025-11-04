@@ -177,28 +177,7 @@ export const docsMapping: DocMapping[] = [
   },
   
   // Video Upsells App Documentation
-  // Add your video upsells docs here - using placeholders for now
-  {
-    wpSlug: 'video-upsell-getting-started',
-    nextSlug: 'getting-started',
-    app: 'video-upsells',
-    title: 'Getting Started',
-    order: 1,
-  },
-  {
-    wpSlug: 'video-upsell-installation',
-    nextSlug: 'installation',
-    app: 'video-upsells',
-    title: 'Installation Guide',
-    order: 2,
-  },
-  {
-    wpSlug: 'video-upsell-creating-campaigns',
-    nextSlug: 'creating-campaigns',
-    app: 'video-upsells',
-    title: 'Creating Video Campaigns',
-    order: 3,
-  },
+  // No docs yet - will add when created in WordPress
 ];
 
 /**

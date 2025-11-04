@@ -204,7 +204,7 @@ export default async function BlogPost({ params }: PageProps) {
                 prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
                 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
                 prose-p:text-gray-900 prose-p:leading-relaxed
-                prose-a:text-optizen-blue-500 prose-a:font-medium hover:prose-a:text-optizen-blue-600 hover:prose-a:underline
+                prose-a:text-optizen-blue-600 prose-a:font-bold hover:prose-a:text-optizen-blue-700 hover:prose-a:underline
                 prose-li:text-gray-900
                 prose-strong:text-gray-900 prose-strong:font-semibold
                 prose-img:rounded-xl prose-img:shadow-lg
