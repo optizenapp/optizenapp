@@ -29,6 +29,15 @@ function decodeHtmlEntities(text: string): string {
   return text.replace(/&#?\w+;/g, match => entities[match] || match);
 }
 
+// Helper function to replace WordPress staging links with production links
+function replaceInternalLinks(content: string): string {
+  // Replace staging domain with production domain (or relative URLs)
+  const stagingDomain = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com';
+  const productionDomain = 'https://optizenapp.com';
+  
+  return content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
+}
+
 interface PageProps {
   params: Promise<{
     slug: string[];
@@ -209,19 +218,14 @@ export default async function Page({ params }: PageProps) {
                 </div>
               )}
 
-              {/* Page Title */}
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                {decodeHtmlEntities(page.title.rendered)}
-              </h1>
-
-              {/* Page Meta */}
+              {/* Page Meta - WordPress content has its own H1, so we don't add another */}
               <div className="flex items-center gap-4 text-sm text-gray-600 mb-8 pb-8 border-b border-gray-200">
                 <time dateTime={page.date}>
                   Updated {formatDate(page.modified)}
                 </time>
               </div>
 
-              {/* Page Content */}
+              {/* Page Content - WordPress content includes the H1 title */}
               <div 
                 className="prose prose-lg max-w-none
                   prose-headings:!text-gray-900 prose-headings:font-bold
@@ -237,7 +241,7 @@ export default async function Page({ params }: PageProps) {
                   prose-th:!text-gray-900
                   prose-td:!text-gray-900
                   [&_*]:!text-gray-900"
-                dangerouslySetInnerHTML={{ __html: page.content.rendered }}
+                dangerouslySetInnerHTML={{ __html: replaceInternalLinks(page.content.rendered) }}
               />
             </article>
           </div>

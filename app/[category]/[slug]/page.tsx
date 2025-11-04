@@ -9,6 +9,13 @@ import Footer from '@/components/layout/Footer';
 import FloatingCTA from '@/components/ui/FloatingCTA';
 import { Clock, Calendar, ArrowLeft } from 'lucide-react';
 
+// Helper function to replace WordPress staging links with production links
+function replaceInternalLinks(content: string): string {
+  const stagingDomain = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com';
+  const productionDomain = 'https://optizenapp.com';
+  return content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
+}
+
 interface PageProps {
   params: Promise<{
     category: string;
@@ -159,7 +166,7 @@ export default async function BlogPost({ params }: PageProps) {
             {/* Title */}
             <h1 
               className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight"
-              dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+              dangerouslySetInnerHTML={{ __html: replaceInternalLinks(post.title.rendered) }}
             />
 
             {/* Meta Info */}
@@ -205,7 +212,7 @@ export default async function BlogPost({ params }: PageProps) {
                 prose-table:border-collapse prose-table:w-full
                 prose-th:bg-gray-100 prose-th:font-semibold prose-th:text-gray-900
                 prose-td:text-gray-900"
-              dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+              dangerouslySetInnerHTML={{ __html: replaceInternalLinks(post.content.rendered) }}
             />
 
             {/* CTA Section */}
