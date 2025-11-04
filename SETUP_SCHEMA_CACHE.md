@@ -21,8 +21,10 @@ npm install --save-dev tsx
 ### Step 2: Set Environment Variable Locally
 Create `.env.local` file:
 ```bash
-ANTHROPIC_API_KEY=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
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
 ```
+
+**Note:** Get your API key from [Anthropic Console](https://console.anthropic.com/)
 
 ### Step 3: Run Schema Generation Script
 This will take ~20 minutes and generate schema for all 130 pages:
