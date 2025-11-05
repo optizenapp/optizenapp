@@ -12,6 +12,7 @@ import {
 } from '@/lib/docs-mapping';
 import { formatDate, stripHtml } from '@/lib/blog-utils';
 import { generateSchemaOrg } from '@/lib/schema-generator';
+import { getDocContent, getYouTubeEmbedUrl } from '@/lib/docs-content';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import DocsSidebar from '@/components/docs/DocsSidebar';
@@ -97,16 +98,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: 'Documentation Not Found' };
   }
 
-  const page = await getPageByWpSlug(wpSlug);
-  if (!page) {
+  const docContent = getDocContent(wpSlug);
+  if (!docContent) {
     return { title: 'Documentation Not Found' };
   }
 
-  const seoMeta = (page as any).seoMeta || {};
-  const title = decodeHtmlEntities(seoMeta.seoTitle || page.title.rendered);
-  const description = decodeHtmlEntities(
-    seoMeta.seoDescription || page.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160)
-  );
+  const docMapping = docsMapping.find(m => m.wpSlug === wpSlug);
+  const title = docMapping?.title || 'Documentation';
+  const description = stripHtml(docContent.content).substring(0, 160);
   const appName = appInfo[app].name;
 
   return {
@@ -140,11 +139,15 @@ export default async function DocPage({ params }: PageProps) {
     notFound();
   }
 
-  // Fetch page from WordPress
-  const page = await getPageByWpSlug(wpSlug);
-  if (!page) {
+  // Get static content for this doc page
+  const docContent = getDocContent(wpSlug);
+  if (!docContent) {
     notFound();
   }
+
+  // Get page title from docs mapping
+  const docMapping = docsMapping.find(m => m.wpSlug === wpSlug);
+  const pageTitle = docMapping?.title || 'Documentation';
 
   // Get docs for sidebar
   const docs = getDocsForApp(app);
@@ -155,17 +158,17 @@ export default async function DocPage({ params }: PageProps) {
     { name: 'Home', url: 'https://optizenapp.com' },
     { name: 'Support Docs', url: 'https://optizenapp.com/support-docs' },
     { name: currentAppInfo.name, url: `https://optizenapp.com/support-docs/${app}` },
-    { name: decodeHtmlEntities(stripHtml(page.title.rendered)), url: `https://optizenapp.com/support-docs/${app}/${slug.join('/')}` },
+    { name: pageTitle, url: `https://optizenapp.com/support-docs/${app}/${slug.join('/')}` },
   ];
 
   // LLM-Powered Schema.org Generation for Documentation
   const schema = await generateSchemaOrg({
     url: `https://optizenapp.com/support-docs/${app}/${slug.join('/')}`,
-    title: decodeHtmlEntities(stripHtml(page.title.rendered)),
-    content: page.content.rendered,
-    excerpt: stripHtml(page.excerpt.rendered),
-    datePublished: page.date,
-    dateModified: page.modified,
+    title: pageTitle,
+    content: docContent.content,
+    excerpt: stripHtml(docContent.content).substring(0, 160),
+    datePublished: new Date().toISOString(),
+    dateModified: new Date().toISOString(),
     category: `${currentAppInfo.name} Documentation`,
     breadcrumbs,
     siteInfo: {
@@ -208,7 +211,7 @@ export default async function DocPage({ params }: PageProps) {
               </Link>
               <span className="text-gray-400">/</span>
               <span className="text-gray-900 font-medium">
-                {decodeHtmlEntities(page.title.rendered)}
+                {pageTitle}
               </span>
             </nav>
           </div>
@@ -239,16 +242,31 @@ export default async function DocPage({ params }: PageProps) {
                 {/* Page Meta */}
                 <div className="flex items-center gap-4 text-sm text-gray-600 mb-6 pb-6 border-b border-gray-200">
                   <div className="flex items-center gap-1">
-                    <Clock size={16} />
-                    <span>Updated {formatDate(page.modified)}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
                     <BookOpen size={16} />
                     <span>Documentation</span>
                   </div>
                 </div>
 
-                {/* Page Content - WordPress content includes the H1 title */}
+                {/* Page Title */}
+                <h1 className="text-4xl font-bold text-gray-900 mb-8">{pageTitle}</h1>
+
+                {/* Video Embed (if available) */}
+                {docContent.videoUrl && (
+                  <div className="mb-8">
+                    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                      <iframe
+                        src={getYouTubeEmbedUrl(docContent.videoUrl)}
+                        title={pageTitle}
+                        className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Page Content */}
                 <div 
                   className="prose prose-lg max-w-none
                     prose-headings:!text-gray-900 prose-headings:font-bold
@@ -268,7 +286,7 @@ export default async function DocPage({ params }: PageProps) {
                     prose-td:!text-gray-900 prose-td:p-3 prose-td:border prose-td:border-gray-300
                     prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-gray-200
                     [&_*]:!text-gray-900"
-                  dangerouslySetInnerHTML={{ __html: fixLazyLoadedIframes(replaceInternalLinks(page.content.rendered)) }}
+                  dangerouslySetInnerHTML={{ __html: docContent.content }}
                 />
 
                 {/* Doc Navigation */}
