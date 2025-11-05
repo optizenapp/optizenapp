@@ -2,12 +2,13 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getPostBySlug, getCategoryBySlug, getAllPostSlugs } from '@/lib/wordpress';
+import { getPostBySlug, getCategoryBySlug, getAllPostSlugs, getPosts } from '@/lib/wordpress';
 import { formatDate, calculateReadingTime, stripHtml } from '@/lib/blog-utils';
 import { generateSchemaOrg } from '@/lib/schema-generator';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingCTA from '@/components/ui/FloatingCTA';
+import RelatedPosts from '@/components/blog/RelatedPosts';
 import { Clock, Calendar, ArrowLeft } from 'lucide-react';
 
 // Helper function to replace WordPress staging links with production links
@@ -98,6 +99,13 @@ export default async function BlogPost({ params }: PageProps) {
   const featuredImage = post._embedded?.['wp:featuredmedia']?.[0];
   const authorName = post._embedded?.author?.[0]?.name || 'OptizenApp';
   const readingTime = calculateReadingTime(post.content.rendered);
+
+  // Fetch related posts from the same category
+  const categoryId = post.categories[0];
+  const { posts: relatedPostsData } = await getPosts({ 
+    categories: categoryId, 
+    per_page: 4 
+  });
 
   // Build breadcrumbs
   const breadcrumbs = [
@@ -264,6 +272,9 @@ export default async function BlogPost({ params }: PageProps) {
                 </Link>
               </div>
             </div>
+
+            {/* Related Posts */}
+            <RelatedPosts posts={relatedPostsData} currentPostId={post.id} />
           </article>
         </main>
 
