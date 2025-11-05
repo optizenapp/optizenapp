@@ -48,19 +48,19 @@
         ],
         "hasPart": [
           {
-            "@id": "#usage-statistics-table"
+            "@id": "#shopify-usage-statistics"
           },
           {
-            "@id": "#revenue-growth-table"
+            "@id": "#shopify-revenue-growth"
           },
           {
-            "@id": "#country-usage-table"
+            "@id": "#shopify-country-usage"
           },
           {
-            "@id": "#store-categories-table"
+            "@id": "#shopify-store-categories"
           },
           {
-            "@id": "#integrations-table"
+            "@id": "#shopify-integrations-list"
           }
         ]
       },
@@ -80,34 +80,12 @@
             "h2",
             "h3"
           ]
-        },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://optizenapp.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Stats",
-              "item": "https://optizenapp.com/stats/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Shopify Statistics"
-            }
-          ]
         }
       },
       {
         "@type": "DefinedTermSet",
-        "@id": "#shopify-glossary",
-        "name": "Shopify Statistics Glossary",
+        "@id": "#shopify-terminology",
+        "name": "Shopify Statistics Terminology",
         "hasDefinedTerm": [
           {
             "@type": "DefinedTerm",
@@ -152,196 +130,244 @@
       },
       {
         "@type": "ItemList",
-        "@id": "#usage-statistics-table",
+        "@id": "#shopify-usage-statistics",
         "name": "Shopify Usage Statistics",
-        "description": "Current statistics on live and historical Shopify websites",
+        "description": "Key statistics about Shopify platform usage including live and historical websites",
         "numberOfItems": 4,
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Total Live Websites",
-            "description": "4,949,244"
+            "item": {
+              "@type": "Statistic",
+              "name": "Total Live Websites",
+              "value": "4,949,244"
+            }
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Historical Websites",
-            "description": "3,894,613"
+            "item": {
+              "@type": "Statistic",
+              "name": "Historical Websites",
+              "value": "3,894,613"
+            }
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Total Historical Count",
-            "description": "8,843,857"
+            "item": {
+              "@type": "Statistic",
+              "name": "Total Historical Count",
+              "value": "8,843,857"
+            }
           },
           {
             "@type": "ListItem",
             "position": 4,
-            "name": "Australian Websites",
-            "description": "142,382"
+            "item": {
+              "@type": "Statistic",
+              "name": "Australian Websites",
+              "value": "142,382"
+            }
           }
         ]
       },
       {
         "@type": "ItemList",
-        "@id": "#revenue-growth-table",
+        "@id": "#shopify-revenue-growth",
         "name": "Shopify Revenue Growth",
-        "description": "Annual revenue growth data for Shopify in millions",
+        "description": "Annual revenue growth data for Shopify from 2017 to 2022",
         "numberOfItems": 6,
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "2022 Revenue",
-            "description": "$5,600 million"
+            "item": {
+              "@type": "MonetaryAmount",
+              "name": "2022 Revenue",
+              "value": "5600",
+              "currency": "USD"
+            }
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "2021 Revenue",
-            "description": "$4,612 million"
+            "item": {
+              "@type": "MonetaryAmount",
+              "name": "2021 Revenue",
+              "value": "4612",
+              "currency": "USD"
+            }
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "2020 Revenue",
-            "description": "$2,929 million"
+            "item": {
+              "@type": "MonetaryAmount",
+              "name": "2020 Revenue",
+              "value": "2929",
+              "currency": "USD"
+            }
           },
           {
             "@type": "ListItem",
             "position": 4,
-            "name": "2019 Revenue",
-            "description": "$1,578 million"
+            "item": {
+              "@type": "MonetaryAmount",
+              "name": "2019 Revenue",
+              "value": "1578",
+              "currency": "USD"
+            }
           },
           {
             "@type": "ListItem",
             "position": 5,
-            "name": "2018 Revenue",
-            "description": "$1,073 million"
+            "item": {
+              "@type": "MonetaryAmount",
+              "name": "2018 Revenue",
+              "value": "1073",
+              "currency": "USD"
+            }
           },
           {
             "@type": "ListItem",
             "position": 6,
-            "name": "2017 Revenue",
-            "description": "$673 million"
+            "item": {
+              "@type": "MonetaryAmount",
+              "name": "2017 Revenue",
+              "value": "673",
+              "currency": "USD"
+            }
           }
         ]
       },
       {
         "@type": "ItemList",
-        "@id": "#country-usage-table",
+        "@id": "#shopify-country-usage",
         "name": "Shopify Usage by Country",
-        "description": "Number of Shopify websites by country",
+        "description": "Number of Shopify websites by country showing global distribution",
         "numberOfItems": 14,
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "United States",
-            "description": "2,266,122 websites"
+            "item": {
+              "@type": "Statistic",
+              "name": "United States",
+              "value": "2,266,122 websites"
+            }
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "United Kingdom",
-            "description": "413,248 websites"
+            "item": {
+              "@type": "Statistic",
+              "name": "United Kingdom",
+              "value": "413,248 websites"
+            }
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Canada",
-            "description": "298,512 websites"
+            "item": {
+              "@type": "Statistic",
+              "name": "Canada",
+              "value": "298,512 websites"
+            }
           },
           {
             "@type": "ListItem",
             "position": 4,
-            "name": "Germany",
-            "description": "156,934 websites"
+            "item": {
+              "@type": "Statistic",
+              "name": "Germany",
+              "value": "156,934 websites"
+            }
           },
           {
             "@type": "ListItem",
             "position": 5,
-            "name": "Australia",
-            "description": "142,382 websites"
+            "item": {
+              "@type": "Statistic",
+              "name": "Australia",
+              "value": "142,382 websites"
+            }
           }
         ]
       },
       {
         "@type": "ItemList",
-        "@id": "#store-categories-table",
+        "@id": "#shopify-store-categories",
         "name": "Top Shopify Store Categories",
-        "description": "Most popular categories for Shopify stores",
+        "description": "Most popular product categories for Shopify stores",
         "numberOfItems": 15,
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Fashion",
-            "description": "114,091 websites"
+            "item": {
+              "@type": "Statistic",
+              "name": "Fashion",
+              "value": "114,091 websites"
+            }
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Apparel",
-            "description": "89,567 websites"
+            "item": {
+              "@type": "Statistic",
+              "name": "Apparel",
+              "value": "89,567 websites"
+            }
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Jewellery",
-            "description": "74,153 websites"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Bags",
-            "description": "45,224 websites"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Shoes",
-            "description": "34,972 websites"
+            "item": {
+              "@type": "Statistic",
+              "name": "Jewellery",
+              "value": "74,153 websites"
+            }
           }
         ]
       },
       {
         "@type": "ItemList",
-        "@id": "#integrations-table",
+        "@id": "#shopify-integrations-list",
         "name": "Most Popular Shopify Integrations",
-        "description": "Top third-party integrations used with Shopify",
+        "description": "Top third-party integrations and apps used with Shopify",
         "numberOfItems": 13,
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Klaviyo",
-            "description": "354,686 websites"
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Klaviyo",
+              "applicationCategory": "Email Marketing",
+              "description": "354,686 websites"
+            }
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "MailChimp",
-            "description": "165,607 websites"
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "MailChimp",
+              "applicationCategory": "Email Marketing",
+              "description": "165,607 websites"
+            }
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Google Optimize 360",
-            "description": "84,302 websites"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Hotjar",
-            "description": "79,882 websites"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Smile IO",
-            "description": "64,664 websites"
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Google Optimize 360",
+              "applicationCategory": "Analytics",
+              "description": "84,302 websites"
+            }
           }
         ]
       },
@@ -349,23 +375,12 @@
         "@type": "Organization",
         "@id": "https://optizenapp.com/#organization",
         "name": "OptizenApp",
-        "url": "https://optizenapp.com/",
-        "sameAs": [
-          "https://optizenapp.com/"
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://optizenapp.com/#website",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com/",
-        "publisher": {
-          "@id": "https://optizenapp.com/#organization"
-        }
+        "url": "https://optizenapp.com",
+        "sameAs": "https://optizenapp.com"
       }
     ]
   },
-  "generatedAt": "2025-11-05T02:16:28.026Z",
+  "generatedAt": "2025-11-05T03:16:22.078Z",
   "contentModified": "2024-11-27T06:28:18",
   "contentHash": "d1ae7e53d1c4c8a42e653893ffa630ff"
 }

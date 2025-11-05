@@ -31,7 +31,7 @@
             "@id": "#average-order-value"
           },
           {
-            "@id": "#payment-tokenization"
+            "@id": "#e-commerce-optimization"
           }
         ],
         "mentions": [
@@ -42,7 +42,10 @@
             "@id": "#stripe"
           },
           {
-            "@id": "#ajax"
+            "@id": "#payment-tokenization"
+          },
+          {
+            "@id": "#cart-abandonment"
           },
           {
             "@id": "#conversion-rate"
@@ -56,10 +59,10 @@
             "@id": "#comparison-table"
           },
           {
-            "@id": "#faq-section"
+            "@id": "#shopify-implementation-guide"
           },
           {
-            "@id": "#shopify-guide"
+            "@id": "#faq-section"
           }
         ],
         "speakable": {
@@ -73,8 +76,8 @@
       },
       {
         "@type": "DefinedTermSet",
-        "@id": "#upsell-terminology",
-        "name": "E-commerce Upsell Terminology",
+        "@id": "#e-commerce-terminology",
+        "name": "E-commerce Upselling Terminology",
         "hasDefinedTerm": [
           {
             "@type": "DefinedTerm",
@@ -82,7 +85,7 @@
             "name": "Pre-Purchase Upsell",
             "description": "An offer shown before a customer pays, modifying the current shopping cart by adding or upgrading items before the transaction is completed.",
             "inDefinedTermSet": {
-              "@id": "#upsell-terminology"
+              "@id": "#e-commerce-terminology"
             }
           },
           {
@@ -91,67 +94,63 @@
             "name": "Post-Purchase Upsell",
             "description": "An offer shown after a customer completes payment, creating a new, separate transaction using tokenized payment information for one-click acceptance.",
             "inDefinedTermSet": {
-              "@id": "#upsell-terminology"
+              "@id": "#e-commerce-terminology"
             }
           },
           {
             "@type": "DefinedTerm",
             "@id": "#average-order-value",
             "name": "Average Order Value (AOV)",
-            "description": "The average dollar amount spent each time a customer places an order, calculated by dividing total revenue by number of orders.",
+            "description": "The average amount spent each time a customer places an order, calculated by dividing total revenue by number of orders.",
             "alternateName": "AOV",
-            "sameAs": "https://en.wikipedia.org/wiki/Average_order_value",
             "inDefinedTermSet": {
-              "@id": "#upsell-terminology"
-            }
+              "@id": "#e-commerce-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Average_order_value"
           },
           {
             "@type": "DefinedTerm",
             "@id": "#payment-tokenization",
             "name": "Payment Tokenization",
-            "description": "A security process where sensitive payment data is replaced with a unique identifier (token) that can be used for subsequent transactions without exposing card details.",
-            "sameAs": "https://en.wikipedia.org/wiki/Tokenization_(data_security)",
+            "description": "A security process that creates a secure token representing customer payment details without exposing raw card numbers, enabling one-click purchases.",
             "inDefinedTermSet": {
-              "@id": "#upsell-terminology"
+              "@id": "#e-commerce-terminology"
             }
           },
           {
             "@type": "DefinedTerm",
-            "@id": "#customer-lifetime-value",
-            "name": "Customer Lifetime Value (CLV)",
-            "description": "The total revenue a business can expect from a single customer account throughout their relationship with the company.",
-            "alternateName": "CLV",
-            "sameAs": "https://en.wikipedia.org/wiki/Customer_lifetime_value",
+            "@id": "#cart-abandonment",
+            "name": "Cart Abandonment",
+            "description": "When a customer adds items to their shopping cart but leaves the website without completing the purchase.",
             "inDefinedTermSet": {
-              "@id": "#upsell-terminology"
+              "@id": "#e-commerce-terminology"
             }
           },
           {
             "@type": "DefinedTerm",
             "@id": "#conversion-rate",
             "name": "Conversion Rate",
-            "description": "The percentage of visitors who complete a desired action, such as making a purchase, out of the total number of visitors.",
-            "sameAs": "https://en.wikipedia.org/wiki/Conversion_marketing",
+            "description": "The percentage of website visitors who complete a desired action, such as making a purchase.",
             "inDefinedTermSet": {
-              "@id": "#upsell-terminology"
+              "@id": "#e-commerce-terminology"
             }
           },
           {
             "@type": "DefinedTerm",
-            "@id": "#ajax",
-            "name": "AJAX",
-            "description": "Asynchronous JavaScript and XML - a web development technique for creating interactive web applications by exchanging data with a server behind the scenes.",
-            "sameAs": "https://en.wikipedia.org/wiki/Ajax_(programming)",
+            "@id": "#customer-lifetime-value",
+            "name": "Customer Lifetime Value (CLV)",
+            "description": "The total revenue a business can expect from a single customer account throughout their relationship.",
+            "alternateName": "CLV",
             "inDefinedTermSet": {
-              "@id": "#upsell-terminology"
+              "@id": "#e-commerce-terminology"
             }
           }
         ]
       },
       {
-        "@type": "Table",
+        "@type": "ComparisonTable",
         "@id": "#comparison-table",
-        "name": "Pre-Purchase vs Post-Purchase Upsell Comparison",
+        "name": "Pre-Purchase vs Post-Purchase Upsells Comparison",
         "about": [
           {
             "@id": "#pre-purchase-upsell"
@@ -159,13 +158,35 @@
           {
             "@id": "#post-purchase-upsell"
           }
+        ],
+        "hasPart": [
+          {
+            "@type": "PropertyValue",
+            "name": "Offer Timing",
+            "description": "Pre-Purchase: Before payment. High risk. Post-Purchase: After payment is secured. Zero risk."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Impact on Sale",
+            "description": "Pre-Purchase: High chance of distracting and causing cart abandonment. Post-Purchase: Absolutely zero risk to the original sale."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Conversion Rate",
+            "description": "Pre-Purchase: Typically very low. Often in the low single digits. Post-Purchase: Significantly higher. Industry averages hover around 10%."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Customer Experience",
+            "description": "Pre-Purchase: Can feel like an interruption or a desperate cash grab. Post-Purchase: Feels more like a personalized, bonus offer. Frictionless."
+          }
         ]
       },
       {
         "@type": "HowTo",
-        "@id": "#shopify-guide",
-        "name": "Setting Up Post-Purchase Upsells on Shopify",
-        "description": "Step-by-step guide for implementing post-purchase upsell funnels on Shopify using third-party applications.",
+        "@id": "#shopify-implementation-guide",
+        "name": "How to Set Up a Post-Purchase Funnel on Shopify",
+        "description": "Step-by-step guide for implementing post-purchase upsells on Shopify using third-party apps.",
         "totalTime": "PT30M",
         "supply": [
           {
@@ -174,55 +195,52 @@
           },
           {
             "@type": "HowToSupply",
-            "name": "Upsell App (Rebuy, AfterSell, or Zipify OCU)"
+            "name": "Post-purchase upsell app (Rebuy, AfterSell, or Zipify OCU)"
           }
         ],
         "step": [
           {
             "@type": "HowToStep",
-            "position": 1,
             "name": "Install & Connect",
-            "text": "Install the app and grant it permissions to talk to your payment gateway."
+            "text": "Install the app and grant it permissions to talk to your payment gateway.",
+            "position": 1
           },
           {
             "@type": "HowToStep",
-            "position": 2,
             "name": "Create a Funnel",
-            "text": "Give it a descriptive name, like 'Camera Body -> Lens Upsell'."
+            "text": "Give it a descriptive name, like 'Camera Body -> Lens Upsell.'",
+            "position": 2
           },
           {
             "@type": "HowToStep",
-            "position": 3,
             "name": "Set the Trigger",
-            "text": "Tell the app to fire this funnel only when a specific product is in the completed order."
+            "text": "Tell the app to fire this funnel only when a specific product is in the completed order.",
+            "position": 3
           },
           {
             "@type": "HowToStep",
-            "position": 4,
             "name": "Build the Upsell Offer",
-            "text": "Design the offer page, select the upsell product, write compelling copy, and add a discount if appropriate."
+            "text": "Design the offer page, select the upsell product, write compelling copy, and add a discount if needed.",
+            "position": 4
           },
           {
             "@type": "HowToStep",
-            "position": 5,
             "name": "Build the Downsell",
-            "text": "Configure the funnel to offer a cheaper alternative if they decline the main upsell."
+            "text": "Configure the funnel to offer a cheaper alternative if they decline the main upsell.",
+            "position": 5
           },
           {
             "@type": "HowToStep",
-            "position": 6,
             "name": "Activate & Monitor",
-            "text": "Turn on the funnel and monitor the analytics dashboard, making data-driven optimizations."
+            "text": "Turn it on and monitor the analytics dashboard. Optimize based on performance data.",
+            "position": 6
           }
-        ],
-        "about": {
-          "@id": "#post-purchase-upsell"
-        }
+        ]
       },
       {
         "@type": "FAQPage",
         "@id": "#faq-section",
-        "name": "Pre vs Post-Purchase Upsells FAQ",
+        "name": "Pre-Purchase vs Post-Purchase Upsells FAQ",
         "mainEntity": [
           {
             "@type": "Question",
@@ -240,6 +258,58 @@
               "text": "Post-purchase. It's not even a debate. Since the original order is 100% complete before the offer is ever shown, there is literally zero risk to your core conversion rate."
             }
           }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#pre-purchase-methods",
+        "name": "Pre-Purchase Upsell Implementation Methods",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "On the Product Page",
+            "description": "Bundle offers like 'Buy the camera, get 10% off this lens'. Feels integrated and natural."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "In-Cart Modals",
+            "description": "Pop-ups triggered by add-to-cart actions. Direct but can feel intrusive."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "On the Cart Page",
+            "description": "Natural spot for suggesting complementary items while customer reviews their order."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "During Checkout",
+            "description": "Highest-risk territory. Any distraction during checkout can cause abandonment."
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#shopify",
+        "name": "Shopify",
+        "description": "E-commerce platform that enables post-purchase upsells through its payment system and app ecosystem.",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Shopify",
+          "https://www.wikidata.org/wiki/Q7501051"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#stripe",
+        "name": "Stripe",
+        "description": "Payment processing platform that provides tokenization services for secure post-purchase transactions.",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Stripe_(company)",
+          "https://www.wikidata.org/wiki/Q7624135"
         ]
       },
       {
@@ -270,12 +340,9 @@
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "Pre vs Post-Purchase Upsells"
+              "name": "Pre- vs. Post-Purchase Upsells"
             }
           ]
-        },
-        "mainEntity": {
-          "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells"
         },
         "speakable": {
           "@type": "SpeakableSpecification",
@@ -285,58 +352,10 @@
             ".definition"
           ]
         }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "#shopify",
-        "name": "Shopify",
-        "description": "E-commerce platform that enables individuals and businesses to create their own online stores",
-        "sameAs": "https://en.wikipedia.org/wiki/Shopify",
-        "applicationCategory": "E-commerce Platform"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "#stripe",
-        "name": "Stripe",
-        "description": "Payment processing platform for internet businesses",
-        "sameAs": "https://en.wikipedia.org/wiki/Stripe_(company)",
-        "applicationCategory": "Payment Processing"
-      },
-      {
-        "@type": "ItemList",
-        "@id": "#implementation-methods",
-        "name": "Pre-Purchase Upsell Implementation Methods",
-        "description": "Different placement strategies for pre-purchase upsells",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Product Page Bundles",
-            "description": "Early opportunity for bundle offers integrated with the product display"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "In-Cart Modals",
-            "description": "Pop-up offers triggered when items are added to cart"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Cart Page Suggestions",
-            "description": "Natural placement for complementary product recommendations"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Checkout Modifications",
-            "description": "High-risk territory requiring careful implementation to avoid abandonment"
-          }
-        ]
       }
     ]
   },
-  "generatedAt": "2025-11-05T02:15:49.159Z",
+  "generatedAt": "2025-11-05T03:15:37.285Z",
   "contentModified": "2025-09-15T05:37:21",
   "contentHash": "9b6980ee21a2539ceb069e48dcda8787"
 }

@@ -6,7 +6,7 @@
         "@type": "Article",
         "@id": "https://optizenapp.com/content/surferseo-and-chatgpt#article",
         "headline": "Creating Content For Blog Posts Using AI – SurferSEO + Custom GPTs For 70+ Content Scores",
-        "description": "A comprehensive guide on using AI tools like SurferSEO and ChatGPT to create high-quality blog content that achieves 70+ content scores and improves organic search rankings.",
+        "description": "Complete guide to using AI tools including SurferSEO and Custom GPTs to create high-quality blog content that achieves 70+ content scores and improves organic search rankings.",
         "author": {
           "@type": "Organization",
           "@id": "https://optizenapp.com#organization",
@@ -14,15 +14,13 @@
           "url": "https://optizenapp.com"
         },
         "publisher": {
+          "@type": "Organization",
           "@id": "https://optizenapp.com#organization"
         },
         "datePublished": "2024-07-10T00:28:27",
         "dateModified": "2024-07-15T06:38:27",
         "url": "https://optizenapp.com/content/surferseo-and-chatgpt",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/content/surferseo-and-chatgpt"
-        },
+        "mainEntityOfPage": "https://optizenapp.com/content/surferseo-and-chatgpt",
         "about": [
           {
             "@id": "#ai-content-creation"
@@ -51,15 +49,12 @@
             "@id": "#semrush"
           },
           {
-            "@id": "#google-search"
+            "@id": "#rankmath"
           }
         ],
         "hasPart": [
           {
-            "@id": "#howto-content-creation"
-          },
-          {
-            "@id": "#results-data"
+            "@id": "#content-creation-howto"
           },
           {
             "@id": "#topic-research-process"
@@ -68,29 +63,23 @@
             "@id": "#competitor-analysis"
           },
           {
-            "@id": "#content-outline-process"
-          },
-          {
             "@id": "#publishing-guidelines"
           }
         ],
-        "teaches": [
-          {
-            "@id": "#ai-content-strategy"
-          },
-          {
-            "@id": "#seo-content-optimization"
-          },
-          {
-            "@id": "#semantic-seo"
-          }
-        ]
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".key-takeaway"
+          ]
+        }
       },
       {
         "@type": "HowTo",
-        "@id": "#howto-content-creation",
+        "@id": "#content-creation-howto",
         "name": "How to Create AI-Generated Blog Content with SurferSEO and ChatGPT",
-        "description": "Step-by-step process for generating high-quality, SEO-optimized blog content using AI tools",
+        "description": "Step-by-step process for generating high-quality blog content using AI tools to achieve 70+ SurferSEO scores",
         "totalTime": "PT2H",
         "supply": [
           {
@@ -107,7 +96,7 @@
           },
           {
             "@type": "HowToSupply",
-            "name": "Location Guard browser extension"
+            "name": "Location Guard Chrome extension"
           }
         ],
         "step": [
@@ -115,52 +104,55 @@
             "@type": "HowToStep",
             "position": 1,
             "name": "Identify Topic Structure",
-            "text": "Identify the position within the website using root, seed, and node concepts for semantic relevance",
+            "text": "Identify the position within the website using root, seed, and node concept for semantic relevance",
             "url": "#topic-identification"
           },
           {
             "@type": "HowToStep",
             "position": 2,
             "name": "Conduct Topic Research",
-            "text": "Use Ahrefs or SEMrush to research keywords and identify search volume for your chosen topic",
+            "text": "Use Ahrefs or SEMrush to research keywords and identify search volume for your chosen node",
             "url": "#topic-research"
           },
           {
             "@type": "HowToStep",
             "position": 3,
             "name": "Analyze Competitors",
-            "text": "Research competitor content and user intent using Location Guard and Google search",
+            "text": "Research competitor content and search intent using Location Guard and Google search",
             "url": "#competitor-research"
           },
           {
             "@type": "HowToStep",
             "position": 4,
             "name": "Create Content Outline",
-            "text": "Use SurferSEO and custom ChatGPT to generate content outline and NLP keywords",
+            "text": "Use SurferSEO and Custom GPT to generate content outline and extract NLP keywords",
             "url": "#content-outline"
           },
           {
             "@type": "HowToStep",
             "position": 5,
             "name": "Generate Content",
-            "text": "Use ChatGPT with NLP keywords to create content that achieves 70+ SurferSEO score",
+            "text": "Use Custom GPT to create content incorporating NLP keywords and meeting word count requirements",
             "url": "#content-generation"
           },
           {
             "@type": "HowToStep",
             "position": 6,
-            "name": "Optimize and Edit",
-            "text": "Remove AI footprint words and manually edit content for quality",
+            "name": "Optimize Content Score",
+            "text": "Paste content into SurferSEO editor and optimize to achieve 70+ content score",
             "url": "#content-optimization"
           },
           {
             "@type": "HowToStep",
             "position": 7,
-            "name": "Publish with SEO Elements",
-            "text": "Create proper URL, SEO title, and H1 tag following the three pillars of publishing",
+            "name": "Publish with SEO Best Practices",
+            "text": "Create optimized URL, SEO title, and H1 tag following the three pillars of publishing",
             "url": "#publishing-process"
           }
-        ]
+        ],
+        "about": {
+          "@id": "#ai-content-creation"
+        }
       },
       {
         "@type": "DefinedTermSet",
@@ -169,31 +161,27 @@
         "hasDefinedTerm": [
           {
             "@type": "DefinedTerm",
-            "@id": "#ai-content-creation",
-            "name": "AI Content Creation",
-            "description": "The process of using artificial intelligence tools to generate written content for websites and blogs",
+            "@id": "#root-topic",
+            "name": "Root Topic",
+            "description": "The most foundational topic of a website that defines its primary subject matter",
             "inDefinedTermSet": {
               "@id": "#seo-terminology"
             }
           },
           {
             "@type": "DefinedTerm",
-            "@id": "#surferseo",
-            "name": "SurferSEO",
-            "description": "An SEO tool that analyzes top-ranking pages and provides content optimization recommendations",
-            "url": "https://surferseo.com",
-            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization",
+            "@id": "#seed-topic",
+            "name": "Seed Topic",
+            "description": "Sub-topics or categories that are directly relational to the root topic",
             "inDefinedTermSet": {
               "@id": "#seo-terminology"
             }
           },
           {
             "@type": "DefinedTerm",
-            "@id": "#chatgpt",
-            "name": "ChatGPT",
-            "description": "An AI language model developed by OpenAI for generating human-like text responses",
-            "url": "https://chat.openai.com",
-            "sameAs": "https://en.wikipedia.org/wiki/ChatGPT",
+            "@id": "#node-topic",
+            "name": "Node Topic",
+            "description": "Detailed topics that sit under each seed topic in the website hierarchy",
             "inDefinedTermSet": {
               "@id": "#seo-terminology"
             }
@@ -202,26 +190,16 @@
             "@type": "DefinedTerm",
             "@id": "#nlp-keywords",
             "name": "NLP Keywords",
-            "description": "Natural Language Processing keywords that help search engines understand content context and relevance",
+            "description": "Natural Language Processing keywords identified by SurferSEO for content optimization",
             "inDefinedTermSet": {
               "@id": "#seo-terminology"
             }
           },
           {
             "@type": "DefinedTerm",
-            "@id": "#semantic-seo",
-            "name": "Semantic SEO",
-            "description": "SEO approach focusing on topic relevance and context rather than just keyword density",
-            "sameAs": "https://en.wikipedia.org/wiki/Semantic_search",
-            "inDefinedTermSet": {
-              "@id": "#seo-terminology"
-            }
-          },
-          {
-            "@type": "DefinedTerm",
-            "@id": "#root-seed-node",
-            "name": "Root-Seed-Node Structure",
-            "description": "Hierarchical content organization where Root is the main topic, Seeds are subtopics, and Nodes are detailed topics",
+            "@id": "#content-score",
+            "name": "Content Score",
+            "description": "SurferSEO metric measuring content optimization quality, with 70+ being optimal",
             "inDefinedTermSet": {
               "@id": "#seo-terminology"
             }
@@ -229,99 +207,122 @@
         ]
       },
       {
+        "@type": "SoftwareApplication",
+        "@id": "#surferseo",
+        "name": "SurferSEO",
+        "description": "SEO content optimization tool that analyzes competitor content and provides NLP keywords",
+        "url": "https://surferseo.com",
+        "applicationCategory": "SEO Tool",
+        "operatingSystem": "Web-based",
+        "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#chatgpt",
+        "name": "ChatGPT",
+        "description": "AI language model used for content generation and outline creation",
+        "url": "https://chat.openai.com",
+        "applicationCategory": "AI Writing Tool",
+        "operatingSystem": "Web-based",
+        "sameAs": "https://en.wikipedia.org/wiki/ChatGPT"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#ahrefs",
+        "name": "Ahrefs",
+        "description": "SEO toolset for keyword research and competitor analysis",
+        "url": "https://ahrefs.com",
+        "applicationCategory": "SEO Tool",
+        "sameAs": "https://en.wikipedia.org/wiki/Ahrefs"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#semrush",
+        "name": "SEMrush",
+        "description": "Digital marketing toolkit for SEO, PPC, and content marketing",
+        "url": "https://semrush.com",
+        "applicationCategory": "SEO Tool",
+        "sameAs": "https://en.wikipedia.org/wiki/Semrush"
+      },
+      {
+        "@type": "Thing",
+        "@id": "#ai-content-creation",
+        "name": "AI Content Creation",
+        "description": "Process of using artificial intelligence tools to generate and optimize blog content for search engines",
+        "sameAs": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+      },
+      {
+        "@type": "Thing",
+        "@id": "#seo-optimization",
+        "name": "SEO Optimization",
+        "description": "Practice of optimizing content to rank higher in search engine results pages",
+        "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+      },
+      {
         "@type": "ItemList",
-        "@id": "#results-data",
-        "name": "AI Content Creation Results",
-        "description": "Performance results from implementing AI content creation process",
+        "@id": "#publishing-pillars",
+        "name": "Three Pillars of Content Publishing",
+        "description": "Critical elements for successful content publication",
         "numberOfItems": 3,
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
-            "item": {
-              "@type": "Thing",
-              "name": "Site 1: Established Information Site",
-              "description": "33% increase in organic clicks over 6 months"
-            }
+            "name": "URL Structure",
+            "description": "Short, descriptive URL that accurately identifies the content topic"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "item": {
-              "@type": "Thing",
-              "name": "Site 2: Australian Ecommerce Site",
-              "description": "32% increase in organic clicks over 6 months"
-            }
+            "name": "SEO Title",
+            "description": "Title tag that includes main keywords and describes user intent"
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "item": {
-              "@type": "Thing",
-              "name": "Site 3: USA Ecommerce",
-              "description": "26% increase in organic clicks over 6 months"
-            }
+            "name": "H1 Page Title",
+            "description": "Main heading that contains topic keywords and relevant nouns and verbs"
           }
         ]
       },
       {
         "@type": "ItemList",
-        "@id": "#required-tools",
-        "name": "Required Tools and Resources",
-        "numberOfItems": 4,
+        "@id": "#success-metrics",
+        "name": "AI Content Creation Success Results",
+        "description": "Organic traffic improvements achieved using this AI content process",
+        "numberOfItems": 3,
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "Ahrefs or SEMrush",
-              "description": "Keyword research and SEO analysis tools",
-              "url": "https://ahrefs.com"
-            }
+            "name": "Established Information Site",
+            "description": "33% increase in organic clicks over 6 months"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "ChatGPT PRO",
-              "description": "AI language model for content generation",
-              "url": "https://chat.openai.com"
-            }
+            "name": "Australian Ecommerce Site",
+            "description": "32% increase in organic clicks over 6 months"
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "SurferSEO",
-              "description": "Content optimization and SEO scoring tool",
-              "url": "https://surferseo.com"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "item": {
-              "@type": "SoftwareApplication",
-              "name": "Location Guard",
-              "description": "Browser extension for location-based search testing",
-              "url": "https://chromewebstore.google.com/detail/location-guard/cfohepagpmnodfdmjliccbbigdkfcgia"
-            }
+            "name": "USA Ecommerce Site",
+            "description": "26% increase in organic clicks over 6 months"
           }
         ]
       },
       {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/content/surferseo-and-chatgpt",
-        "name": "Creating Content For Blog Posts Using AI – SurferSEO + Custom GPTs For 70+ Content Scores",
+        "name": "Creating Content For Blog Posts Using AI – SurferSEO + Custom GPTs",
         "url": "https://optizenapp.com/content/surferseo-and-chatgpt",
-        "datePublished": "2024-07-10T00:28:27",
-        "dateModified": "2024-07-15T06:38:27",
+        "about": {
+          "@id": "#ai-content-creation"
+        },
         "isPartOf": {
           "@type": "WebSite",
-          "@id": "https://optizenapp.com#website",
+          "@id": "https://optizenapp.com",
           "name": "Optizen",
           "url": "https://optizenapp.com"
         },
@@ -348,36 +349,13 @@
             }
           ]
         },
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": [
-            "h1",
-            "h2",
-            ".key-takeaway"
-          ]
+        "mainEntity": {
+          "@id": "#content-creation-howto"
         }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com#organization",
-        "name": "Optizen",
-        "url": "https://optizenapp.com",
-        "description": "AI-powered SEO and content optimization platform",
-        "knowsAbout": [
-          {
-            "@id": "#ai-content-creation"
-          },
-          {
-            "@id": "#seo-optimization"
-          },
-          {
-            "@id": "#semantic-seo"
-          }
-        ]
       }
     ]
   },
-  "generatedAt": "2025-11-05T02:15:51.197Z",
+  "generatedAt": "2025-11-05T03:15:39.775Z",
   "contentModified": "2024-07-15T06:38:27",
   "contentHash": "9f4215557ffe54295504b6f3511d9183"
 }
