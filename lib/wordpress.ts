@@ -513,6 +513,63 @@ export async function getPageSiblings(page: WordPressPage): Promise<WordPressPag
     .sort((a, b) => a.menu_order - b.menu_order);
 }
 
+/**
+ * Scrape HTML content from a WordPress page
+ * Used for pages built with Thrive Architect or other page builders
+ * that don't expose content via REST API
+ */
+async function scrapePageContent(pageUrl: string): Promise<string | null> {
+  try {
+    const response = await fetchWithRetry(pageUrl, {
+      next: { revalidate: false },
+    });
+
+    if (!response.ok) {
+      console.warn(`⚠️  Failed to scrape content from: ${pageUrl}`);
+      return null;
+    }
+
+    const html = await response.text();
+    
+    // Extract content from Thrive Architect main content area
+    // Try multiple patterns to find the content
+    
+    // Pattern 1: tar-main-content (Thrive Architect)
+    let contentMatch = html.match(/<div[^>]*class="[^"]*tar-main-content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<script/i);
+    
+    if (!contentMatch) {
+      // Pattern 2: tve_post_content
+      contentMatch = html.match(/<div[^>]*class="[^"]*tve_post_content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<footer/i);
+    }
+    
+    if (!contentMatch) {
+      // Pattern 3: Look for content between header and footer
+      contentMatch = html.match(/<\/header>([\s\S]*?)<footer/i);
+    }
+    
+    if (contentMatch && contentMatch[1]) {
+      let content = contentMatch[1].trim();
+      
+      // Clean up: Remove header/footer symbols, scripts, styles
+      content = content
+        .replace(/<div[^>]*thrv_header[^>]*>[\s\S]*?<\/div>/gi, '')
+        .replace(/<div[^>]*thrv_footer[^>]*>[\s\S]*?<\/div>/gi, '')
+        .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+        .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+        .replace(/<!--[\s\S]*?-->/g, '');
+      
+      return content;
+    }
+    
+    console.warn(`⚠️  Could not extract content from: ${pageUrl}`);
+    return null;
+    
+  } catch (error) {
+    console.error(`❌ Error scraping content from ${pageUrl}:`, error);
+    return null;
+  }
+}
+
 // Fetch a single page by WordPress slug (for docs mapping)
 export async function getPageByWpSlug(wpSlug: string): Promise<WordPressPage | null> {
   const response = await fetchWithRetry(`${WP_API_URL}/pages?slug=${wpSlug}&_embed=true`, {
@@ -533,6 +590,21 @@ export async function getPageByWpSlug(wpSlug: string): Promise<WordPressPage | n
     
     // Attach SEO meta to page object
     (page as any).seoMeta = seoMeta;
+    
+    // For support docs pages, scrape the HTML content since REST API doesn't return
+    // page builder content (Thrive Architect, Elementor, etc.)
+    if (wpSlug.includes('optizen') || wpSlug.includes('video-upsell')) {
+      console.log(`📄 Scraping HTML content for: ${wpSlug}`);
+      const scrapedContent = await scrapePageContent(pageUrl);
+      
+      if (scrapedContent) {
+        // Replace the REST API content with scraped content
+        page.content.rendered = scrapedContent;
+        console.log(`✅ Successfully scraped content for: ${wpSlug}`);
+      } else {
+        console.warn(`⚠️  Using REST API content (may be empty) for: ${wpSlug}`);
+      }
+    }
   }
 
   return page;
