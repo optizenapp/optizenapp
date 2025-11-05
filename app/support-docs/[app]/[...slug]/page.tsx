@@ -46,6 +46,15 @@ function replaceInternalLinks(content: string): string {
   return content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
 }
 
+// Helper function to fix lazy-loaded iframes (convert data-src to src)
+function fixLazyLoadedIframes(content: string): string {
+  // Replace data-src with src for iframes (WordPress lazy loading)
+  return content.replace(
+    /<iframe([^>]*?)data-src="([^"]*)"([^>]*?)>/gi,
+    '<iframe$1src="$2"$3>'
+  );
+}
+
 interface PageProps {
   params: Promise<{
     app: string;
@@ -259,7 +268,7 @@ export default async function DocPage({ params }: PageProps) {
                     prose-td:!text-gray-900 prose-td:p-3 prose-td:border prose-td:border-gray-300
                     prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-gray-200
                     [&_*]:!text-gray-900"
-                  dangerouslySetInnerHTML={{ __html: replaceInternalLinks(page.content.rendered) }}
+                  dangerouslySetInnerHTML={{ __html: fixLazyLoadedIframes(replaceInternalLinks(page.content.rendered)) }}
                 />
 
                 {/* Doc Navigation */}
