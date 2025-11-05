@@ -19,17 +19,32 @@ function replaceInternalLinks(content: string): string {
   // Replace staging URLs with production URLs
   let processedContent = content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
   
-  // Fix relative image URLs - convert to absolute URLs
-  // Match src="/wp-content/..." or src='/wp-content/...'
+  // Fix ALL relative URLs (images, links, etc.) - convert to absolute URLs
+  // This handles: src="/wp-content/...", href="/wp-content/...", etc.
+  // Pattern matches any attribute with a relative URL starting with /
   processedContent = processedContent.replace(
-    /(<img[^>]*?\ssrc=["'])(\/)?(wp-content\/[^"']+)(["'])/gi,
-    `$1${productionDomain}/$3$4`
+    /((?:src|href|srcset|data-src)=["'])\/([^"']+)(["'])/gi,
+    (match, prefix, path, suffix) => {
+      // Only convert if it starts with wp-content or looks like a WordPress path
+      if (path.startsWith('wp-content/') || path.includes('uploads/')) {
+        return `${prefix}${productionDomain}/${path}${suffix}`;
+      }
+      // Otherwise keep it as is (might be a relative internal link)
+      return match;
+    }
   );
   
-  // Also fix srcset attributes if present
+  // Also handle srcset with multiple URLs (responsive images)
   processedContent = processedContent.replace(
-    /(\ssrcset=["'])(\/)?(wp-content\/[^"']+)(["'])/gi,
-    `$1${productionDomain}/$3$4`
+    /srcset=["']([^"']+)["']/gi,
+    (match, srcsetContent) => {
+      // srcset can have multiple URLs separated by commas
+      const fixed = srcsetContent.replace(
+        /\s*(\/wp-content\/[^\s,]+)/g,
+        ` ${productionDomain}$1`
+      );
+      return `srcset="${fixed}"`;
+    }
   );
   
   // Add loading="lazy" to all images in content (they're below the fold)

@@ -38,16 +38,27 @@ function replaceInternalLinks(content: string): string {
   
   let processedContent = content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
   
-  // Fix relative image URLs - convert to absolute URLs
+  // Fix ALL relative URLs - convert to absolute URLs
   processedContent = processedContent.replace(
-    /(<img[^>]*?\ssrc=["'])(\/)?(wp-content\/[^"']+)(["'])/gi,
-    `$1${productionDomain}/$3$4`
+    /((?:src|href|srcset|data-src)=["'])\/([^"']+)(["'])/gi,
+    (match, prefix, path, suffix) => {
+      if (path.startsWith('wp-content/') || path.includes('uploads/')) {
+        return `${prefix}${productionDomain}/${path}${suffix}`;
+      }
+      return match;
+    }
   );
   
-  // Also fix srcset attributes if present
+  // Handle srcset with multiple URLs
   processedContent = processedContent.replace(
-    /(\ssrcset=["'])(\/)?(wp-content\/[^"']+)(["'])/gi,
-    `$1${productionDomain}/$3$4`
+    /srcset=["']([^"']+)["']/gi,
+    (match, srcsetContent) => {
+      const fixed = srcsetContent.replace(
+        /\s*(\/wp-content\/[^\s,]+)/g,
+        ` ${productionDomain}$1`
+      );
+      return `srcset="${fixed}"`;
+    }
   );
   
   // Add loading="lazy" to all images in content for better performance
