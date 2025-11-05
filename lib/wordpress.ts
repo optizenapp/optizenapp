@@ -550,13 +550,35 @@ async function scrapePageContent(pageUrl: string): Promise<string | null> {
     if (contentMatch && contentMatch[1]) {
       let content = contentMatch[1].trim();
       
-      // Clean up: Remove header/footer symbols, scripts, styles
+      // Clean up: Remove header/footer symbols, scripts, styles, and Thrive-specific elements
       content = content
+        // Remove Thrive header/footer/sidebar symbols
         .replace(/<div[^>]*thrv_header[^>]*>[\s\S]*?<\/div>/gi, '')
         .replace(/<div[^>]*thrv_footer[^>]*>[\s\S]*?<\/div>/gi, '')
+        .replace(/<aside[^>]*>[\s\S]*?<\/aside>/gi, '')
+        .replace(/<div[^>]*class="[^"]*sidebar[^"]*"[^>]*>[\s\S]*?<\/div>/gi, '')
+        // Remove scripts, styles, comments
         .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
         .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
-        .replace(/<!--[\s\S]*?-->/g, '');
+        .replace(/<!--[\s\S]*?-->/g, '')
+        // Remove Thrive-specific wrapper divs but keep content
+        .replace(/<div[^>]*class="[^"]*thrv_wrapper[^"]*"[^>]*>/gi, '<div>')
+        .replace(/<div[^>]*class="[^"]*tve_[^"]*"[^>]*>/gi, '<div>')
+        .replace(/<div[^>]*class="[^"]*tcb-[^"]*"[^>]*>/gi, '<div>')
+        .replace(/<div[^>]*class="[^"]*thrive-[^"]*"[^>]*>/gi, '<div>')
+        // Remove all inline styles
+        .replace(/\s+style="[^"]*"/gi, '')
+        // Remove all data attributes
+        .replace(/\s+data-[a-z-]+="[^"]*"/gi, '')
+        // Remove all Thrive-specific classes but keep basic HTML structure
+        .replace(/\s+class="[^"]*"/gi, (match) => {
+          // Keep only basic semantic classes if any, remove Thrive classes
+          return '';
+        })
+        // Clean up empty divs
+        .replace(/<div>\s*<\/div>/gi, '')
+        .replace(/<div><div>/gi, '<div>')
+        .replace(/<\/div><\/div>/gi, '</div>');
       
       return content;
     }
