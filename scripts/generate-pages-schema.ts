@@ -1,5 +1,9 @@
+import { config } from 'dotenv';
 import { getAllPagePaths, getPageByPath } from '@/lib/wordpress';
 import { generateSchemaOrg } from '@/lib/schema-generator';
+
+// Load environment variables from .env.local
+config({ path: '.env.local' });
 
 async function generatePageSchema() {
   console.log('🚀 Starting pages schema generation...\n');

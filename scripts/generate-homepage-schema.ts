@@ -1,6 +1,10 @@
+import { config } from 'dotenv';
 import { generateSchemaOrg } from '@/lib/schema-generator';
 import fs from 'fs';
 import path from 'path';
+
+// Load environment variables from .env.local
+config({ path: '.env.local' });
 
 async function generateHomepageSchema() {
   console.log('🚀 Starting homepage schema generation...\n');

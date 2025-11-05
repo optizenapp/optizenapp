@@ -59,9 +59,9 @@ export class ClaudeAPI {
       },
     ];
 
-    // Add 15-second timeout to prevent hanging
+    // Add 60-second timeout to prevent hanging
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 15000);
+    const timeoutId = setTimeout(() => controller.abort(), 60000);
 
     try {
       const startTime = Date.now();

@@ -1,5 +1,9 @@
+import { config } from 'dotenv';
 import { getAllPostSlugs, getPostBySlug } from '@/lib/wordpress';
 import { generateSchemaOrg } from '@/lib/schema-generator';
+
+// Load environment variables from .env.local
+config({ path: '.env.local' });
 
 async function generateBlogSchema() {
   console.log('🚀 Starting blog post schema generation...\n');

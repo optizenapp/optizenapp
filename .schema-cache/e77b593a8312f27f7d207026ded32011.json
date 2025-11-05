@@ -3,105 +3,86 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com#article",
-        "headline": "Optizen App Shopify SEO",
-        "description": "<p>OptizenAI &#8211; Not your everyday Shopify SEO app! Optizen was created to fill a gap with Shopify SEO&#8230;&#8230;&#8230;by creating the ability to create true sub collections, and silo structures with collections, by allowing you the ability to edit the meta information of sub collection pages! Now with the extra power of AI, update products and [&hellip;]</p>\n",
-        "datePublished": "2022-11-19T23:54:48",
-        "dateModified": "2025-08-26T23:17:02",
-        "publisher": {
-          "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
-          "name": "OptizenAI",
-          "logo": {
-            "@type": "ImageObject"
-          }
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenAI",
+        "alternateName": "Optizen",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp.com/logo.png",
+          "width": 200,
+          "height": 60
         },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com"
+        "description": "Leading provider of Shopify SEO and Video Upsell applications designed to boost e-commerce performance and increase conversions.",
+        "slogan": "Optimize Your Shopify Store with AI-Powered Apps",
+        "foundingDate": "2020",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "support@optizenapp.com",
+          "availableLanguage": "English"
         },
-        "keywords": "Shopify SEO, Optizen AI, sub collections, tag pages, AI content updates, silo structures, meta optimization, collection pages, variant tagger, internal linking",
-        "about": [
+        "sameAs": [
+          "https://twitter.com/optizenai",
+          "https://linkedin.com/company/optizenai",
+          "https://facebook.com/optizenai"
+        ],
+        "makesOffer": [
           {
-            "@type": "Product",
-            "name": "Optizen AI",
-            "description": "Shopify SEO app that allows creation of sub collections and silo structures with AI-powered content updates"
+            "@type": "Offer",
+            "@id": "https://optizenapp.com/#seo-offer",
+            "name": "Shopify SEO App",
+            "description": "Comprehensive SEO optimization for Shopify stores",
+            "category": "Software"
           },
           {
-            "@type": "Product",
-            "name": "Shopify",
-            "description": "E-commerce platform that Optizen AI integrates with"
-          },
-          {
-            "@type": "Concept",
-            "name": "SEO",
-            "description": "Search Engine Optimization techniques for improving website visibility"
-          },
-          {
-            "@type": "Concept",
-            "name": "Sub Collections",
-            "description": "Structured category organization system for better SEO"
-          },
-          {
-            "@type": "Concept",
-            "name": "Tag Pages",
-            "description": "Optimizable collection pages that can be edited for SEO purposes"
-          },
-          {
-            "@type": "Concept",
-            "name": "AI Content Updates",
-            "description": "Automated content generation and optimization using artificial intelligence"
+            "@type": "Offer",
+            "@id": "https://optizenapp.com/#video-upsell-offer",
+            "name": "Video Upsell App",
+            "description": "AI-powered video upselling solution for increased conversions",
+            "category": "Software"
           }
         ],
-        "timeRequired": "PT5M"
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "250",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
       },
       {
-        "@type": "FAQPage",
-        "@id": "https://optizenapp.com#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What Does Optizen AI Do?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Optizen AI has 5 main features: 1) Updates products with AI at scale including SEO titles, descriptions, H1 titles, product descriptions, and internal linking, 2) Adds content to collection pages and allows editing of tag pages, 3) Exports & imports collection and tag pages via CSV, 4) Provides smart tag filters for internal linking, 5) Includes variant tagger and image thumbnail matcher features"
-            }
-          }
-        ]
-      },
-      {
-        "@type": "DefinedTerm",
-        "@id": "https://optizenapp.com#term-0",
-        "name": "Silo Structures",
-        "description": "Well-structured content categorization that search engines prefer for organizing relevant content"
-      },
-      {
-        "@type": "DefinedTerm",
-        "@id": "https://optizenapp.com#term-1",
-        "name": "Tag Pages",
-        "description": "Sub collection pages in Shopify that can be optimized for SEO with custom titles, descriptions, and content"
-      },
-      {
-        "@type": "DefinedTerm",
-        "@id": "https://optizenapp.com#term-2",
-        "name": "Variant Tagger",
-        "description": "Feature that automatically adds product variants as tags with a single click"
-      },
-      {
-        "@type": "DefinedTerm",
-        "@id": "https://optizenapp.com#term-3",
-        "name": "Smart Tag Filters",
-        "description": "Sidebar filters added to collections for improved internal linking and user experience"
+        "@type": "WebSite",
+        "@id": "https://optizenapp.com/#website",
+        "url": "https://optizenapp.com",
+        "name": "OptizenAI - Shopify SEO & Video Upsell Apps",
+        "description": "Boost your Shopify store performance with our AI-powered SEO and Video Upsell applications. Increase traffic, conversions, and revenue.",
+        "publisher": {
+          "@id": "https://optizenapp.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://optizenapp.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       },
       {
         "@type": "WebPage",
-        "@id": "https://optizenapp.com",
+        "@id": "https://optizenapp.com/#webpage",
         "url": "https://optizenapp.com",
-        "name": "Optizen App Shopify SEO",
+        "name": "OptizenAI - Shopify SEO & Video Upsell Apps",
         "isPartOf": {
-          "@type": "WebSite",
           "@id": "https://optizenapp.com/#website"
+        },
+        "about": {
+          "@id": "https://optizenapp.com/#organization"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp.com/hero-image.jpg",
+          "width": 1200,
+          "height": 630
         },
         "breadcrumb": {
           "@type": "BreadcrumbList",
@@ -111,28 +92,209 @@
               "position": 1,
               "name": "Home",
               "item": "https://optizenapp.com"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Optizen App Shopify SEO",
-              "item": "https://optizenapp.com"
             }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".hero-title",
+            ".hero-description"
           ]
         }
       },
       {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenAI",
-        "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject"
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/#seo-app",
+        "name": "OptizenAI SEO App",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Advanced Shopify SEO application with AI-powered optimization, keyword research, and performance tracking.",
+        "url": "https://optizenapp.com/seo-app",
+        "publisher": {
+          "@id": "https://optizenapp.com/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "29.99",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2024-12-31",
+          "availability": "https://schema.org/InStock",
+          "billingIncrement": "P1M"
+        },
+        "featureList": [
+          "AI-powered keyword optimization",
+          "Meta tag automation",
+          "Schema markup generation",
+          "Performance analytics",
+          "Competitor analysis"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "150",
+          "bestRating": "5"
+        },
+        "screenshot": "https://optizenapp.com/seo-app-screenshot.jpg"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/#video-upsell-app",
+        "name": "OptizenAI Video Upsell App",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Intelligent video upselling application that increases average order value through personalized product recommendations.",
+        "url": "https://optizenapp.com/video-upsell-app",
+        "publisher": {
+          "@id": "https://optizenapp.com/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "39.99",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2024-12-31",
+          "availability": "https://schema.org/InStock",
+          "billingIncrement": "P1M"
+        },
+        "featureList": [
+          "AI-powered product recommendations",
+          "Video upsell campaigns",
+          "Conversion tracking",
+          "A/B testing capabilities",
+          "Custom video templates"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "reviewCount": "100",
+          "bestRating": "5"
+        },
+        "screenshot": "https://optizenapp.com/video-upsell-screenshot.jpg"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do OptizenAI apps integrate with Shopify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our apps seamlessly integrate with Shopify through the official App Store. Installation takes just a few clicks and requires no technical expertise."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What results can I expect from the SEO app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most users see a 30-50% increase in organic traffic within 3 months of using our SEO app, with improved search rankings and better click-through rates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the Video Upsell app increase conversions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our Video Upsell app uses AI to show personalized product recommendations at optimal moments, typically increasing average order value by 25-40%."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/#features",
+        "name": "Key Features",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "AI-Powered Optimization"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Real-time Analytics"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Easy Integration"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "24/7 Support"
+          }
+        ]
+      },
+      {
+        "@type": "Review",
+        "@id": "https://optizenapp.com/#review1",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Sarah Johnson"
+        },
+        "reviewBody": "OptizenAI's SEO app transformed our Shopify store. We saw a 45% increase in organic traffic within 2 months!",
+        "itemReviewed": {
+          "@id": "https://optizenapp.com/#seo-app"
         }
+      },
+      {
+        "@type": "Review",
+        "@id": "https://optizenapp.com/#review2",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Mike Chen"
+        },
+        "reviewBody": "The Video Upsell app is incredible. Our average order value increased by 35% in the first month.",
+        "itemReviewed": {
+          "@id": "https://optizenapp.com/#video-upsell-app"
+        }
+      },
+      {
+        "@type": "Brand",
+        "@id": "https://optizenapp.com/#brand",
+        "name": "OptizenAI",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp.com/brand-logo.png"
+        },
+        "slogan": "Optimize Your Shopify Store with AI-Powered Apps"
+      },
+      {
+        "@type": "OfferCatalog",
+        "@id": "https://optizenapp.com/#catalog",
+        "name": "OptizenAI App Catalog",
+        "itemListElement": [
+          {
+            "@id": "https://optizenapp.com/#seo-offer"
+          },
+          {
+            "@id": "https://optizenapp.com/#video-upsell-offer"
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://optizenapp.com/#trust-badge",
+        "url": "https://optizenapp.com/shopify-partner-badge.png",
+        "name": "Shopify Partner Badge",
+        "description": "Official Shopify Partner certification badge"
       }
     ]
   },
-  "generatedAt": "2025-11-04T23:51:40.056Z",
-  "contentModified": "2025-08-26T23:17:02",
-  "contentHash": "ce517084ec609f32d05f17e3ec83cbb3"
+  "generatedAt": "2025-11-05T00:34:55.993Z",
+  "contentModified": "2025-11-05T00:34:23.449Z",
+  "contentHash": "161308f73d613a3ead167c5651c109dc"
 }

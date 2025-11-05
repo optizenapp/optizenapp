@@ -1,6 +1,10 @@
+import { config } from 'dotenv';
 import { getPageByWpSlug, getPages } from '@/lib/wordpress';
 import { generateSchemaOrg } from '@/lib/schema-generator';
 import { docsMapping } from '@/lib/docs-mapping';
+
+// Load environment variables from .env.local
+config({ path: '.env.local' });
 
 async function generateDocsSchema() {
   console.log('🚀 Starting documentation schema generation...\n');

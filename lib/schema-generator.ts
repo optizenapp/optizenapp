@@ -304,6 +304,46 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
   
   console.log('🆕 Generating new schema (not in cache or content changed)');
   
+  // For homepage and tool pages, use direct JSON-LD generation
+  if (isHomepage(input) || isToolPage(input)) {
+    const claude = getClaudeAPI();
+    
+    if (!claude.isConfigured()) {
+      console.log('⚠️  Claude not configured, using basic schema');
+      return generateBasicArticleSchema(input);
+    }
+    
+    const plainText = input.content
+      .replace(/<script[^>]*>.*?<\/script>/gi, '')
+      .replace(/<style[^>]*>.*?<\/style>/gi, '')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .substring(0, 15000);
+    
+    const systemPrompt = `You are an advanced schema markup generator based on US Patent 9152623B2. Return ONLY valid JSON-LD with no markdown formatting.`;
+    const prompt = getSchemaPrompt(input, plainText);
+    
+    try {
+      const response = await claude.sendMessage(prompt, systemPrompt, {
+        maxTokens: 4096,
+        temperature: 0.2,
+      });
+      
+      const cleaned = response.trim().replace(/```json\n?/g, '').replace(/```\n?/g, '');
+      const schema = JSON.parse(cleaned);
+      
+      // Cache the generated schema (correct parameter order: url, schema, contentModified, content)
+      await setCachedSchema(input.url, schema, input.dateModified, plainText);
+      
+      return schema;
+    } catch (error) {
+      console.error('❌ Direct schema generation failed:', error);
+      return generateBasicArticleSchema(input);
+    }
+  }
+  
+  // For blog posts and regular pages, use the old analysis-based approach
   const analysis = await analyzeContent(input);
   
   if (!analysis) {
