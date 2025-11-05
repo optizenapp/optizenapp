@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getCategoryBySlug, getPosts, getCategories } from '@/lib/wordpress';
 import { formatDate, calculateReadingTime, stripHtml, truncateText } from '@/lib/blog-utils';
+import { generateSchemaOrg } from '@/lib/schema-generator';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
@@ -94,9 +95,50 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
     page: currentPage,
   });
 
+  // Generate schema for category listing page
+  const categoryContent = `
+    ${categoryData.name} - OptizenApp Blog
+    
+    ${customDescription}
+    
+    Articles in this category:
+    ${posts.map((post, index) => `
+      ${index + 1}. ${stripHtml(post.title.rendered)}
+      ${stripHtml(post.excerpt.rendered)}
+      Published: ${post.date}
+    `).join('\n')}
+  `;
+
+  const schema = await generateSchemaOrg({
+    url: `https://optizenapp.com/${category}`,
+    title: `${categoryData.name} | OptizenApp Blog`,
+    content: categoryContent,
+    excerpt: customDescription,
+    datePublished: '2024-01-01T00:00:00Z',
+    dateModified: '2024-01-01T00:00:00Z', // Static date - update manually when category structure changes
+    category: categoryData.name,
+    breadcrumbs: [
+      { name: 'Home', url: 'https://optizenapp.com' },
+      { name: 'Blog', url: 'https://optizenapp.com/blog' },
+      { name: categoryData.name, url: `https://optizenapp.com/${category}` },
+    ],
+    siteInfo: {
+      name: 'OptizenApp',
+      url: 'https://optizenapp.com',
+      logoUrl: 'https://optizenapp.com/optizen-logo.png',
+    },
+  });
+
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
+    <>
+      {schema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      )}
+      <div className="min-h-screen flex flex-col bg-white">
+        <Header />
       
       <main className="flex-1 pt-16">
         {/* Breadcrumbs */}
@@ -286,6 +328,7 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
 
       <Footer />
     </div>
+    </>
   );
 }
 
