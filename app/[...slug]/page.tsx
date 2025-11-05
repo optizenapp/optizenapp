@@ -36,7 +36,20 @@ function replaceInternalLinks(content: string): string {
   const stagingDomain = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com';
   const productionDomain = 'https://optizenapp.com';
   
-  return content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
+  let processedContent = content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
+  
+  // Add loading="lazy" to all images in content for better performance
+  processedContent = processedContent.replace(
+    /<img([^>]*?)>/gi,
+    (match, attributes) => {
+      if (attributes.includes('loading=')) {
+        return match;
+      }
+      return `<img${attributes} loading="lazy" decoding="async">`;
+    }
+  );
+  
+  return processedContent;
 }
 
 interface PageProps {

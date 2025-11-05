@@ -15,7 +15,25 @@ import { Clock, Calendar, ArrowLeft } from 'lucide-react';
 function replaceInternalLinks(content: string): string {
   const stagingDomain = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com';
   const productionDomain = 'https://optizenapp.com';
-  return content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
+  
+  // Replace staging URLs with production URLs
+  let processedContent = content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
+  
+  // Add loading="lazy" to all images in content (they're below the fold)
+  // Also ensure images have proper attributes
+  processedContent = processedContent.replace(
+    /<img([^>]*?)>/gi,
+    (match, attributes) => {
+      // Don't add loading="lazy" if it already has loading attribute
+      if (attributes.includes('loading=')) {
+        return match;
+      }
+      // Add loading="lazy" and decoding="async" for better performance
+      return `<img${attributes} loading="lazy" decoding="async">`;
+    }
+  );
+  
+  return processedContent;
 }
 
 interface PageProps {
