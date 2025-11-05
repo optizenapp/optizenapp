@@ -8,9 +8,41 @@ config({ path: '.env.local' });
 async function generatePageSchema() {
   console.log('🚀 Starting pages schema generation...\n');
   
-  const pagePaths = await getAllPagePaths();
+  const allPagePaths = await getAllPagePaths();
+  
+  // Filter out support docs pages (they're handled separately in Next.js)
+  const pagePaths = allPagePaths.filter(path => {
+    // Exclude any path that contains support doc slugs
+    const excludePatterns = [
+      'introduction-to-optizen',
+      'new-ai-plan',
+      'getting-started-with-ai',
+      'prompt-templates',
+      'updating-products-with-optizen-ai',
+      'updating-collections-tag-page-with-ai',
+      'updating-image-alt-text',
+      'how-to-install-optizen',
+      'optizen-settings',
+      'collection-pages',
+      'tag-pages',
+      'tag-page-sitemap',
+      'sync-button',
+      'smart-tag-filters',
+      'exporting-collections',
+      'importing-collections',
+      'exporting-tag-pages',
+      'importing-tag-pages',
+      'upgrade-to-enterprise',
+      'variant-tagger',
+      'video-upsell',
+    ];
+    
+    return !excludePatterns.some(pattern => path.includes(pattern));
+  });
+  
   console.log(`📄 Fetching pages from WordPress...`);
-  console.log(`✅ Found ${pagePaths.length} pages\n`);
+  console.log(`✅ Found ${allPagePaths.length} total pages`);
+  console.log(`📝 Generating schema for ${pagePaths.length} pages (excluding support docs)\n`);
 
   let totalGenerated = 0;
   let totalSkipped = 0;

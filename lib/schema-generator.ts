@@ -60,17 +60,6 @@ export interface SchemaGenerationInput {
   };
 }
 
-// Detect if a page is a tool/utility page based on URL and content
-function isToolPage(input: SchemaGenerationInput): boolean {
-  const toolKeywords = ['tool', 'generator', 'calculator', 'utility', 'converter', 'checker'];
-  const urlLower = input.url.toLowerCase();
-  const titleLower = input.title.toLowerCase();
-  
-  return toolKeywords.some(keyword => 
-    urlLower.includes(keyword) || titleLower.includes(keyword)
-  );
-}
-
 // Detect if this is the homepage
 function isHomepage(input: SchemaGenerationInput): boolean {
   const url = input.url.toLowerCase();
@@ -92,6 +81,29 @@ function isBlogPost(input: SchemaGenerationInput): boolean {
   // e.g., https://optizenapp.com/aov/post-slug or https://optizenapp.com/content/post-slug
   const pathParts = url.replace('https://optizenapp.com/', '').split('/');
   return pathParts.length >= 2 && !!input.category && input.category !== 'shopify';
+}
+
+// Detect if a page is a tool/utility page based on URL and content
+function isToolPage(input: SchemaGenerationInput): boolean {
+  const urlLower = input.url.toLowerCase();
+  const titleLower = input.title.toLowerCase();
+  
+  // Exclude homepage and support docs
+  if (isHomepage(input) || urlLower.includes('/support-docs/')) {
+    return false;
+  }
+  
+  // If it's not a blog post (no category structure), treat it as a tool/page
+  // WordPress pages are typically informational/utility pages
+  if (!isBlogPost(input)) {
+    return true; // WordPress pages are tool pages
+  }
+  
+  // Also check for explicit tool keywords
+  const toolKeywords = ['tool', 'generator', 'calculator', 'utility', 'converter', 'checker'];
+  return toolKeywords.some(keyword => 
+    urlLower.includes(keyword) || titleLower.includes(keyword)
+  );
 }
 
 // Get appropriate prompt based on page type
@@ -330,6 +342,7 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
   console.log('🆕 Generating new schema (not in cache or content changed)');
   
   // For homepage, tool pages, and blog posts, use direct JSON-LD generation
+  // Use direct JSON-LD generation for homepage, tool pages, and blog posts
   if (isHomepage(input) || isToolPage(input) || isBlogPost(input)) {
     const claude = getClaudeAPI();
     
@@ -425,7 +438,7 @@ function buildArticleSchema(input: SchemaGenerationInput, analysis: ContentAnaly
     '@type': 'Article',
     '@id': `${input.url}#article`,
     headline: input.title,
-    description: input.excerpt || `Learn about ${analysis.mainEntities.map(e => e.name).join(', ')}`,
+    description: input.excerpt || (analysis.mainEntities?.length ? `Learn about ${analysis.mainEntities.map(e => e.name).join(', ')}` : input.title),
     image: input.featuredImage ? {
       '@type': 'ImageObject',
       url: input.featuredImage.url,
@@ -452,13 +465,13 @@ function buildArticleSchema(input: SchemaGenerationInput, analysis: ContentAnaly
       '@id': input.url,
     },
     articleSection: input.category,
-    keywords: analysis.keywords.join(', '),
-    about: analysis.mainEntities.map(entity => ({
+    keywords: analysis.keywords?.join(', ') || input.category,
+    about: analysis.mainEntities?.map(entity => ({
       '@type': entity.type,
       name: entity.name,
       description: entity.description,
     })),
-    timeRequired: analysis.estimatedReadTime,
+    timeRequired: analysis.estimatedReadTime || 'PT5M',
   };
 }
 
@@ -469,7 +482,7 @@ function buildHowToSchema(input: SchemaGenerationInput, analysis: ContentAnalysi
     name: input.title,
     description: input.excerpt || '',
     image: input.featuredImage?.url,
-    totalTime: analysis.estimatedReadTime,
+    totalTime: analysis.estimatedReadTime || 'PT5M',
     step: analysis.steps.map((step, index) => ({
       '@type': 'HowToStep',
       position: index + 1,
