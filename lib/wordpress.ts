@@ -403,17 +403,17 @@ function buildPagePath(page: WordPressPage, allPages: WordPressPage[]): string {
 export async function getPageByPath(path: string): Promise<WordPressPage | null> {
   // Fetch ALL pages with pagination to build complete hierarchy
   let allPages: WordPressPage[] = [];
-  let page = 1;
+  let currentPage = 1;
   let hasMore = true;
 
   while (hasMore) {
-    const result = await getPages({ per_page: 100, page });
+    const result = await getPages({ per_page: 100, page: currentPage });
     allPages = allPages.concat(result.pages);
     
-    if (page >= result.totalPages) {
+    if (currentPage >= result.totalPages) {
       hasMore = false;
     } else {
-      page++;
+      currentPage++;
     }
   }
   
@@ -430,17 +430,17 @@ export async function getPageByPath(path: string): Promise<WordPressPage | null>
     return null;
   }
 
-  const foundPage = matchedPage.page;
+  const page = matchedPage.page;
   
   // Get SEO meta from Rank Math
   const pageUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/${path}/`;
   const seoMeta = await getSEOMetaFromRankMath(pageUrl);
   
   // Attach SEO meta and full path to page object
-  (foundPage as any).seoMeta = seoMeta;
-  (foundPage as any).fullPath = path;
+  (page as any).seoMeta = seoMeta;
+  (page as any).fullPath = path;
 
-  return foundPage;
+  return page;
 }
 
 // Build page hierarchy for a specific parent or root level
