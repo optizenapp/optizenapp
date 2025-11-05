@@ -521,7 +521,8 @@ export async function getPageSiblings(page: WordPressPage): Promise<WordPressPag
 async function scrapePageContent(pageUrl: string): Promise<string | null> {
   try {
     const response = await fetchWithRetry(pageUrl, {
-      next: { revalidate: false },
+      next: { revalidate: false }, // Cache permanently for static generation
+      cache: 'force-cache', // Force Next.js to cache this for static generation
     });
 
     if (!response.ok) {
