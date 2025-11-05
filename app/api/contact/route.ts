@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: 'OptizenApp Contact <noreply@optizenapp.com>',
-      to: process.env.CONTACT_EMAIL || 'hello@optizenapp.com',
+      to: process.env.CONTACT_EMAIL || 'support@optizenai.com',
       replyTo: email,
       subject: subject || `Contact Form: ${name}`,
       html: `
