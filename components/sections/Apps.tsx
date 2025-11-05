@@ -28,12 +28,12 @@ const apps = [
     tagline: "Dominate Search Rankings",
     description: "AI-powered SEO optimization for Shopify stores. Improve your search rankings and drive organic traffic with intelligent meta tag management.",
     features: [
-      "AI-generated meta tags",
-      "Bulk SEO optimization",
-      "Rich snippets support",
+      "AI updates for product page SEO elements",
+      "Optimize collections and tag pages",
       "Image alt text automation",
-      "SEO audit reports",
-      "Google Search Console integration"
+      "Individual or bulk updates",
+      "Full restore functionality",
+      "Smart Tag Filter & Variant Tagger"
     ],
     link: "https://apps.shopify.com/seo-meta-tag",
     color: "green"
