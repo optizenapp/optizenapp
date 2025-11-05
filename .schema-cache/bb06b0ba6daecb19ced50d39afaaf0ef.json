@@ -1,0 +1,179 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://optizenapp.com/uncategorised#collection",
+        "name": "Uncategorised Articles",
+        "description": "A collection of diverse articles covering various topics related to digital optimization, app development, and technology insights that don't fit into specific categories yet.",
+        "url": "https://optizenapp.com/uncategorised",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/uncategorised#itemlist"
+        },
+        "isPartOf": {
+          "@id": "https://optizenapp.com/blog#blog"
+        },
+        "breadcrumb": {
+          "@id": "https://optizenapp.com/uncategorised#breadcrumb"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "General Technology and Optimization Topics",
+          "description": "Miscellaneous articles covering app optimization, digital strategies, and emerging technologies"
+        },
+        "specialty": "Digital optimization and technology insights",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/uncategorised#itemlist",
+        "name": "Uncategorised Articles List",
+        "description": "Collection of articles in the uncategorised section",
+        "itemListOrder": "Descending",
+        "numberOfItems": 0,
+        "itemListElement": []
+      },
+      {
+        "@type": "Blog",
+        "@id": "https://optizenapp.com/blog#blog",
+        "name": "OptizenApp Blog",
+        "description": "Expert insights on app optimization, digital marketing strategies, and technology solutions for businesses looking to maximize their digital presence.",
+        "url": "https://optizenapp.com/blog",
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        },
+        "inLanguage": "en-US",
+        "blogPost": []
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://optizenapp.com#website",
+        "name": "OptizenApp",
+        "description": "Leading app optimization platform providing tools and insights for digital growth and performance enhancement.",
+        "url": "https://optizenapp.com",
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://optizenapp.com/uncategorised#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://optizenapp.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://optizenapp.com/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Uncategorised",
+            "item": "https://optizenapp.com/uncategorised"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com#organization",
+        "name": "OptizenApp",
+        "description": "Premier app optimization platform specializing in digital growth strategies and performance analytics.",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp.com/logo.png",
+          "width": 200,
+          "height": 60
+        },
+        "sameAs": [
+          "https://twitter.com/optizenapp",
+          "https://linkedin.com/company/optizenapp",
+          "https://facebook.com/optizenapp"
+        ],
+        "foundingDate": "2020",
+        "knowsAbout": [
+          "App Optimization",
+          "Digital Marketing",
+          "Performance Analytics",
+          "Mobile App Development",
+          "User Experience"
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/uncategorised#terms",
+        "name": "General Technology Terms",
+        "description": "Common terminology used across various technology and optimization topics",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "App Optimization",
+            "description": "The process of improving app performance, user experience, and conversion rates"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Digital Strategy",
+            "description": "Comprehensive approach to leveraging digital technologies for business growth"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Performance Analytics",
+            "description": "Measurement and analysis of app and website performance metrics"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/uncategorised#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What type of content is in the uncategorised section?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The uncategorised section contains diverse articles covering various aspects of app optimization, digital marketing, and technology insights that haven't been assigned to specific categories yet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often is new content added to this section?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "New articles are regularly published and may initially appear in the uncategorised section before being moved to appropriate topic-specific categories."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I find specific topics in the uncategorised section?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, while articles here cover various topics, they all relate to app optimization, digital strategies, and technology solutions that can help improve your digital presence."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T06:18:42.260Z",
+  "contentModified": "2025-11-05T06:18:15.852Z",
+  "contentHash": "219016751990487e1479beaaf84c023c"
+}
