@@ -29,8 +29,16 @@ function processContent(content: string): string {
     
     // Fix src attribute
     let src = img.attr('src');
-    if (src && src.startsWith('/wp-content')) {
-      img.attr('src', `${productionDomain}${src}`);
+    if (src) {
+      // If it's a relative URL starting with /wp-content, add the production domain
+      if (src.startsWith('/wp-content')) {
+        img.attr('src', `${productionDomain}${src}`);
+      }
+      // If it's pointing to optizenapp.com/wp-content, redirect to staging server
+      else if (src.includes('optizenapp.com/wp-content')) {
+        const wpPath = src.replace('https://optizenapp.com', '');
+        img.attr('src', `${stagingDomain}${wpPath}`);
+      }
     }
 
     // Fix srcset attribute
@@ -42,6 +50,11 @@ function processContent(content: string): string {
           const trimmedPart = part.trim();
           if (trimmedPart.startsWith('/wp-content')) {
             return `${productionDomain}${trimmedPart}`;
+          }
+          // Also handle optizenapp.com/wp-content URLs in srcset
+          else if (trimmedPart.includes('optizenapp.com/wp-content')) {
+            const wpPath = trimmedPart.replace('https://optizenapp.com', '');
+            return `${stagingDomain}${wpPath}`;
           }
           return trimmedPart;
         })
