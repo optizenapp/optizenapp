@@ -296,7 +296,7 @@ export default async function DocPage({ params }: PageProps) {
 
             {/* Table of Contents */}
             <div className="xl:col-span-1 hidden xl:block">
-              <TableOfContents content={page.content.rendered} />
+              <TableOfContents content={docContent.content} />
             </div>
           </div>
         </div>
