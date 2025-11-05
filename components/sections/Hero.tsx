@@ -22,7 +22,7 @@ export default function Hero() {
             className="inline-flex items-center px-4 py-2 rounded-full bg-optizen-blue-50 text-optizen-blue-500 text-sm font-medium mb-8"
           >
             <span className="w-2 h-2 bg-optizen-blue-500 rounded-full mr-2 animate-pulse"></span>
-            Trusted by 10,000+ Shopify stores
+            Trusted by 1000's of Shopify stores
           </motion.div>
 
           {/* Main Headline */}
