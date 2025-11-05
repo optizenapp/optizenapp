@@ -223,9 +223,32 @@ export async function getPostBySlug(slug: string): Promise<WordPressPost | null>
     
     // Attach SEO meta to post object
     (post as any).seoMeta = seoMeta;
+    
+    // Fix image URLs in content to point to staging server
+    if (post.content && post.content.rendered) {
+      post.content.rendered = fixImageUrls(post.content.rendered);
+    }
+    if (post.excerpt && post.excerpt.rendered) {
+      post.excerpt.rendered = fixImageUrls(post.excerpt.rendered);
+    }
   }
 
   return post;
+}
+
+// Helper function to fix image URLs to use staging server
+function fixImageUrls(content: string): string {
+  const stagingDomain = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com';
+  
+  // Replace relative URLs
+  content = content.replace(/src="\/wp-content\//g, `src="${stagingDomain}/wp-content/`);
+  content = content.replace(/srcset="\/wp-content\//g, `srcset="${stagingDomain}/wp-content/`);
+  
+  // Replace any other domain's wp-content URLs with staging
+  content = content.replace(/src="https?:\/\/[^/]+\/wp-content\//g, `src="${stagingDomain}/wp-content/`);
+  content = content.replace(/srcset="https?:\/\/[^/]+\/wp-content\//g, `srcset="${stagingDomain}/wp-content/`);
+  
+  return content;
 }
 
 // Fetch all categories
@@ -452,6 +475,14 @@ export async function getPageByPath(path: string): Promise<WordPressPage | null>
   // Attach SEO meta and full path to page object
   (page as any).seoMeta = seoMeta;
   (page as any).fullPath = path;
+  
+  // Fix image URLs in content to point to staging server
+  if (page.content && page.content.rendered) {
+    page.content.rendered = fixImageUrls(page.content.rendered);
+  }
+  if (page.excerpt && page.excerpt.rendered) {
+    page.excerpt.rendered = fixImageUrls(page.excerpt.rendered);
+  }
 
   return page;
 }

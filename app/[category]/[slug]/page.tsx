@@ -10,70 +10,8 @@ import Footer from '@/components/layout/Footer';
 import FloatingCTA from '@/components/ui/FloatingCTA';
 import RelatedPosts from '@/components/blog/RelatedPosts';
 import { Clock, Calendar, ArrowLeft } from 'lucide-react';
-import * as cheerio from 'cheerio';
 
-// Helper function to replace WordPress staging links with production links
-function processContent(content: string): string {
-  const stagingDomain = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com';
-  const productionDomain = 'https://optizenapp.com';
-
-  // Replace staging domain with production domain
-  let processedContent = content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
-
-  // Load content into cheerio for robust DOM manipulation
-  const $ = cheerio.load(processedContent);
-
-  // Process all images
-  $('img').each((i, el) => {
-    const img = $(el);
-    
-    // Fix src attribute
-    let src = img.attr('src');
-    if (src) {
-      // If it's a relative URL starting with /wp-content, add the production domain
-      if (src.startsWith('/wp-content')) {
-        img.attr('src', `${productionDomain}${src}`);
-      }
-      // If it's pointing to optizenapp.com/wp-content, redirect to staging server
-      else if (src.includes('optizenapp.com/wp-content')) {
-        const wpPath = src.replace('https://optizenapp.com', '');
-        img.attr('src', `${stagingDomain}${wpPath}`);
-      }
-    }
-
-    // Fix srcset attribute
-    let srcset = img.attr('srcset');
-    if (srcset) {
-      const newSrcset = srcset
-        .split(',')
-        .map(part => {
-          const trimmedPart = part.trim();
-          if (trimmedPart.startsWith('/wp-content')) {
-            return `${productionDomain}${trimmedPart}`;
-          }
-          // Also handle optizenapp.com/wp-content URLs in srcset
-          else if (trimmedPart.includes('optizenapp.com/wp-content')) {
-            const wpPath = trimmedPart.replace('https://optizenapp.com', '');
-            return `${stagingDomain}${wpPath}`;
-          }
-          return trimmedPart;
-        })
-        .join(', ');
-      img.attr('srcset', newSrcset);
-    }
-    
-    // Add lazy loading and decoding attributes if not present
-    if (!img.attr('loading')) {
-      img.attr('loading', 'lazy');
-    }
-    if (!img.attr('decoding')) {
-      img.attr('decoding', 'async');
-    }
-  });
-  
-  // Return the modified HTML
-  return $.html();
-}
+// Image URLs are now fixed at fetch time by the WordPress library
 
 interface PageProps {
   params: Promise<{
@@ -303,7 +241,7 @@ export default async function BlogPost({ params }: PageProps) {
                 prose-table:border-collapse prose-table:w-full
                 prose-th:bg-gray-100 prose-th:font-semibold prose-th:text-gray-900
                 prose-td:text-gray-900"
-              dangerouslySetInnerHTML={{ __html: processContent(post.content.rendered) }}
+              dangerouslySetInnerHTML={{ __html: post.content.rendered }}
             />
 
             {/* CTA Section */}

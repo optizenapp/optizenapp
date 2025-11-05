@@ -9,7 +9,6 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import PageSidebar from '@/components/ui/PageSidebar';
 import FloatingCTA from '@/components/ui/FloatingCTA';
-import * as cheerio from 'cheerio';
 
 // Helper function to decode HTML entities
 function decodeHtmlEntities(text: string): string {
@@ -31,66 +30,7 @@ function decodeHtmlEntities(text: string): string {
   return text.replace(/&#?\w+;/g, match => entities[match] || match);
 }
 
-// Helper function to replace WordPress staging links with production links
-function processContent(content: string): string {
-  // Replace staging domain with production domain (or relative URLs)
-  const stagingDomain = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com';
-  const productionDomain = 'https://optizenapp.com';
-  
-  let processedContent = content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
-
-  const $ = cheerio.load(processedContent);
-
-  // Process all images
-  $('img').each((i, el) => {
-    const img = $(el);
-    
-    // Fix src attribute
-    let src = img.attr('src');
-    if (src) {
-      // If it's a relative URL starting with /wp-content, add the production domain
-      if (src.startsWith('/wp-content')) {
-        img.attr('src', `${productionDomain}${src}`);
-      }
-      // If it's pointing to optizenapp.com/wp-content, redirect to staging server
-      else if (src.includes('optizenapp.com/wp-content')) {
-        const wpPath = src.replace('https://optizenapp.com', '');
-        img.attr('src', `${stagingDomain}${wpPath}`);
-      }
-    }
-
-    // Fix srcset attribute
-    let srcset = img.attr('srcset');
-    if (srcset) {
-      const newSrcset = srcset
-        .split(',')
-        .map(part => {
-          const trimmedPart = part.trim();
-          if (trimmedPart.startsWith('/wp-content')) {
-            return `${productionDomain}${trimmedPart}`;
-          }
-          // Also handle optizenapp.com/wp-content URLs in srcset
-          else if (trimmedPart.includes('optizenapp.com/wp-content')) {
-            const wpPath = trimmedPart.replace('https://optizenapp.com', '');
-            return `${stagingDomain}${wpPath}`;
-          }
-          return trimmedPart;
-        })
-        .join(', ');
-      img.attr('srcset', newSrcset);
-    }
-    
-    // Add lazy loading and decoding attributes if not present
-    if (!img.attr('loading')) {
-      img.attr('loading', 'lazy');
-    }
-    if (!img.attr('decoding')) {
-      img.attr('decoding', 'async');
-    }
-  });
-  
-  return $.html();
-}
+// Image URLs are now fixed at fetch time by the WordPress library
 
 interface PageProps {
   params: Promise<{
