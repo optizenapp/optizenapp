@@ -1,15 +1,18 @@
+import dynamic from 'next/dynamic';
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import LogoBar from "@/components/sections/LogoBar";
 import Features from "@/components/sections/Features";
-import Apps from "@/components/sections/Apps";
-import Pricing from "@/components/sections/Pricing";
-import Testimonials from "@/components/sections/Testimonials";
-import Stats from "@/components/sections/Stats";
-import FAQ from "@/components/sections/FAQ";
-import FinalCTA from "@/components/sections/FinalCTA";
 import { generateSchemaOrg } from "@/lib/schema-generator";
+
+// Lazy load below-the-fold components
+const Apps = dynamic(() => import("@/components/sections/Apps"));
+const Pricing = dynamic(() => import("@/components/sections/Pricing"));
+const Testimonials = dynamic(() => import("@/components/sections/Testimonials"));
+const Stats = dynamic(() => import("@/components/sections/Stats"));
+const FAQ = dynamic(() => import("@/components/sections/FAQ"));
+const FinalCTA = dynamic(() => import("@/components/sections/FinalCTA"));
 
 export default async function Home() {
   // Generate schema for homepage

@@ -72,6 +72,7 @@ export default function Hero() {
                 alt="Shopify Partner" 
                 width={120} 
                 height={40}
+                priority
                 className="h-8 w-auto"
               />
             </div>

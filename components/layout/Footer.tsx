@@ -22,13 +22,13 @@ export default function Footer() {
               Powerful Shopify apps to boost your store's revenue and SEO performance.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-gray-600 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-gray-600 transition-colors" aria-label="Follow us on Twitter">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-600 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-gray-600 transition-colors" aria-label="Connect on LinkedIn">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-600 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-gray-600 transition-colors" aria-label="Subscribe on YouTube">
                 <Youtube size={20} />
               </a>
             </div>
