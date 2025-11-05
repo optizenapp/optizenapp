@@ -91,7 +91,7 @@ function isBlogPost(input: SchemaGenerationInput): boolean {
   // Blog posts typically have a category in the URL structure
   // e.g., https://optizenapp.com/aov/post-slug or https://optizenapp.com/content/post-slug
   const pathParts = url.replace('https://optizenapp.com/', '').split('/');
-  return pathParts.length >= 2 && input.category && input.category !== 'shopify';
+  return pathParts.length >= 2 && !!input.category && input.category !== 'shopify';
 }
 
 // Get appropriate prompt based on page type
