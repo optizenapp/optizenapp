@@ -12,16 +12,20 @@ async function testBlogSchema() {
   console.log(`📝 Found ${postSlugs.length} blog posts total`);
   
   // Test with just the FIRST post
-  const testSlug = postSlugs[0];
-  const [category, slug] = testSlug.split('/');
+  const { category, slug } = postSlugs[0];
   
-  console.log(`\n🎯 Testing with: ${testSlug}\n`);
+  console.log(`\n🎯 Testing with: ${category}/${slug}\n`);
 
-  const post = await getPostBySlug(category, slug);
+  console.log(`Fetching post with slug: "${slug}"`);
+  
+  const post = await getPostBySlug(slug);
   if (!post) {
     console.log('❌ Could not fetch post');
+    console.log('   This might be due to the category slug not matching WordPress category slug');
     return;
   }
+  
+  console.log(`✅ Post fetched: ${post.title.rendered}`);
 
   const url = `https://optizenapp.com/${category}/${slug}`;
   

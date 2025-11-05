@@ -419,7 +419,7 @@ export async function getPageByPath(path: string): Promise<WordPressPage | null>
   
   // Build paths for all pages
   const pageWithPaths = allPages.map(p => ({
-    page,
+    page: p,
     path: buildPagePath(p, allPages),
   }));
 
@@ -430,17 +430,17 @@ export async function getPageByPath(path: string): Promise<WordPressPage | null>
     return null;
   }
 
-  const page = matchedPage.page;
+  const foundPage = matchedPage.page;
   
   // Get SEO meta from Rank Math
   const pageUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/${path}/`;
   const seoMeta = await getSEOMetaFromRankMath(pageUrl);
   
   // Attach SEO meta and full path to page object
-  (page as any).seoMeta = seoMeta;
-  (page as any).fullPath = path;
+  (foundPage as any).seoMeta = seoMeta;
+  (foundPage as any).fullPath = path;
 
-  return page;
+  return foundPage;
 }
 
 // Build page hierarchy for a specific parent or root level

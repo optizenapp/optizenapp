@@ -1,0 +1,408 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/aov/how-to-find-average-order-value-in-shopify",
+        "headline": "Finding Your Average Order Value in Shopify (And Why It Matters)",
+        "description": "Learn how to find, calculate, and optimize your Average Order Value (AOV) in Shopify to increase revenue without spending more on customer acquisition.",
+        "author": {
+          "@type": "Organization",
+          "name": "OptizenApp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2025-10-20T00:15:42",
+        "dateModified": "2025-10-20T00:15:43",
+        "url": "https://optizenapp.com/aov/how-to-find-average-order-value-in-shopify",
+        "mainEntityOfPage": "https://optizenapp.com/aov/how-to-find-average-order-value-in-shopify",
+        "about": [
+          {
+            "@id": "#average-order-value"
+          },
+          {
+            "@id": "#shopify-analytics"
+          },
+          {
+            "@id": "#ecommerce-metrics"
+          },
+          {
+            "@id": "#revenue-optimization"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#shopify"
+          },
+          {
+            "@id": "#customer-lifetime-value"
+          },
+          {
+            "@id": "#conversion-rate"
+          },
+          {
+            "@id": "#product-bundling"
+          },
+          {
+            "@id": "#upselling"
+          },
+          {
+            "@id": "#cross-selling"
+          },
+          {
+            "@id": "#free-shipping"
+          },
+          {
+            "@id": "#loyalty-programs"
+          },
+          {
+            "@id": "#bnpl"
+          },
+          {
+            "@id": "#post-purchase-offers"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-find-aov"
+          },
+          {
+            "@id": "#howto-calculate-aov"
+          },
+          {
+            "@id": "#howto-increase-aov"
+          },
+          {
+            "@id": "#aov-faq"
+          },
+          {
+            "@id": "#aov-metrics-table"
+          },
+          {
+            "@id": "#industry-benchmarks"
+          }
+        ],
+        "teaches": [
+          {
+            "@id": "#average-order-value"
+          },
+          {
+            "@id": "#aov-calculation"
+          },
+          {
+            "@id": "#aov-optimization"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-find-aov",
+        "name": "How to Find Average Order Value in Shopify",
+        "description": "Step-by-step guide to locate your AOV in Shopify admin dashboard",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Access Shopify Admin",
+            "text": "Log into your Shopify admin dashboard"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Navigate to Analytics",
+            "text": "Head to Analytics section from your admin dashboard"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Select Reports",
+            "text": "Click on Reports to view your sales data"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "View AOV",
+            "text": "Your store's AOV is displayed on the main sales reports dashboard"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Adjust Date Range",
+            "text": "Tweak the date range to analyze AOV over specific periods"
+          }
+        ],
+        "about": {
+          "@id": "#average-order-value"
+        },
+        "isPartOf": {
+          "@id": "https://optizenapp.com/aov/how-to-find-average-order-value-in-shopify"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-calculate-aov",
+        "name": "How to Calculate Average Order Value Manually",
+        "description": "Manual calculation method for AOV using the standard formula",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Gather Sales Data",
+            "text": "Collect your total sales revenue (net sales after discounts, before shipping and taxes)"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Count Orders",
+            "text": "Count the total number of orders for the same period"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Apply Formula",
+            "text": "Divide total sales revenue by total number of orders: AOV = Total Sales Revenue / Total Number of Orders"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Example Calculation",
+            "text": "If your store did $50,000 in sales from 1,000 orders: $50,000 / 1,000 = $50 AOV"
+          }
+        ],
+        "about": {
+          "@id": "#aov-calculation"
+        },
+        "isPartOf": {
+          "@id": "https://optizenapp.com/aov/how-to-find-average-order-value-in-shopify"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-increase-aov",
+        "name": "7 Proven Ways to Increase Average Order Value",
+        "description": "Strategic methods to boost AOV and increase revenue per customer",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Implement Product Bundling",
+            "text": "Group related products together and sell as packages at slight discounts"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Use Smart Upselling and Cross-selling",
+            "text": "Suggest premium versions or complementary products at strategic moments"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Set Strategic Free Shipping Threshold",
+            "text": "Set minimum order value 15-20% higher than current AOV to encourage larger orders"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Create Loyalty Programs",
+            "text": "Implement points-based rewards to incentivize repeat purchases and higher spending"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Offer Volume Discounts",
+            "text": "Provide tiered pricing with better discounts for larger quantities"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Add Buy Now Pay Later Options",
+            "text": "Integrate BNPL services to reduce payment friction for larger purchases"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Implement Post-Purchase Offers",
+            "text": "Present one-click complementary product offers after checkout completion"
+          }
+        ],
+        "about": {
+          "@id": "#aov-optimization"
+        },
+        "isPartOf": {
+          "@id": "https://optizenapp.com/aov/how-to-find-average-order-value-in-shopify"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#aov-faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which Shopify report is best for getting the raw numbers for my AOV calculation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The 'Sales over time' report in your Shopify Analytics is the gold standard. It gives you the two numbers you need: total sales and the total number of orders for any given period. This is the cleanest source for doing any manual or segmented calculations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Beyond AOV, what other metrics give the best context on customer value?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You absolutely have to look at Customer Lifetime Value (CLV) and Purchase Frequency. AOV tells you what a customer spends now, but CLV tells you what they're worth over their entire relationship with your brand. A customer with a slightly lower AOV but a much higher purchase frequency might actually be more valuable in the long run."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does segmenting my customers actually change my AOV insights?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Segmenting is everything. A blended, store-wide AOV might be $80. But when you segment, you might find that new customers have an AOV of $60 while returning customers have an AOV of $110. That's not just a data point; it's a massive strategic insight. It tells you that your efforts should focus on turning new customers into repeat buyers, because that's where the real value is."
+            }
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/aov/how-to-find-average-order-value-in-shopify"
+        }
+      },
+      {
+        "@type": "Table",
+        "@id": "#aov-metrics-table",
+        "name": "AOV Related Metrics in Shopify",
+        "description": "Comprehensive table of metrics related to Average Order Value and where to find them in Shopify",
+        "about": {
+          "@id": "#shopify-analytics"
+        },
+        "isPartOf": {
+          "@id": "https://optizenapp.com/aov/how-to-find-average-order-value-in-shopify"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#ecommerce-glossary",
+        "name": "E-commerce Metrics Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#average-order-value",
+            "name": "Average Order Value",
+            "alternateName": "AOV",
+            "description": "The average dollar amount a customer spends every time they place an order on your store over a specific period. Calculated as Total Sales Revenue divided by Total Number of Orders.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Average_order_value"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#customer-lifetime-value",
+            "name": "Customer Lifetime Value",
+            "alternateName": "CLV",
+            "description": "The total long-term value of a customer, calculated as AOV × Purchase Frequency × Customer Lifespan. Represents the total revenue a customer will generate over their entire relationship with your brand.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Customer_lifetime_value"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#conversion-rate",
+            "name": "Conversion Rate",
+            "description": "The percentage of website visitors who complete a desired action, such as making a purchase. One of the big three e-commerce metrics alongside traffic and AOV.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Conversion_marketing"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#upselling",
+            "name": "Upselling",
+            "description": "A sales technique where customers are persuaded to buy a more expensive version of a product they're considering, such as upgrading to a Pro model.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Upselling"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#cross-selling",
+            "name": "Cross-selling",
+            "description": "A sales technique where customers are offered related or complementary items to their main purchase, such as suggesting a camera lens to someone buying a camera.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Cross-selling"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#product-bundling",
+            "name": "Product Bundling",
+            "description": "A marketing strategy where related products are grouped together and sold as a single package, usually at a slight discount to increase perceived value.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Product_bundling"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#bnpl",
+            "name": "Buy Now Pay Later",
+            "alternateName": "BNPL",
+            "description": "Payment services that allow customers to make purchases and pay for them in installments over time, reducing payment friction for larger purchases.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Buy_now,_pay_later"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#shopify",
+        "name": "Shopify",
+        "description": "E-commerce platform that provides tools for online stores and retail point-of-sale systems",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Shopify",
+          "https://www.wikidata.org/wiki/Q7501051"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/aov/how-to-find-average-order-value-in-shopify#webpage",
+        "url": "https://optizenapp.com/aov/how-to-find-average-order-value-in-shopify",
+        "name": "Finding Your Average Order Value in Shopify (And Why It Matters)",
+        "description": "Complete guide to finding, calculating, and optimizing Average Order Value in Shopify",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp.com/images/shopify-aov-guide.jpg"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AOV",
+              "item": "https://optizenapp.com/aov"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Finding Your Average Order Value in Shopify"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".aov-definition",
+            ".aov-formula"
+          ]
+        },
+        "mainEntity": {
+          "@id": "https://optizenapp.com/aov/how-to-find-average-order-value-in-shopify"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:45:43.179Z",
+  "contentModified": "2025-10-20T00:15:43",
+  "contentHash": "d7aca58a8a8c17a131e7fa4581ac0395"
+}

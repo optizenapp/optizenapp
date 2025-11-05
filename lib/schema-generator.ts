@@ -77,6 +77,23 @@ function isHomepage(input: SchemaGenerationInput): boolean {
   return url === 'https://optizenapp.com' || url === 'https://optizenapp.com/';
 }
 
+// Detect if this is a blog post
+function isBlogPost(input: SchemaGenerationInput): boolean {
+  // Blog posts have categories like 'aov', 'content', 'optizen-ai', etc.
+  // They're NOT support docs, NOT homepage, NOT tool pages
+  const url = input.url.toLowerCase();
+  
+  // Exclude homepage and support docs
+  if (isHomepage(input) || url.includes('/support-docs/')) {
+    return false;
+  }
+  
+  // Blog posts typically have a category in the URL structure
+  // e.g., https://optizenapp.com/aov/post-slug or https://optizenapp.com/content/post-slug
+  const pathParts = url.replace('https://optizenapp.com/', '').split('/');
+  return pathParts.length >= 2 && input.category && input.category !== 'shopify';
+}
+
 // Get appropriate prompt based on page type
 function getSchemaPrompt(input: SchemaGenerationInput, plainText: string): string {
   // Check for homepage first
@@ -304,8 +321,8 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
   
   console.log('🆕 Generating new schema (not in cache or content changed)');
   
-  // For homepage and tool pages, use direct JSON-LD generation
-  if (isHomepage(input) || isToolPage(input)) {
+  // For homepage, tool pages, and blog posts, use direct JSON-LD generation
+  if (isHomepage(input) || isToolPage(input) || isBlogPost(input)) {
     const claude = getClaudeAPI();
     
     if (!claude.isConfigured()) {
