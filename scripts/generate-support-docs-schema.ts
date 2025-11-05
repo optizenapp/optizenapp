@@ -1,8 +1,11 @@
-import 'dotenv/config';
+import { config } from 'dotenv';
 import { generateSchemaOrg } from '../lib/schema-generator';
 import { docsMapping, appInfo } from '../lib/docs-mapping';
 import { getDocContent } from '../lib/docs-content';
 import { stripHtml } from '../lib/blog-utils';
+
+// Load environment variables
+config({ path: '.env.local' });
 
 async function generateSupportDocsSchema() {
   console.log('🚀 Starting support docs schema generation...\n');
