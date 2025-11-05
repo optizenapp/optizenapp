@@ -4,9 +4,9 @@
     "@graph": [
       {
         "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#article",
-        "headline": "Introduction to Optizen",
-        "description": "\n      Introduction to Optizen\n      Welcome to Optizen! This guide will help you understand the core features and capabilities of our Shopify SEO optimization ",
+        "@id": "https://optizenapp.com/support-docs/optizenai/exporting-tag-pages#article",
+        "headline": "Exporting Tag Pages",
+        "description": "\n      Exporting Tag Pages\n      Export your tag page content for backup or bulk editing. Optizen allows you to export all your tag page data to CSV format.\n   ",
         "datePublished": "2024-01-01T00:00:00Z",
         "dateModified": "2024-01-01T00:00:00Z",
         "publisher": {
@@ -20,7 +20,7 @@
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/introduction"
+          "@id": "https://optizenapp.com/support-docs/optizenai/exporting-tag-pages"
         },
         "articleSection": "OptizenAI SEO Documentation",
         "keywords": "OptizenAI SEO Documentation",
@@ -28,9 +28,9 @@
       },
       {
         "@type": "WebPage",
-        "@id": "https://optizenapp.com/support-docs/optizenai/introduction",
-        "url": "https://optizenapp.com/support-docs/optizenai/introduction",
-        "name": "Introduction to Optizen",
+        "@id": "https://optizenapp.com/support-docs/optizenai/exporting-tag-pages",
+        "url": "https://optizenapp.com/support-docs/optizenai/exporting-tag-pages",
+        "name": "Exporting Tag Pages",
         "isPartOf": {
           "@type": "WebSite",
           "@id": "https://optizenapp.com/#website"
@@ -59,8 +59,8 @@
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "Introduction to Optizen",
-              "item": "https://optizenapp.com/support-docs/optizenai/introduction"
+              "name": "Exporting Tag Pages",
+              "item": "https://optizenapp.com/support-docs/optizenai/exporting-tag-pages"
             }
           ]
         }
@@ -77,7 +77,7 @@
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:43:53.718Z",
+  "generatedAt": "2025-11-05T03:52:05.837Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "657f877e97066b29639ccbc203206525"
+  "contentHash": "d72a78b72cd68399119cca77b143c4de"
 }

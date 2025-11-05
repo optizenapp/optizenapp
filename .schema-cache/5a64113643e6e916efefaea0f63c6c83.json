@@ -4,9 +4,9 @@
     "@graph": [
       {
         "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#article",
-        "headline": "Introduction to Optizen",
-        "description": "\n      Introduction to Optizen\n      Welcome to Optizen! This guide will help you understand the core features and capabilities of our Shopify SEO optimization ",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections#article",
+        "headline": "Importing Collections",
+        "description": "\n      Importing Collections via CSV\n      Bulk update your collections by importing a CSV file. This is perfect for large-scale content updates or migrating fr",
         "datePublished": "2024-01-01T00:00:00Z",
         "dateModified": "2024-01-01T00:00:00Z",
         "publisher": {
@@ -20,7 +20,7 @@
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/introduction"
+          "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections"
         },
         "articleSection": "OptizenAI SEO Documentation",
         "keywords": "OptizenAI SEO Documentation",
@@ -28,9 +28,9 @@
       },
       {
         "@type": "WebPage",
-        "@id": "https://optizenapp.com/support-docs/optizenai/introduction",
-        "url": "https://optizenapp.com/support-docs/optizenai/introduction",
-        "name": "Introduction to Optizen",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections",
+        "url": "https://optizenapp.com/support-docs/optizenai/importing-collections",
+        "name": "Importing Collections",
         "isPartOf": {
           "@type": "WebSite",
           "@id": "https://optizenapp.com/#website"
@@ -59,8 +59,8 @@
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "Introduction to Optizen",
-              "item": "https://optizenapp.com/support-docs/optizenai/introduction"
+              "name": "Importing Collections",
+              "item": "https://optizenapp.com/support-docs/optizenai/importing-collections"
             }
           ]
         }
@@ -77,7 +77,7 @@
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:43:53.718Z",
+  "generatedAt": "2025-11-05T03:51:37.007Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "657f877e97066b29639ccbc203206525"
+  "contentHash": "a03b2f1e4d6e3b2f5ce3c863cc568ff9"
 }

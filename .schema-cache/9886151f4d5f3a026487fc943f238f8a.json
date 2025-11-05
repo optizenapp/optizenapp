@@ -4,9 +4,9 @@
     "@graph": [
       {
         "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#article",
-        "headline": "Introduction to Optizen",
-        "description": "\n      Introduction to Optizen\n      Welcome to Optizen! This guide will help you understand the core features and capabilities of our Shopify SEO optimization ",
+        "@id": "https://optizenapp.com/support-docs/optizenai/updating-collections-tags#article",
+        "headline": "Updating Collections & Tags with AI",
+        "description": "\n      Updating Collections & Tag Pages with AI\n      Optimize your collection and tag pages with AI-generated content that improves search rankings and user en",
         "datePublished": "2024-01-01T00:00:00Z",
         "dateModified": "2024-01-01T00:00:00Z",
         "publisher": {
@@ -20,7 +20,7 @@
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/introduction"
+          "@id": "https://optizenapp.com/support-docs/optizenai/updating-collections-tags"
         },
         "articleSection": "OptizenAI SEO Documentation",
         "keywords": "OptizenAI SEO Documentation",
@@ -28,9 +28,9 @@
       },
       {
         "@type": "WebPage",
-        "@id": "https://optizenapp.com/support-docs/optizenai/introduction",
-        "url": "https://optizenapp.com/support-docs/optizenai/introduction",
-        "name": "Introduction to Optizen",
+        "@id": "https://optizenapp.com/support-docs/optizenai/updating-collections-tags",
+        "url": "https://optizenapp.com/support-docs/optizenai/updating-collections-tags",
+        "name": "Updating Collections & Tags with AI",
         "isPartOf": {
           "@type": "WebSite",
           "@id": "https://optizenapp.com/#website"
@@ -59,8 +59,8 @@
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "Introduction to Optizen",
-              "item": "https://optizenapp.com/support-docs/optizenai/introduction"
+              "name": "Updating Collections & Tags with AI",
+              "item": "https://optizenapp.com/support-docs/optizenai/updating-collections-tags"
             }
           ]
         }
@@ -77,7 +77,7 @@
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:43:53.718Z",
+  "generatedAt": "2025-11-05T03:46:10.522Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "657f877e97066b29639ccbc203206525"
+  "contentHash": "75f665a6654ebeb52e77d4f467a21b03"
 }

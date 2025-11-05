@@ -4,9 +4,9 @@
     "@graph": [
       {
         "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#article",
-        "headline": "Introduction to Optizen",
-        "description": "\n      Introduction to Optizen\n      Welcome to Optizen! This guide will help you understand the core features and capabilities of our Shopify SEO optimization ",
+        "@id": "https://optizenapp.com/support-docs/optizenai/sync-button#article",
+        "headline": "Using the Sync Button",
+        "description": "\n      Using the Sync Button\n      There may be times where you can't find the tag or collection you want when using the search function in Optizen. To keep our",
         "datePublished": "2024-01-01T00:00:00Z",
         "dateModified": "2024-01-01T00:00:00Z",
         "publisher": {
@@ -20,7 +20,7 @@
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/introduction"
+          "@id": "https://optizenapp.com/support-docs/optizenai/sync-button"
         },
         "articleSection": "OptizenAI SEO Documentation",
         "keywords": "OptizenAI SEO Documentation",
@@ -28,9 +28,9 @@
       },
       {
         "@type": "WebPage",
-        "@id": "https://optizenapp.com/support-docs/optizenai/introduction",
-        "url": "https://optizenapp.com/support-docs/optizenai/introduction",
-        "name": "Introduction to Optizen",
+        "@id": "https://optizenapp.com/support-docs/optizenai/sync-button",
+        "url": "https://optizenapp.com/support-docs/optizenai/sync-button",
+        "name": "Using the Sync Button",
         "isPartOf": {
           "@type": "WebSite",
           "@id": "https://optizenapp.com/#website"
@@ -59,8 +59,8 @@
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "Introduction to Optizen",
-              "item": "https://optizenapp.com/support-docs/optizenai/introduction"
+              "name": "Using the Sync Button",
+              "item": "https://optizenapp.com/support-docs/optizenai/sync-button"
             }
           ]
         }
@@ -77,7 +77,7 @@
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:43:53.718Z",
+  "generatedAt": "2025-11-05T03:50:12.492Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "657f877e97066b29639ccbc203206525"
+  "contentHash": "cc847fd7203b0277d93769812cc56856"
 }
