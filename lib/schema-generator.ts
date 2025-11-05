@@ -71,8 +71,61 @@ function isToolPage(input: SchemaGenerationInput): boolean {
   );
 }
 
+// Detect if this is the homepage
+function isHomepage(input: SchemaGenerationInput): boolean {
+  const url = input.url.toLowerCase();
+  return url === 'https://optizenapp.com' || url === 'https://optizenapp.com/';
+}
+
 // Get appropriate prompt based on page type
 function getSchemaPrompt(input: SchemaGenerationInput, plainText: string): string {
+  // Check for homepage first
+  if (isHomepage(input)) {
+    return `You are an advanced schema markup generator for HOMEPAGE/LANDING pages based on US Patent 9152623B2.
+
+## Page Type Detection:
+This is a HOMEPAGE - the main entry point representing an organization and its products/services. Prioritize authority, trust signals, and comprehensive product information.
+
+## Required Schema Types for Homepage:
+
+### 1. Organization (PRIMARY - MOST IMPORTANT)
+- Complete company information: name, alternateName, url, logo
+- description, slogan, contactPoint, sameAs, aggregateRating, review, makesOffer
+
+### 2. WebSite - url, name, description, publisher, potentialAction (SearchAction)
+
+### 3. WebPage - URL, about, primaryImageOfPage, breadcrumb, speakable
+
+### 4. SoftwareApplication (for each product) - Complete details, offers, featureList, aggregateRating
+
+### 5. Offer (for each pricing plan) - Detailed pricing information
+
+### 6. FAQPage - Common questions about products/services
+
+### 7. ItemList - Key features, benefits, use cases
+
+### 8. Review - Customer testimonials as Review entities
+
+### 9. Brand - Brand identity, logo, slogan
+
+### 10. OfferCatalog - Comprehensive catalog
+
+### 11. ImageObject - Badges, awards, trust markers
+
+## Three-Level Analysis:
+- **WORD LEVEL**: Company/product names, pricing, statistics, trust indicators
+- **PHRASE LEVEL**: Value propositions, features, competitive advantages
+- **CLAUSE LEVEL**: Business ecosystem, product relationships, customer journey
+
+URL: ${input.url}
+Title: ${input.title}
+
+CONTENT:
+${plainText}
+
+Return ONLY a valid JSON-LD with @graph array including Organization, WebSite, SoftwareApplication entities, and all supporting schema types.`;
+  }
+  
   const isToolPageType = isToolPage(input);
   
   if (isToolPageType) {
