@@ -1,0 +1,283 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/shopify-ai-prompt-pas-framework-products",
+        "headline": "Shopify Product Descriptions Advanced AI Prompt Using PAS Framework",
+        "description": "Learn how to use the PAS Framework AI prompt in Optizen AI to create compelling, SEO-friendly product descriptions for Shopify stores with internal linking and structured content.",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        },
+        "datePublished": "2023-11-02T07:05:47",
+        "dateModified": "2023-11-23T03:51:01",
+        "url": "https://optizenapp.com/optizen-ai/shopify-ai-prompt-pas-framework-products",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/optizen-ai/shopify-ai-prompt-pas-framework-products"
+        },
+        "about": [
+          {
+            "@id": "#pas-framework"
+          },
+          {
+            "@id": "#shopify-product-descriptions"
+          },
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#ecommerce-seo"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#ai-prompt"
+          },
+          {
+            "@id": "#internal-linking"
+          },
+          {
+            "@id": "#copywriting"
+          },
+          {
+            "@id": "#html-formatting"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-use-pas-prompt"
+          },
+          {
+            "@id": "#pas-framework-definition"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-use-pas-prompt",
+        "name": "How to Use PAS Framework AI Prompt in Optizen AI",
+        "description": "Step-by-step guide to implementing the PAS Framework prompt for Shopify product descriptions",
+        "totalTime": "PT10M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Navigate to Product Tab",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products.",
+            "position": 1
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Select PAS Prompt",
+            "text": "Select the 'PAS Product Description With Internal Links' or 'PAS Product Description' from the drop down under the Product Description prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed.",
+            "position": 2
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Execute and Review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update.",
+            "position": 3
+          }
+        ],
+        "tool": [
+          {
+            "@id": "#optizen-ai"
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#ecommerce-glossary",
+        "name": "E-commerce and AI Copywriting Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#pas-framework",
+            "name": "PAS Framework",
+            "description": "A copywriting framework that stands for Problem, Agitation, Solution. You start by identifying your reader's problem, agitate it so they understand the full extent of the issue, and then offer a solution.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Copywriting"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-product-descriptions",
+            "name": "Shopify Product Descriptions",
+            "description": "Text content that describes products in Shopify e-commerce stores, designed to inform customers and improve search engine optimization.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://www.wikidata.org/wiki/Q1046951"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-ai",
+            "name": "Optizen AI",
+            "description": "An AI-powered application for Shopify stores that helps generate and optimize product descriptions, meta tags, and other e-commerce content using advanced prompts.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ecommerce-seo",
+            "name": "E-commerce SEO",
+            "description": "Search engine optimization techniques specifically applied to online retail websites to improve product visibility and organic search rankings.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-prompt",
+            "name": "AI Prompt",
+            "description": "A structured instruction or query given to an artificial intelligence system to generate specific types of content or perform particular tasks.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#internal-linking",
+            "name": "Internal Linking",
+            "description": "The practice of linking to other pages within the same website to improve navigation, user experience, and SEO value distribution.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Hyperlink"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#copywriting",
+            "name": "Copywriting",
+            "description": "The act of writing text for advertising or marketing purposes, designed to persuade readers to take a specific action.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Copywriting"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#html-formatting",
+            "name": "HTML Formatting",
+            "description": "The use of HTML tags to structure and format web content, including paragraphs, headings, lists, and emphasis elements.",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/HTML"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#pas-components",
+        "name": "PAS Framework Components",
+        "description": "The three core components of the PAS copywriting framework",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Problem",
+            "description": "Identify your reader's problem or pain point"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Agitation",
+            "description": "Agitate the problem so they understand the full extent of the issue"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Solution",
+            "description": "Offer a solution to resolve the identified problem"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai-app",
+        "name": "Optizen AI",
+        "description": "AI-powered Shopify app for generating and optimizing e-commerce content including product descriptions, meta tags, and internal linking",
+        "applicationCategory": "E-commerce Software",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock"
+        },
+        "featureList": [
+          "AI-powered product description generation",
+          "PAS Framework implementation",
+          "Internal linking automation",
+          "Bulk content updates",
+          "SEO optimization",
+          "HTML formatting"
+        ],
+        "sameAs": "https://optizenapp.com"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/shopify-ai-prompt-pas-framework-products",
+        "name": "Shopify Product Descriptions Advanced AI Prompt Using PAS Framework",
+        "description": "Learn how to use the PAS Framework AI prompt in Optizen AI to create compelling, SEO-friendly product descriptions for Shopify stores",
+        "url": "https://optizenapp.com/optizen-ai/shopify-ai-prompt-pas-framework-products",
+        "datePublished": "2023-11-02T07:05:47",
+        "dateModified": "2023-11-23T03:51:01",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Shopify AI Prompt PAS Framework Products"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".pas-framework-definition"
+          ]
+        },
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": "https://optizenapp.com/optizen-ai/shopify-ai-prompt-pas-framework-products"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T01:44:04.533Z",
+  "contentModified": "2023-11-23T03:51:01",
+  "contentHash": "bd4d92da81529b9c8ce41d515dc6ecf1"
+}

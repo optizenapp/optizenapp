@@ -1,0 +1,322 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking",
+        "headline": "Update Shopify Products At Scale Including Internal Linking In Descriptions – AI Prompt",
+        "description": "Learn how to use the Reword HTML Product Description With Features & Internal Links prompt in Optizen AI to update Shopify product descriptions at scale with internal linking capabilities.",
+        "url": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking",
+        "datePublished": "2023-10-26T00:46:53",
+        "dateModified": "2023-11-23T03:51:31",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization"
+        },
+        "about": [
+          {
+            "@id": "#shopify-product-optimization"
+          },
+          {
+            "@id": "#ai-prompt-engineering"
+          },
+          {
+            "@id": "#internal-linking-strategy"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#html-product-descriptions"
+          },
+          {
+            "@id": "#google-sheets"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-update-shopify-products"
+          },
+          {
+            "@id": "#defined-terms-set"
+          }
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".prompt-text"
+          ]
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-update-shopify-products",
+        "name": "How to Update Shopify Products at Scale with Internal Linking",
+        "description": "Step-by-step process to use the Reword HTML Product Description With Features & Internal Links prompt in Optizen AI",
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen AI App",
+            "url": "https://optizenapp.com"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Google Sheets Template",
+            "url": "https://docs.google.com/spreadsheets/d/1Vazye9ed70oKJaeHgXxSTHYrnABTxbVtWMVizSNLBkc/edit?usp=sharing"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store Access"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Prepare Internal Links",
+            "text": "Export products from Shopify dashboard, create HTML links with anchor text using Google Sheets, and copy the HTML links into the prompt",
+            "hasPart": [
+              {
+                "@type": "HowToDirection",
+                "text": "Export the products you want to use as internal links from the Shopify product dashboard"
+              },
+              {
+                "@type": "HowToDirection",
+                "text": "Create html links with anchor text with some G sheet magic"
+              },
+              {
+                "@type": "HowToDirection",
+                "text": "Copy and paste the html links into the prompt"
+              }
+            ]
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Navigate and Select Products",
+            "text": "Navigate to the product tab in Optizen AI, search for products, and select them using checkboxes",
+            "hasPart": [
+              {
+                "@type": "HowToDirection",
+                "text": "Navigate to the product tab in Optizen AI"
+              },
+              {
+                "@type": "HowToDirection",
+                "text": "Search via name or using tags for the product or products you wish to update"
+              },
+              {
+                "@type": "HowToDirection",
+                "text": "Use the check boxes to select the products"
+              }
+            ]
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Configure and Execute Prompt",
+            "text": "Select the Reword HTML Product Description prompt, check the update box, and proceed with execution",
+            "hasPart": [
+              {
+                "@type": "HowToDirection",
+                "text": "Select the Reword HTML Product Description With Features & Internal Links from the drop down"
+              },
+              {
+                "@type": "HowToDirection",
+                "text": "Be sure to check the box for Update this section"
+              },
+              {
+                "@type": "HowToDirection",
+                "text": "Click Proceed to run the prompt"
+              },
+              {
+                "@type": "HowToDirection",
+                "text": "Check the output using the Log section and choose to keep or restore the update"
+              }
+            ]
+          }
+        ],
+        "about": {
+          "@id": "#shopify-product-optimization"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#defined-terms-set",
+        "name": "Shopify Product Optimization Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-ai",
+            "name": "Optizen AI",
+            "description": "An AI-powered application for Shopify stores that provides automated product optimization and content generation capabilities",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-product-optimization",
+            "name": "Shopify Product Optimization",
+            "description": "The process of improving Shopify product listings through enhanced descriptions, SEO optimization, and internal linking strategies",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-prompt-engineering",
+            "name": "AI Prompt Engineering",
+            "description": "The practice of designing and optimizing prompts to effectively communicate with AI systems for desired outputs",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Prompt_engineering"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#internal-linking-strategy",
+            "name": "Internal Linking Strategy",
+            "description": "SEO technique of linking to other pages within the same website to improve navigation and distribute page authority",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Internal_link"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#html-product-descriptions",
+            "name": "HTML Product Descriptions",
+            "description": "Product descriptions formatted with HTML markup for enhanced presentation and SEO benefits in ecommerce platforms",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#google-sheets",
+            "name": "Google Sheets",
+            "description": "Cloud-based spreadsheet application used for data manipulation and automation tasks",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Google_Sheets"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking#webpage",
+        "url": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking",
+        "name": "Update Shopify Products At Scale Including Internal Linking In Descriptions – AI Prompt",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com#website",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Update Shopify Products At Scale",
+              "item": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-internal-linking"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2"
+          ]
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai-app",
+        "name": "Optizen AI",
+        "description": "AI-powered Shopify app for automated product optimization and content generation",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://optizenapp.com"
+        },
+        "featureList": [
+          "Automated product description generation",
+          "Internal linking optimization",
+          "Bulk product updates",
+          "AI prompt repository",
+          "SEO optimization tools"
+        ],
+        "sameAs": "https://optizenapp.com"
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#prompt-features-list",
+        "name": "AI Prompt Features",
+        "description": "Key features of the Reword HTML Product Description prompt",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Professional ecommerce tone rewriting"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "HTML formatting with proper tags"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Automatic feature bullet points generation"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Random internal link selection"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Minimum two paragraph structure"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T01:45:46.528Z",
+  "contentModified": "2023-11-23T03:51:31",
+  "contentHash": "3d372dd091b9b90079d9d271b6098351"
+}

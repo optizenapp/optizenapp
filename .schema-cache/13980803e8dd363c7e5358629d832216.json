@@ -1,0 +1,303 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions",
+        "headline": "Using Google Natural Language Demo To Extract Entities & OptizenAI To Update Shopify Product Descriptions At Scale",
+        "description": "A comprehensive guide on using Google Natural Language Processing Demo and OptizenAI to extract entities from Wikipedia pages and create enriched Shopify product descriptions using the PAS Framework.",
+        "url": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions",
+        "datePublished": "2023-11-22T04:23:46",
+        "dateModified": "2023-11-23T03:49:57",
+        "author": {
+          "@type": "Organization",
+          "@id": "#optizen-organization"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "#optizen-organization"
+        },
+        "about": [
+          {
+            "@id": "#google-nlp"
+          },
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#shopify-seo"
+          },
+          {
+            "@id": "#entity-extraction"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#steve-toth"
+          },
+          {
+            "@id": "#seonotebook"
+          },
+          {
+            "@id": "#pas-framework"
+          },
+          {
+            "@id": "#wikipedia"
+          },
+          {
+            "@id": "#uvex-helmets"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-guide"
+          },
+          {
+            "@id": "#prompt-template"
+          },
+          {
+            "@id": "#step-by-step-process"
+          }
+        ],
+        "citation": [
+          {
+            "@type": "WebPage",
+            "name": "SEOnotebook.com",
+            "url": "https://seonotebook.com"
+          },
+          {
+            "@type": "WebPage",
+            "name": "Google Natural Language API",
+            "url": "https://cloud.google.com/natural-language"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-guide",
+        "name": "How to Use Google NLP Demo and OptizenAI for Shopify Product Descriptions",
+        "description": "Step-by-step process for extracting entities and creating enriched product descriptions",
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Google Natural Language Demo access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "OptizenAI app for Shopify"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Wikipedia page content"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Google Sheets template"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Extract Entities Using Google NLP Demo",
+            "text": "Navigate to Wikipedia page, copy content, paste into Google Natural Language Demo at https://cloud.google.com/natural-language, and click Analyze to extract entities.",
+            "url": "#step-1-extract-entities"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Process Entities in Google Sheets",
+            "text": "Copy the NLP output and paste into the provided Google Sheets template to generate a clean list of entities, removing duplicates and selecting relevant ones.",
+            "url": "#step-2-process-entities"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Select Products in OptizenAI",
+            "text": "Navigate to the product tab in OptizenAI, search for products by name or tags, and use checkboxes to select products for updating.",
+            "url": "#step-3-select-products"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Apply PAS Framework Prompt",
+            "text": "Select the PAS Framework - Entities - Internal Links prompt from the repository, replace bracketed sections with your specific use case, and click Proceed to run the prompt.",
+            "url": "#step-4-apply-prompt"
+          }
+        ],
+        "about": {
+          "@id": "#entity-extraction"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#seo-terminology",
+        "name": "SEO and E-commerce Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#google-nlp",
+            "name": "Google Natural Language Processing",
+            "description": "Google's machine learning service for analyzing and understanding text content, extracting entities, sentiment, and syntax.",
+            "sameAs": "https://en.wikipedia.org/wiki/Natural_language_processing"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#entity-extraction",
+            "name": "Entity Extraction",
+            "description": "The process of identifying and extracting structured information from unstructured text, including people, places, organizations, and concepts.",
+            "sameAs": "https://en.wikipedia.org/wiki/Named-entity_recognition"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#pas-framework",
+            "name": "PAS Framework",
+            "description": "Problem-Agitate-Solution copywriting framework used to structure persuasive content by identifying problems, agitating pain points, and presenting solutions.",
+            "sameAs": "https://en.wikipedia.org/wiki/Copywriting"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-seo",
+            "name": "Shopify SEO",
+            "description": "Search engine optimization techniques and practices specifically applied to Shopify e-commerce stores to improve product visibility and rankings.",
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-ai",
+            "name": "OptizenAI",
+            "description": "AI-powered Shopify app for automating and optimizing product descriptions, SEO content, and e-commerce copywriting at scale."
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai-app",
+        "name": "OptizenAI",
+        "applicationCategory": "E-commerce SEO Tool",
+        "operatingSystem": "Web-based",
+        "description": "AI-powered application for Shopify stores to automate product description optimization and SEO content creation",
+        "offers": {
+          "@type": "Offer",
+          "category": "SaaS"
+        },
+        "featureList": [
+          "AI-powered product description generation",
+          "Entity extraction integration",
+          "PAS Framework implementation",
+          "Internal linking automation",
+          "Bulk product updates"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "#steve-toth",
+        "name": "Steve Toth",
+        "worksFor": {
+          "@type": "Organization",
+          "@id": "#seonotebook"
+        },
+        "knowsAbout": [
+          {
+            "@id": "#google-nlp"
+          },
+          {
+            "@id": "#entity-extraction"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#seonotebook",
+        "name": "SEOnotebook.com",
+        "url": "https://seonotebook.com",
+        "description": "SEO resource and educational platform",
+        "sameAs": "https://seonotebook.com"
+      },
+      {
+        "@type": "Organization",
+        "@id": "#optizen-organization",
+        "name": "Optizen",
+        "url": "https://optizenapp.com",
+        "description": "AI-powered e-commerce optimization platform"
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "#prompt-template",
+        "name": "PAS Framework Product Description Prompt",
+        "description": "AI prompt template for generating SEO-optimized product descriptions using the Problem-Agitate-Solution framework with entity integration",
+        "text": "You are a senior ecommerce SEO copywriter. Your tone of voice is positive. Your writing style is experienced. Your task is to paraphrase this product description, in an engaging and SEO-friendly style using the PAS Framework...",
+        "about": [
+          {
+            "@id": "#pas-framework"
+          },
+          {
+            "@id": "#shopify-seo"
+          }
+        ],
+        "usageInfo": "Replace sections in square brackets with specific product information and extracted entities"
+      },
+      {
+        "@type": "Product",
+        "@id": "#uvex-helmets",
+        "name": "Uvex Horse Riding Helmets",
+        "category": "Safety Equipment",
+        "description": "Professional horse riding safety helmets manufactured by Uvex",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Uvex"
+        },
+        "sameAs": "https://en.wikipedia.org/wiki/Uvex"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "#main-webpage",
+        "url": "https://optizenapp.com/optizen-ai/google-nlp-demo-to-extract-entities-for-shopify-product-descriptions",
+        "name": "Using Google Natural Language Demo To Extract Entities & OptizenAI To Update Shopify Product Descriptions At Scale",
+        "description": "Complete guide for e-commerce SEO optimization using AI and natural language processing",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "contentUrl": "https://optizenapp.com/wp-content/uploads/google-nlp-demo-entities.jpg"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "OptizenAI",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Google NLP Demo Guide"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".tldr-section"
+          ]
+        },
+        "mainEntity": {
+          "@id": "#howto-guide"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T01:41:32.971Z",
+  "contentModified": "2023-11-23T03:49:57",
+  "contentHash": "26ea972d061b8e960264edfa34a85480"
+}

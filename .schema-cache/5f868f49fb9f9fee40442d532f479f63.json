@@ -1,0 +1,343 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema",
+        "headline": "Shopify Product Descriptions Advanced AI Prompt With FAQs & Schema",
+        "description": "Advanced AI prompt for updating Shopify product descriptions with features, internal links, FAQs, and schema markup using Optizen AI",
+        "url": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema",
+        "datePublished": "2023-10-30T00:06:59",
+        "dateModified": "2023-11-23T03:51:16",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        },
+        "about": [
+          {
+            "@id": "#shopify-optimization"
+          },
+          {
+            "@id": "#ai-prompts"
+          },
+          {
+            "@id": "#schema-markup"
+          },
+          {
+            "@id": "#product-descriptions"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#faq-schema"
+          },
+          {
+            "@id": "#internal-linking"
+          },
+          {
+            "@id": "#ecommerce-seo"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-guide"
+          },
+          {
+            "@id": "#defined-terms"
+          },
+          {
+            "@id": "#step-by-step-process"
+          }
+        ],
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-guide",
+        "name": "How to Use Shopify Product Description AI Prompt with FAQs and Schema",
+        "description": "Step-by-step guide for implementing advanced AI prompts to update Shopify product descriptions",
+        "totalTime": "PT15M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen AI App",
+            "url": "https://optizenapp.com"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store",
+            "description": "Active Shopify store with products"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate to Product Tab",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products.",
+            "url": "#step1"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select AI Prompt",
+            "text": "Select the 'Product Description Full + Links + FAQs + Schema' from the drop down under the Product Description prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed.",
+            "url": "#step2"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Execute and Review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update.",
+            "url": "#step3"
+          }
+        ],
+        "about": {
+          "@id": "#shopify-optimization"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#defined-terms",
+        "name": "Shopify AI Optimization Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-optimization",
+            "name": "Shopify Optimization",
+            "description": "Process of improving Shopify store performance through enhanced product descriptions, SEO, and user experience",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-prompts",
+            "name": "AI Prompts",
+            "description": "Structured instructions given to artificial intelligence systems to generate specific types of content or perform particular tasks",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Prompt_engineering"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#schema-markup",
+            "name": "Schema Markup",
+            "description": "Structured data vocabulary that helps search engines understand and display content more effectively",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Schema.org"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#product-descriptions",
+            "name": "Product Descriptions",
+            "description": "Detailed text content that describes products in ecommerce stores, including features, benefits, and specifications",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-ai",
+            "name": "Optizen AI",
+            "description": "AI-powered application for optimizing Shopify stores through automated content generation and SEO improvements",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "url": "https://optizenapp.com"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#faq-schema",
+            "name": "FAQ Schema",
+            "description": "Structured data markup specifically designed for frequently asked questions and their answers",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://schema.org/FAQPage"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#internal-linking",
+            "name": "Internal Linking",
+            "description": "SEO practice of linking to other pages within the same website to improve navigation and search engine rankings",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Internal_link"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ecommerce-seo",
+            "name": "Ecommerce SEO",
+            "description": "Search engine optimization strategies specifically tailored for online retail stores and product pages",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#step-by-step-process",
+        "name": "AI Prompt Implementation Steps",
+        "description": "Ordered list of steps for implementing the advanced Shopify product description AI prompt",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Product Selection",
+            "description": "Navigate to product tab and select target products for optimization"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Prompt Configuration",
+            "description": "Choose the advanced AI prompt from repository and configure settings"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Execution and Review",
+            "description": "Run the prompt and review output for quality assurance"
+          }
+        ],
+        "about": {
+          "@id": "#howto-guide"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema#webpage",
+        "url": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema",
+        "name": "Shopify Product Descriptions Advanced AI Prompt With FAQs & Schema",
+        "description": "Learn how to use advanced AI prompts to enhance Shopify product descriptions with features, internal links, FAQs, and schema markup",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp.com/wp-content/uploads/shopify-ai-prompt-schema.jpg",
+          "description": "Shopify AI prompt interface showing schema markup generation"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Shopify Product Descriptions Advanced AI Prompt",
+              "item": "https://optizenapp.com/optizen-ai/update-shopify-product-descriptions-with-features-internal-links-faqs-schema"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".summary"
+          ]
+        },
+        "mainEntity": {
+          "@id": "#howto-guide"
+        },
+        "about": [
+          {
+            "@id": "#shopify-optimization"
+          },
+          {
+            "@id": "#ai-prompts"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai-app",
+        "name": "Optizen AI",
+        "description": "AI-powered Shopify optimization application for automated content generation and SEO improvements",
+        "url": "https://optizenapp.com",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "featureList": [
+          "AI-powered product description generation",
+          "Automated FAQ creation with schema markup",
+          "Internal linking optimization",
+          "Bulk product updates",
+          "Schema markup validation"
+        ],
+        "screenshot": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp.com/wp-content/uploads/optizen-ai-interface.jpg",
+          "description": "Optizen AI application interface"
+        }
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "#technical-guide",
+        "headline": "Technical Implementation of AI Prompts for Shopify Schema Markup",
+        "description": "Technical guide covering the implementation of AI-generated schema markup in Shopify product descriptions",
+        "about": [
+          {
+            "@id": "#schema-markup"
+          },
+          {
+            "@id": "#faq-schema"
+          }
+        ],
+        "teaches": [
+          {
+            "@id": "#ai-prompts"
+          },
+          {
+            "@id": "#internal-linking"
+          },
+          {
+            "@id": "#ecommerce-seo"
+          }
+        ],
+        "codeRepository": "https://optizenapp.com/prompt-repository",
+        "programmingLanguage": "JSON-LD",
+        "runtimePlatform": "Shopify"
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T01:44:43.132Z",
+  "contentModified": "2023-11-23T03:51:16",
+  "contentHash": "1dbbfc7a499f60576072ff3b769aecdb"
+}

@@ -1,0 +1,369 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/content/custom-gpt-to-optimize-ecommerce-product-pages-for-seo",
+        "headline": "How To Use A Custom GPT To Produce Ecommerce Product Descriptions & SEO Meta Based On Top Competitors",
+        "description": "A comprehensive guide on using custom GPT and AI tools to optimize ecommerce product pages for SEO, including step-by-step processes for generating product descriptions and meta information based on competitor analysis.",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "https://optizenapp.com/#organization"
+        },
+        "datePublished": "2024-07-16T05:52:04",
+        "dateModified": "2024-07-16T07:36:48",
+        "url": "https://optizenapp.com/content/custom-gpt-to-optimize-ecommerce-product-pages-for-seo",
+        "about": [
+          {
+            "@id": "#ecommerce-seo"
+          },
+          {
+            "@id": "#custom-gpt"
+          },
+          {
+            "@id": "#product-optimization"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#shopify"
+          },
+          {
+            "@id": "#woocommerce"
+          },
+          {
+            "@id": "#surfer-seo"
+          },
+          {
+            "@id": "#ahrefs"
+          },
+          {
+            "@id": "#optizen-ai"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-optimize-product-pages"
+          },
+          {
+            "@id": "#competitor-research-process"
+          },
+          {
+            "@id": "#custom-gpt-setup"
+          }
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".summary"
+          ]
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-optimize-product-pages",
+        "name": "How to Optimize Ecommerce Product Pages Using Custom GPT",
+        "description": "Step-by-step process to generate and update ecommerce product pages using AI tools and competitor analysis",
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "ChatGPT Account"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "SurferSEO Account"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Ahrefs or SEMrush Account"
+          }
+        ],
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "OptizenAI Custom GPT",
+            "url": "https://chatgpt.com/gpts"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "SurferSEO Content Editor"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Ensure Topical Map & Structure",
+            "text": "Build semantically relevant categories and sub-categories with proper URL structure and internal linking",
+            "url": "#step-topical-map"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Research Product in Market",
+            "text": "Use tools like Ahrefs or SEMrush to analyze competitors and search volume for your target product",
+            "url": "#step-market-research"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Setup Custom GPT",
+            "text": "Access OptizenAI Ecom Product SEO Content Optimization GPT from ChatGPT marketplace",
+            "url": "#step-custom-gpt"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Input Product Information",
+            "text": "Add product URL, core keywords, product type, collection URL, and competitor URLs from SurferSEO",
+            "url": "#step-input-data"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Generate Optimized Content",
+            "text": "Let the GPT analyze competitors and generate SEO title, H1, meta description, and product description",
+            "url": "#step-generate-content"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Validate in SurferSEO",
+            "text": "Paste generated content into SurferSEO editor and optimize to achieve score of 70 or above",
+            "url": "#step-validate-content"
+          }
+        ],
+        "result": {
+          "@type": "Thing",
+          "name": "Optimized Product Page Content",
+          "description": "SEO-optimized product descriptions and meta information that compete with top market performers"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#ecommerce-seo-glossary",
+        "name": "Ecommerce SEO Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#custom-gpt",
+            "name": "Custom GPT",
+            "description": "A specialized version of ChatGPT trained for specific tasks like ecommerce product optimization",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-seo-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ecommerce-seo",
+            "name": "Ecommerce SEO",
+            "description": "Search engine optimization techniques specifically applied to online retail websites and product pages",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-seo-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#product-optimization",
+            "name": "Product Page Optimization",
+            "description": "The process of improving product pages to rank higher in search engines and convert better",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-seo-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#topical-map",
+            "name": "Topical Map",
+            "description": "A strategic structure organizing website content around related topics and semantic relationships",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-seo-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#nlp-keywords",
+            "name": "NLP Keywords",
+            "description": "Natural Language Processing keywords that help search engines understand content context and meaning",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-seo-glossary"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#shopify",
+        "name": "Shopify",
+        "description": "Ecommerce platform for building online stores",
+        "applicationCategory": "Ecommerce Platform",
+        "operatingSystem": "Web-based",
+        "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#woocommerce",
+        "name": "WooCommerce",
+        "description": "WordPress plugin for creating ecommerce websites",
+        "applicationCategory": "Ecommerce Plugin",
+        "operatingSystem": "WordPress",
+        "sameAs": "https://en.wikipedia.org/wiki/WooCommerce"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#surfer-seo",
+        "name": "SurferSEO",
+        "description": "SEO content optimization tool that analyzes top-ranking pages",
+        "applicationCategory": "SEO Tool",
+        "url": "https://surferseo.com",
+        "featureList": [
+          "Content Editor",
+          "Keyword Research",
+          "Competitor Analysis",
+          "Auto-Optimize Feature"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#ahrefs",
+        "name": "Ahrefs",
+        "description": "SEO toolset for keyword research and competitor analysis",
+        "applicationCategory": "SEO Tool",
+        "url": "https://ahrefs.com",
+        "sameAs": "https://en.wikipedia.org/wiki/Ahrefs"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai",
+        "name": "OptizenAI",
+        "description": "AI-powered Shopify app for bulk product optimization and SEO",
+        "applicationCategory": "Shopify App",
+        "url": "https://optizenapp.com",
+        "featureList": [
+          "Bulk Product Updates",
+          "AI Content Generation",
+          "Sub-collection Creation",
+          "Tag Page Optimization"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#competitor-research-process",
+        "name": "Competitor Research Process",
+        "description": "Steps for researching product competitors using SEO tools",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Use Ahrefs for Keyword Analysis",
+            "description": "Search for product name and variations to find search volume and difficulty"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Identify Top Competitors",
+            "description": "Review both Ahrefs results and manual Google searches for comprehensive competitor list"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Analyze Competitor Pages",
+            "description": "Examine competitor product pages for quality, structure, and optimization techniques"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#custom-gpt-setup",
+        "name": "Custom GPT Setup Requirements",
+        "description": "Information needed to run the OptizenAI Custom GPT",
+        "numberOfItems": 5,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Core Topic/Product Keyword",
+            "description": "Main keyword you want to optimize for"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Product Type",
+            "description": "Category of product (e.g., joint supplement, grooming tool)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Collection URL and Anchor Text",
+            "description": "Main collection page URL and linking text"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "5 Competitor URLs from SurferSEO",
+            "description": "Top competitor pages identified through SurferSEO analysis"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "NLP Keywords from SurferSEO",
+            "description": "Natural language processing keywords for content optimization"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/content/custom-gpt-to-optimize-ecommerce-product-pages-for-seo#webpage",
+        "url": "https://optizenapp.com/content/custom-gpt-to-optimize-ecommerce-product-pages-for-seo",
+        "name": "How To Use A Custom GPT To Produce Ecommerce Product Descriptions & SEO Meta",
+        "description": "Complete guide for using AI tools to optimize ecommerce product pages",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com/#website",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Content",
+              "item": "https://optizenapp.com/content"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Custom GPT Ecommerce Optimization"
+            }
+          ]
+        },
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": "https://optizenapp.com/content/custom-gpt-to-optimize-ecommerce-product-pages-for-seo"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T01:39:35.064Z",
+  "contentModified": "2024-07-16T07:36:48",
+  "contentHash": "65ae47e8b44cde50881d4d208d7d6c90"
+}

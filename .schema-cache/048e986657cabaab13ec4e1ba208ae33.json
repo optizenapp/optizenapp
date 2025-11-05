@@ -1,0 +1,359 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/shopify-seo/pas-framework#article",
+        "headline": "What Is PAS Framework & How To Use It With Ecommerce Product Descriptions",
+        "description": "Learn about the PAS Framework (Problem, Agitation, Solution) copywriting technique and how to implement it effectively in ecommerce product descriptions for better conversions.",
+        "url": "https://optizenapp.com/shopify-seo/pas-framework",
+        "datePublished": "2023-11-13T03:50:37",
+        "dateModified": "2023-11-23T03:50:49",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "OptizenApp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "OptizenApp"
+        },
+        "about": [
+          {
+            "@id": "#pas-framework"
+          },
+          {
+            "@id": "#copywriting"
+          },
+          {
+            "@id": "#ecommerce-marketing"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#robert-bly"
+          },
+          {
+            "@id": "#gary-halbert"
+          },
+          {
+            "@id": "#shopify"
+          },
+          {
+            "@id": "#keyword-research-tools"
+          }
+        ],
+        "citation": [
+          {
+            "@type": "CreativeWork",
+            "name": "The Copywriters Handbook",
+            "author": {
+              "@id": "#robert-bly"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "name": "Omniscient",
+            "description": "Source for PAS Framework definition"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#pas-howto"
+          },
+          {
+            "@id": "#pas-stages-list"
+          },
+          {
+            "@id": "#research-methods-list"
+          }
+        ],
+        "mainEntity": {
+          "@id": "#pas-framework"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".pas-definition"
+          ]
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify-seo/pas-framework",
+        "url": "https://optizenapp.com/shopify-seo/pas-framework",
+        "name": "What Is PAS Framework & How To Use It With Ecommerce Product Descriptions",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "OptizenApp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify SEO",
+              "item": "https://optizenapp.com/shopify-seo"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "PAS Framework"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify-seo/pas-framework#article"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#pas-howto",
+        "name": "How to Use the PAS Framework for Ecommerce Product Descriptions",
+        "description": "Step-by-step guide to implementing the Problem, Agitation, Solution framework in ecommerce copywriting",
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Product knowledge"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Customer research data"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Keyword research tools"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Identify the Problem",
+            "text": "Identify your customer's pain points and the core problem your product solves. Research customer feedback and use keyword research tools to validate the problem.",
+            "url": "#problem-stage"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Agitate the Problem",
+            "text": "Provide additional information to help readers fully understand the consequences of not solving the problem. Explain what it costs them if they don't take action.",
+            "url": "#agitation-stage"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Present the Solution",
+            "text": "Offer your product as the solution to their problem. Position it as the antidote or painkiller that will resolve their discomfort and associated issues.",
+            "url": "#solution-stage"
+          }
+        ],
+        "about": {
+          "@id": "#pas-framework"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#pas-stages-list",
+        "name": "PAS Framework Stages",
+        "description": "The three core stages of the Problem, Agitation, Solution framework",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Problem",
+            "description": "Identify customer pain points and the core problem your product addresses"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Agitation",
+            "description": "Elaborate on the problem to help readers understand the full consequences of inaction"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Solution",
+            "description": "Present your product as the solution that resolves the identified problem"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#research-methods-list",
+        "name": "Customer Research Methods",
+        "description": "Methods to identify and validate customer problems for PAS framework implementation",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Customer Surveys",
+            "description": "Direct feedback collection from existing customers"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ahrefs",
+            "description": "Keyword research tool for understanding search intent"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Semrush",
+            "description": "SEO and keyword research platform"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Google Keyword Planner",
+            "description": "Google's keyword research and planning tool"
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#pas-terminology",
+        "name": "PAS Framework Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#pas-framework",
+            "name": "PAS Framework",
+            "alternateName": [
+              "Problem Agitation Solution",
+              "PAS Copywriting Framework"
+            ],
+            "description": "A copywriting technique that structures content by identifying a problem, agitating it to show consequences, then presenting a solution",
+            "inDefinedTermSet": {
+              "@id": "#pas-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Copywriting"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#copywriting",
+            "name": "Copywriting",
+            "description": "The practice of writing persuasive marketing and promotional materials that motivate people to take action",
+            "inDefinedTermSet": {
+              "@id": "#pas-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Copywriting"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ecommerce-marketing",
+            "name": "Ecommerce Marketing",
+            "description": "Marketing strategies and techniques specifically designed for online retail businesses",
+            "inDefinedTermSet": {
+              "@id": "#pas-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/E-commerce"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#agitation",
+            "name": "Agitation",
+            "description": "The process of elaborating on a problem to help the audience understand the full consequences of not taking action",
+            "inDefinedTermSet": {
+              "@id": "#pas-terminology"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "#robert-bly",
+        "name": "Robert Bly",
+        "alternateName": "Dr. Robert Bly",
+        "description": "Author of The Copywriters Handbook and creator of the PAS Framework",
+        "knowsAbout": [
+          {
+            "@id": "#copywriting"
+          },
+          {
+            "@id": "#pas-framework"
+          }
+        ],
+        "sameAs": "https://en.wikipedia.org/wiki/Robert_W._Bly"
+      },
+      {
+        "@type": "Person",
+        "@id": "#gary-halbert",
+        "name": "Gary Halbert",
+        "description": "Renowned marketer who adopted and popularized the PAS Framework in email marketing campaigns",
+        "knowsAbout": [
+          {
+            "@id": "#pas-framework"
+          },
+          "Email Marketing",
+          "Direct Response Marketing"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#shopify",
+        "name": "Shopify",
+        "applicationCategory": "E-commerce Platform",
+        "description": "E-commerce platform for online stores and retail point-of-sale systems",
+        "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#keyword-research-tools",
+        "name": "Keyword Research Tools",
+        "description": "Tools mentioned for researching customer problems and validating pain points",
+        "itemListElement": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Ahrefs",
+            "applicationCategory": "SEO Tool",
+            "sameAs": "https://ahrefs.com"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Semrush",
+            "applicationCategory": "SEO Tool",
+            "sameAs": "https://semrush.com"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Google Keyword Planner",
+            "applicationCategory": "Keyword Research Tool",
+            "sameAs": "https://ads.google.com/home/tools/keyword-planner/"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com#organization",
+        "name": "OptizenApp",
+        "url": "https://optizenapp.com",
+        "description": "Digital marketing and SEO optimization platform",
+        "knowsAbout": [
+          "Shopify SEO",
+          "E-commerce Marketing",
+          "Copywriting",
+          "Digital Marketing"
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T01:43:31.796Z",
+  "contentModified": "2023-11-23T03:50:49",
+  "contentHash": "e96e4698b9c5cbe04afdc2f797a83924"
+}

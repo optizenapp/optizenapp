@@ -6,29 +6,29 @@
         "@type": "Article",
         "@id": "https://optizenapp.com/ai-prompts/few-shot-prompting",
         "headline": "What Is Few-Shot Prompting: Making AI Actually Do What You Want",
-        "description": "Few-shot prompting is a technique that guides large language models by providing several examples directly within the prompt to demonstrate a specific task and desired output format.",
+        "description": "Few-shot prompting is a technique that guides large language models by providing several examples directly within the prompt to demonstrate specific tasks and desired output formats.",
+        "url": "https://optizenapp.com/ai-prompts/few-shot-prompting",
+        "datePublished": "2025-07-25T02:36:06",
+        "dateModified": "2025-07-25T02:36:07",
         "author": {
           "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
           "name": "OptizenApp"
         },
         "publisher": {
           "@type": "Organization",
-          "name": "OptizenApp",
-          "url": "https://optizenapp.com"
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenApp"
         },
-        "datePublished": "2025-07-25T02:36:06",
-        "dateModified": "2025-07-25T02:36:07",
-        "url": "https://optizenapp.com/ai-prompts/few-shot-prompting",
-        "mainEntityOfPage": "https://optizenapp.com/ai-prompts/few-shot-prompting",
         "about": [
           {
             "@id": "#few-shot-prompting"
           },
           {
-            "@id": "#large-language-models"
+            "@id": "#in-context-learning"
           },
           {
-            "@id": "#in-context-learning"
+            "@id": "#large-language-models"
           },
           {
             "@id": "#prompt-engineering"
@@ -54,9 +54,6 @@
             "@id": "#automatic-cot"
           },
           {
-            "@id": "#retrieval-augmented"
-          },
-          {
             "@id": "#set-of-mark"
           }
         ],
@@ -71,7 +68,7 @@
             "@id": "#case-study-section"
           },
           {
-            "@id": "#comparison-table"
+            "@id": "#advanced-techniques-table"
           },
           {
             "@id": "#advantages-limitations-section"
@@ -87,14 +84,275 @@
         }
       },
       {
+        "@type": "DefinedTermSet",
+        "@id": "#ai-terminology-glossary",
+        "name": "AI and Few-Shot Prompting Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#few-shot-prompting",
+            "name": "Few-Shot Prompting",
+            "description": "A technique that guides large language models by providing several examples or 'shots' directly within the prompt to demonstrate a specific task and desired output format",
+            "sameAs": "https://en.wikipedia.org/wiki/Few-shot_learning"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#in-context-learning",
+            "name": "In-Context Learning",
+            "description": "The ability of language models to learn and perform tasks based on examples provided within the input prompt without changing the model's internal parameters",
+            "sameAs": "https://en.wikipedia.org/wiki/In-context_learning"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#large-language-models",
+            "name": "Large Language Models",
+            "description": "AI models trained on vast amounts of text data that can understand and generate human-like text across various tasks",
+            "sameAs": "https://en.wikipedia.org/wiki/Large_language_model"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#prompt-engineering",
+            "name": "Prompt Engineering",
+            "description": "The practice of designing and optimizing input prompts to effectively communicate with and guide AI language models",
+            "sameAs": "https://en.wikipedia.org/wiki/Prompt_engineering"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#chain-of-thought",
+            "name": "Chain-of-Thought Prompting",
+            "description": "A prompting technique that includes step-by-step reasoning in examples to teach models how to think through complex problems",
+            "sameAs": "https://en.wikipedia.org/wiki/Chain-of-thought_prompting"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#self-consistency",
+            "name": "Self-Consistency",
+            "description": "A method that generates multiple reasoning paths and selects the most common answer to improve accuracy and reliability"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#automatic-cot",
+            "name": "Automatic Chain-of-Thought",
+            "description": "An automated method for creating Chain-of-Thought prompts that reduces manual effort while maintaining performance"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#set-of-mark",
+            "name": "Set-of-Mark Prompting",
+            "description": "A technique using special markers to guide models through long documents in structured stages"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#openai",
+        "name": "OpenAI",
+        "description": "AI research company that developed GPT-3 and demonstrated the effectiveness of few-shot prompting",
+        "sameAs": "https://en.wikipedia.org/wiki/OpenAI"
+      },
+      {
+        "@type": "Organization",
+        "@id": "#google-research",
+        "name": "Google Research",
+        "description": "Research division of Google that advanced few-shot prompting with Chain-of-Thought and Self-Consistency techniques",
+        "sameAs": "https://en.wikipedia.org/wiki/Google_Research"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#gpt-3",
+        "name": "GPT-3",
+        "description": "Large language model developed by OpenAI that proved the effectiveness of few-shot prompting at scale",
+        "creator": {
+          "@id": "#openai"
+        },
+        "sameAs": "https://en.wikipedia.org/wiki/GPT-3"
+      },
+      {
+        "@type": "WebPageElement",
+        "@id": "#core-concepts-section",
+        "name": "Core Concepts & Why OpenAI's GPT-3 Was a Big Deal",
+        "about": [
+          {
+            "@id": "#in-context-learning"
+          },
+          {
+            "@id": "#gpt-3"
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/ai-prompts/few-shot-prompting"
+        }
+      },
+      {
+        "@type": "WebPageElement",
+        "@id": "#technical-breakdown-section",
+        "name": "How It Works: A Quick Technical Breakdown",
+        "about": [
+          {
+            "@id": "#prompt-engineering"
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/ai-prompts/few-shot-prompting"
+        }
+      },
+      {
+        "@type": "WebPageElement",
+        "@id": "#case-study-section",
+        "name": "Case Study: Let's Classify Some Sentiment",
+        "about": [
+          {
+            "@id": "#sentiment-analysis"
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/ai-prompts/few-shot-prompting"
+        }
+      },
+      {
+        "@type": "Table",
+        "@id": "#advanced-techniques-table",
+        "name": "Advanced Few-Shot Prompting Techniques Comparison",
+        "about": [
+          {
+            "@id": "#chain-of-thought"
+          },
+          {
+            "@id": "#self-consistency"
+          },
+          {
+            "@id": "#automatic-cot"
+          },
+          {
+            "@id": "#set-of-mark"
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/ai-prompts/few-shot-prompting"
+        }
+      },
+      {
+        "@type": "WebPageElement",
+        "@id": "#advantages-limitations-section",
+        "name": "Advantages and Limitations: The Good, The Bad, and The Tricky",
+        "about": [
+          {
+            "@id": "#few-shot-prompting"
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/ai-prompts/few-shot-prompting"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#advantages-list",
+        "name": "Advantages of Few-Shot Prompting",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Requires Less Data"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Saves Time & Money"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Rapid Prototyping"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Highly Flexible"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "User Control"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#limitations-list",
+        "name": "Limitations of Few-Shot Prompting",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Context Window Limits"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Prompt Sensitivity"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Risk of Bias"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Inconsistent Results"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#how-to-create-few-shot-prompt",
+        "name": "How to Create an Effective Few-Shot Prompt",
+        "description": "Step-by-step guide to creating effective few-shot prompts for AI language models",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Write Task Description",
+            "text": "Create a short, clear instruction describing the task (e.g., 'Classify these movie reviews as positive, neutral, or negative.')"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Provide Quality Examples",
+            "text": "Include 2-5 high-quality input-output pairs that demonstrate the task perfectly, covering different types of expected answers"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Format Consistently",
+            "text": "Use clear labels (Input:, Output:) and maintain the same structure for every example with consistent formatting"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Present Final Query",
+            "text": "Present the new input you want the model to process in the exact same format as your examples"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Add Trailing Label",
+            "text": "Include a trailing label (like 'Sentiment:') to cue the model to start generating the response"
+          }
+        ],
+        "about": {
+          "@id": "#few-shot-prompting"
+        }
+      },
+      {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/ai-prompts/few-shot-prompting#webpage",
         "url": "https://optizenapp.com/ai-prompts/few-shot-prompting",
         "name": "What Is Few-Shot Prompting: Making AI Actually Do What You Want",
         "isPartOf": {
           "@type": "WebSite",
-          "name": "OptizenApp",
-          "url": "https://optizenapp.com"
+          "@id": "https://optizenapp.com",
+          "name": "OptizenApp"
         },
         "breadcrumb": {
           "@type": "BreadcrumbList",
@@ -118,335 +376,18 @@
             }
           ]
         },
-        "mainEntity": {
-          "@id": "https://optizenapp.com/ai-prompts/few-shot-prompting"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".key-concept"
+          ]
         }
-      },
-      {
-        "@type": "DefinedTermSet",
-        "@id": "#ai-terminology-glossary",
-        "name": "AI and Few-Shot Prompting Terminology",
-        "hasDefinedTerm": [
-          {
-            "@type": "DefinedTerm",
-            "@id": "#few-shot-prompting",
-            "name": "Few-Shot Prompting",
-            "description": "A technique that guides large language models by providing several examples, or 'shots,' directly within the prompt to demonstrate a specific task and desired output format.",
-            "inDefinedTermSet": {
-              "@id": "#ai-terminology-glossary"
-            },
-            "sameAs": "https://en.wikipedia.org/wiki/Few-shot_learning"
-          },
-          {
-            "@type": "DefinedTerm",
-            "@id": "#large-language-models",
-            "name": "Large Language Models",
-            "alternateName": "LLMs",
-            "description": "Massive neural networks trained on vast amounts of text data that can understand and generate human-like text.",
-            "inDefinedTermSet": {
-              "@id": "#ai-terminology-glossary"
-            },
-            "sameAs": "https://en.wikipedia.org/wiki/Large_language_model"
-          },
-          {
-            "@type": "DefinedTerm",
-            "@id": "#in-context-learning",
-            "name": "In-Context Learning",
-            "alternateName": "ICL",
-            "description": "The ability of a model to learn and perform new tasks based on examples provided within the input prompt, without changing its internal parameters.",
-            "inDefinedTermSet": {
-              "@id": "#ai-terminology-glossary"
-            }
-          },
-          {
-            "@type": "DefinedTerm",
-            "@id": "#prompt-engineering",
-            "name": "Prompt Engineering",
-            "description": "The practice of designing and optimizing input prompts to effectively communicate with and guide AI language models.",
-            "inDefinedTermSet": {
-              "@id": "#ai-terminology-glossary"
-            },
-            "sameAs": "https://en.wikipedia.org/wiki/Prompt_engineering"
-          },
-          {
-            "@type": "DefinedTerm",
-            "@id": "#gpt-3",
-            "name": "GPT-3",
-            "description": "A large language model developed by OpenAI that demonstrated the effectiveness of few-shot prompting techniques.",
-            "inDefinedTermSet": {
-              "@id": "#ai-terminology-glossary"
-            },
-            "sameAs": "https://en.wikipedia.org/wiki/GPT-3"
-          },
-          {
-            "@type": "DefinedTerm",
-            "@id": "#chain-of-thought",
-            "name": "Chain-of-Thought Prompting",
-            "alternateName": "CoT",
-            "description": "A prompting technique that includes step-by-step reasoning in examples to improve model performance on complex logic tasks.",
-            "inDefinedTermSet": {
-              "@id": "#ai-terminology-glossary"
-            }
-          },
-          {
-            "@type": "DefinedTerm",
-            "@id": "#self-consistency",
-            "name": "Self-Consistency",
-            "description": "A method that generates multiple reasoning paths and selects the most common answer to improve reliability.",
-            "inDefinedTermSet": {
-              "@id": "#ai-terminology-glossary"
-            }
-          },
-          {
-            "@type": "DefinedTerm",
-            "@id": "#automatic-cot",
-            "name": "Automatic Chain-of-Thought",
-            "alternateName": "Auto-CoT",
-            "description": "An automated method for creating Chain-of-Thought prompts, reducing manual effort while maintaining performance.",
-            "inDefinedTermSet": {
-              "@id": "#ai-terminology-glossary"
-            }
-          },
-          {
-            "@type": "DefinedTerm",
-            "@id": "#context-window",
-            "name": "Context Window",
-            "description": "The maximum amount of text that a language model can process in a single prompt, limiting the number of examples that can be provided.",
-            "inDefinedTermSet": {
-              "@id": "#ai-terminology-glossary"
-            }
-          }
-        ]
-      },
-      {
-        "@type": "HowTo",
-        "@id": "#how-to-create-few-shot-prompt",
-        "name": "How to Create Effective Few-Shot Prompts",
-        "description": "A step-by-step guide to creating high-quality few-shot prompts for AI language models.",
-        "totalTime": "PT15M",
-        "supply": [
-          {
-            "@type": "HowToSupply",
-            "name": "Access to a large language model (GPT-3, GPT-4, etc.)"
-          },
-          {
-            "@type": "HowToSupply",
-            "name": "Clear understanding of the desired task"
-          },
-          {
-            "@type": "HowToSupply",
-            "name": "High-quality example inputs and outputs"
-          }
-        ],
-        "step": [
-          {
-            "@type": "HowToStep",
-            "position": 1,
-            "name": "Define the Task",
-            "text": "Write a clear, concise task description that explains what you want the model to do (e.g., 'Classify these movie reviews as positive, neutral, or negative.')."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 2,
-            "name": "Create High-Quality Examples",
-            "text": "Develop 2-5 input-output pairs that demonstrate the task perfectly. Ensure examples cover different scenarios and edge cases."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 3,
-            "name": "Format Consistently",
-            "text": "Use clear labels like 'Input:' and 'Output:' and maintain the same structure for every example. Consistency is crucial for model understanding."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 4,
-            "name": "Structure the Prompt",
-            "text": "Organize your prompt with: task description, examples (shots), and final query in the same format as your examples."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 5,
-            "name": "Test and Iterate",
-            "text": "Experiment with different examples, formats, and ordering to find the optimal configuration for your specific task."
-          }
-        ],
-        "about": {
-          "@id": "#few-shot-prompting"
-        }
-      },
-      {
-        "@type": "Table",
-        "@id": "#comparison-table",
-        "name": "Few-Shot Prompting Techniques Comparison",
-        "description": "Comparison of different few-shot prompting methods, their core concepts, performance impact, and key researchers.",
-        "about": {
-          "@id": "#few-shot-prompting"
-        }
-      },
-      {
-        "@type": "ItemList",
-        "@id": "#advantages-list",
-        "name": "Advantages of Few-Shot Prompting",
-        "description": "Key benefits of using few-shot prompting techniques",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Less Data Needed",
-            "description": "Stop worrying about massive datasets for every little thing"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Saves Money",
-            "description": "Avoids the huge computational costs of model fine-tuning"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Fast & Flexible",
-            "description": "Prototype and launch new AI solutions in a flash"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Total User Control",
-            "description": "Directly steer the model's output with your examples"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Incredibly Versatile",
-            "description": "A single model can be taught to do countless different tasks"
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
-            "name": "Better Performance",
-            "description": "Delivers far better results than just asking a question with no examples (zero-shot)"
-          },
-          {
-            "@type": "ListItem",
-            "position": 7,
-            "name": "Accessible to All",
-            "description": "Lowers the barrier for using advanced AI effectively"
-          }
-        ],
-        "about": {
-          "@id": "#few-shot-prompting"
-        }
-      },
-      {
-        "@type": "ItemList",
-        "@id": "#limitations-list",
-        "name": "Limitations of Few-Shot Prompting",
-        "description": "Key challenges and limitations when using few-shot prompting",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Context Window Limits",
-            "description": "You can only provide so many examples due to model input limitations"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Prompt Sensitivity",
-            "description": "Performance is highly dependent on the exact formatting and wording"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Risk of Bias",
-            "description": "Your examples can accidentally teach the model bad habits or biases"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Inconsistent Results",
-            "description": "Can sometimes be less consistent than fine-tuned models"
-          }
-        ],
-        "about": {
-          "@id": "#few-shot-prompting"
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": "#openai",
-        "name": "OpenAI",
-        "description": "AI research company that developed GPT-3 and demonstrated the effectiveness of few-shot prompting",
-        "sameAs": [
-          "https://en.wikipedia.org/wiki/OpenAI",
-          "https://www.wikidata.org/wiki/Q21708200"
-        ],
-        "founder": [
-          {
-            "@type": "Person",
-            "name": "Sam Altman"
-          },
-          {
-            "@type": "Person",
-            "name": "Elon Musk"
-          }
-        ]
-      },
-      {
-        "@type": "Organization",
-        "@id": "#google-research",
-        "name": "Google Research",
-        "description": "Research division of Google that contributed significantly to Chain-of-Thought prompting and Self-Consistency methods",
-        "sameAs": [
-          "https://en.wikipedia.org/wiki/Google_Research",
-          "https://www.wikidata.org/wiki/Q5586251"
-        ]
-      },
-      {
-        "@type": "Person",
-        "@id": "#tom-brown",
-        "name": "Tom B. Brown",
-        "description": "Lead researcher at OpenAI who authored the groundbreaking GPT-3 paper demonstrating few-shot prompting capabilities",
-        "affiliation": {
-          "@id": "#openai"
-        },
-        "sameAs": "https://scholar.google.com/citations?user=qQP6WXIAAAAJ"
-      },
-      {
-        "@type": "Person",
-        "@id": "#jason-wei",
-        "name": "Jason Wei",
-        "description": "Researcher at Google Research who developed Chain-of-Thought prompting techniques",
-        "affiliation": {
-          "@id": "#google-research"
-        }
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "@id": "#gpt3-paper",
-        "name": "Language Models are Few-Shot Learners",
-        "author": {
-          "@id": "#tom-brown"
-        },
-        "publisher": {
-          "@id": "#openai"
-        },
-        "datePublished": "2020",
-        "description": "Groundbreaking paper that demonstrated the effectiveness of few-shot prompting with GPT-3",
-        "about": [
-          {
-            "@id": "#few-shot-prompting"
-          },
-          {
-            "@id": "#gpt-3"
-          },
-          {
-            "@id": "#in-context-learning"
-          }
-        ]
       }
     ]
   },
-  "generatedAt": "2025-11-05T00:53:57.095Z",
+  "generatedAt": "2025-11-05T01:36:46.131Z",
   "contentModified": "2025-07-25T02:36:07",
   "contentHash": "5f2a982778afa761af95190431d8d9d3"
 }

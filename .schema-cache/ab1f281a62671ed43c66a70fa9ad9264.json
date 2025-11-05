@@ -1,0 +1,233 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions#article",
+        "headline": "Bulk Update Shopify Product Descriptions With FAQs (including HTML j-son schema)",
+        "description": "Learn how to use Optizen AI's FAQ prompt to automatically add frequently asked questions and JSON-LD schema markup to Shopify product descriptions for better SEO and customer experience.",
+        "url": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions",
+        "datePublished": "2023-10-27T00:32:48",
+        "dateModified": "2023-11-23T03:51:24",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        },
+        "about": [
+          {
+            "@id": "#shopify-optimization"
+          },
+          {
+            "@id": "#faq-schema"
+          },
+          {
+            "@id": "#ai-prompts"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#json-ld-schema"
+          },
+          {
+            "@id": "#product-descriptions"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-guide"
+          },
+          {
+            "@id": "#faq-section"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions",
+        "name": "Bulk Update Shopify Product Descriptions With FAQs",
+        "url": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions#article"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "AI FAQs Shopify Product Descriptions"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".faq-question"
+          ]
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-guide",
+        "name": "How to Add FAQs to Shopify Product Descriptions Using Optizen AI",
+        "description": "Step-by-step guide to bulk update Shopify product descriptions with FAQs and schema markup using Optizen AI",
+        "totalTime": "PT10M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen AI App"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate to Product Tab",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select FAQ Prompt",
+            "text": "Select the 'FAQs For Existing Product Description With Schema' from the drop down under the Product Description prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Execute Prompt",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update."
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions#article"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq-section",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where can I use this AI prompt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This prompt is specific to the product description of Shopify products. You can use the prompt in its raw form from the repository, and then replace sections for your specific use case. You can also edit and or add to it for your specific use case."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I use this prompt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This prompt can be used for any product in your Shopify store using the Optizen AI app if you want a more advanced AI prompt to update product descriptions with FAQs and schema. You can tweak this AI prompt as you need, and it's optional to add the FAQ schema section."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it safe to add JSON schema in the product description body?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Currently this will add FAQ JSON schema code in the body of the product description. If you are technically conservative, you may not want to do this. However it will validate in the https://validator.schema.org/ tool."
+            }
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/optizen-ai/ai-faqs-shopify-product-descriptions#article"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#glossary",
+        "name": "Shopify FAQ Schema Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-optimization",
+            "name": "Shopify Optimization",
+            "description": "The process of improving Shopify store performance, SEO, and user experience through various techniques including product description enhancement and schema markup implementation"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#faq-schema",
+            "name": "FAQ Schema",
+            "description": "Structured data markup that helps search engines understand frequently asked questions and their answers on a webpage, improving search result appearance and voice search optimization",
+            "sameAs": "https://schema.org/FAQPage"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#json-ld-schema",
+            "name": "JSON-LD Schema",
+            "description": "A method of encoding structured data using JSON-LD format that helps search engines understand webpage content better",
+            "sameAs": "https://en.wikipedia.org/wiki/JSON-LD"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-prompts",
+            "name": "AI Prompts",
+            "description": "Specific instructions or templates given to artificial intelligence systems to generate desired content or perform specific tasks"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-ai",
+            "name": "Optizen AI",
+            "description": "An AI-powered application designed to help optimize Shopify stores through automated content generation and SEO improvements"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#product-descriptions",
+            "name": "Product Descriptions",
+            "description": "Detailed text content that describes products in e-commerce stores, crucial for SEO and customer decision-making"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai-app",
+        "name": "Optizen AI",
+        "description": "AI-powered Shopify optimization application for bulk updating product descriptions with FAQs and schema markup",
+        "applicationCategory": "E-commerce Optimization Tool",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "category": "SaaS"
+        },
+        "featureList": [
+          "Bulk product description updates",
+          "AI-generated FAQs",
+          "Automatic schema markup generation",
+          "Shopify integration"
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T01:45:12.320Z",
+  "contentModified": "2023-11-23T03:51:24",
+  "contentHash": "fd40b27e38facd4c825c6ff314b04203"
+}

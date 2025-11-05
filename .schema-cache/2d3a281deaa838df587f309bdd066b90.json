@@ -1,0 +1,378 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/ai-prompts/json-prompts-for-ecommerce-product-page-content",
+        "headline": "JSON Prompts For Ecommerce Product Page Content",
+        "description": "Advanced JSON prompting techniques for ecommerce product pages using OptizenAI, providing stricter guidelines and higher quality results with less hallucination compared to traditional text prompting.",
+        "url": "https://optizenapp.com/ai-prompts/json-prompts-for-ecommerce-product-page-content",
+        "datePublished": "2024-07-29T12:07:01",
+        "dateModified": "2024-07-29T12:13:51",
+        "author": {
+          "@type": "Organization",
+          "@id": "#optizen-organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "#optizen-organization"
+        },
+        "about": [
+          {
+            "@id": "#json-prompting"
+          },
+          {
+            "@id": "#ecommerce-seo"
+          },
+          {
+            "@id": "#ai-content-generation"
+          },
+          {
+            "@id": "#shopify-optimization"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#optizenai-platform"
+          },
+          {
+            "@id": "#llm-technology"
+          },
+          {
+            "@id": "#seo-optimization"
+          },
+          {
+            "@id": "#product-descriptions"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#seo-title-howto"
+          },
+          {
+            "@id": "#h1-title-howto"
+          },
+          {
+            "@id": "#seo-description-howto"
+          },
+          {
+            "@id": "#product-description-howto"
+          }
+        ],
+        "mainEntity": {
+          "@id": "#json-prompts-itemlist"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#ecommerce-ai-glossary",
+        "name": "Ecommerce AI Prompting Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#json-prompting",
+            "name": "JSON Prompting",
+            "description": "A structured approach to AI prompting using JSON format that provides stricter guidelines and reduces hallucination compared to text prompting",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-ai-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ecommerce-seo",
+            "name": "Ecommerce SEO",
+            "description": "Search engine optimization techniques specifically applied to ecommerce product pages including meta titles, descriptions, and content optimization",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-ai-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-content-generation",
+            "name": "AI Content Generation",
+            "description": "The process of using artificial intelligence and large language models to automatically create product descriptions, titles, and marketing content",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-ai-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-optimization",
+            "name": "Shopify Optimization",
+            "description": "Techniques and tools for improving Shopify store performance, SEO, and product page effectiveness",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-ai-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizenai-platform",
+            "name": "OptizenAI",
+            "description": "An AI-powered platform for ecommerce optimization that provides automated content generation and SEO tools for online stores",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-ai-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#llm-technology",
+            "name": "Large Language Model (LLM)",
+            "description": "Advanced AI models capable of understanding and generating human-like text, used for content creation and optimization",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-ai-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Large_language_model"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#json-prompts-itemlist",
+        "name": "JSON Prompts for Ecommerce Product Pages",
+        "description": "Collection of four essential JSON prompts for optimizing ecommerce product page content",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "#seo-title-prompt",
+              "name": "Simple JSON SEO Title Prompt",
+              "description": "JSON prompt for paraphrasing SEO meta titles for Shopify products with character limits and formatting requirements"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "#h1-title-prompt",
+              "name": "Simple JSON H1 Page Title Prompt",
+              "description": "JSON prompt for paraphrasing H1 page titles with brand preservation and style inclusion requirements"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "#seo-description-prompt",
+              "name": "Simple JSON SEO Description Prompt",
+              "description": "JSON prompt for rewording SEO meta descriptions with call-to-action and character limit constraints"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "#product-description-prompt",
+              "name": "Simple JSON Product Description Prompt",
+              "description": "Comprehensive JSON prompt for creating unique product descriptions with structured HTML output and internal linking"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#seo-title-howto",
+        "name": "How to Use JSON SEO Title Prompt for Shopify Products",
+        "description": "Step-by-step guide for implementing JSON SEO title prompts in OptizenAI",
+        "totalTime": "PT5M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "OptizenAI Platform Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Product Data"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate to Product Tab",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select JSON Prompt",
+            "text": "Select the 'Simple JSON SEO Title Prompt' from the drop down under the SEO title prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Execute and Review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update."
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#h1-title-howto",
+        "name": "How to Use JSON H1 Page Title Prompt for Shopify Products",
+        "description": "Step-by-step guide for implementing JSON H1 title prompts in OptizenAI",
+        "totalTime": "PT5M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "OptizenAI Platform Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Product Data"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate to Product Tab",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select H1 JSON Prompt",
+            "text": "Select the 'Simple JSON H1 Title Prompt' from the drop down under the H1 title prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Execute and Review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app."
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#seo-description-howto",
+        "name": "How to Use JSON SEO Description Prompt for Shopify Products",
+        "description": "Step-by-step guide for implementing JSON SEO description prompts in OptizenAI",
+        "totalTime": "PT5M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "OptizenAI Platform Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Product Data"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate to Product Tab",
+            "text": "Navigate to the 'product' tab in OptizenAI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select SEO Description Prompt",
+            "text": "Select the 'Simple JSON SEO Description Prompt' from the drop down under the SEO description prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Execute and Review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app."
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#product-description-howto",
+        "name": "How to Use JSON Product Description Prompt for Shopify Products",
+        "description": "Step-by-step guide for implementing comprehensive JSON product description prompts in OptizenAI",
+        "totalTime": "PT10M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "OptizenAI Platform Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Product Data"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Product Internal Linking List"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate to Product Tab",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select Product Description Prompt",
+            "text": "Select the 'Simple JSON Product Description Prompt' from the drop down under the product description prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Execute and Review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app."
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/ai-prompts/json-prompts-for-ecommerce-product-page-content#webpage",
+        "url": "https://optizenapp.com/ai-prompts/json-prompts-for-ecommerce-product-page-content",
+        "name": "JSON Prompts For Ecommerce Product Page Content",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AI Prompts",
+              "item": "https://optizenapp.com/ai-prompts"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "JSON Prompts For Ecommerce Product Page Content"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".prompt-code"
+          ]
+        },
+        "mainEntity": {
+          "@id": "#json-prompts-itemlist"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T01:38:52.612Z",
+  "contentModified": "2024-07-29T12:13:51",
+  "contentHash": "2b9e3a51e0a02d41de547b0da8f35f49"
+}

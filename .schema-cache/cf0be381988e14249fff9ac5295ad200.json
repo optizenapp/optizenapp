@@ -1,0 +1,205 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data",
+        "headline": "Using ChatGPT 4 To Crawl Web Pages & Links To Extract Data",
+        "description": "Learn how to use ChatGPT 4's new web crawling capabilities to extract and aggregate data from websites at scale. This guide covers the setup process and practical applications.",
+        "url": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data",
+        "datePublished": "2023-11-23T05:42:26",
+        "dateModified": "2023-11-23T05:42:27",
+        "articleSection": "ai-prompts",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "about": [
+          {
+            "@id": "#chatgpt4-entity"
+          },
+          {
+            "@id": "#web-crawling-entity"
+          },
+          {
+            "@id": "#data-extraction-entity"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#llm-entity"
+          },
+          {
+            "@id": "#nlp-entity"
+          },
+          {
+            "@id": "#wikipedia-entity"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-setup"
+          },
+          {
+            "@id": "#prompt-example"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-setup",
+        "name": "How to Set Up ChatGPT 4 for Web Crawling",
+        "description": "Step-by-step guide to configure ChatGPT 4 for web page crawling and data extraction",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Sign Up To ChatGPT 4",
+            "text": "If you haven't already upgraded, you'll need a Chat GPT 4 account. At the time of writing you can upgrade for $20 per month.",
+            "position": 1
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Add The Prompt With Website Link",
+            "text": "Add a simple prompt to ask the LLM (large language model) to crawl or view the website link you wish to extract data from.",
+            "position": 2
+          }
+        ],
+        "totalTime": "PT10M",
+        "supply": [
+          {
+            "@type": "Thing",
+            "name": "ChatGPT 4 Subscription",
+            "description": "$20 per month subscription"
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#terminology-set",
+        "name": "AI and Web Crawling Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#chatgpt4-entity",
+            "name": "ChatGPT 4",
+            "description": "Advanced large language model by OpenAI with web crawling capabilities",
+            "inDefinedTermSet": {
+              "@id": "#terminology-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/ChatGPT"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#web-crawling-entity",
+            "name": "Web Crawling",
+            "description": "The process of systematically browsing and extracting information from web pages",
+            "inDefinedTermSet": {
+              "@id": "#terminology-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Web_crawler"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#data-extraction-entity",
+            "name": "Data Extraction",
+            "description": "The process of retrieving specific information from various data sources",
+            "inDefinedTermSet": {
+              "@id": "#terminology-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Data_extraction"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#llm-entity",
+            "name": "Large Language Model",
+            "alternateName": "LLM",
+            "description": "AI models trained on vast amounts of text data to understand and generate human language",
+            "inDefinedTermSet": {
+              "@id": "#terminology-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Large_language_model"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#nlp-entity",
+            "name": "Natural Language Processing",
+            "alternateName": "NLP",
+            "description": "Branch of AI that helps computers understand and process human language",
+            "inDefinedTermSet": {
+              "@id": "#terminology-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Natural_language_processing"
+          }
+        ]
+      },
+      {
+        "@type": "ExampleAction",
+        "@id": "#prompt-example",
+        "name": "Wikipedia Entity Extraction Prompt",
+        "description": "Example prompt to ask ChatGPT4 to crawl a Wikipedia page and extract entities based on Google NLP",
+        "object": {
+          "@type": "WebPage",
+          "@id": "#wikipedia-entity",
+          "name": "Wikipedia",
+          "description": "Free online encyclopedia",
+          "sameAs": "https://en.wikipedia.org/wiki/Wikipedia"
+        },
+        "result": {
+          "@type": "StructuredValue",
+          "name": "Extracted Entities List",
+          "description": "List of entities extracted using Google NLP methodology"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data#webpage",
+        "url": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data",
+        "name": "Using ChatGPT 4 To Crawl Web Pages & Links To Extract Data",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "OptizenApp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AI Prompts",
+              "item": "https://optizenapp.com/ai-prompts"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Using ChatGPT 4 To Crawl Web Pages & Links To Extract Data"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".article-content p:first-of-type"
+          ]
+        },
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": "https://optizenapp.com/ai-prompts/using-chatgpt-4-to-crawl-web-pages-links-to-extract-data"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T01:40:55.699Z",
+  "contentModified": "2023-11-23T05:42:27",
+  "contentHash": "aee34f70abb23fb741c5970a347f5cb9"
+}
