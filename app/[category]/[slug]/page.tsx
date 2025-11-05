@@ -12,16 +12,12 @@ import RelatedPosts from '@/components/blog/RelatedPosts';
 import { Clock, Calendar, ArrowLeft } from 'lucide-react';
 import * as cheerio from 'cheerio';
 
-// Helper function to replace WordPress staging links with production links
+// Helper function to process WordPress content and fix image URLs
 function processContent(content: string): string {
   const stagingDomain = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com';
-  const productionDomain = 'https://optizenapp.com';
-
-  // Replace staging domain with production domain
-  let processedContent = content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
 
   // Load content into cheerio for robust DOM manipulation
-  const $ = cheerio.load(processedContent);
+  const $ = cheerio.load(content);
 
   // Process all images
   $('img').each((i, el) => {
@@ -30,13 +26,13 @@ function processContent(content: string): string {
     // Fix src attribute
     let src = img.attr('src');
     if (src) {
-      // If it's a relative URL starting with /wp-content, add the production domain
+      // If it's a relative URL starting with /wp-content, add the staging domain
       if (src.startsWith('/wp-content')) {
-        img.attr('src', `${productionDomain}${src}`);
+        img.attr('src', `${stagingDomain}${src}`);
       }
-      // If it's pointing to optizenapp.com/wp-content, redirect to staging server
-      else if (src.includes('optizenapp.com/wp-content')) {
-        const wpPath = src.replace('https://optizenapp.com', '');
+      // If it's pointing to any other domain's wp-content, redirect to staging
+      else if (src.includes('/wp-content/') && !src.includes(stagingDomain)) {
+        const wpPath = src.substring(src.indexOf('/wp-content'));
         img.attr('src', `${stagingDomain}${wpPath}`);
       }
     }
@@ -49,11 +45,11 @@ function processContent(content: string): string {
         .map(part => {
           const trimmedPart = part.trim();
           if (trimmedPart.startsWith('/wp-content')) {
-            return `${productionDomain}${trimmedPart}`;
+            return `${stagingDomain}${trimmedPart}`;
           }
-          // Also handle optizenapp.com/wp-content URLs in srcset
-          else if (trimmedPart.includes('optizenapp.com/wp-content')) {
-            const wpPath = trimmedPart.replace('https://optizenapp.com', '');
+          // Also handle any wp-content URLs in srcset
+          else if (trimmedPart.includes('/wp-content/') && !trimmedPart.includes(stagingDomain)) {
+            const wpPath = trimmedPart.substring(trimmedPart.indexOf('/wp-content'));
             return `${stagingDomain}${wpPath}`;
           }
           return trimmedPart;
