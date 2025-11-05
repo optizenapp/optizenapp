@@ -302,13 +302,7 @@ Return ONLY valid JSON with no markdown formatting or explanations.`;
 }
 
 export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<object | null> {
-  // Skip LLM schema generation if disabled (useful for faster builds)
-  if (process.env.DISABLE_SCHEMA_GENERATION === 'true') {
-    console.log('⏭️  Schema generation disabled via env var, using basic schema');
-    return generateBasicArticleSchema(input);
-  }
-  
-  // 🔥 NEW: Check cache first - only regenerate if content changed
+  // 🔥 Check cache first - only regenerate if content changed
   const cachedSchema = await getCachedSchema(
     input.url,
     input.dateModified,
@@ -317,6 +311,20 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
   
   if (cachedSchema) {
     return cachedSchema; // ✅ Using cached schema - no API call needed!
+  }
+  
+  // Skip LLM schema generation if disabled OR if building on Vercel without cache
+  // This prevents build failures when schema hasn't been pre-generated locally
+  const isVercelBuild = process.env.VERCEL === '1';
+  const schemaDisabled = process.env.DISABLE_SCHEMA_GENERATION === 'true';
+  
+  if (schemaDisabled || (isVercelBuild && !cachedSchema)) {
+    if (isVercelBuild) {
+      console.log('⏭️  Vercel build detected with no cache - using basic schema (generate locally first)');
+    } else {
+      console.log('⏭️  Schema generation disabled via env var, using basic schema');
+    }
+    return generateBasicArticleSchema(input);
   }
   
   console.log('🆕 Generating new schema (not in cache or content changed)');
