@@ -9,14 +9,11 @@ config({ path: '.env.local' });
 async function testDocsSchema() {
   console.log('🧪 Testing documentation schema generation (1 doc)...\n');
   
-  const allApps = Object.keys(docsMapping);
-  const firstApp = allApps[0];
-  const docPaths = docsMapping[firstApp as keyof typeof docsMapping] || [];
-  
-  console.log(`📚 Found ${docPaths.length} docs for ${firstApp}`);
+  console.log(`📚 Found ${docsMapping.length} documentation pages total`);
   
   // Test with just the FIRST doc
-  const testDoc = docPaths[0];
+  const testDoc = docsMapping[0];
+  const app = testDoc.app;
   
   console.log(`\n🎯 Testing with: ${testDoc.title}\n`);
 
@@ -27,7 +24,7 @@ async function testDocsSchema() {
     return;
   }
 
-  const url = `https://optizenapp.com/support-docs/${firstApp}/${testDoc.nextSlug}`;
+  const url = `https://optizenapp.com/support-docs/${app}/${testDoc.nextSlug}`;
   
   console.log(`[TEST] Generating schema for: ${page.title.rendered}`);
   console.log(`Content length: ${page.content.rendered.length} characters`);
@@ -46,7 +43,7 @@ async function testDocsSchema() {
     author: 'OptizenAI Support',
     datePublished: page.date,
     dateModified: page.modified,
-    category: `support-docs-${firstApp}`,
+    category: `support-docs-${app}`,
     siteInfo: {
       name: 'OptizenAI',
       url: 'https://optizenapp.com',
