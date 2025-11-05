@@ -11,12 +11,12 @@ const apps = [
     tagline: "Turn Browsers into Buyers",
     description: "Engage customers with video upsells and bundles. Increase your average order value by up to 30% with strategic product recommendations.",
     features: [
-      "Video product recommendations",
-      "One-click upsell & cross-sell",
-      "Customizable video players",
-      "Cart abandonment recovery",
-      "A/B testing included",
-      "Analytics dashboard"
+      "Your videos or AI-generated videos",
+      "Strategic placements across product pages",
+      "Dual analytics tracking",
+      "Product bundle visualization",
+      "Quick campaign setup",
+      "AI video credits included"
     ],
     link: "https://apps.shopify.com/optizen-video-upsell",
     color: "blue"
