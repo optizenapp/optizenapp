@@ -60,32 +60,78 @@ export interface SchemaGenerationInput {
   };
 }
 
-export async function analyzeContent(input: SchemaGenerationInput): Promise<ContentAnalysis | null> {
-  const claude = getClaudeAPI();
+// Detect if a page is a tool/utility page based on URL and content
+function isToolPage(input: SchemaGenerationInput): boolean {
+  const toolKeywords = ['tool', 'generator', 'calculator', 'utility', 'converter', 'checker'];
+  const urlLower = input.url.toLowerCase();
+  const titleLower = input.title.toLowerCase();
   
-  if (!claude.isConfigured()) {
-    console.log('⚠️  Claude not configured, skipping content analysis for:', input.url);
-    return null;
+  return toolKeywords.some(keyword => 
+    urlLower.includes(keyword) || titleLower.includes(keyword)
+  );
+}
+
+// Get appropriate prompt based on page type
+function getSchemaPrompt(input: SchemaGenerationInput, plainText: string): string {
+  const isToolPageType = isToolPage(input);
+  
+  if (isToolPageType) {
+    return `You are an advanced schema markup generator for TOOL/UTILITY pages based on US Patent 9152623B2.
+
+## Page Type Detection:
+This is an interactive TOOL/UTILITY page. Prioritize schema types that emphasize functionality and user actions.
+
+## Required Schema Types for Tool Pages:
+
+### 1. WebApplication (PRIMARY)
+- name, alternateName, description
+- applicationCategory, applicationSubCategory
+- operatingSystem, browserRequirements
+- featureList (detailed array of capabilities)
+- offers (price: 0 for free tools)
+- potentialAction (UseAction with EntryPoint)
+- isAccessibleForFree: true
+- serviceType, audience (target users)
+
+### 2. HowTo (USAGE INSTRUCTIONS)
+- Step-by-step guide to using the tool
+- Include tool requirements, time/cost estimates
+
+### 3. FAQPage (COMMON QUESTIONS)
+- Technical questions about the tool
+- Usage scenarios, compatibility questions, troubleshooting
+
+### 4. WebPage (PAGE METADATA)
+- Breadcrumb navigation
+- mainEntity pointing to WebApplication
+- speakable content for voice search
+
+### 5. DefinedTermSet (TECHNICAL GLOSSARY)
+- Define technical terms used in tool
+- Feature definitions
+
+### 6. ItemList (USE CASES)
+- List practical applications
+- Real-world scenarios, integration examples
+
+## Three-Level Analysis:
+- **WORD LEVEL**: Feature extraction, technical terms, integration points
+- **PHRASE LEVEL**: User workflows, configuration options, use case scenarios
+- **CLAUSE LEVEL**: Tool ecosystem, related tools, user journey
+
+URL: ${input.url}
+Title: ${input.title}
+Category: ${input.category || 'Tool'}
+Date Published: ${input.datePublished}
+
+CONTENT:
+${plainText}
+
+Return ONLY a valid JSON-LD with @graph array for WebApplication and supporting schema types.`;
   }
   
-  console.log('🔍 Analyzing content for schema generation:', input.url);
-
-  // Strip HTML tags for analysis (keep structure)
-  const plainText = input.content
-    .replace(/<script[^>]*>.*?<\/script>/gi, '')
-    .replace(/<style[^>]*>.*?<\/style>/gi, '')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .substring(0, 15000); // Limit for token optimization
-
-  const systemPrompt = `You are an advanced schema markup generator based on US Patent 9152623B2 - Natural Language Processing System.
-
-Your task is to analyze the provided blog post content and generate comprehensive JSON-LD schema markup.
-
-Return ONLY valid JSON with no markdown formatting or explanations.`;
-
-  const prompt = `You are an advanced schema markup generator based on US Patent 9152623B2 - Natural Language Processing System.
+  // Default: Article-based schema prompt
+  return `You are an advanced schema markup generator based on US Patent 9152623B2 - Natural Language Processing System.
 
 Your task is to analyze the provided blog post content and generate comprehensive JSON-LD schema markup following these principles:
 
@@ -128,16 +174,6 @@ Your task is to analyze the provided blog post content and generate comprehensiv
 7. **Accessibility**: Add speakable selectors for voice search
 8. **Actionability**: Include potentialAction for user interactions
 
-## Analysis Process:
-1. Parse Content Structure - Identify headline, subheadings, paragraphs, images, tables, lists, Q&A sections
-2. Extract Entities (Word Level) - Main concepts, technical terms, proper nouns, metrics
-3. Map Relationships (Phrase Level) - Related concepts, comparison points, processes, questions
-4. Build Knowledge Graph (Clause Level) - Connect entities, create hierarchy, establish breadcrumbs, link to external knowledge
-
-## Output Format:
-Return ONLY valid JSON-LD with @graph array for multiple top-level entities.
-Ensure all @id references are properly linked.
-
 URL: ${input.url}
 Title: ${input.title}
 Category: ${input.category || 'General'}
@@ -148,6 +184,34 @@ CONTENT:
 ${plainText}
 
 Return ONLY a valid JSON object (no markdown, no code blocks) with proper @context, @graph, and all schema types identified through the three-level analysis.`;
+}
+
+export async function analyzeContent(input: SchemaGenerationInput): Promise<ContentAnalysis | null> {
+  const claude = getClaudeAPI();
+  
+  if (!claude.isConfigured()) {
+    console.log('⚠️  Claude not configured, skipping content analysis for:', input.url);
+    return null;
+  }
+  
+  console.log('🔍 Analyzing content for schema generation:', input.url);
+
+  // Strip HTML tags for analysis (keep structure)
+  const plainText = input.content
+    .replace(/<script[^>]*>.*?<\/script>/gi, '')
+    .replace(/<style[^>]*>.*?<\/style>/gi, '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .substring(0, 15000); // Limit for token optimization
+
+  const systemPrompt = `You are an advanced schema markup generator based on US Patent 9152623B2 - Natural Language Processing System.
+
+Your task is to analyze the provided blog post content and generate comprehensive JSON-LD schema markup.
+
+Return ONLY valid JSON with no markdown formatting or explanations.`;
+
+  const prompt = getSchemaPrompt(input, plainText);
 
   try {
     const response = await claude.sendMessage(prompt, systemPrompt, {
