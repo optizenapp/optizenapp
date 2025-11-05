@@ -1,4 +1,6 @@
-const WP_API_URL = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-json/wp/v2';
+// Use production WordPress API (more reliable than staging)
+const WP_API_URL = process.env.WORDPRESS_API_URL || 'https://optizenapp.com/wp-json/wp/v2';
+const WP_BASE_URL = process.env.WORDPRESS_BASE_URL || 'https://optizenapp.com';
 
 /**
  * Fetch with retry logic for WordPress API
@@ -142,7 +144,7 @@ export async function getPosts(params?: {
 async function getSEOMetaFromRankMath(postUrl: string): Promise<{ seoTitle?: string; seoDescription?: string }> {
   // Try Rank Math REST API first (if Headless CMS Support is enabled)
   // Using correct endpoint: /wp-json/rankmath/v1/getHead
-  const rankMathApiUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-json/rankmath/v1/getHead?url=${encodeURIComponent(postUrl)}`;
+  const rankMathApiUrl = `${WP_BASE_URL}/wp-json/rankmath/v1/getHead?url=${encodeURIComponent(postUrl)}`;
   
   try {
     const apiResponse = await fetch(rankMathApiUrl, {
@@ -214,7 +216,7 @@ export async function getPostBySlug(slug: string): Promise<WordPressPost | null>
   if (post) {
     // Get category for URL construction
     const category = post._embedded?.['wp:term']?.[0]?.[0]?.slug || 'uncategorized';
-    const postUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/${category}/${slug}/`;
+    const postUrl = `${WP_BASE_URL}/${category}/${slug}/`;
     
     // Get SEO meta from Rank Math API or scrape from HTML as fallback
     const seoMeta = await getSEOMetaFromRankMath(postUrl);
@@ -433,7 +435,7 @@ export async function getPageByPath(path: string): Promise<WordPressPage | null>
   const page = matchedPage.page;
   
   // Get SEO meta from Rank Math
-  const pageUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/${path}/`;
+  const pageUrl = `${WP_BASE_URL}/${path}/`;
   const seoMeta = await getSEOMetaFromRankMath(pageUrl);
   
   // Attach SEO meta and full path to page object
@@ -510,7 +512,7 @@ export async function getPageByWpSlug(wpSlug: string): Promise<WordPressPage | n
 
   if (page) {
     // Get SEO meta from Rank Math
-    const pageUrl = `https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/${wpSlug}/`;
+    const pageUrl = `${WP_BASE_URL}/${wpSlug}/`;
     const seoMeta = await getSEOMetaFromRankMath(pageUrl);
     
     // Attach SEO meta to page object
