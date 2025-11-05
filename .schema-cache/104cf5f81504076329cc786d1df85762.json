@@ -1,0 +1,333 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/shopify-image-alt-text-ai-updates",
+        "headline": "Update Shopify Image Alt Text Attributes (tags) In Bulk With OpizenAI",
+        "description": "Learn how to use OptizenAI to automatically update Shopify product image alt text attributes in bulk using OpenAI Vision technology.",
+        "url": "https://optizenapp.com/optizen-ai/shopify-image-alt-text-ai-updates",
+        "datePublished": "2023-11-29T02:05:04",
+        "dateModified": "2023-11-29T04:11:00",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "OptizenApp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "OptizenApp"
+        },
+        "about": [
+          {
+            "@id": "#shopify-image-optimization"
+          },
+          {
+            "@id": "#ai-alt-text-generation"
+          },
+          {
+            "@id": "#openai-vision"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#gpt-4-vision"
+          },
+          {
+            "@id": "#shopify-platform"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-update-alt-text"
+          },
+          {
+            "@id": "#prompt-examples"
+          }
+        ],
+        "citation": {
+          "@type": "WebPage",
+          "url": "https://platform.openai.com/docs/guides/vision",
+          "name": "OpenAI Vision Documentation"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-update-alt-text",
+        "name": "How to Update Shopify Image Alt Text with OptizenAI",
+        "description": "Step-by-step process to update image alt attributes for Shopify products using AI",
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "OptizenAI App"
+          },
+          {
+            "@type": "WebSite",
+            "name": "Shopify Store"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate to Image Tab",
+            "text": "Navigate to the 'Image' tab in Optizen AI. Search via name or using tags for the product or products you wish to update images. Use the check boxes to select the products. Click 'Next'."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Configure Schedule Settings",
+            "text": "Give the schedule a name. This is for your reference only. Then select from the dropdown, auto, low or high detail settings based on your image processing needs."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Select and Configure Prompt",
+            "text": "Select the prompt you want to use from drop down under the Image ALT prompt field. You can choose any of the provided prompts, edit the provided prompts, or write your own. Be sure to check the box for 'Update this section'. Then click Proceed."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Execute and Review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update."
+          }
+        ],
+        "about": {
+          "@id": "#shopify-image-optimization"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#prompt-examples",
+        "name": "Image Alt Text Prompt Examples",
+        "description": "Collection of AI prompts for generating image alt text",
+        "numberOfItems": 5,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "DefinedTerm",
+              "name": "Descriptive Alt Text Prompt (300 characters)",
+              "description": "Create a descriptive alt text for this image. The length of the alt tag should be no more than 300 characters. Ensure the alt text is descriptive but concise."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "DefinedTerm",
+              "name": "Simple Alt Text Prompt (3 words)",
+              "description": "Create a simple alt text for this image. The length of the alt tag should be 3 words."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "DefinedTerm",
+              "name": "Simple Alt Text Prompt (5 words)",
+              "description": "Create a simple alt text for this image. The length of the alt tag should be 5 words."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "DefinedTerm",
+              "name": "Descriptive Alt Text Prompt (10 words)",
+              "description": "Create a descriptive alt text for this image. The length of the alt tag should be 10 words. Ensure the alt text is descriptive but concise."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "DefinedTerm",
+              "name": "Brand-Inclusive Alt Text Prompt",
+              "description": "Create a descriptive alt text for this image. The length of the alt tag should be 10 words. Ensure the alt text is descriptive but concise. Ensure you include the brand: [Brand]"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#glossary",
+        "name": "Shopify Image Alt Text Optimization Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-ai",
+            "name": "OptizenAI",
+            "description": "AI-powered application for optimizing Shopify product content including image alt text generation",
+            "inDefinedTermSet": {
+              "@id": "#glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#openai-vision",
+            "name": "OpenAI Vision",
+            "description": "AI technology that can analyze images and generate textual descriptions, used for creating alt text",
+            "alternateName": [
+              "GPT-4 Vision",
+              "GPT-4V",
+              "gpt-4-vision-preview"
+            ],
+            "sameAs": "https://platform.openai.com/docs/guides/vision",
+            "inDefinedTermSet": {
+              "@id": "#glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#gpt-4-vision",
+            "name": "GPT-4 with Vision",
+            "description": "Advanced AI model that can process both text and images to answer questions about visual content",
+            "alternateName": [
+              "GPT-4V",
+              "gpt-4-vision-preview"
+            ],
+            "sameAs": "https://en.wikipedia.org/wiki/GPT-4",
+            "inDefinedTermSet": {
+              "@id": "#glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-platform",
+            "name": "Shopify",
+            "description": "E-commerce platform for online stores and retail point-of-sale systems",
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify",
+            "inDefinedTermSet": {
+              "@id": "#glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#alt-text",
+            "name": "Alt Text",
+            "description": "Alternative text attribute that describes images for accessibility and SEO purposes",
+            "alternateName": [
+              "Alt Attribute",
+              "Alternative Text"
+            ],
+            "sameAs": "https://en.wikipedia.org/wiki/Alt_attribute",
+            "inDefinedTermSet": {
+              "@id": "#glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#bulk-update",
+            "name": "Bulk Update",
+            "description": "Process of updating multiple items simultaneously rather than individually",
+            "inDefinedTermSet": {
+              "@id": "#glossary"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "#shopify-image-optimization",
+        "name": "Shopify Image Alt Text Optimization",
+        "description": "Technical process for optimizing image accessibility and SEO through AI-generated alt text",
+        "about": [
+          {
+            "@id": "#ai-alt-text-generation"
+          },
+          {
+            "@id": "#shopify-platform"
+          }
+        ],
+        "applicationCategory": "E-commerce Optimization",
+        "operatingSystem": "Web-based"
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "#ai-alt-text-generation",
+        "name": "AI-Powered Alt Text Generation",
+        "description": "Using artificial intelligence to automatically generate descriptive alt text for product images",
+        "about": [
+          {
+            "@id": "#openai-vision"
+          },
+          {
+            "@id": "#alt-text"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/shopify-image-alt-text-ai-updates#webpage",
+        "url": "https://optizenapp.com/optizen-ai/shopify-image-alt-text-ai-updates",
+        "name": "Update Shopify Image Alt Text Attributes (tags) In Bulk With OpizenAI",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "OptizenApp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Shopify Image Alt Text AI Updates"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".article-content p:first-of-type"
+          ]
+        },
+        "mainEntity": {
+          "@id": "https://optizenapp.com/optizen-ai/shopify-image-alt-text-ai-updates"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai-app",
+        "name": "OptizenAI",
+        "description": "AI-powered Shopify app for optimizing product content and image alt text",
+        "applicationCategory": "E-commerce Tool",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "category": "SaaS Application"
+        },
+        "featureList": [
+          "Bulk image alt text updates",
+          "AI-powered content generation",
+          "Shopify integration",
+          "Custom prompt configuration"
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:54:30.410Z",
+  "contentModified": "2023-11-29T04:11:00",
+  "contentHash": "c14bad01ccbfa3e933dbe8689879cf95"
+}

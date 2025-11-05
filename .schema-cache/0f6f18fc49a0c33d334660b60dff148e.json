@@ -1,0 +1,293 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/shopify-questions/does-shopify-take-a-percentage-of-sales",
+        "headline": "Percentage Of Sales – How Much Does Shopify Take?",
+        "description": "Comprehensive guide explaining Shopify's transaction fees, payment processing costs, and strategies to minimize fees for online merchants.",
+        "url": "https://optizenapp.com/shopify-questions/does-shopify-take-a-percentage-of-sales",
+        "datePublished": "2025-03-24T00:32:09",
+        "dateModified": "2025-03-24T00:32:11",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "OptizenApp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "OptizenApp"
+        },
+        "about": [
+          {
+            "@id": "#shopify-transaction-fees"
+          },
+          {
+            "@id": "#shopify-payments"
+          },
+          {
+            "@id": "#e-commerce-costs"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#shopify-platform"
+          },
+          {
+            "@id": "#paypal"
+          },
+          {
+            "@id": "#stripe"
+          },
+          {
+            "@id": "#pos-system"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#fee-comparison-table"
+          },
+          {
+            "@id": "#faq-section"
+          },
+          {
+            "@id": "#optimization-guide"
+          }
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".key-takeaway"
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq-section",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why Does Shopify Charge Transaction Fees?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Shopify charges transaction fees to cover the cost of maintaining its platform and processing payments. By using Shopify Payments, you can eliminate additional transaction fees that would apply if you used third-party providers like PayPal or Stripe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How Can I Avoid Shopify's Transaction Fees?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To avoid Shopify's transaction fees, use Shopify Payments. When you use Shopify Payments, you only pay standard credit card processing fees, which vary based on your subscription plan. Additionally, you can reduce fees by choosing the Advanced Plan, which offers the lowest transaction costs for high-volume sellers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What Happens If I Use a Third-Party Payment Processor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When you use a third-party payment processor like PayPal or Stripe, Shopify charges an extra transaction fee on top of the provider's processing fees. This fee depends on your subscription plan: Basic Plan: 2.0% per transaction, Shopify Plan: 1.0% per transaction, Advanced Plan: 0.5% per transaction. Using Shopify Payments is the only way to avoid these additional fees."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Shopify Payments Available Worldwide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, Shopify Payments is not available in all countries. It is primarily available in countries like the United States, Canada, United Kingdom, Australia, and several European countries. To check if Shopify Payments is available in your region, visit Shopify's official list of supported countries."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How Much Does Shopify Charge Per Sale for International Payments?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you sell internationally and accept payments in multiple currencies, Shopify applies a currency conversion fee when converting funds to your payout currency. United States: 1.5% per transaction. Other Regions: 2.0% per transaction. These fees are applied in addition to standard transaction fees."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#optimization-guide",
+        "name": "How to Optimize Your Shopify Payment Strategy",
+        "description": "Steps to minimize transaction fees and optimize payment processing costs on Shopify",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Use Shopify Payments",
+            "text": "Avoid additional fees and simplify your transaction process by using Shopify's integrated payment system."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Compare Providers",
+            "text": "Evaluate external payment processors to see if their rates are more favorable for your business model."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Review Your Plan",
+            "text": "Upgrade to a higher-tier plan if your sales volume justifies it to get lower transaction fees."
+          }
+        ]
+      },
+      {
+        "@type": "Table",
+        "@id": "#fee-comparison-table",
+        "name": "Shopify Transaction Fees Comparison",
+        "description": "Comprehensive breakdown of Shopify's transaction fees across different plans and payment methods"
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#shopify-glossary",
+        "name": "Shopify Payment Terms Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-payments",
+            "name": "Shopify Payments",
+            "description": "Shopify's integrated payment processing system that allows merchants to accept payments without relying on external gateways",
+            "sameAs": "https://www.shopify.com/payments"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#transaction-fees",
+            "name": "Transaction Fees",
+            "description": "Fees charged by Shopify for processing payments, ranging from 0.5% to 2% depending on the plan and payment method used"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#third-party-providers",
+            "name": "Third-Party Payment Providers",
+            "description": "External payment gateways like PayPal and Stripe that can be integrated with Shopify but incur additional transaction fees"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#pos-system",
+            "name": "Point of Sale (POS) System",
+            "description": "Shopify's system for processing in-person transactions at physical retail locations",
+            "sameAs": "https://www.shopify.com/pos"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#currency-conversion-fees",
+            "name": "Currency Conversion Fees",
+            "description": "Additional fees applied when Shopify converts international payments to your payout currency, ranging from 1.5% to 2.0%"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#shopify-platform",
+        "name": "Shopify",
+        "description": "Leading e-commerce platform that provides businesses with tools to build and operate online stores",
+        "sameAs": [
+          "https://www.shopify.com",
+          "https://en.wikipedia.org/wiki/Shopify",
+          "https://www.wikidata.org/wiki/Q7501051"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#paypal",
+        "name": "PayPal",
+        "description": "Third-party payment processor that can be integrated with Shopify",
+        "sameAs": [
+          "https://www.paypal.com",
+          "https://en.wikipedia.org/wiki/PayPal"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#stripe",
+        "name": "Stripe",
+        "description": "Third-party payment processor that can be integrated with Shopify",
+        "sameAs": [
+          "https://stripe.com",
+          "https://en.wikipedia.org/wiki/Stripe_(company)"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#shopify-plans",
+        "name": "Shopify Subscription Plans",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Product",
+              "name": "Basic Plan",
+              "description": "Entry-level Shopify plan with 2.9% + $0.30 online transaction fees"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Product",
+              "name": "Shopify Plan",
+              "description": "Mid-tier plan with 2.6% + $0.30 online transaction fees"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Product",
+              "name": "Advanced Plan",
+              "description": "Premium plan with 2.4% + $0.30 online transaction fees"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify-questions/does-shopify-take-a-percentage-of-sales#webpage",
+        "url": "https://optizenapp.com/shopify-questions/does-shopify-take-a-percentage-of-sales",
+        "name": "Percentage Of Sales – How Much Does Shopify Take?",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "OptizenApp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Questions",
+              "item": "https://optizenapp.com/shopify-questions"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Does Shopify Take a Percentage of Sales"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".summary"
+          ]
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:54:27.185Z",
+  "contentModified": "2025-03-24T00:32:11",
+  "contentHash": "0aaa579eccce78ed7f7e81a0ea86e343"
+}

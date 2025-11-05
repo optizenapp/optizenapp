@@ -1,0 +1,302 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/new-version-release-june-2024",
+        "headline": "New Version Release – June 2024",
+        "description": "Optizen AI releases new update with PAYG option for AI credits, eliminating need for OpenAI keys, plus free AI word credits for PRO and Enterprise plans.",
+        "url": "https://optizenapp.com/optizen-ai/new-version-release-june-2024",
+        "datePublished": "2024-06-28T06:40:45",
+        "dateModified": "2024-07-03T05:41:25",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "https://optizenapp.com/#organization"
+        },
+        "about": [
+          {
+            "@id": "#software-update"
+          },
+          {
+            "@id": "#payg-plans"
+          },
+          {
+            "@id": "#ai-credits"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#openai-integration"
+          },
+          {
+            "@id": "#pro-plan"
+          },
+          {
+            "@id": "#enterprise-plan"
+          },
+          {
+            "@id": "#ui-updates"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#update-features-list"
+          },
+          {
+            "@id": "#roadmap-section"
+          }
+        ],
+        "mainEntity": {
+          "@id": "#software-update"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai-app",
+        "name": "Optizen AI",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Web-based",
+        "url": "https://optizenapp.com",
+        "offers": [
+          {
+            "@id": "#free-plan"
+          },
+          {
+            "@id": "#pro-plan"
+          },
+          {
+            "@id": "#enterprise-plan"
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#terminology",
+        "name": "Optizen AI Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#payg-plans",
+            "name": "PAYG Plans",
+            "description": "Pay-As-You-Go plans that allow users to purchase AI word credit packages without needing their own OpenAI key",
+            "inDefinedTermSet": {
+              "@id": "#terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-credits",
+            "name": "AI Credits",
+            "description": "Word-based credits used to access AI features for content generation and optimization",
+            "inDefinedTermSet": {
+              "@id": "#terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#openai-integration",
+            "name": "OpenAI Integration",
+            "description": "Connection to OpenAI services that previously required users to provide their own API key",
+            "inDefinedTermSet": {
+              "@id": "#terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/OpenAI"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#software-update",
+            "name": "Software Update",
+            "description": "June 2024 release introducing PAYG options and enhanced AI credit system",
+            "inDefinedTermSet": {
+              "@id": "#terminology"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#update-features-list",
+        "name": "June 2024 Update Features",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Thing",
+              "name": "PAYG Plans/Packages",
+              "description": "Option to use FREE plan and purchase word credit packages without OpenAI key requirement"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Thing",
+              "name": "Free AI Word Credits for PRO & Enterprise",
+              "description": "PRO plans get 125,000 words, Enterprise plans get 250,000 words included"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Thing",
+              "name": "UI Updates",
+              "description": "Interface improvements including ledger for monitoring AI word usage per schedule"
+            }
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/optizen-ai/new-version-release-june-2024"
+        }
+      },
+      {
+        "@type": "Offer",
+        "@id": "#free-plan",
+        "name": "FREE Plan",
+        "description": "Free subscription plan with option to purchase PAYG word credit packages",
+        "price": "0",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "0",
+          "priceCurrency": "USD",
+          "billingIncrement": "P1M"
+        }
+      },
+      {
+        "@type": "Offer",
+        "@id": "#pro-plan",
+        "name": "PRO Plan",
+        "description": "Professional plan including 125,000 free AI word credits",
+        "includes": {
+          "@type": "Thing",
+          "name": "125,000 AI Word Credits",
+          "description": "Free monthly allocation of AI processing credits"
+        }
+      },
+      {
+        "@type": "Offer",
+        "@id": "#enterprise-plan",
+        "name": "Enterprise Plan",
+        "description": "Enterprise plan including 250,000 free AI word credits",
+        "includes": {
+          "@type": "Thing",
+          "name": "250,000 AI Word Credits",
+          "description": "Free monthly allocation of AI processing credits"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#roadmap-section",
+        "name": "Coming Soon Roadmap",
+        "numberOfItems": 2,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Thing",
+              "name": "Improve AI Referencing",
+              "description": "System will reference all fields for more detailed and holistic AI output instead of just existing field data"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Thing",
+              "name": "Collection Page & Tag Page AI Updates",
+              "description": "Full AI update features will be added for both collection pages and tag pages"
+            }
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/optizen-ai/new-version-release-june-2024"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/new-version-release-june-2024#webpage",
+        "url": "https://optizenapp.com/optizen-ai/new-version-release-june-2024",
+        "name": "New Version Release – June 2024",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "Optizen",
+          "publisher": {
+            "@id": "https://optizenapp.com/#organization"
+          }
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp.com/wp-content/uploads/optizen-logo.png"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".update-summary",
+            ".feature-list"
+          ]
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "New Version Release – June 2024"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "Optizen",
+        "url": "https://optizenapp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp.com/wp-content/uploads/optizen-logo.png"
+        },
+        "sameAs": [
+          "https://optizenapp.com"
+        ],
+        "makesOffer": [
+          {
+            "@id": "#free-plan"
+          },
+          {
+            "@id": "#pro-plan"
+          },
+          {
+            "@id": "#enterprise-plan"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:54:24.768Z",
+  "contentModified": "2024-07-03T05:41:25",
+  "contentHash": "3457255b904b2b73df822a8a1326ff53"
+}

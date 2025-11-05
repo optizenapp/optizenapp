@@ -1,0 +1,287 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/shopify-questions/how-to-upsell-on-shopify#article",
+        "headline": "Want to Upsell on Shopify and Actually Make More Money?",
+        "description": "Learn how to effectively upsell on Shopify by installing upsell apps, creating specific offers, and displaying them at optimal times to increase average order value and customer lifetime value.",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "OptizenApp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "OptizenApp"
+        },
+        "datePublished": "2025-07-30T04:02:15",
+        "dateModified": "2025-07-30T04:02:48",
+        "url": "https://optizenapp.com/shopify-questions/how-to-upsell-on-shopify",
+        "mainEntityOfPage": "https://optizenapp.com/shopify-questions/how-to-upsell-on-shopify",
+        "about": [
+          {
+            "@id": "#upselling"
+          },
+          {
+            "@id": "#shopify-ecommerce"
+          },
+          {
+            "@id": "#average-order-value"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#cross-selling"
+          },
+          {
+            "@id": "#down-selling"
+          },
+          {
+            "@id": "#customer-lifetime-value"
+          },
+          {
+            "@id": "#shopify-app-store"
+          },
+          {
+            "@id": "#post-purchase-upsells"
+          },
+          {
+            "@id": "#pre-purchase-upsells"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-upsell-shopify"
+          },
+          {
+            "@id": "#comparison-table"
+          },
+          {
+            "@id": "#defined-terms"
+          }
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".summary"
+          ]
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-upsell-shopify",
+        "name": "How to Upsell on Shopify",
+        "description": "Step-by-step guide to implementing upselling strategies on Shopify to increase revenue",
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Upsell App from Shopify App Store"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Install Upsell App",
+            "text": "First install an upsell app from the Shopify App Store",
+            "position": 1
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Create Specific Offers",
+            "text": "Create specific offers that suggest a product upgrade",
+            "position": 2
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Display Offers Strategically",
+            "text": "Display these offers directly on product pages, in the cart, or at checkout",
+            "position": 3
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Implement Post-Purchase Upsells",
+            "text": "Present post-purchase upsells on the thank you page for one-click acceptance",
+            "position": 4
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/shopify-questions/how-to-upsell-on-shopify#article"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#defined-terms",
+        "name": "Shopify Upselling Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#upselling",
+            "name": "Upselling",
+            "description": "A sales strategy to get a customer to buy a more expensive version of something they're already looking at, aiming to increase average order value",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Upselling"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#cross-selling",
+            "name": "Cross-selling",
+            "description": "Recommending related or complementary items to go with the main purchase, thinking horizontally rather than vertically",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Cross-selling"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#down-selling",
+            "name": "Down-selling",
+            "description": "Offering a slightly cheaper, less fancy alternative when a customer looks like they're about to walk away due to price",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#average-order-value",
+            "name": "Average Order Value (AOV)",
+            "description": "The average amount of money spent each time a customer places an order, a key metric for measuring upselling success",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Average_order_value"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#customer-lifetime-value",
+            "name": "Customer Lifetime Value (CLV)",
+            "description": "The total amount of money a customer is expected to spend in your business during their lifetime",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Customer_lifetime_value"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-ecommerce",
+            "name": "Shopify",
+            "description": "E-commerce platform that allows individuals and businesses to create their own online stores",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-app-store",
+            "name": "Shopify App Store",
+            "description": "Marketplace for third-party applications that extend Shopify's functionality, including upselling tools",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#pre-purchase-upsells",
+            "name": "Pre-purchase Upsells",
+            "description": "Offers shown to shoppers before they've finished paying, aimed at increasing cart value before checkout completion",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#post-purchase-upsells",
+            "name": "Post-purchase Upsells",
+            "description": "Deals shown to customers after they've completed purchase, usually on thank you pages with one-click acceptance",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Table",
+        "@id": "#comparison-table",
+        "name": "Upselling vs Cross-selling vs Down-selling Comparison",
+        "description": "Comparison table showing the differences between upselling, cross-selling, and down-selling tactics",
+        "about": [
+          {
+            "@id": "#upselling"
+          },
+          {
+            "@id": "#cross-selling"
+          },
+          {
+            "@id": "#down-selling"
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/shopify-questions/how-to-upsell-on-shopify#article"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify-questions/how-to-upsell-on-shopify",
+        "name": "Want to Upsell on Shopify and Actually Make More Money?",
+        "url": "https://optizenapp.com/shopify-questions/how-to-upsell-on-shopify",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify-questions/how-to-upsell-on-shopify#article"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Questions",
+              "item": "https://optizenapp.com/shopify-questions"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "How to Upsell on Shopify"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".key-points"
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com#organization",
+        "name": "OptizenApp",
+        "url": "https://optizenapp.com",
+        "sameAs": [
+          "https://optizenapp.com"
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:53:39.343Z",
+  "contentModified": "2025-07-30T04:02:48",
+  "contentHash": "44095e6a7934ebcad2667c3f2d538634"
+}

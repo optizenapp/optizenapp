@@ -1,0 +1,345 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/ai-prompts/modular-prompting",
+        "headline": "Building Scalable AI Systems with Modular Prompting",
+        "description": "Modular prompting is a technique that structures prompts into distinct segments or modules, each targeting a specific task or behavior. It improves consistency, reusability, and control in large language model outputs by isolating context, instructions, examples, or goals into separate blocks.",
+        "url": "https://optizenapp.com/ai-prompts/modular-prompting",
+        "datePublished": "2025-07-23T05:10:34",
+        "dateModified": "2025-07-23T05:10:36",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenApp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenApp"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/ai-prompts/modular-prompting"
+        },
+        "about": [
+          {
+            "@id": "#modular-prompting"
+          },
+          {
+            "@id": "#prompt-engineering"
+          },
+          {
+            "@id": "#ai-systems"
+          },
+          {
+            "@id": "#llm-orchestration"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#chain-of-thought"
+          },
+          {
+            "@id": "#react-framework"
+          },
+          {
+            "@id": "#tree-of-thoughts"
+          },
+          {
+            "@id": "#neuro-symbolic-ai"
+          },
+          {
+            "@id": "#prompt-pipeline"
+          },
+          {
+            "@id": "#agentic-workflows"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-modular-prompting"
+          },
+          {
+            "@id": "#faq-modular-prompting"
+          },
+          {
+            "@id": "#comparison-table"
+          },
+          {
+            "@id": "#defined-terms"
+          }
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".definition"
+          ]
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/ai-prompts/modular-prompting",
+        "name": "Building Scalable AI Systems with Modular Prompting",
+        "url": "https://optizenapp.com/ai-prompts/modular-prompting",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AI Prompts",
+              "item": "https://optizenapp.com/ai-prompts"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Modular Prompting",
+              "item": "https://optizenapp.com/ai-prompts/modular-prompting"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@id": "https://optizenapp.com/ai-prompts/modular-prompting"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-modular-prompting",
+        "name": "How to Build Modular Prompts",
+        "description": "A step-by-step guide to creating modular prompt architecture for scalable AI systems",
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Text editor or prompt management tool"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Access to large language model"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Decompose First",
+            "text": "Whiteboard it. Break your big goal into 3-4 distinct sub-tasks. What needs to happen first? What comes next? This is your problem decomposition.",
+            "url": "https://optizenapp.com/ai-prompts/modular-prompting#step1"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Create Your First Module",
+            "text": "Make a new text file. Start with the <role> tag. What is the job of this specific step? Then add <input_data> and <requirements>.",
+            "url": "https://optizenapp.com/ai-prompts/modular-prompting#step2"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Use Placeholders",
+            "text": "Use curly braces like {placeholder} to mark where data will be injected. This is a core concept in prompt templates.",
+            "url": "https://optizenapp.com/ai-prompts/modular-prompting#step3"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Chain it Manually",
+            "text": "Run your first module. Copy the output. Then, in a new conversation, run your second module, pasting the first output into the <input_data> section.",
+            "url": "https://optizenapp.com/ai-prompts/modular-prompting#step4"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Build a Library",
+            "text": "Save every module you create. Before you know it, you'll have a personal library of powerful, reusable components.",
+            "url": "https://optizenapp.com/ai-prompts/modular-prompting#step5"
+          }
+        ],
+        "result": {
+          "@type": "Thing",
+          "name": "Modular prompt system with reusable components"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq-modular-prompting",
+        "name": "Frequently Asked Questions about Modular Prompting",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do structured tags improve prompt explainability?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Structured tags like <role> and <requirements> create a clear, self-documenting prompt. When a process fails, you can easily audit the prompt pipeline module by module, checking if the input, rules, and role for a specific step were correct, enhancing explainability immensely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a prompt template the same as a prompt module?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A prompt template is the core of a module. The template uses placeholders like {input}. A module is the fully structured file (.txt) containing the template plus the critical tags like <role>, <purpose>, and <output_format> that define its function within a larger system."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you use this modular approach for creative tasks like writing a story?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. A creative prompt pipeline might include a character-generator.txt module, a plot-outline.txt module, and a chapter-writer.txt module that takes the character and plot as inputs. This step-by-step prompting ensures consistency in a long-form narrative."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does this relate to the concept of neuro-symbolic AI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Modular prompting is a practical step toward the goals of neuro-symbolic AI. The LLM provides the fluid, 'neuro' side of reasoning, while the rigid, structured tags and logical pipeline represent the 'symbolic' framework, creating a hybrid system with both creativity and reliability."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Table",
+        "@id": "#comparison-table",
+        "name": "Anatomy of a Prompt Module: Key Structural Tags",
+        "description": "Essential HTML-like tags used in modular prompt architecture and their functions",
+        "about": {
+          "@id": "#prompt-module-structure"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#defined-terms",
+        "name": "Modular Prompting Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#modular-prompting",
+            "name": "Modular Prompting",
+            "description": "A technique that structures prompts into distinct segments or modules, each targeting a specific task or behavior, improving consistency, reusability, and control in large language model outputs",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#prompt-engineering",
+            "name": "Prompt Engineering",
+            "description": "The practice of designing and optimizing prompts to effectively communicate with and control large language models",
+            "sameAs": "https://en.wikipedia.org/wiki/Prompt_engineering",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#prompt-pipeline",
+            "name": "Prompt Pipeline",
+            "description": "A workflow where the output of one prompt module becomes the input for the next, creating a chain of processing steps",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#llm-orchestration",
+            "name": "LLM Orchestration",
+            "description": "The coordination and management of multiple large language model interactions to achieve complex tasks",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#agentic-workflows",
+            "name": "Agentic Workflows",
+            "description": "Advanced AI systems that can dynamically select and chain modules together to solve complex goals autonomously",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#chain-of-thought",
+            "name": "Chain-of-Thought Prompting",
+            "description": "A prompting technique that encourages the model to show its reasoning process step-by-step before arriving at a final answer",
+            "sameAs": "https://en.wikipedia.org/wiki/Chain-of-thought_prompting",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#react-framework",
+            "name": "ReAct Framework",
+            "description": "A framework that combines reasoning and acting in language models, allowing them to interact with external tools and environments",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#tree-of-thoughts",
+            "name": "Tree of Thoughts",
+            "description": "A problem-solving framework that explores multiple reasoning paths simultaneously, like a tree structure, to find optimal solutions",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#neuro-symbolic-ai",
+            "name": "Neuro-Symbolic AI",
+            "description": "An AI approach that combines neural networks (neuro) with symbolic reasoning systems to create hybrid systems with both creativity and logical reliability",
+            "sameAs": "https://en.wikipedia.org/wiki/Neuro-symbolic_AI",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#problem-decomposition",
+            "name": "Problem Decomposition",
+            "description": "The process of breaking down a complex problem into smaller, more manageable sub-problems that can be solved independently",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#prompt-module-structure",
+            "name": "Prompt Module Structure",
+            "description": "The standardized format using HTML-like tags such as <role>, <input_data>, <requirements>, and <output_format> to create predictable and reusable prompt components",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenApp",
+        "url": "https://optizenapp.com",
+        "sameAs": [
+          "https://optizenapp.com"
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:54:34.542Z",
+  "contentModified": "2025-07-23T05:10:36",
+  "contentHash": "aad8c39ad1278606e0f995e0d2a3e473"
+}

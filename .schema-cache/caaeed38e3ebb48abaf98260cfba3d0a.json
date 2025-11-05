@@ -1,0 +1,253 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles",
+        "headline": "ON SALE AI Prompt For SEO Titles",
+        "description": "Learn how to use the ON SALE AI prompt to add sale prefixes to Shopify SEO titles using Optizen AI. Step-by-step guide for improving product visibility during sales.",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        },
+        "datePublished": "2023-10-25T03:04:08",
+        "dateModified": "2023-11-23T03:51:44",
+        "url": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles"
+        },
+        "about": [
+          {
+            "@id": "#seo-title-optimization"
+          },
+          {
+            "@id": "#shopify-ai-tools"
+          },
+          {
+            "@id": "#optizen-ai"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#shopify-platform"
+          },
+          {
+            "@id": "#google-search"
+          },
+          {
+            "@id": "#serps"
+          },
+          {
+            "@id": "#ai-prompt"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-use-onsale-prompt"
+          },
+          {
+            "@id": "#defined-terms-set"
+          }
+        ],
+        "teaches": [
+          {
+            "@id": "#seo-title-optimization"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles",
+        "name": "ON SALE AI Prompt For SEO Titles",
+        "url": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "Optizen",
+          "publisher": {
+            "@id": "https://optizenapp.com#organization"
+          }
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "ON SALE AI Prompt For SEO Titles"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".prompt-description",
+            ".steps-list"
+          ]
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-use-onsale-prompt",
+        "name": "How to Use the ON SALE AI Prompt for Shopify SEO Titles",
+        "description": "Step-by-step process to add ON SALE prefix to Shopify product SEO titles using Optizen AI",
+        "totalTime": "PT10M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen AI App"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate and Select Products",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products.",
+            "url": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles#step1"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select the ON SALE Prompt",
+            "text": "Select the 'Add ON SALE Prefix To SEO Title' from the drop down under the SEO title prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed.",
+            "url": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles#step2"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Execute and Review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update.",
+            "url": "https://optizenapp.com/optizen-ai/ai-prompt-to-add-on-sale-to-shopify-seo-titles#step3"
+          }
+        ],
+        "about": {
+          "@id": "#seo-title-optimization"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#defined-terms-set",
+        "name": "SEO and AI Prompt Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#seo-title-optimization",
+            "name": "SEO Title Optimization",
+            "description": "The process of improving product page titles to enhance search engine visibility and click-through rates",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-platform",
+            "name": "Shopify",
+            "description": "E-commerce platform for online stores and retail point-of-sale systems",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-ai",
+            "name": "Optizen AI",
+            "description": "AI-powered tool for Shopify store optimization and SEO management",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-prompt",
+            "name": "AI Prompt",
+            "description": "Specific instructions given to artificial intelligence systems to generate desired outputs",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#serps",
+            "name": "SERPs",
+            "description": "Search Engine Results Pages - the pages displayed by search engines in response to a query",
+            "alternateName": "Search Engine Results Pages",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_results_page"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#google-search",
+            "name": "Google Search",
+            "description": "Web search engine developed by Google for searching information on the World Wide Web",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Google_Search"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-ai-tools",
+            "name": "Shopify AI Tools",
+            "description": "Artificial intelligence applications designed to optimize and automate Shopify store operations",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms-set"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai-app",
+        "name": "Optizen AI",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "AI-powered Shopify optimization tool for SEO and product management",
+        "url": "https://optizenapp.com",
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "category": "SaaS"
+        },
+        "featureList": [
+          "SEO Title Optimization",
+          "AI Prompt Repository",
+          "Bulk Product Updates",
+          "Performance Logging"
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:53:36.363Z",
+  "contentModified": "2023-11-23T03:51:44",
+  "contentHash": "4aba3bc63f172f72bdf044c516659c6e"
+}

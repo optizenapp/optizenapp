@@ -1,0 +1,271 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/seo-description-reword-ai-prompt",
+        "url": "https://optizenapp.com/optizen-ai/seo-description-reword-ai-prompt",
+        "name": "The Simple SEO Description Reword Prompt",
+        "description": "AI prompt for creating eye-catching SEO descriptions for Shopify products with call-to-action and payment options, optimized for 155 characters maximum.",
+        "datePublished": "2023-10-23T11:18:29",
+        "dateModified": "2023-11-23T03:51:50",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "Optizen App"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "SEO Description Reword AI Prompt"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".prompt-text",
+            ".steps"
+          ]
+        },
+        "mainEntity": {
+          "@id": "#article"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "#article",
+        "headline": "The Simple SEO Description Reword Prompt",
+        "description": "AI prompt for creating eye-catching SEO descriptions for Shopify products with call-to-action and payment options, optimized for 155 characters maximum.",
+        "author": {
+          "@type": "Organization",
+          "@id": "#optizen-organization",
+          "name": "Optizen App",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "#optizen-organization"
+        },
+        "datePublished": "2023-10-23T11:18:29",
+        "dateModified": "2023-11-23T03:51:50",
+        "articleSection": "Optizen AI",
+        "about": [
+          {
+            "@id": "#seo-description-optimization"
+          },
+          {
+            "@id": "#ai-prompt-engineering"
+          },
+          {
+            "@id": "#shopify-seo"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#optizen-ai-app"
+          },
+          {
+            "@id": "#meta-description"
+          },
+          {
+            "@id": "#call-to-action"
+          },
+          {
+            "@id": "#payment-options"
+          },
+          {
+            "@id": "#character-limit"
+          },
+          {
+            "@id": "#click-through-rate"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-guide"
+          },
+          {
+            "@id": "#defined-terms"
+          }
+        ],
+        "mainEntityOfPage": {
+          "@id": "https://optizenapp.com/optizen-ai/seo-description-reword-ai-prompt"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-guide",
+        "name": "How to Use the SEO Description Reword Prompt",
+        "description": "Step-by-step guide for implementing the AI prompt to reword SEO descriptions in Shopify using Optizen AI",
+        "totalTime": "PT10M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen AI App",
+            "requiredQuantity": 1
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store",
+            "requiredQuantity": 1
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate and Select Products",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products.",
+            "url": "https://optizenapp.com/optizen-ai/seo-description-reword-ai-prompt#step1"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Configure Prompt Settings",
+            "text": "Select the 'Reword SEO Description' from the drop down under the SEO title prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed.",
+            "url": "https://optizenapp.com/optizen-ai/seo-description-reword-ai-prompt#step2"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Review and Apply Changes",
+            "text": "On completion of the prompt, check the output using the Log section of the app. You can then choose to keep or restore the update.",
+            "url": "https://optizenapp.com/optizen-ai/seo-description-reword-ai-prompt#step3"
+          }
+        ],
+        "about": {
+          "@id": "#seo-description-optimization"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#defined-terms",
+        "name": "SEO Description Reword Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#seo-description-optimization",
+            "name": "SEO Description Optimization",
+            "description": "The process of creating compelling, keyword-rich meta descriptions that improve click-through rates from search engine results pages",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Meta_element"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-prompt-engineering",
+            "name": "AI Prompt Engineering",
+            "description": "The practice of designing and refining prompts to effectively communicate with AI systems to achieve desired outputs",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Prompt_engineering"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-seo",
+            "name": "Shopify SEO",
+            "description": "Search engine optimization techniques specifically applied to Shopify e-commerce stores to improve organic search visibility",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#meta-description",
+            "name": "Meta Description",
+            "description": "HTML attribute that provides a brief summary of a web page's content, displayed in search engine results",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Meta_element"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#call-to-action",
+            "name": "Call to Action",
+            "description": "Marketing term for prompting an immediate response or encouraging an immediate sale",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Call_to_action_(marketing)"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#character-limit",
+            "name": "155 Character Limit",
+            "description": "The recommended maximum length for meta descriptions to prevent truncation in search engine results pages",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#click-through-rate",
+            "name": "Click-Through Rate (CTR)",
+            "description": "The ratio of users who click on a specific link to the number of total users who view a page, email, or advertisement",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Click-through_rate"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai-app",
+        "name": "Optizen AI",
+        "description": "AI-powered application for optimizing Shopify store SEO descriptions and titles",
+        "applicationCategory": "SEO Tool",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "category": "SaaS"
+        },
+        "featureList": [
+          "AI-powered SEO description generation",
+          "Bulk product optimization",
+          "Customizable prompt templates",
+          "Integration with Shopify stores"
+        ],
+        "sameAs": "https://optizenapp.com"
+      },
+      {
+        "@type": "Organization",
+        "@id": "#optizen-organization",
+        "name": "Optizen App",
+        "url": "https://optizenapp.com",
+        "description": "Provider of AI-powered SEO optimization tools for e-commerce stores",
+        "makesOffer": {
+          "@type": "Offer",
+          "itemOffered": {
+            "@id": "#optizen-ai-app"
+          }
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:53:37.971Z",
+  "contentModified": "2023-11-23T03:51:50",
+  "contentHash": "031e83bc6f5d67ccd6c5ee366b88fefe"
+}

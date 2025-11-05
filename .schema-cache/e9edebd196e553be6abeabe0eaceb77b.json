@@ -1,0 +1,256 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/simple-seo-title-prompt-shopify",
+        "headline": "A Simple AI Prompt For SEO Titles",
+        "description": "Learn how to use the Simple Reword SEO Title prompt in Optizen AI to create unique SEO titles for Shopify products, particularly useful for drop shipping stores.",
+        "url": "https://optizenapp.com/optizen-ai/simple-seo-title-prompt-shopify",
+        "datePublished": "2023-10-23T05:42:08",
+        "dateModified": "2023-11-23T03:51:54",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        },
+        "about": [
+          {
+            "@id": "#seo-title-optimization"
+          },
+          {
+            "@id": "#shopify-seo"
+          },
+          {
+            "@id": "#ai-prompts"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#shopify"
+          },
+          {
+            "@id": "#drop-shipping"
+          },
+          {
+            "@id": "#meta-title"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-use-prompt"
+          },
+          {
+            "@id": "#defined-terms"
+          }
+        ],
+        "articleSection": "Optizen AI",
+        "keywords": [
+          "SEO titles",
+          "Shopify",
+          "AI prompts",
+          "meta titles",
+          "drop shipping",
+          "Optizen AI"
+        ],
+        "speakableSpecification": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".content p:first-of-type"
+          ]
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-use-prompt",
+        "name": "How to Use the Simple Reword SEO Title Prompt",
+        "description": "Step-by-step process to use the Simple Reword SEO Title prompt in Optizen AI for Shopify products",
+        "totalTime": "PT5M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen AI app"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify store with products"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate and Select Products",
+            "text": "Navigate to the 'product' tab in Optizen AI. Search via name or using tags for the product or products you wish to update. Use the check boxes to select the products.",
+            "url": "https://optizenapp.com/optizen-ai/simple-seo-title-prompt-shopify#step1"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select the Prompt",
+            "text": "Select the 'Simple Reword SEO Title' from the drop down under the SEO title prompt field. Ensure you are using the prompt repository tab. Be sure to check the box for 'Update this section'. Then click Proceed.",
+            "url": "https://optizenapp.com/optizen-ai/simple-seo-title-prompt-shopify#step2"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Execute and Review",
+            "text": "Click Proceed to run the prompt. On completion, check the output using the Log section of the app. You can then choose to keep or restore the update.",
+            "url": "https://optizenapp.com/optizen-ai/simple-seo-title-prompt-shopify#step3"
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/optizen-ai/simple-seo-title-prompt-shopify"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#defined-terms",
+        "name": "SEO and AI Prompt Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#seo-title-optimization",
+            "name": "SEO Title Optimization",
+            "description": "The process of creating and refining page titles to improve search engine rankings and click-through rates",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#meta-title",
+            "name": "Meta Title",
+            "description": "An HTML element that specifies the title of a web page, displayed in search engine results and browser tabs, limited to 60 characters for optimal display",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Meta_element"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-prompts",
+            "name": "AI Prompts",
+            "description": "Specific instructions or queries given to artificial intelligence systems to generate desired outputs or perform particular tasks",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Prompt_engineering"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-seo",
+            "name": "Shopify SEO",
+            "description": "Search engine optimization techniques and practices specifically applied to Shopify e-commerce stores to improve product visibility",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#drop-shipping",
+            "name": "Drop Shipping",
+            "description": "A retail fulfillment method where stores don't keep products in stock but transfer customer orders to suppliers who ship directly to customers",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Drop_shipping"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai",
+        "name": "Optizen AI",
+        "description": "AI-powered application for Shopify stores that provides automated SEO optimization tools and prompts",
+        "applicationCategory": "SEO Tool",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "category": "SaaS"
+        },
+        "featureList": [
+          "SEO title optimization",
+          "AI prompt repository",
+          "Product management",
+          "Batch processing"
+        ],
+        "sameAs": "https://optizenapp.com"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#shopify",
+        "name": "Shopify",
+        "description": "E-commerce platform that allows individuals and businesses to create their own online stores",
+        "applicationCategory": "E-commerce Platform",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Shopify",
+          "https://www.wikidata.org/wiki/Q7501051"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/simple-seo-title-prompt-shopify#webpage",
+        "url": "https://optizenapp.com/optizen-ai/simple-seo-title-prompt-shopify",
+        "name": "A Simple AI Prompt For SEO Titles",
+        "description": "Tutorial on using Optizen AI's Simple Reword SEO Title prompt for Shopify product optimization",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Simple SEO Title Prompt",
+              "item": "https://optizenapp.com/optizen-ai/simple-seo-title-prompt-shopify"
+            }
+          ]
+        },
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": "https://optizenapp.com/optizen-ai/simple-seo-title-prompt-shopify"
+        },
+        "speakableSpecification": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".steps"
+          ]
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:53:37.318Z",
+  "contentModified": "2023-11-23T03:51:54",
+  "contentHash": "6cd8fa4197f97c70c6121ffa9ea707fc"
+}

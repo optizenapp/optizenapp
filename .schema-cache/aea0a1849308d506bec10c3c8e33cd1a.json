@@ -1,0 +1,358 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/ai-prompts/using-sts-strategic-text-sequences-in-ecommerce-prompts",
+        "headline": "Using STS (Strategic Text Sequences) With The Aim Of Manipulating LLMs In Search",
+        "description": "Learn how Strategic Text Sequences (STS) can manipulate Large Language Models to increase product visibility in e-commerce, based on Harvard University research and implemented through ChatGPT and OptizenAI.",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com/#organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "https://optizenapp.com/#organization"
+        },
+        "datePublished": "2024-07-05T01:02:21",
+        "dateModified": "2024-07-08T07:17:25",
+        "url": "https://optizenapp.com/ai-prompts/using-sts-strategic-text-sequences-in-ecommerce-prompts",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/ai-prompts/using-sts-strategic-text-sequences-in-ecommerce-prompts"
+        },
+        "about": [
+          {
+            "@id": "#strategic-text-sequences"
+          },
+          {
+            "@id": "#large-language-models"
+          },
+          {
+            "@id": "#ecommerce-seo"
+          },
+          {
+            "@id": "#google-sge"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#harvard-university"
+          },
+          {
+            "@id": "#chatgpt"
+          },
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#gcg-algorithm"
+          },
+          {
+            "@id": "#amazon"
+          },
+          {
+            "@id": "#ebay"
+          },
+          {
+            "@id": "#shopify"
+          }
+        ],
+        "citation": {
+          "@type": "ScholarlyArticle",
+          "@id": "#harvard-research-paper",
+          "name": "Manipulating Large Language Models to Increase Product Visibility",
+          "author": [
+            {
+              "@type": "Person",
+              "name": "Aounon Kumar",
+              "affiliation": {
+                "@id": "#harvard-university"
+              }
+            },
+            {
+              "@type": "Person",
+              "name": "Himabindu Lakkaraju",
+              "affiliation": {
+                "@id": "#harvard-university"
+              }
+            }
+          ],
+          "datePublished": "2024-04",
+          "publisher": {
+            "@id": "#harvard-university"
+          }
+        },
+        "hasPart": [
+          {
+            "@id": "#sts-definition-section"
+          },
+          {
+            "@id": "#ecommerce-impact-section"
+          },
+          {
+            "@id": "#chatgpt-implementation-section"
+          },
+          {
+            "@id": "#optizen-integration-section"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/ai-prompts/using-sts-strategic-text-sequences-in-ecommerce-prompts",
+        "name": "Using STS (Strategic Text Sequences) With The Aim Of Manipulating LLMs In Search",
+        "url": "https://optizenapp.com/ai-prompts/using-sts-strategic-text-sequences-in-ecommerce-prompts",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AI Prompts",
+              "item": "https://optizenapp.com/ai-prompts"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Using STS Strategic Text Sequences",
+              "item": "https://optizenapp.com/ai-prompts/using-sts-strategic-text-sequences-in-ecommerce-prompts"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".sts-definition",
+            ".impact-summary"
+          ]
+        },
+        "mainEntity": {
+          "@id": "https://optizenapp.com/ai-prompts/using-sts-strategic-text-sequences-in-ecommerce-prompts"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#ecommerce-ai-glossary",
+        "name": "E-commerce AI and STS Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#strategic-text-sequences",
+            "name": "Strategic Text Sequences",
+            "alternateName": "STS",
+            "description": "Carefully crafted text sequences added to product information pages to increase their likelihood of being recommended by Large Language Models",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-ai-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#large-language-models",
+            "name": "Large Language Models",
+            "alternateName": "LLMs",
+            "description": "Advanced AI systems that can understand and generate human-like text, increasingly used in e-commerce for personalized product recommendations",
+            "sameAs": "https://en.wikipedia.org/wiki/Large_language_model",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-ai-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#gcg-algorithm",
+            "name": "Greedy Coordinate Gradient Algorithm",
+            "alternateName": "GCG",
+            "description": "An optimization algorithm used to iteratively improve text sequences for better performance in language models",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-ai-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#google-sge",
+            "name": "Google Search Generative Experience",
+            "alternateName": "SGE",
+            "description": "Google's AI-powered search feature that provides comprehensive, AI-generated overviews directly in search results instead of just listing links",
+            "sameAs": "https://en.wikipedia.org/wiki/Google_Search",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-ai-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ecommerce-seo",
+            "name": "E-commerce SEO",
+            "description": "Search Engine Optimization strategies specifically designed for online retail websites to improve product visibility and sales",
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-ai-glossary"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#sts-creation-howto",
+        "name": "How to Create Strategic Text Sequences for E-commerce Products",
+        "description": "Step-by-step guide to creating STS using ChatGPT and implementing them in product descriptions",
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "ChatGPT 4o access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Product information"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "OptizenAI account (optional)"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Extract Key Elements",
+            "text": "Identify and extract the key elements from the product URL and information including domain, product name, and key features"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Conduct Keyword Research",
+            "text": "Use keyword research tools to find high-ranking keywords related to the product elements"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Create Initial Content",
+            "text": "Create a strategic text sequence using the extracted elements and researched keywords"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Apply GCG Optimization",
+            "text": "Use the Greedy Coordinate Gradient method to iteratively optimize the text for search engines and LLM recommendations"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Implement STS",
+            "text": "Add the optimized Strategic Text Sequence to the product page description, either at the beginning, middle, or end"
+          }
+        ],
+        "about": {
+          "@id": "#strategic-text-sequences"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "#harvard-university",
+        "name": "Harvard University",
+        "url": "https://harvard.edu",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Harvard_University",
+          "https://www.wikidata.org/wiki/Q13371"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#chatgpt",
+        "name": "ChatGPT",
+        "applicationCategory": "AI Language Model",
+        "operatingSystem": "Web-based",
+        "sameAs": "https://en.wikipedia.org/wiki/ChatGPT"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai",
+        "name": "OptizenAI",
+        "applicationCategory": "E-commerce Optimization Tool",
+        "url": "https://optizenapp.com",
+        "featureList": [
+          "Product description generation",
+          "STS creation",
+          "Shopify integration",
+          "Public prompt repository"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#amazon",
+        "name": "Amazon",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Amazon_(company)",
+          "https://www.wikidata.org/wiki/Q3884"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#ebay",
+        "name": "eBay",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/EBay",
+          "https://www.wikidata.org/wiki/Q58024"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#shopify",
+        "name": "Shopify",
+        "applicationCategory": "E-commerce Platform",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Shopify",
+          "https://www.wikidata.org/wiki/Q7501051"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#sts-optimization-steps",
+        "name": "STS Optimization Steps Using GCG",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Keyword Inclusion",
+            "description": "Ensure all identified keywords are included in the text"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Keyword Density",
+            "description": "Adjust the text to achieve optimal keyword density"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Readability",
+            "description": "Make sure the text remains readable and engaging"
+          }
+        ]
+      },
+      {
+        "@type": "ExampleOfWork",
+        "@id": "#sts-example",
+        "name": "STS Example for Samshield Miss Shield",
+        "text": "Endorsed by top equestrians, the Samshield Miss Shield is renowned for its exceptional safety standards and customizable elegance. Featured in leading equestrian magazines, it boasts a wide visor for superior sun protection and an advanced airflow system for maximum comfort.",
+        "about": {
+          "@id": "#strategic-text-sequences"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:54:33.768Z",
+  "contentModified": "2024-07-08T07:17:25",
+  "contentHash": "e261ced87f0699c48df6bc8d779f82a0"
+}

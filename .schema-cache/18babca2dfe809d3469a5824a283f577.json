@@ -1,0 +1,297 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/shopify-questions/your-domain-has-a-cloudflare-proxy-which-is-not-supported-by-shopify",
+        "headline": "So, Shopify is Mad About Your Cloudflare Proxy? Here's How to Fix It.",
+        "description": "Learn how to fix the Shopify error 'Your domain has a Cloudflare proxy, which is not supported by Shopify' by disabling the proxy in your Cloudflare DNS settings.",
+        "author": {
+          "@type": "Organization",
+          "name": "OptizenApp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2025-07-11T01:35:18",
+        "dateModified": "2025-07-11T01:35:20",
+        "url": "https://optizenapp.com/shopify-questions/your-domain-has-a-cloudflare-proxy-which-is-not-supported-by-shopify",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/shopify-questions/your-domain-has-a-cloudflare-proxy-which-is-not-supported-by-shopify"
+        },
+        "about": [
+          {
+            "@id": "#shopify-cloudflare-proxy-error"
+          },
+          {
+            "@id": "#dns-configuration"
+          },
+          {
+            "@id": "#ssl-certificate-management"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#shopify"
+          },
+          {
+            "@id": "#cloudflare"
+          },
+          {
+            "@id": "#dns-records"
+          },
+          {
+            "@id": "#cdn"
+          },
+          {
+            "@id": "#ssl-certificate"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-fix-cloudflare-proxy"
+          },
+          {
+            "@id": "#faq-cloudflare-shopify"
+          },
+          {
+            "@id": "#defined-terms-set"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-fix-cloudflare-proxy",
+        "name": "How to Fix the Cloudflare Proxy Error in Shopify",
+        "description": "Step-by-step guide to disable Cloudflare proxy for Shopify domain connection",
+        "totalTime": "PT5M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Cloudflare account access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify admin panel access"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Access Cloudflare DNS Settings",
+            "text": "Log in to Cloudflare, click your domain, and navigate to the DNS section",
+            "url": "#step1-cloudflare-dns"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Disable Proxy for A Record",
+            "text": "Find the A record pointing to 23.227.38.65 and click the orange cloud to turn it grey (DNS Only)",
+            "url": "#step2-a-record"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Disable Proxy for WWW CNAME Record",
+            "text": "Find the www CNAME record pointing to shops.myshopify.com and turn the orange cloud grey",
+            "url": "#step3-cname-record"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Verify Connection in Shopify",
+            "text": "Return to Shopify admin, go to Settings > Domains, and click 'Verify connection'",
+            "url": "#step4-verify-shopify"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq-cloudflare-shopify",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Wait, but doesn't Shopify use Cloudflare itself? This is confusing.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, it does! Shopify uses a special, high-end enterprise version of Cloudflare that's built right into its platform. When you run your domain through your own free, personal Cloudflare account with the proxy on, you're creating a conflict with their built-in system. You need to let traffic go directly to Shopify's network so their system can work right."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the one setting that causes all the trouble?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The proxy setting. The orange cloud. That's it. It's the root of all evil in this specific scenario. You have to change it to 'DNS Only,' which is the grey cloud, so your domain connects properly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I fix this again, real quick?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Log into Cloudflare. Go to DNS. Find the A record and the www CNAME record. Click the orange cloud next to each one to make it turn grey. Go back to Shopify and click 'Verify connection.' Done."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#defined-terms-set",
+        "name": "Shopify Cloudflare Technical Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-cloudflare-proxy-error",
+            "name": "Shopify Cloudflare Proxy Error",
+            "description": "An error message stating 'Your domain has a Cloudflare proxy, which is not supported by Shopify' that occurs when Cloudflare's proxy feature blocks Shopify's domain verification process"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify",
+            "name": "Shopify",
+            "description": "A fully hosted e-commerce platform that provides its own CDN and SSL certificate management",
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#cloudflare",
+            "name": "Cloudflare",
+            "description": "A web infrastructure and website security company that provides CDN, DDoS mitigation, and DNS services",
+            "sameAs": "https://en.wikipedia.org/wiki/Cloudflare"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#dns-records",
+            "name": "DNS Records",
+            "description": "Domain Name System records that map domain names to IP addresses, including A records and CNAME records"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#dns-configuration",
+            "name": "DNS Configuration",
+            "description": "The process of setting up DNS records to properly route domain traffic to the intended server"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#cdn",
+            "name": "CDN (Content Delivery Network)",
+            "description": "A geographically distributed network of servers that deliver web content to users based on their location",
+            "sameAs": "https://en.wikipedia.org/wiki/Content_delivery_network"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ssl-certificate",
+            "name": "SSL Certificate",
+            "description": "A digital certificate that authenticates a website's identity and enables encrypted connections",
+            "sameAs": "https://en.wikipedia.org/wiki/Public_key_certificate"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ssl-certificate-management",
+            "name": "SSL Certificate Management",
+            "description": "The process of issuing, installing, and renewing SSL certificates for secure website connections"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#orange-cloud",
+            "name": "Orange Cloud (Proxied)",
+            "description": "Cloudflare's proxy status indicator showing that traffic is being routed through Cloudflare's network"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#grey-cloud",
+            "name": "Grey Cloud (DNS Only)",
+            "description": "Cloudflare's DNS-only status indicator showing that Cloudflare only provides DNS resolution without proxying traffic"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#a-record",
+            "name": "A Record",
+            "description": "A DNS record type that maps a domain name directly to an IPv4 address"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#cname-record",
+            "name": "CNAME Record",
+            "description": "A DNS record type that maps an alias domain name to another domain name"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify-questions/your-domain-has-a-cloudflare-proxy-which-is-not-supported-by-shopify",
+        "name": "So, Shopify is Mad About Your Cloudflare Proxy? Here's How to Fix It.",
+        "description": "Complete guide to resolving Shopify's Cloudflare proxy error by properly configuring DNS settings",
+        "url": "https://optizenapp.com/shopify-questions/your-domain-has-a-cloudflare-proxy-which-is-not-supported-by-shopify",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Questions",
+              "item": "https://optizenapp.com/shopify-questions"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Cloudflare Proxy Error Fix"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".summary",
+            ".step-by-step"
+          ]
+        },
+        "mainEntity": {
+          "@id": "#howto-fix-cloudflare-proxy"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#key-conflicts-list",
+        "name": "Three Key Conflicts Between Shopify and Cloudflare Proxy",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Domain Verification Conflict",
+            "description": "Shopify needs to verify domain ownership by checking if A record points directly to IP 23.227.38.65, but Cloudflare proxy hides the real IP"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SSL Certificate Management Conflict",
+            "description": "Shopify needs direct domain connection to install and renew SSL certificates, but proxy blocks this process"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CDN Double-Caching Conflict",
+            "description": "Using Cloudflare CDN with Shopify's built-in CDN creates redundant caching that can show outdated content"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:54:33.299Z",
+  "contentModified": "2025-07-11T01:35:20",
+  "contentHash": "118ceab37d60e889df95dce81f4c0fca"
+}

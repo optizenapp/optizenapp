@@ -1,0 +1,288 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#article",
+        "headline": "Optizen Version 3 Upgrade",
+        "description": "Comprehensive guide to upgrading Optizen to Version 3, including new features, upgrade process, and troubleshooting support.",
+        "url": "https://optizenapp.com/optizen/optizen-version-3-upgrade",
+        "datePublished": "2023-07-31T02:28:59",
+        "dateModified": "2023-11-23T03:52:14",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "Optizen",
+          "email": "team@optizenapp.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization"
+        },
+        "about": [
+          {
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#optizen-v3"
+          },
+          {
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#shopify-seo"
+          },
+          {
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#ai-integration"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#shopify"
+          },
+          {
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#framework-upgrade"
+          },
+          {
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#performance-improvement"
+          },
+          {
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#security-improvement"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#upgrade-howto"
+          },
+          {
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#faq"
+          }
+        ],
+        "mainEntity": {
+          "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#upgrade-howto"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade",
+        "url": "https://optizenapp.com/optizen/optizen-version-3-upgrade",
+        "name": "Optizen Version 3 Upgrade",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "Optizen App"
+        },
+        "about": {
+          "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#optizen-v3"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://optizenapp.com/images/optizen-v3-upgrade.jpg"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".upgrade-steps"
+          ]
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#upgrade-howto",
+        "name": "How to Upgrade to Optizen Version 3",
+        "description": "Step-by-step guide to upgrade your Optizen app to Version 3 in your Shopify dashboard",
+        "totalTime": "PT5M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Dashboard Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen App Installation"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Open Optizen App",
+            "text": "Open the app in your Shopify dashboard, and click the app in the sidebar to open (if it does not open automatically).",
+            "url": "https://optizenapp.com/optizen/optizen-version-3-upgrade#step1"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Approve Re-authorization",
+            "text": "If prompted, click approve. This will re-authorize and update to Version 3 of the app.",
+            "url": "https://optizenapp.com/optizen/optizen-version-3-upgrade#step2"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Sync Collections Data",
+            "text": "Navigate to Collections, and click 'Sync'. This will ensure all your data is synced for both collections and tags.",
+            "url": "https://optizenapp.com/optizen/optizen-version-3-upgrade#step3"
+          }
+        ],
+        "about": {
+          "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#optizen-v3"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#faq-whats-included",
+            "name": "What's Included In The Upgrade?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We have upgraded the entire framework, in preparation for some exciting new features coming soon. While this upgrade includes no new features right now, the performance and security of the app have been improved significantly."
+            }
+          },
+          {
+            "@type": "Question",
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#faq-new-features",
+            "name": "What New Features Are Coming?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We are currently developing an AI integration feature that is game changing for Shopify SEO at scale. This should be deployed in the next few weeks."
+            }
+          },
+          {
+            "@type": "Question",
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#faq-problems",
+            "name": "What To Do If You Run In Problems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While we've made every attempt to ensure the transition is smooth, as with any upgrade, there is a chance some users will need support. Please email team@optizenapp.com for questions and support."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#terms",
+        "name": "Optizen Version 3 Upgrade Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#optizen-v3",
+            "name": "Optizen Version 3",
+            "description": "Latest version of the Optizen app with improved framework, performance, and security enhancements",
+            "inDefinedTermSet": {
+              "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#shopify-seo",
+            "name": "Shopify SEO",
+            "description": "Search Engine Optimization techniques and tools specifically designed for Shopify e-commerce platforms",
+            "inDefinedTermSet": {
+              "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#ai-integration",
+            "name": "AI Integration",
+            "description": "Artificial Intelligence features integrated into the Optizen platform for automated SEO optimization",
+            "inDefinedTermSet": {
+              "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#shopify",
+            "name": "Shopify",
+            "description": "E-commerce platform that allows individuals and businesses to create their own online stores",
+            "inDefinedTermSet": {
+              "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#terms"
+            },
+            "sameAs": [
+              "https://en.wikipedia.org/wiki/Shopify",
+              "https://www.wikidata.org/wiki/Q7501051"
+            ]
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#framework-upgrade",
+            "name": "Framework Upgrade",
+            "description": "Complete overhaul of the underlying software architecture and infrastructure",
+            "inDefinedTermSet": {
+              "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#performance-improvement",
+            "name": "Performance Improvement",
+            "description": "Enhancements to application speed, efficiency, and overall user experience",
+            "inDefinedTermSet": {
+              "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#security-improvement",
+            "name": "Security Improvement",
+            "description": "Enhanced protection measures and security protocols implemented in the application",
+            "inDefinedTermSet": {
+              "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#terms"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com#organization",
+        "name": "Optizen",
+        "url": "https://optizenapp.com",
+        "email": "team@optizenapp.com",
+        "description": "Shopify SEO optimization platform providing automated tools and AI-powered features for e-commerce businesses",
+        "knowsAbout": [
+          {
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#shopify-seo"
+          },
+          {
+            "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#ai-integration"
+          }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "team@optizenapp.com",
+          "contactType": "customer support"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#optizen-app",
+        "name": "Optizen",
+        "applicationCategory": "SEO Tool",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "description": "Shopify SEO optimization platform with AI integration"
+        },
+        "featureList": [
+          "Framework upgrade",
+          "Performance improvements",
+          "Security enhancements",
+          "AI integration (coming soon)",
+          "Collections synchronization",
+          "Tags management"
+        ],
+        "softwareVersion": "3.0",
+        "releaseNotes": "https://optizenapp.com/optizen/optizen-version-3-upgrade",
+        "about": {
+          "@id": "https://optizenapp.com/optizen/optizen-version-3-upgrade#shopify-seo"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:53:43.800Z",
+  "contentModified": "2023-11-23T03:52:14",
+  "contentHash": "025382299b05805d1e144d913460ae23"
+}

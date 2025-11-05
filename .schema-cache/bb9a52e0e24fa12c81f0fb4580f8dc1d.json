@@ -1,0 +1,275 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/optizenai-updates-early-2024",
+        "url": "https://optizenapp.com/optizen-ai/optizenai-updates-early-2024",
+        "name": "New Updates & Release Roadmap For 2024",
+        "description": "Latest updates and 2024 roadmap for Optizen AI including log updates, bug reports, CSV export/import features, and AI updates for collection and tag pages.",
+        "datePublished": "2024-01-24T01:48:21",
+        "dateModified": "2024-01-24T04:21:47",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "Optizen App"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "New Updates & Release Roadmap For 2024"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".recent-updates",
+            ".roadmap"
+          ]
+        },
+        "mainEntity": {
+          "@id": "#main-article"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "#main-article",
+        "headline": "New Updates & Release Roadmap For 2024",
+        "description": "Comprehensive overview of recent Optizen AI updates including log improvements and bug reporting, plus upcoming features like CSV export/import and AI updates for collection and tag pages.",
+        "datePublished": "2024-01-24T01:48:21",
+        "dateModified": "2024-01-24T04:21:47",
+        "author": {
+          "@type": "Organization",
+          "@id": "#optizen-organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "#optizen-organization"
+        },
+        "about": [
+          {
+            "@id": "#optizen-ai-software"
+          },
+          {
+            "@id": "#software-updates"
+          },
+          {
+            "@id": "#product-roadmap"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#log-updates"
+          },
+          {
+            "@id": "#bug-reports"
+          },
+          {
+            "@id": "#csv-export-import"
+          },
+          {
+            "@id": "#collection-page-updates"
+          },
+          {
+            "@id": "#tag-page-updates"
+          },
+          {
+            "@id": "#openai-integration"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#recent-updates-list"
+          },
+          {
+            "@id": "#roadmap-list"
+          }
+        ],
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": "https://optizenapp.com/optizen-ai/optizenai-updates-early-2024"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "#optizen-organization",
+        "name": "Optizen",
+        "url": "https://optizenapp.com",
+        "description": "AI-powered software platform for automated content updates and management"
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#recent-updates-list",
+        "name": "Recent Updates",
+        "description": "List of recently released features and improvements",
+        "numberOfItems": 2,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Log Updates",
+            "description": "Notification column showing last completed date for AI updates of products or images",
+            "about": {
+              "@id": "#log-updates"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Bug Reports",
+            "description": "Notification system in logs for scheduled update errors",
+            "about": {
+              "@id": "#bug-reports"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#roadmap-list",
+        "name": "Coming Soon Roadmap",
+        "description": "Upcoming features planned for early 2024 release",
+        "numberOfItems": 2,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "CSV Export/Import",
+            "description": "Feature to export and import collection page and tag page content via CSV files",
+            "about": {
+              "@id": "#csv-export-import"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Collection Page & Tag Page AI Updates",
+            "description": "Full AI update features for both collection pages and tag pages",
+            "about": [
+              {
+                "@id": "#collection-page-updates"
+              },
+              {
+                "@id": "#tag-page-updates"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#optizen-terminology",
+        "name": "Optizen AI Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-ai-software",
+            "name": "Optizen AI",
+            "description": "AI-powered software platform for automated content management and updates",
+            "inDefinedTermSet": {
+              "@id": "#optizen-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#log-updates",
+            "name": "Log Updates",
+            "description": "Feature that provides notification column showing last completed date for AI updates of products or images",
+            "inDefinedTermSet": {
+              "@id": "#optizen-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#bug-reports",
+            "name": "Bug Reports",
+            "description": "Notification system in logs that alerts users to errors in scheduled updates",
+            "inDefinedTermSet": {
+              "@id": "#optizen-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#csv-export-import",
+            "name": "CSV Export/Import",
+            "description": "Planned feature allowing users to export and import collection page and tag page content via CSV files",
+            "inDefinedTermSet": {
+              "@id": "#optizen-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#collection-page-updates",
+            "name": "Collection Page AI Updates",
+            "description": "Upcoming feature to provide full AI update capabilities for collection pages",
+            "inDefinedTermSet": {
+              "@id": "#optizen-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#tag-page-updates",
+            "name": "Tag Page AI Updates",
+            "description": "Upcoming feature to provide full AI update capabilities for tag pages",
+            "inDefinedTermSet": {
+              "@id": "#optizen-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#openai-integration",
+            "name": "OpenAI Integration",
+            "description": "Integration with OpenAI services for AI-powered content updates",
+            "inDefinedTermSet": {
+              "@id": "#optizen-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/OpenAI"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#software-updates",
+            "name": "Software Updates",
+            "description": "Regular improvements and new features released for software applications",
+            "inDefinedTermSet": {
+              "@id": "#optizen-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Software_update"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#product-roadmap",
+            "name": "Product Roadmap",
+            "description": "Strategic plan outlining future features and development timeline for a product",
+            "inDefinedTermSet": {
+              "@id": "#optizen-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Product_roadmap"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:54:20.701Z",
+  "contentModified": "2024-01-24T04:21:47",
+  "contentHash": "9a76805afeb4a8a8820726fc84e921bb"
+}

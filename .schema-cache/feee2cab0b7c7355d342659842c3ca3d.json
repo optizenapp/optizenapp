@@ -1,0 +1,211 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/content/how-an-optizen-user-doubled-traffic-increased-revenue",
+        "headline": "Shopify Store Doubles Traffic & Increases Revenue Using Optizen",
+        "description": "A case study showing how a Shopify store doubled traffic and increased revenue using Optizen's simple yet powerful features.",
+        "url": "https://optizenapp.com/content/how-an-optizen-user-doubled-traffic-increased-revenue",
+        "datePublished": "2024-09-18T03:26:06",
+        "dateModified": "2024-09-18T03:34:41",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "Optizen"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "about": [
+          {
+            "@id": "#traffic-optimization"
+          },
+          {
+            "@id": "#revenue-growth"
+          },
+          {
+            "@id": "#shopify-optimization"
+          },
+          {
+            "@id": "#optizen-features"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#shopify"
+          },
+          {
+            "@id": "#optizen-software"
+          },
+          {
+            "@id": "#case-study"
+          }
+        ],
+        "mainEntity": {
+          "@id": "#case-study"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".summary"
+          ]
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/content/how-an-optizen-user-doubled-traffic-increased-revenue#webpage",
+        "url": "https://optizenapp.com/content/how-an-optizen-user-doubled-traffic-increased-revenue",
+        "name": "Shopify Store Doubles Traffic & Increases Revenue Using Optizen",
+        "description": "A case study showing how a Shopify store doubled traffic and increased revenue using Optizen's simple yet powerful features.",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/content/how-an-optizen-user-doubled-traffic-increased-revenue"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Content",
+              "item": "https://optizenapp.com/content"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Shopify Store Doubles Traffic & Increases Revenue Using Optizen"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "CaseStudy",
+        "@id": "#case-study",
+        "name": "Shopify Store Traffic and Revenue Growth Case Study",
+        "description": "Case study demonstrating how Optizen helped a Shopify store double traffic and increase revenue",
+        "about": [
+          {
+            "@id": "#traffic-optimization"
+          },
+          {
+            "@id": "#revenue-growth"
+          }
+        ],
+        "result": [
+          {
+            "@type": "QuantitativeValue",
+            "name": "Traffic Increase",
+            "value": "100",
+            "unitText": "percent"
+          }
+        ],
+        "tool": {
+          "@id": "#optizen-software"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#glossary",
+        "name": "E-commerce Optimization Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#traffic-optimization",
+            "name": "Traffic Optimization",
+            "description": "The process of improving website visibility and attracting more visitors through various digital marketing and SEO techniques",
+            "inDefinedTermSet": {
+              "@id": "#glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#revenue-growth",
+            "name": "Revenue Growth",
+            "description": "The increase in a company's sales and income over a specific period, often measured as a percentage",
+            "inDefinedTermSet": {
+              "@id": "#glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-optimization",
+            "name": "Shopify Optimization",
+            "description": "The practice of improving Shopify store performance, user experience, and conversion rates to increase sales",
+            "inDefinedTermSet": {
+              "@id": "#glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/E-commerce_optimization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-features",
+            "name": "Optizen Features",
+            "description": "The tools and capabilities provided by Optizen software for website and e-commerce optimization",
+            "inDefinedTermSet": {
+              "@id": "#glossary"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-software",
+        "name": "Optizen",
+        "description": "A powerful optimization tool for e-commerce websites and Shopify stores",
+        "url": "https://optizenapp.com",
+        "applicationCategory": "E-commerce Optimization Software",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "description": "Optizen optimization services"
+        },
+        "featureList": [
+          "Traffic optimization",
+          "Revenue enhancement",
+          "Simple implementation",
+          "Shopify integration"
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "#shopify",
+        "name": "Shopify",
+        "description": "E-commerce platform for online stores and retail point-of-sale systems",
+        "url": "https://shopify.com",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Shopify",
+          "https://www.wikidata.org/wiki/Q7501051"
+        ],
+        "applicationCategory": "E-commerce Platform"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com#organization",
+        "name": "Optizen",
+        "url": "https://optizenapp.com",
+        "description": "Provider of e-commerce optimization solutions",
+        "makesOffer": {
+          "@type": "Offer",
+          "itemOffered": {
+            "@id": "#optizen-software"
+          }
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:53:30.212Z",
+  "contentModified": "2024-09-18T03:34:41",
+  "contentHash": "3236d792ae671f9da9e813420f4eee6d"
+}

@@ -1,0 +1,387 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify",
+        "url": "https://optizenapp.com/shopify-questions/how-to-change-the-product-order-on-shopify",
+        "name": "Guide on How to Change the Order of Products on Shopify",
+        "description": "Learn how to change product order within Shopify collections using manual drag-and-drop or automated sorting options to boost sales and improve customer experience.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "OptizenApp",
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://optizenapp.com#organization"
+          }
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Questions",
+              "item": "https://optizenapp.com/shopify-questions"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "How to Change Product Order on Shopify"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".intro-summary",
+            ".step-by-step"
+          ]
+        },
+        "mainEntity": {
+          "@id": "#article"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "#article",
+        "headline": "Guide on How to Change the Order of Products on Shopify",
+        "description": "Comprehensive guide on changing product order in Shopify collections using manual and automated sorting methods to optimize sales strategy and customer experience.",
+        "datePublished": "2025-07-15T02:46:57",
+        "dateModified": "2025-07-15T02:46:58",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "OptizenApp"
+        },
+        "about": [
+          {
+            "@id": "#shopify-product-ordering"
+          },
+          {
+            "@id": "#ecommerce-optimization"
+          },
+          {
+            "@id": "#sales-strategy"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#manual-sorting"
+          },
+          {
+            "@id": "#automated-sorting"
+          },
+          {
+            "@id": "#conversion-optimization"
+          },
+          {
+            "@id": "#social-proof"
+          }
+        ],
+        "teaches": [
+          {
+            "@id": "#manual-product-ordering-howto"
+          },
+          {
+            "@id": "#automated-sorting-howto"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#faq-section"
+          },
+          {
+            "@id": "#manual-product-ordering-howto"
+          },
+          {
+            "@id": "#automated-sorting-howto"
+          },
+          {
+            "@id": "#defined-terms"
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#defined-terms",
+        "name": "Shopify Product Ordering Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-product-ordering",
+            "name": "Shopify Product Ordering",
+            "description": "The process of arranging products within Shopify collections to optimize customer experience and sales performance",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#manual-sorting",
+            "name": "Manual Sorting",
+            "description": "A drag-and-drop method in Shopify that allows merchants to manually arrange products in a specific order within collections",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#automated-sorting",
+            "name": "Automated Sorting",
+            "description": "Shopify's system-generated product arrangement based on predefined criteria like best-selling, price, or date",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#above-the-fold",
+            "name": "Above the Fold",
+            "description": "The portion of a webpage visible without scrolling, critical for first impressions and conversion optimization",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Above_the_fold"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#social-proof",
+            "name": "Social Proof",
+            "description": "A psychological phenomenon where people follow the actions of others, used in ecommerce through best-selling product displays",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Social_proof"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#conversion-optimization",
+            "name": "Conversion Optimization",
+            "description": "The practice of improving website elements to increase the percentage of visitors who complete desired actions",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Conversion_rate_optimization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#average-order-value",
+            "name": "Average Order Value (AOV)",
+            "description": "The average amount spent each time a customer places an order, a key ecommerce metric",
+            "inDefinedTermSet": {
+              "@id": "#defined-terms"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#manual-product-ordering-howto",
+        "name": "How to Manually Change Product Order in Shopify",
+        "description": "Step-by-step guide to manually arrange products using drag-and-drop functionality in Shopify collections",
+        "totalTime": "PT5M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Admin Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Existing Shopify Collection"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Access Shopify Admin",
+            "text": "Log into your Shopify admin dashboard"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Navigate to Collections",
+            "text": "On the left sidebar, click 'Products', then click 'Collections'"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Select Collection",
+            "text": "Find the collection you want to modify and click its name"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Access Products Section",
+            "text": "Scroll down to the 'Products' section within the collection"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Enable Manual Sorting",
+            "text": "Click the sort dropdown menu and select 'Manually'"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Drag and Drop Products",
+            "text": "Click and drag the six-dot icon next to any product to reorder them. Changes save automatically"
+          }
+        ],
+        "about": {
+          "@id": "#manual-sorting"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#automated-sorting-howto",
+        "name": "How to Set Up Automated Product Sorting in Shopify",
+        "description": "Guide to implementing automated sorting rules for Shopify product collections",
+        "totalTime": "PT3M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Admin Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Existing Shopify Collection"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Navigate to Collection",
+            "text": "Go to Products -> Collections and select your target collection"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Access Sort Options",
+            "text": "Find the Products section and locate the sort dropdown menu"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Select Sorting Method",
+            "text": "Choose from options like 'Best selling', 'Price: Low to High', 'Price: High to Low', 'Newest to Oldest', or 'Alphabetical A-Z'"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Save Changes",
+            "text": "Scroll up and click the 'Save' button to apply the automated sorting (this step is required for automated sorts)"
+          }
+        ],
+        "about": {
+          "@id": "#automated-sorting"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#sorting-options-list",
+        "name": "Shopify Automated Sorting Options",
+        "description": "Complete list of automated sorting methods available in Shopify",
+        "numberOfItems": 5,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Best-Selling",
+            "description": "Sorts products by all-time sales volume, leveraging social proof to boost conversions"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Price: Low to High",
+            "description": "Displays cheapest products first, ideal for budget-conscious customers"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Price: High to Low",
+            "description": "Shows expensive items first, creates premium brand perception and increases average order value"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Newest to Oldest",
+            "description": "Prioritizes recently added products, perfect for fashion and trend-based stores"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Alphabetical A-Z",
+            "description": "Organizes products alphabetically, useful for catalogs where customers search by name"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq-section",
+        "name": "Shopify Product Ordering FAQ",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What's the best way to change my Shopify product order to make more money?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The easiest and often most effective way is to set the collection order to 'Best selling.' It uses social proof to sell for you, showing all customers what's popular. This improves the experience and usually leads to more sales without you having to do anything else."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I move all my discounted stuff to the front?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Just change the product order in that collection to 'Manually.' It's the perfect way to highlight items with a special price or discount at the very top. It definitely has a positive impact on sales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the order really matter if I have tons of products?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Maybe even more so. With a huge number of products, nobody is going to scroll through everything. Manually sorting is a nightmare, so using automated sorting by price or best-selling is the best way to make your store easy to navigate and help customers find what they want without getting overwhelmed."
+            }
+          }
+        ],
+        "about": {
+          "@id": "#shopify-product-ordering"
+        }
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "#ecommerce-optimization",
+        "name": "Ecommerce Optimization",
+        "description": "The practice of improving online store performance through strategic product placement, user experience enhancements, and conversion rate optimization techniques",
+        "sameAs": "https://en.wikipedia.org/wiki/E-commerce"
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "#sales-strategy",
+        "name": "Sales Strategy",
+        "description": "A comprehensive plan that outlines how a business will sell its products or services, including product positioning and customer journey optimization",
+        "sameAs": "https://en.wikipedia.org/wiki/Sales_strategy"
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:54:38.382Z",
+  "contentModified": "2025-07-15T02:46:58",
+  "contentHash": "2831e41b448982d195e9e398cd84a51f"
+}

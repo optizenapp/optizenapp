@@ -1,0 +1,331 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells",
+        "headline": "The Real Technical Split: Pre- vs. Post-Purchase Upsells",
+        "description": "A comprehensive technical analysis of pre-purchase versus post-purchase upsells, covering implementation differences, risk profiles, and strategic implications for e-commerce platforms.",
+        "author": {
+          "@type": "Organization",
+          "name": "OptizenApp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2025-09-15T05:37:20",
+        "dateModified": "2025-09-15T05:37:21",
+        "url": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells",
+        "mainEntityOfPage": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells",
+        "about": [
+          {
+            "@id": "#pre-purchase-upsell"
+          },
+          {
+            "@id": "#post-purchase-upsell"
+          },
+          {
+            "@id": "#average-order-value"
+          },
+          {
+            "@id": "#payment-tokenization"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#shopify"
+          },
+          {
+            "@id": "#stripe"
+          },
+          {
+            "@id": "#ajax"
+          },
+          {
+            "@id": "#customer-lifetime-value"
+          },
+          {
+            "@id": "#conversion-rate"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#defined-term-set"
+          },
+          {
+            "@id": "#comparison-table"
+          },
+          {
+            "@id": "#shopify-guide"
+          },
+          {
+            "@id": "#faq-section"
+          }
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".key-definition"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#defined-term-set",
+        "name": "E-commerce Upselling Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#pre-purchase-upsell",
+            "name": "Pre-Purchase Upsell",
+            "description": "An offer shown before a customer pays, modifying the current shopping cart",
+            "inDefinedTermSet": {
+              "@id": "#defined-term-set"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#post-purchase-upsell",
+            "name": "Post-Purchase Upsell",
+            "description": "An offer shown after a customer completes payment, creating a new, separate transaction",
+            "inDefinedTermSet": {
+              "@id": "#defined-term-set"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#average-order-value",
+            "name": "Average Order Value (AOV)",
+            "description": "A metric that measures the average total of every order placed over a defined period of time",
+            "inDefinedTermSet": {
+              "@id": "#defined-term-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Average_order_value"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#payment-tokenization",
+            "name": "Payment Tokenization",
+            "description": "A security process that creates a secure, single-use token representing customer payment details without exposing raw card numbers",
+            "inDefinedTermSet": {
+              "@id": "#defined-term-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Tokenization_(data_security)"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#customer-lifetime-value",
+            "name": "Customer Lifetime Value (CLV)",
+            "description": "The total revenue a business can reasonably expect from a single customer account throughout the business relationship",
+            "inDefinedTermSet": {
+              "@id": "#defined-term-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Customer_lifetime_value"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#conversion-rate",
+            "name": "Conversion Rate",
+            "description": "The percentage of visitors who complete a desired action on a website",
+            "inDefinedTermSet": {
+              "@id": "#defined-term-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Conversion_marketing"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ajax",
+            "name": "AJAX",
+            "description": "Asynchronous JavaScript and XML - a web development technique for creating interactive web applications",
+            "inDefinedTermSet": {
+              "@id": "#defined-term-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Ajax_(programming)"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify",
+            "name": "Shopify",
+            "description": "A multinational e-commerce company providing a proprietary platform for online stores",
+            "inDefinedTermSet": {
+              "@id": "#defined-term-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#stripe",
+            "name": "Stripe",
+            "description": "A technology company that builds economic infrastructure for the internet, providing payment processing software",
+            "inDefinedTermSet": {
+              "@id": "#defined-term-set"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Stripe_(company)"
+          }
+        ]
+      },
+      {
+        "@type": "Table",
+        "@id": "#comparison-table",
+        "name": "Pre-Purchase vs Post-Purchase Upsell Comparison",
+        "about": [
+          {
+            "@id": "#pre-purchase-upsell"
+          },
+          {
+            "@id": "#post-purchase-upsell"
+          }
+        ],
+        "description": "Detailed comparison of key metrics and characteristics between pre-purchase and post-purchase upselling strategies"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#shopify-guide",
+        "name": "How to Set Up Post-Purchase Upsells on Shopify",
+        "description": "Step-by-step guide for implementing post-purchase upsell funnels on Shopify",
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify store with Shopify Payments enabled"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Post-purchase upsell app (Rebuy, AfterSell, or Zipify OCU)"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Install and Connect App",
+            "text": "Install the app and grant it permissions to talk to your payment gateway",
+            "position": 1
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Create a Funnel",
+            "text": "Give it a descriptive name, like 'Camera Body -> Lens Upsell'",
+            "position": 2
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Set the Trigger",
+            "text": "Tell the app to fire this funnel only when a specific product is in the completed order",
+            "position": 3
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Build the Upsell Offer",
+            "text": "Design the offer page, select the upsell product, write compelling copy, and add a discount if needed",
+            "position": 4
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Build the Downsell",
+            "text": "Configure the funnel to offer a cheaper alternative if they decline the main upsell",
+            "position": 5
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Activate and Monitor",
+            "text": "Turn on the funnel and monitor the analytics dashboard, making data-driven adjustments",
+            "position": 6
+          }
+        ],
+        "about": [
+          {
+            "@id": "#post-purchase-upsell"
+          },
+          {
+            "@id": "#shopify"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq-section",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a pre-purchase offer really hurt the user experience?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can be brutal. A badly timed, irrelevant pre-purchase pop-up feels like a pushy salesperson blocking the aisle. A post-purchase offer is more like the cashier helpfully asking if you need batteries for the thing you just bought. The psychological state of the customer is completely different."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If I'm paranoid about my conversion rate, which one do I use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Post-purchase. It's not even a debate. Since the original order is 100% complete before the offer is ever shown, there is literally zero risk to your primary conversion rate."
+            }
+          }
+        ],
+        "about": [
+          {
+            "@id": "#pre-purchase-upsell"
+          },
+          {
+            "@id": "#post-purchase-upsell"
+          },
+          {
+            "@id": "#conversion-rate"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells#webpage",
+        "url": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells",
+        "name": "The Real Technical Split: Pre- vs. Post-Purchase Upsells",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AOV",
+              "item": "https://optizenapp.com/aov"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Pre vs Post Purchase Upsells"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@id": "https://optizenapp.com/aov/difference-between-pre-post-purchase-upsells"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".key-takeaway"
+          ]
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:53:44.692Z",
+  "contentModified": "2025-09-15T05:37:21",
+  "contentHash": "9b6980ee21a2539ceb069e48dcda8787"
+}

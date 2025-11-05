@@ -1,0 +1,270 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/image-alt-text-optimization-results-in-shopify",
+        "url": "https://optizenapp.com/optizen-ai/image-alt-text-optimization-results-in-shopify",
+        "name": "Results of Using The OptizenAI Image Alt Features – 2 Weeks Post Release",
+        "description": "OptizenAI's image alt text AI feature shows promising results for organic traffic from image search after just a few weeks of release.",
+        "datePublished": "2023-12-13T00:59:42",
+        "dateModified": "2023-12-13T00:59:44",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://optizenapp.com"
+        },
+        "about": [
+          {
+            "@id": "#image-alt-text-optimization"
+          },
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#seo-results"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#google-image-search"
+          },
+          {
+            "@id": "#organic-traffic"
+          },
+          {
+            "@id": "#shopify"
+          }
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".content p:first-of-type"
+          ]
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "#main-article",
+        "headline": "Results of Using The OptizenAI Image Alt Features – 2 Weeks Post Release",
+        "description": "Analysis of early results from OptizenAI's image alt text optimization feature showing promising organic traffic improvements from image search.",
+        "datePublished": "2023-12-13T00:59:42",
+        "dateModified": "2023-12-13T00:59:44",
+        "author": {
+          "@type": "Organization",
+          "@id": "#optizen-organization"
+        },
+        "publisher": {
+          "@id": "#optizen-organization"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://optizenapp.com/optizen-ai/image-alt-text-optimization-results-in-shopify"
+        },
+        "about": [
+          {
+            "@id": "#image-alt-text-optimization"
+          },
+          {
+            "@id": "#ai-seo-results"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#google-image-search"
+          },
+          {
+            "@id": "#organic-traffic"
+          },
+          {
+            "@id": "#search-engines"
+          },
+          {
+            "@id": "#shopify"
+          }
+        ],
+        "articleSection": "Optizen AI",
+        "keywords": [
+          "image alt text",
+          "SEO optimization",
+          "AI features",
+          "organic traffic",
+          "image search",
+          "Shopify",
+          "OptizenAI"
+        ],
+        "hasPart": [
+          {
+            "@id": "#results-analysis"
+          },
+          {
+            "@id": "#video-content"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#optizen-organization",
+        "name": "Optizen",
+        "url": "https://optizenapp.com",
+        "sameAs": "https://optizenapp.com",
+        "description": "AI-powered SEO optimization platform",
+        "makesOffer": {
+          "@type": "Offer",
+          "itemOffered": {
+            "@id": "#optizen-ai"
+          }
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai",
+        "name": "OptizenAI",
+        "description": "AI-powered image alt text optimization feature for improving organic search traffic",
+        "applicationCategory": "SEO Tool",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "description": "Image alt text AI optimization service"
+        },
+        "featureList": [
+          "Automated image alt text generation",
+          "SEO optimization",
+          "Organic traffic improvement",
+          "Image search optimization"
+        ],
+        "sameAs": "https://optizenapp.com/optizen-ai"
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#seo-terminology",
+        "name": "SEO and AI Optimization Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#image-alt-text-optimization",
+            "name": "Image Alt Text Optimization",
+            "description": "The process of optimizing alternative text for images to improve search engine visibility and accessibility",
+            "inDefinedTermSet": {
+              "@id": "#seo-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#organic-traffic",
+            "name": "Organic Traffic",
+            "description": "Website visitors that come from unpaid search engine results",
+            "inDefinedTermSet": {
+              "@id": "#seo-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Organic_search"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#google-image-search",
+            "name": "Google Image Search",
+            "description": "Google's search engine specifically for finding images on the web",
+            "inDefinedTermSet": {
+              "@id": "#seo-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Google_Images"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#search-engines",
+            "name": "Search Engines",
+            "description": "Web-based tools that allow users to search for information on the internet",
+            "inDefinedTermSet": {
+              "@id": "#seo-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Search_engine"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify",
+            "name": "Shopify",
+            "description": "E-commerce platform for online stores and retail point-of-sale systems",
+            "inDefinedTermSet": {
+              "@id": "#seo-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+          }
+        ]
+      },
+      {
+        "@type": "AnalysisNewsArticle",
+        "@id": "#results-analysis",
+        "headline": "Two Week Performance Analysis",
+        "description": "Analysis of promising results from OptizenAI image alt text feature implementation",
+        "about": {
+          "@id": "#ai-seo-results"
+        },
+        "isPartOf": {
+          "@id": "#main-article"
+        }
+      },
+      {
+        "@type": "DefinedTerm",
+        "@id": "#ai-seo-results",
+        "name": "AI SEO Results",
+        "description": "Performance metrics and outcomes from implementing AI-powered SEO optimization features",
+        "inDefinedTermSet": {
+          "@id": "#seo-terminology"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "#video-content",
+        "name": "OptizenAI Image Alt Text Results Video",
+        "description": "Video demonstration of OptizenAI image alt text optimization results",
+        "about": [
+          {
+            "@id": "#image-alt-text-optimization"
+          },
+          {
+            "@id": "#optizen-ai"
+          }
+        ],
+        "isPartOf": {
+          "@id": "#main-article"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#image-seo-process",
+        "name": "How to Improve Organic Traffic with Image Alt Text",
+        "description": "Simple but powerful concept to get more organic traffic from image search",
+        "about": {
+          "@id": "#image-alt-text-optimization"
+        },
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Implement AI Alt Text Feature",
+            "text": "Use OptizenAI's image alt text AI feature to automatically optimize image descriptions"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Monitor Search Engine Performance",
+            "text": "Track organic traffic improvements from Google and other search engines"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Analyze Results",
+            "text": "Review performance metrics after implementation period"
+          }
+        ],
+        "totalTime": "P2W",
+        "tool": {
+          "@id": "#optizen-ai"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:54:23.325Z",
+  "contentModified": "2023-12-13T00:59:44",
+  "contentHash": "bc0ce0ce2e0d9e09f9b4baaf2ef2d5a8"
+}

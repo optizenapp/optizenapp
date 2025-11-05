@@ -1,0 +1,410 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/shopify-seo/shopify-silos",
+        "headline": "Shopify Silos – The Best Way To Create Them & Why They Work For Improved Rankings & Traffic",
+        "description": "Learn how to create effective Shopify silo architecture for improved SEO rankings and traffic. Discover the best methods, benefits, and solutions for implementing website silos in Shopify stores.",
+        "url": "https://optizenapp.com/shopify-seo/shopify-silos",
+        "datePublished": "2023-05-08T01:50:06",
+        "dateModified": "2023-11-23T03:52:43",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        },
+        "about": [
+          {
+            "@id": "#shopify-seo"
+          },
+          {
+            "@id": "#website-silo-architecture"
+          },
+          {
+            "@id": "#ecommerce-seo"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#bruce-clay"
+          },
+          {
+            "@id": "#tim-berners-lee"
+          },
+          {
+            "@id": "#google"
+          },
+          {
+            "@id": "#shopify-tags"
+          },
+          {
+            "@id": "#optizen-app"
+          }
+        ],
+        "citation": [
+          {
+            "@type": "WebPage",
+            "url": "https://www.bruceclay.com/au/seo/silo/",
+            "name": "Bruce Clay SEO Silo Structure"
+          },
+          {
+            "@type": "WebPage",
+            "url": "https://ahrefs.com/blog/seo-silo-structure/",
+            "name": "Ahrefs SEO Silo Structure Guide"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#how-to-create-shopify-silos"
+          },
+          {
+            "@id": "#shopify-silo-benefits"
+          },
+          {
+            "@id": "#keyword-research-guide"
+          }
+        ],
+        "mainEntity": {
+          "@id": "#shopify-silos-faq"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".article-summary"
+          ]
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify-seo/shopify-silos#webpage",
+        "url": "https://optizenapp.com/shopify-seo/shopify-silos",
+        "name": "Shopify Silos – The Best Way To Create Them & Why They Work",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "Optizen"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify SEO",
+              "item": "https://optizenapp.com/shopify-seo"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Shopify Silos",
+              "item": "https://optizenapp.com/shopify-seo/shopify-silos"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify-seo/shopify-silos"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#how-to-create-shopify-silos",
+        "name": "How to Create Shopify Silos",
+        "description": "Step-by-step guide to building effective silo architecture in Shopify stores",
+        "totalTime": "PT2H",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Keyword Research Tool"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen App"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Conduct Keyword Research",
+            "text": "Identify how to group topics and keywords together. Research core broad topics and their subtopics.",
+            "url": "#keyword-research-guide"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Create Main Collections",
+            "text": "Set up your main category collections in Shopify based on your keyword research.",
+            "url": "#main-collections"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Add Products to Collections",
+            "text": "Ensure all relevant products are added to the main collections.",
+            "url": "#add-products"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Create Sub-Collections with Tags",
+            "text": "Add specific tags to products to create sub-collections with URL structure like /collections/main-category/tag",
+            "url": "#shopify-tags-method"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Optimize Tag Pages",
+            "text": "Use Optizen app to customize SEO meta information, titles, and descriptions for each tag page.",
+            "url": "#optizen-optimization"
+          }
+        ],
+        "about": {
+          "@id": "#shopify-seo"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#shopify-silos-faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is website silo architecture?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Website silo architecture is the concept of grouping related information into distinct sections within a website. It involves dividing your website into main or core topics, and then creating supporting content for those core topics."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do Shopify silos benefit SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shopify silos improve SEO by enhancing topical relevance, improving link equity flow, and helping with longer tail keyword rankings. They provide search engines an efficient way to identify topical relevance on your site."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the two main methods for building Shopify silos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Method 1 uses the default /collections/ structure with internal linking. Method 2 uses Shopify tags to create a hierarchical URL structure like /collections/main-category/tag, which is the preferred method for true silo architecture."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the main downside of using Shopify tags for silos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The main downside is that you can't edit or modify the tag pages to create unique SEO meta information. By default, tag pages mirror the main collection for all SEO information, creating duplicate content issues."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#seo-glossary",
+        "name": "Shopify SEO Silo Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#website-silo-architecture",
+            "name": "Website Silo Architecture",
+            "description": "The concept of grouping related information into distinct sections within a website, dividing content into main topics with supporting subtopics",
+            "inDefinedTermSet": {
+              "@id": "#seo-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#topical-relevance",
+            "name": "Topical Relevance",
+            "description": "The relevance that a site has to a particular keyword, and the authority a site has over a specific topic or subject",
+            "inDefinedTermSet": {
+              "@id": "#seo-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#link-equity",
+            "name": "Link Equity",
+            "description": "The value or authority passed from one page to another through links, helping improve search engine rankings",
+            "inDefinedTermSet": {
+              "@id": "#seo-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-tags",
+            "name": "Shopify Tags",
+            "description": "A feature in Shopify that allows you to categorize products and create filtered collection pages with specific URL structures",
+            "inDefinedTermSet": {
+              "@id": "#seo-glossary"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#silo-benefits-list",
+        "name": "Benefits of Shopify Silo Architecture",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Improves Topical Relevance",
+            "description": "Provides search engines an efficient way to identify topical relevance on your site"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Improves Link Equity Flow",
+            "description": "Spreads link power more efficiently to other relevant pages within the silo"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Better Long-tail Keyword Rankings",
+            "description": "Helps ranking and gain traffic for longer tail keywords through structured content grouping"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#bathroom-mirrors-keywords",
+        "name": "Bathroom Mirrors Keyword Examples",
+        "numberOfItems": 5,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "round bathroom mirrors"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "wall bathroom mirrors"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "oval bathroom mirrors"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "led bathroom mirrors"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "framed bathroom mirrors"
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "#bruce-clay",
+        "name": "Bruce Clay",
+        "description": "SEO expert who brought website silo architecture to the forefront of web design and SEO",
+        "sameAs": "https://www.bruceclay.com/",
+        "knowsAbout": [
+          {
+            "@id": "#website-silo-architecture"
+          },
+          {
+            "@id": "#shopify-seo"
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "#tim-berners-lee",
+        "name": "Tim Berners-Lee",
+        "description": "Inventor of the World Wide Web who revolutionized website architecture principles",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Tim_Berners-Lee",
+          "https://www.wikidata.org/wiki/Q80"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#google",
+        "name": "Google",
+        "description": "Search engine that understands and prefers silo architecture for website organization",
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Google",
+          "https://www.wikidata.org/wiki/Q95"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-app",
+        "name": "Optizen App",
+        "description": "Shopify app that allows complete control of tag pages for SEO meta information and content optimization",
+        "applicationCategory": "SEO Tool",
+        "operatingSystem": "Shopify",
+        "offers": {
+          "@type": "Offer",
+          "name": "Enterprise Version",
+          "description": "Includes variant tagger and variant image thumbnail matcher features"
+        },
+        "featureList": [
+          "SEO meta information control",
+          "Tag page content customization",
+          "Search engine indexing control",
+          "Variant tagger",
+          "Variant image thumbnail matcher"
+        ],
+        "url": "https://optizenapp.com"
+      },
+      {
+        "@type": "Course",
+        "@id": "#shopify-silo-benefits",
+        "name": "Understanding Shopify Silo Benefits",
+        "description": "Learn how silo architecture can benefit search engine optimization and user experience",
+        "teaches": [
+          {
+            "@id": "#topical-relevance"
+          },
+          {
+            "@id": "#link-equity"
+          }
+        ],
+        "hasPart": [
+          {
+            "@type": "CourseInstance",
+            "name": "Topical Relevance Improvement",
+            "description": "How silos provide search engines efficient ways to identify topical relevance"
+          },
+          {
+            "@type": "CourseInstance",
+            "name": "Link Equity Flow Optimization",
+            "description": "How proper silo structure spreads link power more efficiently"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:53:53.211Z",
+  "contentModified": "2023-11-23T03:52:43",
+  "contentHash": "ce871993eda419552ae7e5cb73895a2b"
+}

@@ -1,0 +1,330 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai",
+        "headline": "Collections & Tag Page AI Updates Now Available In OptizenAI",
+        "description": "OptizenAI releases new AI features for Shopify Collection and Tag pages, including enhanced parsing capabilities, improved UI elements, and retry functionality for failed updates.",
+        "url": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai",
+        "datePublished": "2024-08-20T05:22:56",
+        "dateModified": "2024-08-20T05:22:58",
+        "author": {
+          "@type": "Organization",
+          "@id": "#optizen-organization"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "#optizen-organization"
+        },
+        "about": [
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#shopify-collections"
+          },
+          {
+            "@id": "#ai-features"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#collection-pages"
+          },
+          {
+            "@id": "#tag-pages"
+          },
+          {
+            "@id": "#meta-parsing"
+          },
+          {
+            "@id": "#ui-improvements"
+          },
+          {
+            "@id": "#retry-functionality"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#feature-updates-list"
+          },
+          {
+            "@id": "#video-demonstration"
+          }
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai"
+        },
+        "inLanguage": "en-US",
+        "keywords": [
+          "OptizenAI",
+          "Shopify",
+          "AI features",
+          "Collection pages",
+          "Tag pages",
+          "E-commerce optimization"
+        ],
+        "articleSection": "Optizen AI"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai",
+        "name": "Collections & Tag Page AI Updates Now Available In OptizenAI",
+        "url": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai"
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "OptizenApp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Collections & Tag Page AI Updates",
+              "item": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".article-content"
+          ]
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#feature-updates-list",
+        "name": "OptizenAI New Features List",
+        "description": "List of new AI features and improvements released in OptizenAI",
+        "numberOfItems": 6,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "AI features for Collection pages",
+            "description": "New artificial intelligence capabilities specifically designed for Shopify collection pages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AI features for Tag pages",
+            "description": "New artificial intelligence capabilities specifically designed for Shopify tag pages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Enhanced meta and body content parsing",
+            "description": "Improved parsing of all page meta and body content for AI reference data"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Read More tab on AI Log pages",
+            "description": "Added Read More tab on AI Log pages for Product detail log for improved user interface"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Retry functionality for failed updates",
+            "description": "New retry functionality for failed AI updates to improve reliability"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Minor UI improvements",
+            "description": "Various minor improvements to the user interface"
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#optizen-ai-glossary",
+        "name": "OptizenAI Terminology",
+        "description": "Key terms and concepts related to OptizenAI and its features",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-ai",
+            "name": "OptizenAI",
+            "description": "An artificial intelligence platform designed for e-commerce optimization, specifically for Shopify stores",
+            "inDefinedTermSet": {
+              "@id": "#optizen-ai-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#collection-pages",
+            "name": "Collection Pages",
+            "description": "Shopify pages that display groups of related products organized by category or theme",
+            "inDefinedTermSet": {
+              "@id": "#optizen-ai-glossary"
+            },
+            "sameAs": "https://help.shopify.com/en/manual/products/collections"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#tag-pages",
+            "name": "Tag Pages",
+            "description": "Shopify pages that display products grouped by specific tags or labels",
+            "inDefinedTermSet": {
+              "@id": "#optizen-ai-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#meta-parsing",
+            "name": "Meta and Body Content Parsing",
+            "description": "The process of analyzing and extracting information from webpage metadata and body content for AI processing",
+            "inDefinedTermSet": {
+              "@id": "#optizen-ai-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-features",
+            "name": "AI Features",
+            "description": "Artificial intelligence-powered capabilities that automate and optimize e-commerce processes",
+            "inDefinedTermSet": {
+              "@id": "#optizen-ai-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#retry-functionality",
+            "name": "Retry Functionality",
+            "description": "A system feature that allows users to re-attempt failed operations or processes",
+            "inDefinedTermSet": {
+              "@id": "#optizen-ai-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ui-improvements",
+            "name": "UI Improvements",
+            "description": "Enhancements to the user interface design and functionality for better user experience",
+            "inDefinedTermSet": {
+              "@id": "#optizen-ai-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/User_interface"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#optizen-organization",
+        "name": "OptizenApp",
+        "url": "https://optizenapp.com",
+        "description": "E-commerce optimization platform specializing in AI-powered solutions for Shopify stores",
+        "foundingDate": "2020",
+        "knowsAbout": [
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#shopify-collections"
+          },
+          {
+            "@id": "#ai-features"
+          }
+        ],
+        "makesOffer": {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "OptizenAI",
+            "applicationCategory": "E-commerce Optimization Software",
+            "operatingSystem": "Web-based"
+          }
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "#video-demonstration",
+        "name": "OptizenAI Collection and Tag Page AI Features Demo",
+        "description": "Video demonstration showing how the new AI features work and how to use them in OptizenAI",
+        "about": [
+          {
+            "@id": "#optizen-ai"
+          },
+          {
+            "@id": "#collection-pages"
+          },
+          {
+            "@id": "#tag-pages"
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/optizen-ai/shopify-collection-and-tag-page-ai"
+        },
+        "teaches": [
+          {
+            "@id": "#ai-features"
+          },
+          {
+            "@id": "#collection-pages"
+          },
+          {
+            "@id": "#tag-pages"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "#optizen-ai-software",
+        "name": "OptizenAI",
+        "applicationCategory": "E-commerce Optimization Software",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "description": "AI-powered e-commerce optimization for Shopify stores"
+        },
+        "featureList": [
+          "AI features for Collection pages",
+          "AI features for Tag pages",
+          "Meta and body content parsing",
+          "AI Log pages with Read More functionality",
+          "Retry functionality for failed updates",
+          "Enhanced user interface"
+        ],
+        "releaseNotes": {
+          "@type": "TechArticle",
+          "headline": "Collections & Tag Page AI Updates",
+          "datePublished": "2024-08-20T05:22:56",
+          "about": {
+            "@id": "#feature-updates-list"
+          }
+        },
+        "sameAs": "https://optizenapp.com"
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:53:41.222Z",
+  "contentModified": "2024-08-20T05:22:58",
+  "contentHash": "c99451d00444b8e020dd7c093f11568e"
+}

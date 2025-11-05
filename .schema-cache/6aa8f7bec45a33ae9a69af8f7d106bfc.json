@@ -1,0 +1,298 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/shopify-seo/shopify-topical-map#article",
+        "headline": "A Simple Method To Build Ecommerce(Shopify & Woocommerce) Site Structure & Topical Maps",
+        "description": "Learn how to build ecommerce site structures and topical maps with a simple approach that improves usability and organic exposure for Shopify and WooCommerce stores.",
+        "url": "https://optizenapp.com/shopify-seo/shopify-topical-map",
+        "datePublished": "2023-12-08T06:18:25",
+        "dateModified": "2023-12-08T06:18:27",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        },
+        "about": [
+          {
+            "@id": "#ecommerce-site-structure"
+          },
+          {
+            "@id": "#topical-maps"
+          },
+          {
+            "@id": "#shopify-seo"
+          },
+          {
+            "@id": "#woocommerce-seo"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#shopify"
+          },
+          {
+            "@id": "#woocommerce"
+          },
+          {
+            "@id": "#organic-exposure"
+          },
+          {
+            "@id": "#usability"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#video-walkthrough"
+          },
+          {
+            "@id": "#simple-approach-method"
+          }
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://optizenapp.com/shopify-seo/shopify-topical-map"
+        },
+        "articleSection": "Shopify SEO",
+        "keywords": [
+          "ecommerce site structure",
+          "topical maps",
+          "Shopify SEO",
+          "WooCommerce SEO",
+          "organic exposure",
+          "usability"
+        ],
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-description"
+          ]
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify-seo/shopify-topical-map",
+        "name": "A Simple Method To Build Ecommerce Site Structure & Topical Maps",
+        "url": "https://optizenapp.com/shopify-seo/shopify-topical-map",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify-seo/shopify-topical-map#article"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify SEO",
+              "item": "https://optizenapp.com/shopify-seo"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Shopify Topical Map",
+              "item": "https://optizenapp.com/shopify-seo/shopify-topical-map"
+            }
+          ]
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com#website",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "@id": "#video-walkthrough",
+        "name": "Ecommerce Site Structure & Topical Maps Video Walkthrough",
+        "description": "Video walkthrough showing how to build ecommerce site structures and topical maps with a simple approach",
+        "about": [
+          {
+            "@id": "#ecommerce-site-structure"
+          },
+          {
+            "@id": "#topical-maps"
+          }
+        ],
+        "teaches": [
+          {
+            "@id": "#simple-approach-method"
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/shopify-seo/shopify-topical-map#article"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#simple-approach-method",
+        "name": "Simple Method to Build Ecommerce Site Structure and Topical Maps",
+        "description": "A straightforward approach to building ecommerce site structures and topical maps that improves usability and organic exposure",
+        "about": [
+          {
+            "@id": "#ecommerce-site-structure"
+          },
+          {
+            "@id": "#topical-maps"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Watch the Video Walkthrough",
+            "text": "View the video walkthrough that demonstrates the simple approach to building ecommerce site structures and topical maps"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Apply Simple Approach",
+            "text": "Implement the simple method that works to improve usability and organic exposure for most ecommerce cases"
+          }
+        ],
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Ecommerce Platform",
+            "requiredQuantity": 1
+          }
+        ],
+        "isPartOf": {
+          "@id": "https://optizenapp.com/shopify-seo/shopify-topical-map#article"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#ecommerce-glossary",
+        "name": "Ecommerce Site Structure and Topical Maps Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ecommerce-site-structure",
+            "name": "Ecommerce Site Structure",
+            "description": "The organizational framework and hierarchy of pages, categories, and content within an ecommerce website",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#topical-maps",
+            "name": "Topical Maps",
+            "description": "Strategic content organization method that groups related topics and keywords to improve SEO and user navigation",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify",
+            "name": "Shopify",
+            "description": "Popular ecommerce platform for building online stores",
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#woocommerce",
+            "name": "WooCommerce",
+            "description": "WordPress plugin that transforms WordPress sites into ecommerce stores",
+            "sameAs": "https://en.wikipedia.org/wiki/WooCommerce",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-seo",
+            "name": "Shopify SEO",
+            "description": "Search engine optimization techniques and strategies specifically applied to Shopify ecommerce stores",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#woocommerce-seo",
+            "name": "WooCommerce SEO",
+            "description": "Search engine optimization techniques and strategies specifically applied to WooCommerce stores",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#organic-exposure",
+            "name": "Organic Exposure",
+            "description": "Visibility in search engine results achieved through non-paid, natural search engine optimization efforts",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#usability",
+            "name": "Usability",
+            "description": "The ease of use and navigation experience for website visitors",
+            "sameAs": "https://en.wikipedia.org/wiki/Usability",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-glossary"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com#organization",
+        "name": "OptizenApp",
+        "url": "https://optizenapp.com",
+        "description": "SEO and ecommerce optimization platform specializing in Shopify and WooCommerce solutions",
+        "knowsAbout": [
+          {
+            "@id": "#shopify-seo"
+          },
+          {
+            "@id": "#woocommerce-seo"
+          },
+          {
+            "@id": "#ecommerce-site-structure"
+          },
+          {
+            "@id": "#topical-maps"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://optizenapp.com#website",
+        "name": "OptizenApp",
+        "url": "https://optizenapp.com",
+        "publisher": {
+          "@id": "https://optizenapp.com#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://optizenapp.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T00:54:24.595Z",
+  "contentModified": "2023-12-08T06:18:27",
+  "contentHash": "e5dbb6212e8b62e279ef1fa8407d5858"
+}
