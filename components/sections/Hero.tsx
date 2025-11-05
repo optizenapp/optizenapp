@@ -8,24 +8,14 @@ export default function Hero() {
   return (
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center max-w-4xl mx-auto"
-        >
+        <div className="text-center max-w-4xl mx-auto">
           {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 }}
-            className="inline-flex items-center px-4 py-2 rounded-full bg-optizen-blue-50 text-optizen-blue-500 text-sm font-medium mb-8"
-          >
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-optizen-blue-50 text-optizen-blue-500 text-sm font-medium mb-8">
             <span className="w-2 h-2 bg-optizen-blue-500 rounded-full mr-2 animate-pulse"></span>
             Trusted by 1000's of Shopify stores
-          </motion.div>
+          </div>
 
-          {/* Main Headline */}
+          {/* Main Headline - NO ANIMATION for LCP optimization */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
             Boost Your Shopify Store with{" "}
             <span className="text-optizen-blue-500">SEO & Video Upsell Apps</span>
@@ -78,7 +68,7 @@ export default function Hero() {
               />
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
