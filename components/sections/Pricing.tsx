@@ -6,90 +6,101 @@ import { Check, Star } from "lucide-react";
 const pricingPlans = {
   videoUpsell: [
     {
+      name: "Free",
+      price: "Free",
+      period: "",
+      description: "Perfect for testing video upsells",
+      features: [
+        "7 day free trial",
+        "1 active video upsell campaign",
+        "Up to 5 conversions & bundles",
+        "YouTube / Vimeo videos only",
+        "All available video upsell placements"
+      ],
+      popular: false,
+      cta: "Start Free Trial"
+    },
+    {
       name: "Starter",
-      price: "$9.99",
+      price: "$19.99",
       period: "/month",
-      description: "Perfect for new stores",
+      description: "Best for growing stores",
       features: [
-        "Up to 100 video views/month",
-        "Basic analytics",
-        "Standard support",
-        "Mobile responsive"
+        "Unlimited video upsell & campaigns",
+        "Unlimited conversions & bundles",
+        "2 AI video credits/month",
+        "YouTube/Vimeo + AI videos",
+        "All available video upsell placements",
+        "$2 per extra AI credit"
       ],
-      popular: false
+      popular: true,
+      cta: "Get Started"
     },
     {
-      name: "Professional",
-      price: "$29.99",
-      period: "/month",
-      description: "Most popular for growing stores",
-      features: [
-        "Unlimited video views",
-        "Advanced analytics",
-        "Priority support",
-        "A/B testing",
-        "Custom branding",
-        "Cart recovery"
-      ],
-      popular: true
-    },
-    {
-      name: "Enterprise",
-      price: "$79.99",
+      name: "Pro",
+      price: "$49.99",
       period: "/month",
       description: "For high-volume stores",
       features: [
-        "Everything in Professional",
-        "Dedicated account manager",
-        "Custom integrations",
-        "Advanced reporting",
-        "White-label option"
+        "Everything in Starter, plus:",
+        "5 AI video credits / month",
+        "All video upsell & bundle placements",
+        "Priority support",
+        "$1.50 per extra AI credit"
       ],
-      popular: false
+      popular: false,
+      cta: "Get Started"
     }
   ],
   seoTools: [
     {
-      name: "Basic",
-      price: "$14.99",
-      period: "/month",
-      description: "Essential SEO tools",
+      name: "Free",
+      price: "Free",
+      period: "",
+      description: "Get started with essential SEO features",
       features: [
-        "Up to 100 products",
-        "AI meta tags",
-        "Basic SEO audit",
-        "Email support"
+        "AI updates for product page SEO elements",
+        "Access to prompt repository",
+        "Individual or bulk updates",
+        "Image alt text AI",
+        "Full restore functionality",
+        "2,000 free AI words"
       ],
-      popular: false
+      popular: false,
+      cta: "Get Started Free"
     },
     {
-      name: "Growth",
-      price: "$39.99",
+      name: "Pro",
+      price: "$19.99",
       period: "/month",
-      description: "Best value for most stores",
+      description: "Best for growing stores",
       features: [
-        "Up to 1,000 products",
-        "AI meta tags & descriptions",
-        "Advanced SEO audit",
+        "Everything in Free, plus:",
+        "Add content below product grid on collections",
+        "Optimize tag pages",
+        "Choose which tag pages to index",
+        "AI updates for collection and tag pages",
+        "Smart Tag Filter",
+        "125,000 free AI words"
+      ],
+      popular: true,
+      cta: "Start Free Trial"
+    },
+    {
+      name: "Enterprise",
+      price: "$29.99",
+      period: "/month",
+      description: "For high-volume stores",
+      features: [
+        "Everything in Pro, plus:",
+        "250,000 free AI words",
+        "Variant Tagger",
+        "Variant Image Thumbnail Matcher",
         "Priority support",
-        "Bulk optimization",
-        "Rich snippets"
+        "Dedicated account manager"
       ],
-      popular: true
-    },
-    {
-      name: "Scale",
-      price: "$99.99",
-      period: "/month",
-      description: "For large catalogs",
-      features: [
-        "Unlimited products",
-        "Everything in Growth",
-        "API access",
-        "Custom workflows",
-        "Dedicated support"
-      ],
-      popular: false
+      popular: false,
+      cta: "Start Free Trial"
     }
   ]
 };
@@ -141,7 +152,7 @@ function PricingCard({ plan, color }: { plan: any; color: string }) {
             : "bg-gray-100 text-gray-900 hover:bg-gray-200"
         }`}
       >
-        Get Started
+        {plan.cta || "Get Started"}
       </button>
     </motion.div>
   );
@@ -187,7 +198,7 @@ export default function Pricing() {
         {/* Trust Message */}
         <div className="mt-12 text-center">
           <p className="text-gray-600">
-            All plans include a <span className="font-semibold text-gray-900">14-day free trial</span>. No credit card required.
+            All plans include a <span className="font-semibold text-gray-900">7-day free trial</span>. No credit card required.
           </p>
         </div>
       </div>
