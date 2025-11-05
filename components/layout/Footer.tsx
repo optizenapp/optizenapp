@@ -127,15 +127,30 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
+        <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-sm">
             © {new Date().getFullYear()} OptizenApp. All rights reserved.
           </p>
-          <div className="flex items-center space-x-2 mt-4 md:mt-0">
-            <Mail size={16} className="text-gray-400" />
-            <a href="mailto:hello@optizenapp.com" className="text-gray-600 hover:text-gray-900 text-sm">
-              hello@optizenapp.com
+          
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            {/* Status Badge */}
+            <a 
+              href="https://optizenapp.instatus.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-3 py-1.5 rounded-full bg-white border border-gray-200 hover:border-gray-300 transition-colors group"
+            >
+              <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+              <span className="text-sm text-gray-700 group-hover:text-gray-900">All systems operational</span>
             </a>
+            
+            {/* Email */}
+            <div className="flex items-center space-x-2">
+              <Mail size={16} className="text-gray-400" />
+              <a href="mailto:hello@optizenapp.com" className="text-gray-600 hover:text-gray-900 text-sm">
+                hello@optizenapp.com
+              </a>
+            </div>
           </div>
         </div>
       </div>
