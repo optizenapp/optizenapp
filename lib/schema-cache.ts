@@ -71,7 +71,14 @@ export async function getCachedSchema(
     }
     
     // Also check content hash (in case modified date wasn't updated)
-    const currentHash = hashContent(content);
+    // Normalize content the same way schema-generator does before hashing
+    const normalizedContent = content
+      .replace(/<script[^>]*>.*?<\/script>/gi, '')
+      .replace(/<style[^>]*>.*?<\/style>/gi, '')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    const currentHash = hashContent(normalizedContent);
     if (cached.contentHash !== currentHash) {
       console.log(`♻️  Content hash changed: ${url}`);
       return null;
