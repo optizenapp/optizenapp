@@ -66,6 +66,20 @@ function isHomepage(input: SchemaGenerationInput): boolean {
   return url === 'https://optizenapp.com' || url === 'https://optizenapp.com/';
 }
 
+// Detect if this is a blog listing page (blog index or category page)
+function isBlogListingPage(input: SchemaGenerationInput): boolean {
+  const url = input.url.toLowerCase();
+  
+  // Blog index page
+  if (url === 'https://optizenapp.com/blog' || url === 'https://optizenapp.com/blog/') {
+    return true;
+  }
+  
+  // Category pages (single path segment like /aov, /content, etc.)
+  const pathParts = url.replace('https://optizenapp.com/', '').split('/').filter(Boolean);
+  return pathParts.length === 1 && !url.includes('/support-docs/');
+}
+
 // Detect if this is a blog post
 function isBlogPost(input: SchemaGenerationInput): boolean {
   // Blog posts have categories like 'aov', 'content', 'optizen-ai', etc.
@@ -255,6 +269,138 @@ CONTENT:
 ${plainText}
 
 Return ONLY a valid JSON-LD with @graph array including VideoObject, TechArticle, HowTo, LearningResource, FAQPage, and all supporting schema types.`;
+  }
+  
+  // Check for blog listing pages (blog index and category pages)
+  if (isBlogListingPage(input)) {
+    return `You are an advanced schema markup generator for BLOG LISTING PAGES (blog index and category pages) based on US Patent 9152623B2.
+
+## Page Type Detection:
+This is a BLOG LISTING/COLLECTION page showing multiple articles. Prioritize schema types that emphasize content collections, navigation, and article discovery.
+
+## Required Schema Types for Blog Listing Pages:
+
+### 1. CollectionPage (PRIMARY)
+- name, description
+- mainEntity: ItemList of articles
+- hasPart: array of articles
+- isPartOf: website/blog
+- breadcrumb
+- specialty or about (category focus)
+
+### 2. ItemList (ARTICLE COLLECTION)
+- itemListElement: array of ListItem
+- Each ListItem contains:
+  - position (1, 2, 3...)
+  - item: Article schema for each post
+  - url, name, description
+- numberOfItems
+- itemListOrder: "Descending" (newest first)
+
+### 3. Article (for EACH listed post)
+- headline, description
+- image (featured image)
+- author
+- datePublished, dateModified
+- articleSection (category)
+- url
+- wordCount (estimate if needed)
+- keywords
+- publisher
+
+### 4. Blog (CONTAINER)
+- name: "OptizenApp Blog" or category name
+- description
+- blogPost: array of articles
+- publisher
+- inLanguage: "en-US"
+
+### 5. WebSite (SITE CONTEXT)
+- name: "OptizenApp"
+- url
+- potentialAction: SearchAction
+- publisher
+
+### 6. BreadcrumbList
+- itemListElement showing navigation path
+- Home → Blog → [Category if applicable]
+
+### 7. Organization (PUBLISHER)
+- name: "OptizenApp"
+- logo
+- url
+- sameAs (social profiles)
+
+### 8. DefinedTermSet (if category-specific)
+- Category-specific terminology
+- hasDefinedTerm for key concepts
+- inDefinedTermSet
+
+### 9. FAQPage (if applicable)
+- Common questions about the category/topic
+- Questions users might have about the content area
+
+## Three-Level Analysis for Blog Listings:
+
+### WORD LEVEL - Topic & Keyword Extraction
+- Identify category/topic keywords
+- Extract common themes across articles
+- List key concepts and terminology
+- Capture industry-specific terms
+
+### PHRASE LEVEL - Article Relationships
+- Group related articles by subtopic
+- Identify content series or sequences
+- Map article interconnections
+- Extract common article patterns
+
+### CLAUSE LEVEL - Category Context
+- Establish category purpose and scope
+- Define target audience
+- Map learning progression through articles
+- Connect to broader site content strategy
+
+## Blog Listing Best Practices:
+
+1. **Rich Article Previews**: Each article in ItemList should have complete metadata
+2. **Category Context**: Explain what the category covers and why it matters
+3. **Navigation Structure**: Clear breadcrumbs and site hierarchy
+4. **Search Optimization**: SearchAction for site-wide search
+5. **Publisher Authority**: Strong Organization schema
+6. **Content Freshness**: Emphasize datePublished/dateModified
+7. **Topic Clustering**: Group related articles conceptually
+8. **User Intent**: Address why users would browse this category
+
+## Special Considerations:
+
+- If main blog index: emphasize breadth of topics, latest articles
+- If category page: focus on category-specific expertise and depth
+- Include pagination context if applicable (page 1 of N)
+- Highlight featured or popular articles if identifiable
+- Show article count and update frequency
+- Link to related categories or topics
+- Include calls-to-action (subscribe, explore categories)
+
+## Content Extraction Strategy:
+
+From listing page content:
+1. Extract category name and description
+2. List all visible article titles and excerpts
+3. Identify article metadata (dates, authors, categories)
+4. Infer category focus and target audience
+5. Generate comprehensive category description
+6. Create relevant FAQ about the topic area
+7. Define key terms used across articles
+
+URL: ${input.url}
+Title: ${input.title}
+Category: ${input.category || 'Blog'}
+Excerpt: ${input.excerpt || ''}
+
+CONTENT (includes article listings):
+${plainText}
+
+Return ONLY a valid JSON-LD with @graph array including CollectionPage, ItemList (with Article items), Blog, WebSite, BreadcrumbList, Organization, and supporting schema types.`;
   }
   
   // Check for homepage
@@ -490,8 +636,8 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
   
   console.log('🆕 Generating new schema (not in cache or content changed)');
   
-  // Use direct JSON-LD generation for homepage, tool pages, blog posts, and support docs
-  if (isHomepage(input) || isToolPage(input) || isBlogPost(input) || isSupportDocsPage(input)) {
+  // Use direct JSON-LD generation for homepage, tool pages, blog posts, blog listings, and support docs
+  if (isHomepage(input) || isToolPage(input) || isBlogPost(input) || isBlogListingPage(input) || isSupportDocsPage(input)) {
     const claude = getClaudeAPI();
     
     if (!claude.isConfigured()) {
