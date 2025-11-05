@@ -153,7 +153,7 @@ export default function ContactPage() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent focus:bg-white transition-colors"
                         placeholder="Your name"
                       />
                     </div>
@@ -169,7 +169,7 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent focus:bg-white transition-colors"
                         placeholder="your@email.com"
                       />
                     </div>
@@ -183,7 +183,7 @@ export default function ContactPage() {
                         name="app"
                         value={formData.app}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent focus:bg-white transition-colors"
                       >
                         <option value="">Select an app (optional)</option>
                         <option value="OptizenAI SEO Tools">OptizenAI SEO Tools</option>
@@ -202,7 +202,7 @@ export default function ContactPage() {
                         name="subject"
                         value={formData.subject}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent focus:bg-white transition-colors"
                         placeholder="How can we help?"
                       />
                     </div>
@@ -218,7 +218,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         rows={6}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent resize-none"
+                        className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent focus:bg-white transition-colors resize-none"
                         placeholder="Tell us more about your question or issue..."
                       />
                     </div>
