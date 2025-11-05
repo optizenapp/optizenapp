@@ -532,18 +532,23 @@ async function scrapePageContent(pageUrl: string): Promise<string | null> {
     const html = await response.text();
     
     // Extract content from Thrive Architect main content area
-    // Try multiple patterns to find the content
+    // Find the opening tar-main-content div
+    const startMatch = html.match(/<div[^>]*id="tve_editor"[^>]*class="[^"]*tar-main-content[^"]*"[^>]*>/i);
     
-    // Pattern 1: tar-main-content (Thrive Architect)
-    let contentMatch = html.match(/<div[^>]*class="[^"]*tar-main-content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<script/i);
+    let contentMatch = null;
     
-    if (!contentMatch) {
-      // Pattern 2: tve_post_content
-      contentMatch = html.match(/<div[^>]*class="[^"]*tve_post_content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<footer/i);
+    if (startMatch) {
+      const startIndex = startMatch.index! + startMatch[0].length;
+      // Find the corresponding closing div before the footer
+      const footerIndex = html.indexOf('<footer', startIndex);
+      if (footerIndex > startIndex) {
+        const content = html.substring(startIndex, footerIndex);
+        contentMatch = [null, content]; // Fake match array for consistency
+      }
     }
     
     if (!contentMatch) {
-      // Pattern 3: Look for content between header and footer
+      // Fallback: Look for content between header and footer
       contentMatch = html.match(/<\/header>([\s\S]*?)<footer/i);
     }
     
