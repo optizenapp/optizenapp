@@ -1,7 +1,7 @@
 import { config } from 'dotenv';
 import fs from 'fs';
 import path from 'path';
-import { getPosts, getAllPages, getCategories } from '../lib/wordpress';
+import { getPosts, getPages, getCategories } from '../lib/wordpress';
 
 // Load environment variables
 config({ path: '.env.local' });
@@ -139,7 +139,7 @@ async function exportContent() {
   let totalPagesExported = 0;
 
   try {
-    const pages = await getAllPages();
+    const { pages } = await getPages({ per_page: 100 });
     
     for (const page of pages) {
       const exportedPage: ExportedPage = {
