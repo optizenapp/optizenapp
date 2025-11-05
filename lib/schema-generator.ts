@@ -400,12 +400,12 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
   }
 
   // 2. FAQPage schema if questions found
-  if (analysis.questions.length > 0) {
+  if (analysis.questions?.length > 0) {
     schemaGraph.push(buildFAQSchema(input, analysis));
   }
 
   // 3. DefinedTerm schemas for key concepts
-  if (analysis.definitions.length > 0) {
+  if (analysis.definitions?.length > 0) {
     analysis.definitions.forEach((def, index) => {
       schemaGraph.push(buildDefinedTermSchema(input, def, index));
     });
