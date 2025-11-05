@@ -19,8 +19,20 @@ function replaceInternalLinks(content: string): string {
   // Replace staging URLs with production URLs
   let processedContent = content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
   
+  // Fix relative image URLs - convert to absolute URLs
+  // Match src="/wp-content/..." or src='/wp-content/...'
+  processedContent = processedContent.replace(
+    /(<img[^>]*?\ssrc=["'])(\/)?(wp-content\/[^"']+)(["'])/gi,
+    `$1${productionDomain}/$3$4`
+  );
+  
+  // Also fix srcset attributes if present
+  processedContent = processedContent.replace(
+    /(\ssrcset=["'])(\/)?(wp-content\/[^"']+)(["'])/gi,
+    `$1${productionDomain}/$3$4`
+  );
+  
   // Add loading="lazy" to all images in content (they're below the fold)
-  // Also ensure images have proper attributes
   processedContent = processedContent.replace(
     /<img([^>]*?)>/gi,
     (match, attributes) => {
