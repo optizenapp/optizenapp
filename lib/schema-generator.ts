@@ -79,51 +79,75 @@ export async function analyzeContent(input: SchemaGenerationInput): Promise<Cont
     .trim()
     .substring(0, 15000); // Limit for token optimization
 
-  const systemPrompt = `You are an expert at analyzing web content and extracting structured data for schema.org markup.
-Analyze the provided content and return ONLY valid JSON with no markdown formatting or explanations.`;
+  const systemPrompt = `You are an advanced schema markup generator based on US Patent 9152623B2 - Natural Language Processing System.
 
-  const prompt = `Analyze this web content and extract structured data for schema.org:
+Your task is to analyze the provided blog post content and generate comprehensive JSON-LD schema markup.
+
+Return ONLY valid JSON with no markdown formatting or explanations.`;
+
+  const prompt = `You are an advanced schema markup generator based on US Patent 9152623B2 - Natural Language Processing System.
+
+Your task is to analyze the provided blog post content and generate comprehensive JSON-LD schema markup following these principles:
+
+## Patent-Based Three-Level Analysis:
+
+### Level 1: WORD LEVEL - Entity Identification
+- Identify key terminology, concepts, and defined terms
+- Extract proper nouns, technical terms, acronyms
+- Create DefinedTerm entities for each significant concept
+- Link entities to external knowledge bases (Wikipedia, Wikidata) using sameAs
+
+### Level 2: PHRASE LEVEL - Relationship Mapping
+- Identify main topics and subtopics
+- Determine relationships between concepts (about, mentions, isPartOf)
+- Extract procedural knowledge (HowTo steps)
+- Identify comparative elements (tables, lists, comparisons)
+
+### Level 3: CLAUSE LEVEL - Complete Knowledge Structure
+- Map overall article structure and hierarchy
+- Establish connections between all entities
+- Create FAQ structures from questions in content
+- Build comprehensive knowledge graph
+
+## Required Schema Types to Include:
+1. **Article** (primary content) - Include: headline, description, author, publisher, datePublished, about, mentions, citation, hasPart
+2. **FAQPage** (if Q&A content exists) - Extract all questions and answers
+3. **HowTo** (if instructional content exists) - Break down processes into steps
+4. **DefinedTermSet** (glossary of terms) - Create definitions for all key terms
+5. **ItemList** (for lists and enumerations) - Structure all bullet points and numbered lists
+6. **WebPage** (page-level metadata) - Include breadcrumbs and speakable content
+7. **Additional Types** (context-dependent) - ComparisonTable, Course, ClaimReview, Organization/Person entities
+
+## Schema Generation Rules:
+1. **Entity Linking**: Every significant entity should have an @id and be referenced throughout
+2. **Semantic Relationships**: Use about/mentions/teaches/isPartOf to connect entities
+3. **External References**: Include sameAs links to Wikipedia/Wikidata when applicable
+4. **Hierarchical Structure**: Use @graph for multiple top-level entities
+5. **Bidirectional Links**: Reference parent entities from child entities
+6. **Rich Metadata**: Include images, citations, alternative names
+7. **Accessibility**: Add speakable selectors for voice search
+8. **Actionability**: Include potentialAction for user interactions
+
+## Analysis Process:
+1. Parse Content Structure - Identify headline, subheadings, paragraphs, images, tables, lists, Q&A sections
+2. Extract Entities (Word Level) - Main concepts, technical terms, proper nouns, metrics
+3. Map Relationships (Phrase Level) - Related concepts, comparison points, processes, questions
+4. Build Knowledge Graph (Clause Level) - Connect entities, create hierarchy, establish breadcrumbs, link to external knowledge
+
+## Output Format:
+Return ONLY valid JSON-LD with @graph array for multiple top-level entities.
+Ensure all @id references are properly linked.
 
 URL: ${input.url}
 Title: ${input.title}
-Content Type: Determine if this is an article, how-to guide, FAQ, definition, comparison, or documentation
 Category: ${input.category || 'General'}
+Date Published: ${input.datePublished}
+Date Modified: ${input.dateModified}
 
 CONTENT:
 ${plainText}
 
-Return ONLY a valid JSON object (no markdown, no code blocks) with this EXACT structure:
-{
-  "contentType": "article|howto|faq|definition|comparison|guide|documentation",
-  "mainEntities": [
-    {"name": "EntityName", "type": "Thing|Product|Concept", "description": "Brief description"}
-  ],
-  "questions": [
-    {"question": "Extracted question?", "answer": "Extracted answer"}
-  ],
-  "steps": [
-    {"name": "Step name", "text": "Step description"}
-  ],
-  "definitions": [
-    {"term": "Term", "definition": "Definition"}
-  ],
-  "keywords": ["keyword1", "keyword2"],
-  "estimatedReadTime": "PT15M",
-  "hasTables": true,
-  "hasImages": true,
-  "hasComparisons": true
-}
-
-Rules:
-- Extract ALL FAQ questions found in the content
-- Identify step-by-step instructions if present
-- Extract key terms and their definitions
-- Identify main entities (products, concepts, people, organizations)
-- Return 5-10 relevant keywords
-- Calculate read time in ISO 8601 duration format (PT15M = 15 minutes)
-- Detect if content has tables, images, or comparisons
-
-Return ONLY the JSON, nothing else.`;
+Return ONLY a valid JSON object (no markdown, no code blocks) with proper @context, @graph, and all schema types identified through the three-level analysis.`;
 
   try {
     const response = await claude.sendMessage(prompt, systemPrompt, {
