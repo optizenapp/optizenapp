@@ -95,9 +95,7 @@ export default function SEOFAQ() {
             Still have questions?
           </p>
           <a
-            href="https://apps.shopify.com/seo-meta-tag"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/contact"
             className="inline-flex items-center text-optizen-green-500 hover:text-optizen-green-600 font-semibold"
           >
             Contact our support team →
