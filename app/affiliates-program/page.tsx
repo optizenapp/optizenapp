@@ -79,7 +79,7 @@ export default async function AffiliateProgramPage() {
               </ul>
               <div className="mt-8 text-center">
                 <a
-                  href="https://www.shareasale.com/shareasale.cfm?merchantID=148651"
+                  href="https://platform.shoffi.app/signup/affiliate?app=Il_IuhPnJ7j"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-optizen-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-optizen-blue-600 transition-colors"
@@ -258,7 +258,7 @@ export default async function AffiliateProgramPage() {
                 Join thousands of affiliates earning recurring commissions with OptizenAI
               </p>
               <a
-                href="https://www.shareasale.com/shareasale.cfm?merchantID=148651"
+                href="https://platform.shoffi.app/signup/affiliate?app=Il_IuhPnJ7j"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-optizen-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-optizen-blue-600 transition-colors"
