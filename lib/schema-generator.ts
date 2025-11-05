@@ -106,9 +106,158 @@ function isToolPage(input: SchemaGenerationInput): boolean {
   );
 }
 
+// Detect if a page is a support docs page
+function isSupportDocsPage(input: SchemaGenerationInput): boolean {
+  return input.url.includes('/support-docs/');
+}
+
 // Get appropriate prompt based on page type
 function getSchemaPrompt(input: SchemaGenerationInput, plainText: string): string {
-  // Check for homepage first
+  // Check for support docs first (video tutorials)
+  if (isSupportDocsPage(input)) {
+    return `You are an advanced schema markup generator for VIDEO SUPPORT DOCUMENTATION pages based on US Patent 9152623B2.
+
+## Page Type Detection:
+This is a VIDEO-BASED SUPPORT/TUTORIAL page. Prioritize schema types that emphasize learning, instruction, and video content.
+
+## Required Schema Types for Video Support Pages:
+
+### 1. VideoObject (PRIMARY)
+- name, description, thumbnailUrl
+- uploadDate, duration, contentUrl, embedUrl
+- interactionStatistic (view count)
+- about (what the video teaches)
+- teaches (link to HowTo)
+- transcript (if available)
+- regionsAllowed
+
+### 2. TechArticle or Article (CONTAINER)
+- headline, description
+- articleSection: "Support Documentation"
+- hasPart (contains VideoObject)
+- mainEntity (points to VideoObject)
+- teaches (array of learning outcomes)
+- isPartOf (documentation series)
+
+### 3. HowTo (INSTRUCTIONAL STRUCTURE)
+- Link to video in each step
+- video property at HowTo level
+- video clips for individual steps using time fragments (#t=start,end)
+- tool and supply requirements
+- totalTime and performTime
+
+### 4. LearningResource
+- learningResourceType: "Video Tutorial"
+- educationalLevel (Beginner/Intermediate/Advanced)
+- timeRequired
+- teaches, assesses, competencyRequired
+- educationalUse array
+- isAccessibleForFree
+
+### 5. FAQPage
+- Questions about the tutorial/feature
+- Link video property in answers
+- Common troubleshooting questions
+
+### 6. WebPage (PAGE METADATA)
+- Breadcrumb to support section
+- mainEntity pointing to VideoObject
+- speakable content
+
+### 7. SoftwareApplication (if documenting an app)
+- The software being demonstrated
+- featureList covered in video
+- operatingSystem
+- screenshot
+
+### 8. CreativeWorkSeries (for documentation sets)
+- Series of support videos
+- hasPart listing all tutorials
+- issn or identifier
+
+### 9. Course (if part of training)
+- Educational framing
+- courseMode: "online"
+- courseWorkload
+- provider
+
+### 10. DefinedTermSet
+- Technical terms used in video
+- Feature names and definitions
+- Platform-specific terminology
+
+## Three-Level Analysis for Video Support Pages:
+
+### WORD LEVEL - Feature & Action Extraction
+- Identify software features demonstrated
+- Extract action verbs (click, select, configure, update)
+- List UI elements mentioned (buttons, menus, settings)
+- Capture technical terminology
+
+### PHRASE LEVEL - Procedure Mapping
+- Map step-by-step procedures shown in video
+- Identify prerequisite knowledge/tools
+- Extract time segments for each major action
+- Document expected outcomes
+
+### CLAUSE LEVEL - Complete Learning Journey
+- Connect video to broader documentation
+- Link to related tutorials
+- Map feature relationships
+- Establish learning progression
+
+## Video-Specific Requirements:
+
+1. **Time-Based Structure**: Use video fragments (#t=start,end) to link HowTo steps to video segments
+2. **Transcript Integration**: Include transcript if available (improves accessibility & SEO)
+3. **Visual Metadata**: Thumbnail URLs, screenshot URLs
+4. **Duration**: Precise video duration in ISO 8601 format (PT5M30S)
+5. **Interaction Data**: View counts, engagement metrics if available
+6. **Accessibility**: Captions, transcripts, audio description mentions
+7. **Video Platform**: Specify if YouTube, Vimeo, self-hosted
+8. **Embedding**: Provide embedUrl for player integration
+
+## Support Documentation Best Practices:
+
+1. **Link Everything**: Video → HowTo → FAQ → LearningResource → Article
+2. **Progressive Disclosure**: Structure from overview to detailed steps
+3. **Prerequisite Chain**: Specify required knowledge and tools
+4. **Outcome Focus**: Emphasize what users will learn/achieve
+5. **Troubleshooting**: Include common issues in FAQ
+6. **Series Context**: Show how this video fits in documentation series
+7. **Multi-format**: Support both video learners and text readers
+8. **Search Optimization**: Rich metadata for video SEO
+
+## Special Considerations:
+
+- If video has chapters/sections, map to HowTo steps
+- If demonstrating software, include SoftwareApplication schema
+- If part of certification/training, add Course schema
+- If user-generated or tutorial, add appropriate creator info
+- Link to related documentation pages
+- Include calls-to-action (install app, try feature)
+
+## Content Extraction Strategy:
+
+Even if page has minimal text:
+1. Extract all information from page title
+2. Infer steps from video context
+3. Generate comprehensive HowTo from video purpose
+4. Create logical FAQ based on topic
+5. Define terms used in video title/description
+6. Estimate video duration and structure
+
+URL: ${input.url}
+Title: ${input.title}
+Category: ${input.category || 'Support Documentation'}
+
+CONTENT:
+${plainText}
+
+Return ONLY a valid JSON-LD with @graph array including VideoObject, TechArticle, HowTo, LearningResource, FAQPage, and all supporting schema types.`;
+  }
+  
+  // Check for homepage
   if (isHomepage(input)) {
     return `You are an advanced schema markup generator for HOMEPAGE/LANDING pages based on US Patent 9152623B2.
 
@@ -341,9 +490,8 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
   
   console.log('🆕 Generating new schema (not in cache or content changed)');
   
-  // For homepage, tool pages, and blog posts, use direct JSON-LD generation
-  // Use direct JSON-LD generation for homepage, tool pages, and blog posts
-  if (isHomepage(input) || isToolPage(input) || isBlogPost(input)) {
+  // Use direct JSON-LD generation for homepage, tool pages, blog posts, and support docs
+  if (isHomepage(input) || isToolPage(input) || isBlogPost(input) || isSupportDocsPage(input)) {
     const claude = getClaudeAPI();
     
     if (!claude.isConfigured()) {
