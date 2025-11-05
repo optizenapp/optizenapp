@@ -195,7 +195,7 @@ export default async function BlogPost({ params }: PageProps) {
             {/* Title */}
             <h1 
               className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight"
-              dangerouslySetInnerHTML={{ __html: processContent(post.title.rendered) }}
+              dangerouslySetInnerHTML={{ __html: post.title.rendered }}
             />
 
             {/* Meta Info */}

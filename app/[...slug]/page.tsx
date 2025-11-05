@@ -269,7 +269,7 @@ export default async function Page({ params }: PageProps) {
                   prose-th:!text-gray-900
                   prose-td:!text-gray-900
                   [&_*]:!text-gray-900"
-                dangerouslySetInnerHTML={{ __html: processContent(page.content.rendered) }}
+                dangerouslySetInnerHTML={{ __html: page.content.rendered }}
               />
             </article>
           </div>
