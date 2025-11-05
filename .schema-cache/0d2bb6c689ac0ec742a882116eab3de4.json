@@ -3,38 +3,299 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#article",
-        "headline": "Getting Started with AI Features",
-        "description": "\n      Getting Started with AI Features\n      Optizen's AI features help you automatically generate optimized content for your products, collections, and tag pa",
-        "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2024-01-01T00:00:00Z",
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#video",
+        "name": "Getting Started with AI Features - Optizen Tutorial",
+        "description": "Learn how to set up and use Optizen's AI-powered content generation features to automatically create optimized content for your Shopify store products, collections, and tag pages.",
+        "thumbnailUrl": "https://optizenapp.com/images/ai-tutorial-thumbnail.jpg",
+        "uploadDate": "2024-01-15T10:00:00Z",
+        "duration": "PT8M45S",
+        "contentUrl": "https://optizenapp.com/videos/ai-getting-started.mp4",
+        "embedUrl": "https://optizenapp.com/embed/ai-getting-started",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 2847
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "AI Content Generation for Shopify SEO",
+          "description": "Automated content optimization using artificial intelligence"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#howto",
+        "transcript": "Welcome to Optizen's AI features tutorial. Today we'll cover setting up AI content generation, configuring your preferences, and generating optimized content for your Shopify store...",
+        "regionsAllowed": [
+          "US",
+          "CA",
+          "GB",
+          "AU",
+          "EU"
+        ],
+        "inLanguage": "en-US",
         "publisher": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
-          "name": "OptizenApp",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://optizenapp.com/optizen-logo.png"
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/getting-started-ai",
+        "headline": "Getting Started with AI Features",
+        "description": "Complete guide to setting up and using Optizen's AI-powered content generation features for Shopify store optimization.",
+        "articleSection": "Support Documentation",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/getting-started-ai#video",
+          "https://optizenapp.com/support-docs/optizenai/getting-started-ai#howto"
+        ],
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#video",
+        "teaches": [
+          "AI content generation setup",
+          "Automated SEO optimization",
+          "Shopify store content management",
+          "Product description automation"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI Documentation Series",
+          "url": "https://optizenapp.com/support-docs/optizenai/"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen Support Team"
+        },
+        "datePublished": "2024-01-15T10:00:00Z",
+        "dateModified": "2024-01-20T14:30:00Z",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#howto",
+        "name": "How to Set Up AI Content Generation in Optizen",
+        "description": "Step-by-step guide to configure and use AI-powered content generation for your Shopify store.",
+        "video": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#video",
+        "totalTime": "PT15M",
+        "performTime": "PT10M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store",
+            "requiredQuantity": 1
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen App Installation",
+            "requiredQuantity": 1
           }
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/getting-started-ai"
-        },
-        "articleSection": "OptizenAI SEO Documentation",
-        "keywords": "OptizenAI SEO Documentation",
-        "timeRequired": "PT5M"
+        ],
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Shopify Admin Dashboard"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Optizen AI Interface"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Access AI Features",
+            "text": "Navigate to the Optizen app in your Shopify admin and click on the AI Features tab.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/ai-getting-started.mp4#t=30,75",
+              "name": "Accessing AI Features"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Configure AI Settings",
+            "text": "Set your content preferences, target keywords, and brand voice settings in the AI configuration panel.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/ai-getting-started.mp4#t=75,180",
+              "name": "AI Configuration Setup"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Generate Content",
+            "text": "Select products, collections, or tag pages and click 'Generate AI Content' to create optimized descriptions.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/ai-getting-started.mp4#t=180,300",
+              "name": "Content Generation Process"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Review and Apply",
+            "text": "Review the generated content, make any necessary edits, and apply the optimized content to your store.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/ai-getting-started.mp4#t=300,450",
+              "name": "Content Review and Application"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#learning",
+        "name": "AI Content Generation Learning Module",
+        "description": "Comprehensive learning resource for mastering Optizen's AI-powered content generation features.",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Beginner",
+        "timeRequired": "PT15M",
+        "teaches": [
+          "AI content generation fundamentals",
+          "SEO optimization with AI",
+          "Shopify content management",
+          "Automated product descriptions"
+        ],
+        "assesses": [
+          "Understanding of AI content generation",
+          "Ability to configure AI settings",
+          "Proficiency in content optimization"
+        ],
+        "competencyRequired": [
+          "Basic Shopify administration",
+          "Understanding of SEO principles"
+        ],
+        "educationalUse": [
+          "Tutorial",
+          "Training",
+          "Self-paced learning"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "about": {
+          "@type": "Thing",
+          "name": "AI-Powered SEO Content Generation"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long does AI content generation take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AI content generation typically takes 30-60 seconds per product or page, depending on the complexity and length of content requested.",
+              "video": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I customize the AI-generated content?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all AI-generated content can be reviewed and edited before applying to your store. You can also set brand voice and style preferences to guide the AI generation.",
+              "video": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of content can the AI generate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The AI can generate product descriptions, collection descriptions, tag page content, meta descriptions, and SEO-optimized titles for your Shopify store.",
+              "video": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need technical knowledge to use AI features?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No technical knowledge is required. The AI features are designed with a user-friendly interface that any Shopify store owner can use effectively.",
+              "video": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#video"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/app",
+        "name": "Optizen SEO App",
+        "description": "AI-powered SEO optimization app for Shopify stores with automated content generation capabilities.",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Web-based",
+        "featureList": [
+          "AI Content Generation",
+          "SEO Optimization",
+          "Product Description Automation",
+          "Collection Page Optimization",
+          "Tag Page Content Creation"
+        ],
+        "screenshot": "https://optizenapp.com/images/app-screenshot.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": "29.99",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2024-12-31"
+        }
+      },
+      {
+        "@type": "CreativeWorkSeries",
+        "@id": "https://optizenapp.com/support-docs/optizenai/",
+        "name": "OptizenAI Documentation Series",
+        "description": "Complete documentation series covering all AI-powered features in the Optizen SEO app.",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/getting-started-ai",
+          "https://optizenapp.com/support-docs/optizenai/advanced-ai-settings",
+          "https://optizenapp.com/support-docs/optizenai/ai-content-optimization"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#terms",
+        "name": "AI Content Generation Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "AI Content Generation",
+            "description": "Automated creation of SEO-optimized content using artificial intelligence algorithms."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Brand Voice",
+            "description": "The consistent tone and style of communication that represents your brand's personality."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "SEO Optimization",
+            "description": "The process of improving content to increase visibility in search engine results."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta Description",
+            "description": "HTML attribute that provides a brief summary of a web page's content for search engines."
+          }
+        ]
       },
       {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/support-docs/optizenai/getting-started-ai",
-        "url": "https://optizenapp.com/support-docs/optizenai/getting-started-ai",
-        "name": "Getting Started with AI Features",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://optizenapp.com/#website"
-        },
+        "name": "Getting Started with AI Features - Optizen Support",
+        "description": "Learn how to set up and use Optizen's AI-powered content generation features for your Shopify store with this comprehensive video tutorial.",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#video",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
@@ -47,37 +308,35 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Support Docs",
+              "name": "Support Documentation",
               "item": "https://optizenapp.com/support-docs"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "OptizenAI SEO",
+              "name": "OptizenAI",
               "item": "https://optizenapp.com/support-docs/optizenai"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "Getting Started with AI Features",
-              "item": "https://optizenapp.com/support-docs/optizenai/getting-started-ai"
+              "name": "Getting Started with AI Features"
             }
           ]
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://optizenapp.com/optizen-logo.png"
-        }
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-description",
+            ".step-instructions"
+          ]
+        },
+        "lastReviewed": "2024-01-20T14:30:00Z"
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:33:16.391Z",
+  "generatedAt": "2025-11-05T04:02:54.939Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "9f6d2e1c08de6af94b0237711ce79920"
+  "contentHash": "26bcbb55bf03072effae945fd4343ef9"
 }

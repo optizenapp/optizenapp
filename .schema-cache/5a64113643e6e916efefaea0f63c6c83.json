@@ -3,81 +3,356 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections#article",
-        "headline": "Importing Collections",
-        "description": "\n      Importing Collections via CSV\n      Bulk update your collections by importing a CSV file. This is perfect for large-scale content updates or migrating fr",
-        "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2024-01-01T00:00:00Z",
-        "publisher": {
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections#video",
+        "name": "Importing Collections via CSV - Optizen Tutorial",
+        "description": "Learn how to bulk update your collections by importing a CSV file into Shopify using Optizen. Perfect for large-scale content updates or migrating from another platform.",
+        "thumbnailUrl": "https://optizenapp.com/images/tutorials/importing-collections-thumbnail.jpg",
+        "uploadDate": "2024-01-15",
+        "duration": "PT8M45S",
+        "contentUrl": "https://optizenapp.com/videos/importing-collections.mp4",
+        "embedUrl": "https://optizenapp.com/embed/importing-collections",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 1247
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "CSV Collection Import Process",
+          "description": "Bulk importing collection data into Shopify using CSV files"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/importing-collections#howto",
+        "transcript": "In this tutorial, we'll walk through the process of importing collections via CSV. First, prepare your CSV file with the correct format including collection handle, title, description, and SEO fields. Then navigate to the Optizen dashboard, select the import function, and upload your file. The system will validate your data and show a preview before importing.",
+        "regionsAllowed": [
+          "US",
+          "CA",
+          "GB",
+          "AU",
+          "EU"
+        ],
+        "inLanguage": "en-US",
+        "creator": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
-          "name": "OptizenApp",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://optizenapp.com/optizen-logo.png"
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections",
+        "headline": "Importing Collections via CSV - Optizen Support Documentation",
+        "description": "Complete guide to bulk updating collections by importing CSV files into Shopify using Optizen. Includes CSV format requirements and step-by-step import process.",
+        "articleSection": "Support Documentation",
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen Support Team",
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-15",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/importing-collections#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/importing-collections#video",
+          "https://optizenapp.com/support-docs/optizenai/importing-collections#howto",
+          "https://optizenapp.com/support-docs/optizenai/importing-collections#faq"
+        ],
+        "teaches": [
+          "CSV file format for collection imports",
+          "Bulk collection update procedures",
+          "Data migration from other platforms",
+          "Optizen import functionality"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI Documentation Series",
+          "url": "https://optizenapp.com/support-docs/optizenai/"
+        },
+        "about": {
+          "@type": "SoftwareApplication",
+          "name": "Optizen",
+          "applicationCategory": "SEO Tool"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections#howto",
+        "name": "How to Import Collections via CSV in Optizen",
+        "description": "Step-by-step process for bulk importing collection data using CSV files",
+        "image": "https://optizenapp.com/images/tutorials/csv-import-process.jpg",
+        "totalTime": "PT15M",
+        "performTime": "PT10M",
+        "prepTime": "PT5M",
+        "video": "https://optizenapp.com/support-docs/optizenai/importing-collections#video",
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "CSV file with collection data"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Optizen dashboard access"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Shopify store connection"
           }
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections"
-        },
-        "articleSection": "OptizenAI SEO Documentation",
-        "keywords": "OptizenAI SEO Documentation",
-        "timeRequired": "PT5M"
+        ],
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Collection data in proper CSV format"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Prepare CSV File",
+            "text": "Create or format your CSV file with required columns: handle, title, description, meta_title, meta_description, and other collection fields.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/importing-collections.mp4#t=0,120",
+              "name": "CSV File Preparation"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Access Import Function",
+            "text": "Navigate to your Optizen dashboard and locate the Collections section. Click on the Import button to access the CSV upload interface.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/importing-collections.mp4#t=120,240",
+              "name": "Accessing Import Function"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Upload CSV File",
+            "text": "Select your prepared CSV file and upload it to the system. The platform will automatically validate the file format and data structure.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/importing-collections.mp4#t=240,360",
+              "name": "CSV File Upload"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Review and Confirm",
+            "text": "Review the import preview showing how many collections will be created or updated. Confirm the import to begin processing your data.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/importing-collections.mp4#t=360,480",
+              "name": "Import Review and Confirmation"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Monitor Import Progress",
+            "text": "Track the import progress and review any error messages. Once complete, verify that your collections have been successfully imported into Shopify.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/importing-collections.mp4#t=480,525",
+              "name": "Import Progress Monitoring"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections#learning",
+        "name": "CSV Collection Import Training",
+        "description": "Educational resource for learning bulk collection import processes in Optizen",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Intermediate",
+        "timeRequired": "PT15M",
+        "teaches": [
+          "CSV file formatting for collections",
+          "Bulk data import procedures",
+          "Platform migration techniques",
+          "Error handling and troubleshooting"
+        ],
+        "assesses": [
+          "Ability to format CSV files correctly",
+          "Understanding of import validation process",
+          "Troubleshooting import errors"
+        ],
+        "competencyRequired": [
+          "Basic understanding of CSV files",
+          "Familiarity with Shopify collections",
+          "Access to Optizen dashboard"
+        ],
+        "educationalUse": [
+          "Tutorial",
+          "Training",
+          "Reference"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "video": "https://optizenapp.com/support-docs/optizenai/importing-collections#video"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What CSV format is required for importing collections?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The CSV file should include columns for handle, title, description, meta_title, meta_description, and any custom fields. The first row should contain column headers, and each subsequent row represents a collection.",
+              "video": "https://optizenapp.com/support-docs/optizenai/importing-collections#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many collections can I import at once?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can import up to 1000 collections in a single CSV file. For larger imports, split your data into multiple files and import them sequentially."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if there are errors in my CSV file?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The system will validate your CSV and show any errors before importing. Common issues include missing required fields, invalid handles, or formatting problems. You can fix these issues and re-upload the corrected file."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I update existing collections with CSV import?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, if a collection with the same handle already exists, the import will update that collection with the new data from your CSV file."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does the import process take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Import time depends on the number of collections and data complexity. Typically, 100 collections take 2-3 minutes to process. You'll see a progress indicator during the import."
+            }
+          }
+        ]
       },
       {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections",
+        "name": "Importing Collections - Optizen Support",
+        "description": "Learn how to bulk import collections via CSV in Optizen for efficient content management and platform migration",
         "url": "https://optizenapp.com/support-docs/optizenai/importing-collections",
-        "name": "Importing Collections",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://optizenapp.com/#website"
-        },
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/importing-collections#video",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Home",
-              "item": "https://optizenapp.com"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Support Docs",
+              "name": "Support",
               "item": "https://optizenapp.com/support-docs"
             },
             {
               "@type": "ListItem",
-              "position": 3,
-              "name": "OptizenAI SEO",
+              "position": 2,
+              "name": "OptizenAI",
               "item": "https://optizenapp.com/support-docs/optizenai"
             },
             {
               "@type": "ListItem",
-              "position": 4,
+              "position": 3,
               "name": "Importing Collections",
               "item": "https://optizenapp.com/support-docs/optizenai/importing-collections"
             }
           ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".tutorial-description",
+            ".key-steps"
+          ]
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
         }
       },
       {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenApp",
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/app",
+        "name": "Optizen",
+        "description": "AI-powered SEO optimization tool for Shopify stores",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Web Browser",
+        "featureList": [
+          "CSV Collection Import",
+          "Bulk Content Updates",
+          "SEO Optimization",
+          "Data Migration Tools"
+        ],
+        "screenshot": "https://optizenapp.com/images/app-screenshot.jpg",
         "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://optizenapp.com/optizen-logo.png"
+        "provider": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
         }
+      },
+      {
+        "@type": "CreativeWorkSeries",
+        "@id": "https://optizenapp.com/support-docs/optizenai/",
+        "name": "OptizenAI Documentation Series",
+        "description": "Comprehensive video tutorials and guides for using OptizenAI features",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/importing-collections",
+          "https://optizenapp.com/support-docs/optizenai/exporting-data",
+          "https://optizenapp.com/support-docs/optizenai/seo-optimization"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-collections#terms",
+        "name": "Collection Import Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "CSV",
+            "description": "Comma-Separated Values file format used for importing structured data"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Collection Handle",
+            "description": "Unique identifier for a collection, used in URLs and system references"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Bulk Import",
+            "description": "Process of importing multiple records simultaneously using a single file"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta Title",
+            "description": "SEO title tag that appears in search engine results"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta Description",
+            "description": "SEO description that appears in search engine result snippets"
+          }
+        ]
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:51:37.007Z",
+  "generatedAt": "2025-11-05T04:13:54.281Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "a03b2f1e4d6e3b2f5ce3c863cc568ff9"
+  "contentHash": "e7485d3d263759af5c72494f0f7112e0"
 }

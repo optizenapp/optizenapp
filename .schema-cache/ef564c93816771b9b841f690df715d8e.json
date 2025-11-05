@@ -3,81 +3,342 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#article",
-        "headline": "Why Upgrade to Enterprise?",
-        "description": "\n      Why Upgrade to Optizen Enterprise?\n      Optizen Enterprise includes advanced features designed for large stores and agencies managing multiple Shopify s",
-        "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2024-01-01T00:00:00Z",
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#video",
+        "name": "Why Upgrade to Optizen Enterprise? - Advanced SEO Features for Large Stores",
+        "description": "Learn about Optizen Enterprise's advanced features designed for large stores and agencies managing multiple Shopify stores. Discover exclusive Enterprise features and how they can help scale your SEO efforts.",
+        "thumbnailUrl": "https://optizenapp.com/images/enterprise-upgrade-thumbnail.jpg",
+        "uploadDate": "2024-01-15",
+        "duration": "PT8M45S",
+        "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4",
+        "embedUrl": "https://optizenapp.com/embed/enterprise-upgrade-guide",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 2847
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Optizen Enterprise Features",
+          "description": "Advanced SEO features for large Shopify stores and agencies"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#howto",
+        "transcript": "In this video, we'll explore why upgrading to Optizen Enterprise is essential for large stores and agencies. We'll cover multi-store management, advanced analytics, bulk operations, priority support, and exclusive enterprise-only features that can transform your SEO strategy.",
+        "regionsAllowed": [
+          "US",
+          "CA",
+          "GB",
+          "AU",
+          "EU"
+        ],
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "educationalUse": [
+          "instruction",
+          "professional development"
+        ],
+        "learningResourceType": "video tutorial"
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise",
+        "headline": "Why Upgrade to Optizen Enterprise? - Advanced SEO Features Guide",
+        "description": "Comprehensive guide to Optizen Enterprise features designed for large stores and agencies managing multiple Shopify stores. Learn about exclusive Enterprise features and scaling SEO efforts.",
+        "articleSection": "Support Documentation",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#video",
+          "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#howto",
+          "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#faq"
+        ],
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#video",
+        "teaches": [
+          "Enterprise feature comparison",
+          "Multi-store management capabilities",
+          "Advanced SEO analytics",
+          "Bulk operation workflows",
+          "Agency management tools"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI SEO Documentation Series",
+          "url": "https://optizenapp.com/support-docs/optizenai/"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
-          "name": "OptizenApp",
+          "name": "Optizen",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://optizenapp.com/optizen-logo.png"
+            "url": "https://optizenapp.com/images/optizen-logo.png"
           }
         },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise"
-        },
-        "articleSection": "OptizenAI SEO Documentation",
-        "keywords": "OptizenAI SEO Documentation",
-        "timeRequired": "PT5M"
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-15",
+        "url": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#howto",
+        "name": "How to Evaluate and Upgrade to Optizen Enterprise",
+        "description": "Step-by-step guide to understanding Enterprise features and upgrading your Optizen account for large-scale SEO management.",
+        "video": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#video",
+        "totalTime": "PT15M",
+        "performTime": "PT5M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Active Optizen Account"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Multiple Shopify Stores (for agencies)"
+          }
+        ],
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Optizen Dashboard"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Shopify Admin Access"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Review Current Plan Limitations",
+            "text": "Assess your current plan's limitations and identify bottlenecks in your SEO workflow.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=0,90"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Explore Enterprise Features",
+            "text": "Learn about multi-store management, advanced analytics, bulk operations, and priority support features.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=90,240"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Calculate ROI and Scaling Benefits",
+            "text": "Understand how Enterprise features can improve efficiency and ROI for large stores and agencies.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=240,390"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Compare Pricing and Value",
+            "text": "Review Enterprise pricing structure and compare value proposition against current plan costs.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=390,480"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Initiate Enterprise Upgrade",
+            "text": "Contact sales team or use upgrade interface to transition to Enterprise plan with migration support.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=480,525"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#learning",
+        "name": "Optizen Enterprise Features and Benefits",
+        "description": "Educational resource covering advanced SEO features for large-scale Shopify store management and agency operations.",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Intermediate",
+        "timeRequired": "PT8M45S",
+        "teaches": [
+          "Enterprise feature comparison and benefits",
+          "Multi-store management workflows",
+          "Advanced SEO analytics and reporting",
+          "Bulk operation capabilities",
+          "Agency client management tools",
+          "Priority support advantages"
+        ],
+        "assesses": [
+          "Understanding of current plan limitations",
+          "Knowledge of scaling requirements",
+          "ROI calculation for Enterprise features"
+        ],
+        "competencyRequired": [
+          "Basic Optizen platform knowledge",
+          "Understanding of SEO fundamentals",
+          "Experience with Shopify store management"
+        ],
+        "educationalUse": [
+          "instruction",
+          "professional development",
+          "business planning"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "about": {
+          "@type": "SoftwareApplication",
+          "name": "Optizen Enterprise",
+          "applicationCategory": "SEO Software"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are the main differences between standard and Enterprise plans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Enterprise includes multi-store management, advanced analytics, bulk operations, priority support, custom integrations, and dedicated account management. Watch our comparison video for detailed feature breakdown.",
+              "video": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many stores can I manage with Enterprise?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Enterprise supports unlimited store connections with centralized management dashboard, perfect for agencies managing multiple client stores or businesses with multiple brands."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a minimum commitment for Enterprise plans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Enterprise plans typically require annual commitments with custom pricing based on store count and feature requirements. Contact our sales team for specific terms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I migrate my existing data to Enterprise?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all existing SEO data, settings, and configurations are automatically migrated during the Enterprise upgrade process with zero downtime."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What kind of support comes with Enterprise?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Enterprise includes priority support with dedicated account management, phone support, custom onboarding, and direct access to our development team for feature requests."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/software/optizen-enterprise",
+        "name": "Optizen Enterprise",
+        "description": "Advanced SEO management platform for large Shopify stores and agencies with multi-store capabilities.",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Web-based",
+        "featureList": [
+          "Multi-store management",
+          "Advanced SEO analytics",
+          "Bulk operations",
+          "Priority support",
+          "Custom integrations",
+          "Dedicated account management",
+          "Advanced reporting",
+          "Team collaboration tools"
+        ],
+        "screenshot": "https://optizenapp.com/images/enterprise-dashboard-screenshot.jpg",
+        "offers": {
+          "@type": "Offer",
+          "category": "Enterprise Software",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "Custom",
+            "priceCurrency": "USD"
+          }
+        }
       },
       {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise",
         "url": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise",
-        "name": "Why Upgrade to Enterprise?",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://optizenapp.com/#website"
-        },
+        "name": "Why Upgrade to Enterprise? - Optizen Support",
+        "description": "Learn about Optizen Enterprise's advanced features for large stores and agencies. Discover exclusive Enterprise features and scaling benefits.",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#video",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Home",
-              "item": "https://optizenapp.com"
+              "name": "Support",
+              "item": "https://optizenapp.com/support-docs/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Support Docs",
-              "item": "https://optizenapp.com/support-docs"
+              "name": "OptizenAI",
+              "item": "https://optizenapp.com/support-docs/optizenai/"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "OptizenAI SEO",
-              "item": "https://optizenapp.com/support-docs/optizenai"
-            },
-            {
-              "@type": "ListItem",
-              "position": 4,
-              "name": "Why Upgrade to Enterprise?",
+              "name": "Upgrade to Enterprise",
               "item": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise"
             }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-description",
+            ".enterprise-benefits"
           ]
         }
       },
       {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://optizenapp.com/optizen-logo.png"
-        }
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#terms",
+        "name": "Enterprise SEO Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Multi-store Management",
+            "description": "Capability to manage SEO across multiple Shopify stores from a single dashboard interface."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Bulk Operations",
+            "description": "Feature allowing simultaneous SEO changes across multiple products, pages, or stores."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Advanced Analytics",
+            "description": "Enhanced reporting and data analysis tools beyond standard plan metrics."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Priority Support",
+            "description": "Expedited customer service with dedicated account management and phone support."
+          }
+        ]
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:53:00.528Z",
+  "generatedAt": "2025-11-05T04:16:07.628Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "15313e4e9a5b405e33d9cd9c2c999117"
+  "contentHash": "55b94076f30a1974a4bb1f841ce7bd74"
 }

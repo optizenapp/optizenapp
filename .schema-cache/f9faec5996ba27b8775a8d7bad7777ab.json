@@ -3,38 +3,274 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/exporting-collections#article",
-        "headline": "Exporting Collections",
-        "description": "\n      Exporting Shopify Collections\n      Export your collection data for backup, bulk editing, or migration purposes. Optizen makes it easy to export all your",
-        "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2024-01-01T00:00:00Z",
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/exporting-collections#video",
+        "name": "How to Export Shopify Collections in OptizenAI",
+        "description": "Learn how to export your Shopify collection data for backup, bulk editing, or migration purposes using OptizenAI. This tutorial covers the complete export process and explains what data is included in the CSV export file.",
+        "thumbnailUrl": "https://optizenapp.com/images/tutorials/export-collections-thumbnail.jpg",
+        "uploadDate": "2024-01-15T10:00:00Z",
+        "duration": "PT4M30S",
+        "contentUrl": "https://optizenapp.com/videos/export-collections-tutorial.mp4",
+        "embedUrl": "https://optizenapp.com/embed/export-collections",
+        "about": {
+          "@type": "Thing",
+          "name": "Shopify Collection Export Process",
+          "description": "Data export functionality for Shopify collections"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/exporting-collections#howto",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 1247
+        },
+        "regionsAllowed": "US,CA,GB,AU,EU",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "learningResourceType": "Video Tutorial",
+        "educationalUse": [
+          "instruction",
+          "tutorial",
+          "reference"
+        ]
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/exporting-collections",
+        "headline": "Exporting Collections - OptizenAI Documentation",
+        "description": "Complete guide to exporting Shopify collection data using OptizenAI. Learn the export process, data formats, and use cases for collection exports including backup, bulk editing, and migration.",
+        "articleSection": "Support Documentation",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/exporting-collections#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/exporting-collections#video",
+          "https://optizenapp.com/support-docs/optizenai/exporting-collections#howto",
+          "https://optizenapp.com/support-docs/optizenai/exporting-collections#faq"
+        ],
+        "teaches": [
+          "How to export Shopify collections to CSV",
+          "Understanding collection export data structure",
+          "Using exported data for backup and migration",
+          "Bulk editing collection data workflows"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI Documentation Series",
+          "url": "https://optizenapp.com/support-docs/optizenai/"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2024-01-15T10:00:00Z",
+        "dateModified": "2024-01-15T10:00:00Z",
         "publisher": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
           "name": "OptizenApp",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://optizenapp.com/optizen-logo.png"
+            "url": "https://optizenapp.com/logo.png"
           }
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/exporting-collections"
-        },
-        "articleSection": "OptizenAI SEO Documentation",
-        "keywords": "OptizenAI SEO Documentation",
-        "timeRequired": "PT5M"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/exporting-collections#howto",
+        "name": "How to Export Shopify Collections in OptizenAI",
+        "description": "Step-by-step instructions for exporting your Shopify collection data to CSV format using OptizenAI's export functionality.",
+        "video": "https://optizenapp.com/support-docs/optizenai/exporting-collections#video",
+        "totalTime": "PT5M",
+        "performTime": "PT3M",
+        "supply": [
+          {
+            "@type": "Thing",
+            "name": "OptizenAI Account",
+            "description": "Active OptizenAI subscription with collection access"
+          },
+          {
+            "@type": "Thing",
+            "name": "Shopify Store",
+            "description": "Connected Shopify store with collections"
+          }
+        ],
+        "tool": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "OptizenAI Dashboard",
+            "applicationCategory": "SEO Tool",
+            "operatingSystem": "Web Browser"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Access Collections Dashboard",
+            "text": "Navigate to the Collections section in your OptizenAI dashboard",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/export-collections-tutorial.mp4#t=0,30",
+              "name": "Accessing Collections Dashboard"
+            },
+            "image": "https://optizenapp.com/images/steps/collections-dashboard.jpg"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Select Collections to Export",
+            "text": "Choose the specific collections you want to export or select all collections",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/export-collections-tutorial.mp4#t=30,90",
+              "name": "Selecting Collections"
+            },
+            "image": "https://optizenapp.com/images/steps/select-collections.jpg"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Click Export Button",
+            "text": "Click the Export button and choose CSV format for your collection data",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/export-collections-tutorial.mp4#t=90,150",
+              "name": "Initiating Export"
+            },
+            "image": "https://optizenapp.com/images/steps/export-button.jpg"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure Export Settings",
+            "text": "Select which data fields to include in your export file",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/export-collections-tutorial.mp4#t=150,210",
+              "name": "Export Configuration"
+            },
+            "image": "https://optizenapp.com/images/steps/export-settings.jpg"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Download Export File",
+            "text": "Download the generated CSV file containing your collection data",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/export-collections-tutorial.mp4#t=210,270",
+              "name": "Downloading Export"
+            },
+            "image": "https://optizenapp.com/images/steps/download-export.jpg"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/exporting-collections#learning",
+        "name": "Collection Export Learning Module",
+        "description": "Master the process of exporting Shopify collection data for various business purposes",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Beginner",
+        "timeRequired": "PT5M",
+        "teaches": [
+          "Collection export process in OptizenAI",
+          "CSV data format understanding",
+          "Export use cases and applications",
+          "Data backup best practices"
+        ],
+        "assesses": [
+          "Ability to export collection data",
+          "Understanding of export file structure",
+          "Knowledge of data backup procedures"
+        ],
+        "competencyRequired": [
+          "Basic OptizenAI navigation",
+          "Understanding of Shopify collections",
+          "File management skills"
+        ],
+        "educationalUse": [
+          "instruction",
+          "tutorial",
+          "reference",
+          "self-assessment"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "about": {
+          "@type": "Thing",
+          "name": "Shopify Collection Management",
+          "description": "Data export and management for e-commerce collections"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/exporting-collections#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What data is included in the collection export?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The collection export includes collection names, descriptions, SEO titles, meta descriptions, handles, product counts, and all associated metadata. You can customize which fields to include in your export.",
+              "video": "https://optizenapp.com/support-docs/optizenai/exporting-collections#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I export specific collections or must I export all?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can choose to export specific collections by selecting them individually, or export all collections at once. The selection interface allows for bulk selection and filtering options.",
+              "video": "https://optizenapp.com/support-docs/optizenai/exporting-collections#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What file formats are available for export?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Currently, OptizenAI supports CSV format for collection exports. This format is compatible with Excel, Google Sheets, and most data processing tools for easy manipulation and analysis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I use the exported collection data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Exported collection data can be used for backup purposes, bulk editing in spreadsheet applications, migration to other platforms, data analysis, and creating reports on your collection performance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a limit to how many collections I can export?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There are no artificial limits on the number of collections you can export. The system will export all selected collections regardless of quantity, though very large exports may take longer to process."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/software/optizenai",
+        "name": "OptizenAI",
+        "description": "Advanced SEO optimization tool for Shopify stores with collection management capabilities",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Web Browser",
+        "featureList": [
+          "Collection Export",
+          "CSV Data Export",
+          "Bulk Collection Management",
+          "SEO Optimization",
+          "Data Backup Tools"
+        ],
+        "screenshot": "https://optizenapp.com/images/optizenai-dashboard.jpg",
+        "url": "https://optizenapp.com",
+        "provider": {
+          "@type": "Organization",
+          "name": "OptizenApp"
+        }
       },
       {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/support-docs/optizenai/exporting-collections",
-        "url": "https://optizenapp.com/support-docs/optizenai/exporting-collections",
-        "name": "Exporting Collections",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://optizenapp.com/#website"
-        },
+        "name": "Exporting Collections - OptizenAI Support",
+        "description": "Learn how to export Shopify collection data using OptizenAI for backup, bulk editing, and migration purposes",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/exporting-collections#video",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
@@ -47,13 +283,13 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Support Docs",
+              "name": "Support Documentation",
               "item": "https://optizenapp.com/support-docs"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "OptizenAI SEO",
+              "name": "OptizenAI",
               "item": "https://optizenapp.com/support-docs/optizenai"
             },
             {
@@ -63,21 +299,51 @@
               "item": "https://optizenapp.com/support-docs/optizenai/exporting-collections"
             }
           ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-description",
+            ".step-instructions"
+          ]
         }
       },
       {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://optizenapp.com/optizen-logo.png"
-        }
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/exporting-collections#terms",
+        "name": "Collection Export Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Collection Export",
+            "description": "The process of extracting Shopify collection data into a downloadable file format for external use"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "CSV Format",
+            "description": "Comma-Separated Values file format that organizes data in rows and columns, compatible with spreadsheet applications"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Bulk Editing",
+            "description": "The process of making changes to multiple collections simultaneously using exported data"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Collection Handle",
+            "description": "The unique URL identifier for a Shopify collection, used in web addresses and API calls"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta Description",
+            "description": "HTML attribute providing a brief summary of collection content for search engines and social media"
+          }
+        ]
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:51:06.460Z",
+  "generatedAt": "2025-11-05T04:13:00.745Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "a88cbf04e5680d134d6ca5491266fb75"
+  "contentHash": "73534f43ac79f3163b0fd3e56547ee1f"
 }

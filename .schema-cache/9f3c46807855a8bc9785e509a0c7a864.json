@@ -3,57 +3,327 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#article",
-        "headline": "New AI Plan Options",
-        "description": "\n      New AI Plan for Existing Users\n      We've introduced new AI-powered features for existing Optizen users. Learn about the new plan options and how to upg",
-        "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2024-01-01T00:00:00Z",
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#video",
+        "name": "New AI Plan Options for Existing Optizen Users",
+        "description": "Learn about the new AI-powered features and plan options for existing Optizen users. This tutorial walks through the new AI features and demonstrates how they can help automate your SEO workflow.",
+        "thumbnailUrl": "https://optizenapp.com/images/ai-plan-options-thumbnail.jpg",
+        "uploadDate": "2024-01-15",
+        "duration": "PT8M45S",
+        "contentUrl": "https://optizenapp.com/videos/ai-plan-options.mp4",
+        "embedUrl": "https://optizenapp.com/embed/ai-plan-options",
+        "about": {
+          "@type": "Thing",
+          "name": "OptizenAI Plan Upgrade Process",
+          "description": "AI-powered SEO automation features and subscription management"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#howto",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 1247
+        },
+        "regionsAllowed": "US,CA,GB,AU,DE,FR,ES,IT,NL,SE,NO,DK,FI",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "learningResourceType": "Video Tutorial",
+        "educationalUse": [
+          "instruction",
+          "professional development"
+        ],
+        "audience": {
+          "@type": "EducationalAudience",
+          "educationalRole": "SEO Professional"
+        }
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options",
+        "headline": "New AI Plan Options - OptizenAI SEO Documentation",
+        "description": "Comprehensive guide to new AI-powered features for existing Optizen users, including plan options and upgrade process for automated SEO workflow enhancement.",
+        "articleSection": "Support Documentation",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#video",
+          "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#howto",
+          "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#faq"
+        ],
+        "teaches": [
+          "AI plan feature comparison",
+          "Account upgrade process",
+          "SEO workflow automation setup",
+          "AI-powered content optimization"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI Documentation Series",
+          "url": "https://optizenapp.com/support-docs/optizenai/"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
-          "name": "OptizenApp",
+          "name": "Optizen",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://optizenapp.com/optizen-logo.png"
+            "url": "https://optizenapp.com/logo.png"
           }
         },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options"
-        },
-        "articleSection": "OptizenAI SEO Documentation",
-        "keywords": "OptizenAI SEO Documentation",
-        "timeRequired": "PT5M"
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-15",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#howto",
+        "name": "How to Upgrade to New AI Plan Options in Optizen",
+        "description": "Step-by-step guide to explore and upgrade to new AI-powered features for automated SEO workflow enhancement.",
+        "video": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#video",
+        "totalTime": "PT15M",
+        "performTime": "PT10M",
+        "supply": [
+          {
+            "@type": "Thing",
+            "name": "Active Optizen Account"
+          },
+          {
+            "@type": "Thing",
+            "name": "Valid Payment Method"
+          }
+        ],
+        "tool": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Optizen Dashboard",
+            "url": "https://app.optizenapp.com"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Access Account Settings",
+            "text": "Navigate to your Optizen dashboard and click on Account Settings to view current plan details.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/ai-plan-options.mp4#t=0,45",
+              "name": "Accessing Account Settings"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Review AI Plan Features",
+            "text": "Explore the new AI-powered features including automated content optimization, keyword research, and performance analytics.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/ai-plan-options.mp4#t=45,180",
+              "name": "AI Plan Features Overview"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Compare Plan Options",
+            "text": "Review different AI plan tiers and select the option that best fits your SEO automation needs and budget.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/ai-plan-options.mp4#t=180,300",
+              "name": "Plan Comparison Guide"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Initiate Upgrade Process",
+            "text": "Click the upgrade button for your chosen AI plan and follow the billing confirmation steps.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/ai-plan-options.mp4#t=300,420",
+              "name": "Plan Upgrade Process"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure AI Features",
+            "text": "Set up your AI-powered SEO automation preferences and integrate with your existing workflow.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/ai-plan-options.mp4#t=420,525",
+              "name": "AI Feature Configuration"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#learning",
+        "name": "OptizenAI Plan Upgrade Training",
+        "description": "Educational resource for understanding and implementing new AI-powered SEO features in Optizen platform.",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Intermediate",
+        "timeRequired": "PT15M",
+        "teaches": [
+          "AI plan feature evaluation",
+          "Subscription management",
+          "SEO automation setup",
+          "Workflow optimization"
+        ],
+        "assesses": [
+          "Plan selection decision-making",
+          "Feature configuration skills"
+        ],
+        "competencyRequired": [
+          "Basic Optizen platform knowledge",
+          "SEO fundamentals understanding"
+        ],
+        "educationalUse": [
+          "instruction",
+          "professional development",
+          "skill assessment"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "audience": {
+          "@type": "EducationalAudience",
+          "educationalRole": "SEO Professional"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are the new AI features included in the upgraded plans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The new AI plans include automated content optimization, intelligent keyword research, performance analytics with AI insights, and workflow automation tools. These features are demonstrated in detail in our tutorial video.",
+              "video": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can existing users upgrade to the AI plans without losing current data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all existing users can seamlessly upgrade to AI plans while retaining all current projects, data, and settings. The upgrade process is shown step-by-step in our tutorial video."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much do the new AI plan options cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AI plan pricing varies based on features and usage limits. Visit your account settings to view current pricing for your region and see detailed comparisons in our video guide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if I want to downgrade from an AI plan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can downgrade at any time through your account settings. AI-generated content and insights will remain accessible, but new AI features will be disabled until you upgrade again."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need technical knowledge to use the AI features?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No technical expertise required. The AI features are designed for easy use by SEO professionals of all skill levels. Our tutorial video shows the simple setup and configuration process."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/software",
+        "name": "Optizen SEO Platform",
+        "description": "Comprehensive SEO optimization platform with AI-powered automation features",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Web Browser",
+        "featureList": [
+          "AI-powered content optimization",
+          "Automated keyword research",
+          "Performance analytics",
+          "Workflow automation",
+          "SEO audit tools"
+        ],
+        "screenshot": "https://optizenapp.com/images/dashboard-screenshot.png",
+        "url": "https://app.optizenapp.com",
+        "offers": {
+          "@type": "Offer",
+          "category": "AI Plan Options",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "CreativeWorkSeries",
+        "@id": "https://optizenapp.com/support-docs/optizenai/",
+        "name": "OptizenAI Documentation Series",
+        "description": "Complete video tutorial series covering AI-powered SEO features and platform usage",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options",
+          "https://optizenapp.com/support-docs/optizenai/ai-content-optimization",
+          "https://optizenapp.com/support-docs/optizenai/automated-keyword-research"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#terms",
+        "name": "OptizenAI Plan Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "AI Plan",
+            "description": "Subscription tier that includes artificial intelligence-powered SEO automation features"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Content Optimization",
+            "description": "AI-driven process to improve content for search engine rankings and user engagement"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Workflow Automation",
+            "description": "Automated SEO processes that reduce manual tasks and improve efficiency"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Performance Analytics",
+            "description": "AI-enhanced reporting and insights for SEO campaign performance tracking"
+          }
+        ]
       },
       {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options",
-        "url": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options",
-        "name": "New AI Plan Options",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://optizenapp.com/#website"
-        },
+        "name": "New AI Plan Options - OptizenAI Support Documentation",
+        "description": "Learn about new AI-powered features and plan upgrade options for existing Optizen users with our comprehensive video tutorial.",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#video",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Home",
-              "item": "https://optizenapp.com"
+              "name": "Support",
+              "item": "https://optizenapp.com/support"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Support Docs",
+              "name": "Documentation",
               "item": "https://optizenapp.com/support-docs"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "OptizenAI SEO",
+              "name": "OptizenAI",
               "item": "https://optizenapp.com/support-docs/optizenai"
             },
             {
@@ -63,21 +333,20 @@
               "item": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options"
             }
           ]
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://optizenapp.com/optizen-logo.png"
-        }
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-description",
+            ".key-features"
+          ]
+        },
+        "inLanguage": "en-US"
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:45:44.475Z",
+  "generatedAt": "2025-11-05T04:03:50.766Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "cf4094781245b87925cdd96c82db0df2"
+  "contentHash": "dd008e10960d8c56201e4916f813b7db"
 }

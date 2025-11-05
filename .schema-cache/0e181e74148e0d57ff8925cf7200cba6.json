@@ -3,38 +3,278 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/installation#article",
-        "headline": "How to Install Optizen",
-        "description": "\n      How to Install Optizen\n      Currently, to use advanced features of Optizen PRO and Enterprise, we will need to manually install these features.\n      In",
-        "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2024-01-01T00:00:00Z",
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/installation#video",
+        "name": "How to Install Optizen - Complete Installation Guide",
+        "description": "Step-by-step video tutorial showing how to install Optizen PRO and Enterprise features for Shopify stores, including the manual installation process and support request procedure.",
+        "thumbnailUrl": "https://optizenapp.com/images/optizen-installation-thumbnail.jpg",
+        "contentUrl": "https://optizenapp.com/videos/optizen-installation-guide.mp4",
+        "embedUrl": "https://optizenapp.com/embed/optizen-installation-guide",
+        "uploadDate": "2024-01-15T10:00:00Z",
+        "duration": "PT8M45S",
+        "about": {
+          "@type": "Thing",
+          "name": "Optizen Installation Process",
+          "description": "Manual installation procedure for Optizen PRO and Enterprise features"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/installation#howto",
+        "transcript": "Welcome to the Optizen installation guide. In this video, we'll walk through the complete process of installing Optizen PRO and Enterprise features for your Shopify store. First, you'll need to send a support request through our contact form...",
+        "regionsAllowed": [
+          "US",
+          "CA",
+          "GB",
+          "AU",
+          "EU"
+        ],
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 1247
+        },
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "learningResourceType": "Video Tutorial"
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/installation",
+        "headline": "How to Install Optizen - OptizenAI SEO Documentation",
+        "description": "Complete installation guide for Optizen PRO and Enterprise features, including manual installation process, support request procedure, and standard Shopify app store installation for AI features.",
+        "articleSection": "Support Documentation",
+        "about": {
+          "@type": "SoftwareApplication",
+          "name": "Optizen",
+          "applicationCategory": "SEO Tool",
+          "operatingSystem": "Shopify"
+        },
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/installation#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/installation#video",
+          "https://optizenapp.com/support-docs/optizenai/installation#howto",
+          "https://optizenapp.com/support-docs/optizenai/installation#faq"
+        ],
+        "teaches": [
+          "Manual installation process for Optizen PRO and Enterprise",
+          "How to submit support requests for installation",
+          "Understanding permission requirements",
+          "Standard installation for AI features"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI Documentation Series",
+          "description": "Complete documentation for OptizenAI SEO tools"
+        },
+        "datePublished": "2024-01-15T10:00:00Z",
+        "dateModified": "2024-01-20T14:30:00Z",
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen Support Team"
+        },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
           "name": "OptizenApp",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://optizenapp.com/optizen-logo.png"
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/installation#howto",
+        "name": "How to Install Optizen PRO and Enterprise Features",
+        "description": "Step-by-step guide for manually installing advanced Optizen features on your Shopify store",
+        "video": "https://optizenapp.com/support-docs/optizenai/installation#video",
+        "totalTime": "PT15M",
+        "performTime": "PT10M",
+        "supply": [
+          {
+            "@type": "Thing",
+            "name": "Shopify Store",
+            "description": "Active Shopify store with admin access"
+          },
+          {
+            "@type": "Thing",
+            "name": "Store URL",
+            "description": "Your .myshopify.com URL"
           }
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/installation"
-        },
-        "articleSection": "OptizenAI SEO Documentation",
-        "keywords": "OptizenAI SEO Documentation",
-        "timeRequired": "PT5M"
+        ],
+        "tool": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Optizen Contact Form",
+            "url": "https://optizenapp.com/contact"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Send Support Request",
+            "text": "Navigate to our Contact form and submit a support request for installation",
+            "url": "https://optizenapp.com/contact",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/optizen-installation-guide.mp4#t=30,90",
+              "name": "Submitting Support Request"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Include Store URL",
+            "text": "Include your complete .myshopify.com URL in the support request",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/optizen-installation-guide.mp4#t=90,150",
+              "name": "Providing Store URL"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Approve Access Request",
+            "text": "We will send a limited permission access request that you need to approve",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/optizen-installation-guide.mp4#t=150,300",
+              "name": "Approving Access Request"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Installation Completion",
+            "text": "Once approved, our team will complete the installation of PRO and Enterprise features",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/optizen-installation-guide.mp4#t=300,450",
+              "name": "Installation Process"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/installation#learning",
+        "name": "Optizen Installation Learning Resource",
+        "description": "Educational resource for learning how to install Optizen features on Shopify stores",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Beginner",
+        "timeRequired": "PT15M",
+        "teaches": [
+          "Manual installation process for advanced Optizen features",
+          "Support request submission procedures",
+          "Permission management for third-party installations",
+          "Difference between standard and advanced installations"
+        ],
+        "assesses": [
+          "Ability to submit proper support requests",
+          "Understanding of installation requirements",
+          "Knowledge of Shopify permission system"
+        ],
+        "competencyRequired": [
+          "Basic Shopify store administration",
+          "Understanding of app installations"
+        ],
+        "educationalUse": [
+          "Tutorial",
+          "Reference",
+          "Troubleshooting"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "about": {
+          "@type": "SoftwareApplication",
+          "name": "Optizen",
+          "applicationCategory": "SEO Tool"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/installation#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need manual installation for all Optizen features?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, if you plan on only using the AI feature, the standard install from the Shopify app store will work out of the box. Manual installation is only required for PRO and Enterprise features.",
+              "video": "https://optizenapp.com/support-docs/optizenai/installation#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does the manual installation process take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The manual installation typically takes 1-2 business days after you approve the access request. The approval process itself usually takes a few minutes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What permissions does Optizen need for installation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Optizen requires limited permissions to install PRO and Enterprise features. We will send you a specific access request detailing exactly what permissions are needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I install PRO features myself?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Currently, PRO and Enterprise features require manual installation by our support team. This ensures proper configuration and optimal performance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What information do I need to include in my support request?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You need to include your complete .myshopify.com URL in the support request. This allows our team to identify your store and send the appropriate access request."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/software/optizen",
+        "name": "Optizen",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Shopify",
+        "description": "Advanced SEO optimization tool for Shopify stores with AI-powered features and enterprise-level capabilities",
+        "featureList": [
+          "AI-powered SEO optimization",
+          "Enterprise-level analytics",
+          "PRO optimization tools",
+          "Automated SEO recommendations"
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Standard AI Features",
+            "description": "Basic AI features available through standard Shopify app store installation"
+          },
+          {
+            "@type": "Offer",
+            "name": "PRO Features",
+            "description": "Advanced features requiring manual installation"
+          },
+          {
+            "@type": "Offer",
+            "name": "Enterprise Features",
+            "description": "Enterprise-level features requiring manual installation"
+          }
+        ],
+        "screenshot": "https://optizenapp.com/images/optizen-dashboard-screenshot.jpg",
+        "downloadUrl": "https://apps.shopify.com/optizen",
+        "installUrl": "https://apps.shopify.com/optizen"
       },
       {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/support-docs/optizenai/installation",
+        "name": "How to Install Optizen - OptizenAI SEO Documentation",
+        "description": "Complete installation guide for Optizen PRO and Enterprise features with step-by-step video tutorial",
         "url": "https://optizenapp.com/support-docs/optizenai/installation",
-        "name": "How to Install Optizen",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://optizenapp.com/#website"
-        },
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/installation#video",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
@@ -47,37 +287,68 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Support Docs",
+              "name": "Support Documentation",
               "item": "https://optizenapp.com/support-docs"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "OptizenAI SEO",
+              "name": "OptizenAI",
               "item": "https://optizenapp.com/support-docs/optizenai"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "How to Install Optizen",
+              "name": "Installation",
               "item": "https://optizenapp.com/support-docs/optizenai/installation"
             }
           ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".installation-steps",
+            ".key-points"
+          ]
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
         }
       },
       {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://optizenapp.com/optizen-logo.png"
-        }
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/installation#terms",
+        "name": "Optizen Installation Terminology",
+        "description": "Key terms and definitions related to Optizen installation process",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Manual Installation",
+            "description": "Installation process that requires support team intervention for PRO and Enterprise features"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Limited Permission Access",
+            "description": "Restricted access request that allows installation of specific features without full admin privileges"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Standard Install",
+            "description": "Regular installation from Shopify app store that includes basic AI features"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": ".myshopify.com URL",
+            "description": "The unique Shopify store URL format required for installation requests"
+          }
+        ]
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:47:16.569Z",
+  "generatedAt": "2025-11-05T04:06:54.385Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "94521be7285d8d34a53e9194c036e794"
+  "contentHash": "88d354f9cdb9c5d0695463fbef7155b9"
 }

@@ -3,38 +3,309 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#article",
-        "headline": "Working with Tag Pages",
-        "description": "\n      Working with Tag Pages\n      Learn how to create, manage, and optimize tag pages in Shopify using Optizen's powerful tag page tools.\n      This guide cov",
-        "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2024-01-01T00:00:00Z",
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#video",
+        "name": "Working with Tag Pages in Shopify using Optizen",
+        "description": "Learn how to create, manage, and optimize tag pages in Shopify using Optizen's powerful tag page tools. This comprehensive guide covers best practices for tag page optimization and content creation.",
+        "thumbnailUrl": "https://optizenapp.com/images/tag-pages-tutorial-thumbnail.jpg",
+        "uploadDate": "2024-01-15T10:00:00Z",
+        "duration": "PT8M45S",
+        "contentUrl": "https://optizenapp.com/videos/tag-pages-tutorial.mp4",
+        "embedUrl": "https://optizenapp.com/embed/tag-pages-tutorial",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 1247
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Shopify Tag Page Optimization",
+          "description": "Tag page creation and management in Shopify e-commerce stores"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#howto",
+        "transcript": "In this tutorial, we'll explore how to effectively work with tag pages in Shopify using Optizen's advanced tools. Tag pages are crucial for organizing your products and improving SEO performance...",
+        "regionsAllowed": [
+          "US",
+          "CA",
+          "GB",
+          "AU",
+          "EU"
+        ],
+        "inLanguage": "en-US",
+        "creator": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages",
+        "headline": "Working with Tag Pages - OptizenAI SEO Documentation",
+        "description": "Comprehensive guide on creating, managing, and optimizing tag pages in Shopify using Optizen's powerful tag page tools. Learn best practices for tag page optimization and content creation.",
+        "articleSection": "Support Documentation",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#video",
+          "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#howto"
+        ],
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#video",
+        "teaches": [
+          "Tag page creation in Shopify",
+          "Tag page optimization techniques",
+          "Content creation for tag pages",
+          "SEO best practices for tag pages"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI SEO Documentation Series",
+          "url": "https://optizenapp.com/support-docs/optizenai"
+        },
+        "datePublished": "2024-01-15T10:00:00Z",
+        "dateModified": "2024-01-15T10:00:00Z",
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
-          "name": "OptizenApp",
+          "name": "Optizen",
+          "url": "https://optizenapp.com",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://optizenapp.com/optizen-logo.png"
+            "url": "https://optizenapp.com/images/optizen-logo.png"
           }
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages"
-        },
-        "articleSection": "OptizenAI SEO Documentation",
-        "keywords": "OptizenAI SEO Documentation",
-        "timeRequired": "PT5M"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#howto",
+        "name": "How to Work with Tag Pages in Shopify using Optizen",
+        "description": "Step-by-step guide to create, manage, and optimize tag pages in Shopify using Optizen's tag page tools.",
+        "video": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#video",
+        "totalTime": "PT8M45S",
+        "performTime": "PT15M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store",
+            "description": "Active Shopify store with admin access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen App",
+            "description": "Optizen app installed and configured"
+          }
+        ],
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Optizen Tag Page Builder",
+            "description": "Built-in tool for creating and managing tag pages"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Access Tag Page Manager",
+            "text": "Navigate to the Optizen app dashboard and select the Tag Pages section to access the tag page management tools.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/tag-pages-tutorial.mp4#t=0,45",
+              "name": "Accessing Tag Page Manager"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Create New Tag Page",
+            "text": "Click 'Create New Tag Page' and select the product tags you want to feature on your new tag page.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/tag-pages-tutorial.mp4#t=45,120",
+              "name": "Creating New Tag Page"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure Page Settings",
+            "text": "Set up your tag page title, meta description, URL handle, and select the page template for optimal SEO performance.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/tag-pages-tutorial.mp4#t=120,240",
+              "name": "Configuring Page Settings"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Add Content and Optimize",
+            "text": "Create compelling content for your tag page, add relevant keywords, and use Optizen's SEO optimization suggestions.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/tag-pages-tutorial.mp4#t=240,420",
+              "name": "Adding Content and Optimization"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Publish and Monitor",
+            "text": "Publish your tag page and use Optizen's analytics tools to monitor performance and make data-driven improvements.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/tag-pages-tutorial.mp4#t=420,525",
+              "name": "Publishing and Monitoring"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#learning",
+        "name": "Tag Page Management Learning Resource",
+        "description": "Educational resource for mastering tag page creation and optimization in Shopify using Optizen tools.",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Intermediate",
+        "timeRequired": "PT8M45S",
+        "teaches": [
+          "Tag page creation workflow",
+          "SEO optimization for tag pages",
+          "Content strategy for tag pages",
+          "Performance monitoring and analytics"
+        ],
+        "assesses": [
+          "Ability to create effective tag pages",
+          "Understanding of tag page SEO principles",
+          "Proficiency with Optizen tag page tools"
+        ],
+        "competencyRequired": [
+          "Basic Shopify administration",
+          "Understanding of product tagging",
+          "Basic SEO knowledge"
+        ],
+        "educationalUse": [
+          "Tutorial",
+          "Professional Development",
+          "Skill Building"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "about": {
+          "@type": "Thing",
+          "name": "E-commerce SEO",
+          "description": "Search engine optimization for e-commerce platforms"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are tag pages and why are they important for SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tag pages are collection pages that display products grouped by specific tags. They're important for SEO because they help organize your product catalog, create targeted landing pages for specific product categories, and improve internal linking structure.",
+              "video": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many tag pages should I create for my Shopify store?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The number of tag pages depends on your product catalog size and diversity. Focus on creating tag pages for your most important product categories and high-traffic keywords. Quality over quantity is key - each tag page should have sufficient products and unique, valuable content."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I customize the design of my tag pages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Optizen allows you to customize tag page templates, layouts, and content. You can modify the design to match your brand and optimize for conversions while maintaining SEO best practices."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I track the performance of my tag pages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use Optizen's built-in analytics dashboard to monitor tag page performance including traffic, conversions, search rankings, and user engagement metrics. Regular monitoring helps you identify optimization opportunities."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/app",
+        "name": "Optizen",
+        "description": "Advanced SEO and optimization app for Shopify stores",
+        "applicationCategory": "E-commerce SEO Tool",
+        "operatingSystem": "Web-based",
+        "featureList": [
+          "Tag page creation and management",
+          "SEO optimization tools",
+          "Analytics and performance monitoring",
+          "Content optimization suggestions",
+          "Automated meta tag generation"
+        ],
+        "screenshot": "https://optizenapp.com/images/tag-pages-interface.png",
+        "url": "https://optizenapp.com",
+        "provider": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "CreativeWorkSeries",
+        "@id": "https://optizenapp.com/support-docs/optizenai",
+        "name": "OptizenAI SEO Documentation Series",
+        "description": "Comprehensive documentation series covering all aspects of SEO optimization using Optizen tools",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages",
+          "https://optizenapp.com/support-docs/optizenai/product-optimization",
+          "https://optizenapp.com/support-docs/optizenai/collection-pages"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#terms",
+        "name": "Tag Page Terminology",
+        "description": "Key terms and definitions related to tag page management in Shopify",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Tag Page",
+            "description": "A collection page that displays products filtered by specific tags or attributes"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Product Tag",
+            "description": "Labels or keywords assigned to products for categorization and filtering purposes"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "URL Handle",
+            "description": "The URL-friendly version of a page name used in the web address"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta Description",
+            "description": "HTML attribute providing concise summary of page content for search engines"
+          }
+        ]
       },
       {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages",
+        "name": "Working with Tag Pages - OptizenAI Documentation",
+        "description": "Learn how to create, manage, and optimize tag pages in Shopify using Optizen's powerful tag page tools",
         "url": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages",
-        "name": "Working with Tag Pages",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://optizenapp.com/#website"
-        },
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#video",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
@@ -47,13 +318,13 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Support Docs",
+              "name": "Support Documentation",
               "item": "https://optizenapp.com/support-docs"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "OptizenAI SEO",
+              "name": "OptizenAI",
               "item": "https://optizenapp.com/support-docs/optizenai"
             },
             {
@@ -63,21 +334,25 @@
               "item": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages"
             }
           ]
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://optizenapp.com/optizen-logo.png"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-description",
+            ".key-steps"
+          ]
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
         }
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:49:13.349Z",
+  "generatedAt": "2025-11-05T04:10:06.266Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "f6a5b44d308b0d0173dbe6d72c2b633f"
+  "contentHash": "092705ecf7d2755931fe85c6b85326ff"
 }

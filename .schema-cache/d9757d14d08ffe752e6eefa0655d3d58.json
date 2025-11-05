@@ -3,38 +3,270 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#article",
-        "headline": "Using Smart Tag Filters",
-        "description": "\n      Using Smart Tag Filters\n      Smart tag filters help you quickly find and manage specific tags in your store. Learn how to use advanced filtering to work",
-        "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2024-01-01T00:00:00Z",
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video",
+        "name": "Using Smart Tag Filters in OptizenAI",
+        "description": "Learn how to use smart tag filters to quickly find and manage specific tags in your store. This tutorial demonstrates advanced filtering techniques to organize and optimize your tag pages more efficiently.",
+        "about": {
+          "@type": "Thing",
+          "name": "Smart Tag Filtering",
+          "description": "Advanced tag management and filtering techniques for e-commerce optimization"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#howto",
+        "thumbnailUrl": "https://optizenapp.com/images/smart-tag-filters-thumbnail.jpg",
+        "uploadDate": "2024-01-15",
+        "duration": "PT4M30S",
+        "contentUrl": "https://optizenapp.com/videos/smart-tag-filters.mp4",
+        "embedUrl": "https://optizenapp.com/embed/smart-tag-filters",
+        "transcript": "In this tutorial, we'll explore how to use smart tag filters in OptizenAI to efficiently manage your store's tags. First, navigate to the tag management section. Then, use the filter options to sort by tag type, performance metrics, or creation date. Apply multiple filters to narrow down your results and find exactly what you need.",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 1250
+        },
+        "regionsAllowed": "US,CA,GB,AU,DE,FR,ES,IT,NL,SE,DK,NO,FI",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "learningResourceType": "Video Tutorial",
+        "educationalUse": [
+          "instruction",
+          "practice",
+          "reference"
+        ]
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters",
+        "headline": "Using Smart Tag Filters - OptizenAI Documentation",
+        "description": "Complete guide to using smart tag filters in OptizenAI for efficient tag management and store optimization. Includes video tutorial and step-by-step instructions.",
+        "articleSection": "Support Documentation",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video",
+          "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#howto",
+          "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#faq"
+        ],
+        "teaches": [
+          "Smart tag filtering techniques",
+          "Advanced tag management",
+          "Store optimization strategies",
+          "Efficient workflow practices"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI Documentation Series",
+          "url": "https://optizenapp.com/support-docs/optizenai/"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
           "name": "OptizenApp",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://optizenapp.com/optizen-logo.png"
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-15",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#howto",
+        "name": "How to Use Smart Tag Filters in OptizenAI",
+        "description": "Step-by-step guide to using smart tag filters for efficient tag management and store optimization.",
+        "video": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video",
+        "totalTime": "PT4M30S",
+        "performTime": "PT2M",
+        "supply": [
+          {
+            "@type": "Thing",
+            "name": "OptizenAI Account",
+            "description": "Active OptizenAI subscription with tag management access"
+          },
+          {
+            "@type": "Thing",
+            "name": "Store Data",
+            "description": "Existing tags in your connected store"
           }
+        ],
+        "tool": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "OptizenAI Platform",
+            "applicationCategory": "SEO Tool",
+            "operatingSystem": "Web Browser"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Access Tag Management",
+            "text": "Navigate to the OptizenAI dashboard and click on the Tag Management section.",
+            "video": {
+              "@type": "Clip",
+              "url": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video#t=0,30"
+            },
+            "image": "https://optizenapp.com/images/tag-management-access.jpg"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Open Smart Filters",
+            "text": "Locate and click the 'Smart Filters' button in the top toolbar of the tag management interface.",
+            "video": {
+              "@type": "Clip",
+              "url": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video#t=30,60"
+            },
+            "image": "https://optizenapp.com/images/smart-filters-button.jpg"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Select Filter Criteria",
+            "text": "Choose your filtering criteria such as tag type, performance metrics, creation date, or optimization status.",
+            "video": {
+              "@type": "Clip",
+              "url": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video#t=60,150"
+            },
+            "image": "https://optizenapp.com/images/filter-criteria.jpg"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Apply Multiple Filters",
+            "text": "Combine multiple filter options to narrow down your results and find specific tags that meet your criteria.",
+            "video": {
+              "@type": "Clip",
+              "url": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video#t=150,210"
+            },
+            "image": "https://optizenapp.com/images/multiple-filters.jpg"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Review and Manage Results",
+            "text": "Review the filtered results and perform bulk actions or individual tag optimizations as needed.",
+            "video": {
+              "@type": "Clip",
+              "url": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video#t=210,270"
+            },
+            "image": "https://optizenapp.com/images/manage-results.jpg"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#learning",
+        "name": "Smart Tag Filters Learning Resource",
+        "description": "Comprehensive learning resource for mastering smart tag filtering in OptizenAI.",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Intermediate",
+        "timeRequired": "PT4M30S",
+        "teaches": [
+          "Smart tag filtering techniques",
+          "Advanced search and filter combinations",
+          "Bulk tag management operations",
+          "Performance-based tag optimization"
+        ],
+        "assesses": [
+          "Ability to efficiently locate specific tags",
+          "Understanding of filter combinations",
+          "Proficiency in bulk tag operations"
+        ],
+        "competencyRequired": [
+          "Basic OptizenAI navigation",
+          "Understanding of SEO tags",
+          "Familiarity with e-commerce platforms"
+        ],
+        "educationalUse": [
+          "instruction",
+          "practice",
+          "reference",
+          "professional development"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "about": {
+          "@type": "Thing",
+          "name": "Tag Management Optimization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are smart tag filters in OptizenAI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Smart tag filters are advanced filtering tools that help you quickly find and manage specific tags in your store based on various criteria like performance, type, creation date, and optimization status.",
+              "video": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I combine multiple filters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can combine multiple filters by selecting different criteria simultaneously. The system will show only tags that match all selected filter conditions, helping you narrow down results precisely.",
+              "video": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video#t=150,210"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I save my filter settings?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you can save frequently used filter combinations as presets for quick access in future sessions. This feature helps streamline your workflow and maintain consistency in tag management."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What filter criteria are available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Available filter criteria include tag type, performance metrics, creation date, optimization status, traffic data, conversion rates, and custom tag attributes specific to your store setup."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do smart filters improve efficiency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Smart filters reduce the time spent searching through large tag collections by allowing you to quickly locate specific tags based on your optimization goals, performance requirements, or management tasks."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/software/optizenai",
+        "name": "OptizenAI",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Web Browser",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
         },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters"
-        },
-        "articleSection": "OptizenAI SEO Documentation",
-        "keywords": "OptizenAI SEO Documentation",
-        "timeRequired": "PT5M"
+        "featureList": [
+          "Smart Tag Filtering",
+          "Advanced Tag Management",
+          "Performance Analytics",
+          "Bulk Operations",
+          "Filter Presets",
+          "Real-time Updates"
+        ],
+        "screenshot": "https://optizenapp.com/images/optizenai-interface.jpg",
+        "softwareVersion": "2.1",
+        "releaseNotes": "Enhanced smart filtering capabilities with improved performance metrics"
       },
       {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters",
-        "url": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters",
-        "name": "Using Smart Tag Filters",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://optizenapp.com/#website"
-        },
+        "name": "Using Smart Tag Filters - OptizenAI Support",
+        "description": "Learn how to use smart tag filters in OptizenAI to efficiently manage and optimize your store's tags with advanced filtering techniques.",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#video",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
@@ -47,37 +279,73 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Support Docs",
+              "name": "Support Documentation",
               "item": "https://optizenapp.com/support-docs"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "OptizenAI SEO",
+              "name": "OptizenAI",
               "item": "https://optizenapp.com/support-docs/optizenai"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "Using Smart Tag Filters",
+              "name": "Smart Tag Filters",
               "item": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters"
             }
           ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-description",
+            ".key-steps"
+          ]
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
         }
       },
       {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://optizenapp.com/optizen-logo.png"
-        }
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#terms",
+        "name": "Smart Tag Filters Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Smart Tag Filters",
+            "description": "Advanced filtering system that allows users to search and organize tags based on multiple criteria including performance, type, and metadata."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Tag Management",
+            "description": "The process of organizing, optimizing, and maintaining SEO tags across e-commerce platforms for improved search visibility."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Filter Criteria",
+            "description": "Specific parameters used to narrow down tag results, such as performance metrics, creation date, or optimization status."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Bulk Operations",
+            "description": "Actions that can be performed on multiple tags simultaneously, such as optimization, deletion, or status updates."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Performance Metrics",
+            "description": "Data points that measure tag effectiveness including traffic, conversion rates, and search rankings."
+          }
+        ]
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:50:37.406Z",
+  "generatedAt": "2025-11-05T04:12:16.986Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "73449f89b19a75a35390e961aaf590c5"
+  "contentHash": "eaca528c1188ea9dab0e778f5990cad7"
 }

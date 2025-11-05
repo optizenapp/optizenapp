@@ -3,38 +3,243 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/sync-button#article",
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/sync-button#video",
+        "name": "Using the Sync Button in OptizenAI",
+        "description": "Learn how to sync new tags and collections to the OptizenAI app using the sync button feature. This tutorial covers both Collections and Tags sync buttons and explains the syncing process.",
+        "about": {
+          "@type": "Thing",
+          "name": "OptizenAI Sync Functionality",
+          "description": "Database synchronization feature for tags and collections"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/sync-button#howto",
+        "thumbnailUrl": "https://optizenapp.com/images/sync-button-tutorial-thumb.jpg",
+        "uploadDate": "2024-01-15",
+        "duration": "PT3M45S",
+        "contentUrl": "https://optizenapp.com/videos/sync-button-tutorial.mp4",
+        "embedUrl": "https://optizenapp.com/embed/sync-button-tutorial",
+        "transcript": "In this tutorial, we'll show you how to use the sync button in OptizenAI. There are two sync buttons - one under Collections and one under Tags. Click either button to sync new collections and tags to your app. The process may take a few minutes depending on your store size.",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 1250
+        },
+        "regionsAllowed": "US,CA,GB,AU",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/sync-button",
         "headline": "Using the Sync Button",
-        "description": "\n      Using the Sync Button\n      There may be times where you can't find the tag or collection you want when using the search function in Optizen. To keep our",
-        "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2024-01-01T00:00:00Z",
+        "description": "Complete guide on using the sync button feature in OptizenAI to synchronize new tags and collections to your app database.",
+        "articleSection": "Support Documentation",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/sync-button#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/sync-button#video",
+          "https://optizenapp.com/support-docs/optizenai/sync-button#howto",
+          "https://optizenapp.com/support-docs/optizenai/sync-button#faq"
+        ],
+        "teaches": [
+          "How to locate sync buttons in OptizenAI",
+          "When to use the sync functionality",
+          "Understanding sync processing time",
+          "Accessing newly synced tags and collections"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI Documentation Series",
+          "url": "https://optizenapp.com/support-docs/optizenai/"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
-          "name": "OptizenApp",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://optizenapp.com/optizen-logo.png"
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-15",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/sync-button#howto",
+        "name": "How to Sync Tags and Collections in OptizenAI",
+        "description": "Step-by-step instructions for syncing new tags and collections to the OptizenAI app using the sync button feature.",
+        "video": "https://optizenapp.com/support-docs/optizenai/sync-button#video",
+        "totalTime": "PT5M",
+        "performTime": "PT2M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "OptizenAI App Access",
+            "requiredQuantity": 1
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Store with New Tags/Collections",
+            "requiredQuantity": 1
           }
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/sync-button"
-        },
-        "articleSection": "OptizenAI SEO Documentation",
-        "keywords": "OptizenAI SEO Documentation",
-        "timeRequired": "PT5M"
+        ],
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "OptizenAI Dashboard",
+            "requiredQuantity": 1
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Locate the Sync Button",
+            "text": "Navigate to either the Collections tab or Tags tab in your OptizenAI dashboard. You'll find a 'Sync' button in each section.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/sync-button-tutorial.mp4#t=0,45",
+              "name": "Locating Sync Buttons"
+            },
+            "image": "https://optizenapp.com/images/sync-button-location.jpg"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Click the Sync Button",
+            "text": "Click on either sync button (Collections or Tags) to initiate the synchronization process. Both buttons serve the same purpose and will sync all new collections and tags.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/sync-button-tutorial.mp4#t=45,90",
+              "name": "Clicking Sync Button"
+            },
+            "image": "https://optizenapp.com/images/sync-button-click.jpg"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Wait for Sync Completion",
+            "text": "The sync process will begin and may take a few minutes depending on the size of your store. Wait for the process to complete before proceeding.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/sync-button-tutorial.mp4#t=90,180",
+              "name": "Sync Processing"
+            },
+            "image": "https://optizenapp.com/images/sync-processing.jpg"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Access Synced Content",
+            "text": "Once the sync is complete, you'll be able to search for and edit your newly synced tags and collections using the search function.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/sync-button-tutorial.mp4#t=180,225",
+              "name": "Accessing Synced Content"
+            },
+            "image": "https://optizenapp.com/images/synced-content-access.jpg"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/sync-button#learning",
+        "name": "OptizenAI Sync Button Tutorial",
+        "description": "Interactive learning resource for mastering the sync functionality in OptizenAI",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Beginner",
+        "timeRequired": "PT5M",
+        "teaches": [
+          "Database synchronization concepts",
+          "OptizenAI interface navigation",
+          "Tag and collection management",
+          "Troubleshooting sync issues"
+        ],
+        "assesses": [
+          "Ability to locate sync buttons",
+          "Understanding of sync timing",
+          "Knowledge of when to sync"
+        ],
+        "competencyRequired": [
+          "Basic OptizenAI navigation",
+          "Understanding of tags and collections"
+        ],
+        "educationalUse": [
+          "Tutorial",
+          "Self-paced learning",
+          "Reference guide",
+          "Troubleshooting"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "about": {
+          "@type": "DefinedTerm",
+          "name": "Database Synchronization",
+          "description": "Process of updating local app data with server-side changes"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/sync-button#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "When should I use the sync button?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the sync button when you can't find new tags or collections in the search function. This typically happens when new items have been added to your store but haven't been synchronized to the OptizenAI app yet.",
+              "video": "https://optizenapp.com/support-docs/optizenai/sync-button#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does the sync process take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The sync process duration depends on the size of your store. It typically takes a few minutes, but larger stores with more tags and collections may require additional time.",
+              "video": "https://optizenapp.com/support-docs/optizenai/sync-button#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a difference between the Collections and Tags sync buttons?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, both sync buttons serve the same purpose. Clicking either the Collections sync button or the Tags sync button will synchronize both new collections and tags to your app.",
+              "video": "https://optizenapp.com/support-docs/optizenai/sync-button#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if the sync fails?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the sync process fails, try refreshing the page and clicking the sync button again. If problems persist, check your internet connection or contact support for assistance."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/software/optizenai",
+        "name": "OptizenAI",
+        "description": "AI-powered SEO optimization tool for e-commerce stores",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Web Browser",
+        "featureList": [
+          "Tag synchronization",
+          "Collection management",
+          "Search functionality",
+          "Database sync",
+          "SEO optimization"
+        ],
+        "screenshot": "https://optizenapp.com/images/optizenai-dashboard.jpg",
+        "url": "https://optizenapp.com/optizenai"
       },
       {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/support-docs/optizenai/sync-button",
-        "url": "https://optizenapp.com/support-docs/optizenai/sync-button",
-        "name": "Using the Sync Button",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://optizenapp.com/#website"
-        },
+        "name": "Using the Sync Button - OptizenAI Support",
+        "description": "Learn how to use the sync button feature in OptizenAI to synchronize new tags and collections to your app.",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/sync-button#video",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
@@ -47,13 +252,13 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Support Docs",
+              "name": "Support Documentation",
               "item": "https://optizenapp.com/support-docs"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "OptizenAI SEO",
+              "name": "OptizenAI",
               "item": "https://optizenapp.com/support-docs/optizenai"
             },
             {
@@ -63,21 +268,47 @@
               "item": "https://optizenapp.com/support-docs/optizenai/sync-button"
             }
           ]
-        }
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".sync-instructions",
+            ".sync-steps"
+          ]
+        },
+        "inLanguage": "en-US"
       },
       {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://optizenapp.com/optizen-logo.png"
-        }
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/sync-button#terms",
+        "name": "OptizenAI Sync Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Sync Button",
+            "description": "Interface element that initiates database synchronization between server and app"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Collections Tab",
+            "description": "Section of OptizenAI interface for managing product collections"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Tags Tab",
+            "description": "Section of OptizenAI interface for managing product tags"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Database Sync",
+            "description": "Process of updating local app data with latest server information"
+          }
+        ]
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:50:12.492Z",
+  "generatedAt": "2025-11-05T04:11:31.379Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "cc847fd7203b0277d93769812cc56856"
+  "contentHash": "44269671adddc617eb2bbf1ccb8be7ec"
 }

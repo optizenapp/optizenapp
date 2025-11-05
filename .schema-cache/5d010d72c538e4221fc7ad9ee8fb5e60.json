@@ -3,38 +3,286 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/settings#article",
-        "headline": "Optizen Settings",
-        "description": "\n      Optizen Settings\n      Configure your Optizen settings to customize how the app works with your Shopify store.\n      This video covers all the available ",
-        "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2024-01-01T00:00:00Z",
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/settings#video",
+        "name": "Optizen Settings Configuration Tutorial",
+        "description": "Complete guide to configuring your Optizen settings to customize how the app works with your Shopify store. Learn how to optimize all available settings for your specific needs.",
+        "about": {
+          "@type": "Thing",
+          "name": "Optizen App Settings Configuration",
+          "description": "Customizing Optizen SEO app settings for Shopify stores"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/settings#howto",
+        "thumbnailUrl": "https://optizenapp.com/images/optizen-settings-tutorial-thumb.jpg",
+        "uploadDate": "2024-01-15T10:00:00Z",
+        "duration": "PT8M45S",
+        "contentUrl": "https://optizenapp.com/videos/optizen-settings-tutorial.mp4",
+        "embedUrl": "https://optizenapp.com/embed/optizen-settings-tutorial",
+        "transcript": "In this tutorial, we'll walk through all the Optizen settings available to customize your SEO optimization experience...",
+        "regionsAllowed": [
+          "US",
+          "CA",
+          "GB",
+          "AU",
+          "EU"
+        ],
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 2847
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
-          "name": "OptizenApp",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://optizenapp.com/optizen-logo.png"
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/settings#article",
+        "headline": "Optizen Settings Configuration Guide",
+        "description": "Configure your Optizen settings to customize how the app works with your Shopify store. This video covers all the available settings and how to optimize them for your specific needs.",
+        "articleSection": "Support Documentation",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/settings#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/settings#video",
+          "https://optizenapp.com/support-docs/optizenai/settings#howto",
+          "https://optizenapp.com/support-docs/optizenai/settings#faq"
+        ],
+        "teaches": [
+          "Optizen app configuration",
+          "Shopify SEO settings optimization",
+          "Custom SEO parameter setup",
+          "Store-specific optimization techniques"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI Documentation Series",
+          "url": "https://optizenapp.com/support-docs/optizenai/"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen Support Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2024-01-15T10:00:00Z",
+        "dateModified": "2024-01-15T10:00:00Z"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/settings#howto",
+        "name": "How to Configure Optizen Settings for Your Shopify Store",
+        "description": "Step-by-step guide to customizing Optizen settings for optimal SEO performance on your Shopify store.",
+        "video": "https://optizenapp.com/support-docs/optizenai/settings#video",
+        "totalTime": "PT8M45S",
+        "performTime": "PT15M",
+        "supply": [
+          {
+            "@type": "Thing",
+            "name": "Active Shopify Store"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Optizen App",
+            "applicationCategory": "SEO Tool"
           }
+        ],
+        "tool": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Shopify Admin Dashboard"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Access Optizen Settings",
+            "text": "Navigate to your Shopify admin dashboard and locate the Optizen app in your installed apps section.",
+            "video": {
+              "@type": "Clip",
+              "name": "Accessing Optizen Settings",
+              "startOffset": 0,
+              "endOffset": 45,
+              "url": "https://optizenapp.com/videos/optizen-settings-tutorial.mp4#t=0,45"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Configure General Settings",
+            "text": "Set up your basic SEO preferences including meta title patterns, description templates, and keyword optimization settings.",
+            "video": {
+              "@type": "Clip",
+              "name": "General Settings Configuration",
+              "startOffset": 45,
+              "endOffset": 180,
+              "url": "https://optizenapp.com/videos/optizen-settings-tutorial.mp4#t=45,180"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Customize Product SEO Settings",
+            "text": "Configure product-specific SEO settings including automatic optimization rules and custom field mappings.",
+            "video": {
+              "@type": "Clip",
+              "name": "Product SEO Configuration",
+              "startOffset": 180,
+              "endOffset": 320,
+              "url": "https://optizenapp.com/videos/optizen-settings-tutorial.mp4#t=180,320"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Set Collection and Page Settings",
+            "text": "Optimize settings for collections, blog posts, and static pages to ensure comprehensive SEO coverage.",
+            "video": {
+              "@type": "Clip",
+              "name": "Collection and Page Settings",
+              "startOffset": 320,
+              "endOffset": 450,
+              "url": "https://optizenapp.com/videos/optizen-settings-tutorial.mp4#t=320,450"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Configure Advanced Options",
+            "text": "Set up advanced features including schema markup preferences, image optimization settings, and performance monitoring.",
+            "video": {
+              "@type": "Clip",
+              "name": "Advanced Settings Configuration",
+              "startOffset": 450,
+              "endOffset": 525,
+              "url": "https://optizenapp.com/videos/optizen-settings-tutorial.mp4#t=450,525"
+            }
+          }
+        ],
+        "result": {
+          "@type": "Thing",
+          "name": "Fully Configured Optizen SEO Settings",
+          "description": "Optimized Optizen configuration tailored to your specific Shopify store needs"
+        }
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/settings#learning",
+        "name": "Optizen Settings Configuration Learning Resource",
+        "description": "Comprehensive video tutorial for learning how to configure Optizen settings for optimal Shopify SEO performance.",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Beginner",
+        "timeRequired": "PT8M45S",
+        "teaches": [
+          "Optizen app navigation",
+          "SEO settings optimization",
+          "Shopify integration configuration",
+          "Performance monitoring setup"
+        ],
+        "assesses": [
+          "Understanding of SEO best practices",
+          "Ability to configure app settings",
+          "Knowledge of Shopify admin interface"
+        ],
+        "competencyRequired": [
+          "Basic Shopify store management",
+          "Understanding of SEO concepts"
+        ],
+        "educationalUse": [
+          "Tutorial",
+          "Self-paced learning",
+          "Skill development",
+          "Problem solving"
+        ],
+        "isAccessibleForFree": true,
+        "video": "https://optizenapp.com/support-docs/optizenai/settings#video",
+        "about": {
+          "@type": "SoftwareApplication",
+          "name": "Optizen SEO App"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/settings#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I access Optizen settings in my Shopify store?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Navigate to your Shopify admin dashboard, go to Apps, find Optizen in your installed apps, and click on it to access the settings panel.",
+              "video": "https://optizenapp.com/videos/optizen-settings-tutorial.mp4#t=0,45"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the most important settings to configure first?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start with general SEO settings including meta title patterns and description templates, then move to product-specific configurations for maximum impact.",
+              "video": "https://optizenapp.com/videos/optizen-settings-tutorial.mp4#t=45,180"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I customize settings for different product types?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Optizen allows you to create custom SEO rules and field mappings for different product categories and types within your store.",
+              "video": "https://optizenapp.com/videos/optizen-settings-tutorial.mp4#t=180,320"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I enable advanced features like schema markup?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Advanced features including schema markup, image optimization, and performance monitoring can be found in the Advanced Options section of the settings panel.",
+              "video": "https://optizenapp.com/videos/optizen-settings-tutorial.mp4#t=450,525"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/support-docs/optizenai/settings#software",
+        "name": "Optizen SEO App",
+        "applicationCategory": "SEO Tool",
+        "operatingSystem": "Web-based",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
         },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/settings"
-        },
-        "articleSection": "OptizenAI SEO Documentation",
-        "keywords": "OptizenAI SEO Documentation",
-        "timeRequired": "PT5M"
+        "featureList": [
+          "Automated SEO optimization",
+          "Meta title and description generation",
+          "Schema markup implementation",
+          "Image optimization",
+          "Performance monitoring",
+          "Custom SEO rules",
+          "Shopify integration"
+        ],
+        "screenshot": "https://optizenapp.com/images/optizen-settings-screenshot.jpg",
+        "softwareRequirements": "Shopify Store",
+        "releaseNotes": "Latest version includes enhanced settings customization and improved performance monitoring."
       },
       {
         "@type": "WebPage",
         "@id": "https://optizenapp.com/support-docs/optizenai/settings",
-        "url": "https://optizenapp.com/support-docs/optizenai/settings",
-        "name": "Optizen Settings",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://optizenapp.com/#website"
-        },
+        "name": "Optizen Settings - Support Documentation",
+        "description": "Configure your Optizen settings to customize how the app works with your Shopify store. This video covers all the available settings and how to optimize them for your specific needs.",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/settings#video",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
@@ -47,37 +295,67 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Support Docs",
+              "name": "Support Documentation",
               "item": "https://optizenapp.com/support-docs"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "OptizenAI SEO",
+              "name": "OptizenAI",
               "item": "https://optizenapp.com/support-docs/optizenai"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "Optizen Settings",
+              "name": "Settings",
               "item": "https://optizenapp.com/support-docs/optizenai/settings"
             }
           ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-description",
+            ".settings-overview"
+          ]
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
         }
       },
       {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://optizenapp.com/optizen-logo.png"
-        }
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/settings#terms",
+        "name": "Optizen Settings Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta Title Pattern",
+            "description": "Template used to automatically generate SEO-optimized page titles for products and collections"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Schema Markup",
+            "description": "Structured data code that helps search engines understand and display your content more effectively"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "SEO Optimization Rules",
+            "description": "Automated settings that apply SEO best practices to your store content based on predefined criteria"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Field Mapping",
+            "description": "Configuration that determines how product data fields are used for SEO optimization"
+          }
+        ]
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:47:41.194Z",
+  "generatedAt": "2025-11-05T04:07:48.960Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "4c4a332519623f5fbb165d9d23d9313c"
+  "contentHash": "9d600c5f028b09687b0887be2e191d0b"
 }

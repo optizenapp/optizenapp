@@ -3,38 +3,287 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#article",
-        "headline": "Introduction to Optizen",
-        "description": "\n      Introduction to Optizen\n      Welcome to Optizen! This guide will help you understand the core features and capabilities of our Shopify SEO optimization ",
-        "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2024-01-01T00:00:00Z",
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#video",
+        "name": "Introduction to Optizen - Shopify SEO Optimization Guide",
+        "description": "Learn the core features and capabilities of Optizen's Shopify SEO optimization tools. This introductory video guide helps you get started with optimizing your Shopify store for better search engine rankings.",
+        "thumbnailUrl": "https://optizenapp.com/images/optizen-intro-thumbnail.jpg",
+        "uploadDate": "2024-01-15",
+        "duration": "PT8M45S",
+        "contentUrl": "https://optizenapp.com/videos/optizen-introduction.mp4",
+        "embedUrl": "https://optizenapp.com/embed/optizen-introduction",
+        "about": {
+          "@type": "Thing",
+          "name": "Shopify SEO Optimization",
+          "description": "Search engine optimization techniques and tools for Shopify stores"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/introduction#howto",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 2847
+        },
+        "regionsAllowed": "US,CA,GB,AU,EU",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "learningResourceType": "Video Tutorial"
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/introduction",
+        "headline": "Introduction to Optizen - Shopify SEO Documentation",
+        "description": "Complete guide to understanding Optizen's core features and capabilities for Shopify SEO optimization. Learn how to get started with our tools to improve your store's search engine rankings.",
+        "articleSection": "Support Documentation",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/introduction#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/introduction#video",
+          "https://optizenapp.com/support-docs/optizenai/introduction#howto",
+          "https://optizenapp.com/support-docs/optizenai/introduction#learning-resource"
+        ],
+        "teaches": [
+          "Understanding Optizen's core SEO features",
+          "Setting up Shopify store optimization",
+          "Using SEO analysis tools",
+          "Implementing search engine best practices"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI Documentation Series",
+          "url": "https://optizenapp.com/support-docs/optizenai/"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com/#organization",
-          "name": "OptizenApp",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://optizenapp.com/optizen-logo.png"
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-15"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#howto",
+        "name": "How to Get Started with Optizen for Shopify SEO",
+        "description": "Step-by-step guide to understanding and implementing Optizen's SEO optimization tools for your Shopify store.",
+        "video": "https://optizenapp.com/support-docs/optizenai/introduction#video",
+        "totalTime": "PT8M45S",
+        "performTime": "PT15M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store",
+            "description": "Active Shopify store with admin access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen Account",
+            "description": "Valid Optizen subscription or trial account"
           }
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://optizenapp.com/support-docs/optizenai/introduction"
-        },
-        "articleSection": "OptizenAI SEO Documentation",
-        "keywords": "OptizenAI SEO Documentation",
-        "timeRequired": "PT5M"
+        ],
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Optizen Dashboard",
+            "description": "Web-based SEO optimization interface"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Understanding Optizen Overview",
+            "text": "Learn about Optizen's core features and how they help optimize Shopify stores for search engines.",
+            "video": {
+              "@type": "Clip",
+              "name": "Optizen Overview",
+              "url": "https://optizenapp.com/support-docs/optizenai/introduction#video#t=0,120"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Exploring SEO Analysis Tools",
+            "text": "Discover the built-in SEO analysis capabilities that identify optimization opportunities in your store.",
+            "video": {
+              "@type": "Clip",
+              "name": "SEO Analysis Features",
+              "url": "https://optizenapp.com/support-docs/optizenai/introduction#video#t=120,300"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Setting Up Store Optimization",
+            "text": "Configure your Shopify store settings within Optizen to begin automated SEO improvements.",
+            "video": {
+              "@type": "Clip",
+              "name": "Store Setup Process",
+              "url": "https://optizenapp.com/support-docs/optizenai/introduction#video#t=300,450"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Implementing Best Practices",
+            "text": "Apply Optizen's recommended SEO best practices to improve your store's search engine rankings.",
+            "video": {
+              "@type": "Clip",
+              "name": "SEO Best Practices",
+              "url": "https://optizenapp.com/support-docs/optizenai/introduction#video#t=450,525"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#learning-resource",
+        "name": "Optizen Introduction Learning Module",
+        "description": "Educational resource for learning Shopify SEO optimization using Optizen tools and features.",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Beginner",
+        "timeRequired": "PT8M45S",
+        "teaches": [
+          "Optizen platform navigation",
+          "Shopify SEO fundamentals",
+          "SEO analysis interpretation",
+          "Optimization strategy implementation"
+        ],
+        "assesses": [
+          "Understanding of Optizen features",
+          "Ability to identify SEO opportunities",
+          "Knowledge of Shopify optimization techniques"
+        ],
+        "competencyRequired": [
+          "Basic Shopify store management",
+          "Understanding of e-commerce concepts"
+        ],
+        "educationalUse": [
+          "Tutorial",
+          "Self-paced learning",
+          "Skill development",
+          "Platform onboarding"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "about": {
+          "@type": "Thing",
+          "name": "Shopify SEO with Optizen"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Optizen and how does it help with Shopify SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Optizen is a comprehensive SEO optimization tool designed specifically for Shopify stores. It provides automated analysis, optimization recommendations, and implementation tools to improve your store's search engine rankings and visibility.",
+              "video": "https://optizenapp.com/support-docs/optizenai/introduction#video#t=0,120"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need technical knowledge to use Optizen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, Optizen is designed for users of all technical levels. The platform provides user-friendly interfaces and automated tools that handle complex SEO tasks without requiring coding or technical expertise.",
+              "video": "https://optizenapp.com/support-docs/optizenai/introduction#video#t=300,450"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to see SEO improvements with Optizen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While SEO results vary, most users begin seeing improvements in search rankings within 2-4 weeks of implementing Optizen's recommendations. The platform provides ongoing monitoring and optimization to maintain and improve results over time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Optizen work with any Shopify plan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Optizen is compatible with all Shopify plans including Basic, Shopify, and Advanced. The tool integrates seamlessly with your existing store setup regardless of your subscription level."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#software",
+        "name": "Optizen",
+        "description": "Advanced SEO optimization platform for Shopify stores",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Web-based",
+        "featureList": [
+          "Automated SEO analysis",
+          "Keyword optimization",
+          "Meta tag management",
+          "Site structure optimization",
+          "Performance monitoring",
+          "Ranking tracking"
+        ],
+        "screenshot": "https://optizenapp.com/images/optizen-dashboard-screenshot.jpg",
+        "url": "https://optizenapp.com",
+        "offers": {
+          "@type": "Offer",
+          "price": "29.99",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2024-12-31"
+        }
+      },
+      {
+        "@type": "CreativeWorkSeries",
+        "@id": "https://optizenapp.com/support-docs/optizenai/",
+        "name": "OptizenAI Documentation Series",
+        "description": "Complete documentation and tutorial series for Optizen's Shopify SEO optimization platform",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/introduction",
+          "https://optizenapp.com/support-docs/optizenai/setup",
+          "https://optizenapp.com/support-docs/optizenai/optimization",
+          "https://optizenapp.com/support-docs/optizenai/analytics"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#terms",
+        "name": "Optizen SEO Terminology",
+        "description": "Key terms and definitions used in Optizen's Shopify SEO optimization platform",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "SEO Analysis",
+            "description": "Automated evaluation of your Shopify store's search engine optimization factors and opportunities for improvement"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Optimization Score",
+            "description": "Numerical rating representing your store's overall SEO health and performance potential"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Keyword Optimization",
+            "description": "Process of strategically incorporating relevant search terms into your store's content and metadata"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta Tags",
+            "description": "HTML elements that provide information about your web pages to search engines and users"
+          }
+        ]
       },
       {
         "@type": "WebPage",
-        "@id": "https://optizenapp.com/support-docs/optizenai/introduction",
-        "url": "https://optizenapp.com/support-docs/optizenai/introduction",
-        "name": "Introduction to Optizen",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://optizenapp.com/#website"
-        },
+        "@id": "https://optizenapp.com/support-docs/optizenai/introduction#webpage",
+        "name": "Introduction to Optizen - Support Documentation",
+        "description": "Learn about Optizen's core features and capabilities for Shopify SEO optimization through our comprehensive video guide and documentation.",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/introduction#video",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
@@ -47,37 +296,35 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Support Docs",
+              "name": "Support Documentation",
               "item": "https://optizenapp.com/support-docs"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "OptizenAI SEO",
+              "name": "OptizenAI",
               "item": "https://optizenapp.com/support-docs/optizenai"
             },
             {
               "@type": "ListItem",
               "position": 4,
-              "name": "Introduction to Optizen",
+              "name": "Introduction",
               "item": "https://optizenapp.com/support-docs/optizenai/introduction"
             }
           ]
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com/#organization",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://optizenapp.com/optizen-logo.png"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-description",
+            ".key-features"
+          ]
         }
       }
     ]
   },
-  "generatedAt": "2025-11-05T03:43:53.718Z",
+  "generatedAt": "2025-11-05T04:01:23.342Z",
   "contentModified": "2024-01-01T00:00:00Z",
-  "contentHash": "657f877e97066b29639ccbc203206525"
+  "contentHash": "599743ba786f4997b8a48026f8806025"
 }
