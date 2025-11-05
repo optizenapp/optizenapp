@@ -1,0 +1,232 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/apps/disputifier-smart-chargebacks#webapp",
+        "name": "Disputifier: Smart Chargebacks",
+        "alternateName": "Disputifier",
+        "description": "Smart chargeback management app designed to help Shopify merchants handle and prevent chargebacks effectively with automated responses and fraud prevention tools.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Payment Processing",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browser",
+        "featureList": [
+          "Automated chargeback responses for increased win rates",
+          "Fraud prevention tools with alerts and order tracking",
+          "Integration with major payment platforms like PayPal and Stripe",
+          "AI-driven fraud detection",
+          "Refund automation",
+          "Customizable dispute responses",
+          "Real-time chargeback monitoring"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free to install, charges 12-20% of won chargebacks",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "12-20",
+            "priceCurrency": "USD",
+            "unitText": "PERCENT"
+          }
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://apps.shopify.com/disputifier",
+            "actionPlatform": "https://schema.org/DesktopWebPlatform"
+          }
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "Chargeback Management",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify merchants"
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "Disputifier"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/apps/disputifier-smart-chargebacks#howto",
+        "name": "How to Use Disputifier for Chargeback Management",
+        "description": "Step-by-step guide to implementing automated chargeback management with Disputifier",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Install the App",
+            "text": "Install Disputifier from the Shopify App Store for free"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure Payment Integration",
+            "text": "Connect your PayPal and Stripe payment processors to the app"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Set Up Automation Rules",
+            "text": "Configure automated chargeback responses and fraud detection settings"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Monitor Performance",
+            "text": "Track chargeback win rates and fraud prevention metrics through the dashboard"
+          }
+        ],
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "PayPal or Stripe Account"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/apps/disputifier-smart-chargebacks#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does Disputifier do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Disputifier automates chargeback management for Shopify merchants by generating tailored responses to disputes, increasing the chances of winning chargebacks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Disputifier prevent chargebacks?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It provides fraud detection tools, alerts, and refund automation to help prevent disputes before they occur."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Disputifier integrate with major payment processors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, it works with platforms like PayPal and Stripe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is Disputifier priced?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pricing is based on a percentage of the value from won chargebacks, ranging from 12-20%."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/apps/disputifier-smart-chargebacks",
+        "name": "[REVIEW] Disputifier: Smart Chargebacks",
+        "description": "Comprehensive review of Disputifier smart chargeback management app for Shopify merchants",
+        "datePublished": "2024-09-04T13:03:19",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/apps/disputifier-smart-chargebacks#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Apps",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Disputifier Review",
+              "item": "https://optizenapp.com/shopify/apps/disputifier-smart-chargebacks"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".key-features",
+            ".verdict"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/apps/disputifier-smart-chargebacks#terms",
+        "name": "Chargeback Management Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Chargeback",
+            "description": "A reversal of a credit card transaction initiated by the cardholder's bank"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Fraud Detection",
+            "description": "AI-powered system that identifies potentially fraudulent transactions"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Automated Response",
+            "description": "System-generated dispute responses tailored to specific chargeback scenarios"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/apps/disputifier-smart-chargebacks#usecases",
+        "name": "Disputifier Use Cases",
+        "description": "Practical applications for Disputifier chargeback management",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "High-Volume E-commerce Stores",
+            "description": "Automate chargeback management for stores processing hundreds of transactions daily"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Digital Product Merchants",
+            "description": "Prevent friendly fraud on digital downloads and subscriptions"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "International Sellers",
+            "description": "Handle cross-border payment disputes with automated responses"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Scaling Businesses",
+            "description": "Maintain payment security while focusing on business growth"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:45:29.735Z",
+  "contentModified": "2024-09-04T13:03:21",
+  "contentHash": "948446bc3abc62537758be02d1feff8b"
+}

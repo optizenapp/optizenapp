@@ -1,0 +1,254 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/our-custom-gpts#webapp",
+        "name": "OptizenAI Custom GPTs Collection",
+        "alternateName": "Custom GPT Tools for SEO and Ecommerce",
+        "description": "A comprehensive collection of custom GPT tools designed for SEO optimization, ecommerce content creation, and digital marketing workflows. Includes semantic outline generators, press release rewriters, product optimization tools, and more.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": [
+          "SEO Tools",
+          "Content Creation",
+          "Ecommerce Optimization"
+        ],
+        "operatingSystem": "Web Browser",
+        "browserRequirements": "Modern web browser with ChatGPT access",
+        "featureList": [
+          "Semantic SEO article outline generation",
+          "Press release SEO optimization and rewriting",
+          "Ecommerce product description optimization",
+          "Internal linking list creation for Shopify",
+          "Category page content generation",
+          "Product image alt text optimization",
+          "Ecommerce store name generation",
+          "Competitor and topic research integration",
+          "Shopify and WooCommerce compatibility"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "description": "Free access through ChatGPT GPT Store"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://chat.openai.com/gpts/discovery",
+            "description": "Access custom GPTs through ChatGPT GPT Store"
+          },
+          "object": "Custom GPT Tools",
+          "result": "SEO optimized content and ecommerce optimization"
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "SEO and Ecommerce Optimization Tools",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": [
+            "SEO Professionals",
+            "Content Writers",
+            "Ecommerce Store Owners",
+            "Digital Marketers",
+            "Virtual Assistants"
+          ]
+        },
+        "requirements": "ChatGPT account required for access",
+        "softwareVersion": "Latest",
+        "releaseNotes": "Continuously updated custom GPT collection"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/our-custom-gpts#howto",
+        "name": "How to Use OptizenAI Custom GPTs",
+        "description": "Step-by-step guide to accessing and using OptizenAI custom GPT tools for SEO and ecommerce optimization",
+        "totalTime": "PT5M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "ChatGPT Account"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Content or Product Data"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Access GPT Store",
+            "text": "Visit the ChatGPT GPT Store and search for OptizenAI custom GPTs"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Select Appropriate GPT",
+            "text": "Choose the custom GPT that matches your specific need (SEO, ecommerce, content creation)"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Input Your Content",
+            "text": "Upload or paste your content, product data, or requirements into the selected GPT"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Generate Optimized Output",
+            "text": "Receive SEO-optimized content, product descriptions, or marketing materials ready for use"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/our-custom-gpts#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need a ChatGPT account to use these custom GPTs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you need a ChatGPT account to access and use the custom GPTs available in the GPT store."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are these custom GPTs compatible with Shopify and WooCommerce?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, several GPTs are specifically designed for ecommerce platforms including Shopify and WooCommerce, such as the Product Internal Linking List and Image Alt Text Optimization tools."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use these GPTs with other AI tools like SurferSEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Semantic Outline Generator creates outlines that are ready to use with AI tools such as ChatGPT or SurferSEO, as well as for human writers and virtual assistants."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of content can these GPTs optimize?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The GPTs can optimize various content types including SEO articles, press releases, ecommerce product descriptions, category page content, image alt text, and internal linking structures."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/our-custom-gpts",
+        "name": "Our Custom GPTs - OptizenAI",
+        "description": "Explore OptizenAI's collection of custom GPT tools for SEO optimization, ecommerce content creation, and digital marketing automation.",
+        "url": "https://optizenapp.com/our-custom-gpts",
+        "datePublished": "2024-07-22T05:40:20",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/our-custom-gpts#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Our Custom GPTs",
+              "item": "https://optizenapp.com/our-custom-gpts"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".gpt-description"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/our-custom-gpts#terms",
+        "name": "Custom GPT and SEO Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Semantic SEO",
+            "description": "Search engine optimization approach that focuses on topic relevance and semantic relationships between keywords and content themes"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Internal Linking",
+            "description": "SEO practice of linking between pages within the same website to improve navigation and distribute page authority"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Alt Text Optimization",
+            "description": "Process of creating descriptive alternative text for images to improve accessibility and SEO performance"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Custom GPT",
+            "description": "Specialized AI assistant trained for specific tasks and workflows, available through the ChatGPT platform"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/our-custom-gpts#usecases",
+        "name": "Custom GPT Use Cases",
+        "description": "Practical applications and scenarios for OptizenAI custom GPT tools",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Content Marketing Workflow",
+            "description": "Use Semantic Outline Generator to create article structures, then optimize with SEO tools for comprehensive content marketing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ecommerce Store Optimization",
+            "description": "Combine product description optimization, internal linking, and alt text tools for complete store SEO enhancement"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Press Release Distribution",
+            "description": "Transform standard press releases into SEO-optimized versions for better search visibility and media coverage"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Virtual Assistant Workflow",
+            "description": "Provide VAs with structured outlines and optimization tools for scalable content production"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Multi-Platform Integration",
+            "description": "Export optimized content for use across Shopify, WooCommerce, and various content management systems"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:54:58.972Z",
+  "contentModified": "2024-08-27T01:49:25",
+  "contentHash": "76cfd1297d9f725f7d399f4b44a00f93"
+}

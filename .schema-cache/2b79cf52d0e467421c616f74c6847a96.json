@@ -1,0 +1,283 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/apps/buildify#webapp",
+        "name": "Buildify Drag-and-Drop Landing Page Builder",
+        "alternateName": "Buildify",
+        "description": "A powerful drag-and-drop landing page builder for Shopify that empowers anyone to create professional, high-performing websites, stores, and landing pages without coding knowledge.",
+        "applicationCategory": "WebDevelopmentApplication",
+        "applicationSubCategory": "Landing Page Builder",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browsers",
+        "featureList": [
+          "Drag-and-drop page builder with no coding required",
+          "Custom templates for various industries and page types",
+          "Responsive design for desktop, tablet, and mobile devices",
+          "Sales tools integration with CTAs and countdowns",
+          "Custom HTML, CSS, and JavaScript support",
+          "Cross-device optimization",
+          "Social media widgets integration",
+          "Pre-built components with easy customization",
+          "Dynamic landing pages creation",
+          "Product showcase pages",
+          "Homepage builder"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free to install from Shopify App Store"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/apps/buildify",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "Website Builder",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "eCommerce entrepreneurs, web designers, Shopify store owners, beginners without coding experience"
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "Buildify"
+        },
+        "supportContact": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "availableLanguage": "English",
+          "hoursAvailable": "24/7 live chat support"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/apps/buildify#howto",
+        "name": "How to Use Buildify Drag-and-Drop Landing Page Builder",
+        "description": "Step-by-step guide to creating professional websites and landing pages with Buildify",
+        "totalTime": "PT15M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Buildify app installed"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Install Buildify",
+            "text": "Install Buildify from the Shopify App Store to your store"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Choose Template",
+            "text": "Select from pre-made templates designed for various industries and page types"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Drag and Drop Elements",
+            "text": "Use the intuitive drag-and-drop interface to add and arrange page elements"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Customize Design",
+            "text": "Customize templates and add custom HTML, CSS, and JavaScript if needed"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Add Sales Tools",
+            "text": "Integrate CTAs, countdowns, and social media widgets to boost conversions"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Preview and Publish",
+            "text": "Preview your responsive design across devices and publish your page"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/apps/buildify#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Buildify suitable for beginners?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Buildify's intuitive drag-and-drop interface makes it ideal for beginners with no coding experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I customize my site further if I know how to code?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! Buildify allows you to add custom HTML, CSS, and JavaScript for advanced customization."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Buildify offer support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Buildify offers 24/7 live chat support to assist with any questions or technical issues."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What type of pages can I create with Buildify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can create landing pages, product showcases, homepages, and more using Buildify's customizable templates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Buildify mobile-friendly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Buildify ensures that your website is fully responsive and optimized for all devices."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/apps/buildify#webpage",
+        "name": "Buildify Drag-and-Drop Landing Page Builder Review - Shopify App",
+        "description": "Learn how Buildify's drag-and-drop landing page builder helps you create stunning websites, stores, and landing pages without coding.",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/apps/buildify#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Apps",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Buildify",
+              "item": "https://optizenapp.com/shopify/apps/buildify"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".key-features",
+            ".pros-cons"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/apps/buildify#terms",
+        "name": "Buildify Technical Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Drag-and-Drop Interface",
+            "description": "A user interface that allows users to select and move page elements by dragging them with a mouse or touch gesture"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Responsive Design",
+            "description": "Web design approach that makes web pages render well on various devices and screen sizes"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Landing Page",
+            "description": "A standalone web page created specifically for marketing or advertising campaigns"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "CTA (Call-to-Action)",
+            "description": "A button or link designed to prompt immediate response or encourage immediate sale"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Cross-device Optimization",
+            "description": "Ensuring consistent user experience across different devices and platforms"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/apps/buildify#usecases",
+        "name": "Buildify Use Cases and Applications",
+        "description": "Practical applications and real-world scenarios for using Buildify",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "eCommerce Store Design",
+            "description": "Create professional online stores with product showcases and sales-optimized layouts"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Marketing Landing Pages",
+            "description": "Build high-converting landing pages for marketing campaigns and product launches"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Homepage Creation",
+            "description": "Design engaging homepages that effectively communicate brand message and drive conversions"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Product Showcase Pages",
+            "description": "Create detailed product pages with rich media and compelling calls-to-action"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Mobile-First Design",
+            "description": "Build responsive websites optimized for mobile commerce and cross-device experiences"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "No-Code Website Building",
+            "description": "Enable non-technical users to create professional websites without programming knowledge"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:44:25.949Z",
+  "contentModified": "2024-09-05T00:56:38",
+  "contentHash": "6dec7cea84eaecec84c70e880dfccb40"
+}

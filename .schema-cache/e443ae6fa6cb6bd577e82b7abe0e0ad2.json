@@ -1,0 +1,276 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/apps/recharge#webapp",
+        "name": "Recharge Subscriptions App",
+        "alternateName": "Recharge Shopify App",
+        "description": "A subscription management tool designed to help Shopify merchants set up and manage recurring billing for their products, offering customizable subscription plans and automated customer management.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Subscription Management",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browsers",
+        "isAccessibleForFree": false,
+        "serviceType": "Subscription Management Platform",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify Merchants"
+        },
+        "featureList": [
+          "Customizable subscription plans (weekly, monthly, annual)",
+          "Customer management portal",
+          "Flexible billing options (pre-paid and post-paid)",
+          "Real-time inventory syncing with Shopify",
+          "Automated notifications and shipping",
+          "Customer subscription management dashboard",
+          "Personalized product recommendations",
+          "Analytics and reporting tools",
+          "Failed payment retry automation",
+          "Integration with email marketing tools"
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Standard Plan",
+            "price": "99",
+            "priceCurrency": "USD",
+            "billingIncrement": "P1M",
+            "description": "Includes recurring billing, basic subscription management, and customer portals"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro Plan",
+            "price": "300",
+            "priceCurrency": "USD",
+            "billingIncrement": "P1M",
+            "description": "Advanced analytics, custom reporting, and priority customer support"
+          }
+        ],
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://apps.shopify.com/recharge",
+            "actionPlatform": "https://schema.org/DesktopWebPlatform"
+          },
+          "object": {
+            "@type": "DigitalDocument",
+            "name": "Recharge App Installation"
+          }
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/apps/recharge#howto",
+        "name": "How to Set Up Recharge App on Shopify",
+        "description": "Step-by-step guide to installing and configuring the Recharge subscription app on your Shopify store",
+        "totalTime": "PT30M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "99"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Active Shopify Store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Recharge App Subscription"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Install the App",
+            "text": "Go to the Shopify app store and search for 'Recharge' then install the application"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Configure Settings",
+            "text": "Configure your subscription plans, payment methods, and shipping options"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Design Subscription Flow",
+            "text": "Customize the way your subscription options appear on your product pages"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Test Everything",
+            "text": "Run test orders to ensure the checkout process works smoothly"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Launch and Monitor",
+            "text": "Launch the subscription service and monitor performance through Recharge's analytics dashboard"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/apps/recharge#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I customise the look of my subscription product page with Recharge?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Recharge offers flexible design options so you can align it with your brand."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Recharge integrate with email marketing tools?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! Recharge integrates with popular tools like Klaviyo to help you automate customer communications."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Recharge suitable for small businesses?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While Recharge offers great features, its pricing might be steep for smaller merchants. However, the value it provides in customer retention could make it worthwhile."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are there any hidden fees with Recharge?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There are transaction fees on both the Standard and Pro Plans, but these reduce as your subscription base grows."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Recharge handle failed payments?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Recharge has built-in tools to retry failed payments automatically, helping reduce churn from payment issues."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/apps/recharge",
+        "name": "Recharge Subscriptions App Review - Shopify App Analysis",
+        "description": "Comprehensive review of the Recharge Shopify app for subscription management, including features, pricing, setup guide, and real-world case studies.",
+        "url": "https://optizenapp.com/shopify/apps/recharge",
+        "datePublished": "2024-09-06T01:00:25",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/apps/recharge#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Apps",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Recharge",
+              "item": "https://optizenapp.com/shopify/apps/recharge"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".key-features",
+            ".pricing-section"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/apps/recharge#terms",
+        "name": "Recharge Subscription Management Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Recurring Billing",
+            "description": "Automated charging of customers at regular intervals for subscription services"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Customer Churn Rate",
+            "description": "The percentage of subscribers who cancel their subscriptions within a given time period"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Customer Lifetime Value",
+            "description": "The total revenue a business can expect from a single customer account throughout their relationship"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Subscription Management Portal",
+            "description": "A customer-facing interface where subscribers can manage their subscription preferences, billing, and delivery options"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/apps/recharge#usecases",
+        "name": "Recharge App Use Cases",
+        "description": "Practical applications and scenarios for using the Recharge subscription management app",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Health Supplement Subscriptions",
+            "description": "Managing recurring orders for vitamins, supplements, and health products like Dr. Axe"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Beauty Box Subscriptions",
+            "description": "Curated beauty product subscriptions with flexible delivery schedules"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Meal Kit Delivery Services",
+            "description": "Weekly or monthly meal kit subscriptions with customizable meal plans"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Digital Product Subscriptions",
+            "description": "Recurring access to digital content, software, or online services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Pet Supply Subscriptions",
+            "description": "Regular delivery of pet food, toys, and supplies based on pet needs"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:43:51.960Z",
+  "contentModified": "2024-09-06T01:01:27",
+  "contentHash": "f1d4c06c569b98997bcea37a4c31f372"
+}

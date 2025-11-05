@@ -1,0 +1,246 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/urls/redirects#webapp",
+        "name": "Shopify 301 Redirects Tool",
+        "alternateName": "Shopify URL Redirect Manager",
+        "description": "Comprehensive tool for managing Shopify URL redirects to maintain SEO performance and user experience. Set up 301 redirects, fix 404 errors, and manage bulk redirects efficiently.",
+        "applicationCategory": "SEO Tool",
+        "applicationSubCategory": "URL Redirect Management",
+        "operatingSystem": "Web Browser",
+        "browserRequirements": "Modern web browser with JavaScript enabled",
+        "featureList": [
+          "301 redirect setup and management",
+          "Bulk CSV redirect imports",
+          "404 error identification and fixing",
+          "Product and collection page redirects",
+          "Meta refresh redirect alternatives",
+          "Redirect loop prevention",
+          "SEO ranking preservation",
+          "Link equity transfer",
+          "Broken link auditing",
+          "Google Search Console integration"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/urls/redirects",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          },
+          "object": "Shopify URL Redirect Management"
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "URL Redirect Management",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify Store Owners, SEO Professionals, E-commerce Managers"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/urls/redirects#howto",
+        "name": "How to Set Up Shopify URL Redirects",
+        "description": "Step-by-step guide to creating and managing URL redirects in Shopify",
+        "totalTime": "PT10M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Admin Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "List of URLs to redirect"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Access Shopify Admin",
+            "text": "Navigate to your Shopify admin dashboard and log in with your credentials."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Navigate to URL Redirects",
+            "text": "Go to Online Store > Navigation and click on URL Redirects section."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Create New Redirect",
+            "text": "Click 'Create URL Redirect' and enter the old URL path and new destination URL."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Save and Test",
+            "text": "Click 'Save Redirect' and test the redirect to ensure it works correctly."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/urls/redirects#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a Shopify URL redirect and why is it important?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Shopify URL redirect automatically sends visitors and search engines from one URL to another, usually when a page has been moved permanently, deleted, or its URL has been changed. It ensures that visitors reach the correct page, preventing 404 errors and maintaining your site's SEO rankings by preserving the link equity of the old URL."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I set up a bulk URL redirect in Shopify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To set up a bulk URL redirect in Shopify, use the CSV import feature. In your Shopify admin, navigate to Online Store > Navigation > URL Redirects, then click Import Redirects. Upload a CSV file containing the old URLs and their corresponding new URLs, and click Save. This allows for efficient management of many redirects at once."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I fix 404 errors on my Shopify site?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To fix 404 errors on your Shopify store, first identify the broken URLs using tools like Google Search Console or Shopify apps. Once identified, set up a 301 redirect from the old URL to the correct page in the Shopify admin. This ensures users and search engines are properly redirected to a working page, improving both user experience and SEO."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/urls/redirects",
+        "name": "Shopify 301 Redirects - URL Redirect Management Tool",
+        "description": "Learn how to set up and manage Shopify URL redirects effectively. Fix 404 errors, preserve SEO rankings, and maintain user experience with proper redirect strategies.",
+        "datePublished": "2024-09-17T07:37:06",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/urls/redirects#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Tools",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "URL Management",
+              "item": "https://optizenapp.com/shopify/urls"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "301 Redirects",
+              "item": "https://optizenapp.com/shopify/urls/redirects"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".main-content p:first-of-type"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/urls/redirects#terms",
+        "name": "Shopify Redirect Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "301 Redirect",
+            "description": "A permanent redirect that tells search engines a page has moved permanently and transfers ranking power to the new URL."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Link Equity",
+            "description": "The ranking power or authority that a URL has accumulated from backlinks and other SEO factors."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta Refresh",
+            "description": "An HTML-based redirect method that automatically refreshes a page after a specified time, less SEO-friendly than 301 redirects."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Redirect Loop",
+            "description": "An error condition where a URL redirects back to itself or through a chain of redirects, causing infinite loops."
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/urls/redirects#usecases",
+        "name": "Shopify Redirect Use Cases",
+        "description": "Common scenarios where Shopify URL redirects are essential",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Product Page Migration",
+            "description": "Redirect old product URLs to new ones when updating product structures or URLs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Collection Restructuring",
+            "description": "Manage redirects when reorganizing product collections or category hierarchies"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "404 Error Resolution",
+            "description": "Fix broken links and missing pages by redirecting to relevant alternatives"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Site Migration",
+            "description": "Preserve SEO rankings when moving from another platform to Shopify"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Discontinued Products",
+            "description": "Redirect discontinued product pages to similar items or category pages"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:41:40.792Z",
+  "contentModified": "2024-09-17T07:38:10",
+  "contentHash": "3a0b70ae40d9badefad14361b44cca60"
+}

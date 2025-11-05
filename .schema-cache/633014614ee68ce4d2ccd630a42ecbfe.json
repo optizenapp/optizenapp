@@ -1,0 +1,259 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/themes/yuva#webapp",
+        "name": "Yuva Theme",
+        "alternateName": "Yuva Shopify Theme",
+        "description": "A modern responsive Shopify theme for growing eCommerce businesses with advanced features, customization options, and tools to enhance user experience and drive more sales.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "E-commerce Theme",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browsers",
+        "featureList": [
+          "Mobile optimization for fast shopping",
+          "Full width layouts and customization options",
+          "Advanced image gallery sections",
+          "Catalog drawer functionality",
+          "Border style customization",
+          "Cart drawer feature",
+          "Announcement bar",
+          "Time-based promotions",
+          "Advanced search with filters",
+          "Personalized product recommendations",
+          "Shipping availability estimation",
+          "Quick checkout process",
+          "Enhanced UI experience",
+          "SEO optimization",
+          "Responsive design"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "280",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "description": "One-time purchase with free lifetime updates and support"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "name": "Install Yuva Theme",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/themes/yuva",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "isAccessibleForFree": false,
+        "serviceType": "E-commerce Theme Solution",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "E-commerce Business Owners"
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "ShineDezign"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/themes/yuva#howto",
+        "name": "How to Install and Set Up Yuva Theme",
+        "description": "Step-by-step guide to install and configure the Yuva theme for your Shopify store",
+        "totalTime": "PT30M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "280"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store Account"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Yuva Theme License"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Purchase and Download",
+            "text": "Buy Yuva theme from Shopify Theme Store and download the theme files"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Upload to Shopify",
+            "text": "Go to your Shopify dashboard and upload the theme files"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Customize Settings",
+            "text": "Use the settings panel to adjust layout, header size and background colors to match your brand"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Enable Sections",
+            "text": "Set up sections like image gallery, featured collection and announcement bar"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Launch Store",
+            "text": "Once customized and set up, launch your site and start attracting customers"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/themes/yuva#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I use the Yuva theme for multiple Shopify stores?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, the Yuva theme license is valid for use on only one Shopify store per purchase. If you operate multiple stores, you will need to purchase separate licenses for each store to stay compliant with Shopify's theme licensing policies."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the Yuva theme support Shopify's Online Store 2.0 features?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Yuva theme is fully compatible with Shopify's Online Store 2.0. It offers modular sections, flexible content blocks, and better control over theme customization, providing enhanced flexibility for merchants who want to design their stores with Shopify's latest features."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I troubleshoot coding issues with the Yuva theme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you encounter coding issues with the Yuva theme, you can access support through the theme's support service. Additionally, Shopify provides theme file editing access within the dashboard, where you can troubleshoot or apply fixes. Always ensure you back up your theme files before making any changes."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/themes/yuva#webpage",
+        "name": "Yuva Theme Shopify Review: Features, Customization, Benefits",
+        "description": "Complete review of the Yuva theme for Shopify including features, customization options, benefits, and setup process for eCommerce businesses.",
+        "url": "https://optizenapp.com/shopify/themes/yuva",
+        "datePublished": "2024-10-10T03:04:20",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/themes/yuva#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Themes",
+              "item": "https://optizenapp.com/shopify/themes"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Yuva Theme",
+              "item": "https://optizenapp.com/shopify/themes/yuva"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".main-features",
+            ".benefits"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/themes/yuva#terms",
+        "name": "Yuva Theme Technical Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Catalog Drawer",
+            "description": "A sliding panel feature that allows customers to browse product categories without leaving the current page"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Cart Drawer",
+            "description": "A mini cart feature that allows customers to review their items and checkout without leaving the current page"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Online Store 2.0",
+            "description": "Shopify's latest theme architecture offering modular sections and flexible content blocks for enhanced customization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Border Style Customization",
+            "description": "Feature allowing merchants to customize border styles throughout their store to match brand identity"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/themes/yuva#usecases",
+        "name": "Yuva Theme Use Cases",
+        "description": "Practical applications and business types that benefit from using the Yuva theme",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Fashion and Clothing Stores",
+            "description": "Stylish design and customization options perfect for fashion retailers to promote latest trends"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Jewelry and Accessories Stores",
+            "description": "Elegant layout and advanced features help jewelry stores present products beautifully"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Cosmetics and Beauty Stores",
+            "description": "Clean and modern design perfect for beauty brands to create luxurious shopping experiences"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Home Decor and Furniture Stores",
+            "description": "Full width layouts and customizable sections allow visual product showcasing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Electronics and Gadgets Stores",
+            "description": "Advanced search and personalized recommendations enhance shopping experience for tech enthusiasts"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:36:38.213Z",
+  "contentModified": "2024-10-10T03:05:41",
+  "contentHash": "eb45541a12e438e08406abf1388c2c3d"
+}

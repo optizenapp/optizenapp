@@ -1,0 +1,243 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/apps/zapiet-pickup-delivery#webapp",
+        "name": "Zapiet – Pickup + Delivery",
+        "alternateName": "Zapiet Shopify App",
+        "description": "A highly versatile Shopify app designed to streamline the delivery and in-store pickup experience for eCommerce merchants with flexible fulfillment options.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "E-commerce Fulfillment",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browser",
+        "featureList": [
+          "Flexible pickup and delivery scheduling",
+          "Customizable time slots",
+          "Multiple location management",
+          "Local delivery zones with zip/postal codes",
+          "Shopify POS integration",
+          "Delivery date picker",
+          "Google Calendar integration",
+          "Zapier integration",
+          "Real-time carrier shipping rates",
+          "Advanced time slot functionality"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "29.99",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "29.99",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M"
+          }
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://apps.shopify.com/zapiet-rates-pickup-delivery"
+          }
+        },
+        "isAccessibleForFree": false,
+        "serviceType": "E-commerce Fulfillment Management",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify merchants with local delivery and pickup needs"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "1500",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/apps/zapiet-pickup-delivery#howto",
+        "name": "How to Set Up Zapiet Pickup + Delivery",
+        "description": "Step-by-step guide to configure Zapiet for your Shopify store",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Install the App",
+            "text": "Install Zapiet from the Shopify App Store and connect it to your store"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure Locations",
+            "text": "Set up your pickup locations and delivery zones using zip codes or postal codes"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Set Time Slots",
+            "text": "Create customizable time slots based on your business hours of operation"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Integrate with POS",
+            "text": "Connect with Shopify POS for seamless online and offline order management"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Test Customer Experience",
+            "text": "Verify the delivery date picker and pickup options work correctly for customers"
+          }
+        ],
+        "totalTime": "PT30M",
+        "tool": {
+          "@id": "https://optizenapp.com/shopify/apps/zapiet-pickup-delivery#webapp"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/apps/zapiet-pickup-delivery#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the starting price for Zapiet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zapiet offers a tiered pricing model starting at $29.99/month for the basic package."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Zapiet integrate with Shopify POS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Zapiet integrates perfectly with Shopify POS, enabling you to manage in-store pickups and deliveries from a single platform."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I set different delivery zones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you can define local delivery zones using zip codes or postal codes and set different delivery rates based on geographic location."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What third-party integrations are available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zapiet integrates with Google Calendar, Zapier, and various shipping solutions to streamline your workflow."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/apps/zapiet-pickup-delivery",
+        "name": "[REVIEW] Zapiet – Pickup + Delivery",
+        "description": "Comprehensive review of Zapiet Pickup + Delivery Shopify app with features, pricing, and integration details",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/apps/zapiet-pickup-delivery#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Apps",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Zapiet Review",
+              "item": "https://optizenapp.com/shopify/apps/zapiet-pickup-delivery"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".app-features",
+            ".pricing-info",
+            ".verdict"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/apps/zapiet-pickup-delivery#terms",
+        "name": "Zapiet Technical Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Local Delivery Zones",
+            "description": "Geographic areas defined by zip codes or postal codes where delivery services are available with specific rates"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Time Slots",
+            "description": "Customizable availability windows that allow customers to select specific delivery or pickup times"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Shopify POS Integration",
+            "description": "Seamless connection between online store and physical point-of-sale system for unified order management"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Real-time Carrier Shipping Rates",
+            "description": "Dynamic pricing calculation based on actual shipping carrier rates at checkout"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/apps/zapiet-pickup-delivery#usecases",
+        "name": "Zapiet Use Cases",
+        "description": "Practical applications and scenarios for using Zapiet Pickup + Delivery",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Food Delivery Services",
+            "description": "Time-sensitive food delivery with specific pickup and delivery scheduling"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Flower Shop Operations",
+            "description": "Scheduled delivery for special occasions with date picker functionality"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Multi-location Retail",
+            "description": "Managing pickup and delivery across multiple store locations"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Gift Shop Services",
+            "description": "Flexible delivery options for time-sensitive gift deliveries"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Hybrid Online-Offline Stores",
+            "description": "Seamless integration between e-commerce and brick-and-mortar operations"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:46:00.138Z",
+  "contentModified": "2024-09-04T02:56:03",
+  "contentHash": "c7fb5176e5635089e0f30c8983935969"
+}

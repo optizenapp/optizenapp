@@ -1,0 +1,229 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/tools#webapp",
+        "name": "Shopify Tools & Resources Collection",
+        "alternateName": "Shopify Store Optimization Tools",
+        "description": "Free collection of Shopify tools and resources to improve your online store, including bulk discount code generator and store name generator.",
+        "url": "https://optizenapp.com/shopify/tools",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "E-commerce Tools",
+        "operatingSystem": "Web Browser",
+        "browserRequirements": "Modern web browser with JavaScript enabled",
+        "featureList": [
+          "Bulk discount code generation for Shopify stores",
+          "Shopify store name generation and suggestions",
+          "Store optimization resources",
+          "Free tool collection for merchants",
+          "User-friendly interface for quick results"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "name": "Use Shopify Tools",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/tools",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "E-commerce Optimization Tools",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify Store Owners"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/tools#howto",
+        "name": "How to Use Shopify Tools Collection",
+        "description": "Step-by-step guide to using the Shopify tools and resources for store optimization.",
+        "totalTime": "PT5M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store Account"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Web Browser"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Select Tool",
+            "text": "Choose from available Shopify tools like bulk discount code generator or store name generator."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Input Requirements",
+            "text": "Enter your specific requirements or preferences for the tool you selected."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Generate Results",
+            "text": "Click generate to create discount codes, store names, or access other resources."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Implement in Store",
+            "text": "Apply the generated results to your Shopify store for optimization."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/tools#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are these Shopify tools free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all tools in this collection are completely free to use for Shopify store owners."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What tools are available for Shopify stores?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The collection includes a bulk discount code generator and store name generator, with more tools being added regularly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a Shopify account to use these tools?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While you don't need a Shopify account to generate results, you'll need one to implement the generated codes or names in your store."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can these tools improve my Shopify store?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "These tools help optimize your store by generating bulk discount codes for promotions and suggesting creative store names for branding."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/tools#webpage",
+        "name": "Tools & Resources For Shopify",
+        "url": "https://optizenapp.com/shopify/tools",
+        "datePublished": "2024-11-24T07:01:17",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/tools#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Tools",
+              "item": "https://optizenapp.com/shopify/tools"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".tool-description"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/tools#terms",
+        "name": "Shopify Tools Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Bulk Discount Code Generator",
+            "description": "A tool that creates multiple discount codes simultaneously for Shopify stores, saving time on promotional campaigns."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Store Name Generator",
+            "description": "A tool that suggests creative and brandable names for Shopify stores based on industry and preferences."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Shopify Optimization",
+            "description": "The process of improving various aspects of a Shopify store to increase performance, sales, and user experience."
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/tools#usecases",
+        "name": "Shopify Tools Use Cases",
+        "description": "Practical applications and scenarios for using Shopify optimization tools.",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Seasonal Promotions",
+            "description": "Generate bulk discount codes for holiday sales, Black Friday, or seasonal campaigns."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Store Rebranding",
+            "description": "Use store name generator when launching a new brand or pivoting business focus."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Marketing Campaigns",
+            "description": "Create unique discount codes for different marketing channels and track performance."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "New Store Launch",
+            "description": "Generate creative store names and initial promotional codes for store launch."
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:34:33.569Z",
+  "contentModified": "2024-11-24T07:07:08",
+  "contentHash": "06c78713b13611deea7075bb2a9803e1"
+}

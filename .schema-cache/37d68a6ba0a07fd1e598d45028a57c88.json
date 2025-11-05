@@ -1,0 +1,258 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/generated-homepage#webapp",
+        "name": "Optizen AI",
+        "alternateName": "Optizen App Shopify SEO",
+        "description": "Advanced Shopify SEO app with AI-powered optimization for products, collections, and tag pages. Create true sub-collections and silo structures with full control over meta information and content optimization.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "SEO Tool",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browser",
+        "isAccessibleForFree": true,
+        "serviceType": "Shopify SEO Optimization",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify store owners, E-commerce businesses, SEO professionals"
+        },
+        "featureList": [
+          "AI-powered product SEO updates at scale",
+          "Collection page content optimization below product grid",
+          "Tag page editing and optimization",
+          "Smart tag filter sidebar for collections",
+          "Variant tagger for automatic tag creation",
+          "Variant image thumbnail matching",
+          "CSV export and import for collections and tag pages",
+          "Custom AI prompt creation and repository",
+          "Index control for tag pages",
+          "Internal linking optimization",
+          "Silo structure creation for better SEO"
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Optizen AI Free",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free tier with 2000 AI words, basic product SEO updates"
+          },
+          {
+            "@type": "Offer",
+            "name": "Optizen AI Pro",
+            "price": "19.99",
+            "priceCurrency": "USD",
+            "billingIncrement": "P1M",
+            "description": "Pro features with 125,000 AI words, collection optimization, tag page control"
+          },
+          {
+            "@type": "Offer",
+            "name": "Optizen AI Enterprise",
+            "price": "29.99",
+            "priceCurrency": "USD",
+            "billingIncrement": "P1M",
+            "description": "Enterprise features with 250,000 AI words, variant tagger, image matching"
+          }
+        ],
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/generated-homepage",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "object": "Shopify SEO Optimization"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/generated-homepage#howto",
+        "name": "How to Use Optizen AI for Shopify SEO",
+        "description": "Step-by-step guide to optimize your Shopify store with Optizen AI",
+        "totalTime": "PT30M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          "Shopify store",
+          "Optizen AI app"
+        ],
+        "tool": "Optizen AI Shopify App",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Install Optizen AI",
+            "text": "Install the Optizen AI app from the Shopify App Store to your store"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure AI Settings",
+            "text": "Set up your AI prompts using the repository or create custom prompts for your optimization needs"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Update Products at Scale",
+            "text": "Use AI to update SEO titles, descriptions, H1 tags, and product descriptions in bulk"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Optimize Collection Pages",
+            "text": "Add content below product grids and optimize collection page meta information"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Create Tag Page Silos",
+            "text": "Edit tag pages to create optimized sub-collections and control indexing"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/generated-homepage#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What makes Optizen AI different from other Shopify SEO apps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Optizen AI fills a gap in Shopify SEO by creating true sub-collections and silo structures with collections, allowing you to edit meta information of sub-collection pages with AI-powered optimization at scale."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I control which tag pages get indexed by search engines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, with the Optizen index feature, you can noindex all tag pages by default and only index the tags you've edited to sculpt collection silos as desired."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the variant image thumbnail matcher work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The variant image thumbnail matcher displays the correct image on tag pages. For example, on /collections/jackets/red, it shows all red jacket thumbnail variants, giving users and Google exactly what they want."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Optizen AI compatible with Shopify 2.0?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Optizen AI is fully compatible with Shopify 2.0 and includes installation support for seamless integration."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/generated-homepage",
+        "name": "Optizen AI - Advanced Shopify SEO App",
+        "description": "Transform your Shopify store's SEO with AI-powered optimization, sub-collections, and silo structures for better search engine rankings.",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/generated-homepage#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI Shopify SEO",
+              "item": "https://optizenapp.com/generated-homepage"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".description",
+            ".features"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/generated-homepage#terms",
+        "name": "Shopify SEO Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Sub Collections",
+            "description": "Specialized collection pages created through tag optimization that provide more granular categorization than default Shopify collections"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Silo Structure",
+            "description": "SEO strategy that organizes content into themed categories to help search engines understand site structure and improve rankings"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Tag Page Optimization",
+            "description": "Process of editing and optimizing Shopify tag pages with custom meta information, content, and SEO elements"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Variant Tagger",
+            "description": "Feature that automatically creates tags based on product variants like color, size, or material"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/generated-homepage#usecases",
+        "name": "Optizen AI Use Cases",
+        "description": "Practical applications and scenarios for using Optizen AI",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Fashion Store Color-Based Collections",
+            "description": "Create optimized tag pages like /collections/dresses/red to show only red dress variants with proper thumbnails"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Bulk Product SEO Updates",
+            "description": "Update thousands of product SEO titles and descriptions simultaneously using AI-powered optimization"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Collection Content Enhancement",
+            "description": "Add unique, SEO-optimized content below product grids to improve page relevance and search rankings"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Smart Internal Linking",
+            "description": "Implement tag filter sidebars for improved user experience and internal link structure"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "SEO Silo Architecture",
+            "description": "Build structured category hierarchies that search engines can easily understand and rank"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T03:01:57.832Z",
+  "contentModified": "2025-08-26T23:17:02",
+  "contentHash": "79a97fe3c24ef511a0ca9810aefa09ff"
+}

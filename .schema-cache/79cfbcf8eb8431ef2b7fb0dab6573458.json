@@ -1,0 +1,233 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/#webapp",
+        "name": "Optizen",
+        "alternateName": "Optizen Shopify SEO App",
+        "description": "A comprehensive Shopify app designed to improve SEO features beyond standard Shopify store capabilities, offering advanced collection page content management and tag page optimization.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "SEO Tools",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browsers",
+        "featureList": [
+          "Content Below Product Grid on Collection Pages",
+          "Tag Page SEO Optimization",
+          "SEO Title and Description Editing",
+          "Page Description Management",
+          "H1/Page Title Customization",
+          "Index/Noindex Tag Control",
+          "Variant Tagger (Enterprise)",
+          "Variant Image Thumbnail Matcher (Enterprise)",
+          "HTML WYSIWYG Editor",
+          "Bulk Tag Management"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "description": "Free and Enterprise versions available"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "Shopify SEO Enhancement",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify Store Owners"
+        },
+        "softwareRequirements": "Shopify Store"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/what-is-optizen#howto",
+        "name": "How to Use Optizen for Shopify SEO",
+        "description": "Step-by-step guide to implementing Optizen features for improved Shopify store SEO performance.",
+        "totalTime": "PT30M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Active Shopify Store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen App Installation"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Install Optizen App",
+            "text": "Install Optizen from the Shopify App Store to your Shopify store."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Add Collection Page Content",
+            "text": "Use the HTML WYSIWYG editor to add content below the product grid on collection pages."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Optimize Tag Pages",
+            "text": "Edit SEO titles, descriptions, H1 tags, and index settings for tag pages to improve SEO performance."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure Variant Features",
+            "text": "For Enterprise users: Set up variant tagging and image thumbnail matching for enhanced user experience."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/what-is-optizen#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What makes Optizen different from other Shopify SEO apps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Optizen provides unique features like adding content below product grids on collection pages and comprehensive tag page optimization, which are not available in standard Shopify installations or most themes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I add content below the product grid on collection pages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Optizen allows you to add content below the product grid on any collection page using a simple HTML WYSIWYG editor, addressing a major limitation of most Shopify themes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What tag page optimization features does Optizen offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Optizen allows you to edit SEO titles, SEO descriptions, page descriptions (above and below product grid), H1/page titles, and add index/noindex tags for search engines on tag pages."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the Enterprise-only features?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Enterprise features include Variant Tagger for syncing product variants as tags, and Variant Image Thumbnail Matcher for displaying correct variant images on tag pages."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/what-is-optizen",
+        "name": "What Is Optizen?",
+        "description": "Learn about Optizen, the Shopify SEO app that enhances collection pages and tag page optimization beyond standard Shopify capabilities.",
+        "datePublished": "2022-11-20T23:13:13",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "What Is Optizen",
+              "item": "https://optizenapp.com/what-is-optizen"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".main-content"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/what-is-optizen#terms",
+        "name": "Optizen SEO Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Collection Page Content",
+            "description": "Content added below the product grid on Shopify collection pages to improve SEO and user experience."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Tag Page Optimization",
+            "description": "The process of editing and optimizing Shopify tag pages for better search engine performance."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Variant Tagger",
+            "description": "Enterprise feature that automatically syncs product variants and adds them as tags to products."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Variant Image Thumbnail Matcher",
+            "description": "Enterprise feature that matches variant-specific images as thumbnails on tag pages for improved user experience."
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/what-is-optizen#usecases",
+        "name": "Optizen Use Cases",
+        "description": "Practical applications and scenarios for using Optizen in Shopify stores.",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Enhanced Collection Pages",
+            "description": "Add descriptive content below product grids to improve SEO and provide better product context for customers."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tag Page SEO Management",
+            "description": "Optimize tag pages with custom titles, descriptions, and indexing controls for better search engine visibility."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Variant-Based Collections",
+            "description": "Create collections based on product variants (like color or size) with matching thumbnail images for improved user experience."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Bulk Tag Management",
+            "description": "Efficiently manage product tags across your entire Shopify store with automated variant tagging."
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T03:00:46.877Z",
+  "contentModified": "2023-02-27T06:11:49",
+  "contentHash": "afe02f52b04aa77b153ec78f7d87cd7d"
+}

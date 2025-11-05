@@ -1,0 +1,204 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/tools/bulk-discount-code-generator#webapp",
+        "name": "Bulk Discount Code Generator For Shopify",
+        "alternateName": "Shopify Discount Code Generator",
+        "description": "Generate unique discount codes in bulk for Shopify stores. Perfect for marketing campaigns, app integrations like Upviral, and bulk importing discount codes.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "E-commerce Tools",
+        "operatingSystem": "Web Browser",
+        "browserRequirements": "Modern web browser with JavaScript enabled",
+        "featureList": [
+          "Generate unique discount codes in bulk",
+          "Customizable code prefix",
+          "Adjustable code length",
+          "Configurable number of codes",
+          "CSV export functionality",
+          "Real-time code generation",
+          "Shopify-compatible format",
+          "Marketing campaign integration"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/tools/bulk-discount-code-generator",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "Discount Code Generation",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify Store Owners, E-commerce Marketers, Campaign Managers"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/tools/bulk-discount-code-generator#howto",
+        "name": "How To Use The Discount Generator Tool",
+        "description": "Step-by-step guide to generate bulk discount codes for Shopify",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Configure Code Settings",
+            "text": "Add your details including optional prefix, number of codes to generate, and desired code length"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Generate Codes",
+            "text": "Click the Generate Codes button to create unique discount codes"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Export Results",
+            "text": "Download the generated codes as a CSV file for easy import into Shopify or other platforms"
+          }
+        ],
+        "totalTime": "PT2M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/tools/bulk-discount-code-generator#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the bulk discount code generator used for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The tool generates unique discount codes in bulk for Shopify stores, perfect for marketing campaigns and integration with tools like Upviral."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I customize the discount codes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you can add a custom prefix, set the code length, and specify how many codes to generate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I export the generated codes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click the Download CSV button to export all generated codes as a CSV file for easy import into Shopify or other platforms."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/tools/bulk-discount-code-generator",
+        "name": "Bulk Discount Code Generator For Shopify",
+        "description": "Generate unique discount codes in bulk for Shopify stores and marketing campaigns",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/tools/bulk-discount-code-generator#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Tools",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Bulk Discount Code Generator"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".discount-generator-container",
+            "h1"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/tools/bulk-discount-code-generator#terms",
+        "name": "Discount Code Generator Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Bulk Generation",
+            "description": "Creating multiple unique discount codes simultaneously for efficient campaign management"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Code Prefix",
+            "description": "Custom text added to the beginning of each generated discount code for branding or organization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "CSV Export",
+            "description": "Downloading generated codes in comma-separated values format for easy import into other systems"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/tools/bulk-discount-code-generator#usecases",
+        "name": "Use Cases for Bulk Discount Code Generator",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Upviral Campaign Integration",
+            "description": "Generate unique codes for viral marketing campaigns where users receive discount codes for sharing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Email Marketing Campaigns",
+            "description": "Create personalized discount codes for email subscribers and marketing automation"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Social Media Promotions",
+            "description": "Generate codes for social media contests and promotional campaigns"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Influencer Partnerships",
+            "description": "Create unique tracking codes for influencer collaborations and affiliate programs"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:34:04.202Z",
+  "contentModified": "2024-11-24T07:22:19",
+  "contentHash": "b18666edf4951955d3178eb143b50c2f"
+}

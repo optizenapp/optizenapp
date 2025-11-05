@@ -1,0 +1,243 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/apps/monster-upsells#webapp",
+        "name": "Monster Upsells",
+        "alternateName": "Monster Upsells Shopify App",
+        "description": "A Shopify upsell app that helps increase sales through in-cart upsells, cross-sells, and customizable cart experiences. Features include progress bars, countdown timers, free gifts, and volume discounts to boost average order value.",
+        "applicationCategory": "E-commerce",
+        "applicationSubCategory": "Sales Optimization",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browsers",
+        "featureList": [
+          "Customizable cart drawer with upsell offers",
+          "Free gifts based on spending thresholds",
+          "Progress bars to encourage larger purchases",
+          "Countdown timers for urgency",
+          "Volume discounts and tiered pricing",
+          "Product upsell recommendations",
+          "Analytics dashboard for performance tracking",
+          "Ajax cart customization",
+          "Cross-sell product bundles",
+          "Shipping protection options",
+          "BOGO and quantity break deals",
+          "Dynamic product recommendations",
+          "Custom pop-ups and progress bars",
+          "Shopify Plus compatibility"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free plan available with premium options"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/apps/monster-upsells",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          },
+          "object": {
+            "@type": "Thing",
+            "name": "Monster Upsells App Setup"
+          }
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "Shopify App",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify merchants and e-commerce store owners"
+        },
+        "softwareRequirements": "Shopify store",
+        "installUrl": "https://apps.shopify.com/monster-upsells"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/apps/monster-upsells#howto",
+        "name": "How to Set Up Monster Upsells on Shopify",
+        "description": "Step-by-step guide to install and configure Monster Upsells for your Shopify store",
+        "totalTime": "PT10M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Active Shopify store"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Install the App",
+            "text": "Install Monster Upsells from the Shopify App Store in minutes"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure Cart Settings",
+            "text": "Customize the ajax cart with custom pop-ups and progress bars to match your brand"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Set Up Upsell Offers",
+            "text": "Create personalized upsell offers, free gift thresholds, and volume discounts"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Monitor Performance",
+            "text": "Use the analytics dashboard to track upsell campaign performance and conversion rates"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/apps/monster-upsells#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Monster Upsells support Shopify Plus stores?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Monster Upsells is fully compatible with Shopify Plus, allowing advanced customization and large-scale store needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I track the performance of upsell offers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Monster Upsells provides an analytics dashboard that tracks the success of upsell campaigns, including conversion rates and revenue generated from upsell offers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there customer support available for technical issues?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, contact support is available to assist merchants with setup, troubleshooting, and optimizing the app for their store."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/apps/monster-upsells#webpage",
+        "name": "Monster Upsells - Shopify Upsell App Review",
+        "description": "Comprehensive review of Monster Upsells Shopify app for increasing sales through in-cart upsells and cross-sells",
+        "url": "https://optizenapp.com/shopify/apps/monster-upsells",
+        "datePublished": "2024-10-15T05:44:51",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/apps/monster-upsells#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Apps",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Monster Upsells",
+              "item": "https://optizenapp.com/shopify/apps/monster-upsells"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".app-description",
+            ".features-list",
+            ".setup-guide"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/apps/monster-upsells#terms",
+        "name": "Monster Upsells Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Cart Drawer",
+            "description": "Customizable side cart where upsell offers and cross-sells appear"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "AOV",
+            "description": "Average Order Value - the average amount spent per order"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Ajax Cart",
+            "description": "Dynamic cart that updates without page refresh"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Volume Discounts",
+            "description": "Tiered discounts based on quantity to increase order size"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/apps/monster-upsells#usecases",
+        "name": "Monster Upsells Use Cases",
+        "description": "Practical applications and scenarios for using Monster Upsells",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Increase Average Order Value",
+            "description": "Use progress bars and tiered pricing to encourage customers to buy more"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Cart Abandonment Recovery",
+            "description": "Reconvert customers by showing must-have items at checkout"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Product Bundle Sales",
+            "description": "Sell cross-sells and product bundles right inside the cart interface"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Seasonal Promotions",
+            "description": "Create urgency with countdown timers for timed offers or discounts"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Customer Loyalty Programs",
+            "description": "Offer free gifts when customers reach spending thresholds"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:36:08.185Z",
+  "contentModified": "2024-10-15T05:46:12",
+  "contentHash": "bae09e45f513f2470162a95f3bee9e08"
+}

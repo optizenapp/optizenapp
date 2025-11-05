@@ -1,0 +1,242 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/themes/mavon#webapp",
+        "name": "Mavon Shopify Theme",
+        "alternateName": "Mavon Theme",
+        "description": "A fully customizable premium Shopify theme designed for fashion products and visually-driven businesses. Features mega menus, sticky headers, countdown timers, and flexible sections to improve user experience and conversions.",
+        "applicationCategory": "E-commerce Theme",
+        "applicationSubCategory": "Shopify Theme",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browsers",
+        "featureList": [
+          "Mega Menu Navigation",
+          "Flexible Sections",
+          "Sticky Header",
+          "Countdown Timer",
+          "Stock Counter",
+          "Image Rollover",
+          "Color Swatches",
+          "Quick View",
+          "Responsive Design",
+          "Mobile Optimization",
+          "SEO Optimization",
+          "Schema Markup",
+          "Cart Icon Visibility",
+          "Product Slideshow",
+          "Custom Banners",
+          "Third-party App Integration"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "280",
+          "priceCurrency": "USD",
+          "description": "One-time payment with lifetime updates",
+          "availability": "https://schema.org/InStock"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/themes/mavon",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "isAccessibleForFree": false,
+        "serviceType": "Shopify Theme",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Fashion retailers, clothing stores, e-commerce businesses"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/themes/mavon#howto",
+        "name": "How to Install and Customize Mavon Theme",
+        "description": "Step-by-step guide to installing and customizing the Mavon Shopify theme",
+        "totalTime": "PT30M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "280"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Mavon Theme License"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Purchase Theme",
+            "text": "Go to Shopify theme store and search for Mavon theme. Buy the theme with one time payment."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Install Theme",
+            "text": "Install the theme from Shopify dashboard."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Customize Design",
+            "text": "Start customizing your store with theme editor. Add color swatches, custom slideshow, and flexible sections."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/themes/mavon#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I use the Mavon theme for a one-product Shopify store?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Mavon theme is highly flexible and works well for one-product stores as well as larger catalogs. You can customize the homepage to focus on highlighting your single product with features like image rollovers, slideshow banners, and a dedicated product page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Mavon theme suitable for mobile users?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. The Mavon theme is fully optimized for mobile devices. Its responsive design ensures that your site looks great and performs well on any device, providing a faster shopping experience for users on smartphones and tablets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the Mavon theme support third-party app integrations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Mavon theme is compatible with a wide range of third-party Shopify apps. You can easily integrate apps for email marketing, customer reviews, social media sharing, and more."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/themes/mavon",
+        "name": "Mavon Theme Review - Premium Shopify Theme for Fashion Stores",
+        "description": "Complete review of the Mavon Shopify theme with features, installation guide, and comparison with other themes.",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/themes/mavon#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Themes",
+              "item": "https://optizenapp.com/shopify/themes"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Mavon",
+              "item": "https://optizenapp.com/shopify/themes/mavon"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".theme-features",
+            ".installation-guide"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/themes/mavon#terms",
+        "name": "Mavon Theme Technical Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Mega Menu",
+            "description": "Large dropdown menu that allows stores to categorize inventory into a user-friendly format for easy navigation"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Sticky Header",
+            "description": "Navigation header that remains visible as customers scroll through the site"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Image Rollover",
+            "description": "Interactive feature that shows additional product images when hovering over the main image"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Color Swatches",
+            "description": "Visual color options for product variants displayed as clickable color samples"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Flexible Sections",
+            "description": "Customizable content blocks that can be added, removed, or rearranged on different pages"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/themes/mavon#usecases",
+        "name": "Mavon Theme Use Cases",
+        "description": "Practical applications and business scenarios for the Mavon theme",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Fashion and Clothing Stores",
+            "description": "Image rollover and color swatches make it perfect for showing fashion items in an interactive way"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Electronics and Accessories",
+            "description": "Mega menu and sticky header helps stores with large inventory ensure customers can find products easily"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Health and Beauty",
+            "description": "Customizable sections allow beauty stores to showcase products with rich images and detailed descriptions"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "One-Product Stores",
+            "description": "Highly flexible design works well for single product focus with dedicated product pages"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:37:06.370Z",
+  "contentModified": "2024-10-07T01:27:59",
+  "contentHash": "0934b60152f8874368740309a40f1546"
+}

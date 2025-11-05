@@ -1,0 +1,177 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/#webapp",
+        "name": "OptizenAI",
+        "alternateName": "Optizen App",
+        "description": "AI-powered e-commerce optimization platform with automated product updates, collection management, and intelligent content generation for online stores.",
+        "url": "https://optizenapp.com/",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "E-commerce Optimization",
+        "operatingSystem": "Web Browser",
+        "browserRequirements": "Modern web browser with JavaScript enabled",
+        "isAccessibleForFree": false,
+        "serviceType": "SaaS Platform",
+        "featureList": [
+          "AI-powered Collection page optimization",
+          "AI-enhanced Tag page management",
+          "Automated meta and body content parsing",
+          "Product detail AI logging with enhanced UI",
+          "Retry functionality for failed AI updates",
+          "Active/Draft product filtering",
+          "Real-time changelog tracking",
+          "Automated product content generation"
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "E-commerce businesses, Online retailers, Digital marketers"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Contact for pricing"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "softwareVersion": "Latest (August 2024)",
+        "releaseNotes": "https://optizenapp.com/changelog-updates"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/changelog-updates",
+        "name": "OptizenAI Changelog - Latest Updates and Features",
+        "description": "Track the latest updates, features, and improvements to OptizenAI platform including AI enhancements, UI improvements, and new functionality releases.",
+        "url": "https://optizenapp.com/changelog-updates",
+        "datePublished": "2024-08-13T07:57:05",
+        "dateModified": "2024-08-18",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Changelog",
+              "item": "https://optizenapp.com/changelog-updates"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".changelog-content"
+          ]
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/changelog-updates#releases",
+        "name": "OptizenAI Release History",
+        "description": "Chronological list of OptizenAI platform updates and feature releases",
+        "numberOfItems": 2,
+        "itemListElement": [
+          {
+            "@type": "SoftwareSourceCode",
+            "position": 1,
+            "name": "OptizenAI Release - August 18, 2024",
+            "description": "Major AI feature additions for Collection and Tag pages, enhanced parsing capabilities, improved UI with Read More functionality, and retry mechanisms for failed updates.",
+            "datePublished": "2024-08-18",
+            "programmingLanguage": "AI/ML Platform",
+            "runtimePlatform": "Web Application"
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "position": 2,
+            "name": "OptizenAI Release - August 14, 2024",
+            "description": "Enhanced product filtering functionality allowing users to distinguish between Active and Draft products for AI-powered updates.",
+            "datePublished": "2024-08-14",
+            "programmingLanguage": "AI/ML Platform",
+            "runtimePlatform": "Web Application"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/changelog-updates#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What new AI features were added to OptizenAI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The latest updates include AI features for Collection pages, AI features for Tag pages, enhanced parsing of all page meta and body content for AI reference data, and improved retry functionality for failed AI updates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the product filtering feature work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The new filtering functionality allows users to distinguish between Active and Draft products when applying AI updates, providing better control over which products receive automated optimizations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What UI improvements were made in the latest release?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The platform now includes a 'Read More' tab on AI Log pages for Product detail logs, providing an improved user interface for reviewing AI-generated content and updates."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/changelog-updates#terms",
+        "name": "OptizenAI Technical Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "AI Log Pages",
+            "description": "Interface pages that display detailed logs of AI-powered updates and modifications made to products, collections, and tags."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Collection Pages",
+            "description": "E-commerce category pages that group related products, now enhanced with AI optimization capabilities."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Tag Pages",
+            "description": "Product classification pages using tags for organization, now featuring AI-powered content optimization."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta and Body Content Parsing",
+            "description": "AI process that analyzes and extracts data from webpage metadata and body content for optimization reference."
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:54:00.064Z",
+  "contentModified": "2024-09-17T04:30:05",
+  "contentHash": "f968fc4bdfb7144d1f3b06b1c5ed18d8"
+}

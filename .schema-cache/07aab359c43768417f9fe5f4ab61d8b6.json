@@ -1,0 +1,269 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/#affiliate-program",
+        "name": "OptizenAI Affiliate Program",
+        "alternateName": "Optizenapp.com Affiliate Program",
+        "description": "Join the OptizenAI affiliate program and earn 25% recurring commissions for life on app installations and AI usage plans. $50 payout threshold with comprehensive affiliate support.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Affiliate Marketing Program",
+        "operatingSystem": "Web Browser",
+        "browserRequirements": "Modern web browser with internet connection",
+        "featureList": [
+          "25% recurring commissions for life of installed app",
+          "25% commission on AI usage plans",
+          "$50 payout threshold",
+          "ShareASale.com affiliate network integration",
+          "Affiliate Account Manager access",
+          "HTML code and banner creatives",
+          "Tracking codes for coupons and deals",
+          "Real-time commission reporting",
+          "Comprehensive terms and conditions",
+          "Marketing material licensing"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free to join affiliate program"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "name": "Join Affiliate Program",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/affiliate-program",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "Affiliate Marketing Program",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Website owners, marketers, content creators, affiliate marketers"
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "OptizenAI",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/#how-to-join-affiliate",
+        "name": "How to Join OptizenAI Affiliate Program",
+        "description": "Step-by-step guide to joining the OptizenAI affiliate program and start earning commissions",
+        "totalTime": "PT15M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Website or marketing platform"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "ShareASale.com account"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Complete Application",
+            "text": "Complete and submit the online application at the ShareASale.com server"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Wait for Approval",
+            "text": "Applications are auto-approved but may be re-evaluated for site suitability"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Access Affiliate Dashboard",
+            "text": "Access your Affiliate Account Manager to review program details and download marketing materials"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Implement Tracking",
+            "text": "Use provided HTML code for banners, text links, and affiliate links to ensure proper tracking"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Start Promoting",
+            "text": "Begin promoting OptizenAI while following all program terms and promotion restrictions"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/#affiliate-faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What commission rates does the OptizenAI affiliate program offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The program offers 25% recurring commissions for the life of installed app and 25% on AI usage plans."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the minimum payout threshold?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The payout threshold is $50, handled through the ShareASale.com affiliate network."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can anyone join the affiliate program?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Anyone is welcome to join, but applications may be rejected for sites promoting inappropriate content, illegal activities, or trademark violations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What marketing restrictions apply to affiliates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Affiliates cannot spam, bid on trademark keywords in PPC campaigns, use parasiteware, or create sites that resemble OptizenAI's website."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are commissions tracked and paid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All tracking and payments are handled through ShareASale.com affiliate network. Affiliates must use provided HTML codes for proper tracking."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/affiliate-program",
+        "name": "OptizenAI Affiliate Program",
+        "description": "Join the OptizenAI affiliate program and earn 25% recurring commissions for life on app installations and AI usage plans.",
+        "url": "https://optizenapp.com/affiliate-program",
+        "datePublished": "2024-07-17T05:25:11",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/#affiliate-program"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Affiliate Program",
+              "item": "https://optizenapp.com/affiliate-program"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".program-details",
+            ".commission-info"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/#affiliate-terms",
+        "name": "Affiliate Program Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Recurring Commission",
+            "description": "Commission earned continuously for the lifetime of a customer's subscription or app installation"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Payout Threshold",
+            "description": "Minimum commission amount ($50) required before payment is processed"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "ShareASale Network",
+            "description": "Third-party affiliate network handling tracking, reporting, and payments for the program"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Licensed Materials",
+            "description": "OptizenAI logos, trade names, trademarks, and marketing materials provided to affiliates"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Parasiteware",
+            "description": "Prohibited software that overwrites affiliate tracking cookies or intercepts traffic"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/#affiliate-benefits",
+        "name": "Affiliate Program Benefits",
+        "description": "Key benefits and features of joining the OptizenAI affiliate program",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Lifetime Recurring Commissions",
+            "description": "Earn 25% commissions for the entire lifetime of customer subscriptions"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AI Usage Plan Commissions",
+            "description": "Additional 25% commissions on all AI usage plan purchases"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Marketing Support",
+            "description": "Access to banners, HTML codes, tracking links, and promotional materials"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Real-time Reporting",
+            "description": "Comprehensive tracking and reporting through ShareASale affiliate dashboard"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Low Payout Threshold",
+            "description": "Only $50 minimum payout threshold for quick commission access"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Auto-approval Process",
+            "description": "Streamlined application process with automatic approval for qualifying sites"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:55:35.807Z",
+  "contentModified": "2024-07-17T05:27:47",
+  "contentHash": "f0520811ed66b6ec27cd9db2937e1974"
+}

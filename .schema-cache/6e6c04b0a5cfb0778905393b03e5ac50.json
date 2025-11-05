@@ -1,0 +1,244 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/#webapp",
+        "name": "Optizen SEO Tool",
+        "alternateName": "Optizen App",
+        "description": "Advanced Shopify SEO optimization tool for bulk product description updates, meta information management, and internal linking strategies using AI technology.",
+        "url": "https://optizenapp.com",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "SEO Tool",
+        "operatingSystem": "Web Browser",
+        "browserRequirements": "Modern web browser with JavaScript enabled",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Bulk Shopify product description updates using ChatGPT AI",
+          "SEO meta information management",
+          "Shopify Markets content localization",
+          "Internal linking automation",
+          "Tag page SEO optimization",
+          "Collection page structure optimization",
+          "H1 title editing for tag pages",
+          "SEO penalty recovery assistance",
+          "Traffic growth analytics",
+          "Lead generation for e-commerce"
+        ],
+        "serviceType": "SEO Optimization Software",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify store owners, E-commerce businesses, SEO professionals"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/videos-case-studies#howto",
+        "name": "How to Use Optizen for Shopify SEO Optimization",
+        "description": "Step-by-step guide to optimize your Shopify store using Optizen's AI-powered SEO tools",
+        "totalTime": "PT30M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify store access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Product catalog data"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Connect Shopify Store",
+            "text": "Link your Shopify store to Optizen platform for data access"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure AI Settings",
+            "text": "Set up ChatGPT AI parameters for product description generation"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Bulk Update Products",
+            "text": "Use bulk editing features to update product descriptions and meta information"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Implement Internal Linking",
+            "text": "Apply automated internal linking strategies across product and collection pages"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Monitor Results",
+            "text": "Track SEO performance improvements and traffic growth"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/videos-case-studies#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can Shopify tag pages rank in Google and other search engines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Shopify tag pages can rank in search engines when properly optimized with unique content, proper meta tags, and strategic internal linking."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you edit the H1 page title on Shopify tag pages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "H1 titles on Shopify tag pages can be customized through theme editing or using SEO tools like Optizen that provide bulk editing capabilities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best internal linking strategy for Shopify product pages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Effective internal linking for Shopify products includes linking related products, connecting to relevant collections, and creating contextual links within product descriptions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How should Shopify collection pages be structured for SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Collection pages should have unique descriptions, proper heading structure, optimized URLs, and strategic internal links to subcategories and featured products."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/videos-case-studies",
+        "name": "Videos & Case Studies",
+        "description": "Optizen SEO tool videos and case studies showing real results from Shopify store optimization",
+        "url": "https://optizenapp.com/videos-case-studies",
+        "datePublished": "2023-03-02T23:27:11",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Videos & Case Studies",
+              "item": "https://optizenapp.com/videos-case-studies"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".case-study-results"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/videos-case-studies#terms",
+        "name": "Shopify SEO Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Shopify Markets",
+            "description": "Feature for creating region-specific content and localized shopping experiences"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Internal Linking",
+            "description": "Strategy of connecting pages within a website to improve SEO and user navigation"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta Information",
+            "description": "HTML meta tags including title tags and meta descriptions for search engine optimization"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Tag Pages",
+            "description": "Shopify pages that display products grouped by specific tags or attributes"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/videos-case-studies#usecases",
+        "name": "Optizen Use Cases and Results",
+        "description": "Real-world applications and success stories using Optizen SEO tool",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Bulk Product Description Updates",
+            "description": "Update thousands of Shopify product descriptions using ChatGPT AI automation"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Multi-Region Content Creation",
+            "description": "Generate unique content for different markets using Shopify Markets integration"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Traffic Growth Achievement",
+            "description": "Increase from 10,000 to 21,000 monthly SEO visitors in 5 months"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "SEO Penalty Recovery",
+            "description": "Recover from Google penalties through strategic optimization"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "E-commerce Launch Lead Generation",
+            "description": "Generate qualified leads for new e-commerce store launches"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:59:44.685Z",
+  "contentModified": "2023-05-05T04:09:11",
+  "contentHash": "c3ec4d6d4843e919a9841218ee6e89f7"
+}

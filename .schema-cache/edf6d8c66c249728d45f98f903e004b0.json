@@ -1,0 +1,238 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/urls#webapp",
+        "name": "Shopify URL Structure Guide",
+        "alternateName": "Shopify URL Optimization Tool",
+        "description": "Comprehensive guide and tool for understanding and optimizing Shopify URL structures for better SEO, navigation, and user experience. Learn about default URL patterns, custom domains, and URL limitations.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "SEO Tools",
+        "operatingSystem": "Any",
+        "browserRequirements": "Any modern web browser",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Shopify URL structure analysis",
+          "Custom domain setup guidance",
+          "Product page URL optimization",
+          "Collection page URL configuration",
+          "Blog post URL structure",
+          "301 redirect setup instructions",
+          "SEO-friendly URL creation",
+          "URL component breakdown",
+          "Search results URL formatting",
+          "404 error page handling"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/urls",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "serviceType": "SEO Optimization Tool",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify store owners, e-commerce developers, SEO specialists"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/urls#howto",
+        "name": "How to Optimize Shopify URL Structure",
+        "description": "Step-by-step guide to understanding and optimizing Shopify URL structures for better SEO performance.",
+        "totalTime": "PT30M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify store access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Custom domain (optional)"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Understand Default URL Structure",
+            "text": "Learn about Shopify's default URL format: yourstorename.myshopify.com and fixed subdirectories like /products/, /collections/, /blogs/."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Set Up Custom Domain",
+            "text": "Navigate to Online Store > Domains in Shopify admin, purchase or connect a custom domain, and set it as primary domain."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Optimize URL Slugs",
+            "text": "Create SEO-friendly slugs for products, collections, and blog posts using relevant keywords and clear naming conventions."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure 301 Redirects",
+            "text": "Set up URL redirects in Online Store > Navigation > URL Redirects to handle old URLs and prevent 404 errors."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/urls#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I change my Shopify store URL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To change your Shopify store URL, you need to purchase and connect a custom domain through the Shopify admin. Navigate to Online Store > Domains, and either buy a new domain or connect an existing one. Once connected, set the new domain as your primary domain under the domains section."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I remove '/products/' or '/collections/' from my Shopify URLs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shopify does not allow the removal of /products/ or /collections/ from the default URL structure. These subdirectories are built into the Shopify system to help organize content. However, you can optimize the URL slugs for clarity and SEO performance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a 301 redirect, and how do I set it up on Shopify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A 301 redirect permanently forwards traffic from one URL to another, preserving SEO value and preventing 404 errors. To set up a 301 redirect in Shopify, go to Online Store > Navigation > URL Redirects. Enter the old URL and the new destination URL, then click Save."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Shopify automatically optimize my URLs for SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shopify creates SEO-friendly URLs by default using a simple structure with fixed subdirectories and page names as slugs. Shopify also automatically generates canonical tags, but it's recommended to manually optimize slugs with relevant keywords for better SEO performance."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/urls",
+        "name": "Shopify URL Structure Guide",
+        "description": "Complete guide to Shopify URL structure, optimization, and limitations for better SEO and user experience.",
+        "datePublished": "2024-09-17T01:13:56",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/urls#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "URL Structure",
+              "item": "https://optizenapp.com/shopify/urls"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".url-structure-basics",
+            ".shopify-url-components"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/urls#terms",
+        "name": "Shopify URL Structure Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "URL Slug",
+            "description": "The user-friendly part of a URL that identifies a specific page, typically derived from the page title and optimized for SEO."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Custom Domain",
+            "description": "A personalized web address (like yourshop.com) that replaces the default Shopify subdomain for better branding and credibility."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "301 Redirect",
+            "description": "A permanent redirect that forwards traffic from one URL to another while preserving SEO value and preventing 404 errors."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Canonical Tags",
+            "description": "HTML elements that help search engines identify the preferred version of a page when duplicate content exists."
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/urls#usecases",
+        "name": "Shopify URL Structure Use Cases",
+        "description": "Practical applications and scenarios for optimizing Shopify URL structures.",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "E-commerce Store Setup",
+            "description": "Setting up professional URLs for new Shopify stores with custom domains and optimized product page structures."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO Optimization",
+            "description": "Improving search engine rankings through strategic URL slug optimization and proper redirect management."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Store Migration",
+            "description": "Managing URL changes during platform migrations or store restructuring with proper 301 redirects."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Content Marketing",
+            "description": "Optimizing blog post URLs and collection pages for better content discoverability and user navigation."
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:42:13.412Z",
+  "contentModified": "2024-09-17T07:39:19",
+  "contentHash": "cb60ba6eec2e1c8ac8101a56bce827e6"
+}

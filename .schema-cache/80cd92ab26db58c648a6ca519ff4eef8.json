@@ -1,0 +1,165 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/thankyou",
+        "url": "https://optizenapp.com/thankyou",
+        "name": "Thank You - OptizenApp Registration Complete",
+        "description": "Registration confirmation page for OptizenApp users",
+        "datePublished": "2024-08-01T01:27:48",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "OptizenApp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Thank You",
+              "item": "https://optizenapp.com/thankyou"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@id": "https://optizenapp.com/thankyou#confirmation"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".confirmation-message",
+            ".email-instructions"
+          ]
+        }
+      },
+      {
+        "@type": "ConfirmAction",
+        "@id": "https://optizenapp.com/thankyou#confirmation",
+        "name": "Registration Confirmation",
+        "description": "User registration successfully completed for OptizenApp",
+        "actionStatus": "CompletedActionStatus",
+        "result": {
+          "@type": "Thing",
+          "name": "Account Created",
+          "description": "User account successfully created and confirmation email sent"
+        },
+        "instrument": {
+          "@type": "WebApplication",
+          "@id": "https://optizenapp.com#app",
+          "name": "OptizenApp",
+          "applicationCategory": "BusinessApplication"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/thankyou#next-steps",
+        "name": "Next Steps After Registration",
+        "description": "What to do after completing OptizenApp registration",
+        "totalTime": "PT5M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Email Access"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Check Email Inbox",
+            "text": "Look for confirmation email from OptizenApp in your primary inbox"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Check Spam Folder",
+            "text": "If email not received, check spam or junk folder for confirmation message"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Activate Account",
+            "text": "Click activation link in confirmation email to complete setup"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/thankyou#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What if I don't receive the confirmation email?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check your spam or junk folder first. If still not found, contact support for assistance with account activation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to receive the confirmation email?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Confirmation emails are typically sent within a few minutes of registration completion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I start using OptizenApp before confirming my email?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Email confirmation is required to activate your account and access OptizenApp features."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/thankyou#troubleshooting",
+        "name": "Email Delivery Troubleshooting",
+        "description": "Common solutions for email delivery issues",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Check Spam Folder",
+            "description": "Automated emails may be filtered to spam or junk folders"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Verify Email Address",
+            "description": "Ensure the email address provided during registration is correct"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Wait 10-15 Minutes",
+            "description": "Email delivery may be delayed due to server processing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Contact Support",
+            "description": "Reach out to customer support if email is not received after troubleshooting"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:54:22.357Z",
+  "contentModified": "2024-08-01T01:27:48",
+  "contentHash": "367aa7d419beed2b95cdb5d89d5f6968"
+}

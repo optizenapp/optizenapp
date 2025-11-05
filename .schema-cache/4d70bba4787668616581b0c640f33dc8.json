@@ -12,11 +12,11 @@
         "dateModified": "2024-11-27T06:28:18",
         "author": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com#organization"
+          "@id": "https://optizenapp.com/#organization"
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://optizenapp.com#organization"
+          "@id": "https://optizenapp.com/#organization"
         },
         "about": [
           {
@@ -71,29 +71,7 @@
         "name": "The Mega List Of Shopify Stats – Users, Countries, Apps, Features & More",
         "isPartOf": {
           "@type": "WebSite",
-          "@id": "https://optizenapp.com"
-        },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://optizenapp.com"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Stats",
-              "item": "https://optizenapp.com/stats"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Shopify Statistics"
-            }
-          ]
+          "@id": "https://optizenapp.com/#website"
         },
         "speakable": {
           "@type": "SpeakableSpecification",
@@ -102,89 +80,159 @@
             "h2",
             "h3"
           ]
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Stats",
+              "item": "https://optizenapp.com/stats/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Shopify Statistics"
+            }
+          ]
         }
       },
       {
-        "@type": "Organization",
-        "@id": "https://optizenapp.com#organization",
-        "name": "OptizenApp",
-        "url": "https://optizenapp.com",
-        "sameAs": "https://optizenapp.com"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "#shopify-platform",
-        "name": "Shopify",
-        "applicationCategory": "E-commerce Platform",
-        "description": "A leader in ecommerce all over the world with over 4.9 million live websites",
-        "sameAs": [
-          "https://en.wikipedia.org/wiki/Shopify",
-          "https://www.wikidata.org/wiki/Q7501051"
-        ]
-      },
-      {
         "@type": "DefinedTermSet",
-        "@id": "#ecommerce-terms",
-        "name": "E-commerce Statistics Terms",
+        "@id": "#shopify-glossary",
+        "name": "Shopify Statistics Glossary",
         "hasDefinedTerm": [
           {
             "@type": "DefinedTerm",
+            "@id": "#shopify-platform",
+            "name": "Shopify",
+            "description": "A leader in ecommerce platform used worldwide for creating online stores",
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+          },
+          {
+            "@type": "DefinedTerm",
             "@id": "#ecommerce-statistics",
-            "name": "E-commerce Statistics",
-            "description": "Data and metrics related to online retail platforms and their usage patterns"
+            "name": "Ecommerce Statistics",
+            "description": "Data and metrics related to electronic commerce platforms and usage"
           },
           {
             "@type": "DefinedTerm",
             "@id": "#shopify-integrations",
             "name": "Shopify Integrations",
-            "description": "Third-party applications and services that connect with the Shopify platform"
+            "description": "Third-party applications and services that connect with Shopify stores"
           },
           {
             "@type": "DefinedTerm",
-            "@id": "#live-websites",
-            "name": "Live Websites",
-            "description": "Currently active and operational websites on the Shopify platform"
+            "@id": "#klaviyo",
+            "name": "Klaviyo",
+            "description": "Popular email marketing platform that integrates with Shopify",
+            "sameAs": "https://en.wikipedia.org/wiki/Klaviyo"
           },
           {
             "@type": "DefinedTerm",
-            "@id": "#historical-websites",
-            "name": "Historical Websites",
-            "description": "Total number of websites ever created on Shopify, including inactive ones"
+            "@id": "#mailchimp",
+            "name": "MailChimp",
+            "description": "Email marketing service and platform",
+            "sameAs": "https://en.wikipedia.org/wiki/Mailchimp"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-plus",
+            "name": "Shopify Plus",
+            "description": "Enterprise-level version of Shopify platform"
           }
         ]
       },
       {
-        "@type": "Table",
+        "@type": "ItemList",
         "@id": "#usage-statistics-table",
         "name": "Shopify Usage Statistics",
-        "description": "Current statistics on Shopify website usage including live and historical counts",
-        "about": {
-          "@id": "#shopify-platform"
-        }
-      },
-      {
-        "@type": "Table",
-        "@id": "#revenue-growth-table",
-        "name": "Shopify Revenue Growth",
-        "description": "Historical revenue data showing Shopify's growth from 2017 to 2022",
-        "about": {
-          "@id": "#shopify-platform"
-        }
-      },
-      {
-        "@type": "Table",
-        "@id": "#country-usage-table",
-        "name": "Shopify Usage by Country",
-        "description": "Breakdown of Shopify website distribution across different countries",
-        "about": {
-          "@id": "#shopify-platform"
-        }
+        "description": "Current statistics on live and historical Shopify websites",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Total Live Websites",
+            "description": "4,949,244"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Historical Websites",
+            "description": "3,894,613"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Total Historical Count",
+            "description": "8,843,857"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Australian Websites",
+            "description": "142,382"
+          }
+        ]
       },
       {
         "@type": "ItemList",
-        "@id": "#top-countries-list",
-        "name": "Top Countries Using Shopify",
-        "description": "Ranked list of countries by number of Shopify websites",
+        "@id": "#revenue-growth-table",
+        "name": "Shopify Revenue Growth",
+        "description": "Annual revenue growth data for Shopify in millions",
+        "numberOfItems": 6,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "2022 Revenue",
+            "description": "$5,600 million"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "2021 Revenue",
+            "description": "$4,612 million"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "2020 Revenue",
+            "description": "$2,929 million"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "2019 Revenue",
+            "description": "$1,578 million"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "2018 Revenue",
+            "description": "$1,073 million"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "2017 Revenue",
+            "description": "$673 million"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#country-usage-table",
+        "name": "Shopify Usage by Country",
+        "description": "Number of Shopify websites by country",
         "numberOfItems": 14,
         "itemListElement": [
           {
@@ -204,23 +252,26 @@
             "position": 3,
             "name": "Canada",
             "description": "298,512 websites"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Germany",
+            "description": "156,934 websites"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Australia",
+            "description": "142,382 websites"
           }
         ]
       },
       {
-        "@type": "Table",
+        "@type": "ItemList",
         "@id": "#store-categories-table",
         "name": "Top Shopify Store Categories",
-        "description": "Most popular product categories on Shopify platforms",
-        "about": {
-          "@id": "#shopify-platform"
-        }
-      },
-      {
-        "@type": "ItemList",
-        "@id": "#store-categories-list",
-        "name": "Top Shopify Store Categories",
-        "description": "Ranked list of most popular store categories on Shopify",
+        "description": "Most popular categories for Shopify stores",
         "numberOfItems": 15,
         "itemListElement": [
           {
@@ -240,91 +291,81 @@
             "position": 3,
             "name": "Jewellery",
             "description": "74,153 websites"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Bags",
+            "description": "45,224 websites"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Shoes",
+            "description": "34,972 websites"
           }
         ]
       },
       {
-        "@type": "Table",
+        "@type": "ItemList",
         "@id": "#integrations-table",
         "name": "Most Popular Shopify Integrations",
-        "description": "Third-party applications and services most commonly integrated with Shopify",
-        "about": {
-          "@id": "#shopify-integrations"
-        }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "#klaviyo",
-        "name": "Klaviyo",
-        "applicationCategory": "Email Marketing Platform",
-        "description": "Popular email platform integrated with 354,686 Shopify websites",
-        "sameAs": [
-          "https://en.wikipedia.org/wiki/Klaviyo",
-          "https://www.wikidata.org/wiki/Q30265054"
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "#mailchimp",
-        "name": "MailChimp",
-        "applicationCategory": "Email Marketing Platform",
-        "description": "Email marketing service integrated with 165,607 Shopify websites",
-        "sameAs": [
-          "https://en.wikipedia.org/wiki/Mailchimp",
-          "https://www.wikidata.org/wiki/Q6735528"
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "#shopify-plus",
-        "name": "Shopify Plus",
-        "applicationCategory": "Enterprise E-commerce Platform",
-        "description": "Enterprise version of Shopify used by 45,031 websites",
-        "isPartOf": {
-          "@id": "#shopify-platform"
-        }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "#zendesk",
-        "name": "Zendesk",
-        "applicationCategory": "Customer Support Platform",
-        "description": "Customer support platform integrated with 17,543 Shopify websites",
-        "sameAs": [
-          "https://en.wikipedia.org/wiki/Zendesk",
-          "https://www.wikidata.org/wiki/Q8070840"
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "#gorgias",
-        "name": "Gorgias",
-        "applicationCategory": "Customer Support Platform",
-        "description": "Customer support platform integrated with 21,748 Shopify websites"
-      },
-      {
-        "@type": "Dataset",
-        "@id": "#shopify-statistics-dataset",
-        "name": "Shopify Platform Statistics Dataset",
-        "description": "Comprehensive dataset of Shopify platform usage, revenue, and integration statistics",
-        "dateModified": "2024-11-27",
-        "creator": {
-          "@id": "https://optizenapp.com#organization"
-        },
-        "about": {
-          "@id": "#shopify-platform"
-        },
-        "distribution": [
+        "description": "Top third-party integrations used with Shopify",
+        "numberOfItems": 13,
+        "itemListElement": [
           {
-            "@type": "DataDownload",
-            "contentUrl": "https://optizenapp.com/stats/shopify-statistics",
-            "encodingFormat": "text/html"
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Klaviyo",
+            "description": "354,686 websites"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "MailChimp",
+            "description": "165,607 websites"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Google Optimize 360",
+            "description": "84,302 websites"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Hotjar",
+            "description": "79,882 websites"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Smile IO",
+            "description": "64,664 websites"
           }
         ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com/#organization",
+        "name": "OptizenApp",
+        "url": "https://optizenapp.com/",
+        "sameAs": [
+          "https://optizenapp.com/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://optizenapp.com/#website",
+        "name": "OptizenApp",
+        "url": "https://optizenapp.com/",
+        "publisher": {
+          "@id": "https://optizenapp.com/#organization"
+        }
       }
     ]
   },
-  "generatedAt": "2025-11-05T01:37:25.480Z",
+  "generatedAt": "2025-11-05T02:16:28.026Z",
   "contentModified": "2024-11-27T06:28:18",
   "contentHash": "d1ae7e53d1c4c8a42e653893ffa630ff"
 }

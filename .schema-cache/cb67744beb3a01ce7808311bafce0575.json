@@ -1,0 +1,249 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/themes/out-of-the-sandbox#webapp",
+        "name": "Out Of The Sandbox Shopify Themes",
+        "alternateName": [
+          "Turbo Theme",
+          "Flex Theme",
+          "OOTS Themes"
+        ],
+        "description": "Premium Shopify themes known for exceptional performance, flexibility, and customization options. Features Turbo and Flex themes designed for high-performance eCommerce stores with advanced customization capabilities.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "eCommerce Theme",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Cross-browser compatible",
+        "featureList": [
+          "Lightning-fast load times",
+          "Mobile-optimized responsive design",
+          "Large inventory catalog support",
+          "Dynamic content sections",
+          "Flexible layout customization",
+          "Custom header and footer design",
+          "Theme Updater app integration",
+          "Third-party Shopify app compatibility",
+          "SEO optimization",
+          "Performance optimization for high traffic"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "350-450",
+          "priceCurrency": "USD",
+          "description": "Premium Shopify themes with lifetime Theme Updater access"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/themes/out-of-the-sandbox",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "isAccessibleForFree": false,
+        "serviceType": "Shopify Theme Development",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "eCommerce store owners, Shopify merchants, web developers"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/themes/out-of-the-sandbox#howto",
+        "name": "How to Set Up Out Of The Sandbox Themes",
+        "description": "Step-by-step guide to implementing and customizing Out Of The Sandbox Shopify themes",
+        "totalTime": "PT2H",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "350-450"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Out Of The Sandbox theme license"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Purchase and Download Theme",
+            "text": "Select either Turbo or Flex theme based on your store needs and download the theme files"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Install Theme in Shopify",
+            "text": "Upload the theme to your Shopify admin and activate it as your live theme"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Customize Layout and Design",
+            "text": "Use the theme customizer to adjust headers, footers, and collection pages to match your brand"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Install Theme Updater App",
+            "text": "Set up the Theme Updater app to ensure automatic updates and backup functionality"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Test Performance and Compatibility",
+            "text": "Verify theme performance, mobile responsiveness, and third-party app integration"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/themes/out-of-the-sandbox#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I use the Theme Updater app with a customized Out of the Sandbox theme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Theme Updater app works with customized Out of the Sandbox themes. However, it's recommended to create backups of your customizations before applying updates, as some changes may require manual adjustments after the update."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do Out of the Sandbox themes support third-party Shopify apps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Out of the Sandbox themes like Turbo and Flex are optimized for compatibility with most third-party Shopify apps. This includes popular apps for reviews, SEO optimization, and email marketing tools, ensuring seamless integration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to set up an Out of the Sandbox theme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Setting up an Out of the Sandbox theme like Turbo or Flex typically takes a few hours for a basic setup. For more customized designs, the process may take longer depending on the level of customization required, but the themes are designed to be user-friendly for fast implementation."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/themes/out-of-the-sandbox",
+        "name": "Out Of The Sandbox Shopify Themes Review",
+        "description": "Comprehensive review of Out Of The Sandbox premium Shopify themes including Turbo and Flex themes",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/themes/out-of-the-sandbox#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Themes",
+              "item": "https://optizenapp.com/shopify/themes"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Out Of The Sandbox"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".key-features",
+            ".theme-comparison"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/themes/out-of-the-sandbox#terms",
+        "name": "Shopify Theme Technical Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Turbo Theme",
+            "description": "Performance-optimized Shopify theme designed for large inventories and high traffic with lightning-fast load times"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Flex Theme",
+            "description": "Highly customizable Shopify theme offering extensive layout and style options with flexible design features"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Theme Updater App",
+            "description": "Application that automatically updates Out Of The Sandbox themes while preserving customizations and providing backup options"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Dynamic Content Sections",
+            "description": "Flexible content blocks that can be customized and rearranged without coding knowledge"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/themes/out-of-the-sandbox#usecases",
+        "name": "Out Of The Sandbox Theme Use Cases",
+        "description": "Practical applications and scenarios for implementing Out Of The Sandbox themes",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Large Inventory Stores",
+            "description": "Turbo theme optimized for eCommerce businesses with extensive product catalogs and high traffic volumes"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Brand-Focused Customization",
+            "description": "Flex theme for merchants requiring extensive design control and unique brand presentation"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Performance-Critical Applications",
+            "description": "Speed-optimized themes for stores where fast load times directly impact conversion rates"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Mobile-First eCommerce",
+            "description": "Responsive themes optimized for mobile shopping experiences and cross-device compatibility"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Third-Party App Integration",
+            "description": "Themes designed for seamless integration with Shopify apps for reviews, SEO, and marketing tools"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:38:42.865Z",
+  "contentModified": "2024-09-26T01:26:05",
+  "contentHash": "188e5537c2543d419a58b48240cc9f0f"
+}

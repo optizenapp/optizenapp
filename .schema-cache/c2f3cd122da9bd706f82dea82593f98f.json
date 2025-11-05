@@ -1,0 +1,280 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/apps/wholesale-gorilla#webapp",
+        "name": "Wholesale Gorilla",
+        "alternateName": "Wholesale Gorilla Shopify App",
+        "description": "A comprehensive wholesale management app for Shopify stores that enables B2B merchants to manage tiered pricing, bulk orders, customer segmentation, and wholesale-only collections with seamless integration.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Wholesale Management",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browsers",
+        "featureList": [
+          "Tiered pricing for wholesale customers",
+          "Custom registration forms for wholesale onboarding",
+          "Order minimums and purchase restrictions",
+          "Quick order form for bulk purchasing",
+          "Exclusive wholesale-only collections",
+          "Automated discount application",
+          "Net payment terms support",
+          "Wholesale customer segmentation",
+          "Minimum purchase requirements enforcement",
+          "Order form customization",
+          "Seamless Shopify integration"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "29.95",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "29.95",
+            "priceCurrency": "USD",
+            "unitText": "per month"
+          },
+          "availability": "https://schema.org/InStock",
+          "hasFreeTrialPeriod": "P30D"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://apps.shopify.com/wholesale-gorilla",
+            "actionPlatform": "https://schema.org/DesktopWebPlatform"
+          }
+        },
+        "isAccessibleForFree": false,
+        "serviceType": "Wholesale Management Software",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "B2B Merchants, Shopify Store Owners, Wholesale Businesses"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "bestRating": "5",
+          "ratingCount": "100"
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "Wholesale Gorilla"
+        },
+        "softwareRequirements": "Shopify store",
+        "installUrl": "https://apps.shopify.com/wholesale-gorilla"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/apps/wholesale-gorilla#howto",
+        "name": "How to Set Up Wholesale Gorilla for Your Shopify Store",
+        "description": "Step-by-step guide to implementing wholesale functionality using Wholesale Gorilla app",
+        "totalTime": "PT30M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "29.95"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Active Shopify store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Wholesale Gorilla app subscription"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Install the App",
+            "text": "Install Wholesale Gorilla from the Shopify App Store and start your 30-day free trial"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure Registration Forms",
+            "text": "Set up custom registration forms to capture wholesale customer information including tax IDs and business licenses"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Set Tiered Pricing",
+            "text": "Configure different pricing levels for wholesale customers based on purchase volume and customer segments"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Create Wholesale Collections",
+            "text": "Set up wholesale-only product collections that are hidden from retail customers"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure Order Minimums",
+            "text": "Set minimum quantities or order amounts to ensure wholesale buyers meet required thresholds"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/apps/wholesale-gorilla#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Wholesale Gorilla easy to set up?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the app is designed to integrate seamlessly with Shopify and comes with detailed setup instructions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this app for both retail and wholesale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Wholesale Gorilla allows you to manage both retail and wholesale customers from one Shopify store."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the app offer customization options?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you can customize registration forms, pricing tiers, and even the look and feel of the wholesale section."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a free trial available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the app offers a 30-day free trial, allowing you to explore all its features before committing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does customer support work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wholesale Gorilla offers responsive email and chat support to help with any issues you encounter."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/apps/wholesale-gorilla",
+        "name": "Wholesale Gorilla Review - Preferred By B2B Merchants",
+        "description": "Comprehensive review of Wholesale Gorilla Shopify app covering features, benefits, pros & cons, and user feedback for B2B merchants.",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/apps/wholesale-gorilla#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Apps",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Wholesale Gorilla",
+              "item": "https://optizenapp.com/shopify/apps/wholesale-gorilla"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".key-features",
+            ".final-verdict"
+          ]
+        },
+        "datePublished": "2024-09-05T00:31:46",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/apps/wholesale-gorilla#terms",
+        "name": "Wholesale Gorilla Technical Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Tiered Pricing",
+            "description": "Different pricing levels for wholesale customers based on purchase volume or customer segments"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Wholesale-Only Collections",
+            "description": "Product collections that are hidden from retail customers and only accessible to registered wholesale buyers"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Net Payment Terms",
+            "description": "Payment options that align with wholesale buyer needs, including net 30 or other extended payment terms"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Order Minimums",
+            "description": "Minimum quantities or order amounts required for wholesale purchases to qualify for discounts"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Customer Segmentation",
+            "description": "Organizing wholesale customers into groups for targeted pricing and access control"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/apps/wholesale-gorilla#usecases",
+        "name": "Wholesale Gorilla Use Cases",
+        "description": "Practical applications and scenarios for using Wholesale Gorilla in B2B commerce",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "B2B Marketplace Management",
+            "description": "Managing separate retail and wholesale operations from a single Shopify store"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Volume-Based Pricing",
+            "description": "Implementing tiered pricing structures based on purchase quantities or customer loyalty"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Wholesale Customer Onboarding",
+            "description": "Streamlining the registration and approval process for new wholesale clients"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Bulk Order Processing",
+            "description": "Facilitating large quantity orders through optimized ordering interfaces"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Exclusive Product Access",
+            "description": "Providing wholesale customers with access to exclusive products and pricing"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:44:59.362Z",
+  "contentModified": "2024-09-05T00:38:14",
+  "contentHash": "9b925e14c18e6caa0c2b3594469e74b8"
+}

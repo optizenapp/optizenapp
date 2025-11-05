@@ -1,0 +1,254 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/getting-started/pricing#webapp",
+        "name": "Shopify Pricing Guide",
+        "alternateName": "Shopify Cost Calculator & Plan Comparison Tool",
+        "description": "Comprehensive interactive guide to Shopify pricing plans, costs, and fees. Compare all Shopify plans from Starter ($5/month) to Plus ($2000+/month) with detailed feature breakdowns, transaction fees, and additional costs.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "EcommercePricingTool",
+        "operatingSystem": "Any",
+        "browserRequirements": "Modern web browser with JavaScript enabled",
+        "featureList": [
+          "Interactive Shopify pricing plan comparison",
+          "Transaction fee calculator",
+          "Feature breakdown by plan tier",
+          "Cost estimation for apps and themes",
+          "Payment provider fee comparison",
+          "Staff account limits analysis",
+          "Shipping discount calculations",
+          "Enterprise plan evaluation"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free Shopify pricing analysis tool"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "name": "Compare Shopify Plans",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/getting-started/pricing",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "Ecommerce Platform Analysis",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Business owners, entrepreneurs, ecommerce merchants"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/getting-started/pricing#howto",
+        "name": "How to Choose the Right Shopify Pricing Plan",
+        "description": "Step-by-step guide to selecting the optimal Shopify plan based on business size, features needed, and budget constraints.",
+        "totalTime": "PT15M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Business requirements assessment"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Monthly budget allocation"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Assess Your Business Size",
+            "text": "Determine if you're a startup ($5-39/month), growing business ($105/month), large business ($399/month), or enterprise ($2000+/month)."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Calculate Transaction Volume",
+            "text": "Estimate monthly transactions to determine optimal transaction fee tier: 2.9%, 2.6%, or 2.4% + 30¢."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Evaluate Staff Requirements",
+            "text": "Count team members needing access: Starter (N/A), Basic (2), Shopify (5), Advanced (15), Plus (unlimited)."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Consider Additional Costs",
+            "text": "Factor in apps ($10-200/month), premium themes ($140-180), domain ($14/year), and payment processing fees."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/getting-started/pricing#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does Shopify cost per month?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shopify plans range from $5/month (Starter) to $2000+/month (Plus). Most businesses choose Basic ($39), Shopify ($105), or Advanced ($399) plans."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are Shopify transaction fees?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Transaction fees vary by plan: Basic (2.9% + 30¢), Shopify (2.6% + 30¢), Advanced (2.4% + 30¢). Third-party payment providers add 0.5-2% extra fees."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Shopify plan is best for small businesses?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Basic Shopify ($39/month) is ideal for small businesses, offering full ecommerce functionality, 2 staff accounts, and 77% shipping discounts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What additional costs should I expect with Shopify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Additional costs include apps ($10-200/month), premium themes ($140-180 one-time), domain registration ($14/year), and potential third-party payment fees."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/getting-started/pricing",
+        "name": "Shopify Pricing Guide - Complete Cost Breakdown 2024",
+        "description": "Comprehensive guide to Shopify pricing plans, fees, and costs. Compare all plans from $5 to $2000+ per month with detailed feature analysis.",
+        "datePublished": "2024-08-23T01:17:50",
+        "dateModified": "2024-08-23T01:17:50",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/getting-started/pricing#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Getting Started",
+              "item": "https://optizenapp.com/shopify/getting-started"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Pricing",
+              "item": "https://optizenapp.com/shopify/getting-started/pricing"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".pricing-table",
+            ".plan-features"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/getting-started/pricing#terms",
+        "name": "Shopify Pricing Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Transaction Fees",
+            "description": "Percentage-based fees charged on each sale, varying by plan: 2.9% (Basic), 2.6% (Shopify), 2.4% (Advanced) plus 30¢ per transaction."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Staff Accounts",
+            "description": "Number of team members who can access Shopify admin: 2 (Basic), 5 (Shopify), 15 (Advanced), unlimited (Plus)."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Shopify Payments",
+            "description": "Native payment gateway with no additional transaction fees beyond standard credit card processing rates."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Shipping Discounts",
+            "description": "Reduced rates with major carriers: up to 77% (Basic), up to 88% (Shopify/Advanced plans)."
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/getting-started/pricing#usecases",
+        "name": "Shopify Plan Use Cases",
+        "description": "Real-world scenarios for choosing different Shopify pricing plans",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Social Media Sellers",
+            "description": "Influencers and artists using Starter Plan ($5/month) to sell through Instagram, Facebook, and TikTok integration."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Small Business Startups",
+            "description": "New ecommerce businesses using Basic Plan ($39/month) for full online store with essential features and 2 staff accounts."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Growing Mid-Size Businesses",
+            "description": "Scaling companies using Shopify Plan ($105/month) for advanced reporting, 5 staff accounts, and lower transaction fees."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Large Volume Merchants",
+            "description": "High-volume businesses using Advanced Plan ($399/month) for lowest fees, 15 staff accounts, and international tax calculations."
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Enterprise Corporations",
+            "description": "Large enterprises using Shopify Plus ($2000+/month) for unlimited customization, dedicated support, and multi-store management."
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:51:56.649Z",
+  "contentModified": "2024-10-16T06:21:47",
+  "contentHash": "5db31ff13088fa6ddcd0087e74d36a3e"
+}

@@ -1,0 +1,242 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/themes/flex#webapp",
+        "name": "Flex Shopify Theme",
+        "alternateName": "Out of the Sandbox Flex Theme",
+        "description": "A highly customizable and flexible Shopify theme offering ultimate control over design and functionality without requiring coding skills. Features mega menus, custom CSS, flexible layouts, and advanced customization options.",
+        "applicationCategory": "E-commerce Theme",
+        "applicationSubCategory": "Shopify Theme",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browsers",
+        "isAccessibleForFree": false,
+        "serviceType": "E-commerce Theme Solution",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify store owners, small businesses, high-volume stores, creative individuals"
+        },
+        "featureList": [
+          "Three customizable product page layouts",
+          "Four header and footer styles",
+          "Mega menus with rich media support",
+          "Endless configuration options",
+          "Comprehensive icon library",
+          "Custom CSS capabilities",
+          "Drag-and-drop interface",
+          "Mobile-optimized design",
+          "SEO-friendly structure",
+          "Lazy loading for images",
+          "13 unique style variants",
+          "Shopify Online Store 2.0 compatibility",
+          "Multilingual functionality",
+          "High-volume store support"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "Variable",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/themes/flex",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          },
+          "object": "Shopify Store Customization"
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "Out of the Sandbox"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/themes/flex#howto",
+        "name": "How to Customize the Flex Shopify Theme",
+        "description": "Step-by-step guide to customizing the Flex theme for your Shopify store",
+        "totalTime": "PT30M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify store with Flex theme installed"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Choose Header and Footer Style",
+            "text": "Select from four header styles and four footer styles using the theme editor to match your brand identity."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure Layouts",
+            "text": "Use configurable layouts with content blocks and custom sections to design your store's appearance."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Set Up Mega Menus",
+            "text": "Configure mega menus to organize product categories and improve site navigation for extensive catalogs."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Apply Custom CSS",
+            "text": "Add custom CSS for advanced customizations beyond pre-configured settings, including fonts, colors, and animations."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/themes/flex#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How can I add custom fonts to the Flex Shopify theme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To add custom fonts to the Flex Shopify theme, you need to upload the font files to your Shopify store, modify the theme's CSS, and reference the new font in the theme settings. Use custom CSS in the theme editor or directly within the theme's code to apply the custom fonts to specific text elements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Flex theme compatible with Shopify's Online Store 2.0?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Flex theme is fully compatible with Shopify's Online Store 2.0. This allows you to use the section-based editing for all pages, giving you more flexibility and control over how your store is designed. The drag-and-drop interface and custom content blocks are enhanced with Online Store 2.0 features."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I translate the Flex theme into multiple languages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, the Flex theme supports multilingual functionality. Shopify allows merchants to add multiple languages to their stores, and you can use third-party translation apps or Shopify's native language feature to translate content. The Flex theme works seamlessly with these tools to display translations across your store."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/themes/flex#webpage",
+        "name": "Flex Theme - Shopify Theme Review",
+        "description": "Comprehensive review of the Flex Shopify theme, featuring customization options, performance optimization, and advanced features for e-commerce stores.",
+        "url": "https://optizenapp.com/shopify/themes/flex",
+        "datePublished": "2024-09-30T11:35:27",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/themes/flex#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Themes",
+              "item": "https://optizenapp.com/shopify/themes"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Flex Theme",
+              "item": "https://optizenapp.com/shopify/themes/flex"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            ".key-features"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/themes/flex#terms",
+        "name": "Flex Theme Technical Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Mega Menus",
+            "description": "Advanced navigation menus that support multiple product categories and rich media like images and videos within the navigation structure."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Custom CSS",
+            "description": "Cascading Style Sheets code that allows advanced users to customize design elements beyond pre-configured theme settings."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Configurable Layouts",
+            "description": "Flexible page structures that can be customized using content blocks and custom sections to match brand aesthetics."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Lazy Loading",
+            "description": "Performance optimization technique that loads images only when they appear in the user's viewport, reducing page load times."
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/themes/flex#usecases",
+        "name": "Flex Theme Use Cases",
+        "description": "Practical applications and scenarios for using the Flex Shopify theme",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "High-Volume E-commerce Stores",
+            "description": "Ideal for businesses with extensive product catalogs requiring advanced navigation and organization features."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Creative Brand Showcases",
+            "description": "Perfect for creative individuals and businesses wanting unique, visually appealing online presence with custom styling."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Multi-Category Retailers",
+            "description": "Suitable for stores with diverse product ranges needing mega menus and flexible product page layouts."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Growing Small Businesses",
+            "description": "Scalable solution for small businesses that need room to grow without changing themes as they expand."
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:38:09.779Z",
+  "contentModified": "2024-09-30T11:35:28",
+  "contentHash": "bcedf299cedbbd7255afc3b7e48ccdb3"
+}

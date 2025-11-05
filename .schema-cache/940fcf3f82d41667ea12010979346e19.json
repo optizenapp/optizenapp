@@ -1,0 +1,241 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/getting-started/removing-powered-by-shopify#webapp",
+        "name": "Shopify Footer Customization Tool",
+        "alternateName": "Remove Powered by Shopify Footer Text",
+        "description": "Complete guide and tool for removing 'Powered by Shopify' text from your store footer to create a more professional, branded appearance.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "E-commerce Customization",
+        "operatingSystem": "Web Browser",
+        "browserRequirements": "Modern web browser with JavaScript enabled",
+        "featureList": [
+          "Theme code editing instructions",
+          "Admin panel customization method",
+          "Language file modification",
+          "Footer space optimization",
+          "Brand identity enhancement",
+          "Professional appearance improvement",
+          "Custom message implementation",
+          "Troubleshooting guidance"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/getting-started/removing-powered-by-shopify",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "Shopify Store Customization",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify Store Owners"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/getting-started/removing-powered-by-shopify#howto",
+        "name": "How to Remove 'Powered by Shopify' from Footer",
+        "description": "Step-by-step instructions for removing Shopify branding from your store footer using two different methods.",
+        "totalTime": "PT10M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Admin Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Active Shopify Store"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Method 1: Edit Theme Code",
+            "text": "Log in to Shopify Admin, go to Online Store > Themes, click Actions > Edit Code, open footer.liquid in Sections folder, search for 'Powered by Shopify' and delete the line, then save changes."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Method 2: Edit Languages",
+            "text": "Access Shopify Admin, navigate to Online Store > Themes, click Actions > Edit languages, search for 'powered' in translations, delete the default content, and save changes."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Customize Footer Space",
+            "text": "Add custom brand messages, call-to-action buttons, important links, or brand taglines to utilize the newly available footer space effectively."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/getting-started/removing-powered-by-shopify#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I remove the 'Powered by Shopify' text from any Shopify theme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, these methods work for all Shopify themes, including both free and paid themes. However, for some third-party themes, you may need to consult the theme developer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it legal to remove the 'Powered by Shopify' text?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Shopify allows you to remove this text. It's part of their platform's customization options."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will this affect my store's performance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, removing the footer text won't affect how your store functions. It's a purely cosmetic change."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do if the text still appears after removal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Clear your browser cache, check for theme-specific code in other files, and review third-party apps that might affect the footer."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/getting-started/removing-powered-by-shopify",
+        "name": "Removing Powered By Shopify In Footer",
+        "description": "Complete guide for removing 'Powered by Shopify' text from your store footer to create a more professional appearance.",
+        "datePublished": "2024-10-24T06:09:40",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/getting-started/removing-powered-by-shopify#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Getting Started",
+              "item": "https://optizenapp.com/shopify/getting-started"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Removing Powered By Shopify",
+              "item": "https://optizenapp.com/shopify/getting-started/removing-powered-by-shopify"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".main-content"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/getting-started/removing-powered-by-shopify#terms",
+        "name": "Shopify Customization Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "footer.liquid",
+            "description": "The Shopify theme file that contains the footer template code and structure."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Edit Languages",
+            "description": "Shopify admin feature that allows modification of text translations and default content without coding."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Theme Code Editor",
+            "description": "Shopify's built-in code editing interface for modifying theme files and templates."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Brand Identity",
+            "description": "The visual and textual elements that represent a business and distinguish it from competitors."
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/getting-started/removing-powered-by-shopify#benefits",
+        "name": "Benefits of Removing Powered by Shopify",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Professional Appearance",
+            "description": "Makes your Shopify store look more professional and custom-built."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Unique Brand Focus",
+            "description": "Focuses attention on your brand rather than Shopify's platform branding."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Increased Customer Trust",
+            "description": "Professional appearance improves customer confidence and credibility."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Better Aesthetic Design",
+            "description": "Creates a cleaner, more streamlined appearance for better user experience."
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Content Control",
+            "description": "Allows customization of footer space with brand-specific messages and calls-to-action."
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:35:05.213Z",
+  "contentModified": "2024-10-24T06:10:50",
+  "contentHash": "71b567000d22e171561d15f4505cdb2b"
+}

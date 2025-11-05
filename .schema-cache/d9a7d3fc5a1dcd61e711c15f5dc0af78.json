@@ -1,0 +1,222 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/importing-shopify-collections-via-csv#webapp",
+        "name": "Shopify Collections CSV Importer",
+        "alternateName": "CSV Collection Import Tool",
+        "description": "Advanced tool for importing Shopify collections via CSV files, enabling bulk collection management and automated product organization for e-commerce stores.",
+        "applicationCategory": "E-commerce Management Tool",
+        "applicationSubCategory": "Collection Management",
+        "operatingSystem": "Web-based",
+        "browserRequirements": "Modern web browsers supporting HTML5 and JavaScript",
+        "featureList": [
+          "CSV file upload and parsing",
+          "Shopify API integration",
+          "Bulk collection creation",
+          "Collection metadata mapping",
+          "Product assignment automation",
+          "Error validation and reporting",
+          "Preview before import",
+          "Batch processing capabilities"
+        ],
+        "isAccessibleForFree": true,
+        "serviceType": "Collection Import Service",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "E-commerce Store Owners"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/importing-shopify-collections-via-csv"
+          }
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/importing-shopify-collections-via-csv#howto",
+        "name": "How to Import Shopify Collections via CSV",
+        "description": "Step-by-step guide for importing collections into Shopify using CSV files",
+        "totalTime": "PT15M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "CSV file with collection data"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify store access"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Prepare CSV File",
+            "text": "Format your CSV file with required collection fields including name, description, and handle"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Upload CSV",
+            "text": "Select and upload your CSV file using the import tool interface"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Map Fields",
+            "text": "Map CSV columns to corresponding Shopify collection fields"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Preview Import",
+            "text": "Review the import preview to verify data accuracy"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Execute Import",
+            "text": "Run the import process to create collections in your Shopify store"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/importing-shopify-collections-via-csv#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What CSV format is required for importing Shopify collections?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The CSV should include columns for collection name, handle, description, and any custom fields. Headers must match Shopify's collection field names."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I import collections with products assigned?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you can include product assignments in your CSV by referencing product handles or IDs in designated columns."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if there are errors in my CSV file?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The tool validates your CSV and provides detailed error reports, allowing you to fix issues before importing."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/importing-shopify-collections-via-csv",
+        "name": "Importing Shopify Collections Via CSV",
+        "description": "Import Shopify collections efficiently using CSV files with our specialized tool",
+        "datePublished": "2024-05-21T04:02:07",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/importing-shopify-collections-via-csv#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Tools",
+              "item": "https://optizenapp.com/tools"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Importing Shopify Collections",
+              "item": "https://optizenapp.com/importing-shopify-collections-via-csv"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".tool-description"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/importing-shopify-collections-via-csv#terms",
+        "name": "Shopify Collection Import Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Collection Handle",
+            "description": "Unique identifier for Shopify collections used in URLs and API calls"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "CSV Mapping",
+            "description": "Process of matching CSV column headers to Shopify collection fields"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Bulk Import",
+            "description": "Method of importing multiple collections simultaneously using batch processing"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/importing-shopify-collections-via-csv#usecases",
+        "name": "Shopify Collection Import Use Cases",
+        "description": "Common scenarios for using CSV collection import",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Store Migration",
+            "description": "Transfer collections from another platform to Shopify"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Seasonal Collection Setup",
+            "description": "Quickly create multiple seasonal or promotional collections"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Bulk Collection Updates",
+            "description": "Update multiple collection properties simultaneously"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Category Restructuring",
+            "description": "Reorganize product categories with new collection structure"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:56:03.639Z",
+  "contentModified": "2024-05-21T05:12:47",
+  "contentHash": "d0684d7f9e5c7ba03c141c0d751ac8f0"
+}

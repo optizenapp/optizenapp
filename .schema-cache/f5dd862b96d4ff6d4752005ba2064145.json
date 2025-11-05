@@ -1,0 +1,246 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://optizenapp.com/shopify/collections/sub-collections#webapp",
+        "name": "Shopify Sub-Collections Tool",
+        "alternateName": "OptizenAI Sub-Collections Creator",
+        "description": "Create true hierarchical sub-collections in Shopify with proper SEO structure. Build semantically relevant collection trees that improve user experience and search engine visibility.",
+        "applicationCategory": "E-commerce Tool",
+        "applicationSubCategory": "Shopify Collection Management",
+        "operatingSystem": "Web Browser",
+        "browserRequirements": "Modern web browser with JavaScript enabled",
+        "featureList": [
+          "Create hierarchical sub-collection URL structure",
+          "Edit SEO meta information for tag-based pages",
+          "Build topical maps for collection organization",
+          "Optimize collection pages for search engines",
+          "Smart tag filtering system",
+          "Internal linking optimization",
+          "Collection performance analytics",
+          "Automated product categorization"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free guide and tool access"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "name": "Create Shopify Sub-Collections",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://optizenapp.com/shopify/collections/sub-collections",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        },
+        "isAccessibleForFree": true,
+        "serviceType": "Shopify Store Optimization",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Shopify Store Owners"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/shopify/collections/sub-collections#howto",
+        "name": "How to Create Shopify Sub-Collections with OptizenAI",
+        "description": "Step-by-step guide to creating hierarchical sub-collections in Shopify using OptizenAI PRO",
+        "totalTime": "PT30M",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "OptizenAI PRO App"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Install OptizenAI PRO",
+            "text": "Install OptizenAI PRO on your Shopify store from the app directory"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Activate Sub-Collections",
+            "text": "Contact OptizenAI support to have sub-collections/tag pages activated"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Tag Products",
+            "text": "Using your topical map, tag all products with relevant tags for sub-collection organization"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Sync Tags",
+            "text": "Open Optizen and sync the tags to create the collection structure"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Optimize Pages",
+            "text": "Add sub-collection page content and SEO meta information, set to index and save"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/shopify/collections/sub-collections#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are Shopify sub-collections?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shopify sub-collections are hierarchical product categories that allow store owners to organize products within parent collections, creating a structured navigation system that improves user experience and SEO."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do sub-collections improve SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sub-collections improve SEO by creating strong hierarchical connections between parent and child collections, developing relevant topics and sub-topics that enhance semantic relevance and provide quality signals to search engines."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the problem with Shopify's default URL structure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shopify's default structure creates non-hierarchical URLs that don't provide proper parent-child relationships. This results in weaker SEO signals and makes it difficult for search engines to understand the topical relevance between collections."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I edit SEO information for tag-based sub-collections?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "By default, Shopify doesn't allow editing SEO meta information for tag-based pages. However, OptizenAI solves this by enabling full SEO customization for sub-collection pages including titles, descriptions, and content."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/shopify/collections/sub-collections",
+        "name": "Shopify Sub-Collections - Create True Sub Categories",
+        "description": "Learn how to create structurally correct Shopify sub-collections that improve user experience and SEO performance using OptizenAI.",
+        "mainEntity": {
+          "@id": "https://optizenapp.com/shopify/collections/sub-collections#webapp"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Shopify Tools",
+              "item": "https://optizenapp.com/shopify"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Sub-Collections",
+              "item": "https://optizenapp.com/shopify/collections/sub-collections"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".key-insights",
+            ".benefits-table"
+          ]
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/shopify/collections/sub-collections#terms",
+        "name": "Shopify Sub-Collections Glossary",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Collection Tree",
+            "description": "A hierarchical structure organizing collections and sub-collections in a logical parent-child relationship for better navigation and SEO."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Topical Map",
+            "description": "A strategic framework that organizes content topics and subtopics to create semantic relevance and improve search engine understanding."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Nested Collections",
+            "description": "Sub-collections within sub-collections that create deeper categorization levels for complex product hierarchies."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Semantic Relevance",
+            "description": "The contextual relationship between related topics and subtopics that helps search engines understand content meaning and connections."
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://optizenapp.com/shopify/collections/sub-collections#usecases",
+        "name": "Shopify Sub-Collections Use Cases",
+        "description": "Practical applications and real-world scenarios for implementing sub-collections",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Clothing Store Organization",
+            "description": "Parent collection 'Men's Clothing' with sub-collections for 'T-shirts', 'Jeans', and 'Jackets' for better product discovery"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Electronics Categorization",
+            "description": "Main 'Electronics' collection with 'Smartphones', 'Laptops', and 'Tablets' sub-collections for targeted browsing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Outdoor Gear Structure",
+            "description": "Camping Gear parent collection with 'Tents', 'Sleeping Bags', and 'Cooking Equipment' for specialized outdoor retailers"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "SEO-Optimized URLs",
+            "description": "Creating hierarchical URLs like /collections/pokemon/buildable for better search engine understanding and ranking"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T02:47:10.704Z",
+  "contentModified": "2024-09-02T13:02:32",
+  "contentHash": "13902bbbcbe3b8d18da63924dc101cfd"
+}
