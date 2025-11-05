@@ -24,6 +24,7 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     formats: ['image/webp'], // Next.js will auto-fallback to original format if WebP fails
     unoptimized: false, // Ensure images are optimized
+    minimumCacheTTL: 31536000, // Cache optimized images for 1 year
   },
   // Enable compiler optimizations
   compiler: {
@@ -36,6 +37,38 @@ const nextConfig: NextConfig = {
   // Optimize bundle
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
+  },
+  // Add cache headers for static assets
+  async headers() {
+    return [
+      {
+        source: '/:all*(svg|jpg|jpeg|png|gif|ico|webp)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/_next/image:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ];
   },
 };
 

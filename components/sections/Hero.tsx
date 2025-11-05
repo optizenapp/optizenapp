@@ -73,6 +73,7 @@ export default function Hero() {
                 width={120} 
                 height={40}
                 priority
+                fetchPriority="high"
                 className="h-8 w-auto"
               />
             </div>

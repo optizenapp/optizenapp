@@ -6,12 +6,16 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
   display: "swap",
+  preload: true, // Preload for faster font loading
+  adjustFontFallback: true, // Reduce layout shift
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
   display: "swap",
+  preload: false, // Don't preload mono font (not critical)
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {
@@ -51,17 +55,35 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Preconnect to critical origins */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://apps.shopify.com" />
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com" />
         <link rel="dns-prefetch" href="https://apps.shopify.com" />
         
         {/* Preload critical assets */}
-        <link rel="preload" href="/shopify-partner-badge.jpeg" as="image" type="image/jpeg" />
+        <link rel="preload" href="/shopify-partner-badge.jpeg" as="image" type="image/jpeg" fetchPriority="high" />
         <link rel="preload" href="/optizen-logo.png" as="image" type="image/png" />
         
         {/* Mobile viewport optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        
+        {/* Service Worker Registration */}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').then(
+                  function(registration) {
+                    console.log('ServiceWorker registration successful');
+                  },
+                  function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                  }
+                );
+              });
+            }
+          `
+        }} />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
