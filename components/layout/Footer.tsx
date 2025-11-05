@@ -15,6 +15,7 @@ export default function Footer() {
                 alt="OptizenAI Logo" 
                 width={160} 
                 height={45}
+                loading="lazy"
                 className="h-8 w-auto"
               />
             </div>

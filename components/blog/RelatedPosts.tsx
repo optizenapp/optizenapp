@@ -40,6 +40,8 @@ export default function RelatedPosts({ posts, currentPostId }: RelatedPostsProps
                       src={featuredImage.source_url}
                       alt={featuredImage.alt_text || stripHtml(post.title.rendered)}
                       fill
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>

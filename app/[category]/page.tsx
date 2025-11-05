@@ -204,6 +204,8 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
                             src={featuredImage.source_url}
                             alt={featuredImage.alt_text || post.title.rendered}
                             fill
+                            loading="lazy"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-cover group-hover:scale-105 transition-transform duration-300"
                           />
                         </div>

@@ -50,10 +50,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Preconnect to critical origins */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://apps.shopify.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://apps.shopify.com" />
+        
+        {/* Preload critical assets */}
+        <link rel="preload" href="/shopify-partner-badge.jpeg" as="image" type="image/jpeg" />
+        <link rel="preload" href="/optizen-logo.png" as="image" type="image/png" />
+        
+        {/* Mobile viewport optimization */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
