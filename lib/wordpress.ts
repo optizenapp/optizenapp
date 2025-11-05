@@ -401,13 +401,26 @@ function buildPagePath(page: WordPressPage, allPages: WordPressPage[]): string {
 
 // Fetch a single page by its full URL path (e.g., "shopify/apps/wholesale-gorilla")
 export async function getPageByPath(path: string): Promise<WordPressPage | null> {
-  // Fetch all pages to build the hierarchy
-  const { pages: allPages } = await getPages({ per_page: 100 });
+  // Fetch ALL pages with pagination to build complete hierarchy
+  let allPages: WordPressPage[] = [];
+  let page = 1;
+  let hasMore = true;
+
+  while (hasMore) {
+    const result = await getPages({ per_page: 100, page });
+    allPages = allPages.concat(result.pages);
+    
+    if (page >= result.totalPages) {
+      hasMore = false;
+    } else {
+      page++;
+    }
+  }
   
   // Build paths for all pages
-  const pageWithPaths = allPages.map(page => ({
+  const pageWithPaths = allPages.map(p => ({
     page,
-    path: buildPagePath(page, allPages),
+    path: buildPagePath(p, allPages),
   }));
 
   // Find the page matching the requested path
