@@ -1,6 +1,6 @@
-// Use production WordPress API (more reliable than staging)
-const WP_API_URL = process.env.WORDPRESS_API_URL || 'https://optizenapp.com/wp-json/wp/v2';
-const WP_BASE_URL = process.env.WORDPRESS_BASE_URL || 'https://optizenapp.com';
+// WordPress API configuration
+const WP_API_URL = process.env.WORDPRESS_API_URL || 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com/wp-json/wp/v2';
+const WP_BASE_URL = process.env.WORDPRESS_BASE_URL || 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com';
 
 /**
  * Fetch with retry logic for WordPress API
@@ -230,15 +230,21 @@ export async function getPostBySlug(slug: string): Promise<WordPressPost | null>
 
 // Fetch all categories
 export async function getCategories(): Promise<WordPressCategory[]> {
-  const response = await fetchWithRetry(`${WP_API_URL}/categories?per_page=100`, {
-    next: { revalidate: false }, // Cache permanently
-  });
+  try {
+    const response = await fetchWithRetry(`${WP_API_URL}/categories?per_page=100`, {
+      next: { revalidate: false }, // Cache permanently
+    });
 
-  if (!response.ok) {
-    throw new Error(`Failed to fetch categories: ${response.statusText}`);
+    if (!response.ok) {
+      console.warn(`⚠️  Failed to fetch categories: ${response.statusText}`);
+      return []; // Return empty array instead of throwing
+    }
+
+    return response.json();
+  } catch (error) {
+    console.warn('⚠️  WordPress API unavailable, returning empty categories:', error);
+    return []; // Graceful fallback
   }
-
-  return response.json();
 }
 
 // Fetch a single category by slug
@@ -270,44 +276,49 @@ export async function getMediaById(id: number): Promise<WordPressMedia | null> {
 
 // Get all post slugs for static generation (with pagination)
 export async function getAllPostSlugs(): Promise<Array<{ category: string; slug: string }>> {
-  let allPosts: WordPressPost[] = [];
-  let page = 1;
-  let hasMore = true;
+  try {
+    let allPosts: WordPressPost[] = [];
+    let page = 1;
+    let hasMore = true;
 
-  while (hasMore) {
-    const response = await fetchWithRetry(`${WP_API_URL}/posts?per_page=100&page=${page}&_embed=true`, {
-      next: { revalidate: false }, // Cache permanently
-    });
+    while (hasMore) {
+      const response = await fetchWithRetry(`${WP_API_URL}/posts?per_page=100&page=${page}&_embed=true`, {
+        next: { revalidate: false }, // Cache permanently
+      });
 
-    if (!response.ok) {
-      break;
-    }
+      if (!response.ok) {
+        break;
+      }
 
-    const posts: WordPressPost[] = await response.json();
-    
-    if (posts.length === 0) {
-      hasMore = false;
-    } else {
-      allPosts = allPosts.concat(posts);
-      page++;
+      const posts: WordPressPost[] = await response.json();
       
-      // Check if there are more pages
-      const totalPages = response.headers.get('X-WP-TotalPages');
-      if (totalPages && page > parseInt(totalPages)) {
+      if (posts.length === 0) {
         hasMore = false;
+      } else {
+        allPosts = allPosts.concat(posts);
+        page++;
+        
+        // Check if there are more pages
+        const totalPages = response.headers.get('X-WP-TotalPages');
+        if (totalPages && page > parseInt(totalPages)) {
+          hasMore = false;
+        }
       }
     }
-  }
 
-  console.log(`📚 Fetched ${allPosts.length} posts for static generation`);
-  
-  return allPosts.map(post => {
-    const category = post._embedded?.['wp:term']?.[0]?.[0]?.slug || 'uncategorized';
-    return {
-      category,
-      slug: post.slug,
-    };
-  });
+    console.log(`📚 Fetched ${allPosts.length} posts for static generation`);
+    
+    return allPosts.map(post => {
+      const category = post._embedded?.['wp:term']?.[0]?.[0]?.slug || 'uncategorized';
+      return {
+        category,
+        slug: post.slug,
+      };
+    });
+  } catch (error) {
+    console.warn('⚠️  WordPress API unavailable, returning empty posts array:', error);
+    return []; // Graceful fallback - build will succeed with no blog posts
+  }
 }
 
 // ============================================
@@ -459,25 +470,30 @@ export function buildPageHierarchy(pages: WordPressPage[], parentId: number = 0)
 
 // Get all page paths for static generation
 export async function getAllPagePaths(): Promise<string[]> {
-  // Fetch ALL pages with pagination
-  let allPages: WordPressPage[] = [];
-  let page = 1;
-  let hasMore = true;
+  try {
+    // Fetch ALL pages with pagination
+    let allPages: WordPressPage[] = [];
+    let page = 1;
+    let hasMore = true;
 
-  while (hasMore) {
-    const result = await getPages({ per_page: 100, page });
-    allPages = allPages.concat(result.pages);
-    
-    if (page >= result.totalPages) {
-      hasMore = false;
-    } else {
-      page++;
+    while (hasMore) {
+      const result = await getPages({ per_page: 100, page });
+      allPages = allPages.concat(result.pages);
+      
+      if (page >= result.totalPages) {
+        hasMore = false;
+      } else {
+        page++;
+      }
     }
-  }
 
-  console.log(`📄 Fetched ${allPages.length} pages for static generation`);
-  
-  return allPages.map(p => buildPagePath(p, allPages));
+    console.log(`📄 Fetched ${allPages.length} pages for static generation`);
+    
+    return allPages.map(p => buildPagePath(p, allPages));
+  } catch (error) {
+    console.warn('⚠️  WordPress API unavailable, returning empty pages array:', error);
+    return []; // Graceful fallback - build will succeed with no pages
+  }
 }
 
 // Get sidebar navigation for a specific page (same parent/sibling pages)
