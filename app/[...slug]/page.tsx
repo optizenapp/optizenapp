@@ -9,6 +9,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import PageSidebar from '@/components/ui/PageSidebar';
 import FloatingCTA from '@/components/ui/FloatingCTA';
+import * as cheerio from 'cheerio';
 
 // Helper function to decode HTML entities
 function decodeHtmlEntities(text: string): string {
@@ -31,48 +32,51 @@ function decodeHtmlEntities(text: string): string {
 }
 
 // Helper function to replace WordPress staging links with production links
-function replaceInternalLinks(content: string): string {
+function processContent(content: string): string {
   // Replace staging domain with production domain (or relative URLs)
   const stagingDomain = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com';
   const productionDomain = 'https://optizenapp.com';
   
   let processedContent = content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
-  
-  // Fix ALL relative URLs - convert to absolute URLs
-  processedContent = processedContent.replace(
-    /((?:src|href|srcset|data-src)=["'])\/([^"']+)(["'])/gi,
-    (match, prefix, path, suffix) => {
-      if (path.startsWith('wp-content/') || path.includes('uploads/')) {
-        return `${prefix}${productionDomain}/${path}${suffix}`;
-      }
-      return match;
+
+  const $ = cheerio.load(processedContent);
+
+  // Process all images
+  $('img').each((i, el) => {
+    const img = $(el);
+    
+    // Fix src attribute
+    let src = img.attr('src');
+    if (src && src.startsWith('/wp-content')) {
+      img.attr('src', `${productionDomain}${src}`);
     }
-  );
-  
-  // Handle srcset with multiple URLs
-  processedContent = processedContent.replace(
-    /srcset=["']([^"']+)["']/gi,
-    (match, srcsetContent) => {
-      const fixed = srcsetContent.replace(
-        /\s*(\/wp-content\/[^\s,]+)/g,
-        ` ${productionDomain}$1`
-      );
-      return `srcset="${fixed}"`;
+
+    // Fix srcset attribute
+    let srcset = img.attr('srcset');
+    if (srcset) {
+      const newSrcset = srcset
+        .split(',')
+        .map(part => {
+          const trimmedPart = part.trim();
+          if (trimmedPart.startsWith('/wp-content')) {
+            return `${productionDomain}${trimmedPart}`;
+          }
+          return trimmedPart;
+        })
+        .join(', ');
+      img.attr('srcset', newSrcset);
     }
-  );
-  
-  // Add loading="lazy" to all images in content for better performance
-  processedContent = processedContent.replace(
-    /<img([^>]*?)>/gi,
-    (match, attributes) => {
-      if (attributes.includes('loading=')) {
-        return match;
-      }
-      return `<img${attributes} loading="lazy" decoding="async">`;
+    
+    // Add lazy loading and decoding attributes if not present
+    if (!img.attr('loading')) {
+      img.attr('loading', 'lazy');
     }
-  );
+    if (!img.attr('decoding')) {
+      img.attr('decoding', 'async');
+    }
+  });
   
-  return processedContent;
+  return $.html();
 }
 
 interface PageProps {
@@ -312,7 +316,7 @@ export default async function Page({ params }: PageProps) {
                   prose-th:!text-gray-900
                   prose-td:!text-gray-900
                   [&_*]:!text-gray-900"
-                dangerouslySetInnerHTML={{ __html: replaceInternalLinks(page.content.rendered) }}
+                dangerouslySetInnerHTML={{ __html: processContent(page.content.rendered) }}
               />
             </article>
           </div>

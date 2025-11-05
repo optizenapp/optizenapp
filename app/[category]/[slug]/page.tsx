@@ -10,57 +10,56 @@ import Footer from '@/components/layout/Footer';
 import FloatingCTA from '@/components/ui/FloatingCTA';
 import RelatedPosts from '@/components/blog/RelatedPosts';
 import { Clock, Calendar, ArrowLeft } from 'lucide-react';
+import * as cheerio from 'cheerio';
 
 // Helper function to replace WordPress staging links with production links
-function replaceInternalLinks(content: string): string {
+function processContent(content: string): string {
   const stagingDomain = 'https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com';
   const productionDomain = 'https://optizenapp.com';
-  
-  // Replace staging URLs with production URLs
+
+  // Replace staging domain with production domain
   let processedContent = content.replace(new RegExp(stagingDomain, 'g'), productionDomain);
-  
-  // Fix ALL relative URLs (images, links, etc.) - convert to absolute URLs
-  // This handles: src="/wp-content/...", href="/wp-content/...", etc.
-  // Pattern matches any attribute with a relative URL starting with /
-  processedContent = processedContent.replace(
-    /((?:src|href|srcset|data-src)=["'])\/([^"']+)(["'])/gi,
-    (match, prefix, path, suffix) => {
-      // Only convert if it starts with wp-content or looks like a WordPress path
-      if (path.startsWith('wp-content/') || path.includes('uploads/')) {
-        return `${prefix}${productionDomain}/${path}${suffix}`;
-      }
-      // Otherwise keep it as is (might be a relative internal link)
-      return match;
+
+  // Load content into cheerio for robust DOM manipulation
+  const $ = cheerio.load(processedContent);
+
+  // Process all images
+  $('img').each((i, el) => {
+    const img = $(el);
+    
+    // Fix src attribute
+    let src = img.attr('src');
+    if (src && src.startsWith('/wp-content')) {
+      img.attr('src', `${productionDomain}${src}`);
     }
-  );
-  
-  // Also handle srcset with multiple URLs (responsive images)
-  processedContent = processedContent.replace(
-    /srcset=["']([^"']+)["']/gi,
-    (match, srcsetContent) => {
-      // srcset can have multiple URLs separated by commas
-      const fixed = srcsetContent.replace(
-        /\s*(\/wp-content\/[^\s,]+)/g,
-        ` ${productionDomain}$1`
-      );
-      return `srcset="${fixed}"`;
+
+    // Fix srcset attribute
+    let srcset = img.attr('srcset');
+    if (srcset) {
+      const newSrcset = srcset
+        .split(',')
+        .map(part => {
+          const trimmedPart = part.trim();
+          if (trimmedPart.startsWith('/wp-content')) {
+            return `${productionDomain}${trimmedPart}`;
+          }
+          return trimmedPart;
+        })
+        .join(', ');
+      img.attr('srcset', newSrcset);
     }
-  );
-  
-  // Add loading="lazy" to all images in content (they're below the fold)
-  processedContent = processedContent.replace(
-    /<img([^>]*?)>/gi,
-    (match, attributes) => {
-      // Don't add loading="lazy" if it already has loading attribute
-      if (attributes.includes('loading=')) {
-        return match;
-      }
-      // Add loading="lazy" and decoding="async" for better performance
-      return `<img${attributes} loading="lazy" decoding="async">`;
+    
+    // Add lazy loading and decoding attributes if not present
+    if (!img.attr('loading')) {
+      img.attr('loading', 'lazy');
     }
-  );
+    if (!img.attr('decoding')) {
+      img.attr('decoding', 'async');
+    }
+  });
   
-  return processedContent;
+  // Return the modified HTML
+  return $.html();
 }
 
 interface PageProps {
@@ -245,7 +244,7 @@ export default async function BlogPost({ params }: PageProps) {
             {/* Title */}
             <h1 
               className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight"
-              dangerouslySetInnerHTML={{ __html: replaceInternalLinks(post.title.rendered) }}
+              dangerouslySetInnerHTML={{ __html: processContent(post.title.rendered) }}
             />
 
             {/* Meta Info */}
@@ -291,7 +290,7 @@ export default async function BlogPost({ params }: PageProps) {
                 prose-table:border-collapse prose-table:w-full
                 prose-th:bg-gray-100 prose-th:font-semibold prose-th:text-gray-900
                 prose-td:text-gray-900"
-              dangerouslySetInnerHTML={{ __html: replaceInternalLinks(post.content.rendered) }}
+              dangerouslySetInnerHTML={{ __html: processContent(post.content.rendered) }}
             />
 
             {/* CTA Section */}
