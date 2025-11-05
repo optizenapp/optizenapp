@@ -5,28 +5,31 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Store Owner, Fashion Boutique",
-    image: "SJ",
+    name: "TheBlockArmy",
+    role: "Canada",
+    image: "TB",
     rating: 5,
-    text: "Optizen Video Upsell increased our average order value by 28% in just the first month. The setup was incredibly easy and the results speak for themselves.",
-    stats: { label: "AOV Increase", value: "28%" }
+    text: "Excellent product, extremely useful for collection pages. Also customer support is top notch. Have had the app installed on 2 sites since they have launched it and it continues to get better every year. Thanks!",
+    stats: { label: "Using the app", value: "2 years" },
+    date: "June 22, 2024"
   },
   {
-    name: "Michael Chen",
-    role: "Marketing Director, Electronics Store",
-    image: "MC",
+    name: "Landmark Tools",
+    role: "United States",
+    image: "LT",
     rating: 5,
-    text: "The SEO tools are a game-changer. We've seen a 150% increase in organic traffic and our products are now ranking on the first page of Google.",
-    stats: { label: "Traffic Boost", value: "150%" }
+    text: "The app is great and Jono is amazing to work with. Highly recommended. No other app out there like this one.",
+    stats: { label: "Using the app", value: "1+ year" },
+    date: "February 17, 2023"
   },
   {
-    name: "Emily Rodriguez",
-    role: "Founder, Beauty & Cosmetics",
-    image: "ER",
+    name: "Devil Walking",
+    role: "Bulgaria",
+    image: "DW",
     rating: 5,
-    text: "Both apps work seamlessly together. The video upsells convert like crazy and our SEO has never been better. Best investment we've made!",
-    stats: { label: "Revenue Up", value: "45%" }
+    text: "Great app for your SEO and has fast and helpful customer service. In addition, it will save a ton of customization from a developer. Recommend!",
+    stats: { label: "Using the app", value: "3 months" },
+    date: "December 5, 2022"
   }
 ];
 

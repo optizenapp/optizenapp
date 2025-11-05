@@ -61,11 +61,11 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-white">
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-optizen-blue-500 to-optizen-green-500 text-white py-20">
+        <section className="bg-gradient-to-br from-optizen-blue-500 to-optizen-green-500 text-white py-20 mt-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <MessageSquare className="mx-auto mb-6" size={64} />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
