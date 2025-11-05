@@ -16,11 +16,11 @@ async function generateBlogSchema() {
   let totalSkipped = 0;
 
   for (let i = 0; i < postSlugs.length; i++) {
-    const [category, slug] = postSlugs[i].split('/');
+    const { category, slug } = postSlugs[i];
     
     if (!category || !slug) continue;
 
-    const post = await getPostBySlug(category, slug);
+    const post = await getPostBySlug(slug);
     if (!post) continue;
 
     const url = `https://optizenapp.com/${category}/${slug}`;
