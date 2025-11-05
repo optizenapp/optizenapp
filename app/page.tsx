@@ -33,7 +33,7 @@ export default async function Home() {
     excerpt: 'Increase revenue with video upsells and dominate search rankings with AI-powered SEO. Trusted by 10,000+ Shopify stores.',
     author: 'OptizenAI',
     datePublished: '2024-01-01T00:00:00Z',
-    dateModified: new Date().toISOString(),
+    dateModified: '2024-01-01T00:00:00Z', // Static date - update manually when homepage content changes
     category: 'homepage',
     siteInfo: {
       name: 'OptizenAI',

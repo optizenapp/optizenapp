@@ -25,12 +25,25 @@ async function generateHomepageSchema() {
 
   const schema = await generateSchemaOrg({
     url: 'https://optizenapp.com',
-    title: 'OptizenAI - Shopify SEO & Video Upsell Apps',
-    content: homepageContent,
-    excerpt: 'Boost your Shopify store with AI-powered SEO and video upsell tools. Increase AOV, improve search rankings, and automate customer engagement.',
+    title: 'OptizenApp - Boost Your Shopify Store with AI-Powered Tools',
+    content: `
+      Boost Your Shopify Store with SEO & Video Upsell Apps
+      Increase revenue with video upsells and dominate search rankings with AI-powered SEO. Everything you need to grow your Shopify store.
+      
+      Optizen Video Upsell - Turn Browsers into Buyers
+      Engage customers with video upsells and bundles. Increase your average order value by up to 30% with strategic product recommendations.
+      
+      OptizenAI SEO Tools - Dominate Search Rankings
+      AI-powered SEO optimization for Shopify stores. Improve your search rankings and drive organic traffic with intelligent meta tag management.
+      
+      Trusted by 10,000+ Shopify stores
+      4.9 star rating from 1,200+ reviews
+      $400M+ revenue generated for our customers
+    `,
+    excerpt: 'Increase revenue with video upsells and dominate search rankings with AI-powered SEO. Trusted by 10,000+ Shopify stores.',
     author: 'OptizenAI',
-    datePublished: new Date().toISOString(),
-    dateModified: new Date().toISOString(),
+    datePublished: '2024-01-01T00:00:00Z',
+    dateModified: '2024-01-01T00:00:00Z', // Static date - update manually when homepage content changes
     category: 'homepage',
     siteInfo: {
       name: 'OptizenAI',
