@@ -25,13 +25,13 @@ export default function FinalCTA() {
             </h2>
             
             <p className="text-xl md:text-2xl text-indigo-100 mb-8 max-w-3xl mx-auto">
-              Join 10,000+ successful Shopify stores using Optizen apps to increase revenue and dominate search rankings.
+              Join thousands of successful Shopify stores using Optizen apps to increase revenue and dominate search rankings.
             </p>
 
             <div className="flex flex-wrap justify-center gap-6 mb-10">
               <div className="flex items-center">
                 <Check className="mr-2" size={20} />
-                <span>14-day free trial</span>
+                <span>Free trials available</span>
               </div>
               <div className="flex items-center">
                 <Check className="mr-2" size={20} />
@@ -65,10 +65,6 @@ export default function FinalCTA() {
                 Talk to Sales
               </motion.a>
             </div>
-
-            <p className="mt-8 text-sm text-indigo-200">
-              Trusted by 10,000+ stores • 4.9★ rating • $400M+ revenue generated
-            </p>
           </div>
         </motion.div>
       </div>
