@@ -1,0 +1,334 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#video",
+        "name": "Importing Tag Pages via CSV - OptizenAI Tutorial",
+        "description": "Learn how to bulk update your tag pages by importing a CSV file. This comprehensive tutorial demonstrates the CSV format and import process for tag pages, ideal for large stores with many tag pages to optimize.",
+        "thumbnailUrl": "https://optizenapp.com/images/tutorials/importing-tag-pages-thumbnail.jpg",
+        "uploadDate": "2024-01-15",
+        "duration": "PT8M45S",
+        "contentUrl": "https://optizenapp.com/videos/importing-tag-pages.mp4",
+        "embedUrl": "https://optizenapp.com/embed/importing-tag-pages",
+        "about": {
+          "@type": "Thing",
+          "name": "CSV Import Process for Tag Pages",
+          "description": "Bulk optimization technique for e-commerce tag pages"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#howto",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 1247
+        },
+        "regionsAllowed": "US,CA,GB,AU,EU",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "learningResourceType": "Video Tutorial",
+        "educationalUse": [
+          "instruction",
+          "training",
+          "reference"
+        ]
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages",
+        "headline": "Importing Tag Pages via CSV - OptizenAI Documentation",
+        "description": "Complete guide to bulk updating tag pages using CSV import functionality in OptizenAI. Perfect for large e-commerce stores needing to optimize multiple tag pages efficiently.",
+        "articleSection": "Support Documentation",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#video",
+          "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#howto",
+          "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#faq"
+        ],
+        "teaches": [
+          "CSV file formatting for tag pages",
+          "Bulk import process execution",
+          "Tag page optimization strategies",
+          "Error handling during import"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI Documentation Series",
+          "url": "https://optizenapp.com/support-docs/optizenai/"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-15"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#howto",
+        "name": "How to Import Tag Pages via CSV in OptizenAI",
+        "description": "Step-by-step process to bulk update tag pages using CSV import functionality",
+        "video": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#video",
+        "totalTime": "PT15M",
+        "performTime": "PT10M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "CSV file with tag page data"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "OptizenAI account access"
+          }
+        ],
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "OptizenAI Dashboard"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Spreadsheet application (Excel, Google Sheets)"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Prepare CSV File",
+            "text": "Create or format your CSV file with the required columns for tag page data including titles, descriptions, and meta information.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/importing-tag-pages.mp4#t=0,120",
+              "name": "CSV File Preparation"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Access Import Feature",
+            "text": "Navigate to the OptizenAI dashboard and locate the tag pages import functionality in the bulk operations section.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/importing-tag-pages.mp4#t=120,240",
+              "name": "Accessing Import Feature"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Upload CSV File",
+            "text": "Select and upload your prepared CSV file using the file upload interface, ensuring proper format validation.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/importing-tag-pages.mp4#t=240,360",
+              "name": "CSV File Upload Process"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Review and Confirm",
+            "text": "Preview the import data, verify mapping of columns, and confirm the bulk update operation for your tag pages.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/importing-tag-pages.mp4#t=360,480",
+              "name": "Review and Confirmation"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Monitor Import Progress",
+            "text": "Track the import progress and handle any errors or warnings that may occur during the bulk update process.",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/importing-tag-pages.mp4#t=480,525",
+              "name": "Import Progress Monitoring"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#learning",
+        "name": "CSV Import for Tag Pages - Learning Resource",
+        "description": "Educational resource for mastering bulk tag page optimization through CSV imports",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Intermediate",
+        "timeRequired": "PT15M",
+        "teaches": [
+          "CSV file structure for tag pages",
+          "Bulk import workflow execution",
+          "Error troubleshooting techniques",
+          "Tag page optimization best practices"
+        ],
+        "assesses": [
+          "Ability to format CSV files correctly",
+          "Understanding of import process",
+          "Troubleshooting import issues"
+        ],
+        "competencyRequired": [
+          "Basic spreadsheet knowledge",
+          "Familiarity with OptizenAI interface",
+          "Understanding of SEO tag pages"
+        ],
+        "educationalUse": [
+          "instruction",
+          "training",
+          "reference",
+          "professional development"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What CSV format is required for importing tag pages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The CSV file should include columns for tag name, title, meta description, and any custom fields. Watch the video tutorial for the exact format demonstration.",
+              "video": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many tag pages can I import at once?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OptizenAI supports bulk imports of up to 10,000 tag pages in a single CSV file. For larger stores, consider splitting into multiple imports."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if there are errors in my CSV file?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The system will validate your CSV and provide detailed error reports. You can fix issues and re-upload. The video shows common error scenarios and solutions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I update existing tag pages or only create new ones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The CSV import feature supports both creating new tag pages and updating existing ones. Use the tag identifier column to specify which pages to update."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does the import process take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Import time varies based on file size. Typically, 1,000 tag pages take 2-3 minutes to process. The system provides real-time progress updates."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/software/optizenai",
+        "name": "OptizenAI",
+        "description": "AI-powered SEO optimization platform for e-commerce stores",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Web-based",
+        "featureList": [
+          "CSV bulk import for tag pages",
+          "Tag page optimization",
+          "SEO automation",
+          "Bulk operations management"
+        ],
+        "screenshot": "https://optizenapp.com/images/optizenai-dashboard.jpg",
+        "url": "https://optizenapp.com/optizenai"
+      },
+      {
+        "@type": "CreativeWorkSeries",
+        "@id": "https://optizenapp.com/support-docs/optizenai/",
+        "name": "OptizenAI Documentation Series",
+        "description": "Complete documentation and tutorial series for OptizenAI features",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/importing-tag-pages",
+          "https://optizenapp.com/support-docs/optizenai/tag-optimization",
+          "https://optizenapp.com/support-docs/optizenai/bulk-operations"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "OptizenApp"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#terms",
+        "name": "Tag Page Import Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Tag Pages",
+            "description": "Collection pages in e-commerce that group products by specific attributes or categories"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "CSV Import",
+            "description": "Bulk data upload process using comma-separated values file format"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Bulk Update",
+            "description": "Process of modifying multiple records simultaneously rather than individually"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta Description",
+            "description": "HTML attribute providing concise summary of page content for search engines"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages",
+        "name": "Importing Tag Pages - OptizenAI Support",
+        "description": "Learn how to bulk import and optimize tag pages using CSV files in OptizenAI",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#video",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Support",
+              "item": "https://optizenapp.com/support"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "OptizenAI Documentation",
+              "item": "https://optizenapp.com/support-docs/optizenai/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Importing Tag Pages",
+              "item": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-description",
+            ".step-instructions"
+          ]
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T04:23:28.820Z",
+  "contentModified": "2024-01-01T00:00:00Z",
+  "contentHash": "d6c01bf121e07a92a10797111c981457"
+}

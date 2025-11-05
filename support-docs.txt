@@ -1,0 +1,69 @@
+Support Docs – OptizenAI Features (All Plans)
+
+/introduction-to-optizen/ - https://www.youtube.com/watch?v=g_peEFfoeKE
+
+/new-ai-plan-for-existing-users/ - https://www.youtube.com/watch?v=BJg-qgor1U4
+
+/getting-started-with-ai-features/ - https://www.youtube.com/watch?v=VJPBMtAqunQ
+
+/creating-and-saving-prompt-templates/ - https://www.youtube.com/watch?v=-joCedMRHnw
+
+/updating-products-with-optizen-ai/ - https://www.youtube.com/watch?v=u59KnP8UL08
+
+/updating-collections-tag-page-with-ai/ - https://www.youtube.com/watch?v=ducjjVMe4mg
+
+/updating-image-alt-text-in-shopify-optizen-ai/ - https://www.youtube.com/watch?v=p2cOlTJ1Pj0
+
+Support Docs – Optizen AI Pro & Enterprise
+
+/how-to-install-optizen/ 
+
+Currently, to use advances features of Optizen PRO and Enterprise, we will need to manually install these features. Please send a support request via our Contact form, with your .myshopify.com URL. 
+
+We then make a limited permission access request and complete the installation.
+
+If you plan on only using the AI feature, the standard install from the Shopify app store will work out of the box.
+
+
+Settings & Use
+
+/optizen-settings/ - https://www.youtube.com/watch?v=08bitXxfUjc
+
+/adding-content-to-collection-pages/ - https://www.youtube.com/watch?v=ivc1ZrRNff8
+
+/why-optimize-tag-pages/ - https://www.youtube.com/watch?v=FOKFvjRxhro
+
+/working-with-tag-pages/ - https://www.youtube.com/watch?v=sMWp65S-V6k
+
+/creating-a-tag-page-sitemap/ - https://www.youtube.com/watch?v=ankfrEUf8WY
+
+/using-the-sync-button/ - There may be times where you can’t find the tag or collection you want, when using the search function in Optizen. To keep our data bases clean, new tags and collections need to be synced to the app.
+
+There are two “Sync” button. One under the Collections tab, and one under the Tags tab. Each button serves the same purpose. Once clicked, it will sync any new collections and tags to the app.
+
+Click the “Sync” button to sync new tags and collection. Depending on the size of your store, it may take a few minutes.
+
+https://optizenapp.com/wp-content/uploads/2023/08/Syn-button.png
+https://optizenapp.com/wp-content/uploads/2023/10/sync-button-2-1024x309.png
+
+/using-smart-tag-filters/ - https://www.youtube.com/watch?v=i9m7XJhTc-o
+
+
+Importing & Exporting Collections & Tag Pages
+
+/export-shopify-collections-backup-and-updates/ - https://www.youtube.com/watch?v=uxyKs9g-7Uk
+
+/importing-shopify-collections-via-csv/ - https://www.youtube.com/watch?v=r0aa77GZIlY
+
+/exporting-shopify-tag-pages/ - https://www.youtube.com/watch?v=yeljB4EJelY
+
+/import-shopify-tag-pages-via-csv/ - https://www.youtube.com/watch?v=ilH1kSv5P3U
+
+
+
+
+Extra Features – Enterprise Plan
+
+/why-upgrade-to-optizen-enterprise/ - https://www.youtube.com/watch?v=2HPMBnPjNqk
+
+/implementing-variant-tagger-variant-image-thumbnail-matcher/ - https://www.youtube.com/watch?v=5hRbyc4nx5c

@@ -1,0 +1,367 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/optizenai/collection-pages#video",
+        "name": "Adding Content to Collection Pages",
+        "description": "Learn how to add rich, optimized content to your collection pages using Optizen. This comprehensive tutorial shows you how to create engaging collection descriptions that improve search rankings and conversions.",
+        "thumbnailUrl": "https://optizenapp.com/images/collection-pages-tutorial-thumb.jpg",
+        "uploadDate": "2024-01-15T10:00:00Z",
+        "duration": "PT8M45S",
+        "contentUrl": "https://optizenapp.com/videos/collection-pages-tutorial.mp4",
+        "embedUrl": "https://optizenapp.com/embed/collection-pages-tutorial",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 2847
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Collection Page SEO Optimization",
+          "description": "SEO techniques for e-commerce collection pages"
+        },
+        "teaches": "https://optizenapp.com/support-docs/optizenai/collection-pages#howto",
+        "transcript": "In this tutorial, we'll walk through the process of adding optimized content to collection pages in Optizen. First, navigate to your collection settings...",
+        "regionsAllowed": [
+          "US",
+          "CA",
+          "GB",
+          "AU",
+          "EU"
+        ],
+        "inLanguage": "en-US",
+        "creator": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/optizenai/collection-pages",
+        "headline": "Adding Content to Collection Pages",
+        "description": "Collection pages are important for SEO. Learn how to add rich, optimized content to your collection pages using Optizen. This guide shows you how to create engaging collection descriptions that improve search rankings and conversions.",
+        "articleSection": "Support Documentation",
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://optizenapp.com/logo.png"
+          }
+        },
+        "datePublished": "2024-01-15T10:00:00Z",
+        "dateModified": "2024-01-15T10:00:00Z",
+        "hasPart": "https://optizenapp.com/support-docs/optizenai/collection-pages#video",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/collection-pages#video",
+        "teaches": [
+          "Collection page content optimization",
+          "SEO best practices for e-commerce",
+          "Content creation for better conversions",
+          "Optizen platform navigation"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "OptizenAI SEO Documentation",
+          "url": "https://optizenapp.com/support-docs/optizenai"
+        },
+        "about": {
+          "@type": "SoftwareApplication",
+          "name": "Optizen",
+          "applicationCategory": "SEO Software"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/optizenai/collection-pages#howto",
+        "name": "How to Add Content to Collection Pages in Optizen",
+        "description": "Step-by-step guide to adding optimized content to collection pages for better SEO and conversions",
+        "image": "https://optizenapp.com/images/collection-pages-guide.jpg",
+        "video": "https://optizenapp.com/support-docs/optizenai/collection-pages#video",
+        "totalTime": "PT15M",
+        "performTime": "PT10M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen Account",
+            "requiredQuantity": 1
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Collection Page Access",
+            "requiredQuantity": 1
+          }
+        ],
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Optizen Dashboard",
+            "requiredQuantity": 1
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Web Browser",
+            "requiredQuantity": 1
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Access Collection Settings",
+            "text": "Navigate to your Optizen dashboard and locate the collection pages section",
+            "image": "https://optizenapp.com/images/step1-dashboard.jpg",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/collection-pages-tutorial.mp4#t=0,45",
+              "name": "Accessing Collection Settings"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Select Target Collection",
+            "text": "Choose the collection page you want to optimize from your product catalog",
+            "image": "https://optizenapp.com/images/step2-select-collection.jpg",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/collection-pages-tutorial.mp4#t=45,120",
+              "name": "Selecting Target Collection"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Add SEO-Optimized Description",
+            "text": "Create compelling, keyword-rich descriptions that engage customers and improve search rankings",
+            "image": "https://optizenapp.com/images/step3-add-description.jpg",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/collection-pages-tutorial.mp4#t=120,300",
+              "name": "Adding SEO Description"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure Meta Tags",
+            "text": "Set up title tags, meta descriptions, and other SEO elements for better search visibility",
+            "image": "https://optizenapp.com/images/step4-meta-tags.jpg",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/collection-pages-tutorial.mp4#t=300,450",
+              "name": "Configuring Meta Tags"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Preview and Publish",
+            "text": "Review your changes and publish the optimized collection page content",
+            "image": "https://optizenapp.com/images/step5-publish.jpg",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/videos/collection-pages-tutorial.mp4#t=450,525",
+              "name": "Preview and Publish Changes"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/optizenai/collection-pages#learning",
+        "name": "Collection Page Content Optimization Tutorial",
+        "description": "Comprehensive learning resource for optimizing collection page content in Optizen",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Beginner",
+        "timeRequired": "PT15M",
+        "teaches": [
+          "Collection page SEO optimization",
+          "Content creation best practices",
+          "Optizen platform navigation",
+          "E-commerce SEO strategies"
+        ],
+        "assesses": [
+          "Ability to create optimized collection descriptions",
+          "Understanding of SEO meta tags",
+          "Proficiency with Optizen interface"
+        ],
+        "competencyRequired": [
+          "Basic understanding of SEO concepts",
+          "Familiarity with e-commerce platforms"
+        ],
+        "educationalUse": [
+          "Tutorial",
+          "Self-directed learning",
+          "Skill development",
+          "Professional training"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "about": "https://optizenapp.com/support-docs/optizenai/collection-pages#video",
+        "hasPart": "https://optizenapp.com/support-docs/optizenai/collection-pages#howto"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/collection-pages#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long should collection page descriptions be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Collection page descriptions should be 150-300 words for optimal SEO performance. This provides enough content for search engines while remaining engaging for users.",
+              "video": "https://optizenapp.com/support-docs/optizenai/collection-pages#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use the same description for multiple collections?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, each collection should have unique, tailored content. Duplicate content can hurt your SEO rankings. Use Optizen's content suggestions to create unique descriptions for each collection.",
+              "video": "https://optizenapp.com/support-docs/optizenai/collection-pages#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What keywords should I include in collection descriptions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Focus on product category keywords, brand names, and terms your customers use when searching. Optizen's keyword research tools can help identify the best terms for your collections.",
+              "video": "https://optizenapp.com/support-docs/optizenai/collection-pages#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often should I update collection page content?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Review and update collection content quarterly or when adding new products. Fresh, relevant content helps maintain good search rankings and customer engagement.",
+              "video": "https://optizenapp.com/support-docs/optizenai/collection-pages#video"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/software",
+        "name": "Optizen",
+        "description": "AI-powered SEO optimization platform for e-commerce",
+        "applicationCategory": "SEO Software",
+        "operatingSystem": "Web Browser",
+        "url": "https://optizenapp.com",
+        "featureList": [
+          "Collection page optimization",
+          "SEO content generation",
+          "Keyword research",
+          "Meta tag management",
+          "Performance analytics"
+        ],
+        "screenshot": "https://optizenapp.com/images/optizen-dashboard.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free trial available"
+        }
+      },
+      {
+        "@type": "CreativeWorkSeries",
+        "@id": "https://optizenapp.com/support-docs/optizenai",
+        "name": "OptizenAI SEO Documentation",
+        "description": "Complete guide to using Optizen's AI-powered SEO features",
+        "url": "https://optizenapp.com/support-docs/optizenai",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/optizenai/collection-pages",
+          "https://optizenapp.com/support-docs/optizenai/product-pages",
+          "https://optizenapp.com/support-docs/optizenai/keyword-research"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/optizenai/collection-pages#terms",
+        "name": "Collection Page SEO Terminology",
+        "description": "Key terms and concepts for collection page optimization",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Collection Page",
+            "description": "A page that displays a group of related products, typically organized by category, brand, or theme"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Meta Description",
+            "description": "HTML attribute that provides a brief summary of a web page's content for search engines"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "SEO Optimization",
+            "description": "The process of improving web pages to increase visibility in search engine results"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Conversion Rate",
+            "description": "The percentage of visitors who complete a desired action, such as making a purchase"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/support-docs/optizenai/collection-pages",
+        "name": "Adding Content to Collection Pages - Optizen Support",
+        "description": "Learn how to add rich, optimized content to your collection pages using Optizen for better SEO and conversions",
+        "url": "https://optizenapp.com/support-docs/optizenai/collection-pages",
+        "mainEntity": "https://optizenapp.com/support-docs/optizenai/collection-pages#video",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Support Documentation",
+              "item": "https://optizenapp.com/support-docs"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "OptizenAI",
+              "item": "https://optizenapp.com/support-docs/optizenai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Collection Pages",
+              "item": "https://optizenapp.com/support-docs/optizenai/collection-pages"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-description",
+            ".step-instructions"
+          ]
+        },
+        "isPartOf": "https://optizenapp.com/support-docs/optizenai"
+      }
+    ]
+  },
+  "generatedAt": "2025-11-05T04:21:11.113Z",
+  "contentModified": "2024-01-01T00:00:00Z",
+  "contentHash": "94d482754cbec4579bda4bb36c5d85ae"
+}
