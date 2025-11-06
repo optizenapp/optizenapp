@@ -167,8 +167,8 @@ export default async function DocPage({ params }: PageProps) {
     title: pageTitle,
     content: docContent.content,
     excerpt: stripHtml(docContent.content).substring(0, 160),
-    datePublished: '2024-01-01T00:00:00Z', // Static date - update manually when content changes
-    dateModified: '2024-01-01T00:00:00Z', // Static date - update manually when content changes
+    datePublished: '2025-11-06T00:00:00Z', // Updated for Video Upsell docs
+    dateModified: '2025-11-06T00:00:00Z', // Update this when content changes
     category: `${currentAppInfo.name} Documentation`,
     breadcrumbs,
     siteInfo: {
