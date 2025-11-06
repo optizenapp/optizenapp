@@ -2,17 +2,29 @@
 
 import Link from 'next/link';
 import { X } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function FloatingCTA() {
   const [isVisible, setIsVisible] = useState(true);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   if (!isVisible) return null;
 
   return (
     <>
-      {/* Desktop/Laptop Sidebar - Shows on 13" laptops and larger (1024px+) */}
-      <div className="hidden lg:block fixed right-4 top-1/2 -translate-y-1/2 z-40 w-64">
+      {/* Desktop/Laptop Sidebar - Sticky on scroll after 300px */}
+      <div className={`hidden lg:block fixed right-4 z-40 w-64 transition-all duration-300 ${
+        isSticky ? 'top-24 opacity-100' : 'top-[-300px] opacity-0'
+      }`}>
         <div className="bg-gradient-to-br from-optizen-blue-50 to-optizen-green-50 rounded-2xl border-2 border-optizen-blue-200 shadow-xl p-4 relative">
           {/* Close button */}
           <button

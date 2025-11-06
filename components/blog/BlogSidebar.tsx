@@ -1,10 +1,9 @@
 "use client";
 
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import BlogSearch from './BlogSearch';
-import { Clock, Calendar, ArrowRight, TrendingUp } from 'lucide-react';
+import { Clock, Calendar, ArrowRight } from 'lucide-react';
 import { formatDate, calculateReadingTime, stripHtml, truncateText } from '@/lib/blog-utils';
 
 interface Category {
@@ -36,17 +35,6 @@ export default function BlogSidebar({
   recentPosts = [],
   currentPostId 
 }: BlogSidebarProps) {
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsSticky(window.scrollY > 300);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   // Filter out current post from recent posts
   const filteredRecentPosts = recentPosts.filter(post => post.id !== currentPostId);
 
@@ -145,49 +133,7 @@ export default function BlogSidebar({
             <ArrowRight className="ml-2" size={18} />
           </Link>
         </div>
-
-        {/* CTA Widget - Desktop: Sticky on scroll, Mobile: Hidden (shown in fixed position) */}
-        <div className={`hidden lg:block bg-gradient-to-br from-optizen-blue-500 to-optizen-green-500 rounded-2xl shadow-lg p-6 text-white transition-all ${
-          isSticky ? 'sticky top-24' : ''
-        }`}>
-          <div className="flex items-center mb-3">
-            <TrendingUp size={24} className="mr-2" />
-            <h3 className="text-lg font-bold">Boost Your Store</h3>
-          </div>
-          <p className="text-sm text-white/90 mb-4">
-            Get AI-powered SEO and video upsells to increase revenue and dominate search rankings.
-          </p>
-          <Link
-            href="/"
-            className="inline-flex items-center justify-center w-full px-4 py-3 bg-white text-optizen-blue-600 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
-          >
-            Explore Our Apps
-            <ArrowRight className="ml-2" size={18} />
-          </Link>
-        </div>
       </aside>
-
-      {/* Mobile CTA - Fixed at bottom */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-br from-optizen-blue-500 to-optizen-green-500 shadow-2xl">
-        <div className="max-w-lg mx-auto">
-          <div className="flex items-center justify-between mb-2">
-            <div className="flex items-center">
-              <TrendingUp size={20} className="mr-2 text-white" />
-              <h3 className="font-bold text-white">Boost Your Store</h3>
-            </div>
-          </div>
-          <p className="text-sm text-white/90 mb-3">
-            Get AI-powered SEO and video upsells to increase revenue.
-          </p>
-          <Link
-            href="/"
-            className="inline-flex items-center justify-center w-full px-4 py-3 bg-white text-optizen-blue-600 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
-          >
-            Explore Our Apps
-            <ArrowRight className="ml-2" size={18} />
-          </Link>
-        </div>
-      </div>
     </>
   );
 }

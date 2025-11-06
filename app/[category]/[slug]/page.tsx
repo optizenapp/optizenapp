@@ -42,7 +42,7 @@ export const dynamicParams = false;
 
 // Force static generation at build time
 export const dynamic = 'force-static';
-export const revalidate = false;
+export const revalidate = 3600; // Revalidate every hour to pick up schema updates
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { category, slug } = await params;
