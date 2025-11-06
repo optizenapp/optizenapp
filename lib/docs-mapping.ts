@@ -177,7 +177,41 @@ export const docsMapping: DocMapping[] = [
   },
   
   // Video Upsells App Documentation
-  // No docs yet - will add when created in WordPress
+  {
+    wpSlug: 'what-is-optizen-video-upsell',
+    nextSlug: 'introduction',
+    app: 'video-upsells',
+    title: 'What Is Optizen Video Upsell?',
+    order: 1,
+  },
+  {
+    wpSlug: 'getting-started-video-upsell',
+    nextSlug: 'getting-started',
+    app: 'video-upsells',
+    title: 'Getting Started',
+    order: 2,
+  },
+  {
+    wpSlug: 'video-best-practices',
+    nextSlug: 'video-best-practices',
+    app: 'video-upsells',
+    title: 'Video Best Practices',
+    order: 3,
+  },
+  {
+    wpSlug: 'analytics-and-optimization',
+    nextSlug: 'analytics-optimization',
+    app: 'video-upsells',
+    title: 'Analytics & Optimization',
+    order: 4,
+  },
+  {
+    wpSlug: 'troubleshooting-video-upsell',
+    nextSlug: 'troubleshooting',
+    app: 'video-upsells',
+    title: 'Troubleshooting',
+    order: 5,
+  },
 ];
 
 /**
