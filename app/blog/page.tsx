@@ -1,13 +1,23 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { getPosts, getCategories } from '@/lib/wordpress';
 import { formatDate, calculateReadingTime, stripHtml, truncateText } from '@/lib/blog-utils';
 import { generateSchemaOrg } from '@/lib/schema-generator';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import BlogSearch from '@/components/blog/BlogSearch';
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
+
+// Dynamic import for client component
+const BlogSearch = dynamic(() => import('@/components/blog/BlogSearch'), {
+  ssr: false,
+  loading: () => (
+    <div className="max-w-2xl mx-auto">
+      <div className="w-full h-12 bg-gray-100 rounded-lg animate-pulse"></div>
+    </div>
+  ),
+});
 
 export const metadata: Metadata = {
   title: 'Blog | OptizenApp - Shopify SEO & Video Upsell Tips',
