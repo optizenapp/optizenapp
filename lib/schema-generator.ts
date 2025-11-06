@@ -548,8 +548,11 @@ Your task is to analyze the provided blog post content and generate comprehensiv
 4. **Hierarchical Structure**: Use @graph for multiple top-level entities
 5. **Bidirectional Links**: Reference parent entities from child entities
 6. **Rich Metadata**: Include images, citations, alternative names
-7. **Accessibility**: Add speakable selectors for voice search
+7. **Accessibility**: Add speakable selectors ONLY using these CSS selectors that exist in the HTML: ["h1", "h2", "h3", ".prose p", "article"]
 8. **Actionability**: Include potentialAction for user interactions
+
+IMPORTANT: For SpeakableSpecification, ONLY use these cssSelector values: ["h1", "h2", "h3"]
+DO NOT use .key-takeaway, .summary, or any other custom classes that don't exist in the HTML.
 
 URL: ${input.url}
 Title: ${input.title}
