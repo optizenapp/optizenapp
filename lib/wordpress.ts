@@ -9,19 +9,24 @@ const WP_BASE_URL = process.env.WORDPRESS_BASE_URL || 'https://optizenapp-stagin
 async function fetchWithRetry(
   url: string,
   options: RequestInit = {},
-  maxRetries = 7 // Increased to 7 for better WordPress reliability
+  maxRetries?: number
 ): Promise<Response> {
+  // Use shorter retries during Vercel builds to avoid timeouts
+  const isVercelBuild = process.env.VERCEL === '1';
+  const retries = maxRetries ?? (isVercelBuild ? 3 : 5);
+  const timeout = isVercelBuild ? 20000 : 30000; // 20s for Vercel, 30s otherwise
+  
   let lastError: Error | null = null;
   
-  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
     try {
       if (attempt > 1) {
-        console.log(`🔄 Retry attempt ${attempt}/${maxRetries} for: ${url.split('?')[0]}`);
+        console.log(`🔄 Retry attempt ${attempt}/${retries} for: ${url.split('?')[0]}`);
       }
       
       const response = await fetch(url, {
         ...options,
-        signal: AbortSignal.timeout(45000), // 45 second timeout (increased from 30s)
+        signal: AbortSignal.timeout(timeout),
       });
       
       // If successful, return immediately
@@ -47,13 +52,13 @@ async function fetchWithRetry(
     } catch (error: any) {
       lastError = error;
       
-      if (attempt < maxRetries) {
-        // Exponential backoff: 5s, 10s, 15s, 20s, 25s, 30s, 35s
-        const delay = 5000 * attempt;
+      if (attempt < retries) {
+        // Shorter delays during Vercel builds: 2s, 4s, 6s vs 3s, 6s, 9s, 12s, 15s
+        const delay = isVercelBuild ? 2000 * attempt : 3000 * attempt;
         console.warn(`⚠️  Fetch failed (${error.message}). Retrying in ${delay/1000}s...`);
         await new Promise(resolve => setTimeout(resolve, delay));
       } else {
-        console.error(`❌ All ${maxRetries} attempts failed for: ${url.split('?')[0]}`);
+        console.error(`❌ All ${retries} attempts failed for: ${url.split('?')[0]}`);
         console.error(`❌ Last error: ${error.message}`);
       }
     }
