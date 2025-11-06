@@ -309,16 +309,21 @@ export async function getAllPostSlugs(): Promise<Array<{ category: string; slug:
     let page = 1;
     let hasMore = true;
 
+    console.log('🔍 [getAllPostSlugs] Starting to fetch all post slugs from WordPress...');
+
     while (hasMore) {
+      console.log(`🔍 [getAllPostSlugs] Fetching page ${page}...`);
       const response = await fetchWithRetry(`${WP_API_URL}/posts?per_page=100&page=${page}&_embed=true`, {
         next: { revalidate: false }, // Cache permanently
       });
 
       if (!response.ok) {
-        break;
+        console.error(`❌ [getAllPostSlugs] Failed to fetch page ${page}: ${response.status} ${response.statusText}`);
+        throw new Error(`WordPress API returned ${response.status} for posts page ${page}`);
       }
 
       const posts: WordPressPost[] = await response.json();
+      console.log(`✅ [getAllPostSlugs] Page ${page} returned ${posts.length} posts`);
       
       if (posts.length === 0) {
         hasMore = false;
@@ -328,24 +333,36 @@ export async function getAllPostSlugs(): Promise<Array<{ category: string; slug:
         
         // Check if there are more pages
         const totalPages = response.headers.get('X-WP-TotalPages');
+        console.log(`📄 [getAllPostSlugs] Total pages available: ${totalPages}`);
         if (totalPages && page > parseInt(totalPages)) {
           hasMore = false;
         }
       }
     }
 
-    console.log(`📚 Fetched ${allPosts.length} posts for static generation`);
+    console.log(`✅ [getAllPostSlugs] Successfully fetched ${allPosts.length} posts for static generation`);
     
-    return allPosts.map(post => {
+    if (allPosts.length === 0) {
+      console.warn('⚠️  [getAllPostSlugs] No posts found! This will cause all blog posts to 404.');
+    }
+    
+    const slugs = allPosts.map(post => {
       const category = post._embedded?.['wp:term']?.[0]?.[0]?.slug || 'uncategorized';
       return {
         category,
         slug: post.slug,
       };
     });
+    
+    console.log(`📝 [getAllPostSlugs] First 5 slugs: ${slugs.slice(0, 5).map(s => `/${s.category}/${s.slug}`).join(', ')}`);
+    
+    return slugs;
   } catch (error) {
-    console.warn('⚠️  WordPress API unavailable, returning empty posts array:', error);
-    return []; // Graceful fallback - build will succeed with no blog posts
+    console.error('❌ [getAllPostSlugs] CRITICAL ERROR - WordPress API unavailable during build!');
+    console.error('❌ This will cause ALL blog posts to 404!');
+    console.error('❌ Error details:', error);
+    // FAIL THE BUILD instead of silently returning empty array
+    throw error;
   }
 }
 
