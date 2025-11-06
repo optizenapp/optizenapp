@@ -1,0 +1,362 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#video",
+        "name": "Analytics & Optimization Tutorial - Video Upsells",
+        "description": "Learn how to track key metrics and optimize your video upsells for maximum conversion rates. Covers impressions, views, conversions, revenue tracking, and A/B testing strategies.",
+        "thumbnailUrl": "https://optizenapp.com/images/analytics-optimization-thumbnail.jpg",
+        "contentUrl": "https://optizenapp.com/videos/analytics-optimization-tutorial.mp4",
+        "embedUrl": "https://optizenapp.com/embed/analytics-optimization-tutorial",
+        "uploadDate": "2024-01-15",
+        "duration": "PT8M45S",
+        "about": {
+          "@type": "Thing",
+          "name": "Video Upsell Analytics and Optimization"
+        },
+        "teaches": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#howto",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 2847
+        },
+        "regionsAllowed": "US,CA,GB,AU,EU",
+        "inLanguage": "en-US",
+        "isAccessibleForFree": true,
+        "learningResourceType": "Video Tutorial",
+        "educationalUse": [
+          "instruction",
+          "training",
+          "reference"
+        ]
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization",
+        "headline": "Analytics & Optimization - Video Upsells Documentation",
+        "description": "Comprehensive guide to tracking and optimizing video upsell performance with key metrics, conversion rate optimization, and A/B testing strategies.",
+        "articleSection": "Support Documentation",
+        "mainEntity": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#video",
+          "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#howto",
+          "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#faq"
+        ],
+        "teaches": [
+          "Video upsell metrics tracking",
+          "Conversion rate optimization",
+          "A/B testing for video content",
+          "Revenue analytics interpretation",
+          "Performance monitoring strategies"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "Video Upsells Documentation Series",
+          "url": "https://optizenapp.com/support-docs/video-upsells/"
+        },
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-15",
+        "author": {
+          "@type": "Organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#howto",
+        "name": "How to Track and Optimize Video Upsell Analytics",
+        "description": "Step-by-step guide to monitoring key metrics and optimizing video upsell performance for higher conversion rates.",
+        "video": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#video",
+        "totalTime": "PT15M",
+        "performTime": "PT10M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "OptizenApp Dashboard Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Video Upsell Campaign"
+          }
+        ],
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Analytics Dashboard"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "A/B Testing Tools"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Track Key Metrics",
+            "text": "Monitor impressions (how many times upsell was shown), views (customers who watched video), conversions (customers who purchased), and total revenue generated.",
+            "video": {
+              "@type": "VideoObject",
+              "name": "Tracking Key Metrics",
+              "contentUrl": "https://optizenapp.com/videos/analytics-optimization-tutorial.mp4#t=0,120"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Calculate Conversion Rate",
+            "text": "Calculate conversion rate by dividing views by conversions. Aim for 15% or higher conversion rate for optimal performance.",
+            "video": {
+              "@type": "VideoObject",
+              "name": "Calculating Conversion Rates",
+              "contentUrl": "https://optizenapp.com/videos/analytics-optimization-tutorial.mp4#t=120,240"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "A/B Test Video Content",
+            "text": "Create variations with different scripts and voices to test which performs better with your audience.",
+            "video": {
+              "@type": "VideoObject",
+              "name": "A/B Testing Videos",
+              "contentUrl": "https://optizenapp.com/videos/analytics-optimization-tutorial.mp4#t=240,360"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Adjust Targeting Parameters",
+            "text": "Refine cart value thresholds and customer segments to show upsells to the most likely converters.",
+            "video": {
+              "@type": "VideoObject",
+              "name": "Adjusting Targeting",
+              "contentUrl": "https://optizenapp.com/videos/analytics-optimization-tutorial.mp4#t=360,480"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Optimize Discount Strategies",
+            "text": "Test different discount amounts and promotional offers to find the sweet spot for conversions.",
+            "video": {
+              "@type": "VideoObject",
+              "name": "Optimizing Discounts",
+              "contentUrl": "https://optizenapp.com/videos/analytics-optimization-tutorial.mp4#t=480,600"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Monitor Performance Weekly",
+            "text": "Check analytics dashboard weekly to identify trends and make data-driven optimization decisions.",
+            "video": {
+              "@type": "VideoObject",
+              "name": "Performance Monitoring",
+              "contentUrl": "https://optizenapp.com/videos/analytics-optimization-tutorial.mp4#t=600,720"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#learning",
+        "name": "Video Upsell Analytics & Optimization Learning Resource",
+        "description": "Educational resource for mastering video upsell analytics and optimization techniques.",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Intermediate",
+        "timeRequired": "PT15M",
+        "teaches": [
+          "Metrics tracking for video upsells",
+          "Conversion rate calculation and optimization",
+          "A/B testing methodologies",
+          "Revenue analysis techniques",
+          "Performance monitoring best practices"
+        ],
+        "assesses": [
+          "Ability to interpret analytics data",
+          "Skills in optimization strategy development",
+          "Understanding of conversion metrics"
+        ],
+        "competencyRequired": [
+          "Basic understanding of e-commerce metrics",
+          "Familiarity with OptizenApp interface"
+        ],
+        "educationalUse": [
+          "instruction",
+          "training",
+          "assessment"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "about": {
+          "@type": "Thing",
+          "name": "Video Upsell Performance Optimization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a good conversion rate for video upsells?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Aim for a conversion rate of 15% or higher. This means 15 out of every 100 customers who view your video upsell should make a purchase. Rates above 20% are considered excellent.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often should I check my video upsell analytics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Monitor your analytics weekly to identify trends and make timely optimizations. Daily checking may lead to over-optimization based on small sample sizes.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between impressions and views?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Impressions count how many times your upsell was displayed to customers, while views count how many customers actually watched the video. Views will always be lower than impressions.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I A/B test my video upsells effectively?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Test one element at a time - either the script, voice, or visual elements. Run tests for at least 2 weeks or until you have statistical significance (typically 100+ conversions per variation).",
+              "video": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What cart value threshold should I set for video upsells?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start with customers who have cart values 20-50% higher than your average order value. Test different thresholds to find what works best for your specific audience and products.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#video"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/app",
+        "name": "OptizenApp",
+        "description": "E-commerce optimization platform with video upsell capabilities and advanced analytics.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web Browser",
+        "featureList": [
+          "Video Upsell Creation",
+          "Analytics Dashboard",
+          "A/B Testing Tools",
+          "Conversion Tracking",
+          "Revenue Optimization"
+        ],
+        "screenshot": "https://optizenapp.com/images/analytics-dashboard-screenshot.jpg",
+        "url": "https://optizenapp.com"
+      },
+      {
+        "@type": "CreativeWorkSeries",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/",
+        "name": "Video Upsells Documentation Series",
+        "description": "Complete documentation series covering video upsell setup, optimization, and analytics.",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/video-upsells/analytics-optimization",
+          "https://optizenapp.com/support-docs/video-upsells/billing-ai-credits"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "OptizenApp"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#terms",
+        "name": "Video Upsell Analytics Terms",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Impressions",
+            "description": "The number of times your video upsell was displayed to customers"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Views",
+            "description": "The number of customers who actually watched your video upsell"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Conversions",
+            "description": "The number of customers who purchased the upsell after viewing the video"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Conversion Rate",
+            "description": "The percentage of viewers who convert to purchasers, calculated as Views ÷ Conversions"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "A/B Testing",
+            "description": "Testing different versions of video content to determine which performs better"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization",
+        "name": "Analytics & Optimization - Video Upsells Documentation",
+        "description": "Learn how to track and optimize video upsell performance with comprehensive analytics and testing strategies.",
+        "mainEntity": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#video",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Support Documentation",
+              "item": "https://optizenapp.com/support-docs/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Video Upsells",
+              "item": "https://optizenapp.com/support-docs/video-upsells/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Analytics & Optimization",
+              "item": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".key-metrics",
+            ".optimization-tips"
+          ]
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "OptizenApp",
+          "url": "https://optizenapp.com"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-06T05:28:56.501Z",
+  "contentModified": "2025-11-06T00:00:00Z",
+  "contentHash": "cdc4fc9a56e96841a2a8d0837b6fd5f4"
+}

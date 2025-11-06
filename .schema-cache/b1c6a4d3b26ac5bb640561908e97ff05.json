@@ -1,0 +1,25 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What Is Optizen Video Upsell?",
+    "description": "\n      What Is Optizen Video Upsell?\n      \n      Optizen Video Upsell is a powerful Shopify app that leverages your own or AI-generated video content to showca",
+    "datePublished": "2025-11-06T00:00:00Z",
+    "dateModified": "2025-11-06T00:00:00Z",
+    "author": {
+      "@type": "Person",
+      "name": "OptizenApp"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OptizenApp",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://optizenapp.com/optizen-logo.png"
+      }
+    }
+  },
+  "generatedAt": "2025-11-06T05:26:36.191Z",
+  "contentModified": "2025-11-06T00:00:00Z",
+  "contentHash": "e10688f4cc145ea9d8c1f6eeda6ddd4c"
+}

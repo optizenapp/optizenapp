@@ -1,0 +1,25 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Getting Started",
+    "description": "\n      Getting Started\n      \n      Welcome to Optizen Video Upsell! This guide will help you create your first AI-powered video upsell campaign in minutes.\n   ",
+    "datePublished": "2025-11-06T00:00:00Z",
+    "dateModified": "2025-11-06T00:00:00Z",
+    "author": {
+      "@type": "Person",
+      "name": "OptizenApp"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OptizenApp",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://optizenapp.com/optizen-logo.png"
+      }
+    }
+  },
+  "generatedAt": "2025-11-06T05:27:24.302Z",
+  "contentModified": "2025-11-06T00:00:00Z",
+  "contentHash": "a356a9515b5c592ce026a56d2ad96526"
+}

@@ -1,0 +1,333 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video",
+        "name": "Video Best Practices for Optizen Upsell Campaigns",
+        "description": "Complete guide to creating and using videos in Optizen campaigns, including AI video generation, custom video uploads, and optimization best practices for maximum conversion rates.",
+        "thumbnailUrl": "https://optizenapp.com/images/video-best-practices-thumbnail.jpg",
+        "uploadDate": "2024-01-15",
+        "duration": "PT8M45S",
+        "contentUrl": "https://optizenapp.com/videos/video-best-practices-tutorial.mp4",
+        "embedUrl": "https://optizenapp.com/embed/video-best-practices",
+        "about": {
+          "@type": "Thing",
+          "name": "Video Marketing Best Practices for E-commerce Upsells"
+        },
+        "teaches": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#howto",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 2847
+        },
+        "regionsAllowed": "US,CA,GB,AU,EU",
+        "transcript": "Learn how to create high-converting videos for your Optizen upsell campaigns using both custom videos and AI generation..."
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/video-best-practices",
+        "headline": "Video Best Practices - Optizen Support Documentation",
+        "description": "Comprehensive guide covering video requirements, AI video generation, custom video uploads, and optimization strategies for Optizen upsell campaigns.",
+        "articleSection": "Support Documentation",
+        "mainEntity": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video",
+          "https://optizenapp.com/support-docs/video-upsells/video-best-practices#howto",
+          "https://optizenapp.com/support-docs/video-upsells/video-best-practices#faq"
+        ],
+        "teaches": [
+          "How to upload and embed existing YouTube/Vimeo videos",
+          "AI video generation process and customization",
+          "Video format optimization for different platforms",
+          "Best practices for high-converting upsell videos"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "Optizen Video Upsells Documentation Series"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen"
+        },
+        "datePublished": "2024-01-15",
+        "dateModified": "2024-01-20"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#howto",
+        "name": "How to Create and Optimize Videos for Optizen Campaigns",
+        "description": "Step-by-step guide to creating high-converting videos using both custom uploads and AI generation.",
+        "video": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video",
+        "totalTime": "PT15M",
+        "performTime": "PT10M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen Account"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Product URL (for AI generation)"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Existing video content (optional)"
+          }
+        ],
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Optizen AI Video Generator"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "YouTube or Vimeo account (for custom videos)"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Choose Video Creation Method",
+            "text": "Decide between using existing YouTube/Vimeo videos or generating new videos with AI.",
+            "video": {
+              "@type": "Clip",
+              "name": "Video Method Selection",
+              "startOffset": 0,
+              "endOffset": 45,
+              "url": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video#t=0,45"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Set Up Custom Video (Option 1)",
+            "text": "Upload your existing YouTube, Vimeo, or TikTok videos. Ensure videos are set to Public and under 60 seconds for best engagement.",
+            "video": {
+              "@type": "Clip",
+              "name": "Custom Video Setup",
+              "startOffset": 45,
+              "endOffset": 150,
+              "url": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video#t=45,150"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Generate AI Video (Option 2)",
+            "text": "Add your Shopify product URL to automatically extract product information and generate a professional video presentation.",
+            "video": {
+              "@type": "Clip",
+              "name": "AI Video Generation",
+              "startOffset": 150,
+              "endOffset": 300,
+              "url": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video#t=150,300"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Customize AI Video Settings",
+            "text": "Choose from 240+ AI voices, select gender and avatar options, and pick the optimal aspect ratio (16:9, 9:16, or 1:1).",
+            "video": {
+              "@type": "Clip",
+              "name": "Video Customization",
+              "startOffset": 300,
+              "endOffset": 420,
+              "url": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video#t=300,420"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Save to Video Library",
+            "text": "Click 'Save to Video Library' to reuse videos across multiple campaigns and save AI credits.",
+            "video": {
+              "@type": "Clip",
+              "name": "Video Library Management",
+              "startOffset": 420,
+              "endOffset": 480,
+              "url": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video#t=420,480"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Optimize for Conversion",
+            "text": "Focus on benefits over features, keep videos under 60 seconds, use clear call-to-actions, and highlight special offers.",
+            "video": {
+              "@type": "Clip",
+              "name": "Conversion Optimization",
+              "startOffset": 480,
+              "endOffset": 525,
+              "url": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video#t=480,525"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#learning",
+        "name": "Video Best Practices Learning Module",
+        "description": "Master video creation and optimization for e-commerce upsell campaigns using Optizen's platform.",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Intermediate",
+        "timeRequired": "PT15M",
+        "teaches": [
+          "Video platform integration (YouTube, Vimeo, TikTok)",
+          "AI video generation and customization",
+          "Video format optimization strategies",
+          "Conversion-focused video content creation"
+        ],
+        "assesses": [
+          "Ability to create high-converting upsell videos",
+          "Understanding of video format requirements",
+          "Proficiency with AI video generation tools"
+        ],
+        "competencyRequired": [
+          "Basic understanding of e-commerce upselling",
+          "Familiarity with Optizen platform"
+        ],
+        "educationalUse": [
+          "Tutorial",
+          "Professional Development",
+          "Skill Building"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What video platforms does Optizen support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Optizen supports YouTube, Vimeo, TikTok, and direct file uploads. Videos must be set to Public (not unlisted or private) for hosted platforms.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the optimal video length for upsell campaigns?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Keep videos under 60 seconds for best engagement. Videos over 90 seconds tend to have lower conversion rates.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does AI video generation work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Simply provide your Shopify product URL, and our AI automatically extracts product information to generate a professional video. You can customize voice, avatar, and aspect ratio from 240+ options.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which aspect ratio should I choose?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use 16:9 for desktop and product demos, 9:16 for mobile and social media style content, and 1:1 as a universal format that works everywhere.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I reuse AI-generated videos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Click 'Save to Video Library' to store generated videos and reuse them across multiple campaigns without using additional AI credits.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/software",
+        "name": "Optizen",
+        "description": "E-commerce upsell and conversion optimization platform with AI video generation capabilities.",
+        "applicationCategory": "E-commerce Software",
+        "operatingSystem": "Web Browser",
+        "featureList": [
+          "AI Video Generation",
+          "Custom Video Integration",
+          "Multi-platform Video Support",
+          "Video Library Management",
+          "Conversion Optimization",
+          "Campaign Management"
+        ],
+        "screenshot": "https://optizenapp.com/images/optizen-video-interface.jpg"
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#terms",
+        "name": "Video Marketing Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Aspect Ratio",
+            "description": "The proportional relationship between video width and height (16:9 landscape, 9:16 portrait, 1:1 square)"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "AI Video Generation",
+            "description": "Automated creation of professional product videos using artificial intelligence and product URL data"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Video Library",
+            "description": "Storage system for saving and reusing generated videos across multiple campaigns"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Upsell Video",
+            "description": "Marketing video designed to encourage customers to purchase additional or upgraded products"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/video-best-practices",
+        "name": "Video Best Practices - Optizen Support",
+        "description": "Learn how to create and optimize videos for your Optizen upsell campaigns using custom uploads and AI generation.",
+        "mainEntity": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#video",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Support Documentation",
+              "item": "https://optizenapp.com/support-docs"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Video Upsells",
+              "item": "https://optizenapp.com/support-docs/video-upsells"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Video Best Practices",
+              "item": "https://optizenapp.com/support-docs/video-upsells/video-best-practices"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".video-requirements",
+            ".ai-generation-steps"
+          ]
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-06T05:28:10.628Z",
+  "contentModified": "2025-11-06T00:00:00Z",
+  "contentHash": "b926ab7d2cc14d483bd6afe6609a565f"
+}

@@ -8,7 +8,8 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "eslint",
-    "schema:update": "tsx scripts/update-post-schema.ts"
+    "schema:update": "tsx scripts/update-post-schema.ts",
+    "schema:video-docs": "tsx scripts/generate-video-upsell-docs-schema.ts"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",

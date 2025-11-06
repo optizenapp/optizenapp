@@ -1,0 +1,348 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoObject",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video",
+        "name": "Troubleshooting Video Upsells - Common Issues & Solutions",
+        "description": "Learn how to troubleshoot common issues with video upsells in Optizen, including upsells not showing, discounts not applying, and video generation problems.",
+        "about": {
+          "@type": "Thing",
+          "name": "Video Upsell Troubleshooting",
+          "description": "Common technical issues and solutions for video upsell campaigns"
+        },
+        "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video",
+        "embedUrl": "https://optizenapp.com/embed/video-upsells-troubleshooting",
+        "thumbnailUrl": "https://optizenapp.com/images/video-upsells-troubleshooting-thumb.jpg",
+        "uploadDate": "2024-01-15T10:00:00Z",
+        "duration": "PT8M45S",
+        "teaches": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#howto",
+        "transcript": "This video covers troubleshooting common issues with video upsells including campaign activation, targeting rules, discount application, and video generation problems.",
+        "regionsAllowed": "US,CA,GB,AU,EU",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WatchAction",
+          "userInteractionCount": 1247
+        },
+        "inLanguage": "en-US",
+        "accessibilityFeature": [
+          "captions",
+          "transcript"
+        ],
+        "learningResourceType": "Video Tutorial"
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/troubleshooting",
+        "headline": "Troubleshooting Video Upsells - Common Issues & Solutions",
+        "description": "Comprehensive troubleshooting guide for video upsell campaigns in Optizen, covering storefront display issues, discount problems, and video generation failures.",
+        "articleSection": "Support Documentation",
+        "mainEntity": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video",
+          "https://optizenapp.com/support-docs/video-upsells/troubleshooting#howto",
+          "https://optizenapp.com/support-docs/video-upsells/troubleshooting#faq"
+        ],
+        "teaches": [
+          "Diagnosing upsell display issues",
+          "Resolving discount application problems",
+          "Fixing video generation failures",
+          "Testing campaign functionality"
+        ],
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "Video Upsells Documentation",
+          "url": "https://optizenapp.com/support-docs/video-upsells/"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Optizen Support Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen",
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2024-01-15T10:00:00Z",
+        "dateModified": "2024-01-20T14:30:00Z",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#howto",
+        "name": "How to Troubleshoot Video Upsell Issues",
+        "description": "Step-by-step guide to diagnose and resolve common video upsell problems in Optizen.",
+        "video": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video",
+        "totalTime": "PT15M",
+        "performTime": "PT10M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen Dashboard Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Store Admin Permissions"
+          }
+        ],
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "Web Browser"
+          },
+          {
+            "@type": "HowToTool",
+            "name": "Incognito/Private Browsing Mode"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Check Campaign Status",
+            "text": "Verify if campaign is active by checking the green toggle in dashboard",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=30,90"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Verify Targeting Rules",
+            "text": "Ensure targeting rules match customer's cart contents and conditions",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=90,150"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Check Theme Integration",
+            "text": "Ensure theme has the Optizen app block installed and properly configured",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=150,210"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Test in Incognito Mode",
+            "text": "Clear browser cache and test upsell functionality in incognito mode",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=210,270"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Verify Discount Configuration",
+            "text": "Check if discount code was created and review campaign discount settings",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=270,330"
+            }
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Test Video Generation",
+            "text": "Ensure product has clear title, description, and high-quality images for video generation",
+            "video": {
+              "@type": "VideoObject",
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=330,420"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#learning",
+        "name": "Video Upsell Troubleshooting Training",
+        "description": "Learn to diagnose and resolve common video upsell issues in e-commerce stores.",
+        "learningResourceType": "Video Tutorial",
+        "educationalLevel": "Intermediate",
+        "timeRequired": "PT15M",
+        "teaches": [
+          "Campaign status verification",
+          "Targeting rule validation",
+          "Theme integration troubleshooting",
+          "Discount configuration debugging",
+          "Video generation optimization"
+        ],
+        "assesses": [
+          "Ability to identify upsell display issues",
+          "Skills in discount troubleshooting",
+          "Knowledge of video generation requirements"
+        ],
+        "competencyRequired": [
+          "Basic understanding of e-commerce platforms",
+          "Familiarity with Optizen dashboard"
+        ],
+        "educationalUse": [
+          "troubleshooting",
+          "problem-solving",
+          "technical support"
+        ],
+        "isAccessibleForFree": true,
+        "inLanguage": "en-US",
+        "about": {
+          "@type": "DefinedTerm",
+          "name": "Video Upsell Troubleshooting",
+          "description": "Process of identifying and resolving technical issues with video-based upsell campaigns"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why is my upsell not showing on the storefront?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check if campaign is active (green toggle in dashboard), verify targeting rules match customer's cart, ensure theme has the Optizen app block installed, and clear browser cache to test in incognito mode.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=30,270"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is the discount not applying to my upsell?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Verify discount code was created in campaign details, ensure product is eligible for the discount, check if discount has usage limits or expiration, and test the checkout process manually.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=270,360"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my video not generating properly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check that product has clear title and description, ensure product images are high quality, try regenerating with different voice/style options, and contact support if the issue persists.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=360,480"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I test if my upsell campaign is working correctly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use incognito mode to simulate a new customer, add products that match your targeting rules to cart, proceed through checkout to verify upsell appears and discount applies correctly.",
+              "video": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=210,270"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://optizenapp.com/app",
+        "name": "Optizen",
+        "description": "AI-powered video upsell app for e-commerce stores",
+        "applicationCategory": "E-commerce Marketing Tool",
+        "operatingSystem": "Web-based",
+        "featureList": [
+          "Video Upsell Campaigns",
+          "AI Video Generation",
+          "Discount Management",
+          "Targeting Rules",
+          "Campaign Analytics"
+        ],
+        "screenshot": "https://optizenapp.com/images/dashboard-screenshot.jpg",
+        "url": "https://optizenapp.com"
+      },
+      {
+        "@type": "CreativeWorkSeries",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/",
+        "name": "Video Upsells Documentation Series",
+        "description": "Complete guide to setting up and managing video upsell campaigns",
+        "hasPart": [
+          "https://optizenapp.com/support-docs/video-upsells/setup",
+          "https://optizenapp.com/support-docs/video-upsells/configuration",
+          "https://optizenapp.com/support-docs/video-upsells/troubleshooting"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen"
+        }
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#terms",
+        "name": "Video Upsell Troubleshooting Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Campaign Toggle",
+            "description": "Green/red switch in dashboard that activates or deactivates upsell campaigns"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Targeting Rules",
+            "description": "Conditions that determine when and to whom upsells are displayed"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "App Block",
+            "description": "Theme integration component that displays upsells on storefront"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Video Generation",
+            "description": "AI process that creates promotional videos from product data"
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Discount Code",
+            "description": "Promotional code automatically applied to upsell purchases"
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/support-docs/video-upsells/troubleshooting",
+        "name": "Troubleshooting Video Upsells - Optizen Support",
+        "description": "Troubleshoot common video upsell issues including display problems, discount failures, and video generation errors.",
+        "mainEntity": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Support",
+              "item": "https://optizenapp.com/support"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Video Upsells",
+              "item": "https://optizenapp.com/support-docs/video-upsells/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Troubleshooting",
+              "item": "https://optizenapp.com/support-docs/video-upsells/troubleshooting"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            ".troubleshooting-steps",
+            ".common-issues"
+          ]
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Optizen Support Documentation",
+          "url": "https://optizenapp.com"
+        }
+      }
+    ]
+  },
+  "generatedAt": "2025-11-06T05:29:41.780Z",
+  "contentModified": "2025-11-06T00:00:00Z",
+  "contentHash": "8474b09bde81a9df8a6b1388af5775b2"
+}
