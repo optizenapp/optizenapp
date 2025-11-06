@@ -617,6 +617,7 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
   );
   
   if (cachedSchema) {
+    console.log(`✅ Returning cached schema for: ${input.url}`);
     return cachedSchema; // ✅ Using cached schema - no API call needed!
   }
   
@@ -627,7 +628,7 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
   
   if (schemaDisabled || (isVercelBuild && !cachedSchema)) {
     if (isVercelBuild) {
-      console.log('⏭️  Vercel build detected with no cache - using basic schema (generate locally first)');
+      console.log(`⏭️  Vercel build detected with no cache - using basic schema (generate locally first): ${input.url}`);
     } else {
       console.log('⏭️  Schema generation disabled via env var, using basic schema');
     }
