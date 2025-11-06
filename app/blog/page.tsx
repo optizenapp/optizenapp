@@ -6,6 +6,7 @@ import { formatDate, calculateReadingTime, stripHtml, truncateText } from '@/lib
 import { generateSchemaOrg } from '@/lib/schema-generator';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import BlogSearch from '@/components/blog/BlogSearch';
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -101,9 +102,11 @@ export default async function BlogPage({ searchParams }: PageProps) {
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
               Optizen<span className="text-optizen-blue-500">App</span> Blog
             </h1>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-8">
               Insights, tips, and strategies to help you grow your Shopify store with SEO and video upsells
             </p>
+            {/* Search */}
+            <BlogSearch />
           </div>
         </div>
 

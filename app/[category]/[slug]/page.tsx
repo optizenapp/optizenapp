@@ -2,13 +2,14 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getPostBySlug, getCategoryBySlug, getAllPostSlugs, getPosts } from '@/lib/wordpress';
+import { getPostBySlug, getCategoryBySlug, getAllPostSlugs, getPosts, getCategories } from '@/lib/wordpress';
 import { formatDate, calculateReadingTime, stripHtml } from '@/lib/blog-utils';
 import { generateSchemaOrg } from '@/lib/schema-generator';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingCTA from '@/components/ui/FloatingCTA';
 import RelatedPosts from '@/components/blog/RelatedPosts';
+import BlogSidebar from '@/components/blog/BlogSidebar';
 import { Clock, Calendar, ArrowLeft } from 'lucide-react';
 
 // Image URLs are now fixed at fetch time by the WordPress library
@@ -102,6 +103,24 @@ export default async function BlogPost({ params }: PageProps) {
     per_page: 4 
   });
 
+  // Fetch data for sidebar
+  const [categories, { posts: recentPosts }] = await Promise.all([
+    getCategories(),
+    getPosts({ per_page: 6 }),
+  ]);
+
+  // Format recent posts for sidebar
+  const sidebarRecentPosts = recentPosts.map(p => ({
+    id: p.id,
+    title: p.title.rendered,
+    slug: p.slug,
+    date: p.date,
+    category: p._embedded?.['wp:term']?.[0]?.[0]?.name || 'Blog',
+    categorySlug: p._embedded?.['wp:term']?.[0]?.[0]?.slug || 'blog',
+    excerpt: p.excerpt.rendered,
+    featuredImage: p._embedded?.['wp:featuredmedia']?.[0]?.source_url,
+  }));
+
   // Build breadcrumbs
   const breadcrumbs = [
     { name: 'Home', url: 'https://optizenapp.com' },
@@ -149,7 +168,7 @@ export default async function BlogPost({ params }: PageProps) {
         <main className="flex-1 pt-16">
           {/* Breadcrumbs */}
           <div className="bg-gray-50 border-b border-gray-200">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
               <nav className="flex items-center space-x-2 text-sm">
                 <Link href="/" className="text-gray-500 hover:text-optizen-blue-500 transition-colors">
                   Home
@@ -162,15 +181,18 @@ export default async function BlogPost({ params }: PageProps) {
                   {categoryData?.name || category}
                 </Link>
                 <span className="text-gray-400">/</span>
-                <span className="text-gray-900 font-medium">
-                  {post.title.rendered}
+                <span className="text-gray-900 font-medium line-clamp-1">
+                  {stripHtml(post.title.rendered)}
                 </span>
               </nav>
             </div>
           </div>
 
-          {/* Article Header */}
-          <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          {/* Article Content with Sidebar */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+              {/* Main Content - 8 columns */}
+              <article className="lg:col-span-8">
             {/* Back Link & Category Badge */}
             <div className="flex items-center gap-4 mb-8">
               <Link 
@@ -270,7 +292,20 @@ export default async function BlogPost({ params }: PageProps) {
 
             {/* Related Posts */}
             <RelatedPosts posts={relatedPostsData} currentPostId={post.id} />
-          </article>
+              </article>
+
+              {/* Sidebar - 4 columns with vertical separator */}
+              <div className="lg:col-span-4">
+                <div className="lg:border-l lg:border-gray-200 lg:pl-8">
+                  <BlogSidebar 
+                    categories={categories}
+                    recentPosts={sidebarRecentPosts}
+                    currentPostId={post.id}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
 
         <Footer />

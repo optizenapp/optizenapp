@@ -7,6 +7,7 @@ import { formatDate, calculateReadingTime, stripHtml, truncateText } from '@/lib
 import { generateSchemaOrg } from '@/lib/schema-generator';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import BlogSearch from '@/components/blog/BlogSearch';
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
 
 interface PageProps {
@@ -171,9 +172,11 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
                 {customDescription}
               </p>
             )}
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-8">
               {totalPosts} {totalPosts === 1 ? 'article' : 'articles'}
             </p>
+            {/* Search */}
+            <BlogSearch />
           </div>
         </div>
 
