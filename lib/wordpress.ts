@@ -121,12 +121,14 @@ export async function getPosts(params?: {
     _embed: 'true',
     per_page: params?.per_page?.toString() || '10',
     page: params?.page?.toString() || '1',
+    orderby: 'date',
+    order: 'desc',
     ...(params?.categories && { categories: params.categories.toString() }),
     ...(params?.search && { search: params.search }),
   });
 
   const response = await fetchWithRetry(`${WP_API_URL}/posts?${searchParams}`, {
-    next: { revalidate: false }, // Cache permanently, only regenerate on deploy or manual revalidation
+    next: { revalidate: 300 }, // Revalidate every 5 minutes to show new posts
   });
 
   if (!response.ok) {

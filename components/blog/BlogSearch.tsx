@@ -77,7 +77,7 @@ export default function BlogSearch({ variant = 'default' }: BlogSearchProps) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search blog posts..."
-          className={`w-full pl-12 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent ${
+          className={`w-full pl-12 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-optizen-blue-500 focus:border-transparent text-gray-900 placeholder:text-gray-500 ${
             isSidebar ? 'text-sm' : 'text-base'
           }`}
         />
