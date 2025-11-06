@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   authors: [{ name: "OptizenApp" }],
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon.png', type: 'image/png' },
+      { url: '/favicon.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon.png', type: 'image/png', sizes: '16x16' },
     ],
-    shortcut: '/favicon.ico',
+    shortcut: '/favicon.png',
     apple: '/favicon.png',
   },
   openGraph: {
@@ -67,17 +67,22 @@ export default function RootLayout({
         {/* Mobile viewport optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         
-        {/* Service Worker Registration */}
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            if ('serviceWorker' in navigator) {
-              window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js').catch(function(){});
-              });
-            }
-          `
-        }} />
-      </head>
+      {/* Service Worker Registration */}
+      <script dangerouslySetInnerHTML={{
+        __html: `
+          if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+              navigator.serviceWorker.register('/sw.js').catch(function(){});
+            });
+          }
+        `
+      }} />
+      
+      {/* Explicit favicon links for better browser compatibility */}
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+      <link rel="apple-touch-icon" href="/favicon.png" />
+    </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
