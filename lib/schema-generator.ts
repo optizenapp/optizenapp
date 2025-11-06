@@ -557,6 +557,25 @@ DO NOT use .key-takeaway, .summary, or any other custom classes that don't exist
 IMPORTANT: For tables and comparisons, use ItemList with ListItem (not Table or TableRow).
 - DO NOT use @type: "Table" - use "ItemList" instead
 - DO NOT use @type: "TableRow" - use "ListItem" instead
+- ItemList MUST use "itemListElement" property (NOT "hasPart")
+- Each ListItem in itemListElement MUST have a "position" property (1, 2, 3, etc.)
+- ItemList does NOT support "about" property - remove it
+- ListItem should use "description" property for text content
+
+Example ItemList structure:
+{
+  "@type": "ItemList",
+  "name": "Comparison Title",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Item Name",
+      "description": "Item description text"
+    }
+  ]
+}
+
 Valid schema.org types only: Article, HowTo, FAQPage, ItemList, ListItem, DefinedTermSet, DefinedTerm, WebPage, BreadcrumbList, Organization, ImageObject, VideoObject, Person.
 
 URL: ${input.url}

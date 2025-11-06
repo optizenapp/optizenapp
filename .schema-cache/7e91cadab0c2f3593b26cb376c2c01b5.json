@@ -207,39 +207,36 @@
         "@type": "ItemList",
         "@id": "#comparison-table",
         "name": "Upsell vs Downsell Strategy Comparison",
-        "about": [
-          {
-            "@id": "#upselling"
-          },
-          {
-            "@id": "#downselling"
-          }
-        ],
-        "hasPart": [
+        "itemListElement": [
           {
             "@type": "ListItem",
+            "position": 1,
             "name": "Primary Goal",
-            "text": "Upsell: Revenue maximization from a single transaction. Downsell: Revenue recovery and customer acquisition."
+            "description": "Upsell: Revenue maximization from a single transaction. Downsell: Revenue recovery and customer acquisition."
           },
           {
             "@type": "ListItem",
+            "position": 2,
             "name": "Timing/Trigger",
-            "text": "Upsell: Proactive; triggered by high purchase intent. Downsell: Reactive; triggered by rejection or abandonment."
+            "description": "Upsell: Proactive; triggered by high purchase intent. Downsell: Reactive; triggered by rejection or abandonment."
           },
           {
             "@type": "ListItem",
+            "position": 3,
             "name": "Financial Impact",
-            "text": "Upsell: Directly increases Average Order Value (AOV). Downsell: Prevents a zero-dollar outcome; converts a lost lead."
+            "description": "Upsell: Directly increases Average Order Value (AOV). Downsell: Prevents a zero-dollar outcome; converts a lost lead."
           },
           {
             "@type": "ListItem",
+            "position": 4,
             "name": "Psychological Appeal",
-            "text": "Upsell: Leverages desire for quality, status, and optimal outcomes. Downsell: Addresses price sensitivity and budget constraints."
+            "description": "Upsell: Leverages desire for quality, status, and optimal outcomes. Downsell: Addresses price sensitivity and budget constraints."
           },
           {
             "@type": "ListItem",
+            "position": 5,
             "name": "Customer Perception",
-            "text": "Upsell: Can feel pushy if poorly executed; helpful if relevant. Downsell: Almost always perceived as helpful and empathetic."
+            "description": "Upsell: Can feel pushy if poorly executed; helpful if relevant. Downsell: Almost always perceived as helpful and empathetic."
           }
         ]
       },
