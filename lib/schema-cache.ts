@@ -73,13 +73,19 @@ export async function getCachedSchema(
     const cachedDate = new Date(cached.contentModified);
     const currentDate = new Date(contentModified);
     
+    console.log(`   Cached date obj: ${cachedDate.toISOString()}`);
+    console.log(`   Current date obj: ${currentDate.toISOString()}`);
+    
     if (currentDate > cachedDate) {
-      console.log(`♻️  Content updated since cache: ${url}`);
+      console.log(`♻️  Content updated since cache: ${url} (${currentDate.toISOString()} > ${cachedDate.toISOString()})`);
       return null;
     }
     
-    // Also check content hash (in case modified date wasn't updated)
-    // Normalize content the same way schema-generator does before hashing
+    // Skip hash check - WordPress content formatting can vary slightly
+    // The modified date is sufficient to detect real content changes
+    console.log(`   ✅ Modified date matches, using cached schema`);
+    
+    /* Disabled hash check - too sensitive to WordPress formatting changes
     const normalizedContent = content
       .replace(/<script[^>]*>.*?<\/script>/gi, '')
       .replace(/<style[^>]*>.*?<\/style>/gi, '')
@@ -95,6 +101,7 @@ export async function getCachedSchema(
       console.log(`♻️  Content hash changed: ${url}`);
       return null;
     }
+    */
     
     const schemaTypes = (cached.schema as any)['@graph'] 
       ? (cached.schema as any)['@graph'].map((item: any) => item['@type']).join(', ')
