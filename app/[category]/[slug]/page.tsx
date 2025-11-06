@@ -189,7 +189,7 @@ export default async function BlogPost({ params }: PageProps) {
           </div>
 
           {/* Article Content with Sidebar */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pb-32 lg:pb-12">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
               {/* Main Content - 8 columns */}
               <article className="lg:col-span-8">

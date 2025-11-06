@@ -40,7 +40,7 @@ export default function BlogSidebar({
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsSticky(window.scrollY > 100);
+      setIsSticky(window.scrollY > 300);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -51,35 +51,16 @@ export default function BlogSidebar({
   const filteredRecentPosts = recentPosts.filter(post => post.id !== currentPostId);
 
   return (
-    <aside className="space-y-6">
-      {/* Search Widget */}
-      <div className={`bg-white rounded-2xl shadow-lg p-6 border border-gray-100 transition-all ${
-        isSticky ? 'sticky top-24' : ''
-      }`}>
-        <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-          <span className="w-1 h-6 bg-optizen-blue-500 rounded-full mr-3"></span>
-          Search Blog
-        </h3>
-        <BlogSearch variant="sidebar" />
-      </div>
-
-      {/* CTA Widget */}
-      <div className="bg-gradient-to-br from-optizen-blue-500 to-optizen-green-500 rounded-2xl shadow-lg p-6 text-white">
-        <div className="flex items-center mb-3">
-          <TrendingUp size={24} className="mr-2" />
-          <h3 className="text-lg font-bold">Boost Your Store</h3>
+    <>
+      <aside className="space-y-6">
+        {/* Search Widget - Static */}
+        <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+          <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+            <span className="w-1 h-6 bg-optizen-blue-500 rounded-full mr-3"></span>
+            Search Blog
+          </h3>
+          <BlogSearch variant="sidebar" />
         </div>
-        <p className="text-sm text-white/90 mb-4">
-          Get AI-powered SEO and video upsells to increase revenue and dominate search rankings.
-        </p>
-        <Link
-          href="/"
-          className="inline-flex items-center justify-center w-full px-4 py-3 bg-white text-optizen-blue-600 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
-        >
-          Explore Our Apps
-          <ArrowRight className="ml-2" size={18} />
-        </Link>
-      </div>
 
       {/* Categories Widget */}
       {categories.length > 0 && (
@@ -150,21 +131,64 @@ export default function BlogSidebar({
         </div>
       )}
 
-      {/* Newsletter Widget (Optional - can add later) */}
-      <div className="bg-gray-50 rounded-2xl shadow-lg p-6 border border-gray-200">
-        <h3 className="text-lg font-bold text-gray-900 mb-2">Stay Updated</h3>
-        <p className="text-sm text-gray-600 mb-4">
-          Get the latest Shopify tips and strategies delivered to your inbox.
-        </p>
-        <Link
-          href="/contact"
-          className="inline-flex items-center justify-center w-full px-4 py-3 bg-optizen-blue-500 text-white font-semibold rounded-lg hover:bg-optizen-blue-600 transition-colors"
-        >
-          Contact Us
-          <ArrowRight className="ml-2" size={18} />
-        </Link>
+        {/* Newsletter Widget (Optional - can add later) */}
+        <div className="bg-gray-50 rounded-2xl shadow-lg p-6 border border-gray-200">
+          <h3 className="text-lg font-bold text-gray-900 mb-2">Stay Updated</h3>
+          <p className="text-sm text-gray-600 mb-4">
+            Get the latest Shopify tips and strategies delivered to your inbox.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center w-full px-4 py-3 bg-optizen-blue-500 text-white font-semibold rounded-lg hover:bg-optizen-blue-600 transition-colors"
+          >
+            Contact Us
+            <ArrowRight className="ml-2" size={18} />
+          </Link>
+        </div>
+
+        {/* CTA Widget - Desktop: Sticky on scroll, Mobile: Hidden (shown in fixed position) */}
+        <div className={`hidden lg:block bg-gradient-to-br from-optizen-blue-500 to-optizen-green-500 rounded-2xl shadow-lg p-6 text-white transition-all ${
+          isSticky ? 'sticky top-24' : ''
+        }`}>
+          <div className="flex items-center mb-3">
+            <TrendingUp size={24} className="mr-2" />
+            <h3 className="text-lg font-bold">Boost Your Store</h3>
+          </div>
+          <p className="text-sm text-white/90 mb-4">
+            Get AI-powered SEO and video upsells to increase revenue and dominate search rankings.
+          </p>
+          <Link
+            href="/"
+            className="inline-flex items-center justify-center w-full px-4 py-3 bg-white text-optizen-blue-600 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
+          >
+            Explore Our Apps
+            <ArrowRight className="ml-2" size={18} />
+          </Link>
+        </div>
+      </aside>
+
+      {/* Mobile CTA - Fixed at bottom */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-br from-optizen-blue-500 to-optizen-green-500 shadow-2xl">
+        <div className="max-w-lg mx-auto">
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center">
+              <TrendingUp size={20} className="mr-2 text-white" />
+              <h3 className="font-bold text-white">Boost Your Store</h3>
+            </div>
+          </div>
+          <p className="text-sm text-white/90 mb-3">
+            Get AI-powered SEO and video upsells to increase revenue.
+          </p>
+          <Link
+            href="/"
+            className="inline-flex items-center justify-center w-full px-4 py-3 bg-white text-optizen-blue-600 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
+          >
+            Explore Our Apps
+            <ArrowRight className="ml-2" size={18} />
+          </Link>
+        </div>
       </div>
-    </aside>
+    </>
   );
 }
 
