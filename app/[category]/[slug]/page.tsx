@@ -258,11 +258,12 @@ export default async function BlogPost({ params }: PageProps) {
                 prose-a:text-optizen-blue-600 prose-a:font-bold hover:prose-a:text-optizen-blue-700 hover:prose-a:underline
                 prose-li:text-gray-900
                 prose-strong:text-gray-900 prose-strong:font-semibold
-                prose-img:rounded-xl prose-img:shadow-lg
+                prose-img:rounded-xl prose-img:shadow-lg prose-img:mx-auto
                 prose-blockquote:border-l-4 prose-blockquote:border-optizen-blue-400 prose-blockquote:text-gray-900
                 prose-table:border-collapse prose-table:w-full
                 prose-th:bg-gray-100 prose-th:font-semibold prose-th:text-gray-900
-                prose-td:text-gray-900"
+                prose-td:text-gray-900
+                [&_iframe]:mx-auto [&_iframe]:block [&_iframe]:rounded-xl [&_iframe]:shadow-lg"
               dangerouslySetInnerHTML={{ __html: post.content.rendered }}
             />
 

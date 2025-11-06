@@ -268,6 +268,8 @@ export default async function Page({ params }: PageProps) {
                   prose-table:!text-gray-900
                   prose-th:!text-gray-900
                   prose-td:!text-gray-900
+                  prose-img:mx-auto prose-img:rounded-xl prose-img:shadow-lg
+                  [&_iframe]:mx-auto [&_iframe]:block [&_iframe]:rounded-xl [&_iframe]:shadow-lg
                   [&_*]:!text-gray-900"
                 dangerouslySetInnerHTML={{ __html: page.content.rendered }}
               />
