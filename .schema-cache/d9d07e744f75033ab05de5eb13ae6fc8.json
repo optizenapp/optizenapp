@@ -103,7 +103,7 @@
           "cssSelector": [
             "h1",
             "h2",
-            ".key-takeaway"
+            "h2"
           ]
         },
         "breadcrumb": {

@@ -77,7 +77,7 @@
           "cssSelector": [
             "h1",
             "h2",
-            ".summary"
+            "h3"
           ]
         }
       },
@@ -394,7 +394,7 @@
           "cssSelector": [
             "h1",
             "h2",
-            ".key-takeaway"
+            "h2"
           ]
         }
       }

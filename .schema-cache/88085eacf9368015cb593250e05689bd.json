@@ -126,7 +126,7 @@
           "cssSelector": [
             "h1",
             "h2",
-            ".summary"
+            "h3"
           ]
         },
         "mainEntity": {

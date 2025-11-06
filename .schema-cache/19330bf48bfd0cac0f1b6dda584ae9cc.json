@@ -176,7 +176,7 @@
           "cssSelector": [
             "h1",
             "h2",
-            ".intro"
+            "h1"
           ]
         }
       },

@@ -173,7 +173,7 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".key-takeaways",
+            "h2",
             ".app-categories"
           ]
         }

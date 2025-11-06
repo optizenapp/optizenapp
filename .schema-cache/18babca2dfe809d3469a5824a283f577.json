@@ -255,7 +255,7 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".summary",
+            "h3",
             ".step-by-step"
           ]
         },
