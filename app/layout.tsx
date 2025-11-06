@@ -67,6 +67,17 @@ export default function RootLayout({
         {/* Mobile viewport optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         
+      {/* Google Analytics */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZG3J0PFEV"></script>
+      <script dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PZG3J0PFEV');
+        `
+      }} />
+      
       {/* Service Worker Registration */}
       <script dangerouslySetInnerHTML={{
         __html: `
