@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import BlogSearch from './BlogSearch';
@@ -35,6 +36,17 @@ export default function BlogSidebar({
   recentPosts = [],
   currentPostId 
 }: BlogSidebarProps) {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   // Filter out current post from recent posts
   const filteredRecentPosts = recentPosts.filter(post => post.id !== currentPostId);
 
@@ -133,7 +145,63 @@ export default function BlogSidebar({
             <ArrowRight className="ml-2" size={18} />
           </Link>
         </div>
+
+        {/* CTA Widget - Desktop: Sticky on scroll, Mobile: Hidden (shown in fixed position) */}
+        <div className={`hidden lg:block bg-gradient-to-br from-optizen-blue-50 to-optizen-green-50 rounded-2xl border-2 border-optizen-blue-200 shadow-xl p-4 transition-all ${
+          isSticky ? 'sticky top-24' : ''
+        }`}>
+          <h3 className="text-base font-bold text-gray-900 mb-3 leading-tight">
+            Boost Your Shopify Performance - SEO & Upsells
+          </h3>
+          
+          <div className="space-y-2">
+            <a
+              href="https://apps.shopify.com/optizen-video-upsell"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full px-4 py-2 rounded-full font-semibold text-center text-xs bg-optizen-blue-500 text-white hover:bg-optizen-blue-600 transition-colors shadow-md hover:shadow-lg"
+            >
+              Video Upsell App
+            </a>
+            <a
+              href="https://apps.shopify.com/seo-meta-tag"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full px-4 py-2 rounded-full font-semibold text-center text-xs bg-optizen-green-500 text-white hover:bg-optizen-green-600 transition-colors shadow-md hover:shadow-lg"
+            >
+              SEO Tools App
+            </a>
+          </div>
+        </div>
       </aside>
+
+      {/* Mobile CTA - Fixed at bottom */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-optizen-blue-500 to-optizen-green-500 shadow-2xl">
+        <div className="relative px-4 py-3 max-w-5xl mx-auto">
+          <p className="hidden sm:block text-white font-semibold text-center text-sm mb-2.5">
+            Boost Your Shopify Performance - SEO & Upsells
+          </p>
+          
+          <div className="flex gap-2 sm:gap-3">
+            <a
+              href="https://apps.shopify.com/optizen-video-upsell"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full font-semibold text-center bg-white text-optizen-blue-500 hover:bg-gray-100 transition-colors text-xs sm:text-sm shadow-lg"
+            >
+              Video Upsell
+            </a>
+            <a
+              href="https://apps.shopify.com/seo-meta-tag"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full font-semibold text-center bg-white text-optizen-green-500 hover:bg-gray-100 transition-colors text-xs sm:text-sm shadow-lg"
+            >
+              SEO Tools
+            </a>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

@@ -7,7 +7,6 @@ import { formatDate, calculateReadingTime, stripHtml } from '@/lib/blog-utils';
 import { generateSchemaOrg } from '@/lib/schema-generator';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import FloatingCTA from '@/components/ui/FloatingCTA';
 import RelatedPosts from '@/components/blog/RelatedPosts';
 import BlogSidebar from '@/components/blog/BlogSidebar';
 import { Clock, Calendar, ArrowLeft } from 'lucide-react';
@@ -163,7 +162,6 @@ export default async function BlogPost({ params }: PageProps) {
       
       <div className="min-h-screen flex flex-col bg-white">
         <Header />
-        <FloatingCTA />
         
         <main className="flex-1 pt-16">
           {/* Breadcrumbs */}
