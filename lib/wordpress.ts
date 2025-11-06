@@ -9,7 +9,7 @@ const WP_BASE_URL = process.env.WORDPRESS_BASE_URL || 'https://optizenapp-stagin
 async function fetchWithRetry(
   url: string,
   options: RequestInit = {},
-  maxRetries = 5 // Increased from 3 to 5 for build-time reliability
+  maxRetries = 7 // Increased to 7 for better WordPress reliability
 ): Promise<Response> {
   let lastError: Error | null = null;
   
@@ -21,11 +21,14 @@ async function fetchWithRetry(
       
       const response = await fetch(url, {
         ...options,
-        signal: AbortSignal.timeout(30000), // 30 second timeout
+        signal: AbortSignal.timeout(45000), // 45 second timeout (increased from 30s)
       });
       
       // If successful, return immediately
       if (response.ok) {
+        if (attempt > 1) {
+          console.log(`✅ Success on attempt ${attempt}`);
+        }
         return response;
       }
       
@@ -45,11 +48,13 @@ async function fetchWithRetry(
       lastError = error;
       
       if (attempt < maxRetries) {
-        const delay = 3000 * attempt; // 3s, 6s, 9s, 12s, 15s exponential backoff
+        // Exponential backoff: 5s, 10s, 15s, 20s, 25s, 30s, 35s
+        const delay = 5000 * attempt;
         console.warn(`⚠️  Fetch failed (${error.message}). Retrying in ${delay/1000}s...`);
         await new Promise(resolve => setTimeout(resolve, delay));
       } else {
         console.error(`❌ All ${maxRetries} attempts failed for: ${url.split('?')[0]}`);
+        console.error(`❌ Last error: ${error.message}`);
       }
     }
   }
