@@ -135,7 +135,7 @@
         ]
       },
       {
-        "@type": "Table",
+        "@type": "ItemList",
         "@id": "#fee-comparison-table",
         "name": "Shopify Transaction Fees Comparison",
         "description": "Comprehensive breakdown of Shopify's transaction fees across different plans and payment methods"

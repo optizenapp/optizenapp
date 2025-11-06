@@ -554,7 +554,9 @@ Your task is to analyze the provided blog post content and generate comprehensiv
 IMPORTANT: For SpeakableSpecification, ONLY use these cssSelector values: ["h1", "h2", "h3"]
 DO NOT use .key-takeaway, .summary, or any other custom classes that don't exist in the HTML.
 
-IMPORTANT: For tables and comparisons, use ItemList with ListItem (not TableRow which doesn't exist in schema.org).
+IMPORTANT: For tables and comparisons, use ItemList with ListItem (not Table or TableRow).
+- DO NOT use @type: "Table" - use "ItemList" instead
+- DO NOT use @type: "TableRow" - use "ListItem" instead
 Valid schema.org types only: Article, HowTo, FAQPage, ItemList, ListItem, DefinedTermSet, DefinedTerm, WebPage, BreadcrumbList, Organization, ImageObject, VideoObject, Person.
 
 URL: ${input.url}

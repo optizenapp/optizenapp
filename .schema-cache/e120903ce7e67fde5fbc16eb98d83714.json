@@ -251,7 +251,7 @@
         ]
       },
       {
-        "@type": "Table",
+        "@type": "ItemList",
         "@id": "#metrics-comparison-table",
         "name": "Related Metrics in Shopify Analytics",
         "description": "Comprehensive comparison of key e-commerce metrics and their locations in Shopify",

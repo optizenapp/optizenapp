@@ -203,7 +203,7 @@
         ]
       },
       {
-        "@type": "Table",
+        "@type": "ItemList",
         "@id": "#comparison-table",
         "name": "Prompting Techniques Comparison",
         "description": "A comparison of different AI prompting techniques and their effectiveness",

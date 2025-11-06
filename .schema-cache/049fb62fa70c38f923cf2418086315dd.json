@@ -211,7 +211,7 @@
         ]
       },
       {
-        "@type": "Table",
+        "@type": "ItemList",
         "@id": "#comparison-table",
         "name": "Anatomy of a Prompt Module: Key Structural Tags",
         "description": "Essential HTML-like tags used in modular prompt architecture and their functions",
