@@ -135,8 +135,8 @@ export default function BlogSidebar({
           </Link>
         </div>
 
-        {/* CTA Widget - Desktop: Sticky on scroll, Mobile: Hidden (shown in fixed position) */}
-        <div className="hidden lg:block bg-gradient-to-br from-optizen-blue-50 to-optizen-green-50 rounded-2xl border-2 border-optizen-blue-200 shadow-xl p-4 transition-all lg:sticky lg:top-24">
+        {/* CTA Widget - Desktop: Always visible, Mobile: Hidden (shown in fixed position) */}
+        <div className="hidden lg:block bg-gradient-to-br from-optizen-blue-50 to-optizen-green-50 rounded-2xl border-2 border-optizen-blue-200 shadow-xl p-4 transition-all">
           <h3 className="text-base font-bold text-gray-900 mb-3 leading-tight">
             Boost Your Shopify Performance - SEO & Upsells
           </h3>

@@ -295,7 +295,7 @@ export default async function BlogPost({ params }: PageProps) {
 
               {/* Sidebar - 4 columns with vertical separator */}
               <div className="lg:col-span-4">
-                <div className="lg:border-l lg:border-gray-200 lg:pl-8">
+                <div className="lg:border-l lg:border-gray-200 lg:pl-8 lg:sticky lg:top-20 lg:self-start">
                   <BlogSidebar 
                     categories={categories}
                     recentPosts={sidebarRecentPosts}

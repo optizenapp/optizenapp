@@ -54,12 +54,20 @@ export async function getCachedSchema(
     const cacheKey = getCacheKey(url);
     const cachePath = path.join(CACHE_DIR, `${cacheKey}.json`);
     
+    console.log(`🔍 Checking cache for: ${url}`);
+    console.log(`   Cache key: ${cacheKey}`);
+    console.log(`   Cache path: ${cachePath}`);
+    console.log(`   File exists: ${fs.existsSync(cachePath)}`);
+    
     if (!fs.existsSync(cachePath)) {
       console.log(`📦 No cache found for: ${url}`);
       return null;
     }
     
     const cached: CachedSchema = JSON.parse(fs.readFileSync(cachePath, 'utf-8'));
+    
+    console.log(`   Cached date: ${cached.contentModified}`);
+    console.log(`   Current date: ${contentModified}`);
     
     // Check if content was modified since schema was generated
     const cachedDate = new Date(cached.contentModified);
@@ -79,12 +87,19 @@ export async function getCachedSchema(
       .replace(/\s+/g, ' ')
       .trim();
     const currentHash = hashContent(normalizedContent);
+    
+    console.log(`   Cached hash: ${cached.contentHash}`);
+    console.log(`   Current hash: ${currentHash}`);
+    
     if (cached.contentHash !== currentHash) {
       console.log(`♻️  Content hash changed: ${url}`);
       return null;
     }
     
-    console.log(`✅ Using cached schema for: ${url}`);
+    const schemaTypes = (cached.schema as any)['@graph'] 
+      ? (cached.schema as any)['@graph'].map((item: any) => item['@type']).join(', ')
+      : (cached.schema as any)['@type'] || 'unknown';
+    console.log(`✅ Using cached schema for: ${url} (types: ${schemaTypes})`);
     return cached.schema;
     
   } catch (error) {
