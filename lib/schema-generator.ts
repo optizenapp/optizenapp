@@ -609,6 +609,9 @@ Return ONLY valid JSON with no markdown formatting or explanations.`;
 }
 
 export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<object | null> {
+  console.log(`\n🔍 [BUILD] generateSchemaOrg called for: ${input.url}`);
+  console.log(`   Modified: ${input.dateModified}`);
+  
   // 🔥 Check cache first - only regenerate if content changed
   const cachedSchema = await getCachedSchema(
     input.url,
@@ -617,9 +620,15 @@ export async function generateSchemaOrg(input: SchemaGenerationInput): Promise<o
   );
   
   if (cachedSchema) {
-    console.log(`✅ Returning cached schema for: ${input.url}`);
+    const types = (cachedSchema as any)['@graph'] 
+      ? (cachedSchema as any)['@graph'].map((item: any) => item['@type']).join(', ')
+      : (cachedSchema as any)['@type'];
+    console.log(`✅ [BUILD] Returning cached schema for: ${input.url}`);
+    console.log(`   Schema types: ${types}`);
     return cachedSchema; // ✅ Using cached schema - no API call needed!
   }
+  
+  console.log(`⚠️ [BUILD] No cached schema found for: ${input.url}`);
   
   // Skip LLM schema generation if disabled OR if building on Vercel without cache
   // This prevents build failures when schema hasn't been pre-generated locally
