@@ -217,27 +217,27 @@
         ],
         "hasPart": [
           {
-            "@type": "TableRow",
+            "@type": "ListItem",
             "name": "Primary Goal",
             "text": "Upsell: Revenue maximization from a single transaction. Downsell: Revenue recovery and customer acquisition."
           },
           {
-            "@type": "TableRow",
+            "@type": "ListItem",
             "name": "Timing/Trigger",
             "text": "Upsell: Proactive; triggered by high purchase intent. Downsell: Reactive; triggered by rejection or abandonment."
           },
           {
-            "@type": "TableRow",
+            "@type": "ListItem",
             "name": "Financial Impact",
             "text": "Upsell: Directly increases Average Order Value (AOV). Downsell: Prevents a zero-dollar outcome; converts a lost lead."
           },
           {
-            "@type": "TableRow",
+            "@type": "ListItem",
             "name": "Psychological Appeal",
             "text": "Upsell: Leverages desire for quality, status, and optimal outcomes. Downsell: Addresses price sensitivity and budget constraints."
           },
           {
-            "@type": "TableRow",
+            "@type": "ListItem",
             "name": "Customer Perception",
             "text": "Upsell: Can feel pushy if poorly executed; helpful if relevant. Downsell: Almost always perceived as helpful and empathetic."
           }

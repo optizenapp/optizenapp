@@ -212,22 +212,22 @@
         },
         "hasPart": [
           {
-            "@type": "TableRow",
+            "@type": "ListItem",
             "name": "Zero-Shot Prompting",
             "description": "A simple, direct command with no examples or persona. Tends to be generic and shallow, lacks specific context or tone."
           },
           {
-            "@type": "TableRow",
+            "@type": "ListItem",
             "name": "Few-Shot Prompting",
             "description": "Providing a few examples of the desired output to guide the AI's format. Better for matching format and structure, but doesn't significantly improve the core content."
           },
           {
-            "@type": "TableRow",
+            "@type": "ListItem",
             "name": "Basic Role Prompt",
             "description": "Assigning a simple persona or job title. Immediately improves quality, relevance, and tone. Can result in a significant jump in quality."
           },
           {
-            "@type": "TableRow",
+            "@type": "ListItem",
             "name": "Detailed Role Prompt",
             "description": "A comprehensive prompt defining the persona, expertise, goals, audience, and constraints. Produces highly targeted, expert-level output tailored to a specific need."
           }
