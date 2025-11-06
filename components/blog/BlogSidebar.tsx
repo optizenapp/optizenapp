@@ -36,17 +36,6 @@ export default function BlogSidebar({
   recentPosts = [],
   currentPostId 
 }: BlogSidebarProps) {
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsSticky(window.scrollY > 300);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   // Filter out current post from recent posts
   const filteredRecentPosts = recentPosts.filter(post => post.id !== currentPostId);
 
@@ -147,9 +136,7 @@ export default function BlogSidebar({
         </div>
 
         {/* CTA Widget - Desktop: Sticky on scroll, Mobile: Hidden (shown in fixed position) */}
-        <div className={`hidden lg:block bg-gradient-to-br from-optizen-blue-50 to-optizen-green-50 rounded-2xl border-2 border-optizen-blue-200 shadow-xl p-4 transition-all ${
-          isSticky ? 'sticky top-24' : ''
-        }`}>
+        <div className="hidden lg:block sticky top-24 bg-gradient-to-br from-optizen-blue-50 to-optizen-green-50 rounded-2xl border-2 border-optizen-blue-200 shadow-xl p-4 transition-all">
           <h3 className="text-base font-bold text-gray-900 mb-3 leading-tight">
             Boost Your Shopify Performance - SEO & Upsells
           </h3>
