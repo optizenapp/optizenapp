@@ -117,8 +117,8 @@
           "cssSelector": [
             "h1",
             "h2",
-            ".aov-definition",
-            ".aov-formula"
+            "h2",
+            "h3"
           ]
         }
       },
