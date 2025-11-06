@@ -39,9 +39,9 @@ export async function generateStaticParams() {
 // Prevent on-demand generation - only serve pre-rendered pages
 export const dynamicParams = false;
 
-// Force static generation at build time
-export const dynamic = 'force-static';
-export const revalidate = 3600; // Revalidate every hour to pick up schema updates
+// Use ISR to revalidate every hour to pick up schema updates
+// (force-static conflicts with client components in the page)
+export const revalidate = 3600;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { category, slug } = await params;
