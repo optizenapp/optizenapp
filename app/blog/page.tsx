@@ -11,7 +11,6 @@ import { Clock, Calendar, ArrowRight } from 'lucide-react';
 
 // Dynamic import for client component
 const BlogSearch = dynamic(() => import('@/components/blog/BlogSearch'), {
-  ssr: false,
   loading: () => (
     <div className="max-w-2xl mx-auto">
       <div className="w-full h-12 bg-gray-100 rounded-lg animate-pulse"></div>
