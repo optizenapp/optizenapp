@@ -79,13 +79,13 @@ export default function RootLayout({
       }} />
       
       {/* Google Ads Conversion Tracking */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17710131995"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17668902622"></script>
       <script dangerouslySetInnerHTML={{
         __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'AW-17710131995');
+          gtag('config', 'AW-17668902622');
         `
       }} />
       
