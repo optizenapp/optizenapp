@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "eslint",
     "schema:update": "tsx scripts/update-post-schema.ts",
-    "schema:video-docs": "tsx scripts/generate-video-upsell-docs-schema.ts"
+    "schema:video-docs": "tsx scripts/generate-video-upsell-docs-schema.ts",
+    "llm:generate": "tsx scripts/generate-llm-txt.ts"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
