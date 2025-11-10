@@ -10,6 +10,9 @@ export const metadata = {
   title: "Optizen Video Upsell & Bundles - Boost AOV with AI-Powered Video Upsells",
   description: "Transform static product recommendations into engaging video experiences. Use your own videos or AI-generated content for professional product upsells and bundles.",
   keywords: ["Shopify video upsell", "bundle builder", "AOV increase", "AI video generation", "product bundles"],
+  alternates: {
+    canonical: 'https://optizenapp.com/optizenai-video-upsells-and-bundles',
+  },
 };
 
 export default function VideoUpsellPage() {

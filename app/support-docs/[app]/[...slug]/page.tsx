@@ -107,10 +107,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = docMapping?.title || 'Documentation';
   const description = stripHtml(docContent.content).substring(0, 160);
   const appName = appInfo[app].name;
+  const nextSlug = slug.join('/');
 
   return {
     title: `${title} | ${appName} Documentation`,
     description,
+    alternates: {
+      canonical: `https://optizenapp.com/support-docs/${app}/${nextSlug}`,
+    },
     openGraph: {
       title: `${title} | ${appName} Documentation`,
       description,

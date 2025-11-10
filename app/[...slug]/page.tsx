@@ -69,6 +69,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${title} | OptizenApp`,
     description,
+    alternates: {
+      canonical: `https://optizenapp.com/${path}`,
+    },
     openGraph: {
       title: `${title} | OptizenApp`,
       description,

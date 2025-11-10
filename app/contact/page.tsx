@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Mail, MessageSquare, Send, CheckCircle } from "lucide-react";
@@ -8,6 +9,17 @@ import { Mail, MessageSquare, Send, CheckCircle } from "lucide-react";
 export default function ContactPage() {
   useEffect(() => {
     document.title = "Contact Us - OptizenAI Support";
+    
+    // Add canonical tag
+    const existingCanonical = document.querySelector('link[rel="canonical"]');
+    if (existingCanonical) {
+      existingCanonical.setAttribute('href', 'https://optizenapp.com/contact');
+    } else {
+      const link = document.createElement('link');
+      link.rel = 'canonical';
+      link.href = 'https://optizenapp.com/contact';
+      document.head.appendChild(link);
+    }
   }, []);
   const [formData, setFormData] = useState({
     name: '',

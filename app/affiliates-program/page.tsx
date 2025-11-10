@@ -5,6 +5,9 @@ import { generateSchemaOrg } from "@/lib/schema-generator";
 export const metadata = {
   title: "Affiliate Program - OptizenAI | 25% Recurring Commissions",
   description: "Join the OptizenAI Affiliate Program and earn 25% recurring commissions for life. $50 payout threshold. Promote our Shopify SEO and Video Upsell apps.",
+  alternates: {
+    canonical: 'https://optizenapp.com/affiliates-program',
+  },
 };
 
 export default async function AffiliateProgramPage() {

@@ -8,6 +8,13 @@ Disallow: /*?p=*
 Disallow: /*?page_id=*
 Disallow: /*?preview=*
 
+# Block pagination and other query parameters (canonical URLs handle these)
+Disallow: /*?page=*
+Disallow: /*?*&*
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+Disallow: /*?fbclid=*
+
 # Block Next.js static chunks from indexing
 Disallow: /_next/static/
 

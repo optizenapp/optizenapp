@@ -8,6 +8,9 @@ import { BookOpen, ArrowRight, Search } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Support Documentation | OptizenApp',
   description: 'Get help with OptizenAI SEO and Video Upsells apps. Browse documentation, guides, and tutorials.',
+  alternates: {
+    canonical: 'https://optizenapp.com/support-docs',
+  },
   openGraph: {
     title: 'Support Documentation | OptizenApp',
     description: 'Get help with OptizenAI SEO and Video Upsells apps.',

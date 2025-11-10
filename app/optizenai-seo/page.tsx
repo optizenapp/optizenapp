@@ -10,6 +10,9 @@ export const metadata = {
   title: "OptizenAI SEO Tools - AI-Powered SEO Optimization for Shopify",
   description: "Enhance your Shopify store's search engine optimization with AI-powered features. Update product details, optimize collections, and improve SEO performance at scale.",
   keywords: ["Shopify SEO", "AI SEO optimization", "meta tags", "product SEO", "collection optimization"],
+  alternates: {
+    canonical: 'https://optizenapp.com/optizenai-seo',
+  },
 };
 
 export default function SEOPage() {
