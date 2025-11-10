@@ -1,10 +1,17 @@
 import dynamic from 'next/dynamic';
+import { Metadata } from 'next';
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import LogoBar from "@/components/sections/LogoBar";
 import Features from "@/components/sections/Features";
 import { generateSchemaOrg } from "@/lib/schema-generator";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://optizenapp.com',
+  },
+};
 
 // Lazy load below-the-fold components
 const Apps = dynamic(() => import("@/components/sections/Apps"));

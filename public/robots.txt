@@ -2,6 +2,15 @@
 User-agent: *
 Allow: /
 
+# Block WordPress preview/editor URLs and parameter variations
+Disallow: /*?post_type=*
+Disallow: /*?p=*
+Disallow: /*?page_id=*
+Disallow: /*?preview=*
+
+# Block Next.js static chunks from indexing
+Disallow: /_next/static/
+
 # Host
 Host: https://optizenapp.com
 

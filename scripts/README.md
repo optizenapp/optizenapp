@@ -2,9 +2,9 @@
 
 These scripts help you generate and update advanced schema.org markup for blog posts.
 
-## Quick Start
+## 🚀 Quick Start
 
-### Update Schema for a Single Post
+### 📝 Publish a New Blog Post
 
 ```bash
 npm run schema:update <post-slug>
@@ -15,11 +15,16 @@ npm run schema:update <post-slug>
 npm run schema:update how-to-use-video-in-ecommerce
 ```
 
-This will:
-1. ✅ Fetch the post from WordPress
-2. ✅ Generate advanced schema with Claude AI (Article, HowTo, FAQPage, etc.)
-3. ✅ Cache it locally in `.schema-cache/`
-4. ✅ Show you the commit commands to deploy it
+This script handles both new and existing posts:
+1. ✅ Fetches the post from WordPress staging
+2. ✅ Generates advanced schema with Claude AI (Article, HowTo, FAQPage, etc.)
+3. ✅ Caches it locally in `.schema-cache/`
+4. ✅ Shows you step-by-step deployment instructions
+5. ✅ Provides validation links for testing
+
+**Use for both new posts and updates** - the caching system automatically detects changes.
+
+**See [PUBLISHING_WORKFLOW.md](../PUBLISHING_WORKFLOW.md) for full guide**
 
 ### Then Deploy:
 
@@ -71,10 +76,26 @@ The AI analyzes your content and generates appropriate schema types:
 3. Verify with: `https://validator.schema.org/#url=YOUR_POST_URL`
 4. Clear browser cache and check again
 
-## Files
+## 📁 Available Scripts
 
-- `update-post-schema.ts` - Main helper script (use this!)
+| Script | Command | Purpose |
+|--------|---------|---------|
+| **Publish/Update Post** | `npm run schema:update <slug>` | Generate schema for new or updated posts |
+| **Video Docs** | `npm run schema:video-docs` | Generate schema for video documentation |
+
+### Script Files
+
+- `update-post-schema.ts` - **Main script** for publishing/updating posts
 - `generate-single-post-schema.ts` - Legacy script (still works)
-- `generate-all-post-schemas.ts` - Bulk generation (use carefully)
-- `generate-page-schemas.ts` - For static pages
+- `generate-blog-schema.ts` - Bulk generation for all posts (use carefully)
+- `generate-blog-listing-schema.ts` - Schema for blog index and category pages
+- `generate-video-upsell-docs-schema.ts` - Video documentation schema
+- `generate-pages-schema.ts` - For static pages
+
+## 📚 Documentation
+
+- [PUBLISHING_WORKFLOW.md](../PUBLISHING_WORKFLOW.md) - Complete publishing guide
+- [QUICK_PUBLISH_GUIDE.md](../QUICK_PUBLISH_GUIDE.md) - TL;DR version
+- [SCHEMA_SETUP.md](../SCHEMA_SETUP.md) - Schema system architecture
+- [REVALIDATION_GUIDE.md](../REVALIDATION_GUIDE.md) - ISR and caching strategy
 

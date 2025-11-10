@@ -65,6 +65,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: seoDescription,
     keywords: [categoryData?.name || '', 'Shopify', 'SEO', 'Video Upsell', 'E-commerce'],
     authors: [{ name: post._embedded?.author?.[0]?.name || 'OptizenApp' }],
+    alternates: {
+      canonical: `https://optizenapp.com/${category}/${slug}`,
+    },
     openGraph: {
       title: seoTitle,
       description: seoDescription,
@@ -291,7 +294,7 @@ export default async function BlogPost({ params }: PageProps) {
 
             {/* Related Posts */}
             <RelatedPosts posts={relatedPostsData} currentPostId={post.id} />
-              </article>
+          </article>
 
               {/* Sidebar - 4 columns with vertical separator */}
               <div className="lg:col-span-4">

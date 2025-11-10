@@ -65,6 +65,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${categoryData.name} | OptizenApp Blog`,
     description: customDescription,
     keywords: [categoryData.name, 'Shopify', 'SEO', 'Video Upsell', 'E-commerce'],
+    alternates: {
+      canonical: `https://optizenapp.com/${category}`,
+    },
     openGraph: {
       title: `${categoryData.name} | OptizenApp Blog`,
       description: customDescription,
@@ -147,8 +150,8 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       )}
-      <div className="min-h-screen flex flex-col bg-white">
-        <Header />
+    <div className="min-h-screen flex flex-col bg-white">
+      <Header />
       
       <main className="flex-1 pt-16">
         {/* Breadcrumbs */}

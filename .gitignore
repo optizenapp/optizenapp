@@ -15,9 +15,6 @@
 
 # next.js
 /.next/
-# BUT keep the schema cache - we want to commit it!
-!/.next/cache/
-!/.next/cache/schema/
 /out/
 
 # production

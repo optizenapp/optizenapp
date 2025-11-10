@@ -147,10 +147,10 @@ export default function Footer() {
             
             {/* Email */}
             <div className="flex items-center space-x-2">
-              <Mail size={16} className="text-gray-400" />
+            <Mail size={16} className="text-gray-400" />
               <a href="mailto:support@optizenai.com" className="text-gray-600 hover:text-gray-900 text-sm">
                 support@optizenai.com
-              </a>
+            </a>
             </div>
           </div>
         </div>

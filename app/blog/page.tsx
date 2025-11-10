@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   title: 'Blog | OptizenApp - Shopify SEO & Video Upsell Tips',
   description: 'Learn about Shopify SEO, video upsells, e-commerce growth strategies, and more. Expert tips and guides to help you grow your online store.',
   keywords: ['Shopify blog', 'SEO tips', 'Video upsell', 'E-commerce', 'Shopify guides'],
+  alternates: {
+    canonical: 'https://optizenapp.com/blog',
+  },
   openGraph: {
     title: 'OptizenApp Blog - Shopify SEO & Video Upsell Tips',
     description: 'Expert tips and guides to help you grow your Shopify store',
@@ -86,8 +89,8 @@ export default async function BlogPage({ searchParams }: PageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       )}
-      <div className="min-h-screen flex flex-col bg-white">
-        <Header />
+    <div className="min-h-screen flex flex-col bg-white">
+      <Header />
       
       <main className="flex-1 pt-16">
         {/* Breadcrumbs */}

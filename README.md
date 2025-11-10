@@ -1,24 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OptizenApp - Next.js Marketing Site
 
-## Getting Started
+Marketing website for OptizenApp's Shopify apps (Video Upsell & SEO Tools) with integrated WordPress blog and advanced Schema.org markup.
 
-First, run the development server:
+## 🚀 Quick Start
+
+### Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📝 Publish a New Blog Post
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run schema:update <post-slug>
+```
+
+**Example:**
+```bash
+npm run schema:update how-to-increase-shopify-aov
+```
+
+This will:
+1. ✅ Fetch post from WordPress staging
+2. ✅ Generate advanced Schema.org markup with Claude AI
+3. ✅ Cache schema locally (prevents duplicates!)
+4. ✅ Show deployment instructions
+
+**Safe to run multiple times** - uses cache, won't create duplicates
+
+**See [QUICK_PUBLISH_GUIDE.md](./QUICK_PUBLISH_GUIDE.md) for details**
+
+---
+
+## 📚 Documentation
+
+| Guide | Purpose |
+|-------|---------|
+| [QUICK_PUBLISH_GUIDE.md](./QUICK_PUBLISH_GUIDE.md) | Quick reference for publishing posts |
+| [PUBLISHING_WORKFLOW.md](./PUBLISHING_WORKFLOW.md) | Complete publishing guide |
+| [WORKFLOW_DIAGRAM.md](./WORKFLOW_DIAGRAM.md) | Visual workflow diagrams |
+| [PUBLISHING_SUMMARY.md](./PUBLISHING_SUMMARY.md) | System overview and setup |
+| [SCHEMA_SETUP.md](./SCHEMA_SETUP.md) | Schema system architecture |
+
+---
+
+## 🎯 Key Features
+
+- **WordPress Integration** - Headless CMS via REST API
+- **Advanced Schema.org** - AI-generated structured data (Article, FAQPage, HowTo, etc.)
+- **Incremental Static Regeneration** - Fast, SEO-optimized pages
+- **Google Analytics & Ads** - Conversion tracking
+- **Mobile-Responsive** - Tailwind CSS design
+- **Schema Caching** - Pre-generated schemas for fast builds
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Styling:** Tailwind CSS
+- **CMS:** WordPress (headless)
+- **Schema:** Claude AI + Schema.org
+- **Deployment:** Vercel
+- **Analytics:** Google Analytics 4 + Google Ads
 
 ## Learn More
 
