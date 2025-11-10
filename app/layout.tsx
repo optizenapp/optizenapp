@@ -25,11 +25,10 @@ export const metadata: Metadata = {
   authors: [{ name: "OptizenApp" }],
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon', sizes: '256x256' },
       { url: '/favicon.png', type: 'image/png', sizes: '32x32' },
       { url: '/favicon.png', type: 'image/png', sizes: '16x16' },
     ],
-    shortcut: '/favicon.ico',
+    shortcut: '/favicon.png',
     apple: '/favicon.png',
   },
   openGraph: {
@@ -102,8 +101,6 @@ export default function RootLayout({
       }} />
       
       {/* Explicit favicon links for better browser compatibility */}
-      <link rel="shortcut icon" href="/favicon.ico" />
-      <link rel="icon" type="image/x-icon" sizes="256x256" href="/favicon.ico" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
       <link rel="apple-touch-icon" href="/favicon.png" />
