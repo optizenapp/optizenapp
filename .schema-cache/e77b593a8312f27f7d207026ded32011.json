@@ -203,6 +203,10 @@
       {
         "@type": "Review",
         "@id": "https://optizenapp.com/#customer-review",
+        "author": {
+          "@type": "Person",
+          "name": "Jonathan Farrington"
+        },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "4.9",
