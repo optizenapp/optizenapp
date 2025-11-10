@@ -1,0 +1,116 @@
+# OptizenApp - Shopify Apps for SEO & Video Upsells
+
+> AI-powered tools to boost your Shopify store's revenue and search rankings
+
+## About
+
+OptizenApp provides two powerful Shopify apps:
+1. **OptizenAI SEO Tools** - AI-powered SEO optimization for Shopify stores
+2. **Optizen Video Upsell & Bundles** - Video-based upsells and product bundles
+
+Trusted by thousands of Shopify merchants worldwide with a 4.9/5 rating.
+
+## Products
+
+### OptizenAI SEO Tools
+- AI-powered meta tag optimization
+- Bulk product and collection SEO updates
+- Image alt text automation
+- Tag page optimization
+- Smart Tag Filter & Variant Tagger
+- URL: https://optizenapp.com/optizenai-seo
+
+### Optizen Video Upsell & Bundles
+- Video-based product upsells
+- AI video generation
+- Product bundle builder
+- Strategic placement across product pages
+- Dual analytics tracking
+- URL: https://optizenapp.com/optizenai-video-upsells-and-bundles
+
+## Key Features
+
+- **AI-Powered**: Advanced AI for SEO content and video generation
+- **Easy Setup**: Install in minutes, no coding required
+- **Shopify Native**: Built specifically for Shopify 2.0 themes
+- **Proven Results**: Increase AOV by up to 30%, improve search rankings
+- **Free Trials**: 7-day free trial on all plans
+
+## Pricing
+
+### SEO Tools
+- Free: Essential SEO features + 2,000 AI words
+- Pro ($19.99/mo): Collection optimization + 125,000 AI words
+- Enterprise ($29.99/mo): 250,000 AI words + priority support
+
+### Video Upsell
+- Free: 1 campaign, up to 5 conversions
+- Starter ($19.99/mo): Unlimited campaigns + 2 AI video credits
+- Pro ($49.99/mo): 5 AI video credits + priority support
+
+## Documentation
+
+- Main Docs: https://optizenapp.com/support-docs
+- SEO Docs: https://optizenapp.com/support-docs/optizenai
+- Video Upsell Docs: https://optizenapp.com/support-docs/video-upsells
+- Shopify Guides: https://optizenapp.com/shopify
+
+## Blog & Resources
+
+- Blog: https://optizenapp.com/blog
+- Shopify SEO: https://optizenapp.com/shopify-seo
+- AOV Strategies: https://optizenapp.com/aov
+- Shopify Questions: https://optizenapp.com/shopify-questions
+- AI Prompts: https://optizenapp.com/ai-prompts
+
+## Contact & Support
+
+- Email: support@optizenai.com
+- Contact Form: https://optizenapp.com/contact
+- Affiliate Program: https://optizenapp.com/affiliates-program (25% recurring commissions)
+
+## Technical Details
+
+- Platform: Shopify App Store
+- Technology: Next.js, AI-powered (Claude/OpenAI)
+- Integrations: Shopify 2.0, YouTube, Vimeo
+- Security: SOC 2 compliant, bank-level encryption
+
+## Company
+
+- Website: https://optizenapp.com
+- Shopify Partner: Verified
+- Rating: 4.9/5 stars from 1,200+ reviews
+- Stores Served: 10,000+ Shopify merchants
+- Revenue Generated: $400M+ for customers
+
+## Popular Topics
+
+- Shopify product bundles
+- Video upselling strategies
+- Shopify SEO optimization
+- AI-powered meta tags
+- Average Order Value (AOV) increase
+- Collection page optimization
+- Product variant management
+- Shopify sub-collections
+
+## API & Integration
+
+For developers and partners:
+- REST API available for enterprise customers
+- Webhook support for real-time updates
+- Custom integration support available
+
+## Social Proof
+
+- Featured in Shopify App Store
+- Top-rated SEO app
+- Most popular video upsell solution
+- Trusted by leading Shopify stores worldwide
+
+---
+
+Last updated: 2025-01-10
+Version: 1.0
+

@@ -21,6 +21,10 @@ Disallow: /_next/static/
 # Host
 Host: https://optizenapp.com
 
+# LLM Context
+# For AI assistants and LLMs
+# See: https://optizenapp.com/llm.txt
+
 # Sitemaps
 Sitemap: https://optizenapp.com/sitemap.xml
 Sitemap: https://optizenapp.com/server-sitemap.xml
