@@ -1,0 +1,388 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/aov/how-to-create-shopify-product-bundles",
+        "url": "https://optizenapp.com/aov/how-to-create-shopify-product-bundles",
+        "name": "Creating Product Bundles In Shopify – Strategic Options",
+        "description": "Learn how to create product bundles in Shopify using apps, understand inventory synchronization challenges, and choose the right bundling strategy for your store.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "Optizen App",
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://optizenapp.com#organization"
+          }
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "AOV",
+              "item": "https://optizenapp.com/aov"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "How to Create Shopify Product Bundles"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            "h3"
+          ]
+        },
+        "mainEntity": {
+          "@id": "https://optizenapp.com/aov/how-to-create-shopify-product-bundles#article"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://optizenapp.com/aov/how-to-create-shopify-product-bundles#article",
+        "headline": "Creating Product Bundles In Shopify – Strategic Options",
+        "description": "Comprehensive guide on creating product bundles in Shopify, covering app-based solutions, inventory synchronization, and strategic bundling methods.",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://optizenapp.com#organization"
+        },
+        "datePublished": "2025-11-09T23:50:47",
+        "dateModified": "2025-11-09T23:50:48",
+        "mainEntityOfPage": {
+          "@id": "https://optizenapp.com/aov/how-to-create-shopify-product-bundles"
+        },
+        "about": [
+          {
+            "@id": "#shopify-bundles"
+          },
+          {
+            "@id": "#inventory-synchronization"
+          },
+          {
+            "@id": "#average-order-value"
+          },
+          {
+            "@id": "#ecommerce-strategy"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#shopify-bundles-app"
+          },
+          {
+            "@id": "#optizen-video-upsells"
+          },
+          {
+            "@id": "#bold-commerce"
+          },
+          {
+            "@id": "#mckinsey-company"
+          },
+          {
+            "@id": "#recharge"
+          },
+          {
+            "@id": "#skio"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#bundling-methods-howto"
+          },
+          {
+            "@id": "#bundle-types-list"
+          },
+          {
+            "@id": "#manual-setup-howto"
+          },
+          {
+            "@id": "#app-setup-howto"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://optizenapp.com#organization",
+        "name": "Optizen App",
+        "url": "https://optizenapp.com",
+        "sameAs": [
+          "https://optizenapp.com"
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#bundling-methods-howto",
+        "name": "How to Choose the Right Shopify Bundle Method",
+        "description": "Step-by-step guide to selecting the appropriate bundling method based on inventory management and customer experience requirements.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Assess Inventory Synchronization Needs",
+            "text": "Determine if your bundling method can handle inventory synchronization when selling multiple distinct SKUs as one bundle product."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Evaluate Manual Methods",
+            "text": "Consider manual hacks like variants and virtual products, but understand they create inventory disconnect issues."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Review Discount Code Method",
+            "text": "Assess using Buy X, Get Y discounts which maintain inventory accuracy but provide poor user experience."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Consider Official Shopify Bundles App",
+            "text": "Evaluate the free, first-party solution that handles inventory correctly and works well for simple, fixed kits."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Explore Third-Party Bundle Apps",
+            "text": "For advanced functionality like mix-and-match or build-your-own-box, consider specialized third-party applications."
+          }
+        ],
+        "totalTime": "PT30M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store Access"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Product Inventory"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Bundle Strategy Plan"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#bundle-types-list",
+        "name": "Common Types of Product Bundles",
+        "description": "Different bundle strategies and their technical requirements",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Fixed Bundles",
+            "description": "Pre-selected group of products sold for a single price, like a skincare kit. Simplest to implement technically."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Mix-and-Match Bundles",
+            "description": "Customer builds their own bundle from pre-defined items. Requires dedicated third-party app for proper implementation."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tiered or Volume Bundles",
+            "description": "Pricing strategy where more items purchased equals greater savings. Can use variants or cart-level discount apps."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Subscription Bundles",
+            "description": "Curated kits delivered on regular schedule. Requires integration between bundling and subscription management platforms."
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Add-on or Cross-Sell Bundles",
+            "description": "Frequently bought together suggestions with incentives. Usually handled by apps with product page widgets."
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Video Bundles & Upsell",
+            "description": "Using video engagement to promote upsells and bundles at optimal timing during customer journey."
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#manual-setup-howto",
+        "name": "How to Set Up Bundles Without an App (Manual Methods)",
+        "description": "Manual methods for creating bundles in Shopify, including their limitations and failure points.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Product Variant Method",
+            "text": "Create a new product, add variants for different pack sizes, set prices and SKUs for each variant. Warning: Creates inventory disconnect."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Virtual Bundle Product Method",
+            "text": "Create a placeholder product representing the bundle, manually calculate and update inventory based on lowest-stock component."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Discount Code Method",
+            "text": "Create Buy X Get Y discount rules in Shopify admin. Maintains inventory accuracy but provides poor customer experience."
+          }
+        ],
+        "totalTime": "PT45M"
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#app-setup-howto",
+        "name": "How to Set Up Shopify Bundles App",
+        "description": "Step-by-step process for setting up the official Shopify Bundles app.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Install the App",
+            "text": "Go to Shopify App Store, search for 'Shopify Bundles', and install the free app."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Create Bundle",
+            "text": "Navigate to Apps > Bundles and click 'Create bundle'. Give it an internal name."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Select Products",
+            "text": "Choose the products and specific variants you want to include in the bundle."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Configure Bundle Product",
+            "text": "Set the public title, description, images, and final price for the bundle product page."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Activate Bundle",
+            "text": "Set the product status to 'Active' to make the bundle available for purchase."
+          }
+        ],
+        "totalTime": "PT15M"
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#shopify-bundle-glossary",
+        "name": "Shopify Bundle Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-bundles",
+            "name": "Shopify Bundles",
+            "description": "A method of selling multiple products together as a single offering, typically at a discounted price to increase average order value.",
+            "inDefinedTermSet": {
+              "@id": "#shopify-bundle-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#inventory-synchronization",
+            "name": "Inventory Synchronization",
+            "description": "The process of automatically updating stock levels for individual component products when a bundle containing those products is sold.",
+            "inDefinedTermSet": {
+              "@id": "#shopify-bundle-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#average-order-value",
+            "name": "Average Order Value (AOV)",
+            "description": "The average dollar amount spent each time a customer places an order, calculated by dividing total revenue by number of orders.",
+            "inDefinedTermSet": {
+              "@id": "#shopify-bundle-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Average_order_value"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ecommerce-strategy",
+            "name": "E-commerce Strategy",
+            "description": "The comprehensive plan for selling products or services online, including pricing, marketing, and operational decisions.",
+            "inDefinedTermSet": {
+              "@id": "#shopify-bundle-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-bundles-app",
+            "name": "Shopify Bundles App",
+            "description": "Official free app from Shopify that enables merchants to create product bundles with automatic inventory management.",
+            "inDefinedTermSet": {
+              "@id": "#shopify-bundle-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-video-upsells",
+            "name": "Optizen Video Upsells",
+            "description": "Third-party Shopify app that uses video engagement to promote upsells and bundles to customers at optimal timing.",
+            "inDefinedTermSet": {
+              "@id": "#shopify-bundle-glossary"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#bold-commerce",
+        "name": "Bold Commerce",
+        "description": "E-commerce technology company providing apps and solutions for online merchants.",
+        "sameAs": "https://boldcommerce.com"
+      },
+      {
+        "@type": "Organization",
+        "@id": "#mckinsey-company",
+        "name": "McKinsey & Company",
+        "description": "Global management consulting firm providing insights on business strategy and merchandising.",
+        "sameAs": "https://www.mckinsey.com"
+      },
+      {
+        "@type": "Organization",
+        "@id": "#recharge",
+        "name": "Recharge",
+        "description": "Subscription management platform for e-commerce businesses.",
+        "sameAs": "https://rechargepayments.com"
+      },
+      {
+        "@type": "Organization",
+        "@id": "#skio",
+        "name": "Skio",
+        "description": "Subscription platform for Shopify stores.",
+        "sameAs": "https://skio.com"
+      }
+    ]
+  },
+  "generatedAt": "2025-11-10T00:20:08.532Z",
+  "contentModified": "2025-11-09T23:50:48",
+  "contentHash": "68191f63d2159490c2036ef3ef04a1c2"
+}
