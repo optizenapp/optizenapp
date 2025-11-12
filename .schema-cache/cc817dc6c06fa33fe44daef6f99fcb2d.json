@@ -1,0 +1,345 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen-ai/bold-upsell-vs-optizen-video-upsell",
+        "url": "https://optizenapp.com/optizen-ai/bold-upsell-vs-optizen-video-upsell",
+        "name": "Optizen Video Upsell vs Bold Upsell: Bumping AOV",
+        "description": "Compare Bold Upsell's rule-based funnel system with Optizen Video Upsell's video-first approach for boosting Average Order Value (AOV) in Shopify stores.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://optizenapp.com",
+          "name": "Optizen App"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://optizenapp.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Optizen AI",
+              "item": "https://optizenapp.com/optizen-ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Bold Upsell vs Optizen Video Upsell"
+            }
+          ]
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            "h3"
+          ]
+        },
+        "mainEntity": {
+          "@id": "#main-article"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "#main-article",
+        "headline": "Optizen Video Upsell vs Bold Upsell: Bumping AOV",
+        "description": "Comprehensive comparison between Bold Upsell's rule-based funnel system and Optizen Video Upsell's video-first approach for increasing Average Order Value in Shopify stores.",
+        "datePublished": "2025-11-12T03:02:12",
+        "dateModified": "2025-11-12T03:06:43",
+        "author": {
+          "@type": "Organization",
+          "@id": "#optizen-organization"
+        },
+        "publisher": {
+          "@id": "#optizen-organization"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://optizenapp.com/optizen-ai/bold-upsell-vs-optizen-video-upsell"
+        },
+        "about": [
+          {
+            "@id": "#bold-upsell-entity"
+          },
+          {
+            "@id": "#optizen-video-upsell-entity"
+          },
+          {
+            "@id": "#aov-entity"
+          },
+          {
+            "@id": "#shopify-upsells-entity"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#rules-engine-entity"
+          },
+          {
+            "@id": "#video-marketing-entity"
+          },
+          {
+            "@id": "#post-purchase-upsells-entity"
+          },
+          {
+            "@id": "#ai-personalization-entity"
+          },
+          {
+            "@id": "#cross-sell-entity"
+          },
+          {
+            "@id": "#conversion-optimization-entity"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#feature-comparison-table"
+          },
+          {
+            "@id": "#implementation-guide"
+          },
+          {
+            "@id": "#use-case-scenarios"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "#optizen-organization",
+        "name": "Optizen App",
+        "url": "https://optizenapp.com",
+        "description": "AI-powered video upsell solutions for Shopify stores"
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#ecommerce-terminology",
+        "name": "E-commerce and Upselling Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#bold-upsell-entity",
+            "name": "Bold Upsell",
+            "description": "A Shopify app that provides comprehensive upsell and cross-sell funnels using rule-based logic and static images",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-video-upsell-entity",
+            "name": "Optizen Video Upsell",
+            "description": "A specialized Shopify app that uses video content exclusively for product page, thank you page, and post-purchase upsell offers",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#aov-entity",
+            "name": "Average Order Value (AOV)",
+            "description": "The average dollar amount spent each time a customer places an order on a website or mobile app",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-terminology"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Average_order_value"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#rules-engine-entity",
+            "name": "Rules Engine",
+            "description": "A software system that executes one or more business rules in a runtime production environment using conditional logic",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#post-purchase-upsells-entity",
+            "name": "Post-Purchase Upsells",
+            "description": "Offers presented to customers after they have completed their initial purchase, eliminating cart abandonment risk",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#cross-sell-entity",
+            "name": "Cross-Sell",
+            "description": "A sales technique where customers are encouraged to purchase complementary or related products",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#video-marketing-entity",
+            "name": "Video Marketing",
+            "description": "The use of video content to promote and market products or services, increase engagement, and drive conversions",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-personalization-entity",
+            "name": "AI Personalization",
+            "description": "The use of artificial intelligence to deliver individualized experiences and offers based on customer data and behavior",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-upsells-entity",
+            "name": "Shopify Upsells",
+            "description": "Sales techniques and apps designed to increase order value within the Shopify e-commerce platform",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-terminology"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#conversion-optimization-entity",
+            "name": "Conversion Optimization",
+            "description": "The practice of increasing the percentage of users who perform a desired action on a website",
+            "inDefinedTermSet": {
+              "@id": "#ecommerce-terminology"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#feature-comparison-table",
+        "name": "Bold Upsell vs Optizen Video Upsell Feature Comparison",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Primary Focus",
+            "description": "Bold Upsell: Comprehensive, rule-based funnels across the entire journey. Optizen Video Upsell: High-conversion, video-based offers at key moments with AI videos."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Key Differentiator",
+            "description": "Bold Upsell: Post-purchase one-click upsells & advanced conditional logic. Optizen Video Upsell: Product page, post purchase & thank you page video pop-ups for product demonstration."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Offer Locations",
+            "description": "Bold Upsell: Product Page, Cart Page, Post-Purchase. Optizen Video Upsell: Product Page, Post-Purchase, Thank You page."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Cross-Sell Strategy",
+            "description": "Bold Upsell: Sequential funnels based on cart rules. Series of offers. Optizen Video Upsell: A single, visually persuasive offer using video to show value."
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Impact on AOV",
+            "description": "Bold Upsell: Boosts AOV by offering upsells after payment is complete, removing risk. Optizen Video Upsell: Aims to increase AOV by getting a higher take rate through more persuasive video content."
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "A/B Testing",
+            "description": "Bold Upsell: Yes, built-in and quite robust on higher tiers. Optizen Video Upsell: Not listed as a core feature; would likely be a manual process."
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Analytics",
+            "description": "Bold Upsell: Deep funnel analytics: views, conversions, revenue per funnel. Optizen Video Upsell: Tracks video engagement (watch time) plus commercial metrics (clicks, conversions)."
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#implementation-guide",
+        "name": "How to Implement Upsell Solutions in Shopify",
+        "description": "Step-by-step guide for implementing either Bold Upsell or Optizen Video Upsell in your Shopify store",
+        "totalTime": "PT2H",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Product Catalog"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Video Content (for Optizen)"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Choose Your Platform",
+            "text": "Decide between Bold Upsell for rule-based funnels or Optizen Video Upsell for video-first approach based on your product catalog and strategy needs."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Install and Configure",
+            "text": "For Bold Upsell: Set up theme integration through App Embed Blocks and build your first funnel with trigger conditions. For Optizen: Upload videos or create with AI and associate them with trigger products."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Define Trigger Rules",
+            "text": "Bold Upsell: Create conditional logic based on SKUs, cart value, customer tags. Optizen: Set up AI-based triggers or simple 'Add to Cart' events for video pop-ups."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Test Implementation",
+            "text": "Thoroughly test all upsell scenarios, check mobile optimization, and ensure proper integration with Shopify's checkout process."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Monitor and Optimize",
+            "text": "Track performance metrics, conduct A/B tests (Bold Upsell), analyze video engagement data (Optizen), and continuously refine your strategy."
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#use-case-scenarios",
+        "name": "When to Choose Each Platform",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Choose Bold Upsell When",
+            "description": "You have a huge, diverse product catalog requiring complex rules engine management at scale, need multi-step funnels (upsell → downsell → cross-sell), require post-purchase upsells as a must-have feature, or are a data-driven merchant who lives and breathes A/B testing to optimize funnels."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Choose Optizen Video Upsell When",
+            "description": "Your products benefit from visual demonstration, you want to leverage AI for personalized video content, you prefer a single high-impact offer over complex funnels, or your brand strategy emphasizes visual storytelling and engagement."
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-12T03:09:32.276Z",
+  "contentModified": "2025-11-12T03:06:43",
+  "contentHash": "21aacc82ffa0f80f19cfc8800fd72bdb"
+}
