@@ -17,7 +17,6 @@
           "name": "Tag Page SEO Optimization",
           "description": "SEO strategies for optimizing e-commerce tag pages"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/why-optimize-tag-pages#howto",
         "interactionStatistic": {
           "@type": "InteractionCounter",
           "interactionType": "https://schema.org/WatchAction",
@@ -342,7 +341,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".key-benefits"
           ]
         },

@@ -12,7 +12,6 @@
           "name": "Smart Tag Filtering",
           "description": "Advanced tag management and filtering techniques for e-commerce optimization"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/smart-tag-filters#howto",
         "thumbnailUrl": "https://optizenapp.com/images/smart-tag-filters-thumbnail.jpg",
         "uploadDate": "2024-01-15",
         "duration": "PT4M30S",
@@ -300,7 +299,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".key-steps"
           ]
         },

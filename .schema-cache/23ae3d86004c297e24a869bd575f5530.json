@@ -22,7 +22,6 @@
           "name": "Shopify Tag Page Optimization",
           "description": "Tag page creation and management in Shopify e-commerce stores"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/working-with-tag-pages#howto",
         "transcript": "In this tutorial, we'll explore how to effectively work with tag pages in Shopify using Optizen's advanced tools. Tag pages are crucial for organizing your products and improving SEO performance...",
         "regionsAllowed": [
           "US",
@@ -344,7 +343,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".key-steps"
           ]
         },

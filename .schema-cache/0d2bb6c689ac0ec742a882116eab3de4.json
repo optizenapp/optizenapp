@@ -22,7 +22,6 @@
           "name": "AI Content Generation for Shopify SEO",
           "description": "Automated content optimization using artificial intelligence"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/getting-started-ai#howto",
         "transcript": "Welcome to Optizen's AI features tutorial. Today we'll cover setting up AI content generation, configuring your preferences, and generating optimized content for your Shopify store...",
         "regionsAllowed": [
           "US",
@@ -332,7 +331,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".step-instructions"
           ]
         },

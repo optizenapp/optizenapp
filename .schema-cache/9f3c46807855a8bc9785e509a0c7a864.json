@@ -17,7 +17,6 @@
           "name": "OptizenAI Plan Upgrade Process",
           "description": "AI-powered SEO automation features and subscription management"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/new-ai-plan-options#howto",
         "interactionStatistic": {
           "@type": "InteractionCounter",
           "interactionType": "https://schema.org/WatchAction",
@@ -343,7 +342,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".key-features"
           ]
         },

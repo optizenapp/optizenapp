@@ -17,7 +17,6 @@
           "name": "Shopify SEO Optimization",
           "description": "Search engine optimization techniques and tools for Shopify stores"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/introduction#howto",
         "interactionStatistic": {
           "@type": "InteractionCounter",
           "interactionType": "https://schema.org/WatchAction",
@@ -317,7 +316,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".key-features"
           ]
         }

@@ -17,7 +17,6 @@
           "name": "CSV Import Process for Tag Pages",
           "description": "Bulk optimization technique for e-commerce tag pages"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/importing-tag-pages#howto",
         "interactionStatistic": {
           "@type": "InteractionCounter",
           "interactionType": "https://schema.org/WatchAction",
@@ -326,7 +325,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".step-instructions"
           ]
         }

@@ -12,7 +12,6 @@
           "name": "Optizen App Settings Configuration",
           "description": "Customizing Optizen SEO app settings for Shopify stores"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/settings#howto",
         "thumbnailUrl": "https://optizenapp.com/images/optizen-settings-tutorial-thumb.jpg",
         "uploadDate": "2024-01-15T10:00:00Z",
         "duration": "PT8M45S",
@@ -316,7 +315,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".settings-overview"
           ]
         },

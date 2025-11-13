@@ -16,7 +16,6 @@
           "@type": "Thing",
           "name": "Video Marketing Best Practices for E-commerce Upsells"
         },
-        "teaches": "https://optizenapp.com/support-docs/video-upsells/video-best-practices#howto",
         "interactionStatistic": {
           "@type": "InteractionCounter",
           "interactionType": "https://schema.org/WatchAction",

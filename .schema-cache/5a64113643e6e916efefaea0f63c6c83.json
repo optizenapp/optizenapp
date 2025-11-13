@@ -22,7 +22,6 @@
           "name": "CSV Collection Import Process",
           "description": "Bulk importing collection data into Shopify using CSV files"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/importing-collections#howto",
         "transcript": "In this tutorial, we'll walk through the process of importing collections via CSV. First, prepare your CSV file with the correct format including collection handle, title, description, and SEO fields. Then navigate to the Optizen dashboard, select the import function, and upload your file. The system will validate your data and show a preview before importing.",
         "regionsAllowed": [
           "US",

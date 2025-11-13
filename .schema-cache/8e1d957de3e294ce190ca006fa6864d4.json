@@ -17,7 +17,6 @@
         "thumbnailUrl": "https://optizenapp.com/images/video-upsells-troubleshooting-thumb.jpg",
         "uploadDate": "2024-01-15T10:00:00Z",
         "duration": "PT8M45S",
-        "teaches": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#howto",
         "transcript": "This video covers troubleshooting common issues with video upsells including campaign activation, targeting rules, discount application, and video generation problems.",
         "regionsAllowed": "US,CA,GB,AU,EU",
         "interactionStatistic": {

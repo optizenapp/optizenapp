@@ -22,7 +22,6 @@
           "name": "Optizen Enterprise Features",
           "description": "Advanced SEO features for large Shopify stores and agencies"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/upgrade-to-enterprise#howto",
         "transcript": "In this video, we'll explore why upgrading to Optizen Enterprise is essential for large stores and agencies. We'll cover multi-store management, advanced analytics, bulk operations, priority support, and exclusive enterprise-only features that can transform your SEO strategy.",
         "regionsAllowed": [
           "US",
@@ -309,7 +308,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".enterprise-benefits"
           ]
         }

@@ -71,8 +71,7 @@
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": [
-            "h1",
-            ".video-description"
+            "h1"
           ]
         }
       },

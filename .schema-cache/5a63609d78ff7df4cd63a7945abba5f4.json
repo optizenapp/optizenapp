@@ -22,7 +22,6 @@
           "name": "Collection Page SEO Optimization",
           "description": "SEO techniques for e-commerce collection pages"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/collection-pages#howto",
         "transcript": "In this tutorial, we'll walk through the process of adding optimized content to collection pages in Optizen. First, navigate to your collection settings...",
         "regionsAllowed": [
           "US",
@@ -358,7 +357,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".step-instructions"
           ]
         },

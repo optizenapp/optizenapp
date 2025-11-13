@@ -16,7 +16,6 @@
           "@type": "Thing",
           "name": "Video Upsell Analytics and Optimization"
         },
-        "teaches": "https://optizenapp.com/support-docs/video-upsells/analytics-optimization#howto",
         "interactionStatistic": {
           "@type": "InteractionCounter",
           "interactionType": "https://schema.org/WatchAction",

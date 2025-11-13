@@ -12,7 +12,6 @@
           "name": "OptizenAI Sync Functionality",
           "description": "Database synchronization feature for tags and collections"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/sync-button#howto",
         "thumbnailUrl": "https://optizenapp.com/images/sync-button-tutorial-thumb.jpg",
         "uploadDate": "2024-01-15",
         "duration": "PT3M45S",

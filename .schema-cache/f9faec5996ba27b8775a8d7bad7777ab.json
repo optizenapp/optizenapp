@@ -17,7 +17,6 @@
           "name": "Shopify Collection Export Process",
           "description": "Data export functionality for Shopify collections"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/exporting-collections#howto",
         "interactionStatistic": {
           "@type": "InteractionCounter",
           "interactionType": "https://schema.org/WatchAction",
@@ -309,7 +308,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".step-instructions"
           ]
         }

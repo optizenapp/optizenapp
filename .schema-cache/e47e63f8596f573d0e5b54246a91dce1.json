@@ -12,7 +12,6 @@
           "name": "Product Variant Management",
           "description": "Automated organization and image matching for ecommerce product variants"
         },
-        "teaches": "https://optizenapp.com/support-docs/optizenai/variant-tagger#howto",
         "thumbnailUrl": "https://optizenapp.com/images/variant-tagger-thumbnail.jpg",
         "uploadDate": "2024-01-15",
         "duration": "PT8M45S",
@@ -333,7 +332,6 @@
           "@type": "SpeakableSpecification",
           "cssSelector": [
             "h1",
-            ".video-description",
             ".key-features"
           ]
         },
