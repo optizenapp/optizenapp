@@ -105,7 +105,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/variant-tagger-tutorial.mp4#t=0,45",
-              "name": "Accessing Enterprise Features"
+              "name": "Accessing Enterprise Features",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -116,7 +117,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/variant-tagger-tutorial.mp4#t=45,120",
-              "name": "Enabling Variant Tagger"
+              "name": "Enabling Variant Tagger",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -127,7 +129,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/variant-tagger-tutorial.mp4#t=120,240",
-              "name": "Configuring Tagging Rules"
+              "name": "Configuring Tagging Rules",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -138,7 +141,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/variant-tagger-tutorial.mp4#t=240,360",
-              "name": "Setting Up Image Matcher"
+              "name": "Setting Up Image Matcher",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -149,7 +153,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/variant-tagger-tutorial.mp4#t=360,525",
-              "name": "Testing and Optimization"
+              "name": "Testing and Optimization",
+              "uploadDate": "2024-01-01"
             }
           }
         ]

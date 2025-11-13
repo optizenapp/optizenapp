@@ -134,7 +134,8 @@
         ],
         "isPartOf": {
           "@id": "https://optizenapp.com/shopify-seo/shopify-topical-map#article"
-        }
+        },
+        "uploadDate": "2023-12-07"
       },
       {
         "@type": "HowTo",

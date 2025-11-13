@@ -230,7 +230,8 @@
         ],
         "isPartOf": {
           "@id": "#main-article"
-        }
+        },
+        "uploadDate": "2023-12-12"
       },
       {
         "@type": "HowTo",

@@ -111,7 +111,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/ai-getting-started.mp4#t=30,75",
-              "name": "Accessing AI Features"
+              "name": "Accessing AI Features",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -122,7 +123,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/ai-getting-started.mp4#t=75,180",
-              "name": "AI Configuration Setup"
+              "name": "AI Configuration Setup",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -133,7 +135,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/ai-getting-started.mp4#t=180,300",
-              "name": "Content Generation Process"
+              "name": "Content Generation Process",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -144,7 +147,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/ai-getting-started.mp4#t=300,450",
-              "name": "Content Review and Application"
+              "name": "Content Review and Application",
+              "uploadDate": "2024-01-01"
             }
           }
         ]

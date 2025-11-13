@@ -112,7 +112,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/tag-pages-tutorial.mp4#t=0,45",
-              "name": "Accessing Tag Page Manager"
+              "name": "Accessing Tag Page Manager",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -122,7 +123,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/tag-pages-tutorial.mp4#t=45,120",
-              "name": "Creating New Tag Page"
+              "name": "Creating New Tag Page",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -132,7 +134,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/tag-pages-tutorial.mp4#t=120,240",
-              "name": "Configuring Page Settings"
+              "name": "Configuring Page Settings",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -142,7 +145,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/tag-pages-tutorial.mp4#t=240,420",
-              "name": "Adding Content and Optimization"
+              "name": "Adding Content and Optimization",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -152,7 +156,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/tag-pages-tutorial.mp4#t=420,525",
-              "name": "Publishing and Monitoring"
+              "name": "Publishing and Monitoring",
+              "uploadDate": "2024-01-01"
             }
           }
         ]

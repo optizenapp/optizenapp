@@ -113,7 +113,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/optizen-installation-guide.mp4#t=30,90",
-              "name": "Submitting Support Request"
+              "name": "Submitting Support Request",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -124,7 +125,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/optizen-installation-guide.mp4#t=90,150",
-              "name": "Providing Store URL"
+              "name": "Providing Store URL",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -135,7 +137,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/optizen-installation-guide.mp4#t=150,300",
-              "name": "Approving Access Request"
+              "name": "Approving Access Request",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -146,7 +149,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/optizen-installation-guide.mp4#t=300,450",
-              "name": "Installation Process"
+              "name": "Installation Process",
+              "uploadDate": "2024-01-01"
             }
           }
         ]

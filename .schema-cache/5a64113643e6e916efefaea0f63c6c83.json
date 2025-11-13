@@ -112,7 +112,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/importing-collections.mp4#t=0,120",
-              "name": "CSV File Preparation"
+              "name": "CSV File Preparation",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -122,7 +123,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/importing-collections.mp4#t=120,240",
-              "name": "Accessing Import Function"
+              "name": "Accessing Import Function",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -132,7 +134,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/importing-collections.mp4#t=240,360",
-              "name": "CSV File Upload"
+              "name": "CSV File Upload",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -142,7 +145,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/importing-collections.mp4#t=360,480",
-              "name": "Import Review and Confirmation"
+              "name": "Import Review and Confirmation",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -152,7 +156,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/importing-collections.mp4#t=480,525",
-              "name": "Import Progress Monitoring"
+              "name": "Import Progress Monitoring",
+              "uploadDate": "2024-01-01"
             }
           }
         ]

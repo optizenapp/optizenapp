@@ -118,7 +118,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/tag-pages-optimization.mp4#t=0,120",
-              "name": "Tag Page Fundamentals"
+              "name": "Tag Page Fundamentals",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -128,7 +129,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/tag-pages-optimization.mp4#t=120,300",
-              "name": "SEO Benefits of Tag Pages"
+              "name": "SEO Benefits of Tag Pages",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -138,7 +140,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/tag-pages-optimization.mp4#t=300,450",
-              "name": "Traffic Generation Potential"
+              "name": "Traffic Generation Potential",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -148,7 +151,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/tag-pages-optimization.mp4#t=450,525",
-              "name": "Tag Page Optimization Implementation"
+              "name": "Tag Page Optimization Implementation",
+              "uploadDate": "2024-01-01"
             }
           }
         ]

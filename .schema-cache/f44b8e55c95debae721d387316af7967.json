@@ -100,7 +100,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/sync-button-tutorial.mp4#t=0,45",
-              "name": "Locating Sync Buttons"
+              "name": "Locating Sync Buttons",
+              "uploadDate": "2024-01-01"
             },
             "image": "https://optizenapp.com/images/sync-button-location.jpg"
           },
@@ -111,7 +112,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/sync-button-tutorial.mp4#t=45,90",
-              "name": "Clicking Sync Button"
+              "name": "Clicking Sync Button",
+              "uploadDate": "2024-01-01"
             },
             "image": "https://optizenapp.com/images/sync-button-click.jpg"
           },
@@ -122,7 +124,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/sync-button-tutorial.mp4#t=90,180",
-              "name": "Sync Processing"
+              "name": "Sync Processing",
+              "uploadDate": "2024-01-01"
             },
             "image": "https://optizenapp.com/images/sync-processing.jpg"
           },
@@ -133,7 +136,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/sync-button-tutorial.mp4#t=180,225",
-              "name": "Accessing Synced Content"
+              "name": "Accessing Synced Content",
+              "uploadDate": "2024-01-01"
             },
             "image": "https://optizenapp.com/images/synced-content-access.jpg"
           }

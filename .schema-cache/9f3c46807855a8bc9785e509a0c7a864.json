@@ -109,7 +109,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/ai-plan-options.mp4#t=0,45",
-              "name": "Accessing Account Settings"
+              "name": "Accessing Account Settings",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -119,7 +120,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/ai-plan-options.mp4#t=45,180",
-              "name": "AI Plan Features Overview"
+              "name": "AI Plan Features Overview",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -129,7 +131,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/ai-plan-options.mp4#t=180,300",
-              "name": "Plan Comparison Guide"
+              "name": "Plan Comparison Guide",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -139,7 +142,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/ai-plan-options.mp4#t=300,420",
-              "name": "Plan Upgrade Process"
+              "name": "Plan Upgrade Process",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -149,7 +153,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/ai-plan-options.mp4#t=420,525",
-              "name": "AI Feature Configuration"
+              "name": "AI Feature Configuration",
+              "uploadDate": "2024-01-01"
             }
           }
         ]

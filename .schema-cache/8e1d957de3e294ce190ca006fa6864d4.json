@@ -103,7 +103,8 @@
             "text": "Verify if campaign is active by checking the green toggle in dashboard",
             "video": {
               "@type": "VideoObject",
-              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=30,90"
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=30,90",
+              "uploadDate": "2025-11-06"
             }
           },
           {
@@ -112,7 +113,8 @@
             "text": "Ensure targeting rules match customer's cart contents and conditions",
             "video": {
               "@type": "VideoObject",
-              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=90,150"
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=90,150",
+              "uploadDate": "2025-11-06"
             }
           },
           {
@@ -121,7 +123,8 @@
             "text": "Ensure theme has the Optizen app block installed and properly configured",
             "video": {
               "@type": "VideoObject",
-              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=150,210"
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=150,210",
+              "uploadDate": "2025-11-06"
             }
           },
           {
@@ -130,7 +133,8 @@
             "text": "Clear browser cache and test upsell functionality in incognito mode",
             "video": {
               "@type": "VideoObject",
-              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=210,270"
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=210,270",
+              "uploadDate": "2025-11-06"
             }
           },
           {
@@ -139,7 +143,8 @@
             "text": "Check if discount code was created and review campaign discount settings",
             "video": {
               "@type": "VideoObject",
-              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=270,330"
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=270,330",
+              "uploadDate": "2025-11-06"
             }
           },
           {
@@ -148,7 +153,8 @@
             "text": "Ensure product has clear title, description, and high-quality images for video generation",
             "video": {
               "@type": "VideoObject",
-              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=330,420"
+              "contentUrl": "https://optizenapp.com/support-docs/video-upsells/troubleshooting#video#t=330,420",
+              "uploadDate": "2025-11-06"
             }
           }
         ]

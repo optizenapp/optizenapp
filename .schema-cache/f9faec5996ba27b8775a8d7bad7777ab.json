@@ -108,7 +108,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/export-collections-tutorial.mp4#t=0,30",
-              "name": "Accessing Collections Dashboard"
+              "name": "Accessing Collections Dashboard",
+              "uploadDate": "2024-01-01"
             },
             "image": "https://optizenapp.com/images/steps/collections-dashboard.jpg"
           },
@@ -119,7 +120,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/export-collections-tutorial.mp4#t=30,90",
-              "name": "Selecting Collections"
+              "name": "Selecting Collections",
+              "uploadDate": "2024-01-01"
             },
             "image": "https://optizenapp.com/images/steps/select-collections.jpg"
           },
@@ -130,7 +132,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/export-collections-tutorial.mp4#t=90,150",
-              "name": "Initiating Export"
+              "name": "Initiating Export",
+              "uploadDate": "2024-01-01"
             },
             "image": "https://optizenapp.com/images/steps/export-button.jpg"
           },
@@ -141,7 +144,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/export-collections-tutorial.mp4#t=150,210",
-              "name": "Export Configuration"
+              "name": "Export Configuration",
+              "uploadDate": "2024-01-01"
             },
             "image": "https://optizenapp.com/images/steps/export-settings.jpg"
           },
@@ -152,7 +156,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/export-collections-tutorial.mp4#t=210,270",
-              "name": "Downloading Export"
+              "name": "Downloading Export",
+              "uploadDate": "2024-01-01"
             },
             "image": "https://optizenapp.com/images/steps/download-export.jpg"
           }

@@ -121,7 +121,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/collection-pages-tutorial.mp4#t=0,45",
-              "name": "Accessing Collection Settings"
+              "name": "Accessing Collection Settings",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -132,7 +133,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/collection-pages-tutorial.mp4#t=45,120",
-              "name": "Selecting Target Collection"
+              "name": "Selecting Target Collection",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -143,7 +145,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/collection-pages-tutorial.mp4#t=120,300",
-              "name": "Adding SEO Description"
+              "name": "Adding SEO Description",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -154,7 +157,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/collection-pages-tutorial.mp4#t=300,450",
-              "name": "Configuring Meta Tags"
+              "name": "Configuring Meta Tags",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -165,7 +169,8 @@
             "video": {
               "@type": "VideoObject",
               "contentUrl": "https://optizenapp.com/videos/collection-pages-tutorial.mp4#t=450,525",
-              "name": "Preview and Publish Changes"
+              "name": "Preview and Publish Changes",
+              "uploadDate": "2024-01-01"
             }
           }
         ]

@@ -115,7 +115,8 @@
             "text": "Assess your current plan's limitations and identify bottlenecks in your SEO workflow.",
             "video": {
               "@type": "VideoObject",
-              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=0,90"
+              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=0,90",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -124,7 +125,8 @@
             "text": "Learn about multi-store management, advanced analytics, bulk operations, and priority support features.",
             "video": {
               "@type": "VideoObject",
-              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=90,240"
+              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=90,240",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -133,7 +135,8 @@
             "text": "Understand how Enterprise features can improve efficiency and ROI for large stores and agencies.",
             "video": {
               "@type": "VideoObject",
-              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=240,390"
+              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=240,390",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -142,7 +145,8 @@
             "text": "Review Enterprise pricing structure and compare value proposition against current plan costs.",
             "video": {
               "@type": "VideoObject",
-              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=390,480"
+              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=390,480",
+              "uploadDate": "2024-01-01"
             }
           },
           {
@@ -151,7 +155,8 @@
             "text": "Contact sales team or use upgrade interface to transition to Enterprise plan with migration support.",
             "video": {
               "@type": "VideoObject",
-              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=480,525"
+              "contentUrl": "https://optizenapp.com/videos/enterprise-upgrade-guide.mp4#t=480,525",
+              "uploadDate": "2024-01-01"
             }
           }
         ]
