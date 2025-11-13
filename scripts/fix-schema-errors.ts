@@ -12,21 +12,78 @@ import * as path from 'path';
 
 const CACHE_DIR = path.join(process.cwd(), '.schema-cache');
 
-function fixVideoObjectTeaches(obj: any): boolean {
+// Build a map of @id -> @type for the entire schema
+function buildIdTypeMap(schema: any): Map<string, string> {
+  const idTypeMap = new Map<string, string>();
+  
+  function traverse(obj: any): void {
+    if (!obj || typeof obj !== 'object') return;
+    
+    // If object has @id and @type, add to map
+    if (obj['@id'] && obj['@type']) {
+      idTypeMap.set(obj['@id'], obj['@type']);
+    }
+    
+    // Recursively check all properties
+    for (const value of Object.values(obj)) {
+      if (Array.isArray(value)) {
+        value.forEach(item => traverse(item));
+      } else if (value && typeof value === 'object') {
+        traverse(value);
+      }
+    }
+  }
+  
+  traverse(schema);
+  return idTypeMap;
+}
+
+function fixTeachesProperty(obj: any, idTypeMap: Map<string, string>, schemaType: string): boolean {
   let modified = false;
   
-  // Remove teaches if it references HowTo (URLs ending with #howto or pointing to HowTo)
-  if (obj.teaches) {
-    const teachesValue = obj.teaches;
-    const isHowToReference = 
-      (typeof teachesValue === 'string' && teachesValue.includes('#howto')) ||
-      (typeof teachesValue === 'string' && teachesValue.includes('HowTo')) ||
-      (teachesValue && typeof teachesValue === 'object' && teachesValue['@id'] && teachesValue['@id'].includes('#howto'));
-    
-    if (isHowToReference) {
-      delete obj.teaches;
-      modified = true;
+  if (!obj.teaches) return false;
+  
+  const teachesValue = obj.teaches;
+  
+  // Check if teaches references HowTo
+  let referencesHowTo = false;
+  
+  if (typeof teachesValue === 'string') {
+    // String URL ending with #howto
+    if (teachesValue.includes('#howto') || teachesValue.includes('HowTo')) {
+      referencesHowTo = true;
     }
+  } else if (Array.isArray(teachesValue)) {
+    // Array of objects or strings
+    for (const item of teachesValue) {
+      if (typeof item === 'string' && (item.includes('#howto') || item.includes('HowTo'))) {
+        referencesHowTo = true;
+        break;
+      } else if (item && typeof item === 'object' && item['@id']) {
+        // Check if @id resolves to HowTo
+        const referencedType = idTypeMap.get(item['@id']);
+        if (referencedType === 'HowTo') {
+          referencesHowTo = true;
+          break;
+        }
+      }
+    }
+  } else if (teachesValue && typeof teachesValue === 'object') {
+    // Single object with @id
+    if (teachesValue['@id']) {
+      const referencedType = idTypeMap.get(teachesValue['@id']);
+      if (referencedType === 'HowTo') {
+        referencesHowTo = true;
+      }
+    }
+  }
+  
+  // Remove teaches if it references HowTo
+  // Schema.org: teaches should reference DefinedTerm, Course, or string learning outcomes
+  // HowTo is NOT a valid target for teaches property
+  if (referencesHowTo) {
+    delete obj.teaches;
+    modified = true;
   }
   
   return modified;
@@ -56,14 +113,16 @@ function fixSpeakableCssSelector(obj: any): boolean {
   return modified;
 }
 
-function traverseAndFix(obj: any, path: string[] = []): boolean {
+function traverseAndFix(obj: any, idTypeMap: Map<string, string>, path: string[] = []): boolean {
   let modified = false;
   
   if (!obj || typeof obj !== 'object') return false;
   
-  // Fix VideoObject teaches property
-  if (obj['@type'] === 'VideoObject') {
-    if (fixVideoObjectTeaches(obj)) {
+  const schemaType = obj['@type'] || '';
+  
+  // Fix teaches property for VideoObject (and potentially other types)
+  if (obj.teaches) {
+    if (fixTeachesProperty(obj, idTypeMap, schemaType)) {
       modified = true;
     }
   }
@@ -79,12 +138,12 @@ function traverseAndFix(obj: any, path: string[] = []): boolean {
   for (const [key, value] of Object.entries(obj)) {
     if (Array.isArray(value)) {
       value.forEach((item, index) => {
-        if (traverseAndFix(item, [...path, key, index.toString()])) {
+        if (traverseAndFix(item, idTypeMap, [...path, key, index.toString()])) {
           modified = true;
         }
       });
     } else if (value && typeof value === 'object') {
-      if (traverseAndFix(value, [...path, key])) {
+      if (traverseAndFix(value, idTypeMap, [...path, key])) {
         modified = true;
       }
     }
@@ -118,16 +177,31 @@ async function fixSchemaErrors() {
       
       if (!schema) continue;
       
+      // Build @id -> @type map first
+      const idTypeMap = buildIdTypeMap(schema);
+      
       // Track original state
       const originalContent = JSON.stringify(schema);
       
       // Fix errors
-      const modified = traverseAndFix(schema);
+      const modified = traverseAndFix(schema, idTypeMap);
       
       if (modified) {
-        // Count fixes
+        // Count fixes - check for teaches that reference HowTo
         const newContent = JSON.stringify(schema);
-        const teachesMatches = (originalContent.match(/"teaches".*#howto/gi) || []).length;
+        // Count teaches properties that might reference HowTo
+        let teachesMatches = 0;
+        const teachesRegex = /"teaches"\s*:\s*\[?\s*\{?\s*"@id"\s*:\s*"[^"]*"/g;
+        const matches = originalContent.match(teachesRegex) || [];
+        // Check each match to see if it references HowTo
+        for (const match of matches) {
+          const idMatch = match.match(/"@id"\s*:\s*"([^"]*)"/);
+          if (idMatch && idTypeMap.get(idMatch[1]) === 'HowTo') {
+            teachesMatches++;
+          }
+        }
+        // Also count string references
+        teachesMatches += (originalContent.match(/"teaches"\s*:\s*"[^"]*#howto/gi) || []).length;
         const cssMatches = (originalContent.match(/\.video-description/gi) || []).length;
         
         fixedTeachesCount += teachesMatches;

@@ -126,11 +126,6 @@
             "@id": "#topical-maps"
           }
         ],
-        "teaches": [
-          {
-            "@id": "#simple-approach-method"
-          }
-        ],
         "isPartOf": {
           "@id": "https://optizenapp.com/shopify-seo/shopify-topical-map#article"
         },

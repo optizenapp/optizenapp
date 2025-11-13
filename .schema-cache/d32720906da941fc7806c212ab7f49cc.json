@@ -92,14 +92,6 @@
             "@id": "#social-proof"
           }
         ],
-        "teaches": [
-          {
-            "@id": "#manual-product-ordering-howto"
-          },
-          {
-            "@id": "#automated-sorting-howto"
-          }
-        ],
         "hasPart": [
           {
             "@id": "#faq-section"
