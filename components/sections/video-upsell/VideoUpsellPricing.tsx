@@ -21,7 +21,7 @@ const pricingPlans = [
   },
   {
     name: "Starter",
-    price: "$19.99",
+    price: "$9.99",
     period: "/month",
     addOn: "$2 per extra AI credit (Bundles of $2, $10, $20, $40)",
     description: "Best for growing stores",
@@ -37,7 +37,7 @@ const pricingPlans = [
   },
   {
     name: "Pro",
-    price: "$49.99",
+    price: "$29.99",
     period: "/month",
     addOn: "$1.50 per extra AI credit (Bundles of $1.50, $7.50, $15, $30)",
     description: "For high-volume stores",

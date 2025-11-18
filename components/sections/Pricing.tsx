@@ -22,7 +22,7 @@ const pricingPlans = {
     },
     {
       name: "Starter",
-      price: "$19.99",
+      price: "$9.99",
       period: "/month",
       description: "Best for growing stores",
       features: [
@@ -38,7 +38,7 @@ const pricingPlans = {
     },
     {
       name: "Pro",
-      price: "$49.99",
+      price: "$29.99",
       period: "/month",
       description: "For high-volume stores",
       features: [

@@ -45,8 +45,8 @@ Trusted by thousands of Shopify merchants worldwide with a 4.9/5 rating.
 
 ### Video Upsell
 - Free: 1 campaign, up to 5 conversions
-- Starter ($19.99/mo): Unlimited campaigns + 2 AI video credits
-- Pro ($49.99/mo): 5 AI video credits + priority support
+- Starter ($9.99/mo): Unlimited campaigns + 2 AI video credits
+- Pro ($29.99/mo): 5 AI video credits + priority support
 
 ## Documentation
 
