@@ -273,7 +273,7 @@ export const docsContent: Record<string, DocContent> = {
     wpSlug: 'getting-started-video-upsell',
     videoUrl: 'https://www.youtube.com/watch?v=01LGxp136jE',
     content: `
-      <h2>Getting Started</h2>
+      <h2>Getting Started - Product Page Video Upsells</h2>
       
       <p>Welcome to Optizen Video Upsell! This guide will help you create your first AI-powered video upsell campaign in minutes.</p>
       
@@ -323,10 +323,37 @@ export const docsContent: Record<string, DocContent> = {
       <ul>
         <li>🛒 Pre-Purchase Checkout Video Upsell</li>
         <li>🛍️ Cart Video Upsell</li>
-        <li>✅ Post Purchase Video Upsell</li>
-        <li>🎉 Thank You Page Video Upsell</li>
+        <li>Announcement Bar Thank You Page Video Upsells</li>
         <li>🔄 Multiple Flow Video Upsell</li>
       </ul>
+    `,
+  },
+  
+  'post-purchase-video-upsells': {
+    wpSlug: 'post-purchase-video-upsells',
+    videoUrl: 'https://www.youtube.com/watch?v=E2Prn_oVqjo',
+    content: `
+      <h2>Post Purchase Video Upsells</h2>
+      
+      <p>Post Purchase Video Upsells allow you to show targeted video offers to customers immediately after they complete a purchase. This is the perfect moment to capture additional sales when customers are most engaged and satisfied with their purchase.</p>
+      
+      <div class="video-container" style="margin: 2rem 0;">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/E2Prn_oVqjo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    `,
+  },
+  
+  'thank-you-page-video-upsells': {
+    wpSlug: 'thank-you-page-video-upsells',
+    videoUrl: 'https://www.youtube.com/watch?v=9CDEK0Z6VsQ',
+    content: `
+      <h2>Thank You Page Video Upsells</h2>
+      
+      <p>Thank You Page Video Upsells display compelling video offers on your order confirmation page. This placement maximizes revenue by presenting complementary products or bundles to customers right after they've made a purchase, when they're most likely to add items to their order.</p>
+      
+      <div class="video-container" style="margin: 2rem 0;">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/9CDEK0Z6VsQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     `,
   },
   
