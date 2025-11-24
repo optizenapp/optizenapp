@@ -1,0 +1,370 @@
+{
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://optizenapp.com/optizen/create-a-video-upsell-campaign-on-shopify-product-pages",
+        "url": "https://optizenapp.com/optizen/create-a-video-upsell-campaign-on-shopify-product-pages",
+        "name": "How To Create Video Upsells On Product Pages To Increase AOV",
+        "description": "Learn how to set up video upsell campaigns on Shopify product pages using Optizen app to increase average order value through engaging video content and strategic product bundling.",
+        "datePublished": "2025-11-24T05:55:25",
+        "dateModified": "2025-11-24T05:55:28",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Optizen App",
+          "url": "https://optizenapp.com"
+        },
+        "speakableSpecification": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "h1",
+            "h2",
+            "h3"
+          ]
+        },
+        "mainEntity": {
+          "@id": "#main-article"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "#main-article",
+        "headline": "How To Create Video Upsells On Product Pages To Increase AOV",
+        "description": "Complete guide to setting up video upsell campaigns on Shopify product pages using Optizen app, including campaign creation, video setup, and theme customization.",
+        "author": {
+          "@type": "Person",
+          "name": "Jono",
+          "jobTitle": "Optizen App Representative"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Optizen App",
+          "url": "https://optizenapp.com"
+        },
+        "datePublished": "2025-11-24T05:55:25",
+        "dateModified": "2025-11-24T05:55:28",
+        "articleSection": "Optizen",
+        "about": [
+          {
+            "@id": "#video-upsells"
+          },
+          {
+            "@id": "#shopify-optimization"
+          },
+          {
+            "@id": "#aov-increase"
+          },
+          {
+            "@id": "#optizen-app"
+          }
+        ],
+        "mentions": [
+          {
+            "@id": "#product-page-upsells"
+          },
+          {
+            "@id": "#ai-video-generator"
+          },
+          {
+            "@id": "#bundle-offers"
+          },
+          {
+            "@id": "#discount-automation"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "#howto-setup"
+          },
+          {
+            "@id": "#video-features-list"
+          },
+          {
+            "@id": "#campaign-steps-list"
+          },
+          {
+            "@id": "#theme-customization-howto"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#howto-setup",
+        "name": "How to Create Video Upsell Campaign on Shopify Product Pages",
+        "description": "Step-by-step guide to setting up video upsell campaigns using Optizen app for Shopify stores",
+        "totalTime": "PT5M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Shopify Store"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Optizen App"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Product Videos or AI Generator Access"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Create Campaign",
+            "text": "Go to dashboard and click 'Create Campaign' for product page upsell. Choose between bundled product or individual product upsell.",
+            "url": "#step-1-create-campaign"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Video Setup",
+            "text": "Add your video type: YouTube, Vimeo, TikTok, upload your own, or generate AI video using 1,200+ avatars and voices.",
+            "url": "#step-2-video-setup"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Product Setup",
+            "text": "Choose the upsell product and select variants (one, multiple, or all variants). Set percentage discount.",
+            "url": "#step-3-product-setup"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Purchase Triggers",
+            "text": "Configure purchase triggers and set campaign priority for overlapping campaigns.",
+            "url": "#step-4-purchase-triggers"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Targeting Options",
+            "text": "Set targeting for all products, specific products by tag/collection/minimum order value, or customer targeting.",
+            "url": "#step-5-targeting"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Theme Setup",
+            "text": "Add app blocks to product page: Upsell Compact block first, then Product Page Upsell block second. Add Discount Auto Apply block to cart page.",
+            "url": "#step-6-theme-setup"
+          }
+        ],
+        "about": {
+          "@id": "#video-upsells"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "#theme-customization-howto",
+        "name": "Theme Customization for Video Upsells",
+        "description": "How to customize Shopify theme to display video upsell blocks properly",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Access Theme Editor",
+            "text": "Go to Themes and click 'Edit Theme' to access the customizer.",
+            "url": "#theme-editor-access"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Add Product Page Blocks",
+            "text": "On product page, add Upsell Compact block first, then Product Page Upsell block second for proper functionality.",
+            "url": "#product-page-blocks"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Customize Styling",
+            "text": "Configure colors and styling settings to match your theme design.",
+            "url": "#styling-customization"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Setup Cart Page",
+            "text": "Add Discount Auto Apply block to cart page to enable automatic discount application at checkout.",
+            "url": "#cart-page-setup"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#video-features-list",
+        "name": "Video Upsell Features",
+        "description": "Key features and capabilities of Optizen video upsell app",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Product Page Upsells",
+            "description": "Create engaging video upsells directly on product pages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Thank You Page Upsells",
+            "description": "Display video upsells on order confirmation pages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "One-Click Post-Purchase Upsells",
+            "description": "Seamless post-purchase upsell experience with video content"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Announcement Bar Upsells",
+            "description": "Coming soon feature for site-wide video upsell announcements"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "In-Cart Upsells",
+            "description": "Video upsells displayed within the shopping cart"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "AI Video Generator",
+            "description": "Generate professional videos with 1,200+ avatars and voices using AI technology"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#campaign-steps-list",
+        "name": "Campaign Setup Steps",
+        "description": "Sequential steps for creating video upsell campaigns",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Campaign Creation",
+            "description": "Start by creating a new campaign from the dashboard"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Video Configuration",
+            "description": "Choose video source: YouTube, Vimeo, TikTok, upload, or AI generation"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Product Selection",
+            "description": "Select upsell products and variants with discount percentages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Trigger Setup",
+            "description": "Configure purchase triggers and campaign priorities"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Targeting Rules",
+            "description": "Set product and customer targeting parameters"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Theme Integration",
+            "description": "Add and configure app blocks in Shopify theme"
+          }
+        ]
+      },
+      {
+        "@type": "DefinedTermSet",
+        "@id": "#video-upsell-glossary",
+        "name": "Video Upsell Terminology",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "@id": "#video-upsells",
+            "name": "Video Upsells",
+            "description": "Interactive upselling technique that uses video content to engage customers and promote additional products, differing from static upsells by incorporating multimedia demonstrations and explanations",
+            "inDefinedTermSet": {
+              "@id": "#video-upsell-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#aov-increase",
+            "name": "AOV (Average Order Value)",
+            "description": "The average dollar amount spent each time a customer places an order, which video upsells aim to increase through strategic product recommendations",
+            "inDefinedTermSet": {
+              "@id": "#video-upsell-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Average_order_value"
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#optizen-app",
+            "name": "Optizen App",
+            "description": "Shopify application that enables merchants to create video-based upsell campaigns across multiple touchpoints including product pages, thank you pages, and post-purchase flows",
+            "inDefinedTermSet": {
+              "@id": "#video-upsell-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#product-page-upsells",
+            "name": "Product Page Upsells",
+            "description": "Upselling offers displayed on individual product pages to encourage customers to purchase additional or upgraded items before adding to cart",
+            "inDefinedTermSet": {
+              "@id": "#video-upsell-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#ai-video-generator",
+            "name": "AI Video Generator",
+            "description": "Artificial intelligence-powered tool that creates professional videos using over 1,200 avatars and voices, capable of generating product-specific content from URLs and prompts",
+            "inDefinedTermSet": {
+              "@id": "#video-upsell-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#bundle-offers",
+            "name": "Bundle Offers",
+            "description": "Product combinations offered at discounted prices, where customers can purchase the main product together with complementary items as a package deal",
+            "inDefinedTermSet": {
+              "@id": "#video-upsell-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#discount-automation",
+            "name": "Discount Auto Apply",
+            "description": "Automated system that applies promotional discounts to customer orders without requiring manual coupon code entry, streamlining the checkout process",
+            "inDefinedTermSet": {
+              "@id": "#video-upsell-glossary"
+            }
+          },
+          {
+            "@type": "DefinedTerm",
+            "@id": "#shopify-optimization",
+            "name": "Shopify Optimization",
+            "description": "Process of improving Shopify store performance, conversion rates, and revenue through strategic implementation of apps, themes, and marketing techniques",
+            "inDefinedTermSet": {
+              "@id": "#video-upsell-glossary"
+            },
+            "sameAs": "https://en.wikipedia.org/wiki/Shopify"
+          }
+        ]
+      }
+    ]
+  },
+  "generatedAt": "2025-11-24T06:03:50.886Z",
+  "contentModified": "2025-11-24T05:55:28",
+  "contentHash": "bfb07a0ec2dc92f7e3af7743fb5ade1c"
+}
