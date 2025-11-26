@@ -2,28 +2,8 @@
 User-agent: *
 Allow: /
 
-# Block WordPress preview/editor URLs and parameter variations
-Disallow: /*?post_type=*
-Disallow: /*?p=*
-Disallow: /*?page_id=*
-Disallow: /*?preview=*
-
-# Block pagination and other query parameters (canonical URLs handle these)
-Disallow: /*?page=*
-Disallow: /*?*&*
-Disallow: /*?utm_*
-Disallow: /*?ref=*
-Disallow: /*?fbclid=*
-
-# Block Next.js static chunks from indexing
-Disallow: /_next/static/
-
 # Host
 Host: https://optizenapp.com
-
-# LLM Context
-# For AI assistants and LLMs
-# See: https://optizenapp.com/llm.txt
 
 # Sitemaps
 Sitemap: https://optizenapp.com/sitemap.xml
