@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { TrendingUp, Search, Zap, Shield } from "lucide-react";
 
 const features = [
@@ -40,13 +37,9 @@ export default function Features() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <motion.div
+          {features.map((feature) => (
+            <div
               key={feature.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
               className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-optizen-blue-100 rounded-xl flex items-center justify-center mb-4">
@@ -58,7 +51,7 @@ export default function Features() {
               <p className="text-gray-600">
                 {feature.description}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

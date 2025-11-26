@@ -1,21 +1,24 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
   display: "swap",
-  preload: true, // Preload for faster font loading
-  adjustFontFallback: true, // Reduce layout shift
+  preload: true,
+  adjustFontFallback: true,
+  fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
   display: "swap",
-  preload: false, // Don't preload mono font (not critical)
+  preload: false,
   adjustFontFallback: true,
+  fallback: ['ui-monospace', 'Menlo', 'Monaco', 'Courier New', 'monospace'],
 });
 
 export const metadata: Metadata = {
@@ -54,61 +57,75 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preconnect to critical origins */}
+        {/* Critical resource hints - preconnect to fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com" />
-        <link rel="dns-prefetch" href="https://apps.shopify.com" />
         
-        {/* Preload critical assets */}
-        <link rel="preload" href="/shopify-partner-badge.jpeg" as="image" type="image/jpeg" fetchPriority="high" />
-        <link rel="preload" href="/optizen-logo.png" as="image" type="image/png" />
+        {/* DNS prefetch for non-critical origins */}
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://apps.shopify.com" />
+        <link rel="dns-prefetch" href="https://optizenapp-staging.p3ue6i.ap-southeast-2.wpstaqhosting.com" />
+        
+        {/* Preload critical LCP image */}
+        <link 
+          rel="preload" 
+          href="/shopify-partner-badge.jpeg" 
+          as="image" 
+          type="image/jpeg" 
+          fetchPriority="high"
+          imageSizes="120px"
+          imageSrcSet="/shopify-partner-badge.jpeg 120w"
+        />
         
         {/* Mobile viewport optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         
-      {/* Google Analytics */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZG3J0PFEV"></script>
-      <script dangerouslySetInnerHTML={{
-        __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-PZG3J0PFEV');
-        `
-      }} />
-      
-      {/* Google Ads Conversion Tracking */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17668902622"></script>
-      <script dangerouslySetInnerHTML={{
-        __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-17668902622');
-        `
-      }} />
-      
-      {/* Service Worker Registration */}
-      <script dangerouslySetInnerHTML={{
-        __html: `
-          if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-              navigator.serviceWorker.register('/sw.js').catch(function(){});
-            });
-          }
-        `
-      }} />
-      
-      {/* Explicit favicon links for better browser compatibility */}
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
-      <link rel="apple-touch-icon" href="/favicon.png" />
-    </head>
+        {/* Favicon links */}
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        
+        {/* Defer Google Analytics - load after page interactive */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PZG3J0PFEV"
+          strategy="lazyOnload"
+        />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PZG3J0PFEV');
+          `}
+        </Script>
+        
+        {/* Defer Google Ads - load after page interactive */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17668902622"
+          strategy="lazyOnload"
+        />
+        <Script id="google-ads" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17668902622');
+          `}
+        </Script>
+        
+        {/* Service Worker - load after page interactive */}
+        <Script id="service-worker" strategy="lazyOnload">
+          {`
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/sw.js').catch(function(){});
+            }
+          `}
+        </Script>
       </body>
     </html>
   );

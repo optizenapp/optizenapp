@@ -1,7 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 export default function LogoBar() {
   const partners = [
     "Shopify Partner",
@@ -20,18 +16,15 @@ export default function LogoBar() {
         </p>
         
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-          {partners.map((partner, index) => (
-            <motion.div
+          {partners.map((partner) => (
+            <div
               key={partner}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
               className="flex items-center justify-center"
             >
               <div className="px-6 py-3 bg-gray-50 rounded-lg border border-gray-200">
                 <span className="text-gray-600 font-medium text-sm">{partner}</span>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

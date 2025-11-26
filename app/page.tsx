@@ -13,13 +13,25 @@ export const metadata: Metadata = {
   },
 };
 
-// Lazy load below-the-fold components
-const Apps = dynamic(() => import("@/components/sections/Apps"));
-const Pricing = dynamic(() => import("@/components/sections/Pricing"));
-const Testimonials = dynamic(() => import("@/components/sections/Testimonials"));
-const Stats = dynamic(() => import("@/components/sections/Stats"));
-const FAQ = dynamic(() => import("@/components/sections/FAQ"));
-const FinalCTA = dynamic(() => import("@/components/sections/FinalCTA"));
+// Lazy load below-the-fold components with loading optimization
+const Apps = dynamic(() => import("@/components/sections/Apps"), {
+  loading: () => <div className="h-96" />,
+});
+const Pricing = dynamic(() => import("@/components/sections/Pricing"), {
+  loading: () => <div className="h-96" />,
+});
+const Testimonials = dynamic(() => import("@/components/sections/Testimonials"), {
+  loading: () => <div className="h-96" />,
+});
+const Stats = dynamic(() => import("@/components/sections/Stats"), {
+  loading: () => <div className="h-64" />,
+});
+const FAQ = dynamic(() => import("@/components/sections/FAQ"), {
+  loading: () => <div className="h-96" />,
+});
+const FinalCTA = dynamic(() => import("@/components/sections/FinalCTA"), {
+  loading: () => <div className="h-64" />,
+});
 
 export default async function Home() {
   // Generate schema for homepage

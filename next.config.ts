@@ -19,12 +19,15 @@ const nextConfig: NextConfig = {
         pathname: '/wp-content/uploads/**',
       },
     ],
-    // Optimize images for mobile
+    // Optimize images for mobile-first
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    formats: ['image/webp'], // Next.js will auto-fallback to original format if WebP fails
-    unoptimized: false, // Ensure images are optimized
-    minimumCacheTTL: 31536000, // Cache optimized images for 1 year
+    formats: ['image/avif', 'image/webp'], // AVIF first for better compression
+    unoptimized: false,
+    minimumCacheTTL: 31536000, // 1 year cache
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   // Enable compiler optimizations
   compiler: {
@@ -34,15 +37,16 @@ const nextConfig: NextConfig = {
   productionBrowserSourceMaps: false,
   compress: true,
   poweredByHeader: false,
-  // Optimize bundle
+  // Optimize bundle - tree-shake and optimize imports
   experimental: {
-    optimizePackageImports: ['lucide-react', 'framer-motion'],
+    optimizePackageImports: ['lucide-react', 'framer-motion', 'clsx', 'tailwind-merge'],
+    optimizeCss: true, // Enable CSS optimization
   },
-  // Add cache headers for static assets
+  // Add cache and security headers
   async headers() {
     return [
       {
-        source: '/:path*.(svg|jpg|jpeg|png|gif|ico|webp)',
+        source: '/:path*.(svg|jpg|jpeg|png|gif|ico|webp|avif)',
         headers: [
           {
             key: 'Cache-Control',
@@ -65,6 +69,15 @@ const nextConfig: NextConfig = {
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on',
           },
         ],
       },

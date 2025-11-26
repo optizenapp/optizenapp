@@ -20,6 +20,7 @@ export default function Header() {
                 alt="OptizenAI Logo" 
                 width={200} 
                 height={56}
+                sizes="200px"
                 className="h-10 w-auto"
                 priority
               />

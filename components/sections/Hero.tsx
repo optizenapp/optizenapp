@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
@@ -27,27 +26,23 @@ export default function Hero() {
             Everything you need to grow your Shopify store.
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons - Use CSS hover instead of Framer Motion */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <motion.a
+            <a
               href="/optizenai-video-upsells-and-bundles"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center px-8 py-4 bg-optizen-blue-500 text-white font-semibold rounded-full hover:bg-optizen-blue-600 transition-colors shadow-lg shadow-optizen-blue-500/30"
+              className="inline-flex items-center px-8 py-4 bg-optizen-blue-500 text-white font-semibold rounded-full hover:bg-optizen-blue-600 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg shadow-optizen-blue-500/30"
             >
               Video Upsell App
               <ArrowRight className="ml-2" size={20} />
-            </motion.a>
+            </a>
             
-            <motion.a
+            <a
               href="/optizenai-seo"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center px-8 py-4 bg-optizen-green-500 text-white font-semibold rounded-full hover:bg-optizen-green-600 transition-colors shadow-lg shadow-optizen-green-500/30"
+              className="inline-flex items-center px-8 py-4 bg-optizen-green-500 text-white font-semibold rounded-full hover:bg-optizen-green-600 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg shadow-optizen-green-500/30"
             >
               SEO Tools App
               <ArrowRight className="ml-2" size={20} />
-            </motion.a>
+            </a>
           </div>
 
           {/* Trust Indicators */}
@@ -64,6 +59,7 @@ export default function Hero() {
                 height={40}
                 priority
                 fetchPriority="high"
+                sizes="120px"
                 className="h-8 w-auto"
               />
             </div>
