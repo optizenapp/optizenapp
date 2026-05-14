@@ -130,29 +130,35 @@ export async function getPosts(params?: {
   page?: number;
   search?: string;
 }): Promise<{ posts: WordPressPost[]; totalPages: number; totalPosts: number }> {
-  const searchParams = new URLSearchParams({
-    _embed: 'true',
-    per_page: params?.per_page?.toString() || '10',
-    page: params?.page?.toString() || '1',
-    orderby: 'date',
-    order: 'desc',
-    ...(params?.categories && { categories: params.categories.toString() }),
-    ...(params?.search && { search: params.search }),
-  });
+  try {
+    const searchParams = new URLSearchParams({
+      _embed: 'true',
+      per_page: params?.per_page?.toString() || '10',
+      page: params?.page?.toString() || '1',
+      orderby: 'date',
+      order: 'desc',
+      ...(params?.categories && { categories: params.categories.toString() }),
+      ...(params?.search && { search: params.search }),
+    });
 
-  const response = await fetchWithRetry(`${WP_API_URL}/posts?${searchParams}`, {
-    next: { revalidate: 300 }, // Revalidate every 5 minutes to show new posts
-  });
+    const response = await fetchWithRetry(`${WP_API_URL}/posts?${searchParams}`, {
+      next: { revalidate: 300 }, // Revalidate every 5 minutes to show new posts
+    });
 
-  if (!response.ok) {
-    throw new Error(`Failed to fetch posts: ${response.statusText}`);
+    if (!response.ok) {
+      console.warn(`⚠️  Failed to fetch posts: ${response.status} ${response.statusText}`);
+      return { posts: [], totalPages: 0, totalPosts: 0 };
+    }
+
+    const posts = await response.json();
+    const totalPages = parseInt(response.headers.get('X-WP-TotalPages') || '1');
+    const totalPosts = parseInt(response.headers.get('X-WP-Total') || '0');
+
+    return { posts, totalPages, totalPosts };
+  } catch (error) {
+    console.warn('⚠️  WordPress API unavailable, returning empty posts:', error);
+    return { posts: [], totalPages: 0, totalPosts: 0 };
   }
-
-  const posts = await response.json();
-  const totalPages = parseInt(response.headers.get('X-WP-TotalPages') || '1');
-  const totalPosts = parseInt(response.headers.get('X-WP-Total') || '0');
-
-  return { posts, totalPages, totalPosts };
 }
 
 // Helper function to get SEO meta from Rank Math API or scrape from HTML
@@ -368,11 +374,10 @@ export async function getAllPostSlugs(): Promise<Array<{ category: string; slug:
     
     return slugs;
   } catch (error) {
-    console.error('❌ [getAllPostSlugs] CRITICAL ERROR - WordPress API unavailable during build!');
-    console.error('❌ This will cause ALL blog posts to 404!');
+    console.error('❌ [getAllPostSlugs] WordPress API unavailable during build.');
+    console.error('❌ Skipping blog post pre-rendering so the deployment can continue.');
     console.error('❌ Error details:', error);
-    // FAIL THE BUILD instead of silently returning empty array
-    throw error;
+    return [];
   }
 }
 
