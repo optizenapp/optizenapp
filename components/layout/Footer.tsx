@@ -123,6 +123,16 @@ export default function Footer() {
                   Partner – Copiq
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://getforked.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-900 text-sm"
+                >
+                  Partner - Getforked.dev
+                </a>
+              </li>
             </ul>
           </div>
         </div>
