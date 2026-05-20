@@ -101,8 +101,8 @@ export default function ContactPage() {
                     <Mail className="text-optizen-blue-500 mr-4 mt-1" size={24} />
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Email Support</h3>
-                      <a href="mailto:support@optizenai.com" className="text-optizen-blue-500 hover:text-optizen-blue-600">
-                        support@optizenai.com
+                      <a href="mailto:team@optizenapp.com" className="text-optizen-blue-500 hover:text-optizen-blue-600">
+                        team@optizenapp.com
                       </a>
                       <p className="text-gray-600 text-sm mt-1">We typically respond within 24 hours</p>
                     </div>
