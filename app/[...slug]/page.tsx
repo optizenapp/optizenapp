@@ -47,8 +47,10 @@ export async function generateStaticParams() {
   }));
 }
 
-// Prevent on-demand generation - only serve pre-rendered pages
-export const dynamicParams = false;
+// Allow on-demand rendering when WordPress was unavailable at build time
+// (empty generateStaticParams + dynamicParams false caused DYNAMIC_SERVER_USAGE 500s)
+export const dynamicParams = true;
+export const dynamic = 'force-dynamic';
 
 // Generate metadata for each page
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

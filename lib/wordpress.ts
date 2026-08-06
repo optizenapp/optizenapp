@@ -293,16 +293,21 @@ export async function getCategories(): Promise<WordPressCategory[]> {
 
 // Fetch a single category by slug
 export async function getCategoryBySlug(slug: string): Promise<WordPressCategory | null> {
-  const response = await fetchWithRetry(`${WP_API_URL}/categories?slug=${slug}`, {
-    next: { revalidate: false }, // Cache permanently
-  });
+  try {
+    const response = await fetchWithRetry(`${WP_API_URL}/categories?slug=${slug}`, {
+      next: { revalidate: false }, // Cache permanently
+    });
 
-  if (!response.ok) {
+    if (!response.ok) {
+      return null;
+    }
+
+    const categories = await response.json();
+    return categories[0] || null;
+  } catch (error) {
+    console.warn(`⚠️  Failed to fetch category "${slug}":`, error);
     return null;
   }
-
-  const categories = await response.json();
-  return categories[0] || null;
 }
 
 // Fetch media by ID

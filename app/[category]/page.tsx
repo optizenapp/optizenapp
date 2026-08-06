@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
+import nextDynamic from 'next/dynamic';
 import { notFound } from 'next/navigation';
 import { getCategoryBySlug, getPosts, getCategories } from '@/lib/wordpress';
 import { formatDate, calculateReadingTime, stripHtml, truncateText } from '@/lib/blog-utils';
@@ -11,7 +11,7 @@ import Footer from '@/components/layout/Footer';
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
 
 // Dynamic import for client component
-const BlogSearch = dynamic(() => import('@/components/blog/BlogSearch'), {
+const BlogSearch = nextDynamic(() => import('@/components/blog/BlogSearch'), {
   loading: () => (
     <div className="max-w-2xl mx-auto">
       <div className="w-full h-12 bg-gray-100 rounded-lg animate-pulse"></div>
@@ -35,6 +35,10 @@ export async function generateStaticParams() {
     category: category.slug,
   }));
 }
+
+// Required: empty generateStaticParams + await searchParams causes
+// DYNAMIC_SERVER_USAGE 500s in production when WordPress is unavailable at build.
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { category } = await params;
